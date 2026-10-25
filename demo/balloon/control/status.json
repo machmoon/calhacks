@@ -1,0 +1,12 @@
+{
+  "commands": [
+    "pause",
+    "resume",
+    "approve",
+    "stop"
+  ],
+  "how": "create a file named after the command in this directory; its content is a note the orchestrator reads",
+  "since_ms": 1792887972224,
+  "state": "running",
+  "waiting_on": null
+}

@@ -1,0 +1,339 @@
+{
+  "source": "/Users/patliu/Desktop/Coding/wright/out/vtol-demonstrator-r5/assembly.FCStd",
+  "source_sha256": "f72dfe562ae7ffca42a40957743b30372a2570dd19eb923dcf96a13e942e88bc",
+  "source_module": "vtol_features_r5",
+  "cavity_object": "PodCavity",
+  "cavity_valid": true,
+  "candidate_status": "static_fit_only_service_clearance_pending",
+  "all_selected_inside_with_one_mm_service": false,
+  "components": [
+    {
+      "id": "lift_battery",
+      "reservation_size_mm": [
+        152,
+        56,
+        43
+      ],
+      "reservation_lower_xyz_mm": [
+        407,
+        -28,
+        2.5
+      ],
+      "outside_actual_cavity_mm3": 0.0,
+      "inside": true,
+      "pod_material_gap_mm": 0.22885858731660663,
+      "hatch_material_gap_mm": 4.75307878369713,
+      "one_mm_service_reservation_inside": false,
+      "one_mm_service_outside_mm3": 21.5528383259134,
+      "geometry": "manufacturer_dimensional_reservation",
+      "existing_collisions": [],
+      "adjustment_evidence": "battery-adjustment.json"
+    },
+    {
+      "id": "cruise_battery",
+      "reservation_size_mm": [
+        96.6,
+        45.14,
+        25.56
+      ],
+      "reservation_lower_xyz_mm": [
+        275,
+        -22.57,
+        12
+      ],
+      "outside_actual_cavity_mm3": 0.0,
+      "inside": true,
+      "pod_material_gap_mm": 17.48492279748997,
+      "hatch_material_gap_mm": 18.95285274491222,
+      "one_mm_service_reservation_inside": true,
+      "one_mm_service_outside_mm3": 0.0,
+      "geometry": "manufacturer_dimensional_reservation",
+      "existing_collisions": []
+    },
+    {
+      "id": "fc",
+      "reservation_size_mm": [
+        54.3,
+        39,
+        17.5
+      ],
+      "reservation_lower_xyz_mm": [
+        285,
+        -19.5,
+        40
+      ],
+      "outside_actual_cavity_mm3": 0.0,
+      "inside": true,
+      "pod_material_gap_mm": 26.5,
+      "hatch_material_gap_mm": 1.1142406200102555,
+      "one_mm_service_reservation_inside": false,
+      "one_mm_service_outside_mm3": 0.04974302638496897,
+      "geometry": "verified_manufacturer_STEP_inside_tested_reservation",
+      "existing_collisions": [],
+      "model_key": "fc_current",
+      "source_sha256": "b0855e2bd5117b0c8e4fc82755142bee34e5a394b7fc0d7f6300e3b78348c188",
+      "source_to_world": {
+        "translation_mm": [
+          310.2,
+          1.0000000116860974e-07,
+          41.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "actual_bounds_mm": [
+        285.0,
+        -19.5,
+        40.0,
+        339.3,
+        19.500000200000002,
+        57.45
+      ],
+      "solid_count": 2
+    },
+    {
+      "id": "pdb",
+      "reservation_size_mm": [
+        80,
+        60,
+        23.5
+      ],
+      "reservation_lower_xyz_mm": [
+        190,
+        -30,
+        15
+      ],
+      "outside_actual_cavity_mm3": 0.0,
+      "inside": true,
+      "pod_material_gap_mm": 3.5369915294200265,
+      "hatch_material_gap_mm": 9.5,
+      "one_mm_service_reservation_inside": true,
+      "one_mm_service_outside_mm3": 0.0,
+      "geometry": "verified_manufacturer_STEP_inside_tested_reservation",
+      "existing_collisions": [],
+      "model_key": "pdb_top",
+      "source_sha256": "e342cd094063dc7eb70f65d90f48e774106b6569a8ddca65de76b83452158e65",
+      "source_to_world": {
+        "translation_mm": [
+          354.98763017529996,
+          -115.00017008034003,
+          16.682397764797003
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.7071067811865475,
+          0.7071067811865476
+        ]
+      },
+      "actual_bounds_mm": [
+        189.99999999999997,
+        -30.00000000000001,
+        15.0,
+        269.98746009496,
+        29.987419454860003,
+        38.00000029802101
+      ],
+      "solid_count": 27,
+      "adjustment_evidence": "pdb-adjustment.json"
+    },
+    {
+      "id": "pm02",
+      "reservation_size_mm": [
+        25,
+        25,
+        10
+      ],
+      "reservation_lower_xyz_mm": [
+        350,
+        -52,
+        20
+      ],
+      "outside_actual_cavity_mm3": 0.0,
+      "inside": true,
+      "pod_material_gap_mm": 15.075126457603636,
+      "hatch_material_gap_mm": 23.583734156161587,
+      "one_mm_service_reservation_inside": true,
+      "one_mm_service_outside_mm3": 0.0,
+      "geometry": "manufacturer_dimensional_reservation",
+      "existing_collisions": []
+    },
+    {
+      "id": "ubec",
+      "reservation_size_mm": [
+        43.1,
+        32.3,
+        12.5
+      ],
+      "reservation_lower_xyz_mm": [
+        320,
+        25,
+        20
+      ],
+      "outside_actual_cavity_mm3": 0.0,
+      "inside": true,
+      "pod_material_gap_mm": 7.6208373266545095,
+      "hatch_material_gap_mm": 19.63573908833851,
+      "one_mm_service_reservation_inside": true,
+      "one_mm_service_outside_mm3": 0.0,
+      "geometry": "manufacturer_dimensional_reservation",
+      "existing_collisions": []
+    }
+  ],
+  "pairs": [
+    {
+      "a": "lift_battery",
+      "b": "cruise_battery",
+      "overlap_mm3": 0,
+      "gap_mm": 35.39999999999998
+    },
+    {
+      "a": "lift_battery",
+      "b": "fc",
+      "overlap_mm3": 0,
+      "gap_mm": 67.69999999999999
+    },
+    {
+      "a": "lift_battery",
+      "b": "pdb",
+      "overlap_mm3": 0,
+      "gap_mm": 137.0
+    },
+    {
+      "a": "lift_battery",
+      "b": "pm02",
+      "overlap_mm3": 0,
+      "gap_mm": 32.0
+    },
+    {
+      "a": "lift_battery",
+      "b": "ubec",
+      "overlap_mm3": 0,
+      "gap_mm": 43.89999999999998
+    },
+    {
+      "a": "cruise_battery",
+      "b": "fc",
+      "overlap_mm3": 0,
+      "gap_mm": 2.4399999999999977
+    },
+    {
+      "a": "cruise_battery",
+      "b": "pdb",
+      "overlap_mm3": 0,
+      "gap_mm": 5.0
+    },
+    {
+      "a": "cruise_battery",
+      "b": "pm02",
+      "overlap_mm3": 0,
+      "gap_mm": 4.43
+    },
+    {
+      "a": "cruise_battery",
+      "b": "ubec",
+      "overlap_mm3": 0,
+      "gap_mm": 2.4299999999999997
+    },
+    {
+      "a": "fc",
+      "b": "pdb",
+      "overlap_mm3": 0,
+      "gap_mm": 15.074813431681335
+    },
+    {
+      "a": "fc",
+      "b": "pm02",
+      "overlap_mm3": 0,
+      "gap_mm": 16.45417880053574
+    },
+    {
+      "a": "fc",
+      "b": "ubec",
+      "overlap_mm3": 0,
+      "gap_mm": 9.300537618869138
+    },
+    {
+      "a": "pdb",
+      "b": "pm02",
+      "overlap_mm3": 0,
+      "gap_mm": 80.0
+    },
+    {
+      "a": "pdb",
+      "b": "ubec",
+      "overlap_mm3": 0,
+      "gap_mm": 50.0
+    },
+    {
+      "a": "pm02",
+      "b": "ubec",
+      "overlap_mm3": 0,
+      "gap_mm": 52.0
+    }
+  ],
+  "gps_external": {
+    "source_model": "gps_shared_full",
+    "translation_mm": [
+      200,
+      0,
+      75
+    ],
+    "rotation_axis": [
+      1,
+      0,
+      0
+    ],
+    "rotation_degrees": 90,
+    "bounds_mm": [
+      174.9999999,
+      -41.0,
+      68.999999899998,
+      225.0000001,
+      25.0000001,
+      83.30000010000825
+    ],
+    "collisions": [],
+    "mount_verified": false
+  },
+  "coverage": {
+    "internal_selected": [
+      "lift_battery",
+      "cruise_battery",
+      "fc",
+      "pdb",
+      "pm02",
+      "ubec"
+    ],
+    "four_verified_source_models_imported": true,
+    "servos": "Source inspected in separatedoc; no wingservo placement proposed",
+    "not_in_this_fit": [
+      "payload250g envelope",
+      "receiver",
+      "telemetryradio",
+      "airspeed",
+      "power/signal harness",
+      "connectors",
+      "batterystraps",
+      "PDB/FC/PM02/BEC mounts"
+    ]
+  },
+  "limitations": [
+    "1mm inflated reservation is static clearance, not insertion/removal-path proof",
+    "Existing hatch and tray retained; source unchanged",
+    "Actual importedCAD bounded bytestedconservativeboxes; PM02/BEC/batteries remain dimensionalreferences",
+    "GPS candidate exterior placement has no attachment/loadpath qualification",
+    "No completeelectronicsintegration or CG/thermal claim",
+    "Mainbattery rearbay has no authored support/retention; existingtray now holds smallerpack only asgeometriccandidate",
+    "Largepack normalPodgap0.2288586mm; expandedservicebox fails; no tolerance margin approval",
+    "FC one-mm axiswiseexpandedbox fails0.049743mm\u00b3 despite nominalfit; no servicevolumeapproval",
+    "No hatch extraction sweeps tested"
+  ],
+  "static_fit_passed": true,
+  "original_requested_source": "R4 evaluated separately; R5 supersedes it because crossframe/bolt internals invalidate R4packing",
+  "installation_ready": false
+}

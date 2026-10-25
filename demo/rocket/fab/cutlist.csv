@@ -1,0 +1,10 @@
+stock_id,stock,bar,cut,length_mm,from_end_mm,kerf_mm
+al6061_tube_6p0od_0p125w_72in,"6061-T6 aluminum round tube 6.0"" OD x 0.125"" wall, 72"" cut (Speedy Metals)",1,"lox tank",183.8,0.0,2.0
+al6061_tube_6p0od_0p125w_72in,"6061-T6 aluminum round tube 6.0"" OD x 0.125"" wall, 72"" cut (Speedy Metals)",1,"fuel tank",161.2,185.8,2.0
+al6061_tube_6p0od_0p125w_72in,"6061-T6 aluminum round tube 6.0"" OD x 0.125"" wall, 72"" cut (Speedy Metals)",1,"intertank",150.0,349.1,2.0
+al6061_tube_6p0od_0p125w_72in,"6061-T6 aluminum round tube 6.0"" OD x 0.125"" wall, 72"" cut (Speedy Metals)",1,"offcut",1327.7,,
+wildman_g12_6in_60in,"Wildman G12-6.0 filament-wound fiberglass airframe, 60""",1,"pressurant",849.6,0.0,1.5
+wildman_g12_6in_60in,"Wildman G12-6.0 filament-wound fiberglass airframe, 60""",1,"engine bay",600.0,851.1,1.5
+wildman_g12_6in_60in,"Wildman G12-6.0 filament-wound fiberglass airframe, 60""",1,"offcut",71.4,,
+wildman_g12_6in_60in,"Wildman G12-6.0 filament-wound fiberglass airframe, 60""",2,"recovery",800.0,0.0,1.5
+wildman_g12_6in_60in,"Wildman G12-6.0 filament-wound fiberglass airframe, 60""",2,"offcut",722.5,,

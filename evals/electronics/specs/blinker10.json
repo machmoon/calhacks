@@ -1,0 +1,97 @@
+{
+ "request": "eval fixture blinker10",
+ "circuit": {
+  "devices": {
+   "J1": {
+    "kind": "connector",
+    "package": "JST_PH_2P",
+    "pins": {
+     "1": "1",
+     "2": "2"
+    }
+   },
+   "NE555": {
+    "pins": {
+     "CTRL": "5",
+     "DISCH": "7",
+     "GND": "1",
+     "OUT": "3",
+     "RESET": "4",
+     "THRES": "6",
+     "TRIG": "2",
+     "VCC": "8"
+    }
+   }
+  },
+  "nets": {
+   "+5V": [
+    "NE555.VCC",
+    "NE555.RESET",
+    "R1.1",
+    "Cdec.1",
+    "J1.1"
+   ],
+   "CTRL": [
+    "NE555.CTRL",
+    "Cctrl.1"
+   ],
+   "DIS": [
+    "NE555.DISCH",
+    "R1.2",
+    "R2.1"
+   ],
+   "GND": [
+    "NE555.GND",
+    "C1.2",
+    "Cctrl.2",
+    "Cdec.2",
+    "D1.1",
+    "J1.2"
+   ],
+   "LEDK": [
+    "Rled.2",
+    "D1.2"
+   ],
+   "OUT": [
+    "NE555.OUT",
+    "Rled.1"
+   ],
+   "THR": [
+    "NE555.THRES",
+    "NE555.TRIG",
+    "R2.2",
+    "C1.1"
+   ]
+  },
+  "passives": {
+   "C1": {
+    "type": "capacitor",
+    "value": "1uF"
+   },
+   "Cctrl": {
+    "type": "capacitor",
+    "value": "10nF"
+   },
+   "Cdec": {
+    "type": "capacitor",
+    "value": "100nF"
+   },
+   "D1": {
+    "type": "diode",
+    "value": "LED"
+   },
+   "R1": {
+    "type": "resistor",
+    "value": "47k"
+   },
+   "R2": {
+    "type": "resistor",
+    "value": "47k"
+   },
+   "Rled": {
+    "type": "resistor",
+    "value": "1k"
+   }
+  }
+ }
+}

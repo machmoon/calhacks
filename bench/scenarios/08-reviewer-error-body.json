@@ -1,0 +1,25 @@
+{
+  "id": "reviewer-error-body",
+  "description": "The design passes every check, but the reviewer's replies are API error objects. Silence is not approval: the run must end in an error, not a pass.",
+  "domain": "toy",
+  "request": "a span for a 100 mm gap under $50",
+  "spec": {"target_mm": 100.0, "budget_usd": 50.0},
+  "limits": {"max_rounds": 1, "orchestrator_turns": 6, "specialist_turns": 4, "reviewer_turns": 6, "budget_usd": 1.25},
+  "model": {
+    "orchestrator": [
+      {"tool": "design", "input": {}},
+      {"tool": "edit_design", "input": {"patch_json": "{\"span_mm\": 110}", "why": "reach the target"}},
+      {"tool": "check", "input": {}},
+      {"tool": "submit", "input": {"summary": "span 110 mm, all checks pass"}}
+    ],
+    "reviewer": [
+      {"error_body": true, "repeat": 4}
+    ]
+  },
+  "expect": {
+    "passed": false,
+    "stop": "error",
+    "checks_pass": ["span", "budget", "part_known"],
+    "max_calls": 8
+  }
+}

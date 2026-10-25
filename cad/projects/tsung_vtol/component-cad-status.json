@@ -1,0 +1,45 @@
+{
+  "updated": "2026-10-24",
+  "policy": "Prefer off-the-shelf components and import their published CAD. Exact manufacturer/model identity must match the selected BOM; do not silently substitute or rescale a similar model. Custom PCB/mechanical component design is a fallback when needed.",
+  "reference_components": [
+    {
+      "model": "AOS Supernova 2807-1400KV",
+      "role": "lift and cruise motor",
+      "cad_status": "not_found_in_checked_primary_sources",
+      "checked_sources": [
+        "https://www.aos-rc.com/old-designs/aos-supernova-2807-1400kv"
+      ],
+      "available_evidence": "Manufacturer 2D mounting drawing and dimensional envelope; not supplier STEP",
+      "current_native_representation": "out/tsung-vtol-lift-mount/assembly.FCStd"
+    },
+    {
+      "model": "Gemfan 7042",
+      "role": "lift and cruise propellers",
+      "cad_status": "not_found_in_checked_sources",
+      "available_evidence": "Author component identification; current sweep disks are clearance envelopes, not detailed propellers"
+    },
+    {
+      "model": "Speedybee F405 Wing",
+      "role": "flight controller",
+      "cad_status": "not_found_in_checked_primary_sources",
+      "checked_sources": [
+        "https://www.speedybee.com/f405-wing-app-download/",
+        "https://www.speedybee.com/download/"
+      ],
+      "available_evidence": "Manufacturer manual; no matching 3D download found on checked pages"
+    },
+    {
+      "model": "Holybro Tekko32 F4 45A",
+      "role": "lift ESC",
+      "cad_status": "not_found_in_checked_primary_sources",
+      "checked_sources": [
+        "https://docs.holybro.com/company/user-manuals/esc",
+        "https://holybro.com/pages/downloads"
+      ],
+      "identity_limitation": "Single vs4-in-1 variant must match author hardware before selecting geometry"
+    }
+  ],
+  "separate_import_library": "../../components/catalog.json",
+  "separate_library_is_not_reference_bom": true,
+  "scope": "Checked-source availability ledger, not proof that a CAD file exists nowhere; no component substitutions or purchases made"
+}

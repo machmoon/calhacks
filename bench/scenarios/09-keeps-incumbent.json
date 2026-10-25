@@ -1,0 +1,27 @@
+{
+  "id": "keeps-incumbent",
+  "description": "The lead verifies a passing 110 mm design, then breaks it (50 mm) and submits without checking. The harness must hand the reviewer the best verified design, and the run must end on it.",
+  "domain": "toy",
+  "request": "a span for a 100 mm gap under $50",
+  "spec": {"target_mm": 100.0, "budget_usd": 50.0},
+  "model": {
+    "orchestrator": [
+      {"tool": "design", "input": {}},
+      {"tool": "edit_design", "input": {"patch_json": "{\"span_mm\": 110}", "why": "reach the target"}},
+      {"tool": "check", "input": {}},
+      {"tool": "edit_design", "input": {"patch_json": "{\"span_mm\": 50}", "why": "trying a shorter cut"}},
+      {"tool": "submit", "input": {"summary": "span 50 mm"}}
+    ],
+    "reviewer": [
+      {"tool": "verdict", "input": {"summary": "no blocking issues"}}
+    ]
+  },
+  "expect": {
+    "passed": true,
+    "stop": "passed",
+    "design": {"span_mm": 110},
+    "kept_incumbent": true,
+    "max_rounds": 1,
+    "max_calls": 6
+  }
+}

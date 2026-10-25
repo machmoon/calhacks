@@ -1,0 +1,301 @@
+{
+  "kind": "fab",
+  "title": "Fabrication: rocket build",
+  "items": [
+    {
+      "label": "process plan",
+      "path": "plan.json",
+      "media": "json",
+      "summary": "16 made parts (10 machined programs, 1 prints, 5 cuts), 31 bought lines; G-code in gcode/",
+      "metrics": {
+        "machine_minutes": 942.5795580319264,
+        "minutes": 1675.1962246985931,
+        "print_grams": 219.97,
+        "print_minutes": 712.6166666666667
+      }
+    },
+    {
+      "label": "process plan (table)",
+      "path": "plan.csv",
+      "media": "csv",
+      "summary": "one row per part and process",
+      "metrics": {}
+    },
+    {
+      "label": "chamber/nozzle liner (turned)",
+      "path": "video/liner_lathe.mp4",
+      "media": "mp4",
+      "summary": "round bar 127.0 mm dia x 641.5 mm on the 2-axis CNC lathe: 2 setups, 11 ops, simulated material removal",
+      "metrics": {
+        "chips_g": 9322.529748520503,
+        "grams": 1652.2792104700068,
+        "minutes": 361.03133333825144,
+        "qty": 1.0,
+        "stock_g": 10970.851449269654
+      }
+    },
+    {
+      "label": "chamber/nozzle liner finished (turned)",
+      "path": "img/liner_lathe.png",
+      "media": "png",
+      "summary": "last frame of the simulation",
+      "metrics": {
+        "grams": 1652.2792104700068
+      }
+    },
+    {
+      "label": "chamber case (turned)",
+      "path": "video/case_lathe.mp4",
+      "media": "mp4",
+      "summary": "round bar 127.0 mm dia x 599.6 mm on the 2-axis CNC lathe: 2 setups, 9 ops, simulated material removal",
+      "metrics": {
+        "chips_g": 18848.504112298997,
+        "grams": 1664.5981024404866,
+        "minutes": 165.01361534974757,
+        "qty": 1.0,
+        "stock_g": 20508.254449009997
+      }
+    },
+    {
+      "label": "chamber case finished (turned)",
+      "path": "img/case_lathe.png",
+      "media": "png",
+      "summary": "last frame of the simulation",
+      "metrics": {
+        "grams": 1664.5981024404866
+      }
+    },
+    {
+      "label": "injector plate (turned)",
+      "path": "video/injector_lathe.mp4",
+      "media": "mp4",
+      "summary": "round bar 127.0 mm dia x 15.0 mm on the 2-axis CNC lathe: 2 setups, 4 ops, simulated material removal",
+      "metrics": {
+        "chips_g": 172.0820138723966,
+        "grams": 340.9593087138204,
+        "minutes": 33.20975621472438,
+        "qty": 1.0,
+        "stock_g": 513.0413225862166
+      }
+    },
+    {
+      "label": "injector plate finished (turned)",
+      "path": "img/injector_lathe.png",
+      "media": "png",
+      "summary": "last frame of the simulation",
+      "metrics": {
+        "grams": 340.9593087138204
+      }
+    },
+    {
+      "label": "injector plate (milled)",
+      "path": "video/injector_mill.mp4",
+      "media": "mp4",
+      "summary": "round bar 125.0 mm dia x 12.0 mm on the 3-axis CNC mill: 1 setups, 5 ops, simulated material removal",
+      "metrics": {
+        "chips_g": 82.40104687499976,
+        "grams": 315.2067733449585,
+        "minutes": 53.972370283059995,
+        "qty": 1.0,
+        "stock_g": 397.6078202199582
+      }
+    },
+    {
+      "label": "injector plate finished (milled)",
+      "path": "img/injector_mill.png",
+      "media": "png",
+      "summary": "last frame of the simulation",
+      "metrics": {
+        "grams": 315.2067733449585
+      }
+    },
+    {
+      "label": "N2O tank bulkhead (turned)",
+      "path": "video/ox_bulkhead_lathe.mp4",
+      "media": "mp4",
+      "summary": "round bar 152.4 mm dia x 20.0 mm on the 2-axis CNC lathe: 2 setups, 7 ops, simulated material removal",
+      "metrics": {
+        "chips_g": 313.47509093076496,
+        "grams": 671.5642484347718,
+        "minutes": 36.05743461857507,
+        "qty": 2.0,
+        "stock_g": 985.0393393655353
+      }
+    },
+    {
+      "label": "N2O tank bulkhead finished (turned)",
+      "path": "img/ox_bulkhead_lathe.png",
+      "media": "png",
+      "summary": "last frame of the simulation",
+      "metrics": {
+        "grams": 671.5642484347718
+      }
+    },
+    {
+      "label": "N2O tank bulkhead (milled)",
+      "path": "video/ox_bulkhead_mill.mp4",
+      "media": "mp4",
+      "summary": "round bar 146.0 mm dia x 17.0 mm on the 3-axis CNC mill: 2 setups, 3 ops, simulated material removal",
+      "metrics": {
+        "chips_g": 21.032152772400003,
+        "grams": 746.8786294468027,
+        "minutes": 35.75486127942835,
+        "qty": 2.0,
+        "stock_g": 767.9107822192027
+      }
+    },
+    {
+      "label": "N2O tank bulkhead finished (milled)",
+      "path": "img/ox_bulkhead_mill.png",
+      "media": "png",
+      "summary": "last frame of the simulation",
+      "metrics": {
+        "grams": 746.8786294468027
+      }
+    },
+    {
+      "label": "fuel tank bulkhead (turned)",
+      "path": "video/fuel_bulkhead_lathe.mp4",
+      "media": "mp4",
+      "summary": "round bar 152.4 mm dia x 17.0 mm on the 2-axis CNC lathe: 2 setups, 7 ops, simulated material removal",
+      "metrics": {
+        "chips_g": 301.23285747638175,
+        "grams": 536.0505809843243,
+        "minutes": 35.95923845544099,
+        "qty": 2.0,
+        "stock_g": 837.2834384607049
+      }
+    },
+    {
+      "label": "fuel tank bulkhead finished (turned)",
+      "path": "img/fuel_bulkhead_lathe.png",
+      "media": "png",
+      "summary": "last frame of the simulation",
+      "metrics": {
+        "grams": 536.0505809843243
+      }
+    },
+    {
+      "label": "fuel tank bulkhead (milled)",
+      "path": "video/fuel_bulkhead_mill.mp4",
+      "media": "mp4",
+      "summary": "round bar 146.0 mm dia x 14.0 mm on the 3-axis CNC mill: 2 setups, 3 ops, simulated material removal",
+      "metrics": {
+        "chips_g": 17.32059640080001,
+        "grams": 615.076518367955,
+        "minutes": 34.419815914023275,
+        "qty": 2.0,
+        "stock_g": 632.397114768755
+      }
+    },
+    {
+      "label": "fuel tank bulkhead finished (milled)",
+      "path": "img/fuel_bulkhead_mill.png",
+      "media": "png",
+      "summary": "last frame of the simulation",
+      "metrics": {
+        "grams": 615.076518367955
+      }
+    },
+    {
+      "label": "fins (G10) (routed)",
+      "path": "video/fins_router_1.mp4",
+      "media": "mp4",
+      "summary": "block 304.8 x 304.8 x 4.76 mm on the CNC router: 1 setups, 2 ops, simulated material removal",
+      "metrics": {
+        "chips_g": 38.69532001006212,
+        "minutes": 22.48489115560375,
+        "qty": 1.0,
+        "stock_g": 818.447911488
+      }
+    },
+    {
+      "label": "fins (G10) finished (routed)",
+      "path": "img/fins_router_1.png",
+      "media": "png",
+      "summary": "last frame of the simulation",
+      "metrics": {}
+    },
+    {
+      "label": "fin alignment jig (print)",
+      "path": "video/print_fin_alignment_jig.mp4",
+      "media": "mp4",
+      "summary": "print timelapse from the sliced G-code, 124 layers",
+      "metrics": {
+        "grams": 219.97,
+        "layers": 124.0,
+        "minutes": 712.6166666666667
+      }
+    },
+    {
+      "label": "cut list (first-fit decreasing, kerf per cut)",
+      "path": "cutlist.csv",
+      "media": "csv",
+      "summary": "every tube/rod cut with its bar, offset and offcut",
+      "metrics": {
+        "bars": 4.0,
+        "cuts": 5.0,
+        "minutes": 20.0
+      }
+    },
+    {
+      "label": "tube and rod cutting",
+      "path": "video/cut_tubes.mp4",
+      "media": "mp4",
+      "summary": "5 cuts from 4 bars",
+      "metrics": {
+        "minutes": 20.0
+      }
+    },
+    {
+      "label": "assembly",
+      "path": "video/assembly.mp4",
+      "media": "mp4",
+      "summary": "24 parts fly in in the build guide's order (24 part STLs in the vehicle frame)",
+      "metrics": {
+        "parts": 24.0,
+        "steps": 6.0
+      }
+    },
+    {
+      "label": "turntable",
+      "path": "video/turntable.mp4",
+      "media": "mp4",
+      "summary": "the finished vehicle",
+      "metrics": {
+        "parts": 24.0
+      }
+    },
+    {
+      "label": "render",
+      "path": "img/render_hero.png",
+      "media": "png",
+      "summary": "the finished vehicle",
+      "metrics": {}
+    },
+    {
+      "label": "render (wide)",
+      "path": "img/render_wide.png",
+      "media": "png",
+      "summary": "the whole vehicle",
+      "metrics": {}
+    }
+  ],
+  "checks": [
+    {
+      "name": "every machined part fits its stock",
+      "passed": false,
+      "detail": "fin needs 313.4 mm, stock 304.8 mm"
+    },
+    {
+      "name": "machining stock is in the BOM",
+      "passed": false,
+      "detail": "N2O tank bulkheads: 6061 round bar 6.0 in dia x 44 mm (2 blanks); fuel tank bulkheads: 6061 round bar 6.0 in dia x 38 mm (2 blanks)"
+    },
+    {
+      "name": "cut lists fit the bought tube/rod",
+      "passed": false,
+      "detail": "Wildman G12-6.0 filament-wound fiberglass airframe, 60\": 3 bars needed, 2 bought; lox tank 2714 mm > al6061_tube_6p0od_0p125w_72in 1829 mm"
+    }
+  ]
+}

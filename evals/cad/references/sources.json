@@ -1,0 +1,23 @@
+[
+  {
+    "file": "A simple model rocket.ork",
+    "url": "https://raw.githubusercontent.com/openrocket/openrocket/591c5e5f7b7377e48f2bd5e501cef25cdfbd61d8/core/src/main/resources/datafiles/examples/A%20simple%20model%20rocket.ork",
+    "commit": "591c5e5f7b7377e48f2bd5e501cef25cdfbd61d8",
+    "sha256": "53369c1707ca2f7959c0a2df2ef5af5d508806c7d0d3010026843905de18f4ae",
+    "license": "GPL-3.0-or-later"
+  },
+  {
+    "file": "Dual parachute deployment.ork",
+    "url": "https://raw.githubusercontent.com/openrocket/openrocket/591c5e5f7b7377e48f2bd5e501cef25cdfbd61d8/core/src/main/resources/datafiles/examples/Dual%20parachute%20deployment.ork",
+    "commit": "591c5e5f7b7377e48f2bd5e501cef25cdfbd61d8",
+    "sha256": "3b484264187f7867cfad875dcb16ba6b9e0aa4830f926414fb622c04c72f45dc",
+    "license": "GPL-3.0-or-later"
+  },
+  {
+    "file": "Two stage high power rocket.ork",
+    "url": "https://raw.githubusercontent.com/openrocket/openrocket/591c5e5f7b7377e48f2bd5e501cef25cdfbd61d8/core/src/main/resources/datafiles/examples/Two%20stage%20high%20power%20rocket.ork",
+    "commit": "591c5e5f7b7377e48f2bd5e501cef25cdfbd61d8",
+    "sha256": "ccb52e5002b0106c005e29b891487f851754d2891d910231eea68023fb171ebd",
+    "license": "GPL-3.0-or-later"
+  }
+]

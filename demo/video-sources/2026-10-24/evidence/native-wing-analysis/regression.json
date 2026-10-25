@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "zero_lift": 4.6508997859712e-16,
+  "lift_slope_per_rad": 4.893250485148908,
+  "classical_estimate_per_rad": 5.235987755982989,
+  "slope_tolerance_fraction": 0.12,
+  "speed_doubling_force_ratio": 4.0,
+  "negative_controls": 4,
+  "scope": "Symmetry, dimensional scaling and classical finite-wing sanity check; not experimental validation."
+}

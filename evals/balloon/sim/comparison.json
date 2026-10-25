@@ -1,0 +1,840 @@
+{
+  "api_track_included": true,
+  "checks_on_gfs_winds": {
+    "all": [
+      {
+        "detail": "burst at 37819 m (CUSF closed form says 38963 m), target 30000 m",
+        "margin": 7818.616129022295,
+        "name": "burst_altitude",
+        "passed": true
+      },
+      {
+        "detail": "launch 4.41 m/s, mean 5.18 m/s (band 4-6)",
+        "margin": 0.4064629785736269,
+        "name": "ascent_rate",
+        "passed": true
+      },
+      {
+        "detail": "4.31 m/s at 80 m with 2268 g under the chute",
+        "margin": 0.6903884744374906,
+        "name": "landing_speed",
+        "passed": true
+      },
+      {
+        "detail": "neck lift 2485 g vs flight train 768 g",
+        "margin": 1716.9276326501883,
+        "name": "lift_budget",
+        "passed": true
+      },
+      {
+        "detail": "need 5.31 m^3 at 21 C/1 atm, have 7.61 usable in 1 cylinder(s)",
+        "margin": 2.301988581044272,
+        "name": "gas_supply",
+        "passed": true
+      },
+      {
+        "detail": "package 1.26 lb, 0.56 oz/in^2 on its smallest face (36 in^2)",
+        "margin": 5.442086188216107,
+        "name": "faa101_package",
+        "passed": true
+      },
+      {
+        "detail": "package 1.26 lb",
+        "margin": 4.739376782797295,
+        "name": "faa101_package_max",
+        "passed": true
+      },
+      {
+        "detail": "package + chute + line 1.69 lb (counted as payload, conservative)",
+        "margin": 10.307270748914934,
+        "name": "faa101_total_payload",
+        "passed": true
+      },
+      {
+        "detail": "Ashaway braided Dacron kite line, 30 lb x 500 ft (Into The Wind #1319) rated 30 lbf; up to 45 lbf allowing 1.5x over the rating",
+        "margin": 5.015730485747923,
+        "name": "faa101_suspension",
+        "passed": true
+      },
+      {
+        "detail": "133 N rated vs 111 N (5x descent weight)",
+        "margin": 22.201950782698475,
+        "name": "suspension_strength",
+        "passed": true
+      },
+      {
+        "detail": "APRS L91 3S1P: need 1.5 Wh, have 9.7 Wh at -10 C cell (72% capacity)",
+        "margin": 8.254283571592055,
+        "name": "power_margin",
+        "passed": true
+      },
+      {
+        "detail": "APRS L91 3S1P: lightaprs-2 takes 2.7-6.0 V, gets 2.7-5.4 V",
+        "margin": 0.0,
+        "name": "supply_voltage",
+        "passed": true
+      },
+      {
+        "detail": "camera L91 4S2P: pololu-s9v11f5 rated 1.0 A, load 0.62 A",
+        "margin": 0.38,
+        "name": "supply_current",
+        "passed": true
+      },
+      {
+        "detail": "runcam5-orange: box -10..39 C vs rated -10..40 C (rating assumed), ground -10..35 C (cases -10.0 C, 15.0 C, 35.0 C); forecast 15 C included",
+        "margin": 0.1494197439963436,
+        "name": "part_temperature",
+        "passed": true
+      },
+      {
+        "detail": "declared go -12.0..35.0 C ground; modelled -12.9..35.7 C; required -10..35 C; forecast 15 C included",
+        "margin": 0.0,
+        "name": "launch_window",
+        "passed": true
+      },
+      {
+        "detail": "APRS (LightAPRS 2.0): worst 33.0 dB at 40 km (max range 60 km), last heard 21 m AGL; alive to landing",
+        "margin": 33.02189136521007,
+        "name": "link_primary",
+        "passed": true
+      },
+      {
+        "detail": "LoRa 915 (Heltec + M10): worst 19.0 dB at 40 km (max range 60 km), last heard 21 m AGL; alive to landing",
+        "margin": 18.984211811821524,
+        "name": "link_secondary",
+        "passed": true
+      },
+      {
+        "detail": "APRS (LightAPRS 2.0): u-blox MAX-M8Q limit 50000 m (airborne model) vs burst 37819 m",
+        "margin": 12181.383870977705,
+        "name": "gps_altitude",
+        "passed": true
+      },
+      {
+        "detail": "lightaprs-2 -> matek-m10q at 0.22 m: -32.5 dBm vs -22.0 dBm (fundamental 144 MHz through patch rejection 59 dB)",
+        "margin": 10.481847816242507,
+        "name": "gps_coexistence",
+        "passed": true
+      },
+      {
+        "detail": "heltec-lora32-v3 legal (amateur, licensed operator)",
+        "margin": 0.0,
+        "name": "licensing",
+        "passed": true
+      },
+      {
+        "detail": "runcam5-orange records 8.4 h at the cold; lens 0 mm behind the port, clear cone +-49 deg (need +-30); burst at 2.0 h",
+        "margin": 6.409913673040973,
+        "name": "imaging",
+        "passed": true
+      },
+      {
+        "detail": "43 solids, no overlapping pair",
+        "margin": 0.0,
+        "name": "payload_fit",
+        "passed": true
+      },
+      {
+        "detail": "rack 149 g, 15.5 h on Bambu Lab P1S; largest plate 140 mm vs bed 256 mm",
+        "margin": 116.0,
+        "name": "printed_parts",
+        "passed": true
+      },
+      {
+        "detail": "P = 0.906: APRS (LightAPRS 2.0) 0.90, LoRa 915 (Heltec + M10) 0.85",
+        "margin": 0.006199999999999983,
+        "name": "recovery_probability",
+        "passed": true
+      },
+      {
+        "detail": "BOM $1400.34; no budget stated (information only)",
+        "margin": 0.0,
+        "name": "cost",
+        "passed": true
+      }
+    ],
+    "failing": [],
+    "passed": true
+  },
+  "endpoint": "https://api.v2.sondehub.org/tawhiri",
+  "gfs_dataset": "2026-10-24T12:00:00Z",
+  "gfs_wind_profile": [
+    {
+      "alt_m": 235.4,
+      "speed_mps": 0.9486684787162627,
+      "toward_deg": 308.47904411936946
+    },
+    {
+      "alt_m": 546.2,
+      "speed_mps": 1.5630610532532005,
+      "toward_deg": 315.5590787819982
+    },
+    {
+      "alt_m": 857.0,
+      "speed_mps": 2.257438098548677,
+      "toward_deg": 321.5656009580336
+    },
+    {
+      "alt_m": 1167.8,
+      "speed_mps": 2.293506826111682,
+      "toward_deg": 343.5614133521084
+    },
+    {
+      "alt_m": 1478.5999999999997,
+      "speed_mps": 2.504616985981081,
+      "toward_deg": 18.9346304705156
+    },
+    {
+      "alt_m": 1789.3999999999994,
+      "speed_mps": 3.1947773773559143,
+      "toward_deg": 40.35463312113519
+    },
+    {
+      "alt_m": 2100.1999999999994,
+      "speed_mps": 3.5368119609723587,
+      "toward_deg": 48.99187996565944
+    },
+    {
+      "alt_m": 2410.9999999999995,
+      "speed_mps": 3.210591328365352,
+      "toward_deg": 55.710135189276215
+    },
+    {
+      "alt_m": 2721.7999999999997,
+      "speed_mps": 2.446273858437834,
+      "toward_deg": 71.8468324373032
+    },
+    {
+      "alt_m": 3032.6,
+      "speed_mps": 2.1908486130216382,
+      "toward_deg": 103.83543802845143
+    },
+    {
+      "alt_m": 3343.4,
+      "speed_mps": 2.774581553139028,
+      "toward_deg": 129.42930206268858
+    },
+    {
+      "alt_m": 3654.2,
+      "speed_mps": 3.517354329135442,
+      "toward_deg": 140.3675985031226
+    },
+    {
+      "alt_m": 3965.0,
+      "speed_mps": 3.9811164483301136,
+      "toward_deg": 142.50678205560823
+    },
+    {
+      "alt_m": 4275.800000000001,
+      "speed_mps": 4.234159098217575,
+      "toward_deg": 141.55822926984183
+    },
+    {
+      "alt_m": 4586.600000000002,
+      "speed_mps": 4.477642328442351,
+      "toward_deg": 141.02025429157186
+    },
+    {
+      "alt_m": 4897.400000000003,
+      "speed_mps": 4.697814715744752,
+      "toward_deg": 140.27272127384734
+    },
+    {
+      "alt_m": 5208.200000000004,
+      "speed_mps": 4.802938209063171,
+      "toward_deg": 138.57676183731206
+    },
+    {
+      "alt_m": 5519.0000000000055,
+      "speed_mps": 4.808179331311453,
+      "toward_deg": 136.4894696435591
+    },
+    {
+      "alt_m": 5829.800000000007,
+      "speed_mps": 4.826831331790295,
+      "toward_deg": 134.8178598695847
+    },
+    {
+      "alt_m": 6140.600000000008,
+      "speed_mps": 5.022483360047491,
+      "toward_deg": 133.95501790537304
+    },
+    {
+      "alt_m": 6451.400000000009,
+      "speed_mps": 5.617361201827723,
+      "toward_deg": 133.42720652481137
+    },
+    {
+      "alt_m": 6762.20000000001,
+      "speed_mps": 6.445497031529895,
+      "toward_deg": 133.007464571844
+    },
+    {
+      "alt_m": 7073.000000000011,
+      "speed_mps": 7.191068557980724,
+      "toward_deg": 131.3387384640731
+    },
+    {
+      "alt_m": 7383.800000000012,
+      "speed_mps": 7.489146726970296,
+      "toward_deg": 126.6046103730699
+    },
+    {
+      "alt_m": 7694.600000000013,
+      "speed_mps": 7.5874603631556905,
+      "toward_deg": 120.11204165320129
+    },
+    {
+      "alt_m": 8005.400000000014,
+      "speed_mps": 7.657642298428625,
+      "toward_deg": 114.74190262027692
+    },
+    {
+      "alt_m": 8316.200000000015,
+      "speed_mps": 7.673121195182849,
+      "toward_deg": 112.233510495683
+    },
+    {
+      "alt_m": 8627.000000000015,
+      "speed_mps": 7.763466974544669,
+      "toward_deg": 110.37728437227213
+    },
+    {
+      "alt_m": 8937.800000000014,
+      "speed_mps": 8.010393348883037,
+      "toward_deg": 108.57363811019539
+    },
+    {
+      "alt_m": 9248.600000000013,
+      "speed_mps": 8.809891251844496,
+      "toward_deg": 106.3275148554015
+    },
+    {
+      "alt_m": 9559.400000000012,
+      "speed_mps": 9.472571514387205,
+      "toward_deg": 106.18087841125805
+    },
+    {
+      "alt_m": 9870.200000000012,
+      "speed_mps": 9.840767489664053,
+      "toward_deg": 108.79514632574767
+    },
+    {
+      "alt_m": 10181.000000000011,
+      "speed_mps": 9.90713308267038,
+      "toward_deg": 109.60341848060465
+    },
+    {
+      "alt_m": 10491.80000000001,
+      "speed_mps": 9.665183359700888,
+      "toward_deg": 108.4419112522163
+    },
+    {
+      "alt_m": 10802.60000000001,
+      "speed_mps": 9.816831284240552,
+      "toward_deg": 105.4648240606887
+    },
+    {
+      "alt_m": 11113.400000000009,
+      "speed_mps": 10.42614931568363,
+      "toward_deg": 101.09409001154623
+    },
+    {
+      "alt_m": 11424.200000000008,
+      "speed_mps": 11.103426989459992,
+      "toward_deg": 96.75549864635616
+    },
+    {
+      "alt_m": 11735.000000000007,
+      "speed_mps": 11.855842027289214,
+      "toward_deg": 92.13560273264935
+    },
+    {
+      "alt_m": 12045.800000000007,
+      "speed_mps": 12.501240853502837,
+      "toward_deg": 88.193936193558
+    },
+    {
+      "alt_m": 12356.600000000006,
+      "speed_mps": 11.422640076318807,
+      "toward_deg": 85.50068270896246
+    },
+    {
+      "alt_m": 12667.400000000005,
+      "speed_mps": 10.074804015897943,
+      "toward_deg": 82.30513560770608
+    },
+    {
+      "alt_m": 12978.200000000004,
+      "speed_mps": 8.853694656331747,
+      "toward_deg": 75.61586127030151
+    },
+    {
+      "alt_m": 13289.000000000004,
+      "speed_mps": 8.14843331957515,
+      "toward_deg": 61.763378878189464
+    },
+    {
+      "alt_m": 13599.800000000003,
+      "speed_mps": 8.024466599785097,
+      "toward_deg": 46.07097198211003
+    },
+    {
+      "alt_m": 13910.600000000002,
+      "speed_mps": 8.49254820893242,
+      "toward_deg": 34.81616244732943
+    },
+    {
+      "alt_m": 14221.400000000001,
+      "speed_mps": 9.157390134789527,
+      "toward_deg": 37.381757608622856
+    },
+    {
+      "alt_m": 14532.2,
+      "speed_mps": 9.86228023832111,
+      "toward_deg": 40.5499352080731
+    },
+    {
+      "alt_m": 14843.0,
+      "speed_mps": 10.602113803343386,
+      "toward_deg": 43.339018303700044
+    },
+    {
+      "alt_m": 15153.8,
+      "speed_mps": 10.918361898327747,
+      "toward_deg": 44.95219313519919
+    },
+    {
+      "alt_m": 15464.599999999999,
+      "speed_mps": 10.676161742987436,
+      "toward_deg": 45.44119241920269
+    },
+    {
+      "alt_m": 15775.399999999998,
+      "speed_mps": 10.421421926197903,
+      "toward_deg": 45.93772575962767
+    },
+    {
+      "alt_m": 16086.199999999997,
+      "speed_mps": 10.166101839103703,
+      "toward_deg": 46.47182401582885
+    },
+    {
+      "alt_m": 16396.999999999996,
+      "speed_mps": 9.861315391753884,
+      "toward_deg": 47.11009547796731
+    },
+    {
+      "alt_m": 16707.799999999992,
+      "speed_mps": 9.048329679977956,
+      "toward_deg": 48.370722272740196
+    },
+    {
+      "alt_m": 17018.599999999988,
+      "speed_mps": 8.15338449781092,
+      "toward_deg": 49.95999554426607
+    },
+    {
+      "alt_m": 17329.399999999983,
+      "speed_mps": 7.262830707184322,
+      "toward_deg": 51.88480938434548
+    },
+    {
+      "alt_m": 17640.19999999998,
+      "speed_mps": 6.378894908240605,
+      "toward_deg": 54.28813362906127
+    },
+    {
+      "alt_m": 17950.999999999975,
+      "speed_mps": 5.505437485853818,
+      "toward_deg": 57.39997860728963
+    },
+    {
+      "alt_m": 18261.79999999997,
+      "speed_mps": 4.649435935998306,
+      "toward_deg": 61.60994447066266
+    },
+    {
+      "alt_m": 18572.599999999966,
+      "speed_mps": 3.8611688769614614,
+      "toward_deg": 66.94051564097943
+    },
+    {
+      "alt_m": 18883.39999999996,
+      "speed_mps": 3.5668415452298916,
+      "toward_deg": 64.64775622896126
+    },
+    {
+      "alt_m": 19194.199999999957,
+      "speed_mps": 3.4415821930713077,
+      "toward_deg": 59.41672843061373
+    },
+    {
+      "alt_m": 19504.999999999953,
+      "speed_mps": 3.353666678468926,
+      "toward_deg": 53.92273666120471
+    },
+    {
+      "alt_m": 19815.799999999945,
+      "speed_mps": 3.304320230467048,
+      "toward_deg": 48.281622277933074
+    },
+    {
+      "alt_m": 20126.59999999994,
+      "speed_mps": 3.2935970083110875,
+      "toward_deg": 42.62962677966808
+    },
+    {
+      "alt_m": 20437.39999999994,
+      "speed_mps": 3.3202840434697007,
+      "toward_deg": 37.10624235725632
+    },
+    {
+      "alt_m": 20748.199999999935,
+      "speed_mps": 3.2352832004341834,
+      "toward_deg": 32.58083916304331
+    },
+    {
+      "alt_m": 21058.99999999993,
+      "speed_mps": 2.6632109722585264,
+      "toward_deg": 30.187581727257047
+    },
+    {
+      "alt_m": 21369.799999999927,
+      "speed_mps": 2.0525324680966044,
+      "toward_deg": 26.534988642295442
+    },
+    {
+      "alt_m": 21680.599999999922,
+      "speed_mps": 1.4522427613320126,
+      "toward_deg": 19.568491337529867
+    },
+    {
+      "alt_m": 21991.399999999918,
+      "speed_mps": 0.8994385556711662,
+      "toward_deg": 3.0245070478824143
+    },
+    {
+      "alt_m": 22302.199999999913,
+      "speed_mps": 0.5841741351883498,
+      "toward_deg": 316.79433809003046
+    },
+    {
+      "alt_m": 22612.99999999991,
+      "speed_mps": 0.8572339099885854,
+      "toward_deg": 266.7386681157256
+    },
+    {
+      "alt_m": 22923.799999999905,
+      "speed_mps": 1.4210992646747813,
+      "toward_deg": 248.29628694292546
+    },
+    {
+      "alt_m": 23234.599999999897,
+      "speed_mps": 2.0557013057820015,
+      "toward_deg": 240.74891095424454
+    },
+    {
+      "alt_m": 23545.399999999896,
+      "speed_mps": 2.7176551236858395,
+      "toward_deg": 236.8610179464497
+    },
+    {
+      "alt_m": 23856.199999999895,
+      "speed_mps": 3.319354894640914,
+      "toward_deg": 235.06615484692057
+    },
+    {
+      "alt_m": 24166.999999999887,
+      "speed_mps": 3.156518439593262,
+      "toward_deg": 239.0949080526538
+    },
+    {
+      "alt_m": 24477.799999999883,
+      "speed_mps": 2.917623451109725,
+      "toward_deg": 244.46601016618507
+    },
+    {
+      "alt_m": 24788.59999999988,
+      "speed_mps": 2.6978052187774746,
+      "toward_deg": 250.7375593754896
+    },
+    {
+      "alt_m": 25099.399999999874,
+      "speed_mps": 2.5050286710027336,
+      "toward_deg": 258.05716875113546
+    },
+    {
+      "alt_m": 25410.19999999987,
+      "speed_mps": 2.3492165951908848,
+      "toward_deg": 266.5140750160089
+    },
+    {
+      "alt_m": 25720.999999999865,
+      "speed_mps": 2.241618390011049,
+      "toward_deg": 276.05792381652185
+    },
+    {
+      "alt_m": 26031.79999999986,
+      "speed_mps": 2.193048138750393,
+      "toward_deg": 286.4160506595527
+    },
+    {
+      "alt_m": 26342.599999999857,
+      "speed_mps": 2.177701263074184,
+      "toward_deg": 296.96098695778255
+    },
+    {
+      "alt_m": 26653.399999999852,
+      "speed_mps": 1.6992404686391351,
+      "toward_deg": 308.20412213206686
+    },
+    {
+      "alt_m": 26964.19999999985,
+      "speed_mps": 1.1221910640284407,
+      "toward_deg": 330.9524305907723
+    },
+    {
+      "alt_m": 27274.999999999847,
+      "speed_mps": 0.940191602438771,
+      "toward_deg": 14.848892922453523
+    },
+    {
+      "alt_m": 27585.79999999984,
+      "speed_mps": 1.3194700898902876,
+      "toward_deg": 50.79343096860971
+    },
+    {
+      "alt_m": 27896.599999999835,
+      "speed_mps": 1.9524705994029503,
+      "toward_deg": 67.19670896073076
+    },
+    {
+      "alt_m": 28207.39999999983,
+      "speed_mps": 2.661064881564496,
+      "toward_deg": 75.26944154571464
+    },
+    {
+      "alt_m": 28518.199999999826,
+      "speed_mps": 3.396256679895922,
+      "toward_deg": 79.93218762410778
+    },
+    {
+      "alt_m": 28828.99999999982,
+      "speed_mps": 4.142538186659177,
+      "toward_deg": 82.95859511696575
+    },
+    {
+      "alt_m": 29139.799999999817,
+      "speed_mps": 4.893935017051545,
+      "toward_deg": 85.09031460876402
+    },
+    {
+      "alt_m": 29450.599999999813,
+      "speed_mps": 5.6478585493057105,
+      "toward_deg": 86.68398107575105
+    },
+    {
+      "alt_m": 29761.39999999981,
+      "speed_mps": 6.4031524010155865,
+      "toward_deg": 87.93046203771657
+    },
+    {
+      "alt_m": 30072.1999999998,
+      "speed_mps": 7.1593524380374385,
+      "toward_deg": 88.94057555383363
+    },
+    {
+      "alt_m": 30382.9999999998,
+      "speed_mps": 7.916366732918918,
+      "toward_deg": 89.78286176458586
+    },
+    {
+      "alt_m": 30693.7999999998,
+      "speed_mps": 8.67432242803784,
+      "toward_deg": 90.50189327502332
+    },
+    {
+      "alt_m": 31004.59999999979,
+      "speed_mps": 9.479937429017856,
+      "toward_deg": 91.11158503640097
+    },
+    {
+      "alt_m": 31315.399999999787,
+      "speed_mps": 10.428840299870918,
+      "toward_deg": 91.57569065611094
+    },
+    {
+      "alt_m": 31626.199999999782,
+      "speed_mps": 11.393588438899785,
+      "toward_deg": 91.94065340729756
+    },
+    {
+      "alt_m": 31936.999999999778,
+      "speed_mps": 12.362649079802166,
+      "toward_deg": 92.23009848484946
+    },
+    {
+      "alt_m": 32247.799999999774,
+      "speed_mps": 13.334700350315996,
+      "toward_deg": 92.45904190437734
+    },
+    {
+      "alt_m": 32558.59999999977,
+      "speed_mps": 14.308394463388373,
+      "toward_deg": 92.63853472775683
+    },
+    {
+      "alt_m": 32869.39999999977,
+      "speed_mps": 15.282348969863715,
+      "toward_deg": 92.77686241179545
+    },
+    {
+      "alt_m": 33180.19999999977,
+      "speed_mps": 16.255142093067946,
+      "toward_deg": 92.88033301247792
+    },
+    {
+      "alt_m": 33490.999999999774,
+      "speed_mps": 17.165708332179857,
+      "toward_deg": 92.2949722962755
+    },
+    {
+      "alt_m": 33801.79999999978,
+      "speed_mps": 18.01256189762198,
+      "toward_deg": 91.0486776991461
+    },
+    {
+      "alt_m": 34112.59999999978,
+      "speed_mps": 18.865008014224717,
+      "toward_deg": 89.91840932254247
+    },
+    {
+      "alt_m": 34423.39999999978,
+      "speed_mps": 19.723006844188003,
+      "toward_deg": 88.90177156313145
+    },
+    {
+      "alt_m": 34734.199999999786,
+      "speed_mps": 20.585790709119042,
+      "toward_deg": 87.98784757631162
+    },
+    {
+      "alt_m": 35044.99999999979,
+      "speed_mps": 21.452767914205015,
+      "toward_deg": 87.16732938531916
+    },
+    {
+      "alt_m": 35355.79999999979,
+      "speed_mps": 22.323508790772184,
+      "toward_deg": 86.43225518389693
+    },
+    {
+      "alt_m": 35666.599999999795,
+      "speed_mps": 23.176820818604305,
+      "toward_deg": 85.93018129172462
+    },
+    {
+      "alt_m": 35977.3999999998,
+      "speed_mps": 23.824743087603153,
+      "toward_deg": 86.98532471840605
+    },
+    {
+      "alt_m": 36288.1999999998,
+      "speed_mps": 24.456260753348683,
+      "toward_deg": 88.12961889666308
+    },
+    {
+      "alt_m": 36598.9999999998,
+      "speed_mps": 25.091698002715884,
+      "toward_deg": 89.20193778562641
+    },
+    {
+      "alt_m": 36909.79999999981,
+      "speed_mps": 25.729555391636254,
+      "toward_deg": 90.20596621722464
+    },
+    {
+      "alt_m": 37220.59999999981,
+      "speed_mps": 26.368430752452063,
+      "toward_deg": 91.14517241282906
+    },
+    {
+      "alt_m": 37531.39999999981,
+      "speed_mps": 27.02229720726902,
+      "toward_deg": 92.02226700747524
+    },
+    {
+      "alt_m": 37753.573437499814,
+      "speed_mps": 27.689547919110936,
+      "toward_deg": 92.83395058232794
+    }
+  ],
+  "landing_separation_km": {
+    "tawhiri_port_vs_api": 1.4338637851016847,
+    "wright_gfs_vs_assumed": 77.3336034766201,
+    "wright_gfs_vs_tawhiri_api": 5.706458243266951,
+    "wright_gfs_vs_tawhiri_port": 4.586095763543507
+  },
+  "launch": {
+    "alt_m": 80.0,
+    "datetime": "2026-10-25T16:00:00Z",
+    "lat": 35.62,
+    "lon": -119.69
+  },
+  "tawhiri_request_for_this_design": {
+    "ascent_rate_mps": 5.180317931231612,
+    "burst_altitude_m": 37818.616129022295,
+    "descent_rate_mps": 4.293079191499041,
+    "launch_alt_m": 80.0,
+    "launch_datetime": "2026-10-25T16:00:00Z",
+    "launch_lat": 35.62,
+    "launch_lon": -119.69
+  },
+  "tracks": {
+    "tawhiri_api": {
+      "burst_alt_m": 37820.346874999814,
+      "burst_t_min": 121.4296875,
+      "descent_min": 54.9453125,
+      "flight_min": 176.375,
+      "label": "Tawhiri API (SondeHub), GFS 2026-10-24T12:00:00Z",
+      "landing_bearing_deg": 85.74817913407819,
+      "landing_km_from_launch": 65.23416061089578,
+      "landing_lat": 35.66135346137844,
+      "landing_lon": -118.96991230516367
+    },
+    "tawhiri_port_gfs": {
+      "burst_alt_m": 37817.80670434527,
+      "burst_t_min": 121.4140625,
+      "descent_min": 55.9140625,
+      "flight_min": 177.328125,
+      "label": "Tawhiri model (Rust port), same GFS winds",
+      "landing_bearing_deg": 86.66310359854086,
+      "landing_km_from_launch": 64.24046037310197,
+      "landing_lat": 35.651546590372874,
+      "landing_lon": -118.98021718933988
+    },
+    "wright_assumed": {
+      "burst_alt_m": 37818.616129022295,
+      "burst_t_min": 121.41666666666667,
+      "descent_min": 55.74633529423093,
+      "flight_min": 177.1630019608976,
+      "label": "Wright model, assumed wind profile",
+      "landing_bearing_deg": 89.5590123828224,
+      "landing_km_from_launch": 136.8769660363548,
+      "landing_lat": 35.62,
+      "landing_lon": -118.17569527548099
+    },
+    "wright_gfs": {
+      "burst_alt_m": 37818.616129022295,
+      "burst_t_min": 121.41666666666667,
+      "descent_min": 55.74633529423093,
+      "flight_min": 177.1630019608976,
+      "label": "Wright model, GFS winds 2026-10-24T12:00:00Z",
+      "landing_bearing_deg": 86.86926676704408,
+      "landing_km_from_launch": 59.659777587943296,
+      "landing_lat": 35.64750690247323,
+      "landing_lon": -119.03072853103143
+    }
+  }
+}

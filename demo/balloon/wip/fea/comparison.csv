@@ -1,0 +1,2 @@
+part,case,quantity,closed_form,fea,ratio,note
+rack shelf,landing 51 g,max von Mises off the post edges, MPa,NaN,9.332679,NaN,"no closed-form rack check exists in wright-balloon"

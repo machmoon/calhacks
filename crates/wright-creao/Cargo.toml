@@ -1,0 +1,18 @@
+[package]
+name = "wright-creao"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+description = "CREAO AI integration: Wright hands a checked design to a CREAO agent (Build Desk) that sources every BOM line and writes the builder's packet"
+
+[dependencies]
+wright-core.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+# Same feature sets as wright-agents so the workspace target dir builds them once.
+tokio = { version = "1", features = ["rt", "macros", "sync", "time"] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["rt", "macros", "sync", "time", "test-util"] }

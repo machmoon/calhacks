@@ -1,0 +1,13 @@
+[package]
+name = "wright-place"
+description = "PCB placement: simulated annealing after KiCadRoutingTools simple_anneal.py (electronics lane C)"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+anyhow.workspace = true
+wright-eda = { path = "../wright-eda" }
+

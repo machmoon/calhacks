@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "revision": "package-v2",
+  "evidence_frozen": true,
+  "hardware_ready": false,
+  "compatibility_verified": false,
+  "date": "2026-10-24",
+  "scope": "Original 1.8m lift-plus-cruise demonstrator candidate, not Tsung Xu replica; evidence freeze is not hardware release",
+  "design_assumptions": {
+    "span_mm": 1800,
+    "takeoff_mass_target_g": 3000,
+    "payload_g": 250,
+    "wing_area_target_m2": 0.36,
+    "cruise_speed_m_s": 18,
+    "cruise_electrical_power_budget_W": 150,
+    "hover_reserve_s": 120,
+    "cruise_target_minutes": 8,
+    "reserve_energy_fraction": 0.2,
+    "battery_Wh": 106.56,
+    "not_performance_claim": true,
+    "battery_architecture": "separate74Wh lift and32.56Wh cruise; not interchangeable reserves"
+  },
+  "preliminary_screen": {
+    "four_rotor_bench_max_kgf": 5.10384,
+    "ideal_bench_thrust_weight_ratio": 1.70128,
+    "hover_each_g": 750,
+    "hover_power_W": null,
+    "cruise_energy_Wh": 20,
+    "cruise80percent_Wh": 26.048,
+    "limitations": [
+      "No installed or low-voltage thrust proof",
+      "Hover energy must be recomputed at3kg",
+      "Transition and avionics must fit cruise reserve independently",
+      "Mass/CG not closed"
+    ]
+  },
+  "mass_allocations_g": {
+    "two_batteries": 766,
+    "payload": 250,
+    "propulsion_motors_props_ESC": 429.2,
+    "avionics_servos_BEC_harness_PDB": 452.4,
+    "airframe_spars_joints_landinggear": 950,
+    "contingency": 152.4
+  },
+  "release_gate": "all required roles exact, compatible and dimensioned; all dependent verification gates passed",
+  "mass_allocation_status": "Budget sums3000g; unknown parts not measured"
+}

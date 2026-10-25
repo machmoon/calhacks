@@ -1,0 +1,13 @@
+[package]
+name = "wright-sch"
+description = "Schematic (.kicad_sch) emitter with embedded lib_symbols and net labels (electronics lane B)"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+anyhow.workspace = true
+wright-eda = { path = "../wright-eda" }
+

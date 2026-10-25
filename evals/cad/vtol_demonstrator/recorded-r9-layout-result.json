@@ -1,0 +1,117 @@
+{
+  "native_sha256": "5a78f3a19a57a8b0bc282ad6f81415ba3e79c402f3dcffad212fc7fc47a7ac77",
+  "passed": true,
+  "source_unchanged": true,
+  "evidence_path": "out/vtol-demonstrator-r9/independent-layout.json",
+  "evidence_sha256": "76616630cb8c402ede47ec1f9bced2b37f15220e365513de6a6b87c38750d33a",
+  "auditor_sha256_at_execution": "61788244626a593c7d8c6b609c789ffe857c301bb4677ac26ec8e7c6491cbb86",
+  "checks": {
+    "old_tail_outputs_absent": true,
+    "four_tail_outputs_physical": true,
+    "native_tail_singles": true,
+    "retained_geometry": true,
+    "retained_collision_accounting": true,
+    "winglets_physical": true,
+    "TailSurfaceRight_rises_inward": true,
+    "TailSurfaceRight_reaches_center": true,
+    "TailSurfaceLeft_rises_inward": true,
+    "TailSurfaceLeft_reaches_center": true,
+    "RuddervatorRight_rises_inward": true,
+    "RuddervatorRight_reaches_center": true,
+    "RuddervatorLeft_rises_inward": true,
+    "RuddervatorLeft_reaches_center": true,
+    "TailSurfaceRight_mirror_consistency": true,
+    "RuddervatorRight_mirror_consistency": true,
+    "WingletRight_mirror_consistency": true,
+    "Right_boom_bearing": true,
+    "Left_boom_bearing": true,
+    "no_flat_center_roof": true,
+    "open_macro_configures_retained_visibility": true
+  },
+  "section_slopes_deg": {
+    "TailSurfaceRight": [
+      30.000000000847482,
+      30.0000000008475,
+      30.000000000847468,
+      30.00000000581328,
+      30.000000000437446,
+      30.000000000437446
+    ],
+    "TailSurfaceLeft": [
+      30.000000000847482,
+      30.0000000008475,
+      30.000000000847468,
+      30.00000000581328,
+      30.000000000437446,
+      30.000000000437446
+    ],
+    "RuddervatorRight": [
+      29.999999999999996,
+      30.000000000000018,
+      29.99999999999998,
+      30.000000000000018,
+      30.000000000000018,
+      29.999999999999865
+    ],
+    "RuddervatorLeft": [
+      30.00000000000001,
+      30.000000000000018,
+      29.99999999999998,
+      30.000000000000018,
+      30.000000000000018,
+      29.999999999999865
+    ]
+  },
+  "mirror_differences": {
+    "TailSurfaceRight": {
+      "right_reflected_minus_left_mm3": 0.0,
+      "left_minus_right_reflected_mm3": 0.0
+    },
+    "RuddervatorRight": {
+      "right_reflected_minus_left_mm3": 0.0,
+      "left_minus_right_reflected_mm3": 0.0
+    },
+    "WingletRight": {
+      "right_reflected_minus_left_mm3": 0.0,
+      "left_minus_right_reflected_mm3": 0.0
+    }
+  },
+  "boom_attachment": {
+    "Right": {
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0
+    },
+    "Left": {
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0
+    }
+  },
+  "negative_control": {
+    "native_center_roof_sections": [
+      {
+        "y_mm": 16,
+        "z_mid_mm": 291.8200025147743,
+        "x_min_mm": 965.0,
+        "x_max_mm": 1095.0,
+        "z_min_mm": 288.8200025147743,
+        "z_max_mm": 294.8200025147743
+      },
+      {
+        "y_mm": 3.2,
+        "z_mid_mm": 291.8200025147743,
+        "x_min_mm": 965.0,
+        "x_max_mm": 1095.0,
+        "z_min_mm": 288.8200025147743,
+        "z_max_mm": 294.8200025147743
+      }
+    ],
+    "geometry_negative": "Actual R8 central sections have zero inward rise; fail R9 inclined-half criterion even independent of object names",
+    "passed": true,
+    "control": "R8 native arch with forged inverted-V metadata and declared names rejected",
+    "native_sha256": "676711f151a121ad5789fff4bc8765030e0a20c7f354482277dabf99ebc045c2",
+    "source_unchanged": true,
+    "failure": "Missing native object TailSurfaceRight"
+  },
+  "visibility_scope": "Shipped native GUI-opening macro explicitly enables these objects. Headless FCStd has no GuiDocument.xml; actual screen visibility/occlusion is not assessed here.",
+  "scope": "Native inverted-V layout and retained component accounting only; not full collision, hinge, structure, control mixing, propulsion or flight qualification"
+}

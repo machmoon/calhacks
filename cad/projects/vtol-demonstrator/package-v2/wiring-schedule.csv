@@ -1,0 +1,10 @@
+from,to,pin_mapping,cable,cut_length_mm
+FC POWER1,PM02 supplied cable,"1,2 +5.2V;3 cruiseCURRENT;4 cruiseVOLTAGE;5,6GND",factory6pin,supplied
+FC GPS1,M10 SKU12040,1+5V;2TX→RX;3RX←TX;4SCL;5SDA;6safety;7LED;8IO3.3;9buzzer;10GND,factoryGH10,supplied
+FC TELEM1,SiKV3,1+5V;2TX→radioRX;3RX←radioTX;4CTS;5RTS;6GND,factoryGH6;verify radiocable orientation,supplied
+FC TELEM2,RP3V2,1+5V→5V;2TX→RX;3RX←TX;6GND→GND;4/5unused insulated,GH6 to solder pads,route_pending
+FC I2C,ASPD4525,1+5V;2SCL;3SDA;4GND,GH4 to module pads,route_pending
+FC AUX1..4 FMU,TekkoESC1..4,S→DShot signal;−→ground;+notconnected,24AWG signal/ground;manufacturer pad diagram controls colors,route_pending
+FC MAIN1 IO,Skywalker cruiseESC,S→PWM;−→ground;BECred isolated,suppliedservolead,route_pending
+FC MAIN2..5 IO,HS65MG1..4,S→PWM;+→6V;−→ground,servo3pin,route_pending
+UBEC6Voutput,MAINservo rail,+→+;−→−;neverFC5Vperipheralport,suppliedoutputs,route_pending

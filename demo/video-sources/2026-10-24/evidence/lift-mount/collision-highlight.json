@@ -1,0 +1,20 @@
+{
+  "source": "/Users/patliu/Desktop/Coding/wright/out/tsung-vtol-lift-mount/checks-before-export.json",
+  "source_sha256": "ed112f55f99516cf731eb831c90172931d5a1f0b7e69b00ecf406c697b277898",
+  "scope": "Collision findings in inferred reconstruction, not author aircraft",
+  "sweep_collisions": [
+    {
+      "sweep": "SweepRR",
+      "part": "FinTopRetentionRight",
+      "distance_mm": 0.0,
+      "overlap_mm3": 35.587449754884034
+    },
+    {
+      "sweep": "SweepRL",
+      "part": "FinTopRetentionLeft",
+      "distance_mm": 0.0,
+      "overlap_mm3": 35.58744975488409
+    }
+  ],
+  "physical_pairs_checked": 2485
+}

@@ -1,0 +1,27 @@
+category,id,name,qty,unit,unit_price_usd,total_usd,url,note
+structure,al6061_tube_6p0od_0p125w_72in,"6061-T6 aluminum round tube 6.0"" OD x 0.125"" wall, 72"" cut (Speedy Metals)",1,each,237.60,237.60,https://www.speedymetals.com/pc-4648-8371-6-od-x-0125-wall-tube-6061-t6-aluminum.aspx,0.50 m of tank/intertank tube
+structure,wildman_g12_6in_60in,"Wildman G12-6.0 filament-wound fiberglass airframe, 60""",2,each,279.81,559.62,https://www.wildmanrocketry.com/products/g12-6-0,2.25 m of G12 bays
+structure,wildman_g12ct_6in_coupler_12in,"Wildman G12CT-6.0 fiberglass coupler, 12""",3,each,71.00,213.00,https://www.wildmanrocketry.com/products/g12ct-6-0,"nose/recovery, recovery/pressurant, fuel tank/engine bay joints"
+structure,wildman_fnc6_vk_5to1,"Wildman FNC6.0-FW-MT 6"" filament-wound fiberglass nosecone, Von Karman 5:1 (metal tip)",1,each,199.99,199.99,https://www.wildmanrocketry.com/products/fnc6-0-5-1vk-fw-mt,
+structure,wildman_g10_g10_3_16,"Wildman G10 fiberglass sheet 3/16"" x 1 sq ft",2,each,31.90,63.80,https://www.wildmanrocketry.com/products/g10-3-16,0.103 m^2 of fins + 50 % nesting waste
+structure,wildman_bp_6_0_bulkplate,"Wildman BP-6.0 1/2"" plywood 6.0 bulk plate",3,each,6.89,20.67,https://www.wildmanrocketry.com/products/bp-6-0,recovery bulkheads (plywood)
+structure,wildman_cr_6_0_3_0_centering_ring,"Wildman CR-6.0-3.0 centering ring, 6.0 to 3.0",2,each,7.29,14.58,https://www.wildmanrocketry.com/products/cr-6-0-3-0,engine bay centering rings
+launch,madcow_rg15b_1515_rail_guides,"Madcow RG15B low-drag rail guides for 1515 rails, bulkhead type (pair, Delrin)",1,each,8.00,8.00,https://www.madcowrocketry.com/copy-of-rg15a-low-drag-rail-guides-for-1515-rails-airframe-type/,1515 rail guides (pair)
+recovery,fc_classic_elliptical_30in,"Fruity Chutes Classic Elliptical 30""",1,each,97.91,97.91,https://shop.fruitychutes.com/products/30-elliptical-parachute-3-3lb-20fps,drogue
+recovery,fc_iris_ultra_compact_72in,"Fruity Chutes Iris Ultra Compact 72""",1,each,360.37,360.37,https://shop.fruitychutes.com/products/iris-ultra-72-compact-parachute-28lbs-20fps-15lbs-15fps,main
+recovery,wildman_kevlar_1_2_30ft,"Wildman 1/2"" tubular Kevlar harness, 2 sewn loops, 30 ft",2,each,46.00,92.00,https://www.wildmanrocketry.com/products/obh-011,shock cords
+recovery,wildman_eyebolt_3_8_male,"Wildman 3/8"" eye bolt, male",4,each,17.00,68.00,https://www.wildmanrocketry.com/products/3-8-eye-male,
+recovery,wildman_shear_pins_2_56_10pk,"Wildman 2-56 shear pins, 10 pack",1,each,2.95,2.95,https://www.wildmanrocketry.com/products/sheer-pins,
+avionics,featherweight_blue_raven,Featherweight Blue Raven altimeter (Contrail Rockets),1,each,194.49,194.49,https://contrailrockets.com/product/featherweight-blue-raven-altimeter,redundant dual-deploy altimeters
+avionics,altus_easymini,Altus Metrum EasyMini dual-deploy altimeter,1,each,80.00,80.00,https://shop.gag.com/product/easymini-1/,redundant dual-deploy altimeters
+avionics,featherweight_gps_tracker,Featherweight GPS Tracker (Contrail Rockets),1,each,183.49,183.49,https://contrailrockets.com/product/featherweight-gps-tracker,GPS tracker
+feed,ninja_lite_68_4500_bottle,Ninja Carbon Fiber Lite 68/4500 bottle only,2,each,159.95,319.90,https://punisherspb.com/products/ninja-carbon-fiber-lite-68-4500-paintball-tank-red-bottle-only,GN2 pressurant
+feed,ninja_pro_v3_reg_stainless,Ninja Pro V3 adjustable stainless 4500 psi HPA regulator (Standard),2,each,117.95,235.90,https://pbsports.com/products/ninja-paintball-pro-v3-adjustable-stainless-steel-4500psi-regulator,one regulator per tank
+feed,valveman_cryo_ball_1_2_double_acting,"ValveMan 1/2"" NPT cryogenic SS ball valve, pneumatic double-acting, vented ball (C8-TK-050/3RED-XX)",2,each,1023.99,2047.98,https://valveman.com/products/1-2-cryogenic-ball-valve-double-acting-npt-full-port-stainless-steel-vented-ball,LOX and fuel main valves
+feed,superlok_check_1_4mnpt_0p3psi,"Superlok SOCV1-M-4N-1/3P inline check valve, 1/4"" MNPT, 316SS",2,each,30.62,61.24,https://www.onehydraulics.com/products/socv1-m-4n-1-3p,pressurant check valves (no propellant backflow)
+feed,nuvair_relief_rv2mf_a,"Nuvair RV2MF-4N-A-S316 adjustable relief valve, 1/4 MNPT x 1/4 FNPT",2,each,219.75,439.50,https://nuvair.com/rv2mf-series.html,tank relief set at MEOP 638 psi
+engine,al6061_round_4in_12in,"6061-T6511 aluminum round bar 4"" dia x 12"" (Speedy Metals)",2,each,221.71,443.42,https://www.speedymetals.com/pc-2474-8368-4-rd-6061-t6511-aluminum-extruded.aspx,chamber case and injector/pintle stock
+engine,eplastics_le_phenolic_rod_3p5in,"eplastics LE linen phenolic laminate rod, 3.500 in dia (LENATROD3-500)",2,ft,189.70,379.40,https://www.eplastics.com/LENATROD3-500,"liner, converging section and nozzle machined from solid rod"
+propellant,lox_weldstar_refill_per_liter,"Weldstar OXYGEN LIQUID, REFILL PER LITER",5,liter,7.12,35.60,https://www.weldstar.com/oxygen-liquid-refill-per-liter--3,2x load for chill-down/boil-off
+propellant,ethanol_190_1gal,"Lab Alley ethanol 190 proof USP/FCC undenatured, 1 gal (EAP190-1GAL)",1,gal,95.57,95.57,https://laballey.com/products/ethanol-pure-190-proof-undenatured-acs-usp-grade,load + 20 %
+propellant,gn2_berkeley_house,"Gaseous nitrogen, UC Berkeley College of Chemistry cryogenic plant price list (eff. 2026-07-01)",44,ft3,0.02,0.67,https://chemistry.berkeley.edu/node/2215,two bottle fills (pad pressurisation + flight)

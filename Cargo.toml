@@ -1,0 +1,59 @@
+[workspace]
+resolver = "2"
+# Explicit, not "crates/*": a crate someone is still creating must not break
+# every other crate's build. Add a crate here once it has src/lib.rs.
+members = [
+    "crates/wright-core",
+    "crates/wright-cad",
+    "crates/wright-geom",
+    "crates/wright-air",
+    "crates/wright-rocket",
+    "crates/wright-balloon",
+    "crates/wright-agents",
+    "crates/wright-desktop",
+    "crates/wright-creao",
+    "crates/wright-cli",
+    "crates/wright-guide",
+    "crates/wright-cfd",
+    "crates/wright-fab",
+    "crates/wright-fea",
+    "crates/wright-train",
+    # electronics / PCB (docs/electronics-plan.md)
+    "crates/wright-eda",
+    "crates/wright-kicad",
+    "crates/wright-sch",
+    "crates/wright-place",
+    "crates/wright-route",
+    "crates/wright-electronics",
+]
+
+[workspace.package]
+edition = "2021"
+license = "MIT"
+version = "0.1.0"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+anyhow = "1"
+wright-core = { path = "crates/wright-core" }
+wright-cad = { path = "crates/wright-cad" }
+wright-geom = { path = "crates/wright-geom" }
+wright-air = { path = "crates/wright-air" }
+wright-rocket = { path = "crates/wright-rocket" }
+wright-balloon = { path = "crates/wright-balloon" }
+wright-agents = { path = "crates/wright-agents" }
+wright-fea = { path = "crates/wright-fea" }
+
+[profile.dev]
+opt-level = 1
+# line tables only: full debug info doubled target/debug on a nearly full disk
+debug = "line-tables-only"
+# incremental caches reached 3 GB with several crates building at once on a
+# nearly full disk; a full rebuild of one crate is fast enough
+incremental = false
+
+[profile.dev.package."*"]
+opt-level = 2
+debug = false

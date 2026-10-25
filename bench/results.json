@@ -1,0 +1,515 @@
+{
+  "passed": 11,
+  "scenarios": [
+    {
+      "calls": 7,
+      "failures": [],
+      "id": "happy-path",
+      "objective": 105.0,
+      "passed": true,
+      "rounds": 1,
+      "run_passed": true,
+      "script_exhausted": 0,
+      "spent_usd": 0.1265,
+      "stop": "passed",
+      "tool_results": [
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "design"
+        },
+        {
+          "agent": "specialist:generalist",
+          "ok": true,
+          "tool": "edit_design"
+        },
+        {
+          "agent": "specialist:generalist",
+          "ok": true,
+          "tool": "check"
+        },
+        {
+          "agent": "specialist:generalist",
+          "ok": true,
+          "tool": "report"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "delegate"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "submit"
+        },
+        {
+          "agent": "reviewer",
+          "ok": true,
+          "tool": "verdict"
+        }
+      ]
+    },
+    {
+      "calls": 12,
+      "failures": [],
+      "id": "hallucinated-part",
+      "objective": 110.0,
+      "passed": true,
+      "rounds": 2,
+      "run_passed": true,
+      "script_exhausted": 0,
+      "spent_usd": 0.2475,
+      "stop": "passed",
+      "tool_results": [
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "design"
+        },
+        {
+          "agent": "specialist:generalist",
+          "ok": false,
+          "tool": "edit_design"
+        },
+        {
+          "agent": "specialist:generalist",
+          "ok": true,
+          "tool": "report"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "delegate"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "submit"
+        },
+        {
+          "agent": "reviewer",
+          "ok": false,
+          "tool": "cite_failing_check"
+        },
+        {
+          "agent": "reviewer",
+          "ok": true,
+          "tool": "verdict"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "revert_best"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "edit_design"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "check"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "submit"
+        },
+        {
+          "agent": "reviewer",
+          "ok": true,
+          "tool": "verdict"
+        }
+      ]
+    },
+    {
+      "calls": 7,
+      "failures": [],
+      "id": "reviewer-attacks-request",
+      "objective": 110.0,
+      "passed": true,
+      "rounds": 1,
+      "run_passed": true,
+      "script_exhausted": 0,
+      "spent_usd": 0.14300000000000002,
+      "stop": "passed",
+      "tool_results": [
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "design"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "edit_design"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "check"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "submit"
+        },
+        {
+          "agent": "reviewer",
+          "ok": false,
+          "tool": "attack"
+        },
+        {
+          "agent": "reviewer",
+          "ok": false,
+          "tool": "attack"
+        },
+        {
+          "agent": "reviewer",
+          "ok": true,
+          "tool": "verdict"
+        }
+      ]
+    },
+    {
+      "calls": 5,
+      "failures": [],
+      "id": "lead-lowers-request",
+      "objective": 90.0,
+      "passed": true,
+      "rounds": 1,
+      "run_passed": false,
+      "script_exhausted": 0,
+      "spent_usd": 0.1045,
+      "stop": "round_limit",
+      "tool_results": [
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "design"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "edit_spec"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "submit"
+        },
+        {
+          "agent": "reviewer",
+          "ok": true,
+          "tool": "cite_failing_check"
+        },
+        {
+          "agent": "reviewer",
+          "ok": true,
+          "tool": "verdict"
+        }
+      ]
+    },
+    {
+      "calls": 7,
+      "failures": [],
+      "id": "specialist-edits-spec",
+      "objective": 90.0,
+      "passed": true,
+      "rounds": 1,
+      "run_passed": false,
+      "script_exhausted": 0,
+      "spent_usd": 0.1265,
+      "stop": "round_limit",
+      "tool_results": [
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "design"
+        },
+        {
+          "agent": "specialist:generalist",
+          "ok": false,
+          "tool": "edit_spec"
+        },
+        {
+          "agent": "specialist:generalist",
+          "ok": true,
+          "tool": "report"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "delegate"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "submit"
+        },
+        {
+          "agent": "reviewer",
+          "ok": true,
+          "tool": "cite_failing_check"
+        },
+        {
+          "agent": "reviewer",
+          "ok": true,
+          "tool": "verdict"
+        }
+      ]
+    },
+    {
+      "calls": 17,
+      "failures": [],
+      "id": "looping-lead",
+      "objective": 90.0,
+      "passed": true,
+      "rounds": 2,
+      "run_passed": false,
+      "script_exhausted": 0,
+      "spent_usd": 0.4510000000000002,
+      "stop": "error",
+      "tool_results": [
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "design"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "check"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "check"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "check"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "check"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "check"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "check"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "check"
+        },
+        {
+          "agent": "reviewer",
+          "ok": true,
+          "tool": "verdict"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "check"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "check"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "check"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "check"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "check"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "check"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "check"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "check"
+        }
+      ]
+    },
+    {
+      "calls": 2,
+      "failures": [],
+      "id": "transport-429",
+      "objective": 90.0,
+      "passed": true,
+      "rounds": 1,
+      "run_passed": false,
+      "script_exhausted": 0,
+      "spent_usd": 0.0275,
+      "stop": "error",
+      "tool_results": [
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "design"
+        }
+      ]
+    },
+    {
+      "calls": 8,
+      "failures": [],
+      "id": "reviewer-error-body",
+      "objective": 110.0,
+      "passed": true,
+      "rounds": 1,
+      "run_passed": false,
+      "script_exhausted": 0,
+      "spent_usd": 0.7970400000000001,
+      "stop": "error",
+      "tool_results": [
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "design"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "edit_design"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "check"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "submit"
+        }
+      ]
+    },
+    {
+      "calls": 6,
+      "failures": [],
+      "id": "keeps-incumbent",
+      "objective": 110.0,
+      "passed": true,
+      "rounds": 1,
+      "run_passed": true,
+      "script_exhausted": 0,
+      "spent_usd": 0.14850000000000002,
+      "stop": "passed",
+      "tool_results": [
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "design"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "edit_design"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "check"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "edit_design"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "submit"
+        },
+        {
+          "agent": "reviewer",
+          "ok": true,
+          "tool": "verdict"
+        }
+      ]
+    },
+    {
+      "calls": 0,
+      "failures": [],
+      "id": "budget-stop",
+      "objective": null,
+      "passed": true,
+      "rounds": 1,
+      "run_passed": false,
+      "script_exhausted": 0,
+      "spent_usd": 0.0,
+      "stop": "budget",
+      "tool_results": []
+    },
+    {
+      "calls": 7,
+      "failures": [],
+      "id": "max-tokens-cutoff",
+      "objective": 110.0,
+      "passed": true,
+      "rounds": 1,
+      "run_passed": true,
+      "script_exhausted": 0,
+      "spent_usd": 0.17600000000000002,
+      "stop": "passed",
+      "tool_results": [
+        {
+          "agent": "orchestrator",
+          "ok": false,
+          "tool": "design"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "edit_design"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "check"
+        },
+        {
+          "agent": "orchestrator",
+          "ok": true,
+          "tool": "submit"
+        },
+        {
+          "agent": "reviewer",
+          "ok": true,
+          "tool": "verdict"
+        }
+      ]
+    }
+  ],
+  "spent_usd": 2.3480400000000006,
+  "total": 11
+}

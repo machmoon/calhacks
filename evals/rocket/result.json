@@ -1,0 +1,2202 @@
+{
+  "pair_search": [
+    {
+      "oxidizer": "lox",
+      "fuel": "propane",
+      "checks_passed": 26,
+      "checks_total": 26,
+      "far_score": 837.9638709569691,
+      "bom_usd": 14154.374999999995,
+      "failures": []
+    },
+    {
+      "oxidizer": "lox",
+      "fuel": "ethanol",
+      "checks_passed": 26,
+      "checks_total": 26,
+      "far_score": 837.4335027278738,
+      "bom_usd": 14154.829999999996,
+      "failures": []
+    },
+    {
+      "oxidizer": "lox",
+      "fuel": "ipa",
+      "checks_passed": 26,
+      "checks_total": 26,
+      "far_score": 837.0432557790241,
+      "bom_usd": 14058.549999999994,
+      "failures": []
+    },
+    {
+      "oxidizer": "lox",
+      "fuel": "rp1",
+      "checks_passed": 26,
+      "checks_total": 26,
+      "far_score": 836.4218014958725,
+      "bom_usd": 12668.529999999995,
+      "failures": []
+    },
+    {
+      "oxidizer": "n2o",
+      "fuel": "propane",
+      "checks_passed": 26,
+      "checks_total": 26,
+      "far_score": 838.5555074201366,
+      "bom_usd": 10546.956999999995,
+      "failures": []
+    },
+    {
+      "oxidizer": "n2o",
+      "fuel": "ethanol",
+      "checks_passed": 26,
+      "checks_total": 26,
+      "far_score": 838.6161868429839,
+      "bom_usd": 10656.349999999995,
+      "failures": []
+    },
+    {
+      "oxidizer": "n2o",
+      "fuel": "ipa",
+      "checks_passed": 26,
+      "checks_total": 26,
+      "far_score": 838.3982947131866,
+      "bom_usd": 10612.759999999995,
+      "failures": []
+    },
+    {
+      "oxidizer": "n2o",
+      "fuel": "rp1",
+      "checks_passed": 26,
+      "checks_total": 26,
+      "far_score": 838.1651208137877,
+      "bom_usd": 10110.199999999999,
+      "failures": []
+    }
+  ],
+  "headline_pair": [
+    "n2o",
+    "rp1"
+  ],
+  "design_same_propellants": {
+    "name": "Wright LOX/propane, FAR-OUT 2027 Group B, 20,000 ft",
+    "checks_passed": 26,
+    "checks_total": 26,
+    "failures": [],
+    "liftoff_mass_kg": 122.73994193477017,
+    "dry_mass_kg": 97.53381713223644,
+    "propellant_kg": 25.20612480253373,
+    "length_m": 6.812429620339213,
+    "diameter_m": 0.15672,
+    "thrust_n": 10444.447678327138,
+    "pc_bar": 32.5,
+    "of": 2.6,
+    "isp_site_s": 196.7135983536229,
+    "burn_s": 4.52000002493102,
+    "total_impulse_ns": 47208.9037664294,
+    "apogee_nominal_ft": 19382.579527311496,
+    "apogee_band_ft": [
+      17118.37987455672,
+      21828.425818528554
+    ],
+    "max_mach": 1.1220137553767866,
+    "rail_exit_ftps": 102.34846455445118,
+    "twr": 8.677185653916945,
+    "margin_min_cal": 2.3108403203024146,
+    "bom_usd": 14154.374999999995,
+    "far_score_mean": 837.9638709569691,
+    "checks": {
+      "outcomes": [
+        {
+          "name": "stability_min",
+          "evidence": {
+            "Margin": {
+              "value": 0.8107152511158717,
+              "unit": "cal"
+            }
+          },
+          "detail": "min 2.31 cal (rail exit 2.31) at wind 0.0 m/s; limit 1.5",
+          "source": "Physics"
+        },
+        {
+          "name": "stability_max",
+          "evidence": {
+            "Margin": {
+              "value": 1.6889257331244965,
+              "unit": "cal"
+            }
+          },
+          "detail": "rail exit 2.31 cal; limit 4.0",
+          "source": "Physics"
+        },
+        {
+          "name": "rail_exit_speed",
+          "evidence": {
+            "Margin": {
+              "value": 5.287272884152802,
+              "unit": "m/s"
+            }
+          },
+          "detail": "31.2 m/s (102 ft/s) at wind 8.9; limit 85 ft/s",
+          "source": "Physics"
+        },
+        {
+          "name": "thrust_to_weight",
+          "evidence": {
+            "Margin": {
+              "value": 0.6771856539169452,
+              "unit": ""
+            }
+          },
+          "detail": "T/W 8.68 at 610 m site pressure; limit 8.0",
+          "source": "Physics"
+        },
+        {
+          "name": "max_acceleration",
+          "evidence": {
+            "Margin": {
+              "value": 4.917091145845529,
+              "unit": "g"
+            }
+          },
+          "detail": "10.1 g",
+          "source": "Physics"
+        },
+        {
+          "name": "fin_flutter",
+          "evidence": {
+            "Margin": {
+              "value": 0.22835123787414968,
+              "unit": ""
+            }
+          },
+          "detail": "nominal: flutter 554 m/s vs 1.2 x 376 m/s at max-Q (4.8 mm G10)",
+          "source": "Physics"
+        },
+        {
+          "name": "chamber_stress",
+          "evidence": {
+            "Margin": {
+              "value": 1.4117562661272913,
+              "unit": ""
+            }
+          },
+          "detail": "hoop 129 MPa at 2.0x Pc 32.5 bar (highest flown) vs Ftu 310 MPa",
+          "source": "Physics"
+        },
+        {
+          "name": "tank_burst",
+          "evidence": {
+            "Margin": {
+              "value": 0.5319043965058341,
+              "unit": ""
+            }
+          },
+          "detail": "fuel tank: von Mises 202 MPa (hoop 224, axial 107, radial -10) at 2.0x MEOP 47.7 bar",
+          "source": "Physics"
+        },
+        {
+          "name": "tank_proof",
+          "evidence": {
+            "Margin": {
+              "value": 0.22599400423690597,
+              "unit": ""
+            }
+          },
+          "detail": "fuel tank: bulkhead closure 16 x 1/4-20 screws at 2.0x MEOP: 10.0 kN per screw vs 12.2 kN (wall bearing)",
+          "source": "Physics"
+        },
+        {
+          "name": "wall_temperature",
+          "evidence": {
+            "Margin": {
+              "value": 97.86779354455695,
+              "unit": "K"
+            }
+          },
+          "detail": "chamber: Al case peaks 22 C (limit 120 C), h 3360 W/m2K, Taw 3461 K",
+          "source": "Physics"
+        },
+        {
+          "name": "ablative_char",
+          "evidence": {
+            "Margin": {
+              "value": 1.875,
+              "unit": "mm"
+            }
+          },
+          "detail": "chamber: char 2.1 mm of 4.0 mm liner",
+          "source": "Physics"
+        },
+        {
+          "name": "injector_stiffness",
+          "evidence": {
+            "Margin": {
+              "value": 0.0398325496309809,
+              "unit": ""
+            }
+          },
+          "detail": "Pc 32.8 bar with drilled orifices; dP/Pc ox 19 %, fuel 19 %",
+          "source": "Physics"
+        },
+        {
+          "name": "injector_momentum",
+          "evidence": {
+            "Margin": {
+              "value": 0.2909530822058355,
+              "unit": ""
+            }
+          },
+          "detail": "pintle TMR 1.71 (band 0.5-2)",
+          "source": "Physics"
+        },
+        {
+          "name": "start_sequence",
+          "evidence": {
+            "Margin": {
+              "value": 0.689285566444982,
+              "unit": "s"
+            }
+          },
+          "detail": "LOX at 1.16 s, fuel at 1.41 s, igniter out at 2.60 s",
+          "source": "Physics"
+        },
+        {
+          "name": "nozzle_separation",
+          "evidence": {
+            "Margin": {
+              "value": 1.1,
+              "unit": ""
+            }
+          },
+          "detail": "pe 1.41 bar at Pc 32.5 bar vs pa 0.94 bar",
+          "source": "Physics"
+        },
+        {
+          "name": "pressurant_margin",
+          "evidence": {
+            "Margin": {
+              "value": 0.0898892693272002,
+              "unit": ""
+            }
+          },
+          "detail": "usable GN2 2.91 kg (down to 50 bar, gas at 174 K) vs 2.67 kg needed (8 x hk_hstl_98_4500; both tanks)",
+          "source": "Physics"
+        },
+        {
+          "name": "regulator_range",
+          "evidence": {
+            "Margin": {
+              "value": 1.482587166666668,
+              "unit": "bar"
+            }
+          },
+          "detail": "tank 43.3 bar in hk_turbine_pro_reg outlet 24.1-44.8 bar",
+          "source": "Rating"
+        },
+        {
+          "name": "valve_rating",
+          "evidence": {
+            "Margin": {
+              "value": 4.044010833333324,
+              "unit": "bar"
+            }
+          },
+          "detail": "fuel tank: relief set at MEOP 691 psi within nuvair_relief_rv2mf_a range 225-750 psi",
+          "source": "Rating"
+        },
+        {
+          "name": "drogue_descent",
+          "evidence": {
+            "Margin": {
+              "value": 3.691857938667958,
+              "unit": "m/s"
+            }
+          },
+          "detail": "98.3 kg: 42.0 m/s at apogee, 31.6 m/s at main deploy; band 15.2-45.7",
+          "source": "Physics"
+        },
+        {
+          "name": "main_descent",
+          "evidence": {
+            "Margin": {
+              "value": 0.3370195441971209,
+              "unit": "m/s"
+            }
+          },
+          "detail": "7.3 m/s (23.9 ft/s) at the ground; limit 25.0 ft/s",
+          "source": "Physics"
+        },
+        {
+          "name": "apogee_accuracy",
+          "evidence": {
+            "Margin": {
+              "value": 0.019128976365574937,
+              "unit": ""
+            }
+          },
+          "detail": "nominal 5908 m (19383 ft) vs contract 20000 ft",
+          "source": "Requirement"
+        },
+        {
+          "name": "spec_inputs",
+          "evidence": {
+            "Margin": {
+              "value": 0.0,
+              "unit": ""
+            }
+          },
+          "detail": "the design records the spec's contract, competition and rail",
+          "source": "Requirement"
+        },
+        {
+          "name": "parts_fit",
+          "evidence": {
+            "Margin": {
+              "value": 0.0,
+              "unit": "mm^3"
+            }
+          },
+          "detail": "no overlapping pairs",
+          "source": "Geometry"
+        },
+        {
+          "name": "parts_orderable",
+          "evidence": {
+            "Margin": {
+              "value": -0.0,
+              "unit": "parts"
+            }
+          },
+          "detail": "41 BOM lines, none marked out of stock",
+          "source": "Rating"
+        },
+        {
+          "name": "budget",
+          "evidence": {
+            "Margin": {
+              "value": 0.0,
+              "unit": "USD"
+            }
+          },
+          "detail": "no budget stated: cost is information only, priced lines $14154; unpriced: gn2_fill_4500psi_quote (not in catalog; nitrogen to 4500 psi for the pressurant bottles, two fills of 139 cu ft: no public price (6K cylinders and boosters are quote-only; paintball 'nitrogen' is air; the priced 2000 psi cylinder cannot reach the fill) -- get a gas-supplier quote)",
+          "source": "Requirement"
+        },
+        {
+          "name": "isp_bound",
+          "evidence": {
+            "Margin": {
+              "value": 0.300567470712959,
+              "unit": ""
+            }
+          },
+          "detail": "delivered vacuum Isp 213.2 s vs ideal 304.8 s at the design O/F (eta c* 0.71)",
+          "source": "Physics"
+        }
+      ]
+    }
+  },
+  "cea_validation": [
+    {
+      "Ae_At": [
+        3.586915421380812,
+        3.58692368526122
+      ],
+      "Isp_1atm_m_s": [
+        2385.225099642816,
+        2385.233110268921
+      ],
+      "Isp_vac_m_s": [
+        2693.7086366886156,
+        2693.718322049879
+      ],
+      "M_g_mol": [
+        20.887836342095447,
+        20.887895239576256
+      ],
+      "Tc_K": [
+        2984.9811987269845,
+        2984.979761666952
+      ],
+      "c_star_m_s": [
+        1697.5565038115685,
+        1697.5622706122108
+      ],
+      "case": "LOX/ethanol Pc=20.0 O/F=1.3",
+      "gamma_s": [
+        1.1618583872562753,
+        1.1618497766715323
+      ]
+    },
+    {
+      "Ae_At": [
+        5.032350141992973,
+        5.032384951712319
+      ],
+      "Isp_1atm_m_s": [
+        2570.5279463693078,
+        2570.534884187905
+      ],
+      "Isp_vac_m_s": [
+        2863.8124383810164,
+        2863.821237012503
+      ],
+      "M_g_mol": [
+        22.249625600964116,
+        22.249751535268953
+      ],
+      "Tc_K": [
+        3226.840387999706,
+        3226.835151311695
+      ],
+      "c_star_m_s": [
+        1725.5314958194308,
+        1725.5358237179034
+      ],
+      "case": "LOX/ethanol Pc=30.0 O/F=1.5",
+      "gamma_s": [
+        1.1376613278704641,
+        1.1376492478539622
+      ]
+    },
+    {
+      "Ae_At": [
+        9.390686199933585,
+        9.390765579362576
+      ],
+      "Isp_1atm_m_s": [
+        2698.5345602018956,
+        2698.5432188985496
+      ],
+      "Isp_vac_m_s": [
+        2928.6573481594655,
+        2928.6677328158216
+      ],
+      "M_g_mol": [
+        23.375565534058012,
+        23.375736924167896
+      ],
+      "Tc_K": [
+        3153.899100497659,
+        3153.8906164537857
+      ],
+      "c_star_m_s": [
+        1666.3691287251659,
+        1666.3728279509437
+      ],
+      "case": "Braeunig LOX/75% ethanol+25% water O/F=1.29",
+      "gamma_s": [
+        1.1338089622120764,
+        1.1337912222480764
+      ]
+    },
+    {
+      "Ae_At": [
+        4.190690751073281,
+        4.190725663976093
+      ],
+      "Isp_1atm_m_s": [
+        2637.0502024090238,
+        2637.056241829481
+      ],
+      "Isp_vac_m_s": [
+        2959.850337099353,
+        2959.8581038276393
+      ],
+      "M_g_mol": [
+        20.238372056480348,
+        20.23847626582513
+      ],
+      "Tc_K": [
+        3307.544593626404,
+        3307.5389663757323
+      ],
+      "c_star_m_s": [
+        1824.4951909755155,
+        1824.4994875579196
+      ],
+      "case": "LOX/C3H8(L) Pc=24 O/F=2.33",
+      "gamma_s": [
+        1.1495573688068608,
+        1.149546826262479
+      ]
+    },
+    {
+      "Ae_At": [
+        5.183480467668184,
+        5.18350243726269
+      ],
+      "Isp_1atm_m_s": [
+        2729.6533924823457,
+        2729.6584847867466
+      ],
+      "Isp_vac_m_s": [
+        3048.84103777586,
+        3048.8479860433977
+      ],
+      "M_g_mol": [
+        21.35605607061938,
+        21.35622234786644
+      ],
+      "Tc_K": [
+        3451.836587771962,
+        3451.830243306825
+      ],
+      "c_star_m_s": [
+        1823.1787438190786,
+        1823.1815478260337
+      ],
+      "case": "LOX/C3H8(L) Pc=30 O/F=2.6",
+      "gamma_s": [
+        1.1370404248403254,
+        1.1370272687030856
+      ]
+    },
+    {
+      "Ae_At": [
+        9.4651209732271,
+        9.46883437525644
+      ],
+      "Isp_1atm_m_s": [
+        2930.7338600581174,
+        2930.2909752662713
+      ],
+      "Isp_vac_m_s": [
+        3182.021090973788,
+        3181.620871518634
+      ],
+      "M_g_mol": [
+        22.720882567838153,
+        22.736044304740066
+      ],
+      "Tc_K": [
+        3615.8984962252334,
+        3616.466775817645
+      ],
+      "c_star_m_s": [
+        1805.289520269588,
+        1804.887616392928
+      ],
+      "case": "LOX/RP-1 Pc=68.9 O/F=2.4",
+      "gamma_s": [
+        1.1437035819150172,
+        1.143617771552219
+      ]
+    },
+    {
+      "Ae_At": [
+        5.181385118674355,
+        5.181403537828539
+      ],
+      "Isp_1atm_m_s": [
+        2772.1893502522835,
+        2772.1955852211204
+      ],
+      "Isp_vac_m_s": [
+        3096.224680919856,
+        3096.2327238845264
+      ],
+      "M_g_mol": [
+        20.26514884307002,
+        20.26527330869732
+      ],
+      "Tc_K": [
+        3373.8219247312877,
+        3373.816979125458
+      ],
+      "c_star_m_s": [
+        1851.6168924864453,
+        1851.6204394681783
+      ],
+      "case": "LOX/CH4(L) Pc=30 O/F=3.0",
+      "gamma_s": [
+        1.1345397974462368,
+        1.134528837840813
+      ]
+    },
+    {
+      "Ae_At": [
+        4.610663909984079,
+        4.610671962583556
+      ],
+      "Isp_1atm_m_s": [
+        2315.5010410625423,
+        2315.5065128984716
+      ],
+      "Isp_vac_m_s": [
+        2561.3921716434315,
+        2561.39854954183
+      ],
+      "M_g_mol": [
+        24.688825555288563,
+        24.688881962569088
+      ],
+      "Tc_K": [
+        3066.9192276766667,
+        3066.9136466194627
+      ],
+      "c_star_m_s": [
+        1579.0069451205543,
+        1579.0111263374024
+      ],
+      "case": "N2O(g)/ethanol(L) Pc=30 O/F=4.0",
+      "gamma_s": [
+        1.1679312852422352,
+        1.167924485681974
+      ]
+    },
+    {
+      "Ae_At": [
+        4.334133717525574,
+        4.334130412828841
+      ],
+      "Isp_1atm_m_s": [
+        2190.3558136537968,
+        2190.360714535766
+      ],
+      "Isp_vac_m_s": [
+        2410.9992449982033,
+        2411.0050801630714
+      ],
+      "M_g_mol": [
+        21.628844790662516,
+        21.62890520617901
+      ],
+      "Tc_K": [
+        2559.772553718733,
+        2559.769944921112
+      ],
+      "c_star_m_s": [
+        1507.2779261146575,
+        1507.2852435196455
+      ],
+      "case": "N2O(g)/IPA(g) Pc=30 O/F=3.0",
+      "gamma_s": [
+        1.243477231489384,
+        1.2434687239594309
+      ]
+    }
+  ],
+  "reference_diagnostics": [
+    {
+      "hypothesis": "dry mass is higher than Wright's build-up",
+      "fitted_value": 78.96686781257266,
+      "unit": "kg dry",
+      "predicted_max_mach": 0.927232072052249,
+      "published_max_mach": 0.88,
+      "note": "Wright's build-up gives 42.2 kg dry"
+    },
+    {
+      "hypothesis": "flight thrust below the 3 kN stand figure at the published flows (lower delivered Isp)",
+      "fitted_value": 2012.7582404762504,
+      "unit": "N",
+      "predicted_max_mach": 0.998310485613841,
+      "published_max_mach": 0.88,
+      "note": "= 126 s delivered Isp at 1.63 kg/s; Eureka-1's published average thrust was 2.7 kN"
+    },
+    {
+      "hypothesis": "drag higher than the OpenRocket-style buildup",
+      "fitted_value": 2.805950805079192,
+      "unit": "x Cd",
+      "predicted_max_mach": 1.0521024686578841,
+      "published_max_mach": 0.88,
+      "note": "external plumbing, rail guides, camera shrouds and fin can are not in the buildup"
+    }
+  ],
+  "reference_engine": [
+    {
+      "quantity": "propellant mass flow at 3 kN (a priori eta_c* 0.90)",
+      "wright": 1.2861581579760306,
+      "published": 1.63,
+      "unit": "kg/s",
+      "error_pct": -21.09459153521284,
+      "tolerance_pct": 10.0,
+      "pass": false,
+      "note": "Wright's Isp from CEA-method equilibrium x eta_c* 0.90 x conical lambda; published flows are 1.14 + 0.49 kg/s (arXiv 2401.07444)"
+    },
+    {
+      "quantity": "delivered sea-level Isp (a priori)",
+      "wright": 237.85166854967733,
+      "published": 187.67783060943466,
+      "unit": "s",
+      "error_pct": 26.734024885792984,
+      "tolerance_pct": 10.0,
+      "pass": false,
+      "note": "published value derived: 3000 N / 1.63 kg/s"
+    }
+  ],
+  "reference_flight": [
+    {
+      "quantity": "apogee AGL",
+      "wright": 28941.79187904049,
+      "published": 15879.0,
+      "unit": "ft",
+      "error_pct": 82.26457509314497,
+      "tolerance_pct": 20.0,
+      "pass": false,
+      "note": "15,879 ft (YouTube flight video description); AGL vs MSL not stated; Wright flies from 2000 ft MSL, mid-range wind"
+    },
+    {
+      "quantity": "max Mach",
+      "wright": 1.5398112554095458,
+      "published": 0.88,
+      "unit": "",
+      "error_pct": 74.97855175108474,
+      "tolerance_pct": 15.0,
+      "pass": false,
+      "note": "Mach 0.88 (same source)"
+    },
+    {
+      "quantity": "liftoff mass",
+      "wright": 65.73194773190598,
+      "published": 54.4310844,
+      "unit": "kg",
+      "error_pct": 20.7617824566177,
+      "tolerance_pct": 25.0,
+      "pass": true,
+      "note": "published 120 lb is Eureka-1; Eureka-2 had larger tanks and lighter structure"
+    }
+  ],
+  "reference_eta_cstar_implied": 0.7101486761830847,
+  "reference_summary": {
+    "name": "SEB Eureka-2 (reconstructed from published inputs)",
+    "checks_passed": 21,
+    "checks_total": 26,
+    "failures": [
+      "FAIL thrust_to_weight               -3.305        T/W 4.69 at 610 m site pressure; limit 8.0",
+      "FAIL pressurant_margin              -0.118        usable GN2 2.06 kg (down to 48 bar, gas at 171 K) vs 2.34 kg needed (1 x airventuri_cf_tank_88cuft_4500; both tanks)",
+      "FAIL apogee_accuracy                -0.397        nominal 8821 m (28942 ft) vs contract 20000 ft",
+      "FAIL parts_fit                           -        missing: bottle airventuri_cf_tank_88cuft_4500 has no published diameter/length",
+      "FAIL parts_orderable                -6.000 parts  out of stock: fc_classic_elliptical_36in (out of stock at https://shop.fruitychutes.com/products/36-elliptical-parachute-4-8lb-20fps on 2026-10-24), altus_easymini (out of stock at https://shop.gag.com/product/easymini-1/ on 2026-10-24), airventuri_cf_tank_88cuft_4500 (out of stock at https://www.airgundepot.com/carbon-fiber-tank.html on 2026-10-24), ninja_pro_v3_reg_stainless (out of stock at https://pbsports.com/products/ninja-paintball-pro-v3-adjustable-stainless-steel-4500psi-regulator on 2026-10-24), valveman_cryo_ball_1_2_double_acting (out of stock at https://valveman.com/products/1-2-cryogenic-ball-valve-double-acting-npt-full-port-stainless-steel-vented-ball on 2026-10-24), valveman_cryo_ball_1_2_double_acting (out of stock at https://valveman.com/products/1-2-cryogenic-ball-valve-double-acting-npt-full-port-stainless-steel-vented-ball on 2026-10-24)"
+    ],
+    "liftoff_mass_kg": 65.73194773190598,
+    "dry_mass_kg": 42.22734773190599,
+    "propellant_kg": 23.50459999999999,
+    "length_m": 5.88264,
+    "diameter_m": 0.19558,
+    "thrust_n": 3026.2048622232937,
+    "pc_bar": 24.0,
+    "of": 2.326530612244898,
+    "isp_site_s": 189.31718784059703,
+    "burn_s": 14.0,
+    "total_impulse_ns": 42366.86807112611,
+    "apogee_nominal_ft": 28941.79187904049,
+    "apogee_band_ft": [
+      23118.20419451273,
+      35163.31350592033
+    ],
+    "max_mach": 1.5398112554095458,
+    "rail_exit_ftps": 110.94305169991354,
+    "twr": 4.6946276023764675,
+    "margin_min_cal": 1.80005561275247,
+    "bom_usd": 10672.984999999995,
+    "far_score_mean": 212.59514365479228,
+    "checks": {
+      "outcomes": [
+        {
+          "name": "stability_min",
+          "evidence": {
+            "Margin": {
+              "value": 0.29988950973599393,
+              "unit": "cal"
+            }
+          },
+          "detail": "min 1.80 cal (rail exit 1.80) at wind 0.0 m/s; limit 1.5",
+          "source": "Physics"
+        },
+        {
+          "name": "stability_max",
+          "evidence": {
+            "Margin": {
+              "value": 2.1955499659807884,
+              "unit": "cal"
+            }
+          },
+          "detail": "rail exit 1.80 cal; limit 4.0",
+          "source": "Physics"
+        },
+        {
+          "name": "rail_exit_speed",
+          "evidence": {
+            "Margin": {
+              "value": 7.9039416908237214,
+              "unit": "m/s"
+            }
+          },
+          "detail": "33.8 m/s (111 ft/s) at wind 8.9; limit 85 ft/s",
+          "source": "Physics"
+        },
+        {
+          "name": "thrust_to_weight",
+          "evidence": {
+            "Margin": {
+              "value": -3.3053723976235325,
+              "unit": ""
+            }
+          },
+          "detail": "T/W 4.69 at 610 m site pressure; limit 8.0",
+          "source": "Physics"
+        },
+        {
+          "name": "max_acceleration",
+          "evidence": {
+            "Margin": {
+              "value": 10.062434108006407,
+              "unit": "g"
+            }
+          },
+          "detail": "4.9 g",
+          "source": "Physics"
+        },
+        {
+          "name": "fin_flutter",
+          "evidence": {
+            "Margin": {
+              "value": 0.07064759679644661,
+              "unit": ""
+            }
+          },
+          "detail": "nominal: flutter 641 m/s vs 1.2 x 499 m/s at max-Q (4.8 mm G10)",
+          "source": "Physics"
+        },
+        {
+          "name": "chamber_stress",
+          "evidence": {
+            "Margin": {
+              "value": 3.264099096538417,
+              "unit": ""
+            }
+          },
+          "detail": "hoop 73 MPa at 2.0x Pc 24.0 bar (highest flown) vs Ftu 310 MPa",
+          "source": "Physics"
+        },
+        {
+          "name": "tank_burst",
+          "evidence": {
+            "Margin": {
+              "value": 0.6046619155344208,
+              "unit": ""
+            }
+          },
+          "detail": "LOX tank: von Mises 193 MPa (hoop 214, axial 102, radial -9) at 2.0x MEOP 45.5 bar",
+          "source": "Physics"
+        },
+        {
+          "name": "tank_proof",
+          "evidence": {
+            "Margin": {
+              "value": 0.19018989557813448,
+              "unit": ""
+            }
+          },
+          "detail": "LOX tank: proof 68.3 bar (tank alone, ports plugged) -> wall von Mises 145 MPa (hoop 160), bulkhead 232 MPa vs Fty 276",
+          "source": "Physics"
+        },
+        {
+          "name": "wall_temperature",
+          "evidence": {
+            "Margin": {
+              "value": 86.71480062473427,
+              "unit": "K"
+            }
+          },
+          "detail": "chamber: Al case peaks 33 C (limit 120 C), h 2453 W/m2K, Taw 3305 K",
+          "source": "Physics"
+        },
+        {
+          "name": "ablative_char",
+          "evidence": {
+            "Margin": {
+              "value": 2.3749999999999987,
+              "unit": "mm"
+            }
+          },
+          "detail": "chamber: char 3.6 mm of 6.0 mm liner",
+          "source": "Physics"
+        },
+        {
+          "name": "injector_stiffness",
+          "evidence": {
+            "Margin": {
+              "value": 0.1288449043235407,
+              "unit": ""
+            }
+          },
+          "detail": "Pc 23.7 bar with drilled orifices; dP/Pc ox 40 %, fuel 28 %",
+          "source": "Physics"
+        },
+        {
+          "name": "injector_momentum",
+          "evidence": {
+            "Margin": {
+              "value": 0.47071154922657166,
+              "unit": ""
+            }
+          },
+          "detail": "pintle TMR 1.53 (band 0.5-2)",
+          "source": "Physics"
+        },
+        {
+          "name": "start_sequence",
+          "evidence": {
+            "Margin": {
+              "value": 0.667114756991432,
+              "unit": "s"
+            }
+          },
+          "detail": "LOX at 1.18 s, fuel at 1.43 s, igniter out at 2.60 s",
+          "source": "Physics"
+        },
+        {
+          "name": "nozzle_separation",
+          "evidence": {
+            "Margin": {
+              "value": 0.675482081695229,
+              "unit": ""
+            }
+          },
+          "detail": "pe 1.01 bar at Pc 24.0 bar vs pa 0.94 bar",
+          "source": "Physics"
+        },
+        {
+          "name": "pressurant_margin",
+          "evidence": {
+            "Margin": {
+              "value": -0.11824757190612434,
+              "unit": ""
+            }
+          },
+          "detail": "usable GN2 2.06 kg (down to 48 bar, gas at 171 K) vs 2.34 kg needed (1 x airventuri_cf_tank_88cuft_4500; both tanks)",
+          "source": "Physics"
+        },
+        {
+          "name": "regulator_range",
+          "evidence": {
+            "Margin": {
+              "value": 3.447378500000001,
+              "unit": "bar"
+            }
+          },
+          "detail": "tank 41.4 bar in ninja_pro_v3_reg_stainless outlet 37.9-51.7 bar",
+          "source": "Rating"
+        },
+        {
+          "name": "valve_rating",
+          "evidence": {
+            "Margin": {
+              "value": 6.2052813,
+              "unit": "bar"
+            }
+          },
+          "detail": "LOX tank: relief set at MEOP 660 psi within nuvair_relief_rv2mf_a range 225-750 psi",
+          "source": "Rating"
+        },
+        {
+          "name": "drogue_descent",
+          "evidence": {
+            "Margin": {
+              "value": 1.8207166912021293,
+              "unit": "m/s"
+            }
+          },
+          "detail": "42.9 kg: 43.9 m/s at apogee, 27.8 m/s at main deploy; band 15.2-45.7",
+          "source": "Physics"
+        },
+        {
+          "name": "main_descent",
+          "evidence": {
+            "Margin": {
+              "value": 0.8821662958371146,
+              "unit": "m/s"
+            }
+          },
+          "detail": "6.7 m/s (22.1 ft/s) at the ground; limit 25.0 ft/s",
+          "source": "Physics"
+        },
+        {
+          "name": "apogee_accuracy",
+          "evidence": {
+            "Margin": {
+              "value": -0.39708959395202476,
+              "unit": ""
+            }
+          },
+          "detail": "nominal 8821 m (28942 ft) vs contract 20000 ft",
+          "source": "Requirement"
+        },
+        {
+          "name": "spec_inputs",
+          "evidence": {
+            "Margin": {
+              "value": 0.0,
+              "unit": ""
+            }
+          },
+          "detail": "the design records the spec's contract, competition and rail",
+          "source": "Requirement"
+        },
+        {
+          "name": "parts_fit",
+          "evidence": {
+            "Missing": {
+              "why": "bottle airventuri_cf_tank_88cuft_4500 has no published diameter/length"
+            }
+          },
+          "detail": "",
+          "source": "Geometry"
+        },
+        {
+          "name": "parts_orderable",
+          "evidence": {
+            "Margin": {
+              "value": -6.0,
+              "unit": "parts"
+            }
+          },
+          "detail": "out of stock: fc_classic_elliptical_36in (out of stock at https://shop.fruitychutes.com/products/36-elliptical-parachute-4-8lb-20fps on 2026-10-24), altus_easymini (out of stock at https://shop.gag.com/product/easymini-1/ on 2026-10-24), airventuri_cf_tank_88cuft_4500 (out of stock at https://www.airgundepot.com/carbon-fiber-tank.html on 2026-10-24), ninja_pro_v3_reg_stainless (out of stock at https://pbsports.com/products/ninja-paintball-pro-v3-adjustable-stainless-steel-4500psi-regulator on 2026-10-24), valveman_cryo_ball_1_2_double_acting (out of stock at https://valveman.com/products/1-2-cryogenic-ball-valve-double-acting-npt-full-port-stainless-steel-vented-ball on 2026-10-24), valveman_cryo_ball_1_2_double_acting (out of stock at https://valveman.com/products/1-2-cryogenic-ball-valve-double-acting-npt-full-port-stainless-steel-vented-ball on 2026-10-24)",
+          "source": "Rating"
+        },
+        {
+          "name": "budget",
+          "evidence": {
+            "Margin": {
+              "value": 0.0,
+              "unit": "USD"
+            }
+          },
+          "detail": "no budget stated: cost is information only, priced lines $10673; unpriced: gn2_fill_4500psi_quote (not in catalog; nitrogen to 4500 psi for the pressurant bottles, two fills of 97 cu ft: no public price (6K cylinders and boosters are quote-only; paintball 'nitrogen' is air; the priced 2000 psi cylinder cannot reach the fill) -- get a gas-supplier quote)",
+          "source": "Requirement"
+        },
+        {
+          "name": "isp_bound",
+          "evidence": {
+            "Margin": {
+              "value": 0.300631389855628,
+              "unit": ""
+            }
+          },
+          "detail": "delivered vacuum Isp 211.0 s vs ideal 301.8 s at the design O/F (eta c* 0.71)",
+          "source": "Physics"
+        }
+      ]
+    }
+  },
+  "reference_far_score_achieved": 587.9000000000001,
+  "design_summary": {
+    "name": "Wright n2o/rp1, FAR-OUT 2027 Group B, 20,000 ft, eta_c* 0.71",
+    "checks_passed": 26,
+    "checks_total": 26,
+    "failures": [],
+    "liftoff_mass_kg": 115.2390041507474,
+    "dry_mass_kg": 82.74692403226021,
+    "propellant_kg": 32.49208011848719,
+    "length_m": 6.111821372966653,
+    "diameter_m": 0.15672,
+    "thrust_n": 11388.170031252062,
+    "pc_bar": 20.0,
+    "of": 7.7,
+    "isp_site_s": 155.2921895355967,
+    "burn_s": 4.265000096100289,
+    "total_impulse_ns": 43411.881730913425,
+    "apogee_nominal_ft": 19369.23026038889,
+    "apogee_band_ft": [
+      17109.705523218334,
+      21816.387993259585
+    ],
+    "max_mach": 1.137295374062005,
+    "rail_exit_ftps": 108.56640830117644,
+    "twr": 10.077058286468864,
+    "margin_min_cal": 2.3017322756067604,
+    "bom_usd": 10110.199999999999,
+    "far_score_mean": 838.1651208137877,
+    "checks": {
+      "outcomes": [
+        {
+          "name": "stability_min",
+          "evidence": {
+            "Margin": {
+              "value": 0.7792909323819632,
+              "unit": "cal"
+            }
+          },
+          "detail": "min 2.28 cal, N2O at 30 C; limit 1.5",
+          "source": "Physics"
+        },
+        {
+          "name": "stability_max",
+          "evidence": {
+            "Margin": {
+              "value": 1.5161171148571833,
+              "unit": "cal"
+            }
+          },
+          "detail": "rail exit 2.48 cal; limit 4.0",
+          "source": "Physics"
+        },
+        {
+          "name": "rail_exit_speed",
+          "evidence": {
+            "Margin": {
+              "value": 4.15465039947706,
+              "unit": "m/s"
+            }
+          },
+          "detail": "30.1 m/s (99 ft/s), N2O at 5 C, wind 8.9; limit 85 ft/s",
+          "source": "Physics"
+        },
+        {
+          "name": "thrust_to_weight",
+          "evidence": {
+            "Margin": {
+              "value": 0.2716696630178479,
+              "unit": ""
+            }
+          },
+          "detail": "T/W 8.27, N2O at 5 C; limit 8.0",
+          "source": "Physics"
+        },
+        {
+          "name": "max_acceleration",
+          "evidence": {
+            "Margin": {
+              "value": 3.754712007185889,
+              "unit": "g"
+            }
+          },
+          "detail": "11.2 g, N2O at 30 C",
+          "source": "Physics"
+        },
+        {
+          "name": "fin_flutter",
+          "evidence": {
+            "Margin": {
+              "value": 0.172034095440168,
+              "unit": ""
+            }
+          },
+          "detail": "nominal: flutter 536 m/s vs 1.2 x 381 m/s at max-Q (4.8 mm G10)",
+          "source": "Physics"
+        },
+        {
+          "name": "chamber_stress",
+          "evidence": {
+            "Margin": {
+              "value": 2.7816720470890015,
+              "unit": ""
+            }
+          },
+          "detail": "hoop 82 MPa at 2.0x Pc 21.9 bar (highest flown) vs Ftu 310 MPa",
+          "source": "Physics"
+        },
+        {
+          "name": "tank_burst",
+          "evidence": {
+            "Margin": {
+              "value": 0.1577234804762977,
+              "unit": ""
+            }
+          },
+          "detail": "N2O run tank: von Mises 268 MPa (hoop 297, axial 142, radial -13) at 2.0x MEOP 63.1 bar",
+          "source": "Physics"
+        },
+        {
+          "name": "tank_proof",
+          "evidence": {
+            "Margin": {
+              "value": 0.19682238791972728,
+              "unit": ""
+            }
+          },
+          "detail": "fuel tank: bulkhead closure 12 x 1/4-20 screws at 2.0x MEOP: 10.2 kN per screw vs 12.2 kN (wall bearing)",
+          "source": "Physics"
+        },
+        {
+          "name": "wall_temperature",
+          "evidence": {
+            "Margin": {
+              "value": 94.79414905132478,
+              "unit": "K"
+            }
+          },
+          "detail": "chamber: Al case peaks 25 C (limit 120 C), h 3666 W/m2K, Taw 3234 K",
+          "source": "Physics"
+        },
+        {
+          "name": "ablative_char",
+          "evidence": {
+            "Margin": {
+              "value": 1.875,
+              "unit": "mm"
+            }
+          },
+          "detail": "chamber: char 2.1 mm of 4.0 mm liner",
+          "source": "Physics"
+        },
+        {
+          "name": "injector_stiffness",
+          "evidence": {
+            "Margin": {
+              "value": 0.21968987942397825,
+              "unit": ""
+            }
+          },
+          "detail": "N2O at 30 C: worst at t 0.0 s, Pc 21.9 bar, dP/Pc N2O 159 %, fuel 37 % (Dyer two-phase flow, drilled holes)",
+          "source": "Physics"
+        },
+        {
+          "name": "injector_momentum",
+          "evidence": {
+            "Margin": {
+              "value": 3.4736886167346754,
+              "unit": "deg"
+            }
+          },
+          "detail": "N2O at 30 C: O-F-O triplet resultant angle +1.53 deg with the N2O holes +/-0.05 mm off size, at t 0.0 s (O/F 8.86); limit 5 deg (Huzel & Huang eq 4-41)",
+          "source": "Physics"
+        },
+        {
+          "name": "start_sequence",
+          "evidence": {
+            "Margin": {
+              "value": 0.6678694959917479,
+              "unit": "s"
+            }
+          },
+          "detail": "LOX at 1.15 s, fuel at 1.43 s, igniter out at 2.60 s",
+          "source": "Physics"
+        },
+        {
+          "name": "nozzle_separation",
+          "evidence": {
+            "Margin": {
+              "value": 0.8929788855133697,
+              "unit": ""
+            }
+          },
+          "detail": "pe 1.22 bar at Pc 12.9 bar vs pa 0.94 bar",
+          "source": "Physics"
+        },
+        {
+          "name": "pressurant_margin",
+          "evidence": {
+            "Margin": {
+              "value": 0.1032646600354068,
+              "unit": ""
+            }
+          },
+          "detail": "usable compressed air 0.39 kg (down to 38 bar, gas at 161 K) vs 0.35 kg needed (1 x hk_hstl_98_4500; fuel tank only; the N2O run tank self-pressurises)",
+          "source": "Physics"
+        },
+        {
+          "name": "regulator_range",
+          "evidence": {
+            "Margin": {
+              "value": 9.160512762235273,
+              "unit": "bar"
+            }
+          },
+          "detail": "tank 33.3 bar in hk_turbine_pro_reg outlet 24.1-44.8 bar",
+          "source": "Rating"
+        },
+        {
+          "name": "valve_rating",
+          "evidence": {
+            "Margin": {
+              "value": 5.874843684210522,
+              "unit": "bar"
+            }
+          },
+          "detail": "N2O run tank: feed hose raceflux_ptfe_an4_per_ft rated 1000 psi vs MEOP 915 psi",
+          "source": "Rating"
+        },
+        {
+          "name": "drogue_descent",
+          "evidence": {
+            "Margin": {
+              "value": 6.244573667120278,
+              "unit": "m/s"
+            }
+          },
+          "detail": "86.7 kg: 39.5 m/s at apogee, 29.7 m/s at main deploy; band 15.2-45.7",
+          "source": "Physics"
+        },
+        {
+          "name": "main_descent",
+          "evidence": {
+            "Margin": {
+              "value": 0.7778120803106576,
+              "unit": "m/s"
+            }
+          },
+          "detail": "6.8 m/s (22.4 ft/s) at the ground; limit 25.0 ft/s",
+          "source": "Physics"
+        },
+        {
+          "name": "apogee_accuracy",
+          "evidence": {
+            "Margin": {
+              "value": 0.01846151301944461,
+              "unit": ""
+            }
+          },
+          "detail": "nominal 5904 m (19369 ft) vs contract 20000 ft",
+          "source": "Requirement"
+        },
+        {
+          "name": "spec_inputs",
+          "evidence": {
+            "Margin": {
+              "value": 0.0,
+              "unit": ""
+            }
+          },
+          "detail": "the design records the spec's contract, competition and rail",
+          "source": "Requirement"
+        },
+        {
+          "name": "parts_fit",
+          "evidence": {
+            "Margin": {
+              "value": 0.0,
+              "unit": "mm^3"
+            }
+          },
+          "detail": "no overlapping pairs",
+          "source": "Geometry"
+        },
+        {
+          "name": "parts_orderable",
+          "evidence": {
+            "Margin": {
+              "value": -0.0,
+              "unit": "parts"
+            }
+          },
+          "detail": "40 BOM lines, none marked out of stock",
+          "source": "Rating"
+        },
+        {
+          "name": "budget",
+          "evidence": {
+            "Margin": {
+              "value": 0.0,
+              "unit": "USD"
+            }
+          },
+          "detail": "no budget stated: cost is information only, priced lines $10110",
+          "source": "Requirement"
+        },
+        {
+          "name": "isp_bound",
+          "evidence": {
+            "Margin": {
+              "value": 0.30840340831706425,
+              "unit": ""
+            }
+          },
+          "detail": "delivered vacuum Isp 169.4 s vs ideal 245.0 s at the design O/F (eta c* 0.71)",
+          "source": "Physics"
+        }
+      ]
+    }
+  },
+  "design_search_log": [
+    "Pc 15 bar pe/pa 1 O/F 7.50 iter 0: burn 60.00 s, thrust 33850 N, fin scale 0.52, m0 331.4 kg",
+    "Pc 15 iter 1: no bottle set feeds the tanks; carrying 6 x hk_hstl_98_4500",
+    "Pc 15 bar pe/pa 1 O/F 7.50 iter 1: burn 2.97 s, thrust 23932 N, fin scale 0.59, m0 242.5 kg",
+    "Pc 15 bar pe/pa 1 O/F 7.50 iter 2: burn 2.68 s, thrust 15445 N, fin scale 0.64, m0 156.8 kg",
+    "Pc 15 bar pe/pa 1 O/F 7.50 iter 3: burn 3.54 s, thrust 12830 N, fin scale 0.63, m0 130.0 kg",
+    "Pc 15 bar pe/pa 1 O/F 7.50 iter 4: burn 4.08 s, thrust 12204 N, fin scale 0.62, m0 123.5 kg",
+    "Pc 15 bar pe/pa 1: 1 failing checks, BOM $10483, score 837",
+    "Pc 15 bar pe/pa 1.25 O/F 7.50 iter 0: burn 60.00 s, thrust 31136 N, fin scale 0.52, m0 336.6 kg",
+    "Pc 15 iter 1: no bottle set feeds the tanks; carrying 6 x hk_hstl_98_4500",
+    "Pc 15 bar pe/pa 1.25 O/F 7.50 iter 1: burn 2.95 s, thrust 22107 N, fin scale 0.59, m0 232.1 kg",
+    "Pc 15 bar pe/pa 1.25 O/F 7.50 iter 2: burn 2.62 s, thrust 13761 N, fin scale 0.65, m0 145.3 kg",
+    "Pc 15 bar pe/pa 1.25 O/F 7.50 iter 3: burn 3.72 s, thrust 11771 N, fin scale 0.62, m0 125.4 kg",
+    "Pc 15 bar pe/pa 1.25 O/F 7.50 iter 4: burn 4.20 s, thrust 11205 N, fin scale 0.62, m0 120.4 kg",
+    "Pc 15 bar pe/pa 1.25: 1 failing checks, BOM $10474, score 838",
+    "Pc 15 bar pe/pa 1.5 O/F 7.50 iter 0: burn 60.00 s, thrust 32017 N, fin scale 0.52, m0 346.2 kg",
+    "Pc 15 iter 1: no bottle set feeds the tanks; carrying 6 x hk_hstl_98_4500",
+    "Pc 15 bar pe/pa 1.5 O/F 7.50 iter 1: burn 2.86 s, thrust 21883 N, fin scale 0.59, m0 236.5 kg",
+    "Pc 15 bar pe/pa 1.5 O/F 7.50 iter 2: burn 2.56 s, thrust 13429 N, fin scale 0.65, m0 145.0 kg",
+    "Pc 15 bar pe/pa 1.5 O/F 7.50 iter 3: burn 3.70 s, thrust 11477 N, fin scale 0.63, m0 125.0 kg",
+    "Pc 15 bar pe/pa 1.5 O/F 7.50 iter 4: burn 4.19 s, thrust 10919 N, fin scale 0.62, m0 120.1 kg",
+    "Pc 15 bar pe/pa 1.5: 1 failing checks, BOM $10474, score 838",
+    "Pc 15 bar pe/pa 2 O/F 7.50 iter 0: burn 60.00 s, thrust 31552 N, fin scale 0.52, m0 362.9 kg",
+    "Pc 15 iter 1: no bottle set feeds the tanks; carrying 6 x hk_hstl_98_4500",
+    "Pc 15 bar pe/pa 2 O/F 7.50 iter 1: burn 2.76 s, thrust 20711 N, fin scale 0.59, m0 235.5 kg",
+    "Pc 15 bar pe/pa 2 O/F 7.50 iter 2: burn 2.56 s, thrust 12674 N, fin scale 0.65, m0 143.1 kg",
+    "Pc 15 bar pe/pa 2 O/F 7.50 iter 3: burn 3.74 s, thrust 10890 N, fin scale 0.62, m0 124.3 kg",
+    "Pc 15 bar pe/pa 2 O/F 7.50 iter 4: burn 4.23 s, thrust 10457 N, fin scale 0.62, m0 119.9 kg",
+    "Pc 15 bar pe/pa 2: 1 failing checks, BOM $10491, score 838",
+    "Pc 17.5 bar pe/pa 1 iter 0: no finite thrust meets T/W and rail exit (cold-day thrust 3879 N); candidate dropped",
+    "Pc 17.5 bar pe/pa 1.25 O/F 7.60 iter 0: burn 60.00 s, thrust 30930 N, fin scale 0.52, m0 327.9 kg",
+    "Pc 17.5 iter 1: no bottle set feeds the tanks; carrying 6 x hk_hstl_98_4500",
+    "Pc 17.5 bar pe/pa 1.25 O/F 7.60 iter 1: burn 2.87 s, thrust 21563 N, fin scale 0.59, m0 223.7 kg",
+    "Pc 17.5 bar pe/pa 1.25 O/F 7.60 iter 2: burn 2.61 s, thrust 13356 N, fin scale 0.65, m0 139.7 kg",
+    "Pc 17.5 bar pe/pa 1.25 O/F 7.60 iter 3: burn 3.76 s, thrust 11521 N, fin scale 0.62, m0 121.2 kg",
+    "Pc 17.5 bar pe/pa 1.25 O/F 7.60 iter 4: burn 4.23 s, thrust 11134 N, fin scale 0.61, m0 116.8 kg",
+    "Pc 17.5 bar pe/pa 1.25: 1 failing checks, BOM $10136, score 837",
+    "Pc 17.5 bar pe/pa 1.5 iter 0: no finite thrust meets T/W and rail exit (cold-day thrust 4146 N); candidate dropped",
+    "Pc 17.5 bar pe/pa 2 O/F 7.60 iter 0: burn 60.00 s, thrust 31119 N, fin scale 0.52, m0 351.3 kg",
+    "Pc 17.5 iter 1: no bottle set feeds the tanks; carrying 6 x hk_hstl_98_4500",
+    "Pc 17.5 bar pe/pa 2 O/F 7.60 iter 1: burn 2.70 s, thrust 20281 N, fin scale 0.59, m0 225.6 kg",
+    "Pc 17.5 bar pe/pa 2 O/F 7.60 iter 2: burn 2.56 s, thrust 12350 N, fin scale 0.65, m0 137.8 kg",
+    "Pc 17.5 bar pe/pa 2 O/F 7.60 iter 3: burn 3.78 s, thrust 10685 N, fin scale 0.62, m0 120.1 kg",
+    "Pc 17.5 bar pe/pa 2 O/F 7.60 iter 4: burn 4.26 s, thrust 10379 N, fin scale 0.61, m0 116.1 kg",
+    "Pc 17.5 bar pe/pa 2: 1 failing checks, BOM $10144, score 838",
+    "Pc 20 bar pe/pa 1 O/F 7.70 iter 0: burn 60.00 s, thrust 30440 N, fin scale 0.52, m0 311.9 kg",
+    "Pc 20 iter 1: no bottle set feeds the tanks; carrying 6 x hk_hstl_98_4500",
+    "Pc 20 bar pe/pa 1 O/F 7.70 iter 1: burn 2.89 s, thrust 21852 N, fin scale 0.59, m0 217.7 kg",
+    "Pc 20 bar pe/pa 1 O/F 7.70 iter 2: burn 2.72 s, thrust 14367 N, fin scale 0.63, m0 144.5 kg",
+    "Pc 20 bar pe/pa 1 O/F 7.70 iter 3: burn 3.57 s, thrust 12161 N, fin scale 0.62, m0 121.5 kg",
+    "Pc 20 bar pe/pa 1 O/F 7.70 iter 4: burn 4.08 s, thrust 11672 N, fin scale 0.61, m0 116.4 kg",
+    "Pc 20 bar pe/pa 1: 1 failing checks, BOM $10110, score 838",
+    "Pc 20 bar pe/pa 1.25 O/F 7.70 iter 0: burn 60.00 s, thrust 31420 N, fin scale 0.52, m0 326.0 kg",
+    "Pc 20 iter 1: no bottle set feeds the tanks; carrying 6 x hk_hstl_98_4500",
+    "Pc 20 bar pe/pa 1.25 O/F 7.70 iter 1: burn 2.75 s, thrust 21355 N, fin scale 0.59, m0 219.6 kg",
+    "Pc 20 bar pe/pa 1.25 O/F 7.70 iter 2: burn 2.68 s, thrust 13851 N, fin scale 0.63, m0 143.0 kg",
+    "Pc 20 bar pe/pa 1.25 O/F 7.70 iter 3: burn 3.56 s, thrust 11574 N, fin scale 0.62, m0 120.1 kg",
+    "Pc 20 bar pe/pa 1.25 O/F 7.70 iter 4: burn 4.10 s, thrust 10966 N, fin scale 0.61, m0 114.7 kg",
+    "Pc 20 bar pe/pa 1.25: 1 failing checks, BOM $10102, score 837",
+    "Pc 20 bar pe/pa 1.5 iter 0: no finite thrust meets T/W and rail exit (cold-day thrust 4053 N); candidate dropped",
+    "Pc 20 bar pe/pa 2 O/F 7.70 iter 0: burn 60.00 s, thrust 31457 N, fin scale 0.52, m0 347.7 kg",
+    "Pc 20 iter 1: no bottle set feeds the tanks; carrying 6 x hk_hstl_98_4500",
+    "Pc 20 bar pe/pa 2 O/F 7.70 iter 1: burn 2.63 s, thrust 20269 N, fin scale 0.59, m0 222.3 kg",
+    "Pc 20 bar pe/pa 2 O/F 7.70 iter 2: burn 2.63 s, thrust 12798 N, fin scale 0.63, m0 141.5 kg",
+    "Pc 20 bar pe/pa 2 O/F 7.70 iter 3: burn 3.60 s, thrust 10712 N, fin scale 0.62, m0 118.8 kg",
+    "Pc 20 bar pe/pa 2 O/F 7.70 iter 4: burn 4.16 s, thrust 10199 N, fin scale 0.61, m0 113.9 kg",
+    "Pc 20 bar pe/pa 2: 0 failing checks, BOM $10110, score 838",
+    "Pc 22.5 bar pe/pa 1 O/F 7.80 iter 0: burn 60.00 s, thrust 31114 N, fin scale 0.52, m0 311.2 kg",
+    "Pc 22.5 iter 1: no bottle set feeds the tanks; carrying 6 x hk_hstl_98_4500",
+    "Pc 22.5 bar pe/pa 1 O/F 7.80 iter 1: burn 2.78 s, thrust 21535 N, fin scale 0.59, m0 213.5 kg",
+    "Pc 22.5 bar pe/pa 1 O/F 7.80 iter 2: burn 2.73 s, thrust 14271 N, fin scale 0.63, m0 141.2 kg",
+    "Pc 22.5 bar pe/pa 1 O/F 7.80 iter 3: burn 3.56 s, thrust 11981 N, fin scale 0.62, m0 119.1 kg",
+    "Pc 22.5 bar pe/pa 1 O/F 7.80 iter 4: burn 4.08 s, thrust 11368 N, fin scale 0.61, m0 113.8 kg",
+    "Pc 22.5 bar pe/pa 1: 1 failing checks, BOM $10093, score 837",
+    "Pc 22.5 bar pe/pa 1.25 iter 0: no finite thrust meets T/W and rail exit (cold-day thrust 4037 N); candidate dropped",
+    "Pc 22.5 bar pe/pa 1.5 O/F 7.80 iter 0: burn 11.70 s, thrust 9514 N, fin scale 0.57, m0 101.9 kg",
+    "Pc 22.5 bar pe/pa 1.5 O/F 7.80 iter 1: burn 5.18 s, thrust 11517 N, fin scale 0.61, m0 119.8 kg",
+    "Pc 22.5 bar pe/pa 1.5 O/F 7.80 iter 2: burn 4.22 s, thrust 11352 N, fin scale 0.63, m0 118.7 kg",
+    "Pc 22.5 bar pe/pa 1.5 O/F 7.80 iter 3: burn 3.99 s, thrust 10466 N, fin scale 0.64, m0 110.6 kg",
+    "Pc 22.5 bar pe/pa 1.5 O/F 7.80 iter 4: burn 4.27 s, thrust 10267 N, fin scale 0.64, m0 108.6 kg",
+    "Pc 22.5 bar pe/pa 1.5: 1 failing checks, BOM $9926, score 838",
+    "Pc 22.5 bar pe/pa 2 iter 0: no finite thrust meets T/W and rail exit (cold-day thrust 4261 N); candidate dropped",
+    "Pc 25 bar pe/pa 1 iter 0: no finite thrust meets T/W and rail exit (cold-day thrust 3884 N); candidate dropped",
+    "Pc 25 bar pe/pa 1.25 O/F 7.90 iter 0: burn 12.13 s, thrust 9832 N, fin scale 0.57, m0 101.1 kg",
+    "Pc 25 bar pe/pa 1.25 O/F 7.90 iter 1: burn 5.13 s, thrust 11619 N, fin scale 0.62, m0 118.5 kg",
+    "Pc 25 bar pe/pa 1.25 O/F 7.90 iter 2: burn 4.27 s, thrust 11491 N, fin scale 0.63, m0 116.8 kg",
+    "Pc 25 bar pe/pa 1.25 O/F 7.90 iter 3: burn 4.25 s, thrust 11605 N, fin scale 0.64, m0 117.2 kg",
+    "Pc 25 bar pe/pa 1.25 O/F 7.90 iter 4: burn 4.07 s, thrust 10875 N, fin scale 0.65, m0 110.6 kg",
+    "Pc 25 bar pe/pa 1.25: 3 failing checks, BOM $10556, score 814",
+    "Pc 25 bar pe/pa 1.5 O/F 7.90 iter 0: burn 11.63 s, thrust 9778 N, fin scale 0.57, m0 101.5 kg",
+    "Pc 25 bar pe/pa 1.5 O/F 7.90 iter 1: burn 4.96 s, thrust 11511 N, fin scale 0.61, m0 118.9 kg",
+    "Pc 25 bar pe/pa 1.5 O/F 7.90 iter 2: burn 4.15 s, thrust 11355 N, fin scale 0.64, m0 117.3 kg",
+    "Pc 25 bar pe/pa 1.5 O/F 7.90 iter 3: burn 4.06 s, thrust 10615 N, fin scale 0.65, m0 110.3 kg",
+    "Pc 25 bar pe/pa 1.5 O/F 7.90 iter 4: burn 4.47 s, thrust 11173 N, fin scale 0.63, m0 115.6 kg",
+    "Pc 25 bar pe/pa 1.5: 1 failing checks, BOM $10607, score 838",
+    "Pc 25 bar pe/pa 2 O/F 7.90 iter 0: burn 11.43 s, thrust 9319 N, fin scale 0.57, m0 101.6 kg",
+    "Pc 25 bar pe/pa 2 O/F 7.90 iter 1: burn 5.04 s, thrust 11062 N, fin scale 0.61, m0 118.8 kg",
+    "Pc 25 bar pe/pa 2 O/F 7.90 iter 2: burn 4.17 s, thrust 10959 N, fin scale 0.63, m0 117.0 kg",
+    "Pc 25 bar pe/pa 2 O/F 7.90 iter 3: burn 4.21 s, thrust 10891 N, fin scale 0.64, m0 117.0 kg",
+    "Pc 25 bar pe/pa 2 O/F 7.90 iter 4: burn 4.09 s, thrust 10230 N, fin scale 0.65, m0 110.0 kg",
+    "Pc 25 bar pe/pa 2: 2 failing checks, BOM $10564, score 813",
+    "Pc 27.5 bar: tank 664 psi outside regulator outlet range, skipped",
+    "Pc 27.5 bar: tank 664 psi outside regulator outlet range, skipped",
+    "Pc 27.5 bar: tank 664 psi outside regulator outlet range, skipped",
+    "Pc 27.5 bar: tank 664 psi outside regulator outlet range, skipped",
+    "Pc 30 bar: tank 724 psi outside regulator outlet range, skipped",
+    "Pc 30 bar: tank 724 psi outside regulator outlet range, skipped",
+    "Pc 30 bar: tank 724 psi outside regulator outlet range, skipped",
+    "Pc 30 bar: tank 724 psi outside regulator outlet range, skipped"
+  ],
+  "design_at_seb_eta": {
+    "name": "Wright n2o/rp1, FAR-OUT 2027 Group B, 20,000 ft, eta_c* 0.71 (at Wright's a-priori eta_c* 0.90)",
+    "checks_passed": 26,
+    "checks_total": 26,
+    "failures": [],
+    "liftoff_mass_kg": 92.41498348148569,
+    "dry_mass_kg": 71.21892045919122,
+    "propellant_kg": 21.19606302229447,
+    "length_m": 4.831520895688223,
+    "diameter_m": 0.15672,
+    "thrust_n": 8972.767183536173,
+    "pc_bar": 22.5,
+    "of": 7.8,
+    "isp_site_s": 200.6552651491007,
+    "burn_s": 4.555000191086773,
+    "total_impulse_ns": 36536.83381692587,
+    "apogee_nominal_ft": 19260.166243711676,
+    "apogee_band_ft": [
+      16893.152941367065,
+      21780.518144431207
+    ],
+    "max_mach": 1.146381314760363,
+    "rail_exit_ftps": 109.04661657505444,
+    "twr": 9.90064146271386,
+    "margin_min_cal": 2.185349326113951,
+    "bom_usd": 9985.029999999999,
+    "far_score_mean": 835.4710746859333,
+    "checks": {
+      "outcomes": [
+        {
+          "name": "stability_min",
+          "evidence": {
+            "Margin": {
+              "value": 0.6761440445367417,
+              "unit": "cal"
+            }
+          },
+          "detail": "min 2.18 cal, N2O at 30 C; limit 1.5",
+          "source": "Physics"
+        },
+        {
+          "name": "stability_max",
+          "evidence": {
+            "Margin": {
+              "value": 1.768092098035691,
+              "unit": "cal"
+            }
+          },
+          "detail": "rail exit 2.23 cal; limit 4.0",
+          "source": "Physics"
+        },
+        {
+          "name": "rail_exit_speed",
+          "evidence": {
+            "Margin": {
+              "value": 3.476155264050263,
+              "unit": "m/s"
+            }
+          },
+          "detail": "29.4 m/s (96 ft/s), N2O at 5 C, wind 8.9; limit 85 ft/s",
+          "source": "Physics"
+        },
+        {
+          "name": "thrust_to_weight",
+          "evidence": {
+            "Margin": {
+              "value": 0.12673506751599817,
+              "unit": ""
+            }
+          },
+          "detail": "T/W 8.13, N2O at 5 C; limit 8.0",
+          "source": "Physics"
+        },
+        {
+          "name": "max_acceleration",
+          "evidence": {
+            "Margin": {
+              "value": 4.178344666940866,
+              "unit": "g"
+            }
+          },
+          "detail": "10.8 g, N2O at 30 C",
+          "source": "Physics"
+        },
+        {
+          "name": "fin_flutter",
+          "evidence": {
+            "Margin": {
+              "value": 0.5510699244835093,
+              "unit": ""
+            }
+          },
+          "detail": "nominal: flutter 714 m/s vs 1.2 x 383 m/s at max-Q (6.3 mm G10)",
+          "source": "Physics"
+        },
+        {
+          "name": "chamber_stress",
+          "evidence": {
+            "Margin": {
+              "value": 1.9907929635214145,
+              "unit": ""
+            }
+          },
+          "detail": "hoop 104 MPa at 2.0x Pc 24.2 bar (highest flown) vs Ftu 310 MPa",
+          "source": "Physics"
+        },
+        {
+          "name": "tank_burst",
+          "evidence": {
+            "Margin": {
+              "value": 0.1577234804762977,
+              "unit": ""
+            }
+          },
+          "detail": "N2O run tank: von Mises 268 MPa (hoop 297, axial 142, radial -13) at 2.0x MEOP 63.1 bar",
+          "source": "Physics"
+        },
+        {
+          "name": "tank_proof",
+          "evidence": {
+            "Margin": {
+              "value": 0.2411491430278654,
+              "unit": ""
+            }
+          },
+          "detail": "fuel tank: bulkhead closure 14 x 1/4-20 screws at 2.0x MEOP: 9.9 kN per screw vs 12.2 kN (wall bearing)",
+          "source": "Physics"
+        },
+        {
+          "name": "wall_temperature",
+          "evidence": {
+            "Margin": {
+              "value": 93.67293440465147,
+              "unit": "K"
+            }
+          },
+          "detail": "chamber: Al case peaks 26 C (limit 120 C), h 1920 W/m2K, Taw 3247 K",
+          "source": "Physics"
+        },
+        {
+          "name": "ablative_char",
+          "evidence": {
+            "Margin": {
+              "value": 1.6249999999999998,
+              "unit": "mm"
+            }
+          },
+          "detail": "chamber: char 2.4 mm of 4.0 mm liner",
+          "source": "Physics"
+        },
+        {
+          "name": "injector_stiffness",
+          "evidence": {
+            "Margin": {
+              "value": 0.24151578559394712,
+              "unit": ""
+            }
+          },
+          "detail": "N2O at 30 C: worst at t 0.0 s, Pc 24.2 bar, dP/Pc N2O 134 %, fuel 39 % (Dyer two-phase flow, drilled holes)",
+          "source": "Physics"
+        },
+        {
+          "name": "injector_momentum",
+          "evidence": {
+            "Margin": {
+              "value": 3.4756414723000404,
+              "unit": "deg"
+            }
+          },
+          "detail": "N2O at 30 C: O-F-O triplet resultant angle +1.52 deg with the N2O holes +/-0.05 mm off size, at t 0.0 s (O/F 9.66); limit 5 deg (Huzel & Huang eq 4-41)",
+          "source": "Physics"
+        },
+        {
+          "name": "start_sequence",
+          "evidence": {
+            "Margin": {
+              "value": 0.6482389935166617,
+              "unit": "s"
+            }
+          },
+          "detail": "LOX at 1.16 s, fuel at 1.45 s, igniter out at 2.60 s",
+          "source": "Physics"
+        },
+        {
+          "name": "nozzle_separation",
+          "evidence": {
+            "Margin": {
+              "value": 0.860227154493184,
+              "unit": ""
+            }
+          },
+          "detail": "pe 1.19 bar at Pc 14.2 bar vs pa 0.94 bar",
+          "source": "Physics"
+        },
+        {
+          "name": "pressurant_margin",
+          "evidence": {
+            "Margin": {
+              "value": 0.6207419193739445,
+              "unit": ""
+            }
+          },
+          "detail": "usable compressed air 0.38 kg (down to 43 bar, gas at 167 K) vs 0.23 kg needed (1 x hk_hstl_98_4500; fuel tank only; the N2O run tank self-pressurises)",
+          "source": "Physics"
+        },
+        {
+          "name": "regulator_range",
+          "evidence": {
+            "Margin": {
+              "value": 7.362237954985318,
+              "unit": "bar"
+            }
+          },
+          "detail": "tank 37.5 bar in hk_turbine_pro_reg outlet 24.1-44.8 bar",
+          "source": "Rating"
+        },
+        {
+          "name": "valve_rating",
+          "evidence": {
+            "Margin": {
+              "value": 5.874843684210522,
+              "unit": "bar"
+            }
+          },
+          "detail": "N2O run tank: feed hose raceflux_ptfe_an4_per_ft rated 1000 psi vs MEOP 915 psi",
+          "source": "Rating"
+        },
+        {
+          "name": "drogue_descent",
+          "evidence": {
+            "Margin": {
+              "value": 9.362682544314026,
+              "unit": "m/s"
+            }
+          },
+          "detail": "73.8 kg: 36.4 m/s at apogee, 27.4 m/s at main deploy; band 15.2-45.7",
+          "source": "Physics"
+        },
+        {
+          "name": "main_descent",
+          "evidence": {
+            "Margin": {
+              "value": 1.3064997178367515,
+              "unit": "m/s"
+            }
+          },
+          "detail": "6.3 m/s (20.7 ft/s) at the ground; limit 25.0 ft/s",
+          "source": "Physics"
+        },
+        {
+          "name": "apogee_accuracy",
+          "evidence": {
+            "Margin": {
+              "value": 0.013008312185583806,
+              "unit": ""
+            }
+          },
+          "detail": "nominal 5870 m (19260 ft) vs contract 20000 ft",
+          "source": "Requirement"
+        },
+        {
+          "name": "spec_inputs",
+          "evidence": {
+            "Margin": {
+              "value": 0.0,
+              "unit": ""
+            }
+          },
+          "detail": "the design records the spec's contract, competition and rail",
+          "source": "Requirement"
+        },
+        {
+          "name": "parts_fit",
+          "evidence": {
+            "Margin": {
+              "value": 0.0,
+              "unit": "mm^3"
+            }
+          },
+          "detail": "no overlapping pairs",
+          "source": "Geometry"
+        },
+        {
+          "name": "parts_orderable",
+          "evidence": {
+            "Margin": {
+              "value": -0.0,
+              "unit": "parts"
+            }
+          },
+          "detail": "40 BOM lines, none marked out of stock",
+          "source": "Rating"
+        },
+        {
+          "name": "budget",
+          "evidence": {
+            "Margin": {
+              "value": 0.0,
+              "unit": "USD"
+            }
+          },
+          "detail": "no budget stated: cost is information only, priced lines $9985",
+          "source": "Requirement"
+        },
+        {
+          "name": "isp_bound",
+          "evidence": {
+            "Margin": {
+              "value": 0.11930902659704101,
+              "unit": ""
+            }
+          },
+          "detail": "delivered vacuum Isp 218.5 s vs ideal 248.0 s at the design O/F (eta c* 0.90)",
+          "source": "Physics"
+        }
+      ]
+    }
+  },
+  "design_uncalibrated": {
+    "name": "Wright n2o/rp1, FAR-OUT 2027 Group B, 20,000 ft, eta_c* 0.71 (uncalibrated dry-mass build-up)",
+    "checks_passed": 26,
+    "checks_total": 26,
+    "failures": [],
+    "liftoff_mass_kg": 52.08583263383133,
+    "dry_mass_kg": 33.73583567803681,
+    "propellant_kg": 18.349996955794524,
+    "length_m": 4.548678304888915,
+    "diameter_m": 0.15672,
+    "thrust_n": 5550.566118676764,
+    "pc_bar": 15.0,
+    "of": 7.5,
+    "isp_site_s": 152.2605564592899,
+    "burn_s": 4.775000169075384,
+    "total_impulse_ns": 24002.238939322324,
+    "apogee_nominal_ft": 19963.27468601492,
+    "apogee_band_ft": [
+      17383.82859752274,
+      22798.794672683445
+    ],
+    "max_mach": 1.3866875835579935,
+    "rail_exit_ftps": 115.14089512109746,
+    "twr": 10.866682889013324,
+    "margin_min_cal": 1.7473485192279183,
+    "bom_usd": 9413.779999999999,
+    "far_score_mean": 838.6051155267378,
+    "checks": {
+      "outcomes": [
+        {
+          "name": "stability_min",
+          "evidence": {
+            "Margin": {
+              "value": 0.23579343235535455,
+              "unit": "cal"
+            }
+          },
+          "detail": "min 1.74 cal, N2O at 30 C; limit 1.5",
+          "source": "Physics"
+        },
+        {
+          "name": "stability_max",
+          "evidence": {
+            "Margin": {
+              "value": 2.183483621614627,
+              "unit": "cal"
+            }
+          },
+          "detail": "rail exit 1.82 cal; limit 4.0",
+          "source": "Physics"
+        },
+        {
+          "name": "rail_exit_speed",
+          "evidence": {
+            "Margin": {
+              "value": 6.106743081987631,
+              "unit": "m/s"
+            }
+          },
+          "detail": "32.0 m/s (105 ft/s), N2O at 5 C, wind 8.9; limit 85 ft/s",
+          "source": "Physics"
+        },
+        {
+          "name": "thrust_to_weight",
+          "evidence": {
+            "Margin": {
+              "value": 1.1105089726963637,
+              "unit": ""
+            }
+          },
+          "detail": "T/W 9.11, N2O at 5 C; limit 8.0",
+          "source": "Physics"
+        },
+        {
+          "name": "max_acceleration",
+          "evidence": {
+            "Margin": {
+              "value": 2.771575766112612,
+              "unit": "g"
+            }
+          },
+          "detail": "12.2 g, N2O at 30 C",
+          "source": "Physics"
+        },
+        {
+          "name": "fin_flutter",
+          "evidence": {
+            "Margin": {
+              "value": 0.29455576580865195,
+              "unit": ""
+            }
+          },
+          "detail": "nominal: flutter 719 m/s vs 1.2 x 463 m/s at max-Q (6.3 mm G10)",
+          "source": "Physics"
+        },
+        {
+          "name": "chamber_stress",
+          "evidence": {
+            "Margin": {
+              "value": 3.429827874898592,
+              "unit": ""
+            }
+          },
+          "detail": "hoop 70 MPa at 2.0x Pc 16.4 bar (highest flown) vs Ftu 310 MPa",
+          "source": "Physics"
+        },
+        {
+          "name": "tank_burst",
+          "evidence": {
+            "Margin": {
+              "value": 0.1577234804762977,
+              "unit": ""
+            }
+          },
+          "detail": "N2O run tank: von Mises 268 MPa (hoop 297, axial 142, radial -13) at 2.0x MEOP 63.1 bar",
+          "source": "Physics"
+        },
+        {
+          "name": "tank_proof",
+          "evidence": {
+            "Margin": {
+              "value": 0.21734172127818074,
+              "unit": ""
+            }
+          },
+          "detail": "fuel tank: proof 41.2 bar (tank alone, ports plugged) -> wall von Mises 87 MPa (hoop 97), bulkhead 227 MPa vs Fty 276",
+          "source": "Physics"
+        },
+        {
+          "name": "wall_temperature",
+          "evidence": {
+            "Margin": {
+              "value": 93.48395490045823,
+              "unit": "K"
+            }
+          },
+          "detail": "chamber: Al case peaks 27 C (limit 120 C), h 1621 W/m2K, Taw 3204 K",
+          "source": "Physics"
+        },
+        {
+          "name": "ablative_char",
+          "evidence": {
+            "Margin": {
+              "value": 1.875,
+              "unit": "mm"
+            }
+          },
+          "detail": "chamber: char 2.1 mm of 4.0 mm liner",
+          "source": "Physics"
+        },
+        {
+          "name": "injector_stiffness",
+          "evidence": {
+            "Margin": {
+              "value": 0.2169141677627994,
+              "unit": ""
+            }
+          },
+          "detail": "N2O at 30 C: worst at t 0.0 s, Pc 16.4 bar, dP/Pc N2O 245 %, fuel 37 % (Dyer two-phase flow, drilled holes)",
+          "source": "Physics"
+        },
+        {
+          "name": "injector_momentum",
+          "evidence": {
+            "Margin": {
+              "value": 3.4502611245870156,
+              "unit": "deg"
+            }
+          },
+          "detail": "N2O at 30 C: O-F-O triplet resultant angle +1.55 deg with the N2O holes +/-0.05 mm off size, at t 0.0 s (O/F 9.07); limit 5 deg (Huzel & Huang eq 4-41)",
+          "source": "Physics"
+        },
+        {
+          "name": "start_sequence",
+          "evidence": {
+            "Margin": {
+              "value": 0.6363163110179972,
+              "unit": "s"
+            }
+          },
+          "detail": "LOX at 1.16 s, fuel at 1.46 s, igniter out at 2.60 s",
+          "source": "Physics"
+        },
+        {
+          "name": "nozzle_separation",
+          "evidence": {
+            "Margin": {
+              "value": 0.46100121535983574,
+              "unit": ""
+            }
+          },
+          "detail": "pe 0.81 bar at Pc 10.3 bar vs pa 0.94 bar",
+          "source": "Physics"
+        },
+        {
+          "name": "pressurant_margin",
+          "evidence": {
+            "Margin": {
+              "value": 1.6760089332074566,
+              "unit": ""
+            }
+          },
+          "detail": "usable compressed air 0.41 kg (down to 29 bar, gas at 148 K) vs 0.15 kg needed (1 x hk_hstl_98_4500; fuel tank only; the N2O run tank self-pressurises)",
+          "source": "Physics"
+        },
+        {
+          "name": "regulator_range",
+          "evidence": {
+            "Margin": {
+              "value": 0.8374721966764563,
+              "unit": "bar"
+            }
+          },
+          "detail": "tank 25.0 bar in hk_turbine_pro_reg outlet 24.1-44.8 bar",
+          "source": "Rating"
+        },
+        {
+          "name": "valve_rating",
+          "evidence": {
+            "Margin": {
+              "value": 5.874843684210522,
+              "unit": "bar"
+            }
+          },
+          "detail": "N2O run tank: feed hose raceflux_ptfe_an4_per_ft rated 1000 psi vs MEOP 915 psi",
+          "source": "Rating"
+        },
+        {
+          "name": "drogue_descent",
+          "evidence": {
+            "Margin": {
+              "value": 4.605169354455931,
+              "unit": "m/s"
+            }
+          },
+          "detail": "36.0 kg: 41.1 m/s at apogee, 30.6 m/s at main deploy; band 15.2-45.7",
+          "source": "Physics"
+        },
+        {
+          "name": "main_descent",
+          "evidence": {
+            "Margin": {
+              "value": 1.447666427928227,
+              "unit": "m/s"
+            }
+          },
+          "detail": "6.2 m/s (20.3 ft/s) at the ground; limit 25.0 ft/s",
+          "source": "Physics"
+        },
+        {
+          "name": "apogee_accuracy",
+          "evidence": {
+            "Margin": {
+              "value": 0.04816373430074612,
+              "unit": ""
+            }
+          },
+          "detail": "nominal 6085 m (19963 ft) vs contract 20000 ft",
+          "source": "Requirement"
+        },
+        {
+          "name": "spec_inputs",
+          "evidence": {
+            "Margin": {
+              "value": 0.0,
+              "unit": ""
+            }
+          },
+          "detail": "the design records the spec's contract, competition and rail",
+          "source": "Requirement"
+        },
+        {
+          "name": "parts_fit",
+          "evidence": {
+            "Margin": {
+              "value": 0.0,
+              "unit": "mm^3"
+            }
+          },
+          "detail": "no overlapping pairs",
+          "source": "Geometry"
+        },
+        {
+          "name": "parts_orderable",
+          "evidence": {
+            "Margin": {
+              "value": -0.0,
+              "unit": "parts"
+            }
+          },
+          "detail": "40 BOM lines, none marked out of stock",
+          "source": "Rating"
+        },
+        {
+          "name": "budget",
+          "evidence": {
+            "Margin": {
+              "value": 0.0,
+              "unit": "USD"
+            }
+          },
+          "detail": "no budget stated: cost is information only, priced lines $9414",
+          "source": "Requirement"
+        },
+        {
+          "name": "isp_bound",
+          "evidence": {
+            "Margin": {
+              "value": 0.30489815968371936,
+              "unit": ""
+            }
+          },
+          "detail": "delivered vacuum Isp 173.0 s vs ideal 248.9 s at the design O/F (eta c* 0.71)",
+          "source": "Physics"
+        }
+      ]
+    }
+  },
+  "mass_calibration_fitted": 1.8700409107841542,
+  "sim_scores": [
+    838.6051155267378,
+    212.59514365479228
+  ],
+  "corrected": [
+    {
+      "hypothesis": "dry mass x 1.87",
+      "factor": 1.8700409107841542,
+      "wright_apogee_ft": 10544.907775314323,
+      "wright_score": 171.64157816278515,
+      "reference_score": 587.9000000000001
+    },
+    {
+      "hypothesis": "thrust x 0.67",
+      "factor": 0.6709194134920835,
+      "wright_apogee_ft": 10786.277428423662,
+      "wright_score": 192.0127495192392,
+      "reference_score": 587.9000000000001
+    },
+    {
+      "hypothesis": "drag x 2.81",
+      "factor": 2.805950805079192,
+      "wright_apogee_ft": 10398.597261448664,
+      "wright_score": 150.19555523017138,
+      "reference_score": 587.9000000000001
+    }
+  ],
+  "reference_excluded": [
+    [
+      "thrust_to_weight",
+      "the T/W > 8 rule is FAR-OUT 2027's; Eureka-2 flew in 2024"
+    ],
+    [
+      "apogee_accuracy",
+      "the reconstruction's miss is the simulation's own error (section 2), not the rocket's"
+    ],
+    [
+      "pressurant_margin",
+      "Eureka-2's GN2 bottle is not published; the airventuri 88 cu ft bottle is Wright's placeholder"
+    ],
+    [
+      "parts_fit (GN2 bottle)",
+      "the placeholder bottle lists no size, so its fit cannot be measured; it is not the team's"
+    ],
+    [
+      "parts_orderable",
+      "Eureka-2 was bought in 2023-24; whether its parts are in stock today says nothing about the rocket"
+    ]
+  ],
+  "reference_applicable_failures": [],
+  "beats_reference": true,
+  "passes_every_check": true,
+  "verdict": "calibrated design (n2o/rp1 chosen by the pair search; dry mass x1.86, the Eureka-2 calibration, fitted here x1.870): 26/26 checks, FAR-OUT score 838 vs Eureka-2's 588 under the same calibration, BOM $10110 (information: no budget on either side). Uncalibrated design flown under that calibration: 172: PASS"
+}

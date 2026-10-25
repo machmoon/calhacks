@@ -1,0 +1,596 @@
+{
+  "passed": true,
+  "all_source_entities_retained_once": true,
+  "objects": [
+    {
+      "name": "Pixhawk_Solid001",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 1,
+      "geometry_role": "physical_solid",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "065746bb1547e797ab97730482aa0972a13ea28682da41d76109a2db9249ed0f",
+        "expected_sha256": "d2a13ab0e53a0311ad5bc090bf9c7245f180312f2c24ee1c5c89f2a5dfdd01fa",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 38048,
+        "changed_numeric_tokens": 663,
+        "max_numeric_delta": 4.061982777924182e-16,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Solid002",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 2,
+      "geometry_role": "physical_solid",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "54cda4b396af605f5ff2fbc1715f0d8f75d827572398b348a05b61a8e920d0de",
+        "expected_sha256": "3c352b213340086bee4b284de0fd5cc884e410ea9f9ae5cc057fb97bc631b7a2",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 13621,
+        "changed_numeric_tokens": 64,
+        "max_numeric_delta": 6.938893903907228e-18,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Solid003",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 3,
+      "geometry_role": "physical_solid",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "2a330f3cb7d94577ed97d43dd204814068e61d8fbca4a11ab3b6caae7fbf36d3",
+        "expected_sha256": "26e8e24a2a7543229be045935a665abc6ee4b0f0437dc9003c6522d81e6d6468",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 571961,
+        "changed_numeric_tokens": 32032,
+        "max_numeric_delta": 9.992007221626409e-15,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Solid004",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 4,
+      "geometry_role": "physical_solid",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "8a83162672d2ee06612bd535e5f3245c8bc012164ca754b30845dc504b356343",
+        "expected_sha256": "4a2f659f9e2a72180e82b14776a6611c4737da2b6e26521719e518bd89f7da7f",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 265478,
+        "changed_numeric_tokens": 4868,
+        "max_numeric_delta": 9.992007221626409e-15,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Solid005",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 5,
+      "geometry_role": "physical_solid",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "791e003d35d3eaa108b37c3d177c867b861d166f311420d6f05af37e427ce267",
+        "expected_sha256": "a49257abc75c77f1145d5b139a299cb17adc71f49d5ff1dfe485dd865aa57982",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 142082,
+        "changed_numeric_tokens": 2499,
+        "max_numeric_delta": 9.992007221626409e-15,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Solid006",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 6,
+      "geometry_role": "physical_solid",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "504d76d6ed0023d6313a828b4516475cbd4b8c46a7e58300215fbb6f6b6c2f67",
+        "expected_sha256": "0114bbf43b840d7aaef7aa13b3270c86315adabc885dc28fb5cf9ad9979d599e",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 8044,
+        "changed_numeric_tokens": 384,
+        "max_numeric_delta": 2.220446049250313e-16,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Solid007",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 7,
+      "geometry_role": "physical_solid",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "78a3d95e8efa3b6a7b8b80022895494c13fabf5826e1069507abe53e0d5f6a17",
+        "expected_sha256": "27f84f2d9237476ff9f809b1c9fb8d4c3f9e86ba71aefe0b4071bc42a10fac37",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 1890,
+        "changed_numeric_tokens": 79,
+        "max_numeric_delta": 1.1102230246251565e-16,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Solid008",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 8,
+      "geometry_role": "physical_solid",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "8e2582aca260f7d4501152f28709c3db2d94a49cda6177ad8268e0c7f0ea110b",
+        "expected_sha256": "b177b035de7874d4591a13f2ad2471269dbc0b6b236e112826fc0ae2a1f8f254",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 1890,
+        "changed_numeric_tokens": 40,
+        "max_numeric_delta": 5.204170427930421e-18,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Solid009",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 9,
+      "geometry_role": "physical_solid",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "30893c855da8511f919599e35c50557cdaf2d98386085e1454332f5b835d776e",
+        "expected_sha256": "c754287eadd0e552e8c5ab0e299817958a4a05c165b38ee86b6674da36f8444b",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 8050,
+        "changed_numeric_tokens": 432,
+        "max_numeric_delta": 2.220446049250313e-16,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Solid010",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 10,
+      "geometry_role": "physical_solid",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "50d67e121aa51fbdd6fc9a05c99a62b31a454b5ec0868219ad9fc7fa51003dde",
+        "expected_sha256": "34e20c377f9a9b3bcb1a32bc019b1e489b0ed9bc1c1d883d5380fd969deb0631",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 9854,
+        "changed_numeric_tokens": 562,
+        "max_numeric_delta": 3.0531133177191805e-16,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Solid011",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 11,
+      "geometry_role": "physical_solid",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "adc15d26bd7c8984fa937541ec70c6792035bfa0f0c2c972f955f1e2835ddc37",
+        "expected_sha256": "ffa26933bb737976cb6640db7e59a3609006a4130c7d54598d1eba98f58aa53d",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 14023,
+        "changed_numeric_tokens": 127,
+        "max_numeric_delta": 4.920109458739219e-16,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Solid012",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 12,
+      "geometry_role": "physical_solid",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "74358fa3ddc47c4f7b89c78c9faa4644a85d7ca1f2227f19a867b4e3b01b7810",
+        "expected_sha256": "cd266468d1b8c440a70b1c3bae1207e3847c88a19258245edd12622afce2643b",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 2419,
+        "changed_numeric_tokens": 234,
+        "max_numeric_delta": 1.021405182655144e-14,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Solid013",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 13,
+      "geometry_role": "physical_solid",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "9eedb6d082ca7420e3288eb7496333dd2ab3951c8061eee8a44579f8ccce7585",
+        "expected_sha256": "168cfa47802d0825b1e418de844aff23f148ce954f128d00cf53cb020d0e8b3b",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 32096,
+        "changed_numeric_tokens": 314,
+        "max_numeric_delta": 9.992007221626409e-15,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Solid014",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 14,
+      "geometry_role": "physical_solid",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "5258071d135ee84dfb8694314babe82a37e3e0ac6d722aeafa11fd87a9355d19",
+        "expected_sha256": "0f2ddb7e9995bc1434e98c6eec85d366e63cc118b7abf0a17b28b7ecf8317eb1",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 38068,
+        "changed_numeric_tokens": 92,
+        "max_numeric_delta": 9.992007221626409e-15,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Solid015",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 15,
+      "geometry_role": "physical_solid",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "789024a945bfb682b5aa5571eed9c1dc55a96b42cba4ea6c501f82aad37d2f8b",
+        "expected_sha256": "c7e2a4368939e09a378393d37834924f10cd02d450ae577b75c7b458789152fc",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 48239,
+        "changed_numeric_tokens": 2445,
+        "max_numeric_delta": 4.929867278291589e-16,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Solid016",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 16,
+      "geometry_role": "physical_solid",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "789024a945bfb682b5aa5571eed9c1dc55a96b42cba4ea6c501f82aad37d2f8b",
+        "expected_sha256": "c7e2a4368939e09a378393d37834924f10cd02d450ae577b75c7b458789152fc",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 48239,
+        "changed_numeric_tokens": 2445,
+        "max_numeric_delta": 4.929867278291589e-16,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Solid017",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 17,
+      "geometry_role": "physical_solid",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "789024a945bfb682b5aa5571eed9c1dc55a96b42cba4ea6c501f82aad37d2f8b",
+        "expected_sha256": "c7e2a4368939e09a378393d37834924f10cd02d450ae577b75c7b458789152fc",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 48239,
+        "changed_numeric_tokens": 2445,
+        "max_numeric_delta": 4.929867278291589e-16,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Solid018",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 18,
+      "geometry_role": "physical_solid",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "789024a945bfb682b5aa5571eed9c1dc55a96b42cba4ea6c501f82aad37d2f8b",
+        "expected_sha256": "c7e2a4368939e09a378393d37834924f10cd02d450ae577b75c7b458789152fc",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 48239,
+        "changed_numeric_tokens": 2445,
+        "max_numeric_delta": 4.929867278291589e-16,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Reference001",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 19,
+      "geometry_role": "reference_surface",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "e9765a088338880fa03d56354e1566ed9500d5ee12d68b833720d48b9c352ff8",
+        "expected_sha256": "e9765a088338880fa03d56354e1566ed9500d5ee12d68b833720d48b9c352ff8",
+        "exact_bytes": true,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 222,
+        "changed_numeric_tokens": 0,
+        "max_numeric_delta": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Reference002",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 20,
+      "geometry_role": "reference_surface",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "8522c329a5fd4c64d818cc945c88f0c4a757a198d2d1c0388bd7f1cbfe10b091",
+        "expected_sha256": "af232cb7fb55acc17c88c87689da70a54df7a5c87d0132767d1347aca50eea43",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 11216,
+        "changed_numeric_tokens": 998,
+        "max_numeric_delta": 9.992007221626409e-15,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Reference003",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 21,
+      "geometry_role": "reference_surface",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "5e2928d026c3f27e9044b7ce03bbdc989c6659512169fa278e751b9dd466cbe2",
+        "expected_sha256": "5b7c8bf9f505f02af9a40a969b26711fe08d1494c3b3b89a06b7a5788ddf08c9",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 18605,
+        "changed_numeric_tokens": 1770,
+        "max_numeric_delta": 9.992007221626409e-15,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Reference004",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 22,
+      "geometry_role": "reference_surface",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "a5a75b8567d943ceed1b2b6cc2115c61298bf8afddc02087ee7eaa9e571e00f0",
+        "expected_sha256": "ee733049caea7a9984fddf5fa75303a6ddbbb474fe4269747413489a75b62af7",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 11216,
+        "changed_numeric_tokens": 975,
+        "max_numeric_delta": 1.021405182655144e-14,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Reference005",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 23,
+      "geometry_role": "reference_surface",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "ac81518bf271a93790472c48800ef618618b2f636a3e407d3a41fe3c0b212aa3",
+        "expected_sha256": "8606fc6b3536f610f30ff52bed0ab8d57d83562c707a75ee319b25918a0cbbcf",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 11216,
+        "changed_numeric_tokens": 992,
+        "max_numeric_delta": 1.021405182655144e-14,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Reference006",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 24,
+      "geometry_role": "reference_surface",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "b8d558ff5488551c63d87076a7822d3c88642bf5fc133852ccab015e1ed6cd2c",
+        "expected_sha256": "2f16afcd46872d88aa9b819569fefb636322f899b5c1eff4a1bc704a2d37f8d1",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 11216,
+        "changed_numeric_tokens": 975,
+        "max_numeric_delta": 1.021405182655144e-14,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Reference007",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 25,
+      "geometry_role": "reference_surface",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "9f913a06167cb47357100b5642c072807f1518fc6b7845c171b5490c03af4644",
+        "expected_sha256": "75c6af86e711fc257fdb4ae7507c7520ecc18e52c8f450be5264b6c25700907c",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 11216,
+        "changed_numeric_tokens": 1002,
+        "max_numeric_delta": 9.992007221626409e-15,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Reference008",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 26,
+      "geometry_role": "reference_surface",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "6e595babb727a3c3a8e6d5f3d0d6a16d9b9cf4f4273dcfbfcff1d5445a8c09d8",
+        "expected_sha256": "cfdb71b2cfa2f88d0f54b27a5f1acba0da3629aa500876a51e68fbea3784b121",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 11216,
+        "changed_numeric_tokens": 1000,
+        "max_numeric_delta": 9.992007221626409e-15,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Reference009",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 27,
+      "geometry_role": "reference_surface",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "94f230c0ecab6315d3462b2249a02cea6e8d82a1189b7a9c7e210165b30b9b32",
+        "expected_sha256": "e80fb2e8e61b18311267407e37569564519118486f95ae455947372664add996",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 11216,
+        "changed_numeric_tokens": 978,
+        "max_numeric_delta": 9.992007221626409e-15,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Reference010",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 28,
+      "geometry_role": "reference_surface",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "c4c02a51fa147767f7be24bfd1a2f3239145d7f697f6e39981320da97d04d223",
+        "expected_sha256": "55dd9c650d9aa0f6dd709a9d535866721e0eefa882b975827b670fcf7f2cf421",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 11216,
+        "changed_numeric_tokens": 973,
+        "max_numeric_delta": 4.996003610813204e-16,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Reference011",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 29,
+      "geometry_role": "reference_surface",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "f60c332020609ccc33d955bf8eae298e4f5633dcff5345ddbb264b7c090fde14",
+        "expected_sha256": "4637190cb32b4ef3ba8511df0241cf6e57880e79e1349b66b1b17d8c2e94bcba",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 73478,
+        "changed_numeric_tokens": 1553,
+        "max_numeric_delta": 9.992007221626409e-15,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Reference012",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 30,
+      "geometry_role": "reference_surface",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "2fc19147c2e69af0dbaacb0963bebb442caaa51d0b9f9689d2bcaf09ece84e44",
+        "expected_sha256": "d9df290c57690e60b295a1fc96bb090354393e3e3d208058696c537d215d621e",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 44205,
+        "changed_numeric_tokens": 2651,
+        "max_numeric_delta": 9.992007221626409e-15,
+        "passed": true
+      }
+    },
+    {
+      "name": "Pixhawk_Reference013",
+      "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/holybro/pixhawk6x-pro.stp",
+      "index": 31,
+      "geometry_role": "reference_surface",
+      "placement_matrix_error": 0.0,
+      "brep": {
+        "actual_sha256": "73169d195b962a3a42722187c9fd102bc000f2c1d676ed11965861b74d917f8c",
+        "expected_sha256": "67980c90d83492de677972e1059ff58e7b4baa9b668ee51cb7d3fc121c5f4704",
+        "exact_bytes": false,
+        "absolute_numeric_tolerance": 1e-10,
+        "structure_equal": true,
+        "checked_cache_normalized": true,
+        "numeric_coefficients_checked": 43190,
+        "changed_numeric_tokens": 2834,
+        "max_numeric_delta": 1.021405182655144e-14,
+        "passed": true
+      }
+    }
+  ],
+  "scope": "Untouched import geometry/initial placement and full source-entity coverage; not mass, collision or STEP exchange certification"
+}

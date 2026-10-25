@@ -1,0 +1,493 @@
+{
+  "domain": "balloon",
+  "request": "A high-altitude weather balloon that photographs the curvature of the Earth and is reliably recovered: APRS tracking with ELRS backup, FAA Part 101 light payload, under $1200.",
+  "spec": {
+    "allow_hydrogen": false,
+    "budget_usd": 1200.0,
+    "ground_temperature_c": null,
+    "launch": {
+      "elevation_m": 1600.0,
+      "lat_deg": 40.0,
+      "lon_deg": -105.0,
+      "name": "Assumed launch site (placeholder)"
+    },
+    "licensed_ham": true,
+    "min_burst_altitude_m": 25000.0,
+    "min_recovery_probability": 0.9,
+    "mission": "High-altitude weather balloon photographing Earth's curvature, APRS tracking with ELRS backup, FAA Part 101 light payload, reliably recovered",
+    "must_fly": [],
+    "needs_photos": true,
+    "needs_video": true,
+    "owned_ground": [],
+    "recovery_window_h": 4.0,
+    "wind": []
+  },
+  "design": {
+    "balloon": "totex-2000",
+    "buses": [
+      {
+        "battery": "l91-aa",
+        "name": "camera L91 4S2P",
+        "parallel": 2,
+        "rails": [
+          "pololu-s9v11f5"
+        ],
+        "series": 4
+      },
+      {
+        "battery": "l91-aa",
+        "name": "APRS L91 3S1P",
+        "parallel": 1,
+        "rails": [],
+        "series": 3
+      },
+      {
+        "battery": "l91-aa",
+        "name": "LoRa L91 4S1P",
+        "parallel": 1,
+        "rails": [
+          "pololu-s9v11f5"
+        ],
+        "series": 4
+      }
+    ],
+    "buy_ground": [
+      "heltec-ground"
+    ],
+    "cylinders": 1,
+    "enclosure": {
+      "inner_mm": [
+        140.0,
+        90.0,
+        113.0
+      ],
+      "insulation": "xps-foamular-150",
+      "printed_tray": true,
+      "wall_mm": 38.1
+    },
+    "fill_target_mps": 5.5,
+    "gas": "he-uhp-300",
+    "items": [
+      {
+        "bus": 0,
+        "on_after_landing": false,
+        "part": "runcam5-orange",
+        "qty": 1,
+        "rail": 0,
+        "until_burst": true
+      },
+      {
+        "bus": 1,
+        "on_after_landing": true,
+        "part": "lightaprs-2",
+        "qty": 1,
+        "rail": null,
+        "until_burst": false
+      },
+      {
+        "bus": 2,
+        "on_after_landing": true,
+        "part": "heltec-lora32-v3",
+        "qty": 1,
+        "rail": 0,
+        "until_burst": false
+      },
+      {
+        "bus": 2,
+        "on_after_landing": true,
+        "part": "matek-m10q",
+        "qty": 1,
+        "rail": 0,
+        "until_burst": false
+      }
+    ],
+    "label": "cam-runcam5+aprs-lightaprs2+lora-heltec",
+    "line": "kite-line-50lb",
+    "line_m": 8.0,
+    "neck_lift_g": 2142.1664882448013,
+    "notes": [
+      "Camera: RunCam 5 Orange on a 4x L91 + 5 V buck-boost bus (off at burst)",
+      "Primary: LightAPRS 2.0 on 3x L91",
+      "Secondary: Heltec LoRa beacon + Matek M10 on 4x L91 + buck-boost"
+    ],
+    "parachute": "spherachute-60",
+    "printed": {
+      "grams": 149.35999999999996,
+      "printer": "Bambu Lab P1S",
+      "seconds": 55760.0
+    },
+    "printed_allowance_g": 222.91547999999975,
+    "trackers": [
+      {
+        "class": "primary",
+        "gps": "lightaprs-2",
+        "gps_airborne": true,
+        "ground": "aprs-ham-ht",
+        "name": "APRS (LightAPRS 2.0)",
+        "radio": "lightaprs-2"
+      },
+      {
+        "class": "secondary",
+        "gps": "matek-m10q",
+        "gps_airborne": true,
+        "ground": "heltec-ground",
+        "name": "LoRa 915 (Heltec + M10)",
+        "radio": "heltec-lora32-v3"
+      }
+    ]
+  },
+  "report": {
+    "outcomes": [
+      {
+        "name": "burst_altitude",
+        "evidence": {
+          "Margin": {
+            "value": 10513.186748985441,
+            "unit": "m"
+          }
+        },
+        "detail": "burst at 35513 m (CUSF closed form says 37960 m), target 25000 m",
+        "source": "Physics"
+      },
+      {
+        "name": "ascent_rate",
+        "evidence": {
+          "Margin": {
+            "value": 0.20694058390127523,
+            "unit": "m/s"
+          }
+        },
+        "detail": "launch 4.21 m/s, mean 4.91 m/s (band 4-6)",
+        "source": "Physics"
+      },
+      {
+        "name": "landing_speed",
+        "evidence": {
+          "Margin": {
+            "value": 0.07037090527759204,
+            "unit": "m/s"
+          }
+        },
+        "detail": "4.93 m/s at 1600 m with 1776 g under the chute",
+        "source": "Physics"
+      },
+      {
+        "name": "lift_budget",
+        "evidence": {
+          "Margin": {
+            "value": 1366.3056646928014,
+            "unit": "g"
+          }
+        },
+        "detail": "neck lift 2142 g vs flight train 776 g",
+        "source": "Physics"
+      },
+      {
+        "name": "gas_supply",
+        "evidence": {
+          "Margin": {
+            "value": 3.6006826021305285,
+            "unit": "m^3"
+          }
+        },
+        "detail": "need 4.01 m^3 at 21 C/1 atm, have 7.61 usable in 1 cylinder(s)",
+        "source": "Physics"
+      },
+      {
+        "name": "faa101_package",
+        "evidence": {
+          "Margin": {
+            "value": 7.751229918557939,
+            "unit": "lb"
+          }
+        },
+        "detail": "package 1.39 lb, 0.46 oz/in^2 on its smallest face (49 in^2)",
+        "source": "Requirement"
+      },
+      {
+        "name": "faa101_package_max",
+        "evidence": {
+          "Margin": {
+            "value": 4.612496891091885,
+            "unit": "lb"
+          }
+        },
+        "detail": "package 1.39 lb",
+        "source": "Requirement"
+      },
+      {
+        "name": "faa101_total_payload",
+        "evidence": {
+          "Margin": {
+            "value": 10.28951967699104,
+            "unit": "lb"
+          }
+        },
+        "detail": "package + chute + line 1.71 lb (counted as payload, conservative)",
+        "source": "Requirement"
+      },
+      {
+        "name": "faa101_suspension",
+        "evidence": {
+          "Margin": {
+            "value": 0.0024910546243859244,
+            "unit": "lbf"
+          }
+        },
+        "detail": "In the Breeze 3449 braided line, 50 lb x 500 ft breaks at 50 lbf",
+        "source": "Rating"
+      },
+      {
+        "name": "suspension_strength",
+        "evidence": {
+          "Margin": {
+            "value": 135.3237722735689,
+            "unit": "N"
+          }
+        },
+        "detail": "222 N rated vs 87 N (5x descent weight)",
+        "source": "Rating"
+      },
+      {
+        "name": "power_margin",
+        "evidence": {
+          "Margin": {
+            "value": 9.232059901863222,
+            "unit": "Wh"
+          }
+        },
+        "detail": "APRS L91 3S1P: need 1.4 Wh, have 10.7 Wh at -2 C cell (79% capacity)",
+        "source": "Physics"
+      },
+      {
+        "name": "supply_voltage",
+        "evidence": {
+          "Margin": {
+            "value": 0.0,
+            "unit": "V"
+          }
+        },
+        "detail": "APRS L91 3S1P: lightaprs-2 takes 2.7-6.0 V, gets 2.7-5.4 V",
+        "source": "Rating"
+      },
+      {
+        "name": "supply_current",
+        "evidence": {
+          "Margin": {
+            "value": 0.38,
+            "unit": "A"
+          }
+        },
+        "detail": "camera L91 4S2P: pololu-s9v11f5 rated 1.0 A, load 0.62 A",
+        "source": "Rating"
+      },
+      {
+        "name": "part_temperature",
+        "evidence": {
+          "Margin": {
+            "value": 7.75925361181916,
+            "unit": "K"
+          }
+        },
+        "detail": "runcam5-orange: box -2..30 C vs rated -10..40 C (rating assumed)",
+        "source": "Rating"
+      },
+      {
+        "name": "link_primary",
+        "evidence": {
+          "Margin": {
+            "value": 34.45538042774655,
+            "unit": "dB"
+          }
+        },
+        "detail": "APRS (LightAPRS 2.0): worst 34.5 dB at 95 km (max range 131 km), last heard 14 m AGL; alive to landing",
+        "source": "Physics"
+      },
+      {
+        "name": "link_secondary",
+        "evidence": {
+          "Margin": {
+            "value": 20.41770087435799,
+            "unit": "dB"
+          }
+        },
+        "detail": "LoRa 915 (Heltec + M10): worst 20.4 dB at 95 km (max range 131 km), last heard 14 m AGL; alive to landing",
+        "source": "Physics"
+      },
+      {
+        "name": "gps_altitude",
+        "evidence": {
+          "Margin": {
+            "value": 14486.813251014559,
+            "unit": "m"
+          }
+        },
+        "detail": "APRS (LightAPRS 2.0): u-blox MAX-M8Q limit 50000 m (airborne model) vs burst 35513 m",
+        "source": "Rating"
+      },
+      {
+        "name": "gps_coexistence",
+        "evidence": {
+          "Margin": {
+            "value": 10.481847816242507,
+            "unit": "dB"
+          }
+        },
+        "detail": "lightaprs-2 -> matek-m10q at 0.24 m: -32.5 dBm vs -22.0 dBm (fundamental 144 MHz through patch rejection 59 dB)",
+        "source": "Physics"
+      },
+      {
+        "name": "licensing",
+        "evidence": {
+          "Margin": {
+            "value": 0.0,
+            "unit": "count"
+          }
+        },
+        "detail": "heltec-lora32-v3 legal (unlicensed / Part 15 or carrier)",
+        "source": "Requirement"
+      },
+      {
+        "name": "imaging",
+        "evidence": {
+          "Margin": {
+            "value": 7.231214908957947,
+            "unit": "h"
+          }
+        },
+        "detail": "runcam5-orange records 9.2 h at the cold; burst at 1.9 h",
+        "source": "Physics"
+      },
+      {
+        "name": "payload_fit",
+        "evidence": {
+          "Margin": {
+            "value": 0.0,
+            "unit": "pairs"
+          }
+        },
+        "detail": "43 solids, no overlapping pair",
+        "source": "Geometry"
+      },
+      {
+        "name": "printed_parts",
+        "evidence": {
+          "Margin": {
+            "value": 116.0,
+            "unit": "mm"
+          }
+        },
+        "detail": "rack 149 g, 15.5 h on Bambu Lab P1S; largest plate 140 mm vs bed 256 mm",
+        "source": "Slicer"
+      },
+      {
+        "name": "recovery_probability",
+        "evidence": {
+          "Margin": {
+            "value": 0.006199999999999983,
+            "unit": ""
+          }
+        },
+        "detail": "P = 0.906: APRS (LightAPRS 2.0) 0.90, LoRa 915 (Heltec + M10) 0.85",
+        "source": "Physics"
+      },
+      {
+        "name": "cost",
+        "evidence": {
+          "Margin": {
+            "value": 119.2738582479999,
+            "unit": "USD"
+          }
+        },
+        "detail": "BOM $1080.73 vs budget $1200.00",
+        "source": "Requirement"
+      },
+      {
+        "name": "part_temperature@r1-1",
+        "evidence": {
+          "Margin": {
+            "value": 3.554940213884456,
+            "unit": "K"
+          }
+        },
+        "detail": "regression r1-1: A cold-morning launch at -5 C ground temperature leaves the RunCam 5 box below its -10 C rating (only +0.454 K margin at the assumed default), so part_temperature fails. | runcam5-orange: box -6..13 C vs rated -10..40 C (rating assumed)",
+        "source": "Rating"
+      },
+      {
+        "name": "part_temperature@r1-2",
+        "evidence": {
+          "Margin": {
+            "value": -11.24519719225983,
+            "unit": "K"
+          }
+        },
+        "detail": "regression r1-2: A hot 38 C ground day changes the gas and air density and the box temperature, pushing the camera above its 40 C rating or the ascent rate out of the 4-6 m/s band, since the margins are only +0.45 K and +0.32 m/s. | runcam5-orange: box 2..51 C vs rated -10..40 C (rating assumed)",
+        "source": "Rating"
+      },
+      {
+        "name": "part_temperature@r2-1",
+        "evidence": {
+          "Margin": {
+            "value": -5.0,
+            "unit": "K"
+          }
+        },
+        "detail": "regression r2-1: A very cold morning at -15 C ground temperature drops the box minimum well below the RunCam 5's -10 C rating (the box was -6 C at -5 C ground), so part_temperature fails. | runcam5-orange: box -15..6 C vs rated -10..40 C (rating assumed)",
+        "source": "Rating"
+      }
+    ]
+  },
+  "feedback": [
+    "reviewer: failing check part_temperature@r1-2: FAIL part_temperature@r1-2         -11.245 K      regression r1-2: A hot 38 C ground day changes the gas and air density and the box temperature, pushing the camera above its 40 C rating or the ascent rate out of the 4-6 m/s band, since the margins are only +0.45 K and +0.32 m/s. | runcam5-orange: box 2..51 C vs rated -10..40 C (rating assumed) -- On a 38 C ground day the RunCam 5 box reaches 51 C against a 40 C rating, 11 K over. The camera can shut down or be damaged on the flight meant to photograph the curvature. Wall thickness only raised the cold minimum and did not lower the hot peak. The rating is also marked 'assumed', so the real margin may be worse.",
+    "reviewer: failing check part_temperature@r2-1: FAIL part_temperature@r2-1          -5.000 K      regression r2-1: A very cold morning at -15 C ground temperature drops the box minimum well below the RunCam 5's -10 C rating (the box was -6 C at -5 C ground), so part_temperature fails. | runcam5-orange: box -15..6 C vs rated -10..40 C (rating assumed) -- At -15 C ground the box falls to -15 C against a -10 C rating, 5 K under. The camera is exposed to cold-soak failure (battery sag, shutdown). It is the only imaging source, and no heater or other cold-side fix was added.",
+    "reviewer: the reviewer did not finish its review (no verdict)"
+  ],
+  "regressions": [
+    {
+      "id": "r1-1",
+      "domain": "balloon",
+      "claim": "A cold-morning launch at -5 C ground temperature leaves the RunCam 5 box below its -10 C rating (only +0.454 K margin at the assumed default), so part_temperature fails.",
+      "spec_patch": {
+        "ground_temperature_c": -5
+      },
+      "check": "part_temperature",
+      "margin_at_confirmation": -2.858587974404422
+    },
+    {
+      "id": "r1-2",
+      "domain": "balloon",
+      "claim": "A hot 38 C ground day changes the gas and air density and the box temperature, pushing the camera above its 40 C rating or the ascent rate out of the 4-6 m/s band, since the margins are only +0.45 K and +0.32 m/s.",
+      "spec_patch": {
+        "ground_temperature_c": 38
+      },
+      "check": "part_temperature",
+      "margin_at_confirmation": -10.715933216026237
+    },
+    {
+      "id": "r2-1",
+      "domain": "balloon",
+      "claim": "A very cold morning at -15 C ground temperature drops the box minimum well below the RunCam 5's -10 C rating (the box was -6 C at -5 C ground), so part_temperature fails.",
+      "spec_patch": {
+        "ground_temperature_c": -15
+      },
+      "check": "part_temperature",
+      "margin_at_confirmation": -5.0
+    }
+  ],
+  "notes": [
+    "tracking: ELRS swap not made. No verified in-stock ELRS tracker was found in the catalog. My one probe used the id elrs-tx (with elrs-ground), which I guessed without checking the catalog. It failed with \"no part elrs-tx\" and errored all 24 checks. I reverted the secondary to the original LoRa 915 (heltec-lora32-v3 + matek-m10q, heltec-ground). The post-revert check is 24/24 passing, the same as before the probe.\n\nMargins: link_secondary +20.526 dB; gps_coexistence +10.482 dB; licensing +0.000 count (heltec-lora32-v3 legal, unlicensed/Part 15); power_margin +8.349 Wh; cost +122.158 USD (BOM $1077.84 of $1200); recovery_probability +0.006 (P=0.906, tight).\n\nStill open: the request asks for an ELRS backup, but the secondary is LoRa 915, not ELRS. Fixing that needs real ELRS part ids from a catalog lookup, which my tools cannot run. The lead or parts specialist should supply one. The spec's licensed_ham=true assumption is not needed for the current design.",
+    "payload: {\"tool_calls\": [], \"text\": \"Changed one thing: enclosure wall_mm 25.4 -> 38.1. Did not change the camera or insulation.\\n\\nResult: r1-1 (-5 C) now passes, +3.555 K (box -6..13 C vs -10..40 C). r1-2 (38 C) still fails, -11.245 K (box 2..51 C vs 40 C max; was -10.716 K). The wall change did not lower the hot peak of 51 C; it only raised the cold minimum. Thicker wall is the wrong lever for the hot case.\\n\\nDefault case (ground null): part_temperature +7.759 K (was +0.454 K). Other checks: ascent_rate +0.207 m/s (mean 4.91 m/s); landing_speed +0.070 m/s; lift_budget +1366 g; gas_supply +3.601 m^3; faa101_package +7.751 lb; faa101_total_payload +10.290 lb; faa101_suspension +0.002 lbf; suspension_strength +135 N; power_margin +9.232 Wh; supply_current +0.380 A; link_primary +34.455 dB; link_secondary +20.418 dB; gps_altitude +14487 m; gps_coexistence +10.482 dB; imaging +7.231 h; recovery_probability +0.006 (P=0.906); cost +119.274 USD (BOM $1080.73). All pass except r1-2.\\n\\nStill failing: part_temperature@r1-2. Fixing the 51 C hot peak needs a verified catalog part, either a higher-rated camera or an insulation/venting option that cuts solar heating. I did not guess part ids. Lead or... [truncated]",
+    "tracking: No ELRS swap made; design unchanged. I have no catalog-listing action, and no ELRS radio part id appears in any result I have seen. The only ELRS id in the history, elrs-tx, was my predecessor's guess and returned 'no part elrs-tx', which does not list valid ids. So I did not guess one. Current secondary remains LoRa 915 (heltec-lora32-v3 + matek-m10q, heltec-ground), which does not meet the ELRS request. Margins from the last check, unchanged: link_secondary +20.418 dB; gps_coexistence +10.482 dB; licensing +0.000 count; power_margin +9.232 Wh; cost +119.274 USD (BOM $1080.73 of $1200); recovery_probability +0.006 (P=0.906). Still failing: part_temperature@r1-2 (-11.245 K, box 2..51 C vs 40 C max). That fix belongs to the thermal/camera specialist. Next step: the parts specialist or lead should list catalog radio ids (ELRS TX/RX, with price and stock) so I can swap one in as secondary.",
+    "payload: {\"tool_calls\": [], \"summary\": \"No change made. Nothing fixes part_temperature@r1-2, and I did not edit the design.\\n\\nLevers I could not try: (1) other insulation ids, (2) a higher-rated camera, (3) camera bus/load options. The only ids in the results are xps-foamular-150 and runcam5-orange, and no tool result lists alternatives. Guessing ids is ruled out, so these need a catalog lookup from the parts specialist.\\n\\nLever tried earlier: wall 25.4 -> 38.1 mm. It fixed r1-1 (+3.555 K) but not the hot peak (r1-2 -11.245 K; box 2..51 C vs 40 C max). The wall does not control the hot peak.\\n\\nCurrent margins (last check, 26 checks, 1 failing): part_temperature default +7.759 K; ascent_rate +0.207 m/s (mean 4.91); cost +119.274 USD (BOM $1080.73); burst +10513 m; FAA package +7.751 lb, total payload +10.290 lb, suspension +0.002 lbf; recovery_probability +0.006 (P=0.906).\\n\\nStill failing: part_temperature@r1-2. Fix needs a verified higher-rated camera or insulation id from the catalog. Note: secondary is still LoRa 915, not ELRS.\"}",
+    "payload: Step 1 (enclosure wall sweep, run with check each time): 50.8 mm: r2-1 still -5.000 K (box -15..8 C); r1-2 -11.674 K; r1-1 +5.000 K; default +9.037 K; landing_speed FAILS -0.033 m/s; ascent 4.75 m/s; faaPkg +10.396 lb; cost +117.954. 63.5 mm: r2-1 still -5.000 K (box -15..11 C); r1-2 -12.149 K; r1-1 +5.000 K; default +8.079 K; ascent_rate FAILS -0.146 m/s (3.85 m/s launch, mean 4.54); landing_speed FAILS -0.161 m/s; faaPkg +13.372 lb; cost +112.762. Neither fixes r2-1, so both were rejected. Reverted wall to 38.1 mm and re-ran check: back to the prior state. Default part_temperature +7.759 K; r1-1 +3.555 K; r1-2 -11.245 K (box 2..51 C vs 40 C); r2-1 -5.000 K (box -15..6 C vs -10 C). ascent_rate +0.207 m/s; landing_speed +0.070 m/s; faaPkg +7.751 lb; cost +119.274 USD. Only part_temperature@r1-2 and @r2-1 fail (2 of 27). Step 2 is NOT done: I did not test any hot-peak lever. Insulation and camera ids cannot be changed without catalog ids, and camera until_burst only affects imaging (imaging +7.231 h). Wall thickness does not control the hot peak. Needed from the parts specialist: a verified catalog insulation or a higher-rated camera, plus a cold-side fix (heater or insulation) for ... [truncated]",
+    "payload: Not fixed. part_temperature@r1-2 (-11.245 K) and part_temperature@r2-1 (-5.000 K) still fail. I found no passing alternative.\n\nLevers tried:\n- Wall 38.1 mm (current). 50.8 and 63.5 mm were tried earlier and rejected: they fail landing_speed or ascent_rate, and neither fixes r2-1.\n- inner_mm [160,100,113]: r1-1 broke (-1.325 K), r1-2 -10.959 K, r2-1 -5.000 K. Rejected.\n- Reverted inner_mm to [140,90,113] and re-ran check. Back to the prior state.\n\nNot tried: insulation or camera swaps. No tool lists catalog ids; the only ids seen are xps-foamular-150 and runcam5-orange. Guessing ids is ruled out, so the parts specialist needs to supply a higher-rated camera or insulation with a verified id, plus a cold-side fix.\n\nCurrent margins (default, last check): part_temperature +7.759 K; ascent_rate +0.207 m/s; landing_speed +0.070 m/s; cost +119.274 USD (BOM $1080.73); recovery_probability +0.006 (P=0.906). 25 of 27 checks pass.\n\nStill open: ELRS secondary not done (no verified ELRS id); the design still uses LoRa 915."
+  ],
+  "round": 4,
+  "stated": {
+    "budget_usd": 1200,
+    "needs_photos": true
+  },
+  "assumptions": [
+    "{\"allow_hydrogen\":false,\"launch\":{\"elevation_m\":1600,\"lat_deg\":40.0,\"lon_deg\":-105.0,\"name\":\"Assumed launch site (placeholder)\"},\"licensed_ham\":true,\"min_burst_altitude_m\":25000,\"min_recovery_probability\":0.9,\"mission\":\"High-altitude weather balloon photographing Earth's curvature, APRS tracking with ELRS backup, FAA Part 101 light payload, reliably recovered\"} (Create the initial spec: budget and photos from the request, the rest are assumptions)"
+  ]
+}

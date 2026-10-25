@@ -1,0 +1,15 @@
+{
+  "candidate_sha256": "0bdecf0df25c25a766098abd850f4ffa84459dd7f6fd673895c43200f1f09c00",
+  "source_sha256": "7164b2b4b70f08b2a58a00f1df3ff164eb411befdd93761ba788d2af3ea39cc6",
+  "execution": "headless native FreeCAD; not GUI capture",
+  "returned": {
+    "assembly": "/Users/patliu/Desktop/Coding/wright/out/so101-camera-mount/attempt-2/build/assembly.FCStd",
+    "manifest": "/Users/patliu/Desktop/Coding/wright/out/so101-camera-mount/attempt-2/build/camera-mount-manifest.json",
+    "outcome": "Saved attempt2 native editable camera mount with actual build-time BRep, clearance and typed preservation results in manifest. Prior attempt remains failed. Fresh-process parameter testing, robot motion clearance and hardware access remain for independent verification."
+  },
+  "execution_passed": true,
+  "elapsed_seconds": 5.858345999993617,
+  "candidate_unchanged": true,
+  "source_unchanged": true,
+  "independent_geometry_score_pending": true
+}

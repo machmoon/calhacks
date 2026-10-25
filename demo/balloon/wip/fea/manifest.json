@@ -1,0 +1,45 @@
+{
+  "kind": "fea",
+  "title": "FEA: balloon payload rack at landing (CalculiX)",
+  "items": [
+    {
+      "label": "Rack shelf 3 at landing (51 g), von Mises",
+      "path": "rack_shelf_landing_von_mises.png",
+      "media": "png",
+      "summary": "shelf 3 (8 items, 120 g: l91-aa#5-2, l91-aa#5-3, l91-aa#6, l91-aa#6-2, l91-aa#6-3, l91-aa#7, l91-aa#7-2, l91-aa#8) at 51 g (5 m/s stopped over 25 mm of foam); PETG 3 mm on four 10 mm posts; 13717 C3D10 (gmsh)",
+      "metrics": {
+        "allowable_mpa": 20.0,
+        "landing_g": 51.18288449694529,
+        "margin": 1.1430074047666436,
+        "max_von_mises_mpa": 9.33267890512858,
+        "peak_at_post_edge_mpa": 11.523506374439682
+      }
+    },
+    {
+      "label": "Rack shelf 3 at landing, displacement",
+      "path": "rack_shelf_landing_displacement.png",
+      "media": "png",
+      "summary": "displacement magnitude (shape exaggerated)",
+      "metrics": {
+        "max_displacement_mm": 1.3020100568742663
+      }
+    },
+    {
+      "label": "FEA vs closed form",
+      "path": "comparison.csv",
+      "media": "csv",
+      "summary": "every quantity both ways: the domain's closed-form number and CalculiX's",
+      "metrics": {
+        "rows": 1.0
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "rack_shelf_landing",
+      "passed": true,
+      "detail": "shelf 3 von Mises 9.3 MPa at 51 g vs 20 MPa PETG allowable; sag 1.30 mm"
+    }
+  ],
+  "input_hash": "3430d2b8c46fda11"
+}

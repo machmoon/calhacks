@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" font-family="sans-serif" font-size="11">
+<rect width="480" height="320" fill="white"/>
+<line x1="44" y1="276" x2="436" y2="276" stroke="#444"/>
+<line x1="44" y1="44" x2="44" y2="276" stroke="#444"/>
+<text x="240" y="310" text-anchor="middle">burst altitude m (CUSF closed-form estimate)</text>
+<text x="12" y="160" text-anchor="middle" transform="rotate(-90 12 160)">Burst altitude</text>
+<text x="44" y="288" font-size="9">38883</text><text x="436" y="288" font-size="9" text-anchor="end">38883</text>
+<text x="41" y="276" font-size="9" text-anchor="end">37799</text><text x="41" y="44" font-size="9" text-anchor="end">37829</text>
+<polyline points="44.0,44.0 44.0,44.0 44.0,44.0 44.0,44.0" fill="none" stroke="#d9480f" stroke-width="1.5"/>
+<circle cx="44.0" cy="44.0" r="4" fill="white" stroke="#d9480f" stroke-width="1.5"><title>#0: 2, 5.7898, spherachute-72</title></circle>
+<circle cx="44.0" cy="205.8" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#1: 2, 5.7037, spherachute-96</title></circle>
+<circle cx="44.0" cy="44.0" r="4" fill="white" stroke="#d9480f" stroke-width="1.5"><title>#2: 2, 6.0068, spherachute-72</title></circle>
+<circle cx="44.0" cy="205.8" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#3: 2, 5.6515, spherachute-96</title></circle>
+<circle cx="44.0" cy="276.0" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#4: 3, 6.3594, spherachute-72</title></circle>
+<circle cx="44.0" cy="105.3" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#5: 3, 5.9205, spherachute-96</title></circle>
+<circle cx="44.0" cy="205.8" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#6: 2, 6.1564, spherachute-96</title></circle>
+<circle cx="44.0" cy="44.0" r="4" fill="white" stroke="#d9480f" stroke-width="1.5"><title>#7: 2, 5.8622, spherachute-72</title></circle>
+<circle cx="44.0" cy="205.8" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#8: 2, 5.6038, spherachute-96</title></circle>
+<circle cx="44.0" cy="276.0" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#9: 3, 5.5156, spherachute-72</title></circle>
+<circle cx="44.0" cy="105.3" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#10: 3, 6.2893, spherachute-96</title></circle>
+<circle cx="44.0" cy="276.0" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#11: 3, 6.4405, spherachute-72</title></circle>
+<circle cx="44.0" cy="276.0" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#12: 3, 6.1436, spherachute-72</title></circle>
+<circle cx="44.0" cy="276.0" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#13: 3, 5.5760, spherachute-72</title></circle>
+<circle cx="44.0" cy="105.3" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#14: 3, 6.2007, spherachute-96</title></circle>
+<circle cx="44.0" cy="205.8" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#15: 2, 6.4978, spherachute-96</title></circle>
+<circle cx="44.0" cy="276.0" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#16: 3, 6.3303, spherachute-72</title></circle>
+<circle cx="44.0" cy="205.8" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#17: 2, 5.8463, spherachute-96</title></circle>
+<circle cx="44.0" cy="44.0" r="4" fill="white" stroke="#d9480f" stroke-width="1.5"><title>#18: 2, 5.9733, spherachute-72</title></circle>
+<circle cx="44.0" cy="105.3" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#19: 3, 6.0945, spherachute-96</title></circle>
+<text x="436" y="36" font-size="9" text-anchor="end" fill="#555">filled = passes every check; orange = Pareto front</text>
+</svg>

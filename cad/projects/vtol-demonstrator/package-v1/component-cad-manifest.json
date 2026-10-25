@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "revision": "package-v1",
+  "evidence_frozen": true,
+  "hardware_ready": false,
+  "compatibility_verified": false,
+  "date": "2026-10-24",
+  "scope": "Original 1.8m lift-plus-cruise demonstrator candidate, not Tsung Xu replica; evidence freeze is not hardware release",
+  "components": [
+    {
+      "bom_id": "lift_motor",
+      "quantity": 4,
+      "geometry_class": "manufacturer_STEP",
+      "path": "cad/components/vendor/tmotor/mn2806evo.step",
+      "sha256": "d0f72166435be4764036dce5408491251e44028de9920526cc53ee7644762aef",
+      "coordinate_frame": "source axes retained; verified inspection out/vtol-demonstrator/hardware-geometry-inspection.json",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "lift_prop",
+      "quantity": 4,
+      "geometry_class": "manufacturer_STEP",
+      "path": "cad/components/vendor/tmotor/p12x4.step",
+      "sha256": "03c14402249c0d38409733bbf02b5209dde5116f58941d4183027810cf2054fb",
+      "coordinate_frame": "source axes retained; verified inspection out/vtol-demonstrator/hardware-geometry-inspection.json",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "cruise_motor",
+      "quantity": 1,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "cruise_prop",
+      "quantity": 1,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "esc",
+      "quantity": 4,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "cruise_esc",
+      "quantity": 1,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "fc",
+      "quantity": 1,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "power",
+      "quantity": 1,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "bec",
+      "quantity": 1,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "gps",
+      "quantity": 1,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "rx",
+      "quantity": 1,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "radio",
+      "quantity": 1,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "airspeed",
+      "quantity": 1,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "servo",
+      "quantity": 4,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "battery",
+      "quantity": 1,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "spar",
+      "quantity": 1,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "booms",
+      "quantity": 2,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "pushrods",
+      "quantity": 1,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "power_distribution",
+      "quantity": null,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "battery_connector",
+      "quantity": null,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "power_harness",
+      "quantity": null,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "signal_harness",
+      "quantity": null,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "hinges",
+      "quantity": null,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "battery_retention",
+      "quantity": null,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "landing_gear",
+      "quantity": null,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "fasteners_and_inserts",
+      "quantity": null,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "controller_isolation",
+      "quantity": null,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "control_horns_and_retainers",
+      "quantity": null,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "protection",
+      "quantity": null,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    }
+  ],
+  "rule": "No envelope may be counted as exact hardware; no copied6XPro geometry for6CMini"
+}

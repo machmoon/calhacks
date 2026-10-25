@@ -1,0 +1,28 @@
+{
+  "_about": "Lane A (wright-kicad library.rs) lookup tables, compiled in with include_str!. `packages`: an baseline package name (baseline engine/silkscreen/footprints.py CONNECTOR_PACKAGES / _SWITCH_BUILDERS, kicadlib/packages.py) -> the KiCad library footprint the baseline measured it from. `devices`: a part number KiCad has no exact symbol for, or whose symbol leaves Footprint empty -> footprint id. Every id here exists in KiCad 10.0.6's SharedSupport/footprints (checked 2026-10-24). Families PinHeader_1xNN_P2.54mm and JST_PH_<N>P resolve by KiCad's KLC naming in library.rs and need no row.",
+  "packages": {
+    "JST_PH_2P": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+    "SW_SPST_TL3305A": "Button_Switch_SMD:SW_SPST_TL3305A",
+    "USB_C_Receptacle_USB2.0_16P": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+    "XT30_2P": "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal",
+    "XT60_2P": "Connector_AMASS:AMASS_XT60PW-M_1x02_P7.20mm_Horizontal",
+    "TerminalBlock_2P_5.08mm": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "TestPoint_Pad_1.5x1.5mm": "TestPoint:TestPoint_Pad_1.5x1.5mm",
+    "SOT-223": "Package_TO_SOT_SMD:SOT-223-3_TabPin2",
+    "SOT-23": "Package_TO_SOT_SMD:SOT-23",
+    "SOIC-8": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+    "SOIC-16": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
+    "TI_SO-PowerPAD-8": "Package_SO:TI_SO-PowerPAD-8_ThermalVias",
+    "CP_Elec_10x10": "Capacitor_SMD:CP_Elec_10x10",
+    "D_SMC": "Diode_SMD:D_SMC",
+    "L_Bourns_SRR1260": "Inductor_SMD:L_Bourns_SRR1260"
+  },
+  "devices": {
+    "TPS5450DDA": "Package_SO:TI_SO-PowerPAD-8_ThermalVias",
+    "TPS5450": "Package_SO:TI_SO-PowerPAD-8_ThermalVias",
+    "NE555": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+    "LM358D": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+    "LM358": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+    "ATtiny85": "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
+  }
+}

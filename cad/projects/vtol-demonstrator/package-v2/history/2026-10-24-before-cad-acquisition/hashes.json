@@ -1,0 +1,31 @@
+{
+  "algorithm": "sha256",
+  "inherited_v1_hash_manifest_sha256": "9478326e80b951378567e9174b7dd3ee80f0cd0920687a5aac9b35c159347dd6",
+  "files": {
+    "README.md": "0c901da428caac35d80e2d34c1e13026b0fd38dd8d8f9a9f0aa4b7f425914858",
+    "bom.csv": "b5ce0b6a43aa78313aa814c08743cb01b46dc44cc8529a93be32d763d6e22f88",
+    "bom.json": "18cf890e196ba7d91ecef9b53814a8d8d09b41ecea31ae57044faf55e14c73df",
+    "build_package.py": "f6b0f27a349d70d146b6d649b24800b90a05688b3c932586038e7a6f0aaba73d",
+    "component-cad-manifest.json": "fd555c6a60f69269774a406c2794f9efff3f7e62198a19aa32960d1eb2eef534",
+    "electrical-architecture.json": "9526b80e4b47fbbb6d587227c80a8c8d370cf47a89b08c8bbd896acaa60b3c28",
+    "inspect_servo.py": "26d33d1dd4eb98eeffac6185969ac2826444e567ea6665315d09518389165dbd",
+    "interface-table.json": "bc1bc99ad02dc9afa8fed1469418d13489953a69f87c05f2a6fc3b52eb8adf74",
+    "procurement-availability.json": "0a3aab5eb4867138cdb71afa481e47c63d9909afa6429641f5de6e05f26520dc",
+    "requirements.json": "92b74c117809b0349ce0f5f08943ff0d3bdf7e23e4392b865e69b5cce86e20a9",
+    "servo-geometry-inspection.json": "000417cebe2fbd20a98d87ff4bf60a8cf18da60e93fb4d45d8e5d7ba106bd597",
+    "servo-interface.json": "b9ddbc9acef2692bcad19a62edce1be29c6fca8d326f5ac68c96747554dc103d",
+    "source-manifest.json": "2b9a57b150eafd82b6e38b3a6c57ec4ef2399f8f885bf6ca5d381dd530b7ff27",
+    "sources/HS-65MG-spec.pdf": "2cd3a590e4847132e7822bce82d7becdb704d28cf8c35c3ec0e9ebdae732bc57",
+    "sources/HS-65MG_3dmodel.zip": "e95536010f8839aee6c5e6eea098547c22358ed0a4657c0d89b6d0e01ad2b19b",
+    "sources/cruise_battery.txt": "a1f97ecdc25fce0c6200f13d3fcc8513c0eddae022596b62a197123a20c9304a",
+    "sources/foam.txt": "b3fd926f25ce8b52620d33cb6339a8a6bcce025373083ed5288b4b5b6c1ee52e",
+    "sources/motor-drawing.pdf": "c909c8487e84d0455b86f368cca5a88ba72e41fbadb1f0acb55a62a13dbad647",
+    "sources/pdb-dimensions.jpg": "5df091fc663b54598da49befbdc9a23fbd3440222dc0d42585aedd1084d54fed",
+    "sources/pinout.txt": "8ce6b6eb65919f389184a0d206a08269df059f80d147bb69fb6578b2df9989f6",
+    "sources/servo-cad/HS-65MG_221121.stp": "1a9ea39e82de930becafc749ad61b78fa6d360c4b810980e2504305eaf84453c",
+    "sources/strap.pdf": "af3328d37dc38586ee5e3713b1ba5cb27772b7a3d866f6d653ade764652bc6d0",
+    "verification-plan.json": "fb779de481ebbe4c80510eaa61ce1c14f3987c77e8e9f3343eac2607377dd956",
+    "wiring-schedule.csv": "a7a1aa78acef4c2f258c3836d1a19ae878629cffd647fe83e112ddc842ba95a7",
+    "wiring-schedule.json": "88276a797973b27fcc6bd0652ed3a2e8a5afa9bf2ca82ba9c09fff11bb65aa9b"
+  }
+}

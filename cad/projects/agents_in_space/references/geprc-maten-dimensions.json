@@ -1,0 +1,43 @@
+{
+  "source_url": "https://geprc.com/wp-content/uploads/2025/04/MATEN-1.2G-2W-VTX-%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf",
+  "pdf_sha256": "d4762e20e64ccff58f2f47f76db1728af46bd2602b2155a0b9cc52a81501929c",
+  "pages_1based": [
+    1,
+    9
+  ],
+  "manufacturer": "GEPRC",
+  "model": "MATEN 1.2G 2W VTX",
+  "mounting_pattern_mm": [
+    30.5,
+    30.5
+  ],
+  "hardware_callout": "M3",
+  "hole_centres_relative_to_first_mm": [
+    [
+      0,
+      0
+    ],
+    [
+      30.5,
+      0
+    ],
+    [
+      0,
+      30.5
+    ],
+    [
+      30.5,
+      30.5
+    ]
+  ],
+  "mass_g": 14.5,
+  "antenna_connector": "MMCX",
+  "visual_review": true,
+  "unverified": [
+    "Exact hole clearance/thread detail",
+    "Hole origin relative to external envelope",
+    "Plugged antenna/power cable geometry",
+    "Underbody component and thermal clearances"
+  ],
+  "envelope_source": "User BOM; 36.4 x 36.4 x 7.4 mm is not independently dimensioned by this manual"
+}

@@ -1,0 +1,34 @@
+# Build context for docker/Dockerfile: the Rust workspace, data/, bench/
+# and the eval sources; nothing generated, nothing secret.
+.git
+.github
+target/
+out/
+runs/
+demo/
+demo-prev/
+**/.lake
+**/dist-newstyle
+**/node_modules
+**/__pycache__
+**/*.pyc
+.DS_Store
+**/.DS_Store
+.env
+.env.*
+docs/creao.md
+docs/
+haskell/
+lean/
+design/
+evals/cad/
+evals/*/build/
+evals/*/sim/
+# cad/: only the component catalog is compiled in (include_str! in
+# wright-geom); the meshes, vendor parts and projects stay out.
+cad/*
+!cad/components/
+cad/components/*
+!cad/components/catalog.json
+*.gcode
+bench/results*.json

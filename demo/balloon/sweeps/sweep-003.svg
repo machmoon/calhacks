@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" font-family="sans-serif" font-size="11">
+<rect width="480" height="320" fill="white"/>
+<line x1="44" y1="276" x2="436" y2="276" stroke="#444"/>
+<line x1="44" y1="44" x2="44" y2="276" stroke="#444"/>
+<text x="240" y="310" text-anchor="middle">burst altitude m (CUSF closed-form estimate)</text>
+<text x="12" y="160" text-anchor="middle" transform="rotate(-90 12 160)">Burst altitude</text>
+<text x="44" y="288" font-size="9">34680</text><text x="436" y="288" font-size="9" text-anchor="end">38883</text>
+<text x="41" y="276" font-size="9" text-anchor="end">34030</text><text x="41" y="44" font-size="9" text-anchor="end">37829</text>
+<circle cx="44.0" cy="276.0" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#0: totex-1600</title></circle>
+<circle cx="103.6" cy="243.1" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#1: hwoyee-1600</title></circle>
+<circle cx="147.0" cy="217.1" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#2: totex-2000</title></circle>
+<circle cx="436.0" cy="44.0" r="4" fill="white" stroke="#d9480f" stroke-width="1.5"><title>#3: totex-3000</title></circle>
+<text x="436" y="36" font-size="9" text-anchor="end" fill="#555">filled = passes every check; orange = Pareto front</text>
+</svg>

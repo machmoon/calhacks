@@ -1,0 +1,93 @@
+{
+  "source_sha256": "1a9ea39e82de930becafc749ad61b78fa6d360c4b810980e2504305eaf84453c",
+  "selection": "HS65MG replaces HS5065MG in package-v2 only",
+  "native_valid": true,
+  "source_geometry": "12 maximal solids;13 constituent shells include an inner shell;0 free reference surfaces",
+  "source_axes": "X case length,Y height/outputaxis,Z case width",
+  "mounting": {
+    "central_bore_centers_mm": [
+      [
+        -14.3,
+        5,
+        0
+      ],
+      [
+        14.3,
+        5,
+        0
+      ]
+    ],
+    "bore_axis": [
+      0,
+      1,
+      0
+    ],
+    "diameter_mm": 2,
+    "pitch_mm": 28.6,
+    "ear_Y_extent_mm": [
+      3,
+      5
+    ],
+    "bearing_planes_Y_mm": [
+      3,
+      5
+    ],
+    "other_bore_centers_mm": [
+      [
+        -13.5,
+        5,
+        -3
+      ],
+      [
+        -13.5,
+        5,
+        3
+      ],
+      [
+        13.5,
+        5,
+        -3
+      ],
+      [
+        13.5,
+        5,
+        3
+      ]
+    ],
+    "independent_face_ids": [
+      56,
+      57,
+      69,
+      71
+    ],
+    "screw_selection": "M2through hardware; final length from native joint stack; no thread in plastic assumed"
+  },
+  "output": {
+    "axis_point_mm": [
+      5.7,
+      12,
+      0
+    ],
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "spline": "M25T nominal\u00d85",
+    "counted_radius2_55_outer_arc_faces": 25,
+    "horn": "Use supplied/model horn; movement sweep computed from actual geometry"
+  },
+  "whole_source_bounds_mm": [
+    -16.173819496630003,
+    -14.100000099999999,
+    -12.0,
+    17.2,
+    17.6484601,
+    12.0
+  ],
+  "scope": "Measured native interface; not load or purchased-unit tolerance proof",
+  "datasheet_general_tolerance_mm": 0.1,
+  "mass_g_without_horn": 12.5,
+  "conflicts_resolved": "Current officialPDF mass12.5g vs product page11.9g; choosePDF. PriorHS5065MG spline conflict not transferred to this model.",
+  "topology_correction": "FreeCAD recursive child ownership traversal stops at each Solid. Prior shells-minus-solids inference was incorrect; no source geometry changed."
+}

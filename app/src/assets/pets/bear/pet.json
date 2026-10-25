@@ -1,0 +1,6 @@
+{
+  "id": "baluc-bear",
+  "displayName": "Bear",
+  "description": "Baluc the pixel bear, baked into a Codex pet atlas (8x9 cells of 192x208).",
+  "spritesheetPath": "spritesheet.png"
+}

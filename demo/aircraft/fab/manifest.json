@@ -1,0 +1,171 @@
+{
+  "kind": "fab",
+  "title": "Fabrication: quadplane_130mi",
+  "items": [
+    {
+      "label": "process plan",
+      "path": "plan.json",
+      "media": "json",
+      "summary": "35 made parts (0 machined programs, 28 prints, 7 cuts), 24 bought lines; G-code in gcode/",
+      "metrics": {
+        "machine_minutes": -0.0,
+        "minutes": 3717.999999999998,
+        "print_grams": 561.5600000000002,
+        "print_minutes": 3690.0000000000005
+      }
+    },
+    {
+      "label": "process plan (table)",
+      "path": "plan.csv",
+      "media": "csv",
+      "summary": "one row per part and process",
+      "metrics": {}
+    },
+    {
+      "label": "pod 1 (print)",
+      "path": "video/print_pod_1.mp4",
+      "media": "mp4",
+      "summary": "print timelapse from the sliced G-code, 1034 layers",
+      "metrics": {
+        "grams": 30.78,
+        "layers": 1034.0,
+        "minutes": 295.1666666666667
+      }
+    },
+    {
+      "label": "wing L 0 (print)",
+      "path": "video/print_wing_L_0.mp4",
+      "media": "mp4",
+      "summary": "print timelapse from the sliced G-code, 999 layers",
+      "metrics": {
+        "grams": 27.23,
+        "layers": 999.0,
+        "minutes": 267.03333333333336
+      }
+    },
+    {
+      "label": "wing L 2 (print)",
+      "path": "video/print_wing_L_2.mp4",
+      "media": "mp4",
+      "summary": "print timelapse from the sliced G-code, 999 layers",
+      "metrics": {
+        "grams": 27.23,
+        "layers": 999.0,
+        "minutes": 267.03333333333336
+      }
+    },
+    {
+      "label": "wing R 0 (print)",
+      "path": "video/print_wing_R_0.mp4",
+      "media": "mp4",
+      "summary": "print timelapse from the sliced G-code, 999 layers",
+      "metrics": {
+        "grams": 27.23,
+        "layers": 999.0,
+        "minutes": 267.03333333333336
+      }
+    },
+    {
+      "label": "wing R 1 (print)",
+      "path": "video/print_wing_R_1.mp4",
+      "media": "mp4",
+      "summary": "print timelapse from the sliced G-code, 999 layers",
+      "metrics": {
+        "grams": 27.23,
+        "layers": 999.0,
+        "minutes": 267.03333333333336
+      }
+    },
+    {
+      "label": "pod 0 (print)",
+      "path": "video/print_pod_0.mp4",
+      "media": "mp4",
+      "summary": "print timelapse from the sliced G-code, 1034 layers",
+      "metrics": {
+        "grams": 28.23,
+        "layers": 1034.0,
+        "minutes": 264.53333333333336
+      }
+    },
+    {
+      "label": "leg FL 0 (print)",
+      "path": "video/print_leg_FL_0.mp4",
+      "media": "mp4",
+      "summary": "print timelapse from the sliced G-code, 1019 layers",
+      "metrics": {
+        "grams": 51.97,
+        "layers": 1019.0,
+        "minutes": 196.23333333333332
+      }
+    },
+    {
+      "label": "leg FR 0 (print)",
+      "path": "video/print_leg_FR_0.mp4",
+      "media": "mp4",
+      "summary": "print timelapse from the sliced G-code, 1019 layers",
+      "metrics": {
+        "grams": 51.97,
+        "layers": 1019.0,
+        "minutes": 196.23333333333332
+      }
+    },
+    {
+      "label": "cut list (first-fit decreasing, kerf per cut)",
+      "path": "cutlist.csv",
+      "media": "csv",
+      "summary": "every tube/rod cut with its bar, offset and offcut",
+      "metrics": {
+        "bars": 6.0,
+        "cuts": 7.0,
+        "minutes": 28.0
+      }
+    },
+    {
+      "label": "tube and rod cutting",
+      "path": "video/cut_tubes.mp4",
+      "media": "mp4",
+      "summary": "7 cuts from 6 bars",
+      "metrics": {
+        "minutes": 28.0
+      }
+    },
+    {
+      "label": "assembly",
+      "path": "video/assembly.mp4",
+      "media": "mp4",
+      "summary": "54 parts fly in in the build guide's order (assembly.stl split into 54 connected pieces)",
+      "metrics": {
+        "parts": 54.0,
+        "steps": 14.0
+      }
+    },
+    {
+      "label": "turntable",
+      "path": "video/turntable.mp4",
+      "media": "mp4",
+      "summary": "the finished vehicle",
+      "metrics": {
+        "parts": 54.0
+      }
+    },
+    {
+      "label": "render",
+      "path": "img/render_hero.png",
+      "media": "png",
+      "summary": "the finished vehicle",
+      "metrics": {}
+    }
+  ],
+  "checks": [
+    {
+      "name": "cut lists fit the bought tube/rod",
+      "passed": true,
+      "detail": "7 cuts from 6 bars"
+    },
+    {
+      "name": "printed parts are sliced",
+      "passed": true,
+      "detail": "28 G-code plates, 3690 min, 562 g"
+    }
+  ]
+}

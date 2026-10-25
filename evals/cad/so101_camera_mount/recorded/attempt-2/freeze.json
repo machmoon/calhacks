@@ -1,0 +1,16 @@
+{
+  "native": "/Users/patliu/Desktop/Coding/wright/out/so-arm101-one-shot/attempt-2/assembly.FCStd",
+  "native_sha256": "7164b2b4b70f08b2a58a00f1df3ff164eb411befdd93761ba788d2af3ea39cc6",
+  "interface": "/Users/patliu/Desktop/Coding/wright/out/so101-camera-mount/interface/measurements.json",
+  "interface_sha256": "91738bb293f60f71b368f9d9271c08ba15d0d950a3fc6be56374bc7cb35fcdec",
+  "camera": "/Users/patliu/Desktop/Coding/wright/cad/projects/so101-camera-mount/camera-spec.json",
+  "camera_sha256": "aec4b39a03d607cc2bd4cc9811b6848a4f7da4ec70473e9c75d0196e93ed0893",
+  "request_sha256": "663f4003921b791c7c571bb31fd9c402005175248b506c49f6eee9dab11f8cff",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "low",
+  "execution_owner": "host real FreeCAD GUI; not this preparation script",
+  "repair_iteration": 2,
+  "previous_candidate_sha256": "5970b8e6ca6769e2ed7a36304a90370720a103e29147ff3c3fb3c738084065b4",
+  "diagnosis_sha256": "58ddb0755d2e58637bf82c97904ee3167896e55c9c7e648daf61105f0d2a56f8",
+  "candidate_manually_edited": false
+}

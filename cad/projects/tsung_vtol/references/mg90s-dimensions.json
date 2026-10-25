@@ -1,0 +1,45 @@
+{
+  "component": "TowerPro MG90S",
+  "reference_aircraft_identity_source": "https://www.reddit.com/r/diydrones/comments/1l89dcr/i_made_a_3d_printed_vtol_that_can_fly_130_miles/",
+  "manufacturer_sources": [
+    "https://towerpro.com.tw/product/mg90s-3/",
+    "https://torqpro.com/product/mg90s-analog/"
+  ],
+  "retrieved": "2026-10-24",
+  "manufacturer_spec_dimensions_mm": [
+    22.8,
+    12.2,
+    28.5
+  ],
+  "manufacturer_dimension_table_mm": {
+    "A_overall_height_to_shaft_top": 32.5,
+    "B_body_length": 22.8,
+    "C_body_to_turret_top_height": 28.4,
+    "D_width": 12.4,
+    "E_mounting_tab_span": 32.1,
+    "F_mounting_tab_underside_height": 18.5
+  },
+  "diagram_file": "servo-dimension-key-full.jpg",
+  "diagram_sha256": "239562be5f25bb06d03900741d7388dcb30ab004a294155a060c10875b151f8c",
+  "diagram_source": "https://torqpro.com/wp-content/uploads/2014/07/\u5c0f\u99ac\u9054\u5c3a\u5bf8\u6a19\u793a\u5716B.jpg",
+  "provisional_conservative_static_envelope_LWH_mm": [
+    32.1,
+    12.4,
+    32.5
+  ],
+  "envelope_scope": "Conservative axis-aligned packaging box including tab span and shaft height; not a detailed servo solid or rotating horn envelope",
+  "weight_g": 13.4,
+  "conflicts": [
+    "Specification width12.2 and tableD12.4 differ; use12.4 for conservative packaging",
+    "Specification height28.5 is not the tableA overall shaft-top height32.5; keep those measurement conventions separate",
+    "Author says MG90s without specifying analog/digital revision; exact hardware not identified"
+  ],
+  "unknown": [
+    "Mounting hole diameter and center spacing",
+    "Flange thickness",
+    "Output shaft radius and exact axis location",
+    "Horn geometry, movement range and screw clearance",
+    "Connector envelope and cable bend requirements"
+  ],
+  "author_actual_variant_verified": false
+}

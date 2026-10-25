@@ -1,0 +1,541 @@
+{
+  "source_native": "/Users/patliu/Desktop/Coding/wright/out/so-arm101-one-shot/attempt-2/assembly.FCStd",
+  "source_native_sha256": "7164b2b4b70f08b2a58a00f1df3ff164eb411befdd93761ba788d2af3ea39cc6",
+  "source_part_step": "/Users/patliu/Desktop/Coding/wright/cad/projects/so-arm101/upstream/STEP/SO101/Follower_Specific/Wrist_Roll_Follower_SO101.step",
+  "source_part_sha256": "b7f9d59f7991f425fff784eab07f0bf65471903dd6d6177e7cb109bebcd02b35",
+  "source_mesh": "/Users/patliu/Desktop/Coding/wright/cad/projects/so-arm101/upstream/Simulation/SO101/assets/wrist_roll_follower_so101_v1.stl",
+  "source_mesh_sha256": "4b17b410a12d64ec39554abc3e8054d8a97384b2dc4a8d95a5ecb2a93670f5f4",
+  "source_brep_valid": true,
+  "visual_object": "Visual_gripper_link_1",
+  "parent_link_object": "Link_gripper_link",
+  "attachment_part_frame": {
+    "origin_mm": [
+      -0.95,
+      -24.2182144793536,
+      24.3498679609405
+    ],
+    "u": [
+      1,
+      0,
+      0
+    ],
+    "v": [
+      0,
+      0,
+      1
+    ],
+    "outward_normal": [
+      0,
+      -1,
+      0
+    ]
+  },
+  "native_mount_face": 226,
+  "native_face_normal": [
+    4.61200787734614e-16,
+    -1.0,
+    8.888907435633402e-33
+  ],
+  "wall_inside_probe": true,
+  "bores": [
+    {
+      "brep_face": 214,
+      "center_part_mm": [
+        -5,
+        -24.2182144793536,
+        24.3498679609405
+      ],
+      "axis_into_arm_part": [
+        0,
+        1,
+        0
+      ],
+      "diameter_mm": 3.2,
+      "straight_wall_depth_mm": 3.5,
+      "mesh_rim_samples": 72,
+      "mesh_fitted_center_xz_mm": [
+        -5.000000041292188,
+        24.3498677974692
+      ],
+      "mesh_fitted_radius_mm": 1.600000040684558,
+      "max_radial_residual_mm": 1.577076485848039e-06,
+      "center_discrepancy_mm": 1.686057837757466e-07
+    },
+    {
+      "brep_face": 227,
+      "center_part_mm": [
+        3.1,
+        -24.2182144793536,
+        24.3498679609405
+      ],
+      "axis_into_arm_part": [
+        0,
+        1,
+        0
+      ],
+      "diameter_mm": 3.2,
+      "straight_wall_depth_mm": 3.5,
+      "mesh_rim_samples": 78,
+      "mesh_fitted_center_xz_mm": [
+        3.1000154245625495,
+        24.349876672225847
+      ],
+      "mesh_fitted_radius_mm": 1.6000091044658533,
+      "max_radial_residual_mm": 0.00044828191882539947,
+      "center_discrepancy_mm": 1.7714503160632273e-05
+    }
+  ],
+  "spacing_mm": 8.1,
+  "bearing_footprint_probes": [
+    {
+      "width_mm": 14,
+      "height_mm": 8,
+      "center_part_mm": [
+        -0.95,
+        -24.2182144793536,
+        24.3498679609405
+      ],
+      "bearing_area_mm2": 85.77160705164283,
+      "rectangle_minus_bores_area_mm2": 95.91504561362026,
+      "edge_loss_mm2": 10.143438561977433
+    },
+    {
+      "width_mm": 16,
+      "height_mm": 8,
+      "center_part_mm": [
+        -0.95,
+        -24.2182144793536,
+        24.3498679609405
+      ],
+      "bearing_area_mm2": 94.61784882933743,
+      "rectangle_minus_bores_area_mm2": 111.91504561362026,
+      "edge_loss_mm2": 17.297196784282832
+    },
+    {
+      "width_mm": 16,
+      "height_mm": 10,
+      "center_part_mm": [
+        -0.95,
+        -24.2182144793536,
+        24.3498679609405
+      ],
+      "bearing_area_mm2": 121.12855427441148,
+      "rectangle_minus_bores_area_mm2": 143.91504561362026,
+      "edge_loss_mm2": 22.78649133920878
+    },
+    {
+      "width_mm": 18,
+      "height_mm": 10,
+      "center_part_mm": [
+        -0.95,
+        -24.2182144793536,
+        24.3498679609405
+      ],
+      "bearing_area_mm2": 131.26426309852485,
+      "rectangle_minus_bores_area_mm2": 163.91504561362026,
+      "edge_loss_mm2": 32.650782515095415
+    }
+  ],
+  "nearby_nut_recess_planes": [
+    {
+      "face": 207,
+      "area": 19.116079469490167,
+      "bounds": [
+        -7.8000000000000504,
+        -20.7182144793536,
+        21.11670645347856,
+        -2.20000000000005,
+        -20.7182144793536,
+        27.58302946840244
+      ],
+      "normal": [
+        -0.0,
+        1.0,
+        -0.0
+      ]
+    },
+    {
+      "face": 208,
+      "area": 10.669432974624591,
+      "bounds": [
+        -7.800000000000062,
+        -20.7182144793536,
+        22.7332872072095,
+        -7.80000000000005,
+        -17.4182144793536,
+        25.9664487146715
+      ],
+      "normal": [
+        1.0,
+        -0.0,
+        3.43386193997065e-16
+      ]
+    },
+    {
+      "face": 209,
+      "area": 10.66943297462419,
+      "bounds": [
+        -7.80000000000005,
+        -20.7182144793536,
+        21.1167064534786,
+        -5.000000000000042,
+        -17.4182144793536,
+        22.733287207209543
+      ],
+      "normal": [
+        0.4999999999999999,
+        -0.0,
+        0.8660254037844388
+      ]
+    },
+    {
+      "face": 210,
+      "area": 10.669432974624186,
+      "bounds": [
+        -5.000000000000057,
+        -20.7182144793536,
+        21.11670645347856,
+        -2.20000000000005,
+        -17.4182144793536,
+        22.733287207209564
+      ],
+      "normal": [
+        -0.5000000000000003,
+        -0.0,
+        0.8660254037844385
+      ]
+    },
+    {
+      "face": 211,
+      "area": 10.669432974624591,
+      "bounds": [
+        -2.20000000000005,
+        -20.7182144793536,
+        22.7332872072095,
+        -2.20000000000005,
+        -17.4182144793536,
+        25.9664487146715
+      ],
+      "normal": [
+        -1.0,
+        -0.0,
+        0.0
+      ]
+    },
+    {
+      "face": 212,
+      "area": 10.669432974624195,
+      "bounds": [
+        -5.00000000000005,
+        -20.7182144793536,
+        25.96644871467146,
+        -2.20000000000005,
+        -17.4182144793536,
+        27.58302946840242
+      ],
+      "normal": [
+        -0.4999999999999999,
+        -0.0,
+        -0.8660254037844388
+      ]
+    },
+    {
+      "face": 213,
+      "area": 10.669432974624193,
+      "bounds": [
+        -7.80000000000005,
+        -20.7182144793536,
+        25.96644871467147,
+        -5.000000000000048,
+        -17.4182144793536,
+        27.58302946840244
+      ],
+      "normal": [
+        0.4999999999999999,
+        -0.0,
+        -0.8660254037844388
+      ]
+    },
+    {
+      "face": 219,
+      "area": 19.11607946949018,
+      "bounds": [
+        0.299999999999949,
+        -20.7182144793536,
+        21.11670645347856,
+        5.899999999999961,
+        -20.7182144793536,
+        27.58302946840244
+      ],
+      "normal": [
+        -0.0,
+        1.0,
+        -0.0
+      ]
+    },
+    {
+      "face": 220,
+      "area": 10.669432974624195,
+      "bounds": [
+        0.299999999999949,
+        -20.7182144793536,
+        25.96644871467147,
+        3.09999999999995,
+        -17.4182144793536,
+        27.58302946840244
+      ],
+      "normal": [
+        0.4999999999999999,
+        -0.0,
+        -0.8660254037844388
+      ]
+    },
+    {
+      "face": 221,
+      "area": 10.669432974624591,
+      "bounds": [
+        0.299999999999949,
+        -20.7182144793536,
+        22.7332872072095,
+        0.299999999999949,
+        -17.4182144793536,
+        25.9664487146715
+      ],
+      "normal": [
+        1.0,
+        -0.0,
+        -0.0
+      ]
+    },
+    {
+      "face": 222,
+      "area": 10.669432974624222,
+      "bounds": [
+        0.299999999999949,
+        -20.7182144793536,
+        21.1167064534786,
+        3.0999999999999663,
+        -17.4182144793536,
+        22.73328720720955
+      ],
+      "normal": [
+        0.4999999999999999,
+        -0.0,
+        0.8660254037844388
+      ]
+    },
+    {
+      "face": 223,
+      "area": 10.66943297462419,
+      "bounds": [
+        3.0999999999999455,
+        -20.7182144793536,
+        21.11670645347856,
+        5.89999999999996,
+        -17.4182144793536,
+        22.733287207209568
+      ],
+      "normal": [
+        -0.4999999999999999,
+        -0.0,
+        0.8660254037844388
+      ]
+    },
+    {
+      "face": 224,
+      "area": 10.669432974624591,
+      "bounds": [
+        5.899999999999948,
+        -20.7182144793536,
+        22.7332872072095,
+        5.899999999999961,
+        -17.4182144793536,
+        25.9664487146715
+      ],
+      "normal": [
+        -1.0,
+        -0.0,
+        -3.43386193997065e-16
+      ]
+    },
+    {
+      "face": 225,
+      "area": 10.669432974624224,
+      "bounds": [
+        3.09999999999995,
+        -20.7182144793536,
+        25.966448714671458,
+        5.89999999999996,
+        -17.4182144793536,
+        27.58302946840242
+      ],
+      "normal": [
+        -0.4999999999999999,
+        -0.0,
+        -0.8660254037844388
+      ]
+    }
+  ],
+  "visual_local_placement": [
+    1.0,
+    0.0,
+    0.0,
+    8.33e-14,
+    0.0,
+    -0.9999999999964793,
+    2.6535897931078006e-06,
+    -0.218214,
+    0.0,
+    -2.6535897931078006e-06,
+    -0.9999999999964793,
+    0.949706,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "visual_world_placement": [
+    -6.011429474650498e-06,
+    1.2953958232870587e-05,
+    0.9999999998980291,
+    292.28431673786923,
+    -0.048662926831948235,
+    -0.9988152578891787,
+    1.2646077381673718e-05,
+    -0.3947324131384096,
+    0.9988152579511448,
+    -0.048662926750965015,
+    6.6346850020604364e-06,
+    234.35970170107592,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "attachment_world_frame": {
+    "origin_mm": [
+      316.6338766854459,
+      23.841327438477403,
+      234.58951795697405
+    ],
+    "u": [
+      -6.011429474317431e-06,
+      -0.048662926831948235,
+      0.9988152579511448
+    ],
+    "v": [
+      0.9999999998980291,
+      1.2646077381673718e-05,
+      6.634685002393503e-06
+    ],
+    "outward_normal": [
+      -1.2953958232870587e-05,
+      0.9988152578891784,
+      0.04866292675096502
+    ]
+  },
+  "geometry_in_input": "Mesh::Feature; no BRep mating part is present in this model-generated source",
+  "registration_scope": "Identity source STEP-to-STL interface frame verified from both complete bore rims and mounting-plane coordinates; not a full-part surface-equivalence proof",
+  "local_bearing_disks": [
+    {
+      "hole_center": [
+        -5,
+        -24.2182144793536,
+        24.3498679609405
+      ],
+      "outer_radius_mm": 2.75,
+      "bearing_area_mm2": 15.715817249582939,
+      "full_annular_area_mm2": 15.715817249582939,
+      "edge_loss_mm2": 0.0
+    },
+    {
+      "hole_center": [
+        -5,
+        -24.2182144793536,
+        24.3498679609405
+      ],
+      "outer_radius_mm": 3,
+      "bearing_area_mm2": 20.231856689118263,
+      "full_annular_area_mm2": 20.231856689118267,
+      "edge_loss_mm2": 3.552713678800501e-15
+    },
+    {
+      "hole_center": [
+        -5,
+        -24.2182144793536,
+        24.3498679609405
+      ],
+      "outer_radius_mm": 3.5,
+      "bearing_area_mm2": 30.442032813285103,
+      "full_annular_area_mm2": 30.442032813285095,
+      "edge_loss_mm2": -7.105427357601002e-15
+    },
+    {
+      "hole_center": [
+        3.1,
+        -24.2182144793536,
+        24.3498679609405
+      ],
+      "outer_radius_mm": 2.75,
+      "bearing_area_mm2": 12.007426649383792,
+      "full_annular_area_mm2": 15.715817249582939,
+      "edge_loss_mm2": 3.708390600199147
+    },
+    {
+      "hole_center": [
+        3.1,
+        -24.2182144793536,
+        24.3498679609405
+      ],
+      "outer_radius_mm": 3,
+      "bearing_area_mm2": 15.10352085934303,
+      "full_annular_area_mm2": 20.231856689118267,
+      "edge_loss_mm2": 5.128335829775237
+    },
+    {
+      "hole_center": [
+        3.1,
+        -24.2182144793536,
+        24.3498679609405
+      ],
+      "outer_radius_mm": 3.5,
+      "bearing_area_mm2": 21.867510068533278,
+      "full_annular_area_mm2": 30.442032813285095,
+      "edge_loss_mm2": 8.574522744751818
+    }
+  ],
+  "hex_nut_recess": {
+    "across_flats_mm": 5.6,
+    "depth_mm": 3.3,
+    "axis_into_arm": [
+      0,
+      1,
+      0
+    ],
+    "y_range_mm": [
+      -20.7182144793536,
+      -17.4182144793536
+    ],
+    "access_note": "Official guide requires removal of motor6 to insert nuts; then reattach motor."
+  },
+  "status": "final_source_interface_measurements",
+  "source_commit": "a758567c3978dfeefe282ede0500085a48fe8f78",
+  "official_attachment_guide": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/Optional/SO101_Wrist_Cam_Hex-Nut_Mount_32x32_UVC_Module/README.md",
+  "mount_face_bounds_mm": [
+    -10.7097905066,
+    -24.2182144793536,
+    8.9497036102,
+    13.1671147676,
+    -24.2182144793536,
+    29.2600394374
+  ],
+  "mount_face_area_mm2": 344.4760130548762,
+  "bearing_interpretation": "Face226 is the only planar face at mounting Y with Y-normal. Measured partial annular bearing at right hole is real; face bounds are not a fully supported rectangle. No strength approval.",
+  "attachment_in_link_rule": "Place under Link_gripper_link, with local transform Visual_gripper_link_1.Placement multiplied by attachment_part_frame (columns U,V,N). World transform is link.getGlobalPlacement() multiplied by this local transform; do not fix the saved world coordinates.",
+  "clearance_scope": {
+    "measured_screw_path": "Diameter3.2 straight bore through3.5mm wall, followed by5.6mmAF recess3.3mmdeep. Remaining motor clearance and installed screw protrusion must be checked for selected hardware.",
+    "design_exclusions": "Preserve original arm geometry. Keep bracket outside the measured face in outward N; only actual fasteners may enter corresponding bores/recesses. All other arm visuals remain obstacles; no whole-motion clearance claim.",
+    "hardware": "Official original adapter uses two M3x8 screws and two M3 nuts; new bracket thickness changes required grip and screw length. Guide requires motor6 removal for nut insertion.",
+    "camera": "Raspberry Pi Camera Module3 STANDARD; its board mounting dimensions must come from supplied official camera drawing. Original arm adapter guide is for a different32x32UVC camera."
+  }
+}

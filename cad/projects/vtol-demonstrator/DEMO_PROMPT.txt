@@ -1,0 +1,18 @@
+Read and execute cad/projects/vtol-demonstrator/BUILD_PROMPT.txt.
+WRIGHT_FAST_DEMO
+WRIGHT_DESIGN_JSON: {"Span": 1900, "RootChord": 300, "BoomHalfSpacing": 320, "MotorFrontX": 120, "MotorRearX": 700, "WingletHeight": 85, "WingletCantAngle": 20, "WingletSweepOffset": 30, "TailDihedralAngle": 32}
+
+Use these exact parameters; do not ask Astra or Claude to select dimensions.
+Prioritize the live CAD demo finishing in under 120 seconds. Show real native
+FreeCAD construction milestones as they happen and leave the editable document
+open. Use the existing prepared VTOL recipe and sourced candidate parts.
+Keep the inverted-V tail, winglets and rear pusher. Lengths are millimeters;
+WingletCantAngle and TailDihedralAngle are degrees. Other native packaging
+parameters remain the recipe defaults, not inferred hardware measurements.
+Do not run collision, simulation, fit, motion, structural or export-equivalence
+audits in this demo. Mark them NOT RUN. Do not claim flight readiness or a new
+model-authored design. This is fixed-parameter execution of a prepared recipe.
+For speed, use a solid fuselage envelope and simple motor posts. Omit internal
+trays, ribs and small fasteners; defer Boolean face refinement;
+label these simplifications in the saved model manifest.
+Save the native model, its supporting script, STEP, live images and elapsed time.

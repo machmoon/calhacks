@@ -1,0 +1,6 @@
+{
+  "id": "corgi-companion",
+  "displayName": "Corgi Companion",
+  "description": "A cheerful corgi digital pet with a laptop-working running state.",
+  "spritesheetPath": "spritesheet.webp"
+}

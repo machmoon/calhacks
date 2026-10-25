@@ -1,0 +1,39 @@
+{
+ "request": "eval fixture ldo",
+ "circuit": {
+  "devices": {
+   "AMS1117-3.3": {
+    "pins": {
+     "GND": "1",
+     "VIN": "3",
+     "VOUT": "2"
+    }
+   }
+  },
+  "nets": {
+   "+3V3": [
+    "AMS1117-3.3.VOUT",
+    "c_out.1"
+   ],
+   "GND": [
+    "AMS1117-3.3.GND",
+    "c_in.2",
+    "c_out.2"
+   ],
+   "VIN": [
+    "AMS1117-3.3.VIN",
+    "c_in.1"
+   ]
+  },
+  "passives": {
+   "c_in": {
+    "type": "capacitor",
+    "value": "10uF"
+   },
+   "c_out": {
+    "type": "capacitor",
+    "value": "22uF"
+   }
+  }
+ }
+}

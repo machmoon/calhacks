@@ -1,0 +1,268 @@
+{
+  "name": "ldo",
+  "source": "/private/tmp/claude-501/-Users-patliu/637315ce-7d38-4733-9b24-6a03b3450c41/scratchpad/be/boards/ldo/ldo.placed.kicad_pcb",
+  "outline": {
+    "min": {
+      "x": -2000000,
+      "y": -2000000
+    },
+    "max": {
+      "x": 17450000,
+      "y": 11100000
+    }
+  },
+  "parts": [
+    {
+      "refdes": "U1",
+      "value": "AMS1117-3.3",
+      "at": {
+        "x": 10425000,
+        "y": 4875000
+      },
+      "rot_deg": 0.0,
+      "footprint": {
+        "lib_id": "Package_TO_SOT_SMD:SOT-223-3_TabPin2",
+        "pads": [
+          {
+            "number": "1",
+            "at": {
+              "x": -3150000,
+              "y": -2300000
+            },
+            "rot_deg": 0.0,
+            "size": [
+              2000000,
+              1500000
+            ],
+            "shape": {
+              "round_rect": 0.25
+            },
+            "drill": null,
+            "plated": false
+          },
+          {
+            "number": "2",
+            "at": {
+              "x": -3150000,
+              "y": 0
+            },
+            "rot_deg": 0.0,
+            "size": [
+              2000000,
+              1500000
+            ],
+            "shape": {
+              "round_rect": 0.25
+            },
+            "drill": null,
+            "plated": false
+          },
+          {
+            "number": "2",
+            "at": {
+              "x": 3150000,
+              "y": 0
+            },
+            "rot_deg": 0.0,
+            "size": [
+              2000000,
+              3800000
+            ],
+            "shape": {
+              "round_rect": 0.25
+            },
+            "drill": null,
+            "plated": false
+          },
+          {
+            "number": "3",
+            "at": {
+              "x": -3150000,
+              "y": 2300000
+            },
+            "rot_deg": 0.0,
+            "size": [
+              2000000,
+              1500000
+            ],
+            "shape": {
+              "round_rect": 0.25
+            },
+            "drill": null,
+            "plated": false
+          }
+        ],
+        "courtyard": {
+          "min": {
+            "x": -4400000,
+            "y": -3600000
+          },
+          "max": {
+            "x": 4400000,
+            "y": 3600000
+          }
+        },
+        "model3d": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-223.step",
+        "source": ""
+      },
+      "pad_nets": [
+        [
+          "1",
+          "GND"
+        ],
+        [
+          "2",
+          "+3V3"
+        ],
+        [
+          "2",
+          "+3V3"
+        ],
+        [
+          "3",
+          "VIN"
+        ]
+      ]
+    },
+    {
+      "refdes": "C1",
+      "value": "10uF",
+      "at": {
+        "x": 3300000,
+        "y": 7175000
+      },
+      "rot_deg": 0.0,
+      "footprint": {
+        "lib_id": "silkscreen:C_0805",
+        "pads": [
+          {
+            "number": "1",
+            "at": {
+              "x": -950000,
+              "y": 0
+            },
+            "rot_deg": 0.0,
+            "size": [
+              1050000,
+              1400000
+            ],
+            "shape": {
+              "round_rect": 0.25
+            },
+            "drill": null,
+            "plated": false
+          },
+          {
+            "number": "2",
+            "at": {
+              "x": 950000,
+              "y": 0
+            },
+            "rot_deg": 0.0,
+            "size": [
+              1050000,
+              1400000
+            ],
+            "shape": {
+              "round_rect": 0.25
+            },
+            "drill": null,
+            "plated": false
+          }
+        ],
+        "courtyard": {
+          "min": {
+            "x": -1725000,
+            "y": -950000
+          },
+          "max": {
+            "x": 1725000,
+            "y": 950000
+          }
+        },
+        "model3d": "${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+        "source": ""
+      },
+      "pad_nets": [
+        [
+          "1",
+          "VIN"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    {
+      "refdes": "C2",
+      "value": "22uF",
+      "at": {
+        "x": 2700000,
+        "y": 3425000
+      },
+      "rot_deg": 0.0,
+      "footprint": {
+        "lib_id": "silkscreen:C_1206",
+        "pads": [
+          {
+            "number": "1",
+            "at": {
+              "x": -1500000,
+              "y": 0
+            },
+            "rot_deg": 0.0,
+            "size": [
+              1150000,
+              1800000
+            ],
+            "shape": {
+              "round_rect": 0.25
+            },
+            "drill": null,
+            "plated": false
+          },
+          {
+            "number": "2",
+            "at": {
+              "x": 1500000,
+              "y": 0
+            },
+            "rot_deg": 0.0,
+            "size": [
+              1150000,
+              1800000
+            ],
+            "shape": {
+              "round_rect": 0.25
+            },
+            "drill": null,
+            "plated": false
+          }
+        ],
+        "courtyard": {
+          "min": {
+            "x": -2325000,
+            "y": -1150000
+          },
+          "max": {
+            "x": 2325000,
+            "y": 1150000
+          }
+        },
+        "model3d": "${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+        "source": ""
+      },
+      "pad_nets": [
+        [
+          "1",
+          "+3V3"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,581 @@
+{
+  "attempt": "attempt2",
+  "cable_keepout": {
+    "actual_connector_geometry": "Cannot be established from supplied dimensions; connector side and bend radius require physical verification.",
+    "bounds_mm": [
+      3.5,
+      23.862,
+      -3,
+      21.5,
+      38.862,
+      -1
+    ],
+    "chosen_exit": "+Y",
+    "frame": "CameraFrame",
+    "length_mm": 15,
+    "name": "CameraRibbonClearance",
+    "reference_only": true,
+    "thickness_mm": 2,
+    "width_mm": 18
+  },
+  "camera_coordinate_convention": "PCB rear-face lower-left origin; +X right, +Y up, +Z optical direction",
+  "camera_identity": "Raspberry Pi Camera Module 3 Standard (not Wide or NoIR)",
+  "design_choices": {
+    "PlateThickness_mm": 3,
+    "StandoffHeight_mm": 6,
+    "boss_radius_mm": 2.5,
+    "camera_clearance_diameter_mm": 2.2,
+    "dimensional_contract": "Plate z=0..T; drilled bosses z=T..T+H; CameraFrame rear PCB face z=T+H, with matching XY axes.",
+    "minimum_standoff_mm": 5,
+    "orientation": "Camera optical +Z equals measured outward normal",
+    "plate_origin_in_attachment_mm": [
+      -12.5,
+      12,
+      0
+    ],
+    "plate_xy_bounds_mm": [
+      -1,
+      -1,
+      26,
+      24.862
+    ],
+    "rear_reservation": "5 mm behind PCB central area x=5..20; corner mounting lands excluded. H=6 leaves 1 mm between this rear reservation and plate. Exact rear footprint is unknown.",
+    "wrist_clearance_diameter_mm": 3.4
+  },
+  "dimensional_source": {
+    "scope": "Supplied manufacturer mechanical drawing dimensions; reference envelopes are simplified design assumptions, not imported CAD",
+    "sha256": "bde27f5ab38dd46aa05713bbb17c6e8acc4cb1d48ff9109df511256f6fbc66ac",
+    "url": "https://datasheets.raspberrypi.com/camera/camera-module-3-standard-mechanical-drawing.pdf"
+  },
+  "final_mount_name": "CameraMount",
+  "hardware_assumptions": {
+    "camera": {
+      "access": "Heads at front PCB mounting lands; nuts below plate. No engagement, actual head/component clearance, tool access or screw-tip clearance is verified. Insulating washers excluded from stack.",
+      "actual_grip_mm": 10.120000000000001,
+      "assumed_nut_thickness_mm": 1.6,
+      "clearance_bore_mm": 2.2,
+      "grip_formula": "T + H + 1.12 mm PCB",
+      "nominal_thread": "M2",
+      "nut_count": 4,
+      "projection_after_assumed_nut_mm": 2.2799999999999994,
+      "proposed_screw_length_mm": 14,
+      "screw_count": 4
+    },
+    "note": "Through hardware only; no fake threads, claimed engagement or modeled physical fasteners. Recalculate proposed lengths after parameter edits. Hardware is not part of CameraMount.",
+    "wrist": {
+      "access": "Supplied official guide requires motor6 removal to insert nuts and then motor reattachment. Remaining motor/screw clearance unverified; right bore bearing is partial.",
+      "actual_grip_mm": 6.5,
+      "assumed_nut_thickness_mm": 2.4,
+      "clearance_bore_mm": 3.4,
+      "grip_formula": "T + 3.5 mm source wall",
+      "nominal_thread": "M3",
+      "nut_count": 2,
+      "projection_after_assumed_nut_mm": 1.0999999999999996,
+      "proposed_screw_length_mm": 10,
+      "screw_count": 2,
+      "source_bore_mm": 3.2
+    }
+  },
+  "input_sha256": "7164b2b4b70f08b2a58a00f1df3ff164eb411befdd93761ba788d2af3ea39cc6",
+  "limitations": [
+    "Prototype only; no manufacturing or strength certification.",
+    "Exact rear components and connector geometry unavailable; central component envelopes are assumptions.",
+    "Full optical field of view and complete robot motion clearance remain unverified.",
+    "No mesh-to-solid conversion. Original source file and prior attempt artifacts are not modified.",
+    "Native expressions require independent fresh-process host testing; independent evaluation is not claimed.",
+    "H >= 5 mm is a declared design constraint, checked during build but not enforced by unrestricted PropertyLength after edits.",
+    "Hardware access and motor clearance require verification before installation."
+  ],
+  "measured_wrist_frame": {
+    "attachment_in_link_matrix": [
+      1.0,
+      0.0,
+      0.0,
+      -0.9499999999999167,
+      0.0,
+      2.653589793011335e-06,
+      0.9999999999964793,
+      24.000065093829416,
+      0.0,
+      -0.9999999999964793,
+      2.653589793011335e-06,
+      -23.40009769564802,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "attachment_part_matrix": [
+      1.0,
+      0.0,
+      0.0,
+      -0.95,
+      0.0,
+      2.220446049250313e-16,
+      -1.0,
+      -24.2182144793536,
+      0.0,
+      1.0,
+      2.220446049250313e-16,
+      24.3498679609405,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "bearing_note": "14 x 8 mm foot is a design choice. Measured 14 x 8 bearing area 85.77160705164283 mm2 versus 95.91504561362026 mm2 rectangle-minus-bores; right-hole bearing is partial, not a fully supported rectangle.",
+    "bores_part_mm": [
+      [
+        -5,
+        -24.2182144793536,
+        24.3498679609405
+      ],
+      [
+        3.1,
+        -24.2182144793536,
+        24.3498679609405
+      ]
+    ],
+    "measured_diameter_mm": 3.2,
+    "nut_recess_AF_mm": 5.6,
+    "nut_recess_depth_mm": 3.3,
+    "parent": "Link_gripper_link",
+    "rule": "Parent to moving Link_gripper_link; compose actual source visual local placement with measured U,V,N part frame. No fixed world attachment.",
+    "spacing_mm": 8.1,
+    "visual": "Visual_gripper_link_1",
+    "visual_local_matrix": [
+      1.0,
+      0.0,
+      0.0,
+      8.33e-14,
+      0.0,
+      -0.9999999999964793,
+      2.6535897931078006e-06,
+      -0.218214,
+      0.0,
+      -2.6535897931078006e-06,
+      -0.9999999999964793,
+      0.949706,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "wall_depth_mm": 3.5
+  },
+  "native_parameter_bindings": {
+    "CameraBossBlank0": [
+      [
+        ".Placement.Base.z",
+        "CameraMountParameters.PlateThickness"
+      ],
+      [
+        "Height",
+        "CameraMountParameters.StandoffHeight"
+      ]
+    ],
+    "CameraBossBlank1": [
+      [
+        ".Placement.Base.z",
+        "CameraMountParameters.PlateThickness"
+      ],
+      [
+        "Height",
+        "CameraMountParameters.StandoffHeight"
+      ]
+    ],
+    "CameraBossBlank2": [
+      [
+        ".Placement.Base.z",
+        "CameraMountParameters.PlateThickness"
+      ],
+      [
+        "Height",
+        "CameraMountParameters.StandoffHeight"
+      ]
+    ],
+    "CameraBossBlank3": [
+      [
+        ".Placement.Base.z",
+        "CameraMountParameters.PlateThickness"
+      ],
+      [
+        "Height",
+        "CameraMountParameters.StandoffHeight"
+      ]
+    ],
+    "CameraBossBore0": [
+      [
+        ".Placement.Base.z",
+        "CameraMountParameters.PlateThickness - 1 mm"
+      ],
+      [
+        "Height",
+        "CameraMountParameters.StandoffHeight + 2 mm"
+      ]
+    ],
+    "CameraBossBore1": [
+      [
+        ".Placement.Base.z",
+        "CameraMountParameters.PlateThickness - 1 mm"
+      ],
+      [
+        "Height",
+        "CameraMountParameters.StandoffHeight + 2 mm"
+      ]
+    ],
+    "CameraBossBore2": [
+      [
+        ".Placement.Base.z",
+        "CameraMountParameters.PlateThickness - 1 mm"
+      ],
+      [
+        "Height",
+        "CameraMountParameters.StandoffHeight + 2 mm"
+      ]
+    ],
+    "CameraBossBore3": [
+      [
+        ".Placement.Base.z",
+        "CameraMountParameters.PlateThickness - 1 mm"
+      ],
+      [
+        "Height",
+        "CameraMountParameters.StandoffHeight + 2 mm"
+      ]
+    ],
+    "CameraFrame": [
+      [
+        ".Placement.Base.z",
+        "CameraMountParameters.PlateThickness + CameraMountParameters.StandoffHeight"
+      ]
+    ],
+    "CameraPlateBlank": [
+      [
+        "Height",
+        "CameraMountParameters.PlateThickness"
+      ]
+    ],
+    "CameraPlateHoleTool0": [
+      [
+        "Height",
+        "CameraMountParameters.PlateThickness + 2 mm"
+      ]
+    ],
+    "CameraPlateHoleTool1": [
+      [
+        "Height",
+        "CameraMountParameters.PlateThickness + 2 mm"
+      ]
+    ],
+    "CameraPlateHoleTool2": [
+      [
+        "Height",
+        "CameraMountParameters.PlateThickness + 2 mm"
+      ]
+    ],
+    "CameraPlateHoleTool3": [
+      [
+        "Height",
+        "CameraMountParameters.PlateThickness + 2 mm"
+      ]
+    ],
+    "CameraSupportWeb": [
+      [
+        "Height",
+        "CameraMountParameters.PlateThickness"
+      ]
+    ],
+    "WristBoreTool0": [
+      [
+        "Height",
+        "CameraMountParameters.PlateThickness + 2 mm"
+      ]
+    ],
+    "WristBoreTool1": [
+      [
+        "Height",
+        "CameraMountParameters.PlateThickness + 2 mm"
+      ]
+    ],
+    "WristFootBlank": [
+      [
+        "Height",
+        "CameraMountParameters.PlateThickness"
+      ]
+    ]
+  },
+  "new_objects": [
+    "CameraMountParameters",
+    "CameraMountAssembly",
+    "Origin028",
+    "X_Axis014",
+    "Y_Axis014",
+    "Z_Axis014",
+    "XY_Plane014",
+    "XZ_Plane014",
+    "YZ_Plane014",
+    "Origin029",
+    "CameraPlateFrame",
+    "Origin030",
+    "X_Axis015",
+    "Y_Axis015",
+    "Z_Axis015",
+    "XY_Plane015",
+    "XZ_Plane015",
+    "YZ_Plane015",
+    "Origin031",
+    "CameraFrame",
+    "Origin032",
+    "X_Axis016",
+    "Y_Axis016",
+    "Z_Axis016",
+    "XY_Plane016",
+    "XZ_Plane016",
+    "YZ_Plane016",
+    "Origin033",
+    "WristFootBlank",
+    "CameraSupportWeb",
+    "WristSupportBlank",
+    "WristBoreTool0",
+    "WristBoreTool1",
+    "WristBoreTools",
+    "WristInterface",
+    "CameraPlateBlank",
+    "CameraPlateHoleTool0",
+    "CameraBossBlank0",
+    "CameraBossBore0",
+    "CameraStandoff0",
+    "CameraPlateHoleTool1",
+    "CameraBossBlank1",
+    "CameraBossBore1",
+    "CameraStandoff1",
+    "CameraPlateHoleTool2",
+    "CameraBossBlank2",
+    "CameraBossBore2",
+    "CameraStandoff2",
+    "CameraPlateHoleTool3",
+    "CameraBossBlank3",
+    "CameraBossBore3",
+    "CameraStandoff3",
+    "CameraPlateHoleTools",
+    "CameraPlate",
+    "CameraMount",
+    "CameraBoardEnvelopeBlank",
+    "ReferencePCBHole0",
+    "ReferencePCBHole1",
+    "ReferencePCBHole2",
+    "ReferencePCBHole3",
+    "ReferencePCBTools",
+    "CameraPCBReference",
+    "CameraFrontConservativeEnvelope",
+    "CameraRearComponentReservation",
+    "CameraReferenceEnvelope",
+    "CameraRibbonClearance",
+    "CameraOpticalClearance"
+  ],
+  "prior_attempt": {
+    "attempt": "attempt1",
+    "candidate_sha256": "5970b8e6ca6769e2ed7a36304a90370720a103e29147ff3c3fb3c738084065b4",
+    "evidence": "User-supplied host trace reports no original leaf geometry, placement, expression or joint-control change; only authorized mount child appended.",
+    "failure": "Source-preservation assertion included computed App::Part aggregates and transient _Part_ShapeCache representations.",
+    "retention": "This module neither loads nor modifies prior attempt artifacts and refuses to overwrite existing output artifacts.",
+    "status": "failed"
+  },
+  "source_verified_camera_dimensions": {
+    "board_mm": [
+      25,
+      23.862,
+      1.12
+    ],
+    "hole_diameter_mm": 2.2,
+    "holes_board_xy_mm": [
+      [
+        2.0,
+        2.0
+      ],
+      [
+        23.0,
+        2.0
+      ],
+      [
+        2.0,
+        14.5
+      ],
+      [
+        23.0,
+        14.5
+      ]
+    ],
+    "lens_barrel_diameter_mm": 5.75,
+    "lens_center_xy_mm": [
+      12.5,
+      14.4
+    ],
+    "overall_depth_mm": 11.3
+  },
+  "validation": {
+    "camera_frame_local": {
+      "base": [
+        0.0,
+        0.0,
+        9.0
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        9.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "construction_outside_final_mm3": {
+      "CameraPlate": 0.0,
+      "CameraStandoff0": 0.0,
+      "CameraStandoff1": 0.0,
+      "CameraStandoff2": 0.0,
+      "CameraStandoff3": 0.0
+    },
+    "construction_validity": {
+      "CameraPlate": true,
+      "CameraStandoff0": true,
+      "CameraStandoff1": true,
+      "CameraStandoff2": true,
+      "CameraStandoff3": true,
+      "WristInterface": true
+    },
+    "fresh_process_parameter_test": "Not executed by this module. Native expressions are persisted for independent host reopen/edit tests.",
+    "input_file_hash_unchanged": true,
+    "mount_valid": true,
+    "original_objects_changed_except_added_child": {},
+    "original_visibility_preserved": true,
+    "plate_z_bounds_mm": [
+      0.0,
+      3.0
+    ],
+    "preservation_scope": {
+      "brep_objects": [],
+      "compared": "Exact original names, types, labels, parent references, ordered Group memberships, local/global placements, expressions, visibility, typed Angle/limit and joint controls, mesh coordinates/topology, and Part::Feature BRep payloads.",
+      "controls": {
+        "JointOrigin_elbow_flex": {
+          "Origin": {
+            "type": "App::PropertyLink",
+            "value": {
+              "document": "live_input",
+              "object": "Origin022"
+            }
+          }
+        },
+        "JointOrigin_gripper": {
+          "Origin": {
+            "type": "App::PropertyLink",
+            "value": {
+              "document": "live_input",
+              "object": "Origin016"
+            }
+          }
+        },
+        "JointOrigin_shoulder_lift": {
+          "Origin": {
+            "type": "App::PropertyLink",
+            "value": {
+              "document": "live_input",
+              "object": "Origin024"
+            }
+          }
+        },
+        "JointOrigin_shoulder_pan": {
+          "Origin": {
+            "type": "App::PropertyLink",
+            "value": {
+              "document": "live_input",
+              "object": "Origin026"
+            }
+          }
+        },
+        "JointOrigin_wrist_flex": {
+          "Origin": {
+            "type": "App::PropertyLink",
+            "value": {
+              "document": "live_input",
+              "object": "Origin020"
+            }
+          }
+        },
+        "JointOrigin_wrist_roll": {
+          "Origin": {
+            "type": "App::PropertyLink",
+            "value": {
+              "document": "live_input",
+              "object": "Origin018"
+            }
+          }
+        }
+      },
+      "excluded": "App::Part computed descendant Shape aggregates and transient runtime cache properties, including _Part_ShapeCache; no original physical geometry exemption.",
+      "mesh_objects": [
+        "Visual_base_link_0",
+        "Visual_base_link_1",
+        "Visual_base_link_2",
+        "Visual_base_link_3",
+        "Visual_shoulder_link_0",
+        "Visual_shoulder_link_1",
+        "Visual_shoulder_link_2",
+        "Visual_upper_arm_link_0",
+        "Visual_upper_arm_link_1",
+        "Visual_lower_arm_link_0",
+        "Visual_lower_arm_link_1",
+        "Visual_lower_arm_link_2",
+        "Visual_wrist_link_0",
+        "Visual_wrist_link_1",
+        "Visual_gripper_link_0",
+        "Visual_gripper_link_1",
+        "Visual_moving_jaw_so101_v1_link_0"
+      ],
+      "only_membership_exception": "Append CameraMountAssembly to Link_gripper_link.Group"
+    },
+    "reference_overlap_mm3": {
+      "CameraOpticalClearance": 0.0,
+      "CameraReferenceEnvelope": 0.0,
+      "CameraRibbonClearance": 0.0
+    },
+    "robot_collision_check": "Unresolved: original visuals include meshes; no exact BRep obstacle evaluation, installed hardware clearance, or whole-motion certification performed.",
+    "solid_count": 1,
+    "standoff_z_bounds_mm": {
+      "CameraStandoff0": [
+        3.0,
+        9.0
+      ],
+      "CameraStandoff1": [
+        3.0,
+        9.0
+      ],
+      "CameraStandoff2": [
+        3.0,
+        9.0
+      ],
+      "CameraStandoff3": [
+        3.0,
+        9.0
+      ]
+    },
+    "volume_mm3": 2815.7379054348507
+  }
+}

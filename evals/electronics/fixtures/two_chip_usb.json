@@ -1,0 +1,122 @@
+{
+ "devices": {
+  "ATtiny85": {
+   "no_connect": [
+    "PB3",
+    "PB4"
+   ],
+   "pins": {
+    "GND": "4",
+    "PB0": "5",
+    "PB1": "6",
+    "PB2": "7",
+    "PB3": "2",
+    "PB4": "3",
+    "PB5": "1",
+    "VCC": "8"
+   }
+  },
+  "CH340C": {
+   "no_connect": [
+    "V3",
+    "UDP",
+    "UDM",
+    "CTS",
+    "DSR",
+    "RI",
+    "DCD",
+    "DTR",
+    "RTS",
+    "R232"
+   ],
+   "pins": {
+    "CTS": "9",
+    "DCD": "12",
+    "DSR": "10",
+    "DTR": "13",
+    "GND": "1",
+    "R232": "15",
+    "RI": "11",
+    "RTS": "14",
+    "RXD": "3",
+    "TXD": "2",
+    "UDM": "6",
+    "UDP": "5",
+    "V3": "4",
+    "VCC": "16"
+   }
+  }
+ },
+ "nets": {
+  "GND": [
+   "ATtiny85.GND",
+   "CH340C.GND",
+   "C1.2",
+   "C2.2",
+   "C3.2",
+   "D1.1"
+  ],
+  "LED": [
+   "ATtiny85.PB2",
+   "D1.2"
+  ],
+  "RST": [
+   "R3.2",
+   "ATtiny85.PB5"
+  ],
+  "RX": [
+   "CH340C.RXD",
+   "R2.1"
+  ],
+  "RXR": [
+   "R2.2",
+   "ATtiny85.PB1"
+  ],
+  "TX": [
+   "CH340C.TXD",
+   "R1.1"
+  ],
+  "TXR": [
+   "R1.2",
+   "ATtiny85.PB0"
+  ],
+  "VCC": [
+   "ATtiny85.VCC",
+   "CH340C.VCC",
+   "C1.1",
+   "C2.1",
+   "C3.1",
+   "R3.1"
+  ]
+ },
+ "passives": {
+  "C1": {
+   "type": "capacitor",
+   "value": "100n"
+  },
+  "C2": {
+   "type": "capacitor",
+   "value": "100n"
+  },
+  "C3": {
+   "type": "capacitor",
+   "value": "10u"
+  },
+  "D1": {
+   "type": "diode",
+   "value": "LED"
+  },
+  "R1": {
+   "type": "resistor",
+   "value": "1k"
+  },
+  "R2": {
+   "type": "resistor",
+   "value": "1k"
+  },
+  "R3": {
+   "type": "resistor",
+   "value": "10k"
+  }
+ }
+}

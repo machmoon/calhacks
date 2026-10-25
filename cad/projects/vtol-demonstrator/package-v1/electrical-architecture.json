@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "revision": "package-v1",
+  "evidence_frozen": true,
+  "hardware_ready": false,
+  "compatibility_verified": false,
+  "date": "2026-10-24",
+  "scope": "Original 1.8m lift-plus-cruise demonstrator candidate, not Tsung Xu replica; evidence freeze is not hardware release",
+  "topology": [
+    "4S packXT90 \u2192 matched main disconnect/protection \u2192 propulsion distribution (unresolved exact COTS assembly)",
+    "Distribution \u2192 four liftESCs + cruiseESC; three motor phase leads each",
+    "Separate low-current battery branch \u2192 PM02V3 \u2192 controller POWER; voltage-only monitor, no propulsion-current claim",
+    "Separate battery branch \u2192 UBEC30603000 set6V \u2192 servo rail; common signal ground",
+    "Controller5V peripheral ports \u2192 GNSS, receiver, radio, airspeed within per-port limits",
+    "Remove/insulate all five ESC BEC positive leads; no regulator paralleling"
+  ],
+  "power_screen": {
+    "lift_bench_max_A": 55.8,
+    "cruise_bench_max_A": 34.23,
+    "combined_test_point_A_before_avionics": 90.03,
+    "sum_motor_nameplate_peak_A": 109,
+    "nominal_hover_A_approx": 22,
+    "servo_stall_W": 28.8,
+    "stock_PM02_PM07_leads": "REJECTED as propulsion trunk:30A continuous60A<60s",
+    "XT90_AWG10_proposal": "exact connector/load-duration/thermal evidence still pending; not automatically90A continuous"
+  },
+  "signals": [
+    {
+      "output": 1,
+      "function": "liftFL",
+      "protocol": "PWM",
+      "status": "logical allocation only; physical pin/timer map pending"
+    },
+    {
+      "output": 2,
+      "function": "liftFR",
+      "protocol": "PWM",
+      "status": "logical allocation only; physical pin/timer map pending"
+    },
+    {
+      "output": 3,
+      "function": "liftRL",
+      "protocol": "PWM",
+      "status": "logical allocation only; physical pin/timer map pending"
+    },
+    {
+      "output": 4,
+      "function": "liftRR",
+      "protocol": "PWM",
+      "status": "logical allocation only; physical pin/timer map pending"
+    },
+    {
+      "output": 5,
+      "function": "cruise",
+      "protocol": "PWM",
+      "status": "logical allocation only; physical pin/timer map pending"
+    },
+    {
+      "output": 6,
+      "function": "aileronL",
+      "protocol": "PWM",
+      "status": "logical allocation only; physical pin/timer map pending"
+    },
+    {
+      "output": 7,
+      "function": "aileronR",
+      "protocol": "PWM",
+      "status": "logical allocation only; physical pin/timer map pending"
+    },
+    {
+      "output": 8,
+      "function": "elevator",
+      "protocol": "PWM",
+      "status": "logical allocation only; physical pin/timer map pending"
+    },
+    {
+      "output": 9,
+      "function": "rudder",
+      "protocol": "PWM",
+      "status": "logical allocation only; physical pin/timer map pending"
+    }
+  ],
+  "harness_rules": {
+    "all_connections_require": [
+      "from_pin",
+      "to_pin",
+      "voltage",
+      "max_current",
+      "wire_part",
+      "gauge",
+      "length_mm",
+      "connector_variant",
+      "pin_orientation",
+      "bend_radius",
+      "retention",
+      "service_slack"
+    ],
+    "length_allowance": "measure CAD routing then add10% plus local service loops; not yet a fabricated length",
+    "protection": "fuse/DC interrupt/time-current coordination unresolved; no invented fuse pass"
+  },
+  "status": "voltage architecture plausible; power harness and pin schedule incomplete"
+}

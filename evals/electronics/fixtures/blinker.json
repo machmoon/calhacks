@@ -1,0 +1,84 @@
+{
+ "devices": {
+  "NE555D": {
+   "pins": {
+    "CTRL": "5",
+    "DISCH": "7",
+    "GND": "1",
+    "OUT": "3",
+    "RESET": "4",
+    "THRES": "6",
+    "TRIG": "2",
+    "VCC": "8"
+   }
+  }
+ },
+ "nets": {
+  "+9V": [
+   "NE555D.VCC",
+   "NE555D.RESET",
+   "R1.1",
+   "Cdec.1"
+  ],
+  "CTRL": [
+   "NE555D.CTRL",
+   "Cctrl.1"
+  ],
+  "DIS": [
+   "NE555D.DISCH",
+   "R1.2",
+   "R2.1"
+  ],
+  "GND": [
+   "NE555D.GND",
+   "C1.2",
+   "Cctrl.2",
+   "Cdec.2",
+   "D1.1"
+  ],
+  "LEDK": [
+   "Rled.2",
+   "D1.2"
+  ],
+  "OUT": [
+   "NE555D.OUT",
+   "Rled.1"
+  ],
+  "THR": [
+   "NE555D.THRES",
+   "NE555D.TRIG",
+   "R2.2",
+   "C1.1"
+  ]
+ },
+ "passives": {
+  "C1": {
+   "type": "capacitor",
+   "value": "1uF"
+  },
+  "Cctrl": {
+   "type": "capacitor",
+   "value": "10nF"
+  },
+  "Cdec": {
+   "type": "capacitor",
+   "value": "100nF"
+  },
+  "D1": {
+   "type": "diode",
+   "value": "LED"
+  },
+  "R1": {
+   "type": "resistor",
+   "value": "470k"
+  },
+  "R2": {
+   "type": "resistor",
+   "value": "470k"
+  },
+  "Rled": {
+   "type": "resistor",
+   "value": "1k"
+  }
+ }
+}

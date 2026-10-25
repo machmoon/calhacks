@@ -1,0 +1,45 @@
+ok   parts                          +0.000        every part resolved to a sourced catalog row
+ok   parts_orderable                -0.000 parts  all on sale
+ok   hover_thrust_to_weight         +0.219        T/W 2.02, stopped by the pack burst at 90 A from the pack (hot day +15 K, low battery)
+ok   hover_throttle                 +0.244        hover throttle 0.36 standard day full pack, 0.41 hot day low pack
+ok   lift_motor_current            +27.259 A      18.4 A per motor in hover, rated 46 A
+ok   lift_esc_current              +25.758 A      18.4 A hover / 34.2 A full throttle per channel; ESC 50 A cont, 60 A burst
+ok   pack_current                  +95.328 A      hover 32.2 A from the pack, rated 128 A
+ok   pack_peak_current            +210.000 A      worst seconds 90 A; 3 x Upgrade Energy RED V4 6S2P 10Ah (6S6P) bursts 300 A
+ok   voltage_ratings                +0.000 cells  6S pack; tightest lift motor aos_supernova_2810_900kv 4-6S
+ok   pusher_esc_current            +30.000 A      pusher 15.0 A at full throttle, ESC 45 A
+ok   cruise                         +0.212        19.3 m/s at 164 W, L/D 8.6, prop 0.77, motor 0.88, throttle 0.69
+ok   max_speed                      +0.161        top 28.2 m/s, best range 19.3 m/s
+ok   stall_speed                    +0.026 m/s    stall 14.0 m/s (CLmax 1.47), at most 14
+ok   static_margin                  +5.000 %MAC   10.0 % MAC: CG 74 mm, neutral point 95 mm
+ok   tail_authority                 +0.401        tail CL +0.26 to trim at the stall; section CLmax 0.82
+ok   spar_stress                  +158.448 MPa    main_spar in manoeuvre 4 g x 1.5: 342 MPa of 500 (19.8 N m where the joiner ends, 150 mm out)
+ok   spar_joint                     +0.000 mm     sleeve goodwinds_pct500024 on cst_cs525_1m
+ok   spar_fit                       +7.157 mm     rear spar: 7.2 mm inside the skin at its tightest, 0 mm out
+ok   boom_stress                   +58.739 MPa    boom in landing 2.67 g x 1.5: 441 MPa of 500 (89 N leg load on a 288 mm overhang)
+ok   boom_resonance                 +0.365        boom mode 33 Hz, hover rotation 98 Hz
+ok   landing_legs                   +0.050        buckle at 364 N for 89 N; landing_leg in landing 2.67 g x 1.5: 19 MPa of 20 (89 N axial, 44 N side at the foot)
+ok   load_paths                     -0.000 links  6 load paths, every link joined and touching
+ok   interference                   +0.000 mm     50 solids, 1225 pairs, none overlapping
+ok   attachments                    -0.000 joints 60 joints, all in contact
+ok   prop_clearance                 +9.241 mm     closest: lift_prop_disc_RL to pusher_disc at 14.2 mm
+ok   containment                    +3.817 mm     tightest battery: 3.8 mm inside the cavity
+ok   servo_fit                      +6.687 mm     emax_es08ma_ii in the wing at 339 mm span: 7.2 mm inside the skins
+ok   print_bed                     +40.002 mm     tightest wing_R: 210 x 200 x 30 mm piece in [256.0, 256.0, 256.0] less 3 mm margins
+ok   ground_clearance               +5.000 mm     lowest non-leg point 20 mm above the feet
+ok   thrust_line                   +15.000 mm     pusher +0 mm from the CG's height
+ok   prop_mount                     +0.000        apc_12x8e on tmotor_mn3110_470kv (short_stub shaft)
+ok   lift_prop_pairs                +0.000        lift prop rotation Some("pair")
+ok   wire_temperature              +95.550 C      pusher ESC feed: 18 AWG, 83 C steady at 10.0 A, 104 C after 10 s at 15.0 A
+ok   battery_connector              +0.000 A      XT90 45/90 A for 32.2 A hover, 90 A peak
+ok   fc_outputs                     +2.000 outputs corewing_f405_wing_v2 has 12 outputs
+ok   servo_power                    +3.000 A      servo BEC 8.0 A, five servos stall at 5.0 A
+ok   ardupilot_params               -0.000 params 54 parameters, all inside ArduPlane's metadata
+ok   budget                       +388.070 USD    BOM $1612 over 29 lines; budget $2000
+ok   span                           +0.000 mm     span 1200 mm, allowed 1200
+ok   range                          +1.205 km     211.2 km with 15 % reserve (250.4 km to cutoff)
+ok   endurance                    +194.641 min    195 min with reserve
+ok   airspeed_sensor                +0.000        on board
+ok   print_time                     +0.000 h      28 pieces, 61.5 h on the bambu_a1 (no limit stated)
+ok   printed_mass                  +18.175 g      bambu_pla_aero: sliced 257 g, mass model 275 g
+44 checks, 0 failing

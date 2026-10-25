@@ -1,0 +1,853 @@
+{
+  "domain": "rocket",
+  "programs": [
+    {
+      "machine": "Lathe",
+      "minutes": 361.03133333825144,
+      "name": "liner_lathe",
+      "notes": [
+        "stock: Powers Plastics 5\" diameter canvas (CE) phenolic rod, priced per foot, cut to size (eBay item 283027712448)",
+        "bore: chamber 98.57 dia x 531.6, 30-deg-class cone to throat 69.70 dia, diverging to exit 113.60 dia over 81.9",
+        "roughing written out as G0/G1 passes after LinuxCNC G71 semantics (interp_g7x.cc), not as a canned call",
+        "phenolic dust: carbide tools, no coolant, extraction on"
+      ],
+      "part": "chamber/nozzle liner",
+      "qty": 1,
+      "stock": "round bar 127.0 mm dia x 641.5 mm"
+    },
+    {
+      "machine": "Lathe",
+      "minutes": 165.01361534974757,
+      "name": "case_lathe",
+      "notes": [
+        "stock: 6061-T6511 aluminum round bar 5\" dia x 12\" (Speedy Metals)",
+        "case 112.57 OD x 106.57 ID (liner slip fit) x 596.6 long: 40 mm injector head + chamber + converging",
+        "ASSUMED: the injector-to-case joint is not in the rocket model; the forward 40 mm is plain bore"
+      ],
+      "part": "chamber case",
+      "qty": 1,
+      "stock": "round bar 127.0 mm dia x 599.6 mm"
+    },
+    {
+      "machine": "Lathe",
+      "minutes": 33.20975621472438,
+      "name": "injector_lathe",
+      "notes": [
+        "stock: slice of 6061-T6511 aluminum round bar 5\" dia x 12\" (Speedy Metals)",
+        "plate 125.0 dia x 12.0"
+      ],
+      "part": "injector plate",
+      "qty": 1,
+      "stock": "round bar 127.0 mm dia x 15.0 mm"
+    },
+    {
+      "machine": "Mill",
+      "minutes": 53.972370283059995,
+      "name": "injector_mill",
+      "notes": [
+        "triplet: 39 elements, ox 2.00 mm on axis, 2 fuel 1.20 mm each; the 30 deg impingement angle needs a tilted fixture: drilled here perpendicular as spot locations, finish on a 30 deg sine plate",
+        "ASSUMED: 8 x M5 bolt circle to the case flange (the rocket model has no injector joint)"
+      ],
+      "part": "injector plate",
+      "qty": 1,
+      "stock": "round bar 125.0 mm dia x 12.0 mm"
+    },
+    {
+      "machine": "Lathe",
+      "minutes": 36.05743461857507,
+      "name": "ox_bulkhead_lathe",
+      "notes": [
+        "OD 145.95 = tank bore 146.05 - 0.1 slip fit; 1 AS568-2xx gland(s) 4.8 wide x 2.85 deep (Parker ORD 5700 static radial, verify)",
+        "thickness 17.0 mm as sized by the rocket's plate stress check: no lightening pockets (they would void that check)"
+      ],
+      "part": "N2O tank bulkhead",
+      "qty": 2,
+      "stock": "round bar 152.4 mm dia x 20.0 mm"
+    },
+    {
+      "machine": "Mill",
+      "minutes": 35.75486127942835,
+      "name": "ox_bulkhead_mill",
+      "notes": [
+        "ports: 1/2 NPT on axis (feed / downcomer), 2 x 1/4 NPT (vent, pressurant); tap after drilling (ASME B1.20.1 tap drills)",
+        "22 radial 1/4-20 closure screws into the rim (rocket rules.rs: radial closure through the tube wall); radial holes are A-axis moves, not simulated"
+      ],
+      "part": "N2O tank bulkhead",
+      "qty": 2,
+      "stock": "round bar 146.0 mm dia x 17.0 mm"
+    },
+    {
+      "machine": "Lathe",
+      "minutes": 35.95923845544099,
+      "name": "fuel_bulkhead_lathe",
+      "notes": [
+        "OD 145.95 = tank bore 146.05 - 0.1 slip fit; 1 AS568-2xx gland(s) 4.8 wide x 2.85 deep (Parker ORD 5700 static radial, verify)",
+        "thickness 14.0 mm as sized by the rocket's plate stress check: no lightening pockets (they would void that check)"
+      ],
+      "part": "fuel tank bulkhead",
+      "qty": 2,
+      "stock": "round bar 152.4 mm dia x 17.0 mm"
+    },
+    {
+      "machine": "Mill",
+      "minutes": 34.419815914023275,
+      "name": "fuel_bulkhead_mill",
+      "notes": [
+        "ports: 1/2 NPT on axis (feed / downcomer), 2 x 1/4 NPT (vent, pressurant); tap after drilling (ASME B1.20.1 tap drills)",
+        "14 radial 1/4-20 closure screws into the rim (rocket rules.rs: radial closure through the tube wall); radial holes are A-axis moves, not simulated"
+      ],
+      "part": "fuel tank bulkhead",
+      "qty": 2,
+      "stock": "round bar 146.0 mm dia x 14.0 mm"
+    },
+    {
+      "machine": "Router",
+      "minutes": 22.48489115560375,
+      "name": "fins_router_1",
+      "notes": [
+        "2 fins: root 313.4, tip 125.4, span 93.8, sweep 93.8, 4.76 thick",
+        "G10 dust is hazardous: vacuum at the cutter, respirator; diamond-cut bit (fibreglass dulls carbide fast)",
+        "tabs 6 mm wide, 1.2 mm thick: snap and sand flush"
+      ],
+      "part": "fins (G10)",
+      "qty": 1,
+      "stock": "block 304.8 x 304.8 x 4.76 mm"
+    },
+    {
+      "machine": "Router",
+      "minutes": 22.48489115560375,
+      "name": "fins_router_2",
+      "notes": [
+        "2 fins: root 313.4, tip 125.4, span 93.8, sweep 93.8, 4.76 thick",
+        "G10 dust is hazardous: vacuum at the cutter, respirator; diamond-cut bit (fibreglass dulls carbide fast)",
+        "tabs 6 mm wide, 1.2 mm thick: snap and sand flush"
+      ],
+      "part": "fins (G10)",
+      "qty": 1,
+      "stock": "block 304.8 x 304.8 x 4.76 mm"
+    }
+  ],
+  "rows": [
+    {
+      "files": [
+        "gcode/liner_lathe.ngc",
+        "video/liner_lathe.mp4"
+      ],
+      "grams": 1652.2792104700068,
+      "machine": "2-axis CNC lathe (LinuxCNC lathe mode, G7 diameter, G18)",
+      "minutes": 361.03133333825144,
+      "notes": "stock: Powers Plastics 5\" diameter canvas (CE) phenolic rod, priced per foot, cut to size (eBay item 283027712448) | bore: chamber 98.57 dia x 531.6, 30-deg-class cone to throat 69.70 dia, diverging to exit 113.60 dia over 81.9 | roughing written out as G0/G1 passes after LinuxCNC G71 semantics (interp_g7x.cc), not as a canned call | phenolic dust: carbide tools, no coolant, extraction on",
+      "part": "chamber/nozzle liner",
+      "process": "turned",
+      "qty": 1,
+      "stock": "round bar 127.0 mm dia x 641.5 mm (linen/canvas phenolic)",
+      "tools": "T1 CNMG 432 turning insert, 0.8 mm nose; T3 25.0 mm drill (tailstock / turret); T4 boring bar 18 mm, 0.4 mm nose"
+    },
+    {
+      "files": [
+        "gcode/case_lathe.ngc",
+        "video/case_lathe.mp4"
+      ],
+      "grams": 1664.5981024404866,
+      "machine": "2-axis CNC lathe (LinuxCNC lathe mode, G7 diameter, G18)",
+      "minutes": 165.01361534974757,
+      "notes": "stock: 6061-T6511 aluminum round bar 5\" dia x 12\" (Speedy Metals) | case 112.57 OD x 106.57 ID (liner slip fit) x 596.6 long: 40 mm injector head + chamber + converging | ASSUMED: the injector-to-case joint is not in the rocket model; the forward 40 mm is plain bore",
+      "part": "chamber case",
+      "process": "turned",
+      "qty": 1,
+      "stock": "round bar 127.0 mm dia x 599.6 mm (6061-T6511 aluminium)",
+      "tools": "T1 CNMG 432 turning insert, 0.8 mm nose; T3 25.0 mm drill (tailstock / turret); T4 boring bar 18 mm, 0.4 mm nose"
+    },
+    {
+      "files": [
+        "gcode/injector_lathe.ngc",
+        "video/injector_lathe.mp4"
+      ],
+      "grams": 340.9593087138204,
+      "machine": "2-axis CNC lathe (LinuxCNC lathe mode, G7 diameter, G18)",
+      "minutes": 33.20975621472438,
+      "notes": "stock: slice of 6061-T6511 aluminum round bar 5\" dia x 12\" (Speedy Metals) | plate 125.0 dia x 12.0",
+      "part": "injector plate",
+      "process": "turned",
+      "qty": 1,
+      "stock": "round bar 127.0 mm dia x 15.0 mm (6061-T6511 aluminium)",
+      "tools": "T1 CNMG 432 turning insert, 0.8 mm nose"
+    },
+    {
+      "files": [
+        "gcode/injector_mill.ngc",
+        "video/injector_mill.mp4"
+      ],
+      "grams": 315.2067733449585,
+      "machine": "3-axis CNC mill (Tormach PCNC 1100 class), 4th-axis indexer for radial holes",
+      "minutes": 53.972370283059995,
+      "notes": "triplet: 39 elements, ox 2.00 mm on axis, 2 fuel 1.20 mm each; the 30 deg impingement angle needs a tilted fixture: drilled here perpendicular as spot locations, finish on a 30 deg sine plate | ASSUMED: 8 x M5 bolt circle to the case flange (the rocket model has no injector joint)",
+      "part": "injector plate",
+      "process": "milled",
+      "qty": 1,
+      "stock": "round bar 125.0 mm dia x 12.0 mm (6061-T6511 aluminium)",
+      "tools": "T1 12 mm 3-flute carbide end mill; T2 6 mm 3-flute carbide end mill; T3 2.00 mm carbide micro drill; T4 1.20 mm carbide micro drill; T6 5.5 mm HSS drill"
+    },
+    {
+      "files": [
+        "gcode/ox_bulkhead_lathe.ngc",
+        "video/ox_bulkhead_lathe.mp4"
+      ],
+      "grams": 671.5642484347718,
+      "machine": "2-axis CNC lathe (LinuxCNC lathe mode, G7 diameter, G18)",
+      "minutes": 36.05743461857507,
+      "notes": "OD 145.95 = tank bore 146.05 - 0.1 slip fit; 1 AS568-2xx gland(s) 4.8 wide x 2.85 deep (Parker ORD 5700 static radial, verify) | thickness 17.0 mm as sized by the rocket's plate stress check: no lightening pockets (they would void that check)",
+      "part": "N2O tank bulkhead",
+      "process": "turned",
+      "qty": 2,
+      "stock": "round bar 152.4 mm dia x 20.0 mm (6061-T6 aluminium)",
+      "tools": "T1 CNMG 432 turning insert, 0.8 mm nose; T5 grooving insert 3.00 mm"
+    },
+    {
+      "files": [
+        "gcode/ox_bulkhead_mill.ngc",
+        "video/ox_bulkhead_mill.mp4"
+      ],
+      "grams": 746.8786294468027,
+      "machine": "3-axis CNC mill (Tormach PCNC 1100 class), 4th-axis indexer for radial holes",
+      "minutes": 35.75486127942835,
+      "notes": "ports: 1/2 NPT on axis (feed / downcomer), 2 x 1/4 NPT (vent, pressurant); tap after drilling (ASME B1.20.1 tap drills) | 22 radial 1/4-20 closure screws into the rim (rocket rules.rs: radial closure through the tube wall); radial holes are A-axis moves, not simulated",
+      "part": "N2O tank bulkhead",
+      "process": "milled",
+      "qty": 2,
+      "stock": "round bar 146.0 mm dia x 17.0 mm (6061-T6 aluminium)",
+      "tools": "T1 12 mm 3-flute carbide end mill; T2 7/16 in HSS drill; T3 #7 (5.11 mm) HSS drill"
+    },
+    {
+      "files": [
+        "gcode/fuel_bulkhead_lathe.ngc",
+        "video/fuel_bulkhead_lathe.mp4"
+      ],
+      "grams": 536.0505809843243,
+      "machine": "2-axis CNC lathe (LinuxCNC lathe mode, G7 diameter, G18)",
+      "minutes": 35.95923845544099,
+      "notes": "OD 145.95 = tank bore 146.05 - 0.1 slip fit; 1 AS568-2xx gland(s) 4.8 wide x 2.85 deep (Parker ORD 5700 static radial, verify) | thickness 14.0 mm as sized by the rocket's plate stress check: no lightening pockets (they would void that check)",
+      "part": "fuel tank bulkhead",
+      "process": "turned",
+      "qty": 2,
+      "stock": "round bar 152.4 mm dia x 17.0 mm (6061-T6 aluminium)",
+      "tools": "T1 CNMG 432 turning insert, 0.8 mm nose; T5 grooving insert 3.00 mm"
+    },
+    {
+      "files": [
+        "gcode/fuel_bulkhead_mill.ngc",
+        "video/fuel_bulkhead_mill.mp4"
+      ],
+      "grams": 615.076518367955,
+      "machine": "3-axis CNC mill (Tormach PCNC 1100 class), 4th-axis indexer for radial holes",
+      "minutes": 34.419815914023275,
+      "notes": "ports: 1/2 NPT on axis (feed / downcomer), 2 x 1/4 NPT (vent, pressurant); tap after drilling (ASME B1.20.1 tap drills) | 14 radial 1/4-20 closure screws into the rim (rocket rules.rs: radial closure through the tube wall); radial holes are A-axis moves, not simulated",
+      "part": "fuel tank bulkhead",
+      "process": "milled",
+      "qty": 2,
+      "stock": "round bar 146.0 mm dia x 14.0 mm (6061-T6 aluminium)",
+      "tools": "T1 12 mm 3-flute carbide end mill; T2 7/16 in HSS drill; T3 #7 (5.11 mm) HSS drill"
+    },
+    {
+      "files": [
+        "gcode/fins_router_1.ngc",
+        "video/fins_router_1.mp4"
+      ],
+      "grams": null,
+      "machine": "CNC router (Shapeoko / Onefinity class) with dust shoe",
+      "minutes": 22.48489115560375,
+      "notes": "2 fins: root 313.4, tip 125.4, span 93.8, sweep 93.8, 4.76 thick | G10 dust is hazardous: vacuum at the cutter, respirator; diamond-cut bit (fibreglass dulls carbide fast) | tabs 6 mm wide, 1.2 mm thick: snap and sand flush",
+      "part": "fins (G10)",
+      "process": "routed",
+      "qty": 1,
+      "stock": "block 304.8 x 304.8 x 4.76 mm (G10 fibreglass sheet)",
+      "tools": "T1 1/8 in diamond-cut carbide router bit"
+    },
+    {
+      "files": [
+        "gcode/fins_router_2.ngc",
+        "video/fins_router_1.mp4"
+      ],
+      "grams": null,
+      "machine": "CNC router (Shapeoko / Onefinity class) with dust shoe",
+      "minutes": 22.48489115560375,
+      "notes": "2 fins: root 313.4, tip 125.4, span 93.8, sweep 93.8, 4.76 thick | G10 dust is hazardous: vacuum at the cutter, respirator; diamond-cut bit (fibreglass dulls carbide fast) | tabs 6 mm wide, 1.2 mm thick: snap and sand flush",
+      "part": "fins (G10)",
+      "process": "routed",
+      "qty": 1,
+      "stock": "block 304.8 x 304.8 x 4.76 mm (G10 fibreglass sheet)",
+      "tools": "T1 1/8 in diamond-cut carbide router bit"
+    },
+    {
+      "files": [
+        "fin_alignment_jig.gcode",
+        "video/print_fin_alignment_jig.mp4"
+      ],
+      "grams": 219.97,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 712.6166666666667,
+      "notes": "",
+      "part": "fin alignment jig",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "cutlist.csv"
+      ],
+      "grams": null,
+      "machine": "horizontal bandsaw",
+      "minutes": 4.0,
+      "notes": "500.2 mm",
+      "part": "fuel tank",
+      "process": "cut",
+      "qty": 1,
+      "stock": "6061-T6 aluminum round tube 6.0\" OD x 0.125\" wall, 72\" cut (Speedy Metals) (bar 1, from 0 mm)",
+      "tools": "kerf 2.0 mm"
+    },
+    {
+      "files": [
+        "cutlist.csv"
+      ],
+      "grams": null,
+      "machine": "horizontal bandsaw",
+      "minutes": 4.0,
+      "notes": "150.0 mm",
+      "part": "intertank",
+      "process": "cut",
+      "qty": 1,
+      "stock": "6061-T6 aluminum round tube 6.0\" OD x 0.125\" wall, 72\" cut (Speedy Metals) (bar 1, from 502 mm)",
+      "tools": "kerf 2.0 mm"
+    },
+    {
+      "files": [
+        "cutlist.csv"
+      ],
+      "grams": null,
+      "machine": "abrasive cut-off wheel / fine-tooth saw, mitre box",
+      "minutes": 4.0,
+      "notes": "878.5 mm",
+      "part": "engine bay",
+      "process": "cut",
+      "qty": 1,
+      "stock": "Wildman G12-6.0 filament-wound fiberglass airframe, 60\" (bar 1, from 0 mm)",
+      "tools": "kerf 1.5 mm"
+    },
+    {
+      "files": [
+        "cutlist.csv"
+      ],
+      "grams": null,
+      "machine": "abrasive cut-off wheel / fine-tooth saw, mitre box",
+      "minutes": 4.0,
+      "notes": "800.0 mm",
+      "part": "recovery",
+      "process": "cut",
+      "qty": 1,
+      "stock": "Wildman G12-6.0 filament-wound fiberglass airframe, 60\" (bar 2, from 0 mm)",
+      "tools": "kerf 1.5 mm"
+    },
+    {
+      "files": [
+        "cutlist.csv"
+      ],
+      "grams": null,
+      "machine": "abrasive cut-off wheel / fine-tooth saw, mitre box",
+      "minutes": 4.0,
+      "notes": "748.0 mm",
+      "part": "pressurant",
+      "process": "cut",
+      "qty": 1,
+      "stock": "Wildman G12-6.0 filament-wound fiberglass airframe, 60\" (bar 3, from 0 mm)",
+      "tools": "kerf 1.5 mm"
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.speedymetals.com/pc-4648-8371-6-od-x-0125-wall-tube-6061-t6-aluminum.aspx",
+      "part": "6061-T6 aluminum round tube 6.0\" OD x 0.125\" wall, 72\" cut (Speedy Metals)",
+      "process": "stock",
+      "qty": 2,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.wildmanrocketry.com/products/g12-6-0",
+      "part": "Wildman G12-6.0 filament-wound fiberglass airframe, 60\"",
+      "process": "stock",
+      "qty": 2,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.wildmanrocketry.com/products/g12ct-6-0",
+      "part": "Wildman G12CT-6.0 fiberglass coupler, 12\"",
+      "process": "bought",
+      "qty": 3,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.wildmanrocketry.com/products/fnc6-0-5-1vk-fw-mt",
+      "part": "Wildman FNC6.0-FW-MT 6\" filament-wound fiberglass nosecone, Von Karman 5:1 (metal tip)",
+      "process": "stock",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.wildmanrocketry.com/products/g10-3-16",
+      "part": "Wildman G10 fiberglass sheet 3/16\" x 1 sq ft",
+      "process": "stock",
+      "qty": 2,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.wildmanrocketry.com/products/bp-6-0",
+      "part": "Wildman BP-6.0 1/2\" plywood 6.0 bulk plate",
+      "process": "bought",
+      "qty": 3,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.wildmanrocketry.com/products/cr-6-0-3-0",
+      "part": "Wildman CR-6.0-3.0 centering ring, 6.0 to 3.0",
+      "process": "bought",
+      "qty": 2,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.madcowrocketry.com/copy-of-rg15a-low-drag-rail-guides-for-1515-rails-airframe-type/",
+      "part": "Madcow RG15B low-drag rail guides for 1515 rails, bulkhead type (pair, Delrin)",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://shop.fruitychutes.com/products/48-elliptical-parachute-8-6lb-20fps",
+      "part": "Fruity Chutes Classic Elliptical 48\"",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://shop.fruitychutes.com/products/iris-ultra-168-compact-chute-156lbs-20fps-87lbs-15fps",
+      "part": "Fruity Chutes Iris Ultra Compact 168\"",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.wildmanrocketry.com/products/obh-011",
+      "part": "Wildman 1/2\" tubular Kevlar harness, 2 sewn loops, 30 ft",
+      "process": "bought",
+      "qty": 2,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.wildmanrocketry.com/products/3-8-eye-male",
+      "part": "Wildman 3/8\" eye bolt, male",
+      "process": "bought",
+      "qty": 4,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.wildmanrocketry.com/products/sheer-pins",
+      "part": "Wildman 2-56 shear pins, 10 pack",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://contrailrockets.com/product/featherweight-blue-raven-altimeter",
+      "part": "Featherweight Blue Raven altimeter (Contrail Rockets)",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "http://eggtimerrocketry.com/quasar/",
+      "part": "Eggtimer Quasar altimeter + GPS tracker kit",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://contrailrockets.com/product/featherweight-gps-tracker",
+      "part": "Featherweight GPS Tracker (Contrail Rockets)",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://shop.goairheads.com/984500ci-carbon-fiber-void-hpa-hk-army-hstl-tank.html",
+      "part": "HK Army HSTL 98/4500 carbon-fiber HPA tank (Airheads)",
+      "process": "bought",
+      "qty": 2,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.hkarmy.com/products/turbine-pro-regulator-adjustable-rotational-black",
+      "part": "HK Army Turbine Pro adjustable rotational tank regulator (350-650 psi)",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://valveman.com/products/1-2-cryogenic-ball-valve-spring-return-npt-full-port-stainless-steel-vented-ball",
+      "part": "ValveMan 1/2\" NPT cryogenic SS ball valve, pneumatic spring-return (C8-TK-050/3RFS-XX)",
+      "process": "bought",
+      "qty": 2,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.onehydraulics.com/products/socv1-m-4n-1-3p",
+      "part": "Superlok SOCV1-M-4N-1/3P inline check valve, 1/4\" MNPT, 316SS",
+      "process": "bought",
+      "qty": 2,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://nuvair.com/rv2mf-series.html",
+      "part": "Nuvair RV2MF-4N-B-S316 adjustable relief valve, 1/4 MNPT x 1/4 FNPT",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://nuvair.com/rv2mf-series.html",
+      "part": "Nuvair RV2MF-4N-A-S316 adjustable relief valve, 1/4 MNPT x 1/4 FNPT",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://estesrockets.com/products/e12-0-engines",
+      "part": "Estes E12-0 engines (2 engines, 2 starters) -- solid igniter motor",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.globalindustrial.com/p/5-2-double-solenoid-valve-pilot-1-4-nptf-12v-dc-3w-coil-led-connection",
+      "part": "Aignep 5/2 double-solenoid pilot valve, 1/4 NPTF, 12 V DC 3 W (Global Industrial)",
+      "process": "bought",
+      "qty": 2,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://shop.goairheads.com/684500ci-carbon-fiber-hpa-hk-army-hstl-tank.html",
+      "part": "HK Army HSTL 68/4500 carbon-fiber HPA tank, 800 psi output (Airheads)",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.evike.com/products/121308/HK-Army-Hostile-Top-Port-Quick-Disconnect-XLP-Regulator-Color-Black/",
+      "part": "HK Army Hostile XLP top-port regulator (actuation second stage)",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://store-usa.arduino.cc/products/arduino-nano",
+      "part": "Arduino Nano A000005 (sequencer)",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.addicore.com/products/4-channel-relay-module",
+      "part": "Addicore 4-channel relay module AD125-S1 (30 VDC / 10 A contacts)",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.onehydraulics.com/products/sbv120h2-f-4n",
+      "part": "Superlok SBV120H2-F-4N 316SS ball valve 1/4 FNPT, 3000 psi",
+      "process": "bought",
+      "qty": 4,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.elliottelectric.com/P/Item/MPL/TSS3162503520/",
+      "part": "316 stainless seamless tube 1/4\" OD x 0.035\" wall, 20 ft (Elliott Electric)",
+      "process": "stock",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.onehydraulics.com/products/smc-4-4n",
+      "part": "Superlok SMC 4-4N-S316 male connector, 1/4\" tube x 1/4 MNPT",
+      "process": "stock",
+      "qty": 12,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.onehydraulics.com/pages/shop-superlok-tee-sut-stainless-tube-unions",
+      "part": "Superlok SUT-4-S316 union tee, 1/4\" tube",
+      "process": "stock",
+      "qty": 4,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.improvedracing.com/stainless-steel-braided-smooth-bore-ptfe-teflon-hose-4an.html",
+      "part": "RaceFlux stainless braided PTFE hose -4AN, per ft",
+      "process": "bought",
+      "qty": 6,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.fastenersuperstore.com/products/159322/socket-head-cap-screws",
+      "part": "1/4-20 x 1/2\" alloy steel socket head cap screws, carton of 100 (Fastener SuperStore)",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.speedymetals.com/pc-2478-8368-5-rd-6061-t6511-aluminum-extruded.aspx",
+      "part": "6061-T6511 aluminum round bar 5\" dia x 12\" (Speedy Metals)",
+      "process": "stock",
+      "qty": 2,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.ebay.com/str/powersplastics",
+      "part": "Powers Plastics 5\" diameter canvas (CE) phenolic rod, priced per foot, cut to size (eBay item 283027712448)",
+      "process": "stock",
+      "qty": 3,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.skspeed.com/nitrous-tank-fill/",
+      "part": "Nitrous oxide fill, 9+ lb, per lb (SK Speed, customer's bottle)",
+      "process": "bought",
+      "qty": 96,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.skspeed.com/nitrous-tank-fill/",
+      "part": "Nitrous fill surcharge, per fill (SK Speed)",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://laballey.com/products/isopropyl-alcohol-99-8",
+      "part": "Lab Alley isopropyl alcohol 99.8 % lab grade, 1 gal (IPAL99-1GAL)",
+      "process": "bought",
+      "qty": 3,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://pbsports.com/pages/retail-store",
+      "part": "Nitrogen (HPA) fill to 4500 psi, per fill (PB Sports retail store, Fort Wayne IN)",
+      "process": "bought",
+      "qty": 6,
+      "stock": "",
+      "tools": ""
+    }
+  ],
+  "totals": {
+    "all_minutes": 1675.1962246985931,
+    "machine_minutes": 942.5795580319264,
+    "print_grams": 219.97,
+    "print_minutes": 712.6166666666667
+  }
+}

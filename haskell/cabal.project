@@ -1,0 +1,15 @@
+-- Offline build: QuickCheck and its two non-boot dependencies are vendored
+-- (sha256 of the Hackage tarballs checked against
+-- commercialhaskell/all-cabal-hashes; see docs/verification.md), so no
+-- Hackage index (~1 GB) is downloaded.
+packages: .
+          vendor/QuickCheck-2.15.0.1
+          vendor/random-1.2.1.3
+          vendor/splitmix-0.1.1
+active-repositories: :none
+tests: False
+benchmarks: False
+
+package wright-oracle
+  tests: True
+allow-newer: QuickCheck:base, QuickCheck:template-haskell, random:base, splitmix:base

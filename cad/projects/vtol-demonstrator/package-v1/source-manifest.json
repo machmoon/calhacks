@@ -1,0 +1,259 @@
+{
+  "sources": [
+    {
+      "id": "battery_cnhl",
+      "url": "https://chinahobbyline.com/collections/global-warehouse/products/cnhl-black-series-5000mah-14-8v-4s-65c-lipo-battery-with-xt90-plug",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "resolved_url": "https://chinahobbyline.com/collections/global-warehouse/products/cnhl-black-series-5000mah-14-8v-4s-65c-lipo-battery-with-xt90-plug",
+      "path": "/Users/patliu/Desktop/Coding/wright/cad/projects/vtol-demonstrator/package-v1/sources/battery_cnhl.html",
+      "sha256": "de7a04d5953fb80ee7978047060943c43b3b368b7505b9e57aa71f080a432468",
+      "bytes": 1707914,
+      "status": "retrieved"
+    },
+    {
+      "id": "power_pm02",
+      "url": "https://holybro.com/products/pm02-v3-12s-power-module",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "status": "fetch_failed",
+      "error": "Command '['curl', '-fLsS', '--max-time', '25', '--max-filesize', '3000000', 'https://holybro.com/products/pm02-v3-12s-power-module']' returned non-zero exit status 56.",
+      "evidence": "web tool inspected page; no local payload hash"
+    },
+    {
+      "id": "AS150_manufacturer_drawing",
+      "url": "https://static.chipdip.ru/lib/654/DOC047654365.pdf",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "resolved_url": "https://static.chipdip.ru/lib/654/DOC047654365.pdf",
+      "path": "/Users/patliu/Desktop/Coding/wright/cad/projects/vtol-demonstrator/package-v1/sources/AS150_manufacturer_drawing.pdf",
+      "sha256": "970b8d412b7f50d842ce8c9611a761dc123250b7de7240ff848b467a9a200b3b",
+      "bytes": 1216512,
+      "status": "retrieved"
+    },
+    {
+      "id": "motor",
+      "url": "https://uav-en.tmotor.com/2025/Antigravity_0108/1268.html",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "path": "/Users/patliu/Desktop/Coding/wright/cad/projects/vtol-demonstrator/package-v1/sources/motor.html",
+      "sha256": "debcff3c78fbaf13a67c013bcb2dab6e7f1373889c7a0f34072052cea0887316",
+      "bytes": 59543,
+      "status": "retrieved"
+    },
+    {
+      "id": "lift_prop",
+      "url": "https://store.tmotor.com/product/polish-carbon-fiber-12x4-prop.html",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "status": "fetch_failed",
+      "error": "Command '['curl', '-fLsS', '--max-time', '25', '--max-filesize', '3000000', 'https://store.tmotor.com/product/polish-carbon-fiber-12x4-prop.html']' returned non-zero exit status 56.",
+      "evidence": "web tool inspected page; no local payload hash"
+    },
+    {
+      "id": "cruise_motor",
+      "url": "https://store.tmotor.com/product/at2814-long-shaft-fixed-wing-motor.html",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "status": "fetch_failed",
+      "error": "Command '['curl', '-fLsS', '--max-time', '25', '--max-filesize', '3000000', 'https://store.tmotor.com/product/at2814-long-shaft-fixed-wing-motor.html']' returned non-zero exit status 56.",
+      "evidence": "web tool inspected page; no local payload hash"
+    },
+    {
+      "id": "cruise_prop",
+      "url": "https://www.apcprop.com/product/11x5-5e/?v=84de8e2b14bb",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "path": "/Users/patliu/Desktop/Coding/wright/cad/projects/vtol-demonstrator/package-v1/sources/cruise_prop.html",
+      "sha256": "07269efb6186d7ab210b632e95fd2f6d3bf881609ee64fb8bb6445bec2e50924",
+      "bytes": 226542,
+      "status": "retrieved"
+    },
+    {
+      "id": "prop_faq",
+      "url": "https://www.apcprop.com/faq/?v=84de8e2b14bb",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "path": "/Users/patliu/Desktop/Coding/wright/cad/projects/vtol-demonstrator/package-v1/sources/prop_faq.html",
+      "sha256": "da3dde407f1ace767a90cd721844ffdbf3aafcfa67faa43012de6bfdd6c80b92",
+      "bytes": 244369,
+      "status": "retrieved"
+    },
+    {
+      "id": "esc",
+      "url": "https://www.hobbywing.com/en/uploads/file/20250930/64b726be7a56c9f415385f77683cdc46.pdf",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "path": "/Users/patliu/Desktop/Coding/wright/cad/projects/vtol-demonstrator/package-v1/sources/esc.pdf",
+      "sha256": "a8bfb1e77d1c7fead215dd12868795ebed66258a478ca49a8ac7da046d1c4688",
+      "bytes": 2835529,
+      "status": "retrieved"
+    },
+    {
+      "id": "controller",
+      "url": "https://holybro.com/products/pixhawk-6c-mini",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "status": "fetch_failed",
+      "error": "Command '['curl', '-fLsS', '--max-time', '25', '--max-filesize', '3000000', 'https://holybro.com/products/pixhawk-6c-mini']' returned non-zero exit status 56.",
+      "evidence": "web tool inspected page; no local payload hash"
+    },
+    {
+      "id": "controller_pinout",
+      "url": "https://docs.holybro.com/autopilot/pixhawk-6c-mini/system-diagram-and-pinout",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "path": "/Users/patliu/Desktop/Coding/wright/cad/projects/vtol-demonstrator/package-v1/sources/controller_pinout.html",
+      "sha256": "2de08767a71bc9f3a6023a527272425e4bbcf65786b9ce702e7be51a00f34160",
+      "bytes": 579313,
+      "status": "retrieved"
+    },
+    {
+      "id": "power",
+      "url": "https://holybro.com/collections/power-modules-pdbs/products/pixhawk-4-power-module-pm07",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "resolved_url": "https://holybro.com/collections/power-modules-pdbs/products/pixhawk-4-power-module-pm07",
+      "path": "/Users/patliu/Desktop/Coding/wright/cad/projects/vtol-demonstrator/package-v1/sources/power.html",
+      "sha256": "7a361b5d4a6bf96ba47dcef567926f432298ac03085d7891d8d80974e8112fc0",
+      "bytes": 451385,
+      "status": "retrieved"
+    },
+    {
+      "id": "gnss",
+      "url": "https://holybro.com/products/m10-gps",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "status": "fetch_failed",
+      "error": "Command '['curl', '-fLsS', '--max-time', '25', '--max-filesize', '3000000', 'https://holybro.com/products/m10-gps']' returned non-zero exit status 56.",
+      "evidence": "web tool inspected page; no local payload hash"
+    },
+    {
+      "id": "receiver",
+      "url": "https://radiomasterrc.com/products/rp3-expresslrs-2-4ghz-nano-receiver",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "status": "fetch_failed",
+      "error": "Command '['curl', '-fLsS', '--max-time', '25', '--max-filesize', '3000000', 'https://radiomasterrc.com/products/rp3-expresslrs-2-4ghz-nano-receiver']' returned non-zero exit status 56.",
+      "evidence": "web tool inspected page; no local payload hash"
+    },
+    {
+      "id": "telemetry",
+      "url": "https://holybro.com/products/sik-telemetry-radio-v3",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "status": "fetch_failed",
+      "error": "Command '['curl', '-fLsS', '--max-time', '25', '--max-filesize', '3000000', 'https://holybro.com/products/sik-telemetry-radio-v3']' returned non-zero exit status 56.",
+      "evidence": "web tool inspected page; no local payload hash"
+    },
+    {
+      "id": "airspeed",
+      "url": "https://www.mateksys.com/?portfolio=aspd-4525",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "path": "/Users/patliu/Desktop/Coding/wright/cad/projects/vtol-demonstrator/package-v1/sources/airspeed.html",
+      "sha256": "6dd92db90846663c735941ebf2f7c6b24fb8a167ea7dcc0ea3887a54d2fb2bfb",
+      "bytes": 50768,
+      "status": "retrieved"
+    },
+    {
+      "id": "servo",
+      "url": "https://www.hiteccs.com/public/uploads/data_sheet/HCS_HS-5065MG_Specsheetv2.2_-1729884119.pdf",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "path": "/Users/patliu/Desktop/Coding/wright/cad/projects/vtol-demonstrator/package-v1/sources/servo.pdf",
+      "sha256": "6bd68a72e6ba6f210c986e8366ddd52fc8b986bda24428cf31a6af87f1bdefec",
+      "bytes": 303839,
+      "status": "retrieved"
+    },
+    {
+      "id": "servo_conflict",
+      "url": "https://hitecrcd.com/hs-5065mg-high-torque-metal-gear-feather-servo/",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "path": "/Users/patliu/Desktop/Coding/wright/cad/projects/vtol-demonstrator/package-v1/sources/servo_conflict.html",
+      "sha256": "5bc9353ff9f53af9c994ba937447afca71546b555b1a5a8a0a080c148a255d24",
+      "bytes": 249170,
+      "status": "retrieved"
+    },
+    {
+      "id": "bec",
+      "url": "https://hobbywing.oss-cn-shenzhen.aliyuncs.com/pdf/pdfen/UBEC10A2-6S.pdf",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "path": "/Users/patliu/Desktop/Coding/wright/cad/projects/vtol-demonstrator/package-v1/sources/bec.pdf",
+      "sha256": "c06b9176ec722bb5ad127415dcf6a2ea4c7070feadf5c75bf42ea94655f6cd1c",
+      "bytes": 1435819,
+      "status": "retrieved"
+    },
+    {
+      "id": "battery",
+      "url": "https://genstattu.com/tattu-5200mah-14-8v-35c-4s1p-lipo-battery-pack-with-xt60-plug.html",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "path": "/Users/patliu/Desktop/Coding/wright/cad/projects/vtol-demonstrator/package-v1/sources/battery.html",
+      "sha256": "f0003ccad91bf7cc2cc6ec5e72aaab1a1150d808b92106e2498b30fbdbc48d81",
+      "bytes": 327409,
+      "status": "retrieved"
+    },
+    {
+      "id": "spar",
+      "url": "https://www.easycomposites.co.uk/16mm-woven-finish-carbon-fibre-tube",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "path": "/Users/patliu/Desktop/Coding/wright/cad/projects/vtol-demonstrator/package-v1/sources/spar.html",
+      "sha256": "635fed6e20c0c921418fb19a105744c070748e96a472227168bd07cd5bfbf007",
+      "bytes": 285689,
+      "status": "retrieved"
+    },
+    {
+      "id": "spar_datasheet",
+      "url": "https://media.easycomposites.co.uk/datasheets/EC-TDS-Carbon-Fibre-Woven-Finish-Tube.pdf",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "path": "/Users/patliu/Desktop/Coding/wright/cad/projects/vtol-demonstrator/package-v1/sources/spar_datasheet.pdf",
+      "sha256": "3eea7427032a2886351f9ae53763e3283a45a2802254e0e05e5da0918616cc17",
+      "bytes": 263201,
+      "status": "retrieved"
+    },
+    {
+      "id": "pushrod",
+      "url": "https://www.dubro.com/products/2-56-threaded-rods-30-762-mm-6-pkg",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "status": "fetch_failed",
+      "error": "Command '['curl', '-fLsS', '--max-time', '25', '--max-filesize', '3000000', 'https://www.dubro.com/products/2-56-threaded-rods-30-762-mm-6-pkg']' returned non-zero exit status 56.",
+      "evidence": "web tool inspected page; no local payload hash"
+    },
+    {
+      "id": "eol",
+      "url": "https://www.mateksys.com/?page_id=2853",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "path": "/Users/patliu/Desktop/Coding/wright/cad/projects/vtol-demonstrator/package-v1/sources/eol.html",
+      "sha256": "6630978dbfc58d9b1ec8f3d8acb2ef1eb00105964339334efeac92cf950ee0fb",
+      "bytes": 70779,
+      "status": "retrieved"
+    },
+    {
+      "id": "connector_guide",
+      "url": "https://docs.holybro.com/power-module-and-pdb/power-module/connector-and-wire-rating.md",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "status": "retrieved",
+      "path": "cad/projects/vtol-demonstrator/package-v1/sources/connector_guide.txt",
+      "sha256": "f9fa7098cc6723b89a7f9f4b8996ad776c660c2f7b59be35468496eb7f069395",
+      "bytes": 2850
+    },
+    {
+      "id": "split_cruise_pack",
+      "url": "https://www.genstattu.com/gens-ace-2200mah-4s-45c-14-8v-lipo-battery-xt60-ec3-deans-air-classic/",
+      "retrieved": "2026-10-24",
+      "primary": true,
+      "status": "retrieved",
+      "path": "cad/projects/vtol-demonstrator/package-v1/sources/split_cruise_pack.txt",
+      "sha256": "9326b0f6c746d086e153b341f05d93b9fd99d05155a2cd7d81d6c5c3f9782c6f",
+      "bytes": 331149
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "kind": "fab",
+  "title": "Fabrication: balloon build",
+  "items": [
+    {
+      "label": "process plan",
+      "path": "plan.json",
+      "media": "json",
+      "summary": "16 made parts (0 machined programs, 16 prints, 0 cuts), 19 bought lines; G-code in gcode/",
+      "metrics": {
+        "machine_minutes": -0.0,
+        "minutes": 929.3333333333338,
+        "print_grams": 149.36,
+        "print_minutes": 929.3333333333333
+      }
+    },
+    {
+      "label": "process plan (table)",
+      "path": "plan.csv",
+      "media": "csv",
+      "summary": "one row per part and process",
+      "metrics": {}
+    },
+    {
+      "label": "shelf1 (print)",
+      "path": "video/print_shelf1.mp4",
+      "media": "mp4",
+      "summary": "print timelapse from the sliced G-code, 14 layers",
+      "metrics": {
+        "grams": 29.14,
+        "layers": 14.0,
+        "minutes": 150.48333333333332
+      }
+    },
+    {
+      "label": "shelf4 (print)",
+      "path": "video/print_shelf4.mp4",
+      "media": "mp4",
+      "summary": "print timelapse from the sliced G-code, 14 layers",
+      "metrics": {
+        "grams": 29.14,
+        "layers": 14.0,
+        "minutes": 150.48333333333332
+      }
+    },
+    {
+      "label": "post1-1 (print)",
+      "path": "video/print_post1-1.mp4",
+      "media": "mp4",
+      "summary": "print timelapse from the sliced G-code, 189 layers",
+      "metrics": {
+        "grams": 3.74,
+        "layers": 189.0,
+        "minutes": 37.45
+      }
+    },
+    {
+      "label": "post2-1 (print)",
+      "path": "video/print_post2-1.mp4",
+      "media": "mp4",
+      "summary": "print timelapse from the sliced G-code, 189 layers",
+      "metrics": {
+        "grams": 3.74,
+        "layers": 189.0,
+        "minutes": 37.45
+      }
+    },
+    {
+      "label": "post3-1 (print)",
+      "path": "video/print_post3-1.mp4",
+      "media": "mp4",
+      "summary": "print timelapse from the sliced G-code, 189 layers",
+      "metrics": {
+        "grams": 3.74,
+        "layers": 189.0,
+        "minutes": 37.45
+      }
+    },
+    {
+      "label": "post4-1 (print)",
+      "path": "video/print_post4-1.mp4",
+      "media": "mp4",
+      "summary": "print timelapse from the sliced G-code, 189 layers",
+      "metrics": {
+        "grams": 3.74,
+        "layers": 189.0,
+        "minutes": 37.45
+      }
+    },
+    {
+      "label": "post1-2 (print)",
+      "path": "video/print_post1-2.mp4",
+      "media": "mp4",
+      "summary": "print timelapse from the sliced G-code, 112 layers",
+      "metrics": {
+        "grams": 2.23,
+        "layers": 112.0,
+        "minutes": 22.2
+      }
+    },
+    {
+      "label": "post1-3 (print)",
+      "path": "video/print_post1-3.mp4",
+      "media": "mp4",
+      "summary": "print timelapse from the sliced G-code, 112 layers",
+      "metrics": {
+        "grams": 2.23,
+        "layers": 112.0,
+        "minutes": 22.2
+      }
+    },
+    {
+      "label": "assembly",
+      "path": "video/assembly.mp4",
+      "media": "mp4",
+      "summary": "43 parts fly in in the build guide's order (43 part STLs in the vehicle frame)",
+      "metrics": {
+        "parts": 43.0,
+        "steps": 8.0
+      }
+    },
+    {
+      "label": "turntable",
+      "path": "video/turntable.mp4",
+      "media": "mp4",
+      "summary": "the finished vehicle",
+      "metrics": {
+        "parts": 43.0
+      }
+    },
+    {
+      "label": "render",
+      "path": "img/render_hero.png",
+      "media": "png",
+      "summary": "the finished vehicle",
+      "metrics": {}
+    }
+  ],
+  "checks": [
+    {
+      "name": "printed parts are sliced",
+      "passed": true,
+      "detail": "16 G-code plates, 929 min, 149 g"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+Suggested demo sequence (45–60 seconds)
+
+0–8s: Current native VTOL orbit. Caption: Parametric aircraft reconstruction.
+8–20s: Tail cutaway, top screw/nut retention and spar hardpoint. Explain native solid geometry and modeled interfaces.
+20–35s: Replay the recorded Astra repair actions from evidence/astra-clamp-repair/action-summary.json; label the sequence Recorded run replay. Radius 5.2 → 5.0 mm; lower halfspace height 12 → 11.5 mm. The independent oracle is evidence for the local repair, not the whole aircraft.
+35–45s: Earlier assembly and G-code animations, explicitly captioned as simulations.
+45–60s: Native CAD export and current limitations. Whole-aircraft attachment and structural validation remain unfinished.
+
+Raw video source clips are silent. Preserve originals and add narration/captions in the final edit. Existing rocket and aircraft videos show earlier models. Current CAD stills and orbits show proposed reconstructed geometry, not the original author’s unpublished CAD. External footage is linked with creator attribution; no reuse permission is recorded.
+
+Live FreeCAD UI capture was attempted but no usable live screen recording was obtained; view controls did not respond reliably. Rendered orbit clips must not be described as live screen recordings.
+
+Additional evidence shot: clearance checking found rear propeller sweep intersections with both fins in the inferred lift-mount revision (~35.587 mm³ each). Source: evidence/lift-mount/collision-highlight.json. This is an unresolved design issue and a concrete demonstration of checks finding problems. Do not imply this occurred on the original author aircraft.

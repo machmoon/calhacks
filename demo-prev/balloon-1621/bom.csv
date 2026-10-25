@@ -1,0 +1,17 @@
+category,id,name,qty,unit,unit_price_usd,total_usd,url,note
+envelope,totex-2000,Kaymont/Totex HAB-2000,1,ea,315.00,315.00,https://www.kaymont.com/shop,
+gas,he-uhp-300,"Helium UHP 5.0, size 300 cylinder (292 ft^3)",1,cylinder,295.00,295.00,https://bps.westchestercountyny.gov/images/HELIUM_GAS_FOR_LAB_USE_IN_CYLINDERS_.pdf,8.3 m^3 per cylinder
+recovery,spherachute-60,"Spherachutes 60"" Classic",1,ea,77.00,77.00,https://spherachutes.com/products/60-inch-spherachute,
+recovery,kite-line-50lb,"In the Breeze 3449 braided line, 50 lb x 500 ft",8,m,0.10,0.84,https://www.walmart.com/ip/2975660941,
+enclosure,xps-foamular-150,"Owens Corning FOAMULAR 150 XPS, 1 in (R-5)",0.4331300799999999,m^2,10.65,4.61,https://superarbor.io/collections/building-materials/products/owens-corning-r-5-15-psi-foamular-ngx-150-1-in-x-4-ft-x-8-ft-extruded-polystyrene-foam-board-insulation-square-edge,2 layer(s) of 25.4 mm sheet
+enclosure,petg-rack,printed PETG rack (shelves + posts),149.35999999999996,g,0.02,2.99,https://us.store.bambulab.com/products/petg-basic,sliced grams
+payload,runcam5-orange,RunCam 5 Orange,1,ea,129.99,129.99,https://shop.runcam.com/runcam-5-orange/,"US$129.99, 56 g with battery, 'Max 620mA @5V' (page) fed over USB from the bus; temperature range ASSUMPTION (not published)"
+payload,lightaprs-2,QRP Labs LightAPRS 2.0 (DRA818V + u-blox MAX-M8Q),1,ea,125.00,125.00,http://www.qrp-labs.com/lightaprs2.html,"$125, 8.1 g, 33x55 mm, input 2.7-6 V, 1 W, TX ~750 mA, sleep ~7 mA, u-blox MAX-M8Q (page); average 0.2 W = 1.5 s TX per 60 s + sleep + GPS; range -20..70 C from its DRA818V"
+payload,heltec-lora32-v3,Heltec WiFi LoRa 32 V3 (SX1262) beacon,1,ea,19.90,19.90,https://heltec.org/project/wifi-lora-32-v3/,"$17.90-19.90, 21 dBm (page); mass, average draw (ESP32-S3 + 1 s TX per 30 s) and -20..70 C ASSUMPTION"
+payload,matek-m10q,Matek M10Q-5883 GPS,1,ea,25.00,25.00,https://www.mateksys.com/?portfolio=m10q-5883,"13 mA, u-blox M10, -20..80 C, 8 g (Matek page); 4.5-5.5 V and price ASSUMPTION (EOL)"
+power,l91-aa,Energizer Ultimate Lithium AA (L91),8,ea,3.44,27.52,https://data.energizer.com/pdfs/l91.pdf,"-40..60 C, 15 g, 2.5 A continuous (data sheet); 3000 mAh and $13.77 per 4 from batteryjunction.com/energizer-aa-l91-4pk"
+power,pololu-s9v11f5,Pololu S9V11F5 5 V step-up/step-down,1,ea,6.95,6.95,https://www.pololu.com/product/2836,"2-16 V in, 5 V out, 1.5 A when Vin >= 5 V (1.0 A used, boosting), 85-95 % efficient (0.85 used); mass and temperature ASSUMPTION"
+power,l91-aa,Energizer Ultimate Lithium AA (L91),3,ea,3.44,10.32,https://data.energizer.com/pdfs/l91.pdf,"-40..60 C, 15 g, 2.5 A continuous (data sheet); 3000 mAh and $13.77 per 4 from batteryjunction.com/energizer-aa-l91-4pk"
+power,l91-aa,Energizer Ultimate Lithium AA (L91),4,ea,3.44,13.76,https://data.energizer.com/pdfs/l91.pdf,"-40..60 C, 15 g, 2.5 A continuous (data sheet); 3000 mAh and $13.77 per 4 from batteryjunction.com/energizer-aa-l91-4pk"
+power,pololu-s9v11f5,Pololu S9V11F5 5 V step-up/step-down,1,ea,6.95,6.95,https://www.pololu.com/product/2836,"2-16 V in, 5 V out, 1.5 A when Vin >= 5 V (1.0 A used, boosting), 85-95 % efficient (0.85 used); mass and temperature ASSUMPTION"
+ground,heltec-ground,Heltec WiFi LoRa 32 V3 ground receiver,1,ea,19.90,19.90,https://heltec.org/project/wifi-lora-32-v3/,'-134dBm@SF12 BW=125KHz'

@@ -1,0 +1,26 @@
+{
+  "id": "max-tokens-cutoff",
+  "description": "The lead's first two replies are cut off at max_tokens with no tool call. The harness must requery, then carry on to a pass.",
+  "domain": "toy",
+  "request": "a span for a 100 mm gap under $50",
+  "spec": {"target_mm": 100.0, "budget_usd": 50.0},
+  "model": {
+    "orchestrator": [
+      {"max_tokens": true, "repeat": 2},
+      {"tool": "design", "input": {}},
+      {"tool": "edit_design", "input": {"patch_json": "{\"span_mm\": 110}", "why": "reach the target"}},
+      {"tool": "check", "input": {}},
+      {"tool": "submit", "input": {"summary": "span 110 mm"}}
+    ],
+    "reviewer": [
+      {"tool": "verdict", "input": {"summary": "no blocking issues"}}
+    ]
+  },
+  "expect": {
+    "passed": true,
+    "stop": "passed",
+    "design": {"span_mm": 110},
+    "max_calls": 7,
+    "script_exhausted": false
+  }
+}

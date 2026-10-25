@@ -1,0 +1,125 @@
+{
+  "id": "hallucinated-part",
+  "description": "A specialist 'fixes' the span with a part id that is not in the catalog (P-999). Either the id gate refuses the edit (sourcing::gate_patch, lane 8) or the check part_known catches it; in both cases the invented part must never be in the final design, the run must still reach a passing design, and the lead must have fallen back on the verified incumbent.",
+  "domain": "toy",
+  "request": "a span for a 100 mm gap under $50",
+  "spec": {
+    "target_mm": 100.0,
+    "budget_usd": 50.0
+  },
+  "limits": {
+    "max_rounds": 3,
+    "orchestrator_turns": 8,
+    "specialist_turns": 4,
+    "reviewer_turns": 4,
+    "budget_usd": 1.25
+  },
+  "model": {
+    "orchestrator": [
+      {
+        "tool": "design",
+        "input": {}
+      },
+      {
+        "tool": "delegate",
+        "input": {
+          "role": "generalist",
+          "task": "span fails by -10 mm; pick a longer part"
+        }
+      },
+      {
+        "tool": "submit",
+        "input": {
+          "summary": "span 110 mm on part P-999"
+        }
+      },
+      {
+        "tool": "revert_best",
+        "input": {}
+      },
+      {
+        "tool": "edit_design",
+        "input": {
+          "patch_json": "{\"span_mm\": 110}",
+          "why": "reach the target on the catalog part"
+        }
+      },
+      {
+        "tool": "check",
+        "input": {}
+      },
+      {
+        "tool": "submit",
+        "input": {
+          "summary": "span 110 mm on P-100"
+        }
+      }
+    ],
+    "specialist": [
+      {
+        "tool": "edit_design",
+        "input": {
+          "patch_json": "{\"span_mm\": 110, \"part_id\": \"P-999\"}",
+          "why": "the 110 mm extrusion"
+        }
+      },
+      {
+        "tool": "report",
+        "input": {
+          "summary": "span 110 mm using P-999"
+        }
+      }
+    ],
+    "reviewer": [
+      {
+        "tool": "cite_failing_check",
+        "input": {
+          "check": "part_known",
+          "argument": "P-999 does not exist; the builder cannot buy it"
+        }
+      },
+      {
+        "tool": "verdict",
+        "input": {
+          "summary": "blocked on an invented part"
+        }
+      },
+      {
+        "tool": "verdict",
+        "input": {
+          "summary": "no blocking issues"
+        }
+      }
+    ]
+  },
+  "expect": {
+    "passed": true,
+    "stop": "passed",
+    "design": {
+      "span_mm": 110,
+      "part_id": "P-100"
+    },
+    "checks_pass": [
+      "part_known"
+    ],
+    "max_rounds": 2,
+    "max_calls": 12,
+    "max_cost_usd": 0.3,
+    "require": [
+      {
+        "agent": "specialist:generalist",
+        "tool": "edit_design"
+      },
+      {
+        "agent": "orchestrator",
+        "tool": "revert_best"
+      }
+    ],
+    "forbid": [
+      {
+        "agent": "specialist:*",
+        "tool": "revert_best"
+      }
+    ]
+  }
+}

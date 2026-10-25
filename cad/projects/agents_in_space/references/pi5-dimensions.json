@@ -1,0 +1,37 @@
+{
+  "source_url": "https://pip.raspberrypi.com/documents/RP-008347-DS-1-raspberry-pi-5-mechanical-drawing.pdf",
+  "sha256": "5dd680d6c1f5e7aa9c7b020695e315d04aac862df82ff01d4e9041cd0668d7f2",
+  "inspection": "PDF page 1 visually inspected",
+  "units": "mm",
+  "board_outline_xy": [
+    85,
+    56
+  ],
+  "mounting_holes_xy": [
+    [
+      3.5,
+      3.5
+    ],
+    [
+      61.5,
+      3.5
+    ],
+    [
+      3.5,
+      52.5
+    ],
+    [
+      61.5,
+      52.5
+    ]
+  ],
+  "mounting_hole_diameter": 2.7,
+  "coordinate_convention": "Origin at bottom-left board edge in top view; X toward USB/Ethernet edge, Y toward GPIO header",
+  "limitations": [
+    "Manufacturer drawing approximate, reference only, not production data",
+    "Board thickness not dimensioned in this drawing",
+    "Component heights, cooler and plugged cable envelopes incomplete",
+    "Physical board fit verification required"
+  ],
+  "complete_mechanical_model": false
+}

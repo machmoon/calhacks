@@ -1,0 +1,17 @@
+[package]
+name = "wright-route"
+description = "PCB routing: octilinear A* with rip-up, per-netclass widths, ground pour and stitching (electronics lane D)"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+anyhow.workspace = true
+wright-eda = { path = "../wright-eda" }
+
+
+[dev-dependencies]
+# Writes routed boards for the kicad-cli DRC test (tests/kicad_drc.rs).
+wright-kicad = { path = "../wright-kicad" }

@@ -1,0 +1,15 @@
+{
+  "response_sha256": "b545d54c1707c018b23935f1f45e202ab7506257fd7cdf1edba4e158e7428951",
+  "candidate_sha256": "0bdecf0df25c25a766098abd850f4ffa84459dd7f6fd673895c43200f1f09c00",
+  "usage": {
+    "cache_read_input_tokens": 0,
+    "input_tokens": 28020,
+    "output_tokens": 6439
+  },
+  "model_text": [
+    "Complete replacement module below. It narrows preservation checks to original geometry and explicit controls, excluding computed assembly shapes and transient caches. Attempt1 remains recorded as failed; this revision awaits host execution."
+  ],
+  "model_submission_summary": "Attempt2: complete native camera-mount module with typed source-preservation checks, unchanged mount geometry, persistent parameters, and recorded attempt1 failure. No validation success claimed before host execution.",
+  "raw_response_omitted_reason": "Python payload duplicated exactly in candidate.py; full original remains in ignored run directory",
+  "candidate_manually_edited": false
+}

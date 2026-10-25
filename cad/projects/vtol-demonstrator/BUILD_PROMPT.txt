@@ -1,0 +1,66 @@
+Build a complete, editable VTOL demonstrator in Wright.
+
+Act as the integration engineer. Deliver an assembled mechanical/electrical design using purchased components, with native CAD and evidence from the engineering tools. Work in /Users/patliu/Desktop/Coding/wright. Use the configured Astra subscription transport for design and review when useful; deterministic CAD and engineering tools decide whether checks pass.
+
+ARCHITECTURE — USER CLARIFICATION
+FreeCAD is the CAD application and geometry/parametric engine. Wright is a thin Rust agent overlay, not a replacement CAD platform. Build primarily by generating and running FreeCAD Python scripts/macros through CLI or the existing worker. Reuse FreeCAD document objects, constraints, expressions, assemblies, import/export and established workbenches. Use computer interaction for visual inspection and GUI-only operations when useful. Existing typed helpers are conveniences, not a requirement to invent a wrapper action for every modeling operation. Keep Rust focused on launching jobs, recording outputs/status and presenting the live model. Keep expensive engineering audits separate from ordinary modeling; report pending checks explicitly and do not label an unaudited design verified. Prioritize assembling real parts and creating useful FreeCAD geometry over expanding infrastructure.
+
+DESIGN BRIEF
+Use a lift-plus-cruise quadplane: four fixed vertical-lift motors, one cruise pusher, a fixed wing, conventional tail, and accessible internal electronics. Use Tsung Xu's VTOL as the visual architecture and assembly-complexity reference:
+https://www.reddit.com/r/diydrones/comments/1l89dcr/i_made_a_3d_printed_vtol_that_can_fly_130_miles/
+https://www.youtube.com/watch?v=e7AIKGDrlgs
+Treat its advertised range as reference context, not a requirement already achieved. Create an original engineering implementation where source dimensions or internals are unavailable. Prioritize a coherent, buildable demonstrator over unsupported endurance claims.
+
+Derive and record a feasible wingspan, takeoff mass, payload allocation, battery, cruise point, hover reserve and endurance target before freezing hardware. Use a 1.6–2.0 m wingspan and 250 g payload as provisional starting constraints, revising them openly if sourced propulsion and structural sizing require it. These are design assumptions, not measured capability. Keep the Palloon payload/custom battery as a separate project.
+
+DEMO APPEARANCE REQUIREMENTS — USER REQUEST
+- Include a clearly visible rear-facing cruise motor and pusher propeller, in addition to the four lift rotors. Show its mount, retention and swept clearance; do not silently omit it because sourcing is incomplete. Any provisional reconstruction must be labeled and must not count as exact hardware coverage.
+- Research and choose a coherent tail arrangement before modeling it. The user rejected the R8 raised arch/flat-roof tail. Compare a clean two-surface inverted-V on the twin booms, a conventional tapered H-tail, and an upright V-tail with its required support changes. Use actual aircraft references; do not bend a flat plank for appearance alone. The user selected the clean inverted-V: exactly two tapered inclined tail halves rising inward from the twin booms to the central junction, with separate ruddervators; remove the old vertical fins, separate rudders, flat roof and arch. Start at 30° above horizontal as a provisional modeling value, not an aerodynamic optimum. Keep projected-area, tail-arm, control-mixing, attachment and propeller-clearance checks explicit. Zipline P2 is visual inspiration for a different connected wing/body arrangement, not evidence that this tail should copy its silhouette.
+- Add distinct main-wing tips/winglets with smooth transitions and visible attachment provisions. Make their height, cant and sweep editable in FreeCAD. Tail cant, sweep, taper and control geometry must follow the selected tail arrangement.
+- Use these provisional demo defaults unless the request changes them: 70 mm winglet height, 20° winglet cant from vertical and 30 mm aft sweep offset. The rejected 15° arch-tail default is withdrawn; select tail geometry from the researched arrangement. These values are appearance choices, not validated aerodynamic settings.
+- Show these features in the assembled and rear three-quarter CAD views. Check their intersections and propeller clearance, and rerun the relevant analysis for the changed revision. Cosmetic intent does not establish stability, efficiency or strength.
+
+FIRST CREATE THE COMPLETE BUILD PACKAGE
+Start from hardware-package-inventory.json: it lists unresolved roles and existing catalog candidates, not a selected compatible kit. Do the sourcing and compatibility work yourself, then freeze a versioned package under cad/projects/vtol-demonstrator. Do not start detailed mounts against unresolved component geometry.
+
+Resolve exact manufacturer, model, variant, quantity, mass, dimensions, interfaces and source evidence for:
+- Four lift motors, correct CW/CCW lift propellers, four ESCs.
+- Cruise motor, pusher propeller with verified rotation/handedness, cruise ESC.
+- Flight-controller assembly including required carrier/baseboard, isolation mount and power module.
+- GNSS/compass, receiver, telemetry, airspeed sensor and pitot installation.
+- Aileron, elevator and rudder servos, horns, pushrods, hinges and retainers.
+- Battery pack, power distribution, servo supply/BEC, power connectors, wiring and protection.
+- Spars, booms, bearings or bushings where needed, landing gear, screws, washers, nuts/inserts and enclosure fasteners.
+
+Current local CAD candidates in cad/components/catalog.json are tmotor_mn2806_evo, tmotor_p12x4 and holybro_pixhawk6x_pro. Their availability is NOT proof of system compatibility or selection. Verify motor KV/voltage/current/thrust, propeller handing and mount, ESC ratings/protocol, controller carrier requirements, servo torque/travel/supply and battery discharge capacity before selecting them. Resolve the other components from primary manufacturer documentation. Prefer a suitable exact COTS model over designing a new PCB or motor.
+
+For every selected part, store the datasheet, manufacturer CAD or dimensioned drawing reference, source URL/hash, coordinate frame, mounting geometry and connector/service keepouts. If exact CAD is unavailable, label a datasheet-derived reconstruction and its unresolved dimensions explicitly. Never pass an envelope off as exact imported hardware. Do not silently swap the frozen BOM to match whichever model is easiest to import.
+
+Freeze requirements.json, bom.json, electrical-architecture.json, component-cad-manifest.json, interface-table.json and verification-plan.json. Changes after freezing require a new revision and rerunning dependent checks.
+
+EXECUTE THE ASSEMBLY LIVE
+1. Import the selected hardware and establish real assembly datums. Preserve source solids and explicitly classified references; report omitted geometry. Large imports must use bounded jobs with measured stages, not repeated blind retries.
+2. Lay out the electronics, battery, connectors and harness before closing the fuselage. PCB assembly means mounting and connecting the purchased boards. Use a custom interface PCB only for a demonstrated gap; require schematic/ERC, layout/DRC, connector pinout and matching mechanical export before treating one as complete.
+3. Create smooth parametric airfoil wings, skins, spars, ribs, control surfaces, hinges, servo bays, motor mounts, boom joints, tail joints, landing gear, battery retention and removable hatches. Include mating features, fasteners, insertion/removal directions and tool access. Every physical part must have a reason and a connection.
+4. Build through FreeCAD Python scripts and CLI using native objects, constraints and shared parameters. Reuse existing helpers when they simplify the job; batch related changes before recomputing. Inspect existing geometry before editing. Preserve editability and source provenance. Use actual installed FreeCAD APIs and inspect failures rather than inventing successful operations.
+5. Integrate a connector-to-connector wiring schedule: pin/signal, voltage, current, wire size, connector orientation, harness length allowance, bend/strain relief, and separation from moving or hot parts. Reserve cable and unplugging space in CAD.
+6. Run analyze_wing on the current wing geometry with AeroSandbox, AVL/OptVL and NeuralFoil. Keep section polars, induced drag, total-aircraft drag and flight stability distinct. Feed aerodynamic loads into separately justified structural checks. Resolve propulsion, mass/CG, power and load-path issues before claiming performance.
+
+VISIBLE PROGRESS
+After hardware placement, exterior geometry, internal assembly and final verification, save the native document and show actual CAD renders: assembled, exploded and cutaway. Include motor/propeller/board geometry and the internals. Images must come from the model. Save useful demo assets and evidence; identify replays and diagnostic extracts honestly.
+
+COMPLETION GATES
+- Complete BOM-to-geometry coverage, with explicit treatment of flexible wiring and reference geometry.
+- All relevant part-pair collisions checked; intended contact does not excuse penetration.
+- Propeller swept volumes, full control-surface/servo travel and linkage motions checked.
+- Battery, board, hatch, fastener and tool insertion/removal paths checked.
+- Connector access, cable routing, retention and thermal/airflow provisions represented and reviewed.
+- Load paths and joint sizing verified for stated loads; geometric contact alone is insufficient.
+- Nominal and changed span/chord/boom-spacing/servo/battery cases update correctly without broken references.
+- Saved/reopened native model remains editable; exports pass their stated equivalence checks.
+- Every result is tied to the same design revision. Missing, failed or inconclusive checks stay visible.
+
+DELIVERABLES
+Provide native CAD, an inspectable project preview, checked STEP where supported, selected printable-part exports, exploded/cutaway PNGs, BOM, wiring/pinout schedule, assembly sequence, access/clearance reports, analysis results and a concise unresolved-issues list. Demonstrate at least one genuine parameter edit and regeneration.
+
+Make routine engineering choices and continue without asking me to micromanage. If a necessary source or capability is missing, identify the exact blocker and continue independent work. Never call a render, successful import, solver run or passing local fixture a complete VTOL. Do not claim fabrication or flight testing that has not happened. The finish is a coherent, reviewable CAD/electrical assembly with requirement-level evidence and clearly stated remaining physical validation.

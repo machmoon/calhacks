@@ -1,0 +1,14 @@
+stock_id,stock,bar,cut,length_mm,from_end_mm,kerf_mm
+cst_cs525_1m,"CST - The Composites Store CS-525 1M DPP Carbon Fiber Tube 10 mm OD x 8 mm ID x 1 m",1,"cst cs525 #1",974.0,0.0,1.5
+cst_cs525_1m,"CST - The Composites Store CS-525 1M DPP Carbon Fiber Tube 10 mm OD x 8 mm ID x 1 m",1,"offcut",24.5,,
+cst_cs525_1m,"CST - The Composites Store CS-525 1M DPP Carbon Fiber Tube 10 mm OD x 8 mm ID x 1 m",2,"cst cs525 #2",974.0,0.0,1.5
+cst_cs525_1m,"CST - The Composites Store CS-525 1M DPP Carbon Fiber Tube 10 mm OD x 8 mm ID x 1 m",2,"offcut",24.5,,
+cst_cs525_1m,"CST - The Composites Store CS-525 1M DPP Carbon Fiber Tube 10 mm OD x 8 mm ID x 1 m",3,"cst cs525 #3",540.0,0.0,1.5
+cst_cs525_1m,"CST - The Composites Store CS-525 1M DPP Carbon Fiber Tube 10 mm OD x 8 mm ID x 1 m",3,"offcut",458.5,,
+cst_cs525_1m,"CST - The Composites Store CS-525 1M DPP Carbon Fiber Tube 10 mm OD x 8 mm ID x 1 m",4,"cst cs525 #4",540.0,0.0,1.5
+cst_cs525_1m,"CST - The Composites Store CS-525 1M DPP Carbon Fiber Tube 10 mm OD x 8 mm ID x 1 m",4,"offcut",458.5,,
+cst_cs328_1m_rod,"CST - The Composites Store CS-328 1M DPP Carbon Fiber Rod 3 mm x 1 m",1,"cst cs328 #1",480.0,0.0,1.5
+cst_cs328_1m_rod,"CST - The Composites Store CS-328 1M DPP Carbon Fiber Rod 3 mm x 1 m",1,"cst cs328 #2",480.0,481.5,1.5
+cst_cs328_1m_rod,"CST - The Composites Store CS-328 1M DPP Carbon Fiber Rod 3 mm x 1 m",1,"offcut",37.0,,
+goodwinds_pct500024,"Goodwinds PCT .500"" x 24"" Pultruded Carbon Tube (SKU PCT500024)",1,"goodwinds pct500024 #1",300.0,0.0,1.5
+goodwinds_pct500024,"Goodwinds PCT .500"" x 24"" Pultruded Carbon Tube (SKU PCT500024)",1,"offcut",308.1,,

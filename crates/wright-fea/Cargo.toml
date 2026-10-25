@@ -1,0 +1,20 @@
+[package]
+name = "wright-fea"
+description = "Finite-element checks for Wright's parts: CalculiX (ccx) solves, gmsh meshes solids, Rust writes the decks and reads the results"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+anyhow.workspace = true
+wright-air = { workspace = true, optional = true }
+wright-rocket.workspace = true
+wright-core.workspace = true
+wright-balloon.workspace = true
+
+[features]
+# the VTOL cases need wright-air; the CLI turns this on with its own `air` feature
+default = ["air"]
+air = ["dep:wright-air"]

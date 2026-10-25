@@ -1,0 +1,25 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"Verified synthetic native edit reference trajectory",
+  "type":"object", "additionalProperties":false,
+  "required":["schema_version","id","provenance","task","fixture","operations","evidence","manufacturing_approved"],
+  "properties":{
+    "schema_version":{"const":1},
+    "id":{"type":"string"},
+    "provenance":{"const":"synthetic_native_oracle"},
+    "task":{"type":"string"},
+    "fixture":{"$ref":"cases.schema.json#/properties/cases/items"},
+    "evidence":{"type":"string"},
+    "manufacturing_approved":{"const":false},
+    "operations":{"type":"array","minItems":1,"items":{
+      "type":"object","additionalProperties":false,
+      "required":["action","object_name","parameter","value"],
+      "properties":{
+        "action":{"const":"set_parameter"},
+        "object_name":{"type":"string"},
+        "parameter":{"const":"Height"},
+        "value":{"type":"number","exclusiveMinimum":0}
+      }
+    }}
+  }
+}

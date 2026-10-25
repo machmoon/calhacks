@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "scope": "AI CAD generation and editing only; no robot-control trajectories",
+  "sources": [
+    {
+      "id": "so101-official",
+      "url": "https://github.com/TheRobotStudio/SO-ARM100",
+      "revision": "a758567c3978dfeefe282ede0500085a48fe8f78",
+      "license": "Apache-2.0",
+      "license_url": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/LICENSE",
+      "local_manifest": "cad/projects/so-arm101/upstream/source-manifest.json",
+      "representation": "Supplier STEP geometry, not native FreeCAD construction history",
+      "use": "heldout_benchmark_only",
+      "training_eligible": false,
+      "reason": "Target SO101 source and derivatives excluded from training to preserve benchmark separation; retain license and attribution."
+    },
+    {
+      "id": "workspace-analytic-joints",
+      "path": "evals/cad/training/so_arm101/generate.py",
+      "license": "LicenseRef-Workspace-Generated",
+      "representation": "Actual typed FreeCAD actions and full results with native independent checks",
+      "use": "reference_train_and_separate_regression_holdout",
+      "external_geometry_copied": false,
+      "provider_upload_approved": false,
+      "redistribution_review_required": true
+    },
+    {
+      "id": "gencad-code",
+      "url": "https://github.com/anniedoris/GenCAD-Code",
+      "primary_description": "https://github.com/anniedoris/CAD-Coder/blob/main/README.md",
+      "representation": "Image and CadQuery code pairs; not Wright native action histories",
+      "use": "discovery_only_not_downloaded",
+      "training_eligible": false,
+      "license": "not_audited",
+      "reason": "Dataset rights and inherited source rights require separate audit; code/model licensing is insufficient. Requires native replay/conversion verification and deduplication before use."
+    },
+    {
+      "id": "deepcad",
+      "url": "https://github.com/ChrisWu1997/DeepCAD/blob/master/README.md",
+      "representation": "Onshape construction sequences from public documents linked through ABC",
+      "use": "discovery_only_not_downloaded",
+      "training_eligible": false,
+      "license": "dataset_rights_not_audited",
+      "reason": "Public document availability does not by itself establish training/redistribution permission; not native FreeCAD assembly traces."
+    },
+    {
+      "id": "sketchgraphs",
+      "url": "https://github.com/PrincetonLIPS/SketchGraphs/blob/master/README.md",
+      "representation": "Sketch constraint graphs and construction sequences",
+      "use": "discovery_only_not_downloaded",
+      "training_eligible": false,
+      "license": "original_creators_retain_copyright",
+      "reason": "README explicitly retains original sketch creator copyrights and refers to Onshape terms. No assumption that repository code license licenses CAD data; requires independent rights review."
+    }
+  ]
+}

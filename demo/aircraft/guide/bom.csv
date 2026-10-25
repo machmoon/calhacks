@@ -1,0 +1,32 @@
+category,id,name,qty,unit,unit_price_usd,total_usd,url,note
+motors,aos_supernova_2810_900kv,AOS RC (made by RCinPower) AOS Supernova 2810 900KV,4,pcs,45.54,182.16,https://www.rotorama.com/product/aos-supernova-2810-900kv,"lift; Motor1/2 spin CCW, 3/4 CW (ArduPilot Quad X)"
+props,tmotor_mf1302_folding,T-MOTOR MF1302 polymer folding prop (13.4x4.8),4,pcs,14.95,59.80,https://store.tmotor.com/product/mf1302-polymer-folding-prop.html,2 CW + 2 CCW; DOES NOT MOUNT: prop bolts on (2x M3 on 12 mm); the motor has no published bolt circle
+motors,tmotor_mn3110_470kv,T-MOTOR MN3110 KV470 (Navigator),1,pcs,61.90,61.90,https://store.tmotor.com/product/mn3110-motor-navigator-type.html,pusher
+props,apc_12x8e,APC Propellers 12x8E Thin Electric (LP12080E),1,pcs,4.87,4.87,https://www.apcprop.com/product/12x8e/,pusher
+escs,holybro_tekko32_f4_4in1_50a_am32,Holybro Tekko32 F4 4in1 50A ESC (AM32),1,pcs,62.99,62.99,https://holybro.com/products/tekko32-f4-4in1-50a-esc,lift
+escs,holybro_tekko32_f4_45a_single_am32,"Holybro Tekko32 F4 45A ESC (AM32), single",1,pcs,23.99,23.99,https://holybro.com/products/tekko32-f4-45a-esc,pusher
+packs,upgrade_energy_red_v4_6s2p_10ah,Upgrade Energy RED V4 6S2P 10Ah,3,packs,219.00,657.00,https://www.upgradeenergytech.com/products/red-v4-6s2p-10ah-drone-battery,in parallel (match voltages within 0.05 V/cell before joining)
+hardware,amass_xt60h_connector_piece,Amass XT60H Connector (1PC),3,pcs,0.99,2.97,https://www.racedayquads.com/products/amass-xt60h-connector-1pc-choose-your-version,parallel harness: one XT60 plug per pack
+hardware,pyrodrone_silicone_wire_12awg_1m_pair,"Pyrodrone Silicone Wire (1M Red, 1M Black) - 12 AWG",1,1 m pairs,9.99,9.99,https://pyrodrone.com/products/1ft-silicone-wire-choose-color-and-gauge,parallel harness bus
+flight_controllers,corewing_f405_wing_v2,CoreWing F405 WING V2 (retail name F405 WING APP V2),1,pcs,67.26,67.26,https://www.readymaderc.com/products/details/85786-speedybee-f405-wing-app-fixed-wing-flight-controller,
+gps,hglrc_m100_mini,HGLRC M100 Mini GPS,1,pcs,15.99,15.99,https://www.hglrc.com/products/hglrc-m100_mini-gps,
+receivers,radiomaster_rp1_v2,RadioMaster RP1 V2 ExpressLRS 2.4GHz Nano Receiver,1,pcs,18.99,18.99,https://www.radiomasterrc.com/products/rp1-expresslrs-2-4ghz-nano-receiver,
+airspeed,holybro_ms4525do,Holybro Standard Precision Digital Airspeed Sensor (MS4525DO),1,pcs,71.99,71.99,https://holybro.com/products/digital-air-speed-sensor-standard,
+servos,emax_es08ma_ii,EMAX ES08MA II,5,pcs,13.49,67.45,https://www.racedayquads.com/products/emax-es08ma-ii-12g-analog-metal-gear-servo,"2 ailerons, elevator, 2 rudders"
+tubes,cst_cs525_1m,CST - The Composites Store CS-525 1M DPP Carbon Fiber Tube 10 mm OD x 8 mm ID x 1 m,4,tubes,16.15,64.60,http://www.cstsales.com/Carbon_Fiber_Tubes.html,"cut to 974, 974, 540, 540 mm"
+tubes,cst_cs328_1m_rod,CST - The Composites Store CS-328 1M DPP Carbon Fiber Rod 3 mm x 1 m,1,tubes,13.56,13.56,http://www.cstsales.com/carbon_rods.html,"cut to 480, 480 mm"
+tubes,goodwinds_pct500024,"Goodwinds PCT .500"" x 24"" Pultruded Carbon Tube (SKU PCT500024)",1,tubes,27.29,27.29,https://goodwinds.com/product/pct-500-x-24-pultruded-carbon-tube/,cut to 300 mm
+filaments,bambu_pla_aero,Bambu Lab PLA Aero,1,spools,44.99,44.99,https://us.store.bambulab.com/products/pla-aero,"275 g printed, 344 g with waste"
+filaments,bambu_petg_basic,Bambu Lab PETG Basic,1,spools,13.99,13.99,https://us.store.bambulab.com/products/petg-basic,"465 g printed, 581 g with waste"
+hardware,pyrodrone_silicone_wire_10awg_1m_pair,"Pyrodrone Silicone Wire (1M Red, 1M Black) - 10 AWG",1,1 m pairs,9.99,9.99,https://pyrodrone.com/products/1ft-silicone-wire-choose-color-and-gauge,0.5 m of 10 AWG
+hardware,pyrodrone_silicone_wire_14awg_1m_pair,"Pyrodrone Silicone Wire (1M Red, 1M Black) - 14 AWG",5,1 m pairs,8.99,44.95,https://pyrodrone.com/products/1ft-silicone-wire-choose-color-and-gauge,8.4 m of 14 AWG
+hardware,pyrodrone_silicone_wire_18awg_1m_pair,"Pyrodrone Silicone Wire (1M Red, 1M Black) - 18 AWG",1,1 m pairs,6.99,6.99,https://pyrodrone.com/products/1ft-silicone-wire-choose-color-and-gauge,0.9 m of 18 AWG
+hardware,pyrodrone_silicone_wire_22awg_1m_pair,"Pyrodrone Silicone Wire (1M Red, 1M Black) - 22 AWG",7,1 m pairs,3.99,27.93,https://pyrodrone.com/products/1ft-silicone-wire-choose-color-and-gauge,13.2 m of 22 AWG
+hardware,amass_xt90s_connector_piece,Amass XT90S (anti-spark) Female / XT90S-M Male,2,pcs,4.99,9.98,https://www.upgradeenergytech.com/products/amass-xt90s-female,"XT90 battery connector, male + female"
+hardware,west3d_m3x5x4_heat_set_inserts_100,West3D M3x5x4 Threaded Heat Inserts Brass,1,pcs,9.99,9.99,https://west3d.com/products/m3x4x5-threaded-heat-inserts,pack of 100
+hardware,rmrc_m3_button_head_pack_460,"RMRC (ReadyMadeRC) RMRC M3 Hardware Pack - 12.9 Grade, 7 Screw Sizes (460 Pcs) - Button Head",1,pcs,9.49,9.49,https://www.readymaderc.com/products/details/86834-rmrc-m3-hardware-pack-12-9-grade-7-screw-sizes-460-pcs-button-head,assortment
+hardware,estes_bsi_insta_cure_super_thin_2oz,Bob Smith Industries Insta-Cure Super Thin CA 2 oz (sold by Estes),1,pcs,11.99,11.99,https://estesrockets.com/products/bsi-insta-cure-super-thin-glue,
+hardware,bsi_quik_cure_5min_epoxy_4_5oz,Bob Smith Industries QUIK-CURE 5 Minute Epoxy BSI201,1,pcs,15.89,15.89,https://wheelswingshobbies.com/bsi201-bsi-two-part-epoxy-5-minute/,"spar joiner, booms"
+hardware,rmrc_servo_extension_30cm_jr_22awg,RMRC (ReadyMadeRC) 30cm (12 inch) JR Style 22AWG Twisted Servo Extension Cable,5,pcs,0.99,4.95,https://www.readymaderc.com/collections/airplanes/electronics/servo-extensions,one per servo
+hardware,dubro_105_nylon_control_horns,"DU-BRO Nylon Control Horns (1 Left / 1 Right), SKU 105",3,pcs,1.99,5.97,https://www.dubro.com/products/nylon-control-horns-1-left-1-right,five surfaces
+hardware,rmrc_pushrod_linkage_set_10pc_1_2mm,RMRC (ReadyMadeRC) RMRC 10 Piece Pushrod/Linkage Set with Control Horns,1,pcs,8.99,8.99,https://www.readymaderc.com/products/details/rmrc-10pc-pushrod-linkage-set-control-horn,set of 10

@@ -1,0 +1,13 @@
+{
+  "reason": "Generator expected8cavity sections from obsolete prototype; actual verified source has16",
+  "expected_source_section_counts": {
+    "RightOuterContour": 11,
+    "RightCavity": 16
+  },
+  "actual_reopened_section_counts": {
+    "RightOuterContour": 11,
+    "RightCavity": 16
+  },
+  "repeated_geometry_checks": false,
+  "native_unchanged_sha256": "e644c1cba9b538088d34f815a0ce4029b13d308bda54084311daf666f104ce6b"
+}

@@ -1,0 +1,53 @@
+{
+  "scope": "Independent requirement-level audit of app-generated provisional VTOL layout; not one-shot complete-aircraft success",
+  "revision": "layout-r2-saddles",
+  "native_sha256": "7f7ccc17409f3f49e55ac2d8c208e142b8ae25ac6cb47b882636e6ba748d67c1",
+  "dependency": {
+    "path": "/Users/patliu/Desktop/Coding/wright/cad/projects/vtol-demonstrator/vtol_features.py",
+    "sha256": "5eba4eb399b3490770133925b5d2465433aa980af9b4ea0f09f4a258142b563d"
+  },
+  "result_path": "runs/balloon-1792894071/audit-declared-runtime/result-topology-qualified.json",
+  "result_sha256": "73e33698e054cdaba2a387650a10316513c95eaa07adc70f8eab5cddba69b9fa",
+  "gates": {
+    "frozen_hardware_package": "pending",
+    "bom_geometry_coverage": "pending",
+    "electrical_and_wiring": "pending",
+    "native_geometry": "failed",
+    "all_pair_collisions": "failed",
+    "attachment_contacts": "pending",
+    "propeller_sweeps": "inconclusive",
+    "control_and_linkage_motion": "pending",
+    "service_access": "failed",
+    "connector_thermal_routing": "pending",
+    "load_paths": "pending",
+    "span_chord_boom_servo_battery_edits": "failed",
+    "native_reopen": "failed",
+    "exports": "pending",
+    "current_wing_analysis": "passed",
+    "mass_propulsion_performance": "pending",
+    "views_and_assembly_evidence": "pending"
+  },
+  "physical_count": 53,
+  "collision_instance_count": 61,
+  "checked_pairs": 1830,
+  "overlapping_pairs": 12,
+  "declared_contacts": 28,
+  "unmet_contacts": 0,
+  "blocked_driver_paths": 8,
+  "source_unchanged": true,
+  "parameter_geometry_passes": [
+    "span",
+    "chord",
+    "boom_spacing",
+    "battery_reservation",
+    "servo_reservation"
+  ],
+  "lift_sweeps": "Tightened annular envelope includes ownmotor/mount/fasteners. Central\u00d86void verified0actualprop-material overlap. Four ownmotor potentialinterferences754.76217086mm\u00b3 each; conservative envelope overlap is not exact sweptblade collision. Prior excluded-ownhardware clearance superseded.",
+  "bare_open_attempt": "Preserved in runs/balloon-1792894071/audit; failed runtime regeneration because declared feature module was not imported. Corrected audit loaded/hash-pinned declared dependency before opening unchanged native artifact.",
+  "disconnected_manufactured_parts": [
+    {
+      "name": "BatteryTrayCut1",
+      "solids": 3
+    }
+  ]
+}

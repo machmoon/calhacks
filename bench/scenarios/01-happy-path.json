@@ -1,0 +1,33 @@
+{
+  "id": "happy-path",
+  "description": "The lead designs, a specialist fixes the short span, the reviewer approves: one round, under 8 calls and 10 cents.",
+  "domain": "toy",
+  "request": "a span for a 100 mm gap under $50",
+  "spec": {"target_mm": 100.0, "budget_usd": 50.0},
+  "model": {
+    "orchestrator": [
+      {"text": "Designing from the spec.", "tool": "design", "input": {}},
+      {"tool": "delegate", "input": {"role": "generalist", "task": "span fails by -10 mm; fix it"}},
+      {"tool": "submit", "input": {"summary": "span 105 mm, all checks pass"}}
+    ],
+    "specialist": [
+      {"tool": "edit_design", "input": {"patch_json": "{\"span_mm\": 105}", "why": "reach the target"}},
+      {"tool": "check", "input": {}},
+      {"tool": "report", "input": {"summary": "span 90 -> 105 mm; all checks pass"}}
+    ],
+    "reviewer": [
+      {"tool": "verdict", "input": {"summary": "no blocking issues"}}
+    ]
+  },
+  "expect": {
+    "passed": true,
+    "stop": "passed",
+    "design": {"span_mm": 105, "part_id": "P-100"},
+    "checks_pass": ["span", "budget", "part_known"],
+    "max_calls": 7,
+    "max_rounds": 1,
+    "max_cost_usd": 0.15,
+    "script_exhausted": false,
+    "require": [{"agent": "reviewer", "tool": "verdict", "ok": true}]
+  }
+}

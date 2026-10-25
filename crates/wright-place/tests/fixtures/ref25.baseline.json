@@ -1,0 +1,422 @@
+{
+  "name": "ref25",
+  "source": "/private/tmp/claude-501/-Users-patliu/637315ce-7d38-4733-9b24-6a03b3450c41/scratchpad/be/boards/ref25/ref25.placed.kicad_pcb",
+  "outline": {
+    "min": {
+      "x": -2000000,
+      "y": -2000000
+    },
+    "max": {
+      "x": 13100000,
+      "y": 12500000
+    }
+  },
+  "parts": [
+    {
+      "refdes": "U1",
+      "value": "LM358D",
+      "at": {
+        "x": 5650000,
+        "y": 7120000
+      },
+      "rot_deg": 0.0,
+      "footprint": {
+        "lib_id": "silkscreen:SOIC-8",
+        "pads": [
+          {
+            "number": "1",
+            "at": {
+              "x": -2850000,
+              "y": -1905000
+            },
+            "rot_deg": 0.0,
+            "size": [
+              1950000,
+              600000
+            ],
+            "shape": {
+              "round_rect": 0.25
+            },
+            "drill": null,
+            "plated": false
+          },
+          {
+            "number": "2",
+            "at": {
+              "x": -2850000,
+              "y": -635000
+            },
+            "rot_deg": 0.0,
+            "size": [
+              1950000,
+              600000
+            ],
+            "shape": {
+              "round_rect": 0.25
+            },
+            "drill": null,
+            "plated": false
+          },
+          {
+            "number": "3",
+            "at": {
+              "x": -2850000,
+              "y": 635000
+            },
+            "rot_deg": 0.0,
+            "size": [
+              1950000,
+              600000
+            ],
+            "shape": {
+              "round_rect": 0.25
+            },
+            "drill": null,
+            "plated": false
+          },
+          {
+            "number": "4",
+            "at": {
+              "x": -2850000,
+              "y": 1905000
+            },
+            "rot_deg": 0.0,
+            "size": [
+              1950000,
+              600000
+            ],
+            "shape": {
+              "round_rect": 0.25
+            },
+            "drill": null,
+            "plated": false
+          },
+          {
+            "number": "5",
+            "at": {
+              "x": 2850000,
+              "y": 1905000
+            },
+            "rot_deg": 0.0,
+            "size": [
+              1950000,
+              600000
+            ],
+            "shape": {
+              "round_rect": 0.25
+            },
+            "drill": null,
+            "plated": false
+          },
+          {
+            "number": "6",
+            "at": {
+              "x": 2850000,
+              "y": 635000
+            },
+            "rot_deg": 0.0,
+            "size": [
+              1950000,
+              600000
+            ],
+            "shape": {
+              "round_rect": 0.25
+            },
+            "drill": null,
+            "plated": false
+          },
+          {
+            "number": "7",
+            "at": {
+              "x": 2850000,
+              "y": -635000
+            },
+            "rot_deg": 0.0,
+            "size": [
+              1950000,
+              600000
+            ],
+            "shape": {
+              "round_rect": 0.25
+            },
+            "drill": null,
+            "plated": false
+          },
+          {
+            "number": "8",
+            "at": {
+              "x": 2850000,
+              "y": -1905000
+            },
+            "rot_deg": 0.0,
+            "size": [
+              1950000,
+              600000
+            ],
+            "shape": {
+              "round_rect": 0.25
+            },
+            "drill": null,
+            "plated": false
+          }
+        ],
+        "courtyard": {
+          "min": {
+            "x": -4075000,
+            "y": -2755000
+          },
+          "max": {
+            "x": 4075000,
+            "y": 2755000
+          }
+        },
+        "model3d": "${KISYS3DMOD}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+        "source": ""
+      },
+      "pad_nets": [
+        [
+          "1",
+          "VREF"
+        ],
+        [
+          "2",
+          "VREF"
+        ],
+        [
+          "3",
+          "DIV"
+        ],
+        [
+          "4",
+          "GND"
+        ],
+        [
+          "5",
+          "GND"
+        ],
+        [
+          "6",
+          "BUF2"
+        ],
+        [
+          "7",
+          "BUF2"
+        ],
+        [
+          "8",
+          "+5V"
+        ]
+      ]
+    },
+    {
+      "refdes": "R1",
+      "value": "10k",
+      "at": {
+        "x": 5550000,
+        "y": 2000000
+      },
+      "rot_deg": 0.0,
+      "footprint": {
+        "lib_id": "silkscreen:R_0603",
+        "pads": [
+          {
+            "number": "1",
+            "at": {
+              "x": -775000,
+              "y": 0
+            },
+            "rot_deg": 0.0,
+            "size": [
+              900000,
+              950000
+            ],
+            "shape": {
+              "round_rect": 0.25
+            },
+            "drill": null,
+            "plated": false
+          },
+          {
+            "number": "2",
+            "at": {
+              "x": 775000,
+              "y": 0
+            },
+            "rot_deg": 0.0,
+            "size": [
+              900000,
+              950000
+            ],
+            "shape": {
+              "round_rect": 0.25
+            },
+            "drill": null,
+            "plated": false
+          }
+        ],
+        "courtyard": {
+          "min": {
+            "x": -1475000,
+            "y": -725000
+          },
+          "max": {
+            "x": 1475000,
+            "y": 725000
+          }
+        },
+        "model3d": "${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+        "source": ""
+      },
+      "pad_nets": [
+        [
+          "1",
+          "+5V"
+        ],
+        [
+          "2",
+          "DIV"
+        ]
+      ]
+    },
+    {
+      "refdes": "R2",
+      "value": "10k",
+      "at": {
+        "x": 1850000,
+        "y": 2000000
+      },
+      "rot_deg": 0.0,
+      "footprint": {
+        "lib_id": "silkscreen:R_0603",
+        "pads": [
+          {
+            "number": "1",
+            "at": {
+              "x": -775000,
+              "y": 0
+            },
+            "rot_deg": 0.0,
+            "size": [
+              900000,
+              950000
+            ],
+            "shape": {
+              "round_rect": 0.25
+            },
+            "drill": null,
+            "plated": false
+          },
+          {
+            "number": "2",
+            "at": {
+              "x": 775000,
+              "y": 0
+            },
+            "rot_deg": 0.0,
+            "size": [
+              900000,
+              950000
+            ],
+            "shape": {
+              "round_rect": 0.25
+            },
+            "drill": null,
+            "plated": false
+          }
+        ],
+        "courtyard": {
+          "min": {
+            "x": -1475000,
+            "y": -725000
+          },
+          "max": {
+            "x": 1475000,
+            "y": 725000
+          }
+        },
+        "model3d": "${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+        "source": ""
+      },
+      "pad_nets": [
+        [
+          "1",
+          "DIV"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    },
+    {
+      "refdes": "C1",
+      "value": "100nF",
+      "at": {
+        "x": 9250000,
+        "y": 2000000
+      },
+      "rot_deg": 0.0,
+      "footprint": {
+        "lib_id": "silkscreen:C_0603",
+        "pads": [
+          {
+            "number": "1",
+            "at": {
+              "x": -775000,
+              "y": 0
+            },
+            "rot_deg": 0.0,
+            "size": [
+              900000,
+              950000
+            ],
+            "shape": {
+              "round_rect": 0.25
+            },
+            "drill": null,
+            "plated": false
+          },
+          {
+            "number": "2",
+            "at": {
+              "x": 775000,
+              "y": 0
+            },
+            "rot_deg": 0.0,
+            "size": [
+              900000,
+              950000
+            ],
+            "shape": {
+              "round_rect": 0.25
+            },
+            "drill": null,
+            "plated": false
+          }
+        ],
+        "courtyard": {
+          "min": {
+            "x": -1475000,
+            "y": -725000
+          },
+          "max": {
+            "x": 1475000,
+            "y": 725000
+          }
+        },
+        "model3d": "${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+        "source": ""
+      },
+      "pad_nets": [
+        [
+          "1",
+          "+5V"
+        ],
+        [
+          "2",
+          "GND"
+        ]
+      ]
+    }
+  ]
+}

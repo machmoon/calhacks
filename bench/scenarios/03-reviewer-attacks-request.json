@@ -1,0 +1,30 @@
+{
+  "id": "reviewer-attacks-request",
+  "description": "The reviewer tries to 'attack' by rewriting the person's own target (200 mm). The harness must reject it as the person's requirement; a real condition attack (shrink) is run and refuted; the design passes unchanged.",
+  "domain": "toy",
+  "request": "a span for a 100 mm gap under $50",
+  "spec": {"target_mm": 100.0, "budget_usd": 50.0},
+  "model": {
+    "orchestrator": [
+      {"tool": "design", "input": {}},
+      {"tool": "edit_design", "input": {"patch_json": "{\"span_mm\": 110}", "why": "reach the target"}},
+      {"tool": "check", "input": {}},
+      {"tool": "submit", "input": {"summary": "span 110 mm, all checks pass"}}
+    ],
+    "reviewer": [
+      {"tool": "attack", "input": {"claim": "the gap is really 200 mm", "spec_patch_json": "{\"target_mm\": 200}", "expect_failing_check": "span"}},
+      {"tool": "attack", "input": {"claim": "a cold day shrinks it 5 mm", "spec_patch_json": "{\"shrink_mm\": 5}", "expect_failing_check": "span"}},
+      {"tool": "verdict", "input": {"summary": "the design holds; no confirmed issue"}}
+    ]
+  },
+  "expect": {
+    "passed": true,
+    "stop": "passed",
+    "stated_unchanged": true,
+    "design": {"span_mm": 110},
+    "max_rounds": 1,
+    "max_calls": 7,
+    "forbid": [{"agent": "reviewer", "tool": "attack", "ok": true}],
+    "require": [{"agent": "reviewer", "tool": "attack", "ok": false}]
+  }
+}

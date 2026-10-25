@@ -1,0 +1,82 @@
+{
+  "status": "complete",
+  "candidate": "/Users/patliu/Desktop/Coding/wright/out/so101-camera-mount/attempt-2/build/assembly.FCStd",
+  "passed": true,
+  "processes": [
+    {
+      "stage": "baseline",
+      "returncode": 0,
+      "elapsed_seconds": 6.367720365524292
+    },
+    {
+      "stage": "reopen",
+      "returncode": 0,
+      "elapsed_seconds": 8.143978118896484
+    }
+  ],
+  "evaluator_hashes": {
+    "run.py": "d5d004905ef0c919e7cbff0758cdcd0391e0cdb0aaee727a0d4c4497335e85af",
+    "probe.py": "e10f4fbf0b19719525da8de1325dd00af3aa9d115d32fdf2c874eb4a7f8fe158",
+    "contract.json": "5df0541af52063672884d00f143e81e6b3dc3f563383e4f52da204a9a5421929"
+  },
+  "source_sha256": "7164b2b4b70f08b2a58a00f1df3ff164eb411befdd93761ba788d2af3ea39cc6",
+  "scope": "Static local camera-mount CAD verification; no whole-arm motion qualification",
+  "candidate_sha256": "cdd100c8baddb2f3e07f828122064226d096c207bae6b7d7167f81b7a843973b",
+  "state_gates": {
+    "baseline": {
+      "source_preserved": true,
+      "native_mount": true,
+      "plate_dimensions_and_containment": true,
+      "camera_frame": true,
+      "standoffs_and_pattern": true,
+      "wrist_fit": true,
+      "wrist_bores_and_nominal_fastener_paths": true,
+      "camera_reference_and_space": true,
+      "ribbon_space": true
+    },
+    "reopened": {
+      "source_preserved": true,
+      "native_mount": true,
+      "plate_dimensions_and_containment": true,
+      "camera_frame": true,
+      "standoffs_and_pattern": true,
+      "wrist_fit": true,
+      "wrist_bores_and_nominal_fastener_paths": true,
+      "camera_reference_and_space": true,
+      "ribbon_space": true
+    },
+    "thickness_edit": {
+      "source_preserved": true,
+      "native_mount": true,
+      "plate_dimensions_and_containment": true,
+      "camera_frame": true,
+      "standoffs_and_pattern": true,
+      "wrist_fit": true,
+      "wrist_bores_and_nominal_fastener_paths": true,
+      "camera_reference_and_space": true,
+      "ribbon_space": true,
+      "real_final_geometry_edit": true
+    },
+    "standoff_edit": {
+      "source_preserved": true,
+      "native_mount": true,
+      "plate_dimensions_and_containment": true,
+      "camera_frame": true,
+      "standoffs_and_pattern": true,
+      "wrist_fit": true,
+      "wrist_bores_and_nominal_fastener_paths": true,
+      "camera_reference_and_space": true,
+      "ribbon_space": true,
+      "real_final_geometry_edit": true
+    }
+  },
+  "limitations": [
+    "Static local interface only; other arm parts and whole-arm sweeps are not collision-certified",
+    "Nominal M3 path envelopes do not validate thread engagement, nut installation with motor6 present, screw length or torque",
+    "Source STEP registration proves measured bore/plane correspondence, not whole-part equivalence to mesh",
+    "Reference camera/ribbon geometry is simplified; no exact manufacturer CAD or guaranteed cable bend radius"
+  ],
+  "candidate_unchanged": true,
+  "source_unchanged": true,
+  "elapsed_seconds": 14.541835069656372
+}

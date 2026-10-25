@@ -1,0 +1,26 @@
+[package]
+name = "wright-agents"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[dependencies]
+wright-core.workspace = true
+wright-cad.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+base64 = "0.22"
+tokio = { version = "1", features = ["rt", "macros", "sync", "time", "process", "io-util"] }
+# rustls + webpki roots: no OpenSSL, nothing from the system; the cached
+# 0.12.23 build. Only the JSON body helper is needed.
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+
+[features]
+# Azure Cosmos DB (NoSQL REST) runs-database backend + Blob artifact upload
+# (runs_db::azure); no new crates, it uses reqwest above. docs/azure-db.md
+azure = []
+
+[dev-dependencies]
+tokio = { version = "1", features = ["rt", "macros", "sync", "time", "process", "io-util", "test-util"] }

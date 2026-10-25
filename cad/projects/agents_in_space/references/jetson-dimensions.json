@@ -1,0 +1,48 @@
+{
+  "source_url": "https://developer.nvidia.com/downloads/assets/embedded/secure/jetson/orin_nano/docs/jetson_orin_nano_devkit_carrier_board_specification_sp.pdf",
+  "document": "SP-11324-001 v1.3",
+  "pdf_sha256": "4a0f7ba948bce4881e176f0f8636ef3dbd40e3df9dd33134e6a7433359d18c02",
+  "pages_1based": [
+    33,
+    34
+  ],
+  "figures": [
+    "4-1",
+    "4-2"
+  ],
+  "visual_review": true,
+  "carrier_outline_mm": [
+    100,
+    79
+  ],
+  "carrier_outline_tolerance_mm": [
+    0.13,
+    0.13
+  ],
+  "carrier_thickness_mm": 1.57,
+  "carrier_thickness_tolerance_mm": 0.16,
+  "carrier_component_top_max_mm": 16.7,
+  "carrier_component_bottom_max_mm": 4.3,
+  "assembled_nominal_mm": [
+    103,
+    90.5,
+    34.77
+  ],
+  "assembled_tolerance_mm": [
+    0.2,
+    0.2,
+    1.09
+  ],
+  "assembled_upper_bound_mm": [
+    103.2,
+    90.7,
+    35.86
+  ],
+  "mass_g": 175,
+  "mounting_holes_verified": false,
+  "limits": [
+    "Applies to the NVIDIA reference developer kit shown; physical user configuration not inspected",
+    "No plugged-cable, fan airflow or service keepout included",
+    "Mounting hole coordinates/diameters not dimensioned in these figures"
+  ]
+}

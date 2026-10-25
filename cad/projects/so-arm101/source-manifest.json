@@ -1,0 +1,202 @@
+{
+  "repository": "https://github.com/TheRobotStudio/SO-ARM100",
+  "commit": "a758567c3978dfeefe282ede0500085a48fe8f78",
+  "official_source_confirmation": "https://huggingface.co/docs/lerobot/so101 links directly to this repository",
+  "license": "Apache-2.0",
+  "license_file": "upstream/LICENSE",
+  "files": [
+    {
+      "path": "cad/projects/so-arm101/upstream/3DPRINT.md",
+      "upstream_path": "3DPRINT.md",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/3DPRINT.md",
+      "bytes": 3792,
+      "git_blob_sha1": "f1de2cacf16fd93ec371e12027d29e7b92988b55",
+      "sha256": "c734900f07e2501cfa8f9d508380cb3293baa2fc463bb77de2a09c173bc482b3"
+    },
+    {
+      "path": "cad/projects/so-arm101/upstream/CITATION.cff",
+      "upstream_path": "CITATION.cff",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/CITATION.cff",
+      "bytes": 760,
+      "git_blob_sha1": "35a25fc9cb55fa4c7b5aae99b4195ae7b95173a6",
+      "sha256": "357d040c6099ec36765fe5fa22e50db9679b16205aa29b01b765cbc809f2d1b0"
+    },
+    {
+      "path": "cad/projects/so-arm101/upstream/LICENSE",
+      "upstream_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/LICENSE",
+      "bytes": 11357,
+      "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "cad/projects/so-arm101/upstream/README.md",
+      "upstream_path": "README.md",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/README.md",
+      "bytes": 26605,
+      "git_blob_sha1": "8a070568cf67908edc50a81b05346f87a26ea01b",
+      "sha256": "7e9bdd089aab15532f7304e65e748707315aaee359204143e3997ecfc568d01e"
+    },
+    {
+      "path": "cad/projects/so-arm101/upstream/STEP/SO101/Base_SO101.step",
+      "upstream_path": "STEP/SO101/Base_SO101.step",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/Base_SO101.step",
+      "bytes": 1092553,
+      "git_blob_sha1": "79b2373d6bd0c50ffbd3f11cdbe7f1d813b54a02",
+      "sha256": "95209ec6a3ca06b1ec084f72d9c73324bdcf9d0e17213ef293f45f95a3993288"
+    },
+    {
+      "path": "cad/projects/so-arm101/upstream/STEP/SO101/Base_motor_holder_SO101.step",
+      "upstream_path": "STEP/SO101/Base_motor_holder_SO101.step",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/Base_motor_holder_SO101.step",
+      "bytes": 300211,
+      "git_blob_sha1": "6c4c3e31e2a88caa33cb8c80ceac406dacc23adf",
+      "sha256": "f13462eea875727ae7cec7d190c59642444b9076c76cf2423bbe3c5b6c469587"
+    },
+    {
+      "path": "cad/projects/so-arm101/upstream/STEP/SO101/Follower_Specific/Moving_Jaw_SO101.step",
+      "upstream_path": "STEP/SO101/Follower_Specific/Moving_Jaw_SO101.step",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/Follower_Specific/Moving_Jaw_SO101.step",
+      "bytes": 620823,
+      "git_blob_sha1": "41dc6a4ce0ae72103e1df6effd7d4170b6ba10b1",
+      "sha256": "dff53ace072470c9a6c84dbb68dd84f9fd0959429f181905d9d05fe3007549b5"
+    },
+    {
+      "path": "cad/projects/so-arm101/upstream/STEP/SO101/Follower_Specific/Wrist_Roll_Follower_SO101.step",
+      "upstream_path": "STEP/SO101/Follower_Specific/Wrist_Roll_Follower_SO101.step",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/Follower_Specific/Wrist_Roll_Follower_SO101.step",
+      "bytes": 870092,
+      "git_blob_sha1": "b79822532ff50b1afd07748eb556239b650ad2c4",
+      "sha256": "b7f9d59f7991f425fff784eab07f0bf65471903dd6d6177e7cb109bebcd02b35"
+    },
+    {
+      "path": "cad/projects/so-arm101/upstream/STEP/SO101/Leader_Specific/Handle_SO101.step",
+      "upstream_path": "STEP/SO101/Leader_Specific/Handle_SO101.step",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/Leader_Specific/Handle_SO101.step",
+      "bytes": 373582,
+      "git_blob_sha1": "75c6ab22585af93792cb1a2421d59d33c09fe616",
+      "sha256": "c90c3a9ff0cf0f1d322835324cd1519ffa835a5da14044d0f945f2e682220919"
+    },
+    {
+      "path": "cad/projects/so-arm101/upstream/STEP/SO101/Leader_Specific/Trigger_SO101.step",
+      "upstream_path": "STEP/SO101/Leader_Specific/Trigger_SO101.step",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/Leader_Specific/Trigger_SO101.step",
+      "bytes": 254925,
+      "git_blob_sha1": "4f204f36ce8cd159ce096487225afbb5b5187476",
+      "sha256": "e5f63da605172762306773cc447e1e83a8fcd77ae399bc83c8aa49d64899a055"
+    },
+    {
+      "path": "cad/projects/so-arm101/upstream/STEP/SO101/Leader_Specific/Wrist_Roll_SO101.step",
+      "upstream_path": "STEP/SO101/Leader_Specific/Wrist_Roll_SO101.step",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/Leader_Specific/Wrist_Roll_SO101.step",
+      "bytes": 375158,
+      "git_blob_sha1": "48ddc59015598f42ecab53ad3bd72458e9c26b56",
+      "sha256": "6456ef0daa2506c1ffe6a0b3848c79b521a4e0545fb7191e83e627a4acbc4fe5"
+    },
+    {
+      "path": "cad/projects/so-arm101/upstream/STEP/SO101/Motor_holder_SO101_Base.step",
+      "upstream_path": "STEP/SO101/Motor_holder_SO101_Base.step",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/Motor_holder_SO101_Base.step",
+      "bytes": 352248,
+      "git_blob_sha1": "f3c11b2d7f6597791dd7590ac95a64c8b9ea149e",
+      "sha256": "fb2ef4603324ddea53ab655f6ecd48c7f5a72dd7603e57e92c60c0a8e67a9083"
+    },
+    {
+      "path": "cad/projects/so-arm101/upstream/STEP/SO101/Motor_holder_SO101_Wrist.step",
+      "upstream_path": "STEP/SO101/Motor_holder_SO101_Wrist.step",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/Motor_holder_SO101_Wrist.step",
+      "bytes": 346197,
+      "git_blob_sha1": "c459016582769656e6bf899db888a372efdf438e",
+      "sha256": "e58d86502535a5a4936677e9d934f1bda9417e83f7480f475061728c146739c4"
+    },
+    {
+      "path": "cad/projects/so-arm101/upstream/STEP/SO101/Rotation_Pitch_SO101.step",
+      "upstream_path": "STEP/SO101/Rotation_Pitch_SO101.step",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/Rotation_Pitch_SO101.step",
+      "bytes": 370844,
+      "git_blob_sha1": "dd8988728ca473792cb2e18ace779f994fb62c61",
+      "sha256": "a392681efb05bf4009c17115a9b3e37bbee9d2fcfe25e2066b11b95aaa380915"
+    },
+    {
+      "path": "cad/projects/so-arm101/upstream/STEP/SO101/SO101 Assembly.step",
+      "upstream_path": "STEP/SO101/SO101 Assembly.step",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/SO101%20Assembly.step",
+      "bytes": 20496014,
+      "git_blob_sha1": "541ad0e11398e6701d006c40a032ffd67bac5369",
+      "sha256": "f754be35708382b05ce65768ae33c612f91dca11ad19d14807dc637eb944ba3d"
+    },
+    {
+      "path": "cad/projects/so-arm101/upstream/STEP/SO101/Seeedstudio_Mounting_Plate_SO101.step",
+      "upstream_path": "STEP/SO101/Seeedstudio_Mounting_Plate_SO101.step",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/Seeedstudio_Mounting_Plate_SO101.step",
+      "bytes": 45162,
+      "git_blob_sha1": "7f465d18722a9d99ea37145bff9fbd1aea9800c4",
+      "sha256": "7410dc0e5f53c89c14f0679f10c566e66ba06f6d9993f9ea65055874d0914a26"
+    },
+    {
+      "path": "cad/projects/so-arm101/upstream/STEP/SO101/Under_arm_SO101.step",
+      "upstream_path": "STEP/SO101/Under_arm_SO101.step",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/Under_arm_SO101.step",
+      "bytes": 626245,
+      "git_blob_sha1": "3c93d5f6ee600b80cf77899f859ca9d6a4b530da",
+      "sha256": "677a1a57efeddc439d97ebdc309b1c2853cfcb83f14c7d695c312fcf13a89713"
+    },
+    {
+      "path": "cad/projects/so-arm101/upstream/STEP/SO101/Upper_arm_SO101.step",
+      "upstream_path": "STEP/SO101/Upper_arm_SO101.step",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/Upper_arm_SO101.step",
+      "bytes": 551437,
+      "git_blob_sha1": "a990affa99078baab6d83cc94b3f5e57e13db49c",
+      "sha256": "efa19a6dd2ccb459248500c76629cfa840630e7e15d9e146394d31da1525dd61"
+    },
+    {
+      "path": "cad/projects/so-arm101/upstream/STEP/SO101/WaveShare_Mounting_Plate_SO101.step",
+      "upstream_path": "STEP/SO101/WaveShare_Mounting_Plate_SO101.step",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/WaveShare_Mounting_Plate_SO101.step",
+      "bytes": 49079,
+      "git_blob_sha1": "7da6f2f418531aa1b36c8bc15e882edc984e7689",
+      "sha256": "16510f5aedf04186d34aa279207d0d354d4b08c1d179a46a9974b1430d0702f8"
+    },
+    {
+      "path": "cad/projects/so-arm101/upstream/STEP/SO101/Wrist_Roll_Pitch_SO101.step",
+      "upstream_path": "STEP/SO101/Wrist_Roll_Pitch_SO101.step",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/Wrist_Roll_Pitch_SO101.step",
+      "bytes": 1203030,
+      "git_blob_sha1": "cb05d3649843fdc040cb86f773ba50b77e0209bd",
+      "sha256": "39c5e78647d471ab4e4328ec6d00f06ad90dc48a0b1ffe4baf1a951c1304f74b"
+    }
+  ],
+  "formats_observed": [
+    "STEP",
+    "STL"
+  ],
+  "native_parametric_source_found": false,
+  "total_download_bytes": 27970114,
+  "cad_format": {
+    "assembly": "STEP AP214",
+    "originating_system": "Autodesk Translation Framework v14.4.0.0",
+    "source_assembly_name": "SO101 Assembly v4.step",
+    "source_assembly_timestamp": "2025-04-15T13:10:53+02:00",
+    "original_feature_history_available": false
+  },
+  "servos": {
+    "follower": {
+      "quantity": 6,
+      "family": "Feetech STS3215",
+      "gear_ratio": "1/345",
+      "default_voltage_variant": "7.4V",
+      "optional_voltage_variant": "12V requires matching supply per upstream README"
+    },
+    "leader": {
+      "family": "Feetech STS3215",
+      "voltage_variant": "7.4V",
+      "quantities_by_gear_ratio": {
+        "1/345": 1,
+        "1/191": 2,
+        "1/147": 3
+      }
+    },
+    "evidence": "Pinned upstream README.md; https://huggingface.co/docs/lerobot/so101",
+    "cad_variant_warning": "STEP instance names are not independent certification of electrical variant or internal gearing."
+  }
+}

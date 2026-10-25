@@ -1,0 +1,14 @@
+[
+  {
+    "file": "airframe.step",
+    "bytes": 5561551,
+    "sha256": "076154a0d15c8b7ac6df0be8456815f51f1aa0bb1dd27460739d6ac4a9283875",
+    "verified": true
+  },
+  {
+    "file": "assembly_board.kicad_pcb",
+    "bytes": 10545,
+    "sha256": "9574401908138c70bbb87fb300eb0d1b2c8e50e7d800ae6e56897c2f5099d435",
+    "verified": true
+  }
+]

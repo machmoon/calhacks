@@ -1,0 +1,611 @@
+{
+  "domain": "aircraft",
+  "request": "A 3D-printed VTOL quadplane that flies farther than 130 miles with a 15 % reserve: 1.2 m wingspan, prints on a Bambu A1, 6S, under $2000 including the battery.",
+  "spec": {
+    "design": {
+      "airfoil": null,
+      "airspeed": null,
+      "battery": null,
+      "boom_tube": null,
+      "cruise_esc": null,
+      "cruise_motor": null,
+      "cruise_prop": null,
+      "fc": null,
+      "gps": null,
+      "lift_esc": null,
+      "lift_motor": null,
+      "lift_prop": null,
+      "main_spar": null,
+      "receiver": null,
+      "root_chord_mm": null,
+      "servo": null,
+      "span_mm": 1200.0,
+      "tip_chord_mm": null
+    },
+    "name": "quadplane_130mi",
+    "requirements": {
+      "airspeed_sensor": true,
+      "altitude_m": 0.0,
+      "budget_usd": 2000.0,
+      "cells_s": 6,
+      "endurance_min": null,
+      "hot_day_dk": 15.0,
+      "max_print_hours": null,
+      "max_span_mm": 1200.0,
+      "max_stall_ms": 14.0,
+      "payload_g": 0.0,
+      "printer": "bambu_a1",
+      "range_km": 210.0
+    }
+  },
+  "design": {
+    "avionics": {
+      "airspeed": "holybro_ms4525do",
+      "fc": "corewing_f405_wing_v2",
+      "gps": "hglrc_m100_mini",
+      "receiver": "radiomaster_rp1_v2",
+      "servo": "emax_es08ma_ii"
+    },
+    "battery": {
+      "count": 3,
+      "id": "upgrade_energy_red_v4_6s2p_10ah",
+      "kind": "pack"
+    },
+    "name": "quadplane_130mi",
+    "propulsion": {
+      "cruise_esc": "holybro_tekko32_f4_45a_single_am32",
+      "cruise_motor": "tmotor_mn3110_470kv",
+      "cruise_prop": "apc_12x8e",
+      "lift_esc": "holybro_tekko32_f4_4in1_50a_am32",
+      "lift_motor": "aos_supernova_2810_900kv",
+      "lift_prop": "tmotor_mf1302_folding",
+      "lift_tilt_deg": 3.0
+    },
+    "requirements": {
+      "airspeed_sensor": true,
+      "altitude_m": 0.0,
+      "budget_usd": 2000.0,
+      "cells_s": 6,
+      "endurance_min": null,
+      "hot_day_dk": 15.0,
+      "max_print_hours": null,
+      "max_span_mm": 1200.0,
+      "max_stall_ms": 14.0,
+      "payload_g": 0.0,
+      "printer": "bambu_a1",
+      "range_km": 210.0
+    },
+    "structure": {
+      "boom_tube": "cst_cs525_1m",
+      "joiner": "goodwinds_pct500024",
+      "leg_thickness_mm": 13.0,
+      "main_spar": "cst_cs525_1m",
+      "rear_spar": "cst_cs328_1m_rod",
+      "shell_filament": "bambu_pla_aero",
+      "structural_filament": "bambu_petg_basic"
+    },
+    "tail": {
+      "airfoil": "naca0009",
+      "aspect_ratio_v": 1.6,
+      "vh": 0.45,
+      "vv": 0.03
+    },
+    "wing": {
+      "aileron_chord_frac": 0.25,
+      "airfoil": "sd7062",
+      "dihedral_deg": 0.0,
+      "incidence_deg": 2.0,
+      "root_chord_mm": 210.0,
+      "span_mm": 1200.0,
+      "tip_chord_mm": 210.0,
+      "washout_deg": 2.0
+    }
+  },
+  "report": {
+    "outcomes": [
+      {
+        "name": "parts",
+        "evidence": {
+          "Margin": {
+            "value": 0.0,
+            "unit": ""
+          }
+        },
+        "detail": "every part resolved to a sourced catalog row",
+        "source": "Requirement"
+      },
+      {
+        "name": "parts_orderable",
+        "evidence": {
+          "Margin": {
+            "value": -0.0,
+            "unit": "parts"
+          }
+        },
+        "detail": "all on sale",
+        "source": "Rating"
+      },
+      {
+        "name": "hover_thrust_to_weight",
+        "evidence": {
+          "Margin": {
+            "value": 0.21918366176795057,
+            "unit": ""
+          }
+        },
+        "detail": "T/W 2.02, stopped by the pack burst at 90 A from the pack (hot day +15 K, low battery)",
+        "source": "Physics"
+      },
+      {
+        "name": "hover_throttle",
+        "evidence": {
+          "Margin": {
+            "value": 0.2439993378356216,
+            "unit": ""
+          }
+        },
+        "detail": "hover throttle 0.36 standard day full pack, 0.41 hot day low pack",
+        "source": "Physics"
+      },
+      {
+        "name": "lift_motor_current",
+        "evidence": {
+          "Margin": {
+            "value": 27.258712021816947,
+            "unit": "A"
+          }
+        },
+        "detail": "18.4 A per motor in hover, rated 46 A",
+        "source": "Rating"
+      },
+      {
+        "name": "lift_esc_current",
+        "evidence": {
+          "Margin": {
+            "value": 25.757928598663632,
+            "unit": "A"
+          }
+        },
+        "detail": "18.4 A hover / 34.2 A full throttle per channel; ESC 50 A cont, 60 A burst",
+        "source": "Rating"
+      },
+      {
+        "name": "pack_current",
+        "evidence": {
+          "Margin": {
+            "value": 95.32787249332642,
+            "unit": "A"
+          }
+        },
+        "detail": "hover 32.2 A from the pack, rated 128 A",
+        "source": "Rating"
+      },
+      {
+        "name": "pack_peak_current",
+        "evidence": {
+          "Margin": {
+            "value": 210.0000000000003,
+            "unit": "A"
+          }
+        },
+        "detail": "worst seconds 90 A; 3 x Upgrade Energy RED V4 6S2P 10Ah (6S6P) bursts 300 A",
+        "source": "Rating"
+      },
+      {
+        "name": "voltage_ratings",
+        "evidence": {
+          "Margin": {
+            "value": 0.0,
+            "unit": "cells"
+          }
+        },
+        "detail": "6S pack; tightest lift motor aos_supernova_2810_900kv 4-6S",
+        "source": "Rating"
+      },
+      {
+        "name": "pusher_esc_current",
+        "evidence": {
+          "Margin": {
+            "value": 30.000000000000025,
+            "unit": "A"
+          }
+        },
+        "detail": "pusher 15.0 A at full throttle, ESC 45 A",
+        "source": "Rating"
+      },
+      {
+        "name": "cruise",
+        "evidence": {
+          "Margin": {
+            "value": 0.21221261273082037,
+            "unit": ""
+          }
+        },
+        "detail": "19.3 m/s at 164 W, L/D 8.6, prop 0.77, motor 0.88, throttle 0.69",
+        "source": "Physics"
+      },
+      {
+        "name": "max_speed",
+        "evidence": {
+          "Margin": {
+            "value": 0.16078935275019823,
+            "unit": ""
+          }
+        },
+        "detail": "top 28.2 m/s, best range 19.3 m/s",
+        "source": "Physics"
+      },
+      {
+        "name": "stall_speed",
+        "evidence": {
+          "Margin": {
+            "value": 0.02574334822431723,
+            "unit": "m/s"
+          }
+        },
+        "detail": "stall 14.0 m/s (CLmax 1.47), at most 14",
+        "source": "Physics"
+      },
+      {
+        "name": "static_margin",
+        "evidence": {
+          "Margin": {
+            "value": 4.99990145579881,
+            "unit": "%MAC"
+          }
+        },
+        "detail": "10.0 % MAC: CG 74 mm, neutral point 95 mm",
+        "source": "Physics"
+      },
+      {
+        "name": "tail_authority",
+        "evidence": {
+          "Margin": {
+            "value": 0.40050648099338854,
+            "unit": ""
+          }
+        },
+        "detail": "tail CL +0.26 to trim at the stall; section CLmax 0.82",
+        "source": "Physics"
+      },
+      {
+        "name": "spar_stress",
+        "evidence": {
+          "Margin": {
+            "value": 158.44775574528228,
+            "unit": "MPa"
+          }
+        },
+        "detail": "main_spar in manoeuvre 4 g x 1.5: 342 MPa of 500 (19.8 N m where the joiner ends, 150 mm out)",
+        "source": "Physics"
+      },
+      {
+        "name": "spar_joint",
+        "evidence": {
+          "Margin": {
+            "value": 0.0,
+            "unit": "mm"
+          }
+        },
+        "detail": "sleeve goodwinds_pct500024 on cst_cs525_1m",
+        "source": "Geometry"
+      },
+      {
+        "name": "spar_fit",
+        "evidence": {
+          "Margin": {
+            "value": 7.15697916826188,
+            "unit": "mm"
+          }
+        },
+        "detail": "rear spar: 7.2 mm inside the skin at its tightest, 0 mm out",
+        "source": "Geometry"
+      },
+      {
+        "name": "boom_stress",
+        "evidence": {
+          "Margin": {
+            "value": 58.73926278344226,
+            "unit": "MPa"
+          }
+        },
+        "detail": "boom in landing 2.67 g x 1.5: 441 MPa of 500 (89 N leg load on a 288 mm overhang)",
+        "source": "Physics"
+      },
+      {
+        "name": "boom_resonance",
+        "evidence": {
+          "Margin": {
+            "value": 0.36456490852732787,
+            "unit": ""
+          }
+        },
+        "detail": "boom mode 33 Hz, hover rotation 98 Hz",
+        "source": "Physics"
+      },
+      {
+        "name": "landing_legs",
+        "evidence": {
+          "Margin": {
+            "value": 0.049842356791107725,
+            "unit": ""
+          }
+        },
+        "detail": "buckle at 364 N for 89 N; landing_leg in landing 2.67 g x 1.5: 19 MPa of 20 (89 N axial, 44 N side at the foot)",
+        "source": "Physics"
+      },
+      {
+        "name": "load_paths",
+        "evidence": {
+          "Margin": {
+            "value": -0.0,
+            "unit": "links"
+          }
+        },
+        "detail": "6 load paths, every link joined and touching",
+        "source": "Geometry"
+      },
+      {
+        "name": "interference",
+        "evidence": {
+          "Margin": {
+            "value": 0.0,
+            "unit": "mm"
+          }
+        },
+        "detail": "50 solids, 1225 pairs, none overlapping",
+        "source": "Geometry"
+      },
+      {
+        "name": "attachments",
+        "evidence": {
+          "Margin": {
+            "value": -0.0,
+            "unit": "joints"
+          }
+        },
+        "detail": "60 joints, all in contact",
+        "source": "Geometry"
+      },
+      {
+        "name": "prop_clearance",
+        "evidence": {
+          "Margin": {
+            "value": 9.240786930182034,
+            "unit": "mm"
+          }
+        },
+        "detail": "closest: lift_prop_disc_RL to pusher_disc at 14.2 mm",
+        "source": "Geometry"
+      },
+      {
+        "name": "containment",
+        "evidence": {
+          "Margin": {
+            "value": 3.8172276882378755,
+            "unit": "mm"
+          }
+        },
+        "detail": "tightest battery: 3.8 mm inside the cavity",
+        "source": "Geometry"
+      },
+      {
+        "name": "servo_fit",
+        "evidence": {
+          "Margin": {
+            "value": 6.687280974154251,
+            "unit": "mm"
+          }
+        },
+        "detail": "emax_es08ma_ii in the wing at 339 mm span: 7.2 mm inside the skins",
+        "source": "Geometry"
+      },
+      {
+        "name": "print_bed",
+        "evidence": {
+          "Margin": {
+            "value": 40.002099999999984,
+            "unit": "mm"
+          }
+        },
+        "detail": "tightest wing_R: 210 x 200 x 30 mm piece in [256.0, 256.0, 256.0] less 3 mm margins",
+        "source": "Geometry"
+      },
+      {
+        "name": "ground_clearance",
+        "evidence": {
+          "Margin": {
+            "value": 5.0,
+            "unit": "mm"
+          }
+        },
+        "detail": "lowest non-leg point 20 mm above the feet",
+        "source": "Geometry"
+      },
+      {
+        "name": "thrust_line",
+        "evidence": {
+          "Margin": {
+            "value": 14.999998422346616,
+            "unit": "mm"
+          }
+        },
+        "detail": "pusher +0 mm from the CG's height",
+        "source": "Geometry"
+      },
+      {
+        "name": "prop_mount",
+        "evidence": {
+          "Margin": {
+            "value": 0.0,
+            "unit": ""
+          }
+        },
+        "detail": "apc_12x8e on tmotor_mn3110_470kv (short_stub shaft)",
+        "source": "Rating"
+      },
+      {
+        "name": "lift_prop_pairs",
+        "evidence": {
+          "Margin": {
+            "value": 0.0,
+            "unit": ""
+          }
+        },
+        "detail": "lift prop rotation Some(\"pair\")",
+        "source": "Rating"
+      },
+      {
+        "name": "wire_temperature",
+        "evidence": {
+          "Margin": {
+            "value": 95.55010354846159,
+            "unit": "C"
+          }
+        },
+        "detail": "pusher ESC feed: 18 AWG, 83 C steady at 10.0 A, 104 C after 10 s at 15.0 A",
+        "source": "Physics"
+      },
+      {
+        "name": "battery_connector",
+        "evidence": {
+          "Margin": {
+            "value": 3.126388037344441e-13,
+            "unit": "A"
+          }
+        },
+        "detail": "XT90 45/90 A for 32.2 A hover, 90 A peak",
+        "source": "Rating"
+      },
+      {
+        "name": "fc_outputs",
+        "evidence": {
+          "Margin": {
+            "value": 2.0,
+            "unit": "outputs"
+          }
+        },
+        "detail": "corewing_f405_wing_v2 has 12 outputs",
+        "source": "Rating"
+      },
+      {
+        "name": "servo_power",
+        "evidence": {
+          "Margin": {
+            "value": 3.0,
+            "unit": "A"
+          }
+        },
+        "detail": "servo BEC 8.0 A, five servos stall at 5.0 A",
+        "source": "Rating"
+      },
+      {
+        "name": "ardupilot_params",
+        "evidence": {
+          "Margin": {
+            "value": -0.0,
+            "unit": "params"
+          }
+        },
+        "detail": "54 parameters, all inside ArduPlane's metadata",
+        "source": "Rating"
+      },
+      {
+        "name": "budget",
+        "evidence": {
+          "Margin": {
+            "value": 388.0699999999997,
+            "unit": "USD"
+          }
+        },
+        "detail": "BOM $1612 over 29 lines; budget $2000",
+        "source": "Requirement"
+      },
+      {
+        "name": "span",
+        "evidence": {
+          "Margin": {
+            "value": 0.0,
+            "unit": "mm"
+          }
+        },
+        "detail": "span 1200 mm, allowed 1200",
+        "source": "Requirement"
+      },
+      {
+        "name": "range",
+        "evidence": {
+          "Margin": {
+            "value": 1.2047743019509198,
+            "unit": "km"
+          }
+        },
+        "detail": "211.2 km with 15 % reserve (250.4 km to cutoff)",
+        "source": "Physics"
+      },
+      {
+        "name": "endurance",
+        "evidence": {
+          "Margin": {
+            "value": 194.64139477524094,
+            "unit": "min"
+          }
+        },
+        "detail": "195 min with reserve",
+        "source": "Physics"
+      },
+      {
+        "name": "airspeed_sensor",
+        "evidence": {
+          "Margin": {
+            "value": 0.0,
+            "unit": ""
+          }
+        },
+        "detail": "on board",
+        "source": "Requirement"
+      },
+      {
+        "name": "print_time",
+        "evidence": {
+          "Margin": {
+            "value": 0.0,
+            "unit": "h"
+          }
+        },
+        "detail": "28 pieces, 61.5 h on the bambu_a1 (no limit stated)",
+        "source": "Slicer"
+      },
+      {
+        "name": "printed_mass",
+        "evidence": {
+          "Margin": {
+            "value": 18.17502582176303,
+            "unit": "g"
+          }
+        },
+        "detail": "bambu_pla_aero: sliced 257 g, mass model 275 g",
+        "source": "Slicer"
+      }
+    ]
+  },
+  "feedback": [],
+  "regressions": [],
+  "notes": [],
+  "round": 1,
+  "stated": {
+    "design": {
+      "span_mm": 1200
+    },
+    "requirements": {
+      "budget_usd": 2000,
+      "cells_s": 6,
+      "max_span_mm": 1200,
+      "printer": "bambu_a1",
+      "range_km": 210
+    }
+  },
+  "assumptions": [
+    "{\"name\":\"quadplane_130mi\"} (Encode the request: 130 mi is about 209 km, so 210 km, 1.2 m span, Bambu A1, 6S, $2000 budget.)"
+  ]
+}

@@ -1,0 +1,32 @@
+# Standalone probe: evaluates the oracle's JSON cases with the Rust crates.
+# Its own workspace so it never touches the main one (crates are read-only
+# from here). Features switch on each domain once it exposes its modules.
+[package]
+name = "wright-crosscheck"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[workspace]
+
+[features]
+default = []
+air = ["dep:wright-air"]
+rocket = ["dep:wright-rocket"]
+balloon = ["dep:wright-balloon"]
+# the PCB oracle (Oracle.Pcb): wright-eda is the frozen board contract
+electronics = ["dep:wright-eda", "dep:anyhow", "dep:wright-electronics"]
+
+[dependencies]
+serde_json = "1"
+wright-core = { path = "../../crates/wright-core" }
+wright-air = { path = "../../crates/wright-air", optional = true }
+wright-rocket = { path = "../../crates/wright-rocket", optional = true }
+wright-balloon = { path = "../../crates/wright-balloon", optional = true }
+wright-eda = { path = "../../crates/wright-eda", optional = true }
+# lane E: clearance, ampacity and regulator functions (pcb_clearance / pcb_ampacity / pcb_regulator)
+wright-electronics = { path = "../../crates/wright-electronics", optional = true }
+anyhow = { version = "1", optional = true }
+
+[profile.dev]
+opt-level = 1

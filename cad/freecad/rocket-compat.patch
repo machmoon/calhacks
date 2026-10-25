@@ -1,0 +1,44 @@
+diff --git a/Rocket/FeatureNoseCone.py b/Rocket/FeatureNoseCone.py
+index b43202d..cbb9e50 100644
+--- a/Rocket/FeatureNoseCone.py
++++ b/Rocket/FeatureNoseCone.py
+@@ -54,7 +54,7 @@ from Rocket.Constants import TYPE_CONE, TYPE_BLUNTED_CONE, TYPE_SPHERICAL, TYPE_
+ from Rocket.Constants import STYLE_CAPPED, STYLE_HOLLOW, STYLE_SOLID
+ from Rocket.Constants import STYLE_CAP_SOLID, STYLE_CAP_BAR, STYLE_CAP_CROSS
+ from Rocket.Constants import FEATURE_NOSE_CONE, FEATURE_TRANSITION, FEATURE_INNER_TUBE, \
+-    FEATURE_CENTERING_RING, FEATURE_FIN
++    FEATURE_CENTERING_RING, FEATURE_FIN, FEATURE_TUBE_COUPLER
+ 
+ class FeatureNoseCone(SymmetricComponent):
+ 
+@@ -448,6 +448,7 @@ class FeatureNoseCone(SymmetricComponent):
+ 
+     def eligibleChild(self, childType : str) -> bool:
+         return childType in [
++            FEATURE_TUBE_COUPLER,
+             FEATURE_CENTERING_RING,
+             FEATURE_INNER_TUBE,
+             FEATURE_FIN]
+diff --git a/Rocket/Importer/OpenRocket/OpenRocket.py b/Rocket/Importer/OpenRocket/OpenRocket.py
+index 076f4aa..d3a607f 100644
+--- a/Rocket/Importer/OpenRocket/OpenRocket.py
++++ b/Rocket/Importer/OpenRocket/OpenRocket.py
+@@ -60,7 +60,9 @@ class OpenRocketElement(ComponentElement):
+     def __init__(self, parent, tag, attributes, parentObj, filename, line):
+         super().__init__(parent, tag, attributes, parentObj, filename, line)
+ 
+-        SUPPORTED_VERSIONS = ["1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "1.10"]
++        # The audited 1.11 rigid CAD subset retains the 1.10 geometry schema. Simulation,
++        # preference and recovery-line semantics are outside this importer scope.
++        SUPPORTED_VERSIONS = ["1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "1.10", "1.11"]
+ 
+         if attributes['version'] not in SUPPORTED_VERSIONS:
+             raise UnsupportedVersion(translate("Rocket", "Unsupported OpenRocket file version {}").format(attributes['version']))
+@@ -69,6 +71,7 @@ class OpenRocketElement(ComponentElement):
+                                 'datatypes' : NullElement,
+                                 'simulations' : NullElement,
+                                 'photostudio' : NullElement,
++                                'docprefs' : NullElement, # Document material catalog is not a component material tag
+                               }
+ 
+ class RocketElement(ComponentElement):

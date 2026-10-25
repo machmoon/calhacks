@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Concept A: a W routed like a PCB trace (45-degree bends), vias at the ends, copper on navy -->
+  <rect width="256" height="256" rx="56" fill="#0B1F33"/>
+  <g fill="none" stroke="#D08A4A" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M44 74 L44 136 L80 184 L128 120 L176 184 L212 136 L212 74"/>
+  </g>
+  <g fill="#0B1F33" stroke="#F4D6B8" stroke-width="8">
+    <circle cx="44" cy="74" r="13"/><circle cx="212" cy="74" r="13"/><circle cx="128" cy="120" r="13"/>
+  </g>
+</svg>

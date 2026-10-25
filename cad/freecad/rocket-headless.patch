@@ -1,0 +1,45 @@
+diff --git a/Rocket/RocketComponentShapeless.py b/Rocket/RocketComponentShapeless.py
+index 689baf7..8c19084 100644
+--- a/Rocket/RocketComponentShapeless.py
++++ b/Rocket/RocketComponentShapeless.py
+@@ -896,7 +896,7 @@ class RocketComponentShapeless(Subject, Observer):
+         return 0
+ 
+     def setAppearance(self, appearance) -> None:
+-        if hasattr(self._obj.ViewObject.Proxy, "setAppearance"):
++        if self._obj.ViewObject is not None and hasattr(self._obj.ViewObject.Proxy, "setAppearance"):
+             self._obj.ViewObject.Proxy.setAppearance(appearance)
+ 
+     # This will be implemented in the derived class
+diff --git a/Ui/Commands/CmdRocket.py b/Ui/Commands/CmdRocket.py
+index 7641ae5..e51f20b 100644
+--- a/Ui/Commands/CmdRocket.py
++++ b/Ui/Commands/CmdRocket.py
+@@ -57,9 +57,10 @@ def makeRocket(name='Rocket', makeSustainer=False):
+     if makeSustainer:
+         sustainer = makeStage('Stage')
+         obj.Proxy.addChild(sustainer._obj)
+-        FreeCADGui.Selection.clearSelection()
+-        FreeCADGui.Selection.addSelection(sustainer._obj)
+-    else:
++        if FreeCAD.GuiUp:
++            FreeCADGui.Selection.clearSelection()
++            FreeCADGui.Selection.addSelection(sustainer._obj)
++    elif FreeCAD.GuiUp:
+         FreeCADGui.Selection.clearSelection()
+         FreeCADGui.Selection.addSelection(obj)
+ 
+diff --git a/Ui/Commands/CmdStage.py b/Ui/Commands/CmdStage.py
+index 1ed9624..2c2de4b 100644
+--- a/Ui/Commands/CmdStage.py
++++ b/Ui/Commands/CmdStage.py
+@@ -63,7 +63,8 @@ def makeStage(name='Stage'):
+     if FreeCAD.GuiUp:
+         ViewProviderStage(obj.ViewObject)
+ 
+-    FreeCADGui.ActiveDocument.ActiveView.setActiveObject('stage', obj)
++    if FreeCAD.GuiUp:
++        FreeCADGui.ActiveDocument.ActiveView.setActiveObject('stage', obj)
+     return obj.Proxy
+ 
+ class CmdStage(Command):

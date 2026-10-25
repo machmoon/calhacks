@@ -1,0 +1,23 @@
+[
+  {
+    "file": "MassObject.java",
+    "url": "https://raw.githubusercontent.com/openrocket/openrocket/591c5e5f7b7377e48f2bd5e501cef25cdfbd61d8/core/src/main/java/info/openrocket/core/rocketcomponent/MassObject.java",
+    "sha256": "e05f74e85c6b23b74177d3c11a4d714db380e27ad63fa4ad054ecdcc8ffa935c",
+    "commit": "591c5e5f7b7377e48f2bd5e501cef25cdfbd61d8",
+    "license": "GPL-3.0-or-later"
+  },
+  {
+    "file": "MassComponent.java",
+    "url": "https://raw.githubusercontent.com/openrocket/openrocket/591c5e5f7b7377e48f2bd5e501cef25cdfbd61d8/core/src/main/java/info/openrocket/core/rocketcomponent/MassComponent.java",
+    "sha256": "ac651c918f21635c7a76a6f7f4580addf0fbedd45196583817714f2ccb94052c",
+    "commit": "591c5e5f7b7377e48f2bd5e501cef25cdfbd61d8",
+    "license": "GPL-3.0-or-later"
+  },
+  {
+    "file": "AxialMethod.java",
+    "url": "https://raw.githubusercontent.com/openrocket/openrocket/591c5e5f7b7377e48f2bd5e501cef25cdfbd61d8/core/src/main/java/info/openrocket/core/rocketcomponent/position/AxialMethod.java",
+    "sha256": "64bf069858d554287c64967a70e19562c89201e48b0e0d6a9edd70a641f1e674",
+    "commit": "591c5e5f7b7377e48f2bd5e501cef25cdfbd61d8",
+    "license": "GPL-3.0-or-later"
+  }
+]

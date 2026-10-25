@@ -1,0 +1,59 @@
+{
+ "request": "eval fixture ref25",
+ "circuit": {
+  "devices": {
+   "LM358D": {
+    "pins": {
+     "GND": "4",
+     "IN1+": "3",
+     "IN1-": "2",
+     "IN2+": "5",
+     "IN2-": "6",
+     "OUT1": "1",
+     "OUT2": "7",
+     "VCC": "8"
+    }
+   }
+  },
+  "nets": {
+   "+5V": [
+    "LM358D.VCC",
+    "Rtop.1",
+    "Cdec.1"
+   ],
+   "BUF2": [
+    "LM358D.OUT2",
+    "LM358D.IN2-"
+   ],
+   "DIV": [
+    "LM358D.IN1+",
+    "Rtop.2",
+    "Rbot.1"
+   ],
+   "GND": [
+    "LM358D.GND",
+    "Rbot.2",
+    "Cdec.2",
+    "LM358D.IN2+"
+   ],
+   "VREF": [
+    "LM358D.OUT1",
+    "LM358D.IN1-"
+   ]
+  },
+  "passives": {
+   "Cdec": {
+    "type": "capacitor",
+    "value": "100nF"
+   },
+   "Rbot": {
+    "type": "resistor",
+    "value": "10k"
+   },
+   "Rtop": {
+    "type": "resistor",
+    "value": "10k"
+   }
+  }
+ }
+}

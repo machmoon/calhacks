@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200">
+  <rect width="900" height="200" fill="#0B1F33"/>
+  <g transform="translate(24,24) scale(0.6)">
+    <g fill="none" stroke="#D08A4A" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"><path d="M44 74 L44 136 L80 184 L128 120 L176 184 L212 136 L212 74"/></g>
+    <g fill="#0B1F33" stroke="#F4D6B8" stroke-width="8"><circle cx="44" cy="74" r="13"/><circle cx="212" cy="74" r="13"/><circle cx="128" cy="120" r="13"/></g>
+  </g>
+  <text x="200" y="128" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="104" font-weight="700" fill="#F4D6B8" letter-spacing="-3">Wright</text>
+  <text x="206" y="168" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="24" fill="#D08A4A" letter-spacing="6">AI HARDWARE ENGINEER</text>
+</svg>

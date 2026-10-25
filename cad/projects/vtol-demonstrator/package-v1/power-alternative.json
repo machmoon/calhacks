@@ -1,0 +1,47 @@
+{
+  "status": "proposed_next_revision_not_selected",
+  "purpose": "Avoid one undersized common propulsion connector without reterminating a battery or paralleling packs",
+  "lift": "CNHL500654BKZ4S5000 XT90/10AWG, four liftESCs only",
+  "cruise": "Separate GensAceGEA224S45T3GT4S2200 XT60/12AWG, cruiseESC and low-current avionics supply",
+  "cruise_pack_source_facts": {
+    "dimensions_mm": [
+      108,
+      34,
+      30
+    ],
+    "mass_g": 234,
+    "mass_tolerance_g": 20,
+    "dimension_tolerance_mm": [
+      5,
+      2,
+      2
+    ],
+    "stock": "manufacturer page says out of stock",
+    "use": "XT60 native connector, no supplied EC3/Deans adapter"
+  },
+  "current_screen": {
+    "source": "connector_guide",
+    "XT90_10AWG_continuous_A": 45,
+    "XT90_10AWG_burst_A_under60s": 90,
+    "XT60_12AWG_continuous_A": 30,
+    "XT60_12AWG_burst_A_under60s": 60,
+    "lift_motor_peak_sum_A": 64,
+    "cruise_motor_peak_A": 45,
+    "conditions": [
+      "Continuous hover/cruise must stay below continuous ratings",
+      "Each high-power pulse below60s with thermal recovery established",
+      "No crossconnection of positive rails; common signal ground",
+      "Motor-controller hardware rated current is not enforced current limit"
+    ]
+  },
+  "revised_mass_target_g": 3050,
+  "cruise_energy_Wh": 32.56,
+  "cruise_energy_80percent_Wh": 26.048,
+  "revised_cruise_target_min_at150W": 8,
+  "remaining": [
+    "Secondpack stock alternative required",
+    "Separate energy reserves and CG closed individually",
+    "Exact distribution/branch protection/cable geometry unresolved",
+    "No implementation or hardware compatibility pass"
+  ]
+}

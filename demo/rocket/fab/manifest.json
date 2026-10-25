@@ -1,0 +1,279 @@
+{
+  "kind": "fab",
+  "title": "Fabrication: rocket build",
+  "items": [
+    {
+      "label": "process plan",
+      "path": "plan.json",
+      "media": "json",
+      "summary": "19 made parts (12 machined programs, 1 prints, 6 cuts), 20 bought lines; G-code in gcode/",
+      "metrics": {
+        "machine_minutes": 607.0115500779585,
+        "minutes": 1343.6282167446252,
+        "print_grams": 219.97,
+        "print_minutes": 712.6166666666667
+      }
+    },
+    {
+      "label": "process plan (table)",
+      "path": "plan.csv",
+      "media": "csv",
+      "summary": "one row per part and process",
+      "metrics": {}
+    },
+    {
+      "label": "chamber/nozzle liner (turned)",
+      "path": "video/liner_lathe.mp4",
+      "media": "mp4",
+      "summary": "round bar 88.9 mm dia x 304.1 mm on the 2-axis CNC lathe: 2 setups, 11 ops, simulated material removal",
+      "metrics": {
+        "chips_g": 1909.7469154551554,
+        "grams": 639.7691836934413,
+        "minutes": 106.88344445161148,
+        "qty": 1.0,
+        "stock_g": 2548.118925041668
+      }
+    },
+    {
+      "label": "chamber/nozzle liner finished (turned)",
+      "path": "img/liner_lathe.png",
+      "media": "png",
+      "summary": "last frame of the simulation",
+      "metrics": {
+        "grams": 639.7691836934413
+      }
+    },
+    {
+      "label": "chamber case (turned)",
+      "path": "video/case_lathe.mp4",
+      "media": "mp4",
+      "summary": "round bar 101.6 mm dia x 268.8 mm on the 2-axis CNC lathe: 2 setups, 9 ops, simulated material removal",
+      "metrics": {
+        "chips_g": 5335.600019416332,
+        "grams": 552.7462536797641,
+        "minutes": 73.54924331602459,
+        "qty": 1.0,
+        "stock_g": 5884.570798540016
+      }
+    },
+    {
+      "label": "chamber case finished (turned)",
+      "path": "img/case_lathe.png",
+      "media": "png",
+      "summary": "last frame of the simulation",
+      "metrics": {
+        "grams": 552.7462536797641
+      }
+    },
+    {
+      "label": "injector plate (turned)",
+      "path": "video/injector_lathe.mp4",
+      "media": "mp4",
+      "summary": "round bar 101.6 mm dia x 15.0 mm on the 2-axis CNC lathe: 2 setups, 4 ops, simulated material removal",
+      "metrics": {
+        "chips_g": 111.6562492799195,
+        "grams": 216.69019717525936,
+        "minutes": 32.837154242402875,
+        "qty": 1.0,
+        "stock_g": 328.3464464551785
+      }
+    },
+    {
+      "label": "injector plate finished (turned)",
+      "path": "img/injector_lathe.png",
+      "media": "png",
+      "summary": "last frame of the simulation",
+      "metrics": {
+        "grams": 216.69019717525936
+      }
+    },
+    {
+      "label": "injector plate (milled)",
+      "path": "video/injector_mill.mp4",
+      "media": "mp4",
+      "summary": "round bar 99.6 mm dia x 12.0 mm on the 3-axis CNC mill: 1 setups, 4 ops, simulated material removal",
+      "metrics": {
+        "chips_g": 45.53496290304122,
+        "grams": 206.90236150228492,
+        "minutes": 31.48882414795277,
+        "qty": 1.0,
+        "stock_g": 252.43732440532614
+      }
+    },
+    {
+      "label": "injector plate finished (milled)",
+      "path": "img/injector_mill.png",
+      "media": "png",
+      "summary": "last frame of the simulation",
+      "metrics": {
+        "grams": 206.90236150228492
+      }
+    },
+    {
+      "label": "pintle (turned)",
+      "path": "video/pintle_lathe.mp4",
+      "media": "mp4",
+      "summary": "round bar 44.2 mm dia x 41.0 mm on the 2-axis CNC lathe: 1 setups, 4 ops, simulated material removal",
+      "metrics": {
+        "chips_g": 124.5770248316774,
+        "grams": 45.227889902393706,
+        "minutes": 18.28171044804977,
+        "qty": 1.0,
+        "stock_g": 169.8049147340708
+      }
+    },
+    {
+      "label": "pintle finished (turned)",
+      "path": "img/pintle_lathe.png",
+      "media": "png",
+      "summary": "last frame of the simulation",
+      "metrics": {
+        "grams": 45.227889902393706
+      }
+    },
+    {
+      "label": "LOX tank bulkhead (turned)",
+      "path": "video/ox_bulkhead_lathe.mp4",
+      "media": "mp4",
+      "summary": "round bar 152.4 mm dia x 17.0 mm on the 2-axis CNC lathe: 2 setups, 7 ops, simulated material removal",
+      "metrics": {
+        "chips_g": 301.23285747638175,
+        "grams": 536.0505809843243,
+        "minutes": 35.95923845544099,
+        "qty": 2.0,
+        "stock_g": 837.2834384607049
+      }
+    },
+    {
+      "label": "LOX tank bulkhead finished (turned)",
+      "path": "img/ox_bulkhead_lathe.png",
+      "media": "png",
+      "summary": "last frame of the simulation",
+      "metrics": {
+        "grams": 536.0505809843243
+      }
+    },
+    {
+      "label": "LOX tank bulkhead (milled)",
+      "path": "video/ox_bulkhead_mill.mp4",
+      "media": "mp4",
+      "summary": "round bar 146.0 mm dia x 14.0 mm on the 3-axis CNC mill: 2 setups, 3 ops, simulated material removal",
+      "metrics": {
+        "chips_g": 17.32059640080001,
+        "grams": 615.076518367955,
+        "minutes": 34.119036011511085,
+        "qty": 2.0,
+        "stock_g": 632.397114768755
+      }
+    },
+    {
+      "label": "LOX tank bulkhead finished (milled)",
+      "path": "img/ox_bulkhead_mill.png",
+      "media": "png",
+      "summary": "last frame of the simulation",
+      "metrics": {
+        "grams": 615.076518367955
+      }
+    },
+    {
+      "label": "fins (G10) (routed)",
+      "path": "video/fins_router_1.mp4",
+      "media": "mp4",
+      "summary": "block 304.8 x 304.8 x 4.76 mm on the CNC router: 1 setups, 2 ops, simulated material removal",
+      "metrics": {
+        "chips_g": 37.72353750640305,
+        "minutes": 22.821345906104348,
+        "qty": 1.0,
+        "stock_g": 818.447911488
+      }
+    },
+    {
+      "label": "fins (G10) finished (routed)",
+      "path": "img/fins_router_1.png",
+      "media": "png",
+      "summary": "last frame of the simulation",
+      "metrics": {}
+    },
+    {
+      "label": "fin alignment jig (print)",
+      "path": "video/print_fin_alignment_jig.mp4",
+      "media": "mp4",
+      "summary": "print timelapse from the sliced G-code, 124 layers",
+      "metrics": {
+        "grams": 219.97,
+        "layers": 124.0,
+        "minutes": 712.6166666666667
+      }
+    },
+    {
+      "label": "cut list (first-fit decreasing, kerf per cut)",
+      "path": "cutlist.csv",
+      "media": "csv",
+      "summary": "every tube/rod cut with its bar, offset and offcut",
+      "metrics": {
+        "bars": 3.0,
+        "cuts": 6.0,
+        "minutes": 24.0
+      }
+    },
+    {
+      "label": "tube and rod cutting",
+      "path": "video/cut_tubes.mp4",
+      "media": "mp4",
+      "summary": "6 cuts from 3 bars",
+      "metrics": {
+        "minutes": 24.0
+      }
+    },
+    {
+      "label": "assembly",
+      "path": "video/assembly.mp4",
+      "media": "mp4",
+      "summary": "16 parts fly in in the build guide's order (16 part STLs in the vehicle frame)",
+      "metrics": {
+        "parts": 16.0,
+        "steps": 5.0
+      }
+    },
+    {
+      "label": "turntable",
+      "path": "video/turntable.mp4",
+      "media": "mp4",
+      "summary": "the finished vehicle",
+      "metrics": {
+        "parts": 16.0
+      }
+    },
+    {
+      "label": "render",
+      "path": "img/render_hero.png",
+      "media": "png",
+      "summary": "the finished vehicle",
+      "metrics": {}
+    },
+    {
+      "label": "render (wide)",
+      "path": "img/render_wide.png",
+      "media": "png",
+      "summary": "the whole vehicle",
+      "metrics": {}
+    }
+  ],
+  "checks": [
+    {
+      "name": "every machined part fits its stock",
+      "passed": false,
+      "detail": "fin needs 313.4 mm, stock 304.8 mm"
+    },
+    {
+      "name": "machining stock is in the BOM",
+      "passed": false,
+      "detail": "LOX tank bulkheads: 6061 round bar 6.0 in dia x 38 mm (2 blanks); fuel tank bulkheads: 6061 round bar 6.0 in dia x 38 mm (2 blanks)"
+    },
+    {
+      "name": "cut lists fit the bought tube/rod",
+      "passed": true,
+      "detail": "6 cuts from 3 bars"
+    }
+  ]
+}

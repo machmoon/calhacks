@@ -1,0 +1,50 @@
+{
+  "id": "looping-lead",
+  "description": "The lead calls check forever without changing anything. Either the turn limit ends each round (round_limit) or the per-tool repair budget cuts the loop off (trace.rs, error); the reviewer must never approve the failing design, and the run must stay under a call and cost cap.",
+  "domain": "toy",
+  "request": "a span for a 100 mm gap under $50",
+  "spec": {
+    "target_mm": 100.0,
+    "budget_usd": 50.0
+  },
+  "limits": {
+    "max_rounds": 2,
+    "orchestrator_turns": 8,
+    "specialist_turns": 4,
+    "reviewer_turns": 2,
+    "budget_usd": 1.25
+  },
+  "model": {
+    "orchestrator": [
+      {
+        "tool": "design",
+        "input": {}
+      },
+      {
+        "tool": "check",
+        "input": {},
+        "repeat": 100
+      }
+    ],
+    "reviewer": [
+      {
+        "tool": "verdict",
+        "input": {
+          "summary": "span still fails; nothing changed"
+        },
+        "repeat": 3
+      }
+    ]
+  },
+  "expect": {
+    "passed": false,
+    "max_rounds": 2,
+    "max_calls": 18,
+    "max_cost_usd": 0.5,
+    "script_exhausted": false,
+    "stop_in": [
+      "round_limit",
+      "error"
+    ]
+  }
+}

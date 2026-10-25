@@ -1,0 +1,38 @@
+{
+  "scope": "AI-authored editable camera mount added to existing SO101; model repair iteration2, not first-attempt success",
+  "model": "gpt-6-astra",
+  "transport": "Existing Wright CodexTransport with ChatGPT subscription; no API billing fallback",
+  "attempts": [
+    {
+      "attempt": 1,
+      "request_sha256": "0c1c302045b663428782aadca656136af0f12c5da3727cc63eb6581cbc180cdb",
+      "candidate_sha256": "5970b8e6ca6769e2ed7a36304a90370720a103e29147ff3c3fb3c738084065b4",
+      "response_sha256": "8ac8c41e0bd1e966becd5939f91bba5b09b7a528a5c06bb4a670855b3b2f8f2c",
+      "usage": {
+        "cache_read_input_tokens": 0,
+        "input_tokens": 20289,
+        "output_tokens": 4443
+      }
+    },
+    {
+      "attempt": 2,
+      "request_sha256": "d951ceb6aee0b5aab5d3c7d0254e7f888a417a35c1b37f79c5799995b3f3d232",
+      "candidate_sha256": "0bdecf0df25c25a766098abd850f4ffa84459dd7f6fd673895c43200f1f09c00",
+      "response_sha256": "b545d54c1707c018b23935f1f45e202ab7506257fd7cdf1edba4e158e7428951",
+      "usage": {
+        "cache_read_input_tokens": 0,
+        "input_tokens": 28020,
+        "output_tokens": 6439
+      }
+    }
+  ],
+  "first_failure": "Candidate preservation compared computed assembly aggregate Shape and transient _Part_ShapeCache against original leaf content; retained unchanged code and exact trace diagnosis",
+  "repair": "Model received its priorcode and measured diagnostic facts; host did not edit model geometry code",
+  "second_execution_passed": true,
+  "independent_verification_pending": true,
+  "artifact": "out/so101-camera-mount/attempt-2/build/assembly.FCStd",
+  "artifact_sha256": "cdd100c8baddb2f3e07f828122064226d096c207bae6b7d7167f81b7a843973b",
+  "source_unchanged": true,
+  "first_gui_execution": "Parent recorded actual stages before same assertion failure; see ignored run logs",
+  "second_gui_execution": "Same unchanged candidate replayed by parent into separate gui-build; result tracked separately"
+}

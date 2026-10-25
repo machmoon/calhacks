@@ -1,0 +1,194 @@
+{
+ "note": "Reactant records for the equilibrium solver. Enthalpy is the assigned molar enthalpy at temperature_k (J/mol), copied from NASA CEA data/thermo.inp REACTANTS section unless stated; density is the liquid density at temperature_k (kg/m^3).",
+ "rows": [
+  {
+   "id": "lox",
+   "cea_name": "O2(L)",
+   "role": "oxidizer",
+   "formula": {
+    "O": 2.0
+   },
+   "molar_mass_g": 31.9988,
+   "temperature_k": 90.17,
+   "enthalpy_j_mol": -12979.0,
+   "density_kg_m3": 1141.0,
+   "cryogenic": true,
+   "url": "https://github.com/nasa/cea/blob/2f79a647e85737742fb08a127da00d1ea1d069da/data/thermo.inp",
+   "retrieved": "2026-10-24",
+   "density_url": "https://webbook.nist.gov/cgi/fluid.cgi?ID=C7782447&Action=Page (saturated liquid at 90.19 K: 1141.2 kg/m^3)"
+  },
+  {
+   "id": "ethanol",
+   "cea_name": "C2H5OH(L)",
+   "role": "fuel",
+   "formula": {
+    "C": 2.0,
+    "H": 6.0,
+    "O": 1.0
+   },
+   "molar_mass_g": 46.06844,
+   "temperature_k": 298.15,
+   "enthalpy_j_mol": -277510.0,
+   "density_kg_m3": 785.0,
+   "cryogenic": false,
+   "url": "https://github.com/nasa/cea/blob/2f79a647e85737742fb08a127da00d1ea1d069da/data/thermo.inp",
+   "retrieved": "2026-10-24",
+   "density_url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C64175 (0.785 g/cm^3 at 25 C, CRC Handbook)"
+  },
+  {
+   "id": "water",
+   "cea_name": "H2O(L)",
+   "role": "diluent",
+   "formula": {
+    "H": 2.0,
+    "O": 1.0
+   },
+   "molar_mass_g": 18.01528,
+   "temperature_k": 298.15,
+   "enthalpy_j_mol": -285830.0,
+   "density_kg_m3": 997.0,
+   "cryogenic": false,
+   "url": "https://github.com/nasa/cea/blob/2f79a647e85737742fb08a127da00d1ea1d069da/data/thermo.inp",
+   "retrieved": "2026-10-24",
+   "density_url": "https://webbook.nist.gov/cgi/fluid.cgi?ID=C7732185&Action=Page"
+  },
+  {
+   "id": "rp1",
+   "cea_name": "RP-1",
+   "role": "fuel",
+   "formula": {
+    "C": 1.0,
+    "H": 1.9532
+   },
+   "molar_mass_g": 13.976183,
+   "temperature_k": 298.15,
+   "enthalpy_j_mol": -24717.7,
+   "density_kg_m3": 810.0,
+   "cryogenic": false,
+   "url": "https://github.com/nasa/cea/blob/2f79a647e85737742fb08a127da00d1ea1d069da/data/thermo.inp",
+   "retrieved": "2026-10-24",
+   "density_url": "Mehta et al. AIAA 95-2962 (cited in thermo.inp RP-1 record); 0.81 g/cm^3 typical, MIL-DTL-25576 range 0.799-0.815"
+  },
+  {
+   "id": "methane",
+   "cea_name": "CH4(L)",
+   "role": "fuel",
+   "formula": {
+    "C": 1.0,
+    "H": 4.0
+   },
+   "molar_mass_g": 16.04246,
+   "temperature_k": 111.643,
+   "enthalpy_j_mol": -89233.0,
+   "density_kg_m3": 422.4,
+   "cryogenic": true,
+   "url": "https://github.com/nasa/cea/blob/2f79a647e85737742fb08a127da00d1ea1d069da/data/thermo.inp",
+   "retrieved": "2026-10-24",
+   "density_url": "https://webbook.nist.gov/cgi/fluid.cgi?ID=C74828&Action=Page (saturated liquid at 111.67 K: 422.4 kg/m^3)"
+  },
+  {
+   "id": "hydrogen",
+   "cea_name": "H2(L)",
+   "role": "fuel",
+   "formula": {
+    "H": 2.0
+   },
+   "molar_mass_g": 2.01588,
+   "temperature_k": 20.27,
+   "enthalpy_j_mol": -9012.0,
+   "density_kg_m3": 70.85,
+   "cryogenic": true,
+   "url": "https://github.com/nasa/cea/blob/2f79a647e85737742fb08a127da00d1ea1d069da/data/thermo.inp",
+   "retrieved": "2026-10-24",
+   "density_url": "https://webbook.nist.gov/cgi/fluid.cgi?ID=C1333740&Action=Page"
+  },
+  {
+   "id": "n2o",
+   "cea_name": "N2O (liquid, saturated at 293.15 K; not a thermo.inp record)",
+   "role": "oxidizer",
+   "formula": {
+    "N": 2.0,
+    "O": 1.0
+   },
+   "molar_mass_g": 44.0128,
+   "temperature_k": 293.15,
+   "enthalpy_j_mol": 70371.0,
+   "density_kg_m3": 785.1,
+   "cryogenic": false,
+   "self_pressurizing": true,
+   "url": "https://webbook.nist.gov/cgi/fluid.cgi?Action=Data&Wide=on&ID=C10024972&Type=SatT&Digits=5&TUnit=K&PUnit=bar&DUnit=kg%2Fm3&HUnit=kJ%2Fkg",
+   "retrieved": "2026-10-24",
+   "density_url": "Saturated liquid at 293.15 K, interpolated between NIST WebBook rows 293.03 K (786.06 kg/m^3, h_l 214.05 kJ/kg) and 293.96 K (778.84, 216.66) in data/rocket/n2o_saturation.json. Enthalpy = CEA thermo.inp N2O(g) 81600 J/mol at 298.15 K + (h_l(293.15 K) 214.39 - h_ideal-gas(298.15 K) 469.51) kJ/kg x 44.0128 g/mol = 81600 - 11229 J/mol. The run tank is self-pressurised: data/rocket/n2o_saturation.json drives its blowdown."
+  },
+  {
+   "id": "n2o_gas",
+   "cea_name": "N2O",
+   "role": "oxidizer",
+   "formula": {
+    "N": 2.0,
+    "O": 1.0
+   },
+   "molar_mass_g": 44.0128,
+   "temperature_k": 298.15,
+   "enthalpy_j_mol": 81600.0,
+   "density_kg_m3": 743.9,
+   "cryogenic": false,
+   "url": "https://github.com/nasa/cea/blob/2f79a647e85737742fb08a127da00d1ea1d069da/data/thermo.inp",
+   "retrieved": "2026-10-24",
+   "density_url": "https://webbook.nist.gov/cgi/fluid.cgi?ID=C10024972&Action=Page (saturated liquid at 298.15 K: ~744 kg/m^3); enthalpy is the gas-phase record, as CEA users commonly run N2O"
+  },
+  {
+   "id": "ipa",
+   "cea_name": "C3H8O,2propanol(L) (not in thermo.inp)",
+   "role": "fuel",
+   "formula": {
+    "C": 3.0,
+    "H": 8.0,
+    "O": 1.0
+   },
+   "molar_mass_g": 60.09502,
+   "temperature_k": 298.15,
+   "enthalpy_j_mol": -318100.0,
+   "density_kg_m3": 781.0,
+   "cryogenic": false,
+   "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C67630&Mask=2",
+   "retrieved": "2026-10-24",
+   "density_url": "NIST WebBook liquid dHf -318.1 kJ/mol (Snelson & Skinner 1961, via combustion enthalpy); density 0.781 g/cm^3 at 25 C (CRC)"
+  },
+  {
+   "id": "ipa_gas",
+   "cea_name": "C3H8O,2propanol",
+   "role": "fuel",
+   "formula": {
+    "C": 3.0,
+    "H": 8.0,
+    "O": 1.0
+   },
+   "molar_mass_g": 60.09502,
+   "temperature_k": 298.15,
+   "enthalpy_j_mol": -272700.0,
+   "density_kg_m3": 781.0,
+   "cryogenic": false,
+   "url": "https://github.com/nasa/cea/blob/2f79a647e85737742fb08a127da00d1ea1d069da/data/thermo.inp",
+   "retrieved": "2026-10-24",
+   "density_url": "gas-phase record; used only to match the CEA validation case"
+  },
+  {
+   "id": "propane",
+   "cea_name": "C3H8(L)",
+   "role": "fuel",
+   "formula": {
+    "C": 3.0,
+    "H": 8.0
+   },
+   "molar_mass_g": 44.09562,
+   "temperature_k": 231.076,
+   "enthalpy_j_mol": -128228.0,
+   "density_kg_m3": 493.0,
+   "cryogenic": false,
+   "url": "https://github.com/nasa/cea/blob/2f79a647e85737742fb08a127da00d1ea1d069da/data/thermo.inp",
+   "retrieved": "2026-10-24",
+   "density_url": "https://webbook.nist.gov/cgi/fluid.cgi?ID=C74986&Action=Page (saturated liquid at 298 K: ~493 kg/m^3; vapour pressure 9.5 bar). Enthalpy is CEA's record at the 231.076 K normal boiling point; a tank at 298 K holds liquid ~7 kJ/mol warmer, raising Tc by ~0.3 % (not modelled)."
+  }
+ ]
+}

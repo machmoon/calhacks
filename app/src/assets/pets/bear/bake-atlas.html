@@ -1,0 +1,358 @@
+<!doctype html>
+<!--
+  How src/assets/pets/bear/spritesheet.png was made. Not part of the build.
+
+  The bear is Baluc by Adarsh Jha (MIT, ./LICENSE):
+  https://github.com/Adarsh-Jha/baluc-desktop-pet/blob/main/pet.html
+  The `PetBear` class below is copied verbatim from that file (lines 20-312);
+  only the tail script is ours. It poses their bear frame by frame (with
+  performance.now pinned per frame) and lays the frames out as a Codex pet
+  atlas: 8 columns x 9 rows of 192x208, rows in the order of
+  openai/skills skills/.curated/hatch-pet/references/animation-rows.md.
+
+  Re-bake (headless Chrome prints the atlas as a data URL):
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new \
+      --user-data-dir=/tmp/bake-prof --dump-dom file://$PWD/bake-atlas.html > out.html
+  then base64-decode the data:image/png URL in out.html into spritesheet.png.
+-->
+<html><body><pre id="out"></pre><script>
+const api = null;
+class PetBear {
+  constructor(canvas){
+    this.cv = canvas; this.ctx = canvas.getContext('2d');
+    this.variant = (api && api.getVariant && api.getVariant()) || localStorage.getItem('baluc.variant') || 'brown';
+    this.CUR = {}; this._off=null; this._offg=null;
+    this.dpr = Math.min(window.devicePixelRatio||1, 2);
+    // world state -----------------------------------------------------------
+    this.W=window.innerWidth; this.H=window.innerHeight;
+    this.groundY = this.H - 18;               // feet rest a touch above the bottom edge
+    this.x = this.W*0.5; this.facing=1; this.ph=0;
+    this.cursor = {x:this.W*0.5, y:this.H*0.5, inside:false};
+    this.lastMove = performance.now();
+    this.state = 'follow';                    // follow | sit | eat | nap | wake | pet
+    this.stateT = performance.now();
+    this.slamT = -9999;                       // keyboard smash trigger
+    this.scrollVel = 0;                       // back-scratch energy
+    this.nextNapRoll = performance.now()+8000;
+    this.hovering = false;
+    // ---- user-tunable settings (overwritten by applySettings from main) ----
+    this.sizeMul = 0.22;            // size multiplier
+    this.followGap = 140;           // px of space kept from the cursor
+    this.followSpeed = 0.085;       // how eagerly he closes the gap
+    this.behaviors = { follow:true, pet:true, honey:true, nap:true, keyboard:true, scroll:true };
+    this.recalcScale();
+  }
+
+  recalcScale(){
+    this.baseScale = Math.min(this.W,this.H)/300*2.4;
+    this.scale = Math.max(1.3, this.baseScale * this.sizeMul);
+  }
+
+  applySettings(s){
+    if(!s) return;
+    if(s.variant) this.setVariant(s.variant);
+    if(typeof s.size==='number') this.sizeMul=s.size;
+    if(typeof s.followGap==='number') this.followGap=s.followGap;
+    if(typeof s.followSpeed==='number') this.followSpeed=s.followSpeed;
+    if(s.behaviors) this.behaviors={...this.behaviors, ...s.behaviors};
+    this.recalcScale();
+  }
+
+  setVariant(v){ if(this.PAL[v]){ this.variant=v; this.CUR={}; try{localStorage.setItem('baluc.variant',v);}catch(e){} } }
+
+  // ---------- palettes ----------
+  PAL = {
+    brown:    { body:'#a9744a', shadow:'#8a5c38', light:'#cfa477', muzzle:'#e7cba0', outline:'#5b3a20', nose:'#3a2413', eye:'#241409', glint:'#ffffff' },
+    beige:    { body:'#dcbd92', shadow:'#c6a576', light:'#eaddc4', muzzle:'#f6edda', outline:'#9c7c54', nose:'#5c4830', eye:'#3f3020', glint:'#ffffff' },
+    black:    { body:'#3c3a42', shadow:'#2b2a31', light:'#56535d', muzzle:'#cdb79a', outline:'#19181d', nose:'#0b0a0d', eye:'#ece7ef', glint:'#15141a' },
+    pink:     { body:'#f4abc6', shadow:'#e08fb0', light:'#ffd7e7', muzzle:'#fff1f6', outline:'#b06481', nose:'#7a4257', eye:'#5a3344', glint:'#ffffff' },
+    mint:     { body:'#a3ddbf', shadow:'#86c9a8', light:'#d3f2e2', muzzle:'#eefff7', outline:'#5a9a7b', nose:'#3f6e57', eye:'#2f5a45', glint:'#ffffff' },
+    lavender: { body:'#c2b4e4', shadow:'#a797d0', light:'#e4dbf8', muzzle:'#f4efff', outline:'#7d6aa6', nose:'#574a73', eye:'#3f3559', glint:'#ffffff' }
+  };
+
+  // ---------- pixel primitives ----------
+  ell(g,cx,cy,rx,ry,col){g.fillStyle=col;for(let y=Math.floor(cy-ry);y<=Math.ceil(cy+ry);y++){for(let x=Math.floor(cx-rx);x<=Math.ceil(cx+rx);x++){const dx=(x-cx+0.5)/rx,dy=(y-cy+0.5)/ry;if(dx*dx+dy*dy<=1)g.fillRect(x,y,1,1);}}}
+  disc(g,cx,cy,r,col){this.ell(g,cx,cy,r,r,col);}
+  px(g,x,y,col){g.fillStyle=col;g.fillRect(Math.round(x),Math.round(y),1,1);}
+  rct(g,x,y,w,h,col){g.fillStyle=col;g.fillRect(x,y,w,h);}
+  eyes(g,st,p,cx,cy){const E=p.eye,N=p.nose,G=p.glint,L=cx-4,R=cx+4,Y=cy;
+    if(st==='closed'){this.rct(g,L-2,Y,4,1,N);this.rct(g,R-2,Y,4,1,N);this.px(g,L-2,Y-1,N);this.px(g,R+1,Y-1,N);}
+    else if(st==='happy'){const car=(c0)=>{this.px(g,c0-2,Y,N);this.px(g,c0-1,Y-1,N);this.px(g,c0,Y-1,N);this.px(g,c0+1,Y,N);this.px(g,c0+2,Y+1,N);};car(L);car(R);}
+    else if(st==='dizzy'){[L,R].forEach((c0)=>{this.px(g,c0-1,Y-1,N);this.px(g,c0,Y,N);this.px(g,c0+1,Y+1,N);this.px(g,c0+1,Y-1,N);this.px(g,c0-1,Y+1,N);});}
+    else{this.ell(g,L,Y,2,2.4,E);this.ell(g,R,Y,2,2.4,E);this.px(g,L-1,Y-1,G);this.px(g,R-1,Y-1,G);this.px(g,L,Y-2,G);this.px(g,R,Y-2,G);}
+  }
+  mouth(g,m,p,cx,cy){const N=p.nose;if(m==='open'){this.ell(g,cx,cy,2,1.5,N);}else if(m==='eat'){this.disc(g,cx,cy,1.3,N);}else{this.px(g,cx-2,cy-1,N);this.px(g,cx-1,cy,N);this.px(g,cx,cy,N);this.px(g,cx+1,cy,N);this.px(g,cx+2,cy-1,N);}}
+
+  // ---------- curled (nap) sprite ----------
+  buildCurled(v){
+    const p=this.PAL[v],O=p.outline;
+    const c=document.createElement('canvas');c.width=40;c.height=27;const g=c.getContext('2d');
+    this.disc(g,21,15,12,O);this.disc(g,21,15,11,p.body);this.ell(g,23,14,8,8,p.light);
+    this.disc(g,12,18,6.5,O);this.disc(g,12,18,5.5,p.body);
+    this.disc(g,8,11,2.6,O);this.disc(g,16,9,2.6,O);this.disc(g,8,11,1.7,p.body);this.disc(g,16,9,1.7,p.body);
+    this.ell(g,11,20,3,2,p.muzzle);this.rct(g,9,18,3,1,p.nose);this.disc(g,11,19,1.1,p.nose);
+    this.disc(g,27,23,2.6,O);this.disc(g,27,23,1.8,p.body);this.disc(g,32,21,2.2,O);this.disc(g,32,21,1.6,p.body);
+    return c;
+  }
+  getCurled(v){if(!this.CUR[v])this.CUR[v]=this.buildCurled(v);return this.CUR[v];}
+
+  // ---------- single fused-silhouette bear ----------
+  _cap(g,x1,y1,x2,y2,r,col){const n=Math.max(2,Math.ceil(Math.hypot(x2-x1,y2-y1)/2));for(let i=0;i<=n;i++){const u=i/n;this.disc(g,x1+(x2-x1)*u,y1+(y2-y1)*u,r,col);}}
+  drawBear(ctx,x,y,s,o){o=o||{};
+    const v=o.variant||this.variant, p=this.PAL[v];
+    const flip=o.flip||1, rot=o.rot||0, sx=o.sx==null?1:o.sx, sy=o.sy==null?1:o.sy;
+    const t=performance.now(), phs=o.phase||0;
+    const earSway=(o.earSway||0)+Math.sin(t*0.004+phs)*0.07;
+    const bj=(o.bellyJ||0)+Math.sin(t*0.005+phs)*0.02;
+    const bob=(o.headBob||0)+Math.sin(t*0.004-0.7+phs)*1.0;
+    const htilt=(o.headTilt||0)+Math.sin(t*0.004-1.1+phs)*0.02;
+    const torso=(o.torso||0)+Math.sin(t*0.0045+phs)*0.014;
+    const aL=o.armL==null?-0.06:o.armL, aR=o.armR==null?0.06:o.armR;
+    const lift=o.legLift||[0,0], lrot=o.legRot||[0,0], elbow=o.elbow||[0,0];
+    const LW=80,LH=74,OX=40,FEET=66;
+    if(!this._off){this._off=document.createElement('canvas');this._off.width=LW;this._off.height=LH;this._offg=this._off.getContext('2d');}
+    const off=this._off,g=this._offg;g.clearRect(0,0,LW,LH);g.imageSmoothingEnabled=false;
+    const F=p.body, lean=torso*6, tlt=htilt*4;
+    const bcx=OX+lean*0.4, bcy=FEET-16, brx=15*(1-bj*0.5), bry=14*(1+bj);
+    const hcx=OX+lean+tlt, hcy=FEET-31-bob, hr=11;
+    const armSeg=(sgn,ang,eb,side)=>{const SX=OX+sgn*10+lean,SY=FEET-24,uL=8,pL=7;const ux=SX-uL*Math.sin(ang),uy=SY+uL*Math.cos(ang);const pa=ang*0.45+eb+Math.sin(t*0.006+phs+side)*0.07;return{SX,SY,ux,uy,px:ux-pL*Math.sin(pa),py:uy+pL*Math.cos(pa)};};
+    const AL=armSeg(-1,aL,elbow[0],0), AR=armSeg(1,aR,elbow[1],3.1);
+    const legSeg=(sgn,lf,lr)=>{const HX=OX+sgn*6+lean*0.3,HY=FEET-12;return{HX,HY,fx:HX+Math.sin(lr)*5+sgn,fy:FEET-4-lf};};
+    const LL=legSeg(-1,lift[0],lrot[0]), LR=legSeg(1,lift[1],lrot[1]);
+    const eo=8+earSway*4;
+    const masses=(rad,col)=>{
+      this._cap(g,LL.HX,LL.HY,LL.fx,LL.fy,4.6+rad,col);this.disc(g,LL.fx,LL.fy,4.9+rad,col);
+      this._cap(g,LR.HX,LR.HY,LR.fx,LR.fy,4.6+rad,col);this.disc(g,LR.fx,LR.fy,4.9+rad,col);
+      this._cap(g,AL.SX,AL.SY,AL.ux,AL.uy,3.5+rad,col);this._cap(g,AL.ux,AL.uy,AL.px,AL.py,3.2+rad,col);this.disc(g,AL.px,AL.py,3.4+rad,col);
+      this._cap(g,AR.SX,AR.SY,AR.ux,AR.uy,3.5+rad,col);this._cap(g,AR.ux,AR.uy,AR.px,AR.py,3.2+rad,col);this.disc(g,AR.px,AR.py,3.4+rad,col);
+      this.ell(g,bcx,bcy,brx+rad,bry+rad,col);
+      this.disc(g,hcx-eo,hcy-8,3.7+rad,col);this.disc(g,hcx+eo,hcy-8,3.7+rad,col);
+      this.disc(g,hcx,hcy,hr+rad,col);
+    };
+    masses(1.2,p.outline);
+    masses(0,F);
+    this.disc(g,hcx-eo,hcy-8,1.4,p.light);this.disc(g,hcx+eo,hcy-8,1.4,p.light);
+    this.ell(g,bcx,bcy+3,7,6,p.light);
+    this.ell(g,hcx,hcy+4,5,3.2,p.muzzle);
+    this.eyes(g,o.eyes||'open',p,Math.round(hcx),Math.round(hcy+1));
+    this.disc(g,hcx,hcy+3,1.3,p.nose);
+    this.mouth(g,o.mouth||'smile',p,Math.round(hcx),Math.round(hcy+5));
+    ctx.save();ctx.translate(x,y);if(rot)ctx.rotate(rot);ctx.scale(flip*s*sx,s*sy);ctx.imageSmoothingEnabled=false;ctx.drawImage(off,-OX,-FEET);ctx.restore();
+  }
+  blitS(ctx,sp,x,y,s,o){o=o||{};const flip=o.flip||1,rot=o.rot||0,sx=o.sx==null?1:o.sx,sy=o.sy==null?1:o.sy,al=o.alpha==null?1:o.alpha;ctx.save();ctx.globalAlpha=al;ctx.translate(x,y);if(rot)ctx.rotate(rot);ctx.scale(flip*s*sx,s*sy);ctx.imageSmoothingEnabled=false;ctx.drawImage(sp,-sp.width/2,-sp.height);ctx.restore();}
+
+  // ---------- shared helpers ----------
+  eIO(t){t=Math.max(0,Math.min(1,t));return t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2;}
+  lerp(a,b,t){return a+(b-a)*Math.max(0,Math.min(1,t));}
+  shadow(ctx,x,y,rw){ctx.save();ctx.fillStyle='rgba(40,30,30,0.18)';ctx.beginPath();ctx.ellipse(x,y,Math.max(2,rw),Math.max(2,rw)*0.3,0,0,7);ctx.fill();ctx.restore();}
+  text(ctx,str,x,y,col,size){ctx.save();ctx.font=size+"px monospace";ctx.textAlign='center';ctx.fillStyle=col;ctx.fillText(str,x,y);ctx.restore();}
+  rrect(ctx,x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath();ctx.fill();}
+  hugePot(ctx,x,fy,Hh){const pw=Hh*0.74,ph=Hh*0.86,px=x-pw/2,py=fy-ph;ctx.fillStyle='#b5732c';this.rrect(ctx,px,py+4,pw,ph-4,8);ctx.fillStyle='#9a5f22';this.rrect(ctx,px,py+ph-9,pw,9,6);ctx.fillStyle='#ffcb45';this.rrect(ctx,px-3,py,pw+6,9,4);ctx.fillStyle='#ffd766';ctx.beginPath();ctx.ellipse(x,py+3,pw/2,4,0,0,7);ctx.fill();ctx.save();ctx.font=Math.round(Hh*0.1)+"px monospace";ctx.fillStyle='#5a3a1a';ctx.textAlign='center';ctx.fillText('HONEY',x,py+ph*0.6);ctx.restore();}
+
+  // ---------- bounding box (for click-through hit testing) ----------
+  bbox(){
+    const s=this.scale, half=22*s, top=this.feetY()-64*s;
+    return {x:this.x-half, y:top, w:half*2, h:this.feetY()-top+6*s};
+  }
+  feetY(){ return this.groundY; }
+
+  // ---------- external triggers ----------
+  pokeMove(x,y){ const moved=Math.abs(x-this.cursor.x)+Math.abs(y-this.cursor.y);
+    this.cursor.x=x; this.cursor.y=y;
+    if(moved>1.5){ this.lastMove=performance.now();
+      if(this.state==='nap'||this.state==='sit'||this.state==='eat'){ this.enter('wake'); } } }
+  poke(){ // click on the bear
+    if(this.state==='nap'||this.state==='sit'||this.state==='eat'){ this.enter('wake'); }
+    else if(this.behaviors.pet){ this.enter('pet'); } }
+  triggerType(){ if(!this.behaviors.keyboard) return; this.slamT=performance.now(); if(this.state!=='follow') this.enter('follow'); }
+  triggerScroll(mag){ if(!this.behaviors.scroll) return; this.scrollVel=Math.min(48,this.scrollVel*0.6+Math.abs(mag)*0.9); if(this.state!=='follow') this.enter('follow'); }
+
+  enter(st){ this.state=st; this.stateT=performance.now(); if(st==='wake'){this.wakeT=performance.now();} if(st==='pet'){this.petT=performance.now();} }
+
+  // ---------- per-frame brain ----------
+  think(now){
+    const idle = now - this.lastMove;
+    switch(this.state){
+      case 'follow': {
+        // random catnap roll while nothing's happening
+        if(this.behaviors.nap && idle>4000 && now>this.nextNapRoll){ this.nextNapRoll=now+9000; if(Math.random()<0.5){ this.enter('nap'); break; } }
+        if(this.behaviors.honey && idle>7000){ this.enter('sit'); }
+        break; }
+      case 'sit':  if(now-this.stateT>1400) this.enter(this.behaviors.honey?'eat':'follow'); break;
+      case 'eat':  if(now-this.stateT>9000) this.enter(this.behaviors.nap?'nap':'follow');
+                   else if(idle<200) this.enter('wake'); break;
+      case 'nap':  break; // only a poke / cursor move wakes him
+      case 'wake': if(now-this.wakeT>900) this.enter('follow'); break;
+      case 'pet':  if(now-this.petT>1500) this.enter('follow'); break;
+    }
+  }
+
+  // ---------- render ----------
+  resize(){ this.W=window.innerWidth; this.H=window.innerHeight; this.groundY=this.H-18;
+    this.cv.width=Math.round(this.W*this.dpr); this.cv.height=Math.round(this.H*this.dpr);
+    this.recalcScale(); }
+
+  frame(){
+    const now=performance.now(), ctx=this.ctx, s=this.scale;
+    this.think(now);
+    ctx.setTransform(this.dpr,0,0,this.dpr,0,0);
+    ctx.clearRect(0,0,this.W,this.H);
+    ctx.imageSmoothingEnabled=false;
+    const fy=this.feetY();
+
+    // ----- locomotion (follow the real cursor, but keep a respectful gap) -----
+    let walking=false;
+    if(this.behaviors.follow && (this.state==='follow'||this.state==='wake')){
+      const gap=this.followGap;
+      const dx=this.cursor.x-this.x;            // raw distance to the pointer
+      if(Math.abs(dx)>gap){                     // only close in if we're farther than the gap
+        this.facing=dx>0?1:-1;
+        // aim for a spot `gap` px short of the cursor so he never stands on it
+        let tx=this.cursor.x-Math.sign(dx)*gap;
+        tx=Math.max(28*s, Math.min(this.W-28*s, tx));
+        const step=tx-this.x;
+        this.x+=step*this.followSpeed;
+        walking=Math.abs(step)>6;
+      }
+    }
+
+    // ----- keyboard smash overrides posture while typing -----
+    const sinceSlam=now-this.slamT;
+    const typing = sinceSlam<700;
+
+    // ----- back-scratch energy decays each frame -----
+    this.scrollVel*=0.9;
+    const scratch = this.scrollVel>1.5;
+
+    // dispatch pose ----------------------------------------------------------
+    if(typing){ this.poseType(ctx,fy,s,now,sinceSlam); }
+    else if(scratch){ this.poseScratch(ctx,fy,s,now); }
+    else switch(this.state){
+      case 'follow': case 'wake': this.poseWalk(ctx,fy,s,now,walking,this.state==='wake'); break;
+      case 'sit': this.poseSit(ctx,fy,s,now); break;
+      case 'eat': this.poseEat(ctx,fy,s,now); break;
+      case 'nap': this.poseNap(ctx,fy,s,now); break;
+      case 'pet': this.posePet(ctx,fy,s,now); break;
+    }
+  }
+
+  // ===== poses (each ported from the showcase tiles) =====
+  poseWalk(ctx,fy,s,now,walking,waking){
+    const sp = walking?1:0;
+    this.ph += 0.10 + sp*0.22;
+    const ph=this.ph;
+    const liftL=Math.max(0,Math.sin(ph))*5.5*sp, liftR=Math.max(0,Math.sin(ph+Math.PI))*5.5*sp;
+    const armL=-0.16+Math.sin(ph+Math.PI)*0.5*sp, armR=0.16+Math.sin(ph)*0.5*sp;
+    const bob=Math.abs(Math.sin(ph))*4*sp, tilt=Math.sin(ph)*0.06*sp;
+    const br=Math.sin(now*0.003)*0.03*(1-sp);
+    this.shadow(ctx,this.x,fy,15*s*0.5);
+    this.drawBear(ctx,this.x,fy-bob,s,{flip:this.facing,rot:tilt,eyes:(sp>0.15||waking)?'happy':'open',armL,armR,
+      elbow:[Math.cos(ph)*0.3*sp,Math.cos(ph+Math.PI)*0.3*sp],torso:Math.sin(ph)*0.08*sp,headBob:Math.sin(ph-0.8)*1.6*sp,
+      legLift:[liftL,liftR],legRot:[Math.cos(ph)*0.25*sp,Math.cos(ph+Math.PI)*0.25*sp],sy:1+br-0.04*Math.abs(Math.sin(ph))*sp,sx:1-br});
+    if(waking){ const pe=now-this.wakeT; if(pe<480) this.text(ctx,'!',this.x,fy-34*s,'#e8a13c',12*s*0.5+8); }
+  }
+
+  poseType(ctx,fy,s,now,since){
+    const act=Math.max(0,Math.min(1,(700-since)/250));
+    const pp=now*0.021; const raise=Math.cos(pp)*0.5+0.5; const hit=act>0.05&&raise<0.22;
+    const mag=0.05+raise*2.4; const armL=-(0.06*(1-act)+mag*act), armR=0.06*(1-act)+mag*act;
+    const bw=64*s*0.5, bx=this.x-bw/2, by=fy-20*s, bh=10*s*0.5+4, push=hit?3:0;
+    this.shadow(ctx,this.x,fy,15*s*0.5);
+    this.drawBear(ctx,this.x,fy,s,{flip:this.facing,eyes:act>0.2?'happy':'open',mouth:act>0.3?'open':'smile',armL,armR,sy:1-(hit?0.1:0)});
+    // spacebar drawn AFTER the bear so it floats in front, resting over the stomach
+    ctx.fillStyle='#c2ad90'; this.rrect(ctx,bx,by+4,bw,bh,5);
+    ctx.fillStyle=hit?'#ffe9a8':'#fbf6ee'; this.rrect(ctx,bx,by+push,bw,bh-2,5);
+    if(hit){ this.text(ctx,'\u2731',this.x-26,by-6,'#e8a13c',12); this.text(ctx,'\u2731',this.x+26,by-6,'#e8a13c',12); }
+  }
+
+  poseScratch(ctx,fy,s,now){
+    const amp=Math.min(1,this.scrollVel*0.09);
+    const wig=Math.sin(now*0.02)*amp*7, rot=Math.sin(now*0.02)*0.05*amp, bnc=Math.abs(Math.sin(now*0.04))*2*amp;
+    this.shadow(ctx,this.x,fy,15*s*0.5);
+    this.drawBear(ctx,this.x+wig,fy-bnc,s,{flip:this.facing,rot,eyes:amp>0.2?'happy':'open',mouth:amp>0.2?'open':'smile',
+      armL:-0.85-amp*0.25,armR:0.85+amp*0.25,legLift:[bnc,bnc]});
+    if(amp>0.25){ ctx.strokeStyle='rgba(120,90,60,0.4)';ctx.lineWidth=1;for(let i=0;i<3;i++){const yy=fy-30*s-i*12*s;ctx.beginPath();ctx.moveTo(this.x-24,yy);ctx.lineTo(this.x-17,yy-3);ctx.moveTo(this.x+24,yy);ctx.lineTo(this.x+17,yy-3);ctx.stroke();} }
+  }
+
+  poseSit(ctx,fy,s,now){
+    const t=this.eIO(Math.min(1,(now-this.stateT)/900));
+    const br=Math.sin(now*0.003)*0.025;
+    this.shadow(ctx,this.x,fy,15*s*0.5);
+    this.drawBear(ctx,this.x,fy,s,{flip:this.facing,eyes:'happy',armL:-0.3,armR:0.3,legRot:[-0.4*t,0.4*t],legLift:[2*t,2*t],sy:1+br-0.05*t,sx:1-br});
+  }
+
+  poseEat(ctx,fy,s,now){
+    const ph=((now-this.stateT)%2100)/2100; const potx=this.x+ (this.facing>0?30*s*0.5:-30*s*0.5);
+    let armR, head, mo;
+    if(ph<0.28){const t=this.eIO(ph/0.28);armR=this.lerp(0.2,1.25,t);head=this.lerp(0,0.16,t);mo='smile';}
+    else if(ph<0.52){const t=this.eIO((ph-0.28)/0.24);armR=this.lerp(1.25,-0.55,t);head=this.lerp(0.16,-0.12,t);mo='smile';}
+    else if(ph<0.8){const t=(ph-0.52)/0.28;armR=-0.55+Math.sin(t*Math.PI*3)*0.08;head=-0.12+Math.sin(t*Math.PI*3)*0.05;mo=Math.sin(t*Math.PI*4)>0?'eat':'smile';}
+    else{const t=this.eIO((ph-0.8)/0.2);armR=this.lerp(-0.55,0.2,t);head=this.lerp(-0.12,0,t);mo='smile';}
+    this.shadow(ctx,this.x,fy,15*s*0.5);
+    this.drawBear(ctx,this.x,fy,s,{flip:1,rot:head,eyes:'happy',mouth:mo,armR,armL:0.1,legRot:[-0.3,0.3]});
+    this.hugePot(ctx,potx,fy,26*s);
+    if(ph>0.55&&ph<0.78){const hy=(now*0.05)%28;ctx.globalAlpha=Math.max(0,1-hy/28);this.text(ctx,'\u2661',this.x+10,fy-40*s-hy,'#e88ab0',10);ctx.globalAlpha=1;}
+  }
+
+  poseNap(ctx,fy,s,now){
+    const br=Math.sin(now*0.0022)*0.04;
+    this.shadow(ctx,this.x,fy,16*s*0.5);
+    this.blitS(ctx,this.getCurled(this.variant),this.x,fy,s*1.02,{sy:1+br,sx:1-br*0.6});
+    const zt=(now*0.045)%46;ctx.globalAlpha=Math.max(0,1-zt/46);this.text(ctx,'z',this.x+14*s*0.5,fy-22*s-zt,'#9a86c4',9+zt/9);ctx.globalAlpha=1;
+  }
+
+  posePet(ctx,fy,s,now){ // flops onto back for a tummy rub when clicked
+    const pe=now-this.petT; const t=this.eIO(Math.min(1,pe/300)); const settle=Math.max(0,1-pe/360);
+    const rot=-1.55*t; const wig=Math.sin(now*0.014)*0.22;
+    this.shadow(ctx,this.x,fy,(16+8*t)*s*0.5);
+    this.drawBear(ctx,this.x,fy-2*t,s,{rot,eyes:'happy',mouth:'open',armL:-0.9+wig,armR:0.9-wig,
+      legLift:[6*t,6*t],legRot:[-0.5*t+wig,0.5*t-wig],sy:1-settle*0.1});
+    if(t>0.7){const hy=(now*0.05)%34;ctx.globalAlpha=Math.max(0,1-hy/34);this.text(ctx,'\u2661',this.x-8,fy-34*s-hy,'#e88ab0',10);ctx.globalAlpha=1;}
+  }
+}
+// Bake Baluc's PetBear (MIT, Adarsh-Jha/baluc-desktop-pet pet.html) into a
+// Codex pet atlas: 8 cols x 9 rows of 192x208 (openai/skills hatch-pet
+// references/codex-pet-contract.md + animation-rows.md).
+let T = 10000;
+performance.now = () => T;
+const CW = 192, CH = 208;
+const atlas = document.createElement('canvas');
+atlas.width = CW * 8; atlas.height = CH * 9;
+const A = atlas.getContext('2d');
+const cell = document.createElement('canvas'); cell.width = CW; cell.height = CH;
+const C = cell.getContext('2d');
+const bear = new PetBear(cell);
+bear.variant = 'brown';
+const S = 2.8, X = 96, FY = 198;
+bear.x = X; bear.facing = 1; bear.scale = S;
+function put(row, col, draw) {
+  C.setTransform(1,0,0,1,0,0); C.clearRect(0,0,CW,CH); C.imageSmoothingEnabled = false;
+  draw();
+  A.drawImage(cell, col * CW, row * CH);
+}
+const N = [6, 8, 8, 4, 5, 8, 6, 6, 6];
+// 0 idle: their standing pose, not walking (breathing only)
+for (let i = 0; i < 6; i++) put(0, i, () => { T = 10000 + i * 262; bear.ph = 0; bear.poseWalk(C, FY, S, T, false, false); });
+// 1,2 running-right/left: their walk cycle, phase stepped over one stride
+for (const [row, face] of [[1, 1], [2, -1]]) for (let i = 0; i < 8; i++) put(row, i, () => {
+  T = 10000 + i * 130; bear.facing = face; bear.ph = i * (2 * Math.PI / 8) - 0.32; bear.poseWalk(C, FY, S, T, true, false);
+});
+bear.facing = 1;
+// 3 waving: their rig (drawBear), right paw raised and swinging
+const wave = [-2.3, -2.8, -2.3, -2.8];
+for (let i = 0; i < 4; i++) put(3, i, () => { T = 10000 + i * 140; bear.shadow(C, X, FY, 15*S*0.5);
+  bear.drawBear(C, X, FY, S, { eyes: 'happy', mouth: 'open', armL: -0.16, armR: wave[i], elbow: [0, i % 2 ? 0.5 : -0.2] }); });
+// 4 jumping: anticipation, lift, peak, descent, settle
+const jy = [0, 14, 26, 14, 0], jsq = [0.9, 1.05, 1, 1.05, 0.94];
+for (let i = 0; i < 5; i++) put(4, i, () => { T = 10000 + i * 140; bear.shadow(C, X, FY, (15 - jy[i] * 0.2) * S * 0.5);
+  bear.drawBear(C, X, FY - jy[i], S, { eyes: 'happy', mouth: jy[i] > 20 ? 'open' : 'smile', armL: -0.9 * (jy[i] / 26), armR: 0.9 * (jy[i] / 26), legLift: [jy[i] / 5, jy[i] / 5], sy: jsq[i], sx: 2 - jsq[i] }); });
+// 5 failed: their nap sprite (curled up, z's) -- the deflated state
+for (let i = 0; i < 8; i++) put(5, i, () => { T = 10000 + i * 300; bear.poseNap(C, FY, S, T); });
+// 6 waiting: their sit pose, fully settled
+for (let i = 0; i < 6; i++) put(6, i, () => { T = 10000 + i * 260; bear.stateT = T - 2000; bear.poseSit(C, FY, S, T); });
+// 7 running (working): their keyboard-smash pose
+for (let i = 0; i < 6; i++) put(7, i, () => { T = 10000 + i * 50; bear.poseType(C, FY, S, T, 100); });
+// 8 review (done): their honey pose, one 2.1 s eat cycle
+for (let i = 0; i < 6; i++) put(8, i, () => { T = 10000 + i * 350; bear.stateT = 10000; bear.poseEat(C, FY, S, T); });
+document.getElementById('out').textContent = atlas.toDataURL('image/png');
+</script></body></html>

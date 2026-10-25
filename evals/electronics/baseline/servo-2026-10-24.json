@@ -1,0 +1,60 @@
+{
+ "1.0": {
+  "seconds": 38.8,
+  "route": "10/10 nets routed, 1 by copper fill, 115 tracks, 9 vias, 374.5 mm of copper",
+  "unrouted": [],
+  "verdicts": {
+   "erc": {
+    "status": "ok",
+    "failures": []
+   },
+   "drc": {
+    "status": "blocked",
+    "failures": [
+     "drc.starved_thermal (blocker): Thermal relief connection to zone incomplete (layer B.Cu; zone min spoke count 2; actual 1): Zone 'GND_B' [GND] on B.Cu, priority 0; PTH pad 3 [GND] of J3",
+     "drc.starved_thermal (blocker): Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1): Zone 'GND_F' [GND] on F.Cu, priority 0; PTH pad 6 [GND] of J2",
+     "drc.silk_over_copper (warning): Silkscreen clipped by solder mask: Reference field of J1; PTH pad 1 [VBAT] of J1"
+    ]
+   },
+   "parity": {
+    "status": "ok",
+    "failures": []
+   }
+  },
+  "outline_mm": [
+   76.15,
+   33.65
+  ]
+ },
+ "1.5": {
+  "seconds": 137.3,
+  "route": "7/10 nets routed, 1 by copper fill, 30 tracks, 0 vias, 63.9 mm of copper",
+  "unrouted": [
+   "+6V",
+   "SW",
+   "VBAT"
+  ],
+  "verdicts": {
+   "erc": {
+    "status": "ok",
+    "failures": []
+   },
+   "drc": {
+    "status": "blocked",
+    "failures": [
+     "drc.unconnected_items (blocker): 14 unconnected item(s): Pad 1 [VBAT] of C1 on F.Cu; Pad 1 [VBAT] of C2 on F.Cu; Pad 1 [VBAT] of C2 on F.Cu; Pad 7 [VBAT] of U1 on F.Cu; PTH pad 1 [VBAT] of J1; ",
+     "drc.silk_over_copper (warning): Silkscreen clipped by solder mask: Reference field of J1; PTH pad 1 [VBAT] of J1"
+    ]
+   },
+   "parity": {
+    "status": "ok",
+    "failures": []
+   }
+  },
+  "outline_mm": [
+   47.45,
+   83.35
+  ]
+ },
+ "_about": "baseline build_servo_board re-run 2026-10-24 ~22:40 PT at baseline commit 3710578, KiCad 10.0.6, by wright lane E (scratchpad baseline_servo.py); outline measured from the written .kicad_pcb Edge.Cuts"
+}

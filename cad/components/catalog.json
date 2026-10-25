@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "scope": "Exact manufacturer models; geometry availability does not select a replacement in the resolved aircraft BOM",
+  "components": [
+    {
+      "id": "tmotor_mn2806_evo",
+      "model": "T-MOTOR MN2806 EVO",
+      "category": "motor",
+      "file": "vendor/tmotor/mn2806evo.step",
+      "source_metadata": "vendor/tmotor/mn2806evo.source.json",
+      "sha256": "d0f72166435be4764036dce5408491251e44028de9920526cc53ee7644762aef",
+      "bom_catalog_ids": [
+        "tmotor_mn2806_evo_650kv"
+      ],
+      "native_import_validation": "verified native solid import/source BREP/placement/FCStd reopen; combined motor STEP exchange remains unverified (see actual Astra study)",
+      "mounting_frame_verified": false,
+      "bom_identity_evidence": {
+        "manufacturer_page": "https://uav-en.tmotor.com/2025/Antigravity_0108/1268.html",
+        "catalog_product_page": "https://store.tmotor.com/product/antigravity-mn2806-evo-motor.html",
+        "verified": "2026-10-24",
+        "match": "MN2806 EVO, 650 KV, 45 g; manufacturer model download. Does not match non-EVO MN2806."
+      }
+    },
+    {
+      "id": "tmotor_p12x4",
+      "model": "T-MOTOR P12x4",
+      "category": "propeller",
+      "file": "vendor/tmotor/p12x4.step",
+      "source_metadata": "vendor/tmotor/p12x4.source.json",
+      "sha256": "03c14402249c0d38409733bbf02b5209dde5116f58941d4183027810cf2054fb",
+      "bom_catalog_ids": [
+        "tmotor_p12x4_cf"
+      ],
+      "native_import_validation": "verified native solid import/source BREP/placement/FCStd reopen; combined motor STEP exchange remains unverified (see actual Astra study)",
+      "mounting_frame_verified": false,
+      "bom_identity_evidence": {
+        "manufacturer_page": "https://uav-en.tmotor.com/download/3.html",
+        "catalog_product_page": "https://store.tmotor.com/product/polish-carbon-fiber-12x4-prop.html",
+        "verified": "2026-10-24",
+        "match": "P12*4 polished carbon-fiber propeller, 12-inch diameter / 4-inch pitch. Handedness is not independently established by this mapping."
+      }
+    },
+    {
+      "id": "holybro_pixhawk6x_pro",
+      "model": "Holybro Pixhawk 6X Pro module",
+      "category": "flight_controller",
+      "file": "vendor/holybro/pixhawk6x-pro.stp",
+      "source_metadata": "vendor/holybro/pixhawk6x-pro.source.json",
+      "sha256": "b62ba6dc2ecb8c79c1d48bfb3237f4462749151a02d9b70eae288edbba0dc3ba",
+      "bom_catalog_ids": [],
+      "native_import_validation": "verified opt-in preserve_reference_geometry import: 18 solids + 13 reference surfaces retained; default solid-only import and checked STEP export reject mixed geometry",
+      "mounting_frame_verified": false,
+      "required_import_options": {
+        "preserve_reference_geometry": true
+      },
+      "source_geometry_roles": {
+        "physical_solids": 18,
+        "reference_surfaces": 13
+      }
+    }
+  ]
+}

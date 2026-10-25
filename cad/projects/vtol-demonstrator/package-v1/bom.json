@@ -1,0 +1,761 @@
+{
+  "schema_version": 1,
+  "revision": "package-v1",
+  "evidence_frozen": true,
+  "hardware_ready": false,
+  "compatibility_verified": false,
+  "date": "2026-10-24",
+  "scope": "Original 1.8m lift-plus-cruise demonstrator candidate, not Tsung Xu replica; evidence freeze is not hardware release",
+  "items": [
+    {
+      "id": "lift_motor",
+      "role": "lift_motors",
+      "quantity": 4,
+      "manufacturer": "T-MOTOR",
+      "model": "MN2806 EVO KV650",
+      "mass_g": 45,
+      "dimensions_mm": null,
+      "source_ids": [
+        "motor"
+      ],
+      "verified_facts": {
+        "rated_cells": 4,
+        "peak_current_A_180s": 16,
+        "P12_max_test_thrust_g": 1275.96,
+        "test_voltage_V": 15.78,
+        "test_current_A": 13.95
+      },
+      "unresolved": [
+        "Mounting datum inspection needs drawing reconciliation",
+        "Permissible screw engagement not inferred from bore depth"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "lift_prop",
+      "role": "lift_propellers",
+      "quantity": 4,
+      "manufacturer": "T-MOTOR",
+      "model": "P12x4 polished CF, two L and two R",
+      "mass_g": 14.5,
+      "dimensions_mm": [
+        304.8,
+        101.6
+      ],
+      "source_ids": [
+        "lift_prop"
+      ],
+      "verified_facts": {
+        "quantity_L": 2,
+        "quantity_R": 2,
+        "manufacturer_rotation_note": "L=CW, R=COW aerial view; COW interpreted as counterclockwise, preserve source typo"
+      },
+      "unresolved": [
+        "Existing single STEP handedness unidentified",
+        "Correct two physical hands and bolts/retainers must be mapped"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "cruise_motor",
+      "role": "cruise_motor",
+      "quantity": 1,
+      "manufacturer": "T-MOTOR",
+      "model": "AT2814 Long Shaft KV900",
+      "mass_g": 108,
+      "dimensions_mm": [
+        35.2,
+        54.5
+      ],
+      "source_ids": [
+        "cruise_motor"
+      ],
+      "verified_facts": {
+        "rated_cells": [
+          3,
+          4
+        ],
+        "shaft_mm": 5,
+        "peak_current_A_180s": 45,
+        "APC11x5.5_test_at_14_72V": {
+          "thrust_g": 2216,
+          "current_A": 34.23
+        }
+      },
+      "unresolved": [
+        "Exact adapter choice/retention, dimensions and pusher orientation not verified in CAD"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "cruise_prop",
+      "role": "cruise_propeller",
+      "quantity": 1,
+      "manufacturer": "APC",
+      "model": "LP11055E 11x5.5E",
+      "mass_g": 22.96,
+      "dimensions_mm": [
+        279.4,
+        139.7
+      ],
+      "source_ids": [
+        "cruise_prop",
+        "prop_faq"
+      ],
+      "verified_facts": {
+        "hub_diameter_mm": 20.32,
+        "hub_thickness_mm": 10.414,
+        "bore_mm": 6.35,
+        "adapter_set": "LPAR06E"
+      },
+      "unresolved": [
+        "Normal-hand electric prop can be rear-mounted with correct physical forward face and motor direction; actual thrust sign/adapter/retention still unverified",
+        "Do not silently substitute reverse-hand EP; motor bench table used E"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "esc",
+      "role": "lift_esc_channels",
+      "quantity": 4,
+      "manufacturer": "Hobbywing",
+      "model": "Skywalker 40A V2",
+      "mass_g": 36,
+      "dimensions_mm": [
+        60,
+        25,
+        8
+      ],
+      "source_ids": [
+        "esc"
+      ],
+      "verified_facts": {
+        "cells": [
+          3,
+          4
+        ],
+        "continuous_A": 40,
+        "peak_A": 60,
+        "BEC_V": 5,
+        "BEC_A": 5,
+        "signal": "conventional throttle PWM"
+      },
+      "unresolved": [
+        "Lift control update/response adequacy not established by fixed-wing datasheet",
+        "Insulate each BEC positive; no parallel regulator outputs"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "cruise_esc",
+      "role": "cruise_esc_channel",
+      "quantity": 1,
+      "manufacturer": "Hobbywing",
+      "model": "Skywalker 50A V2 (not 50A-6S)",
+      "mass_g": 36,
+      "dimensions_mm": [
+        60,
+        25,
+        8
+      ],
+      "source_ids": [
+        "esc"
+      ],
+      "verified_facts": {
+        "cells": [
+          3,
+          4
+        ],
+        "continuous_A": 50,
+        "peak_A": 70
+      },
+      "unresolved": [
+        "Motor cooling and actual prop load pending",
+        "BEC positive disconnected from servo rail"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "fc",
+      "role": "flight_controller",
+      "quantity": 1,
+      "manufacturer": "Holybro",
+      "model": "Pixhawk 6C Mini Model-A current revision",
+      "mass_g": 42.4,
+      "dimensions_mm": [
+        54.3,
+        39,
+        17.5
+      ],
+      "source_ids": [
+        "controller",
+        "controller_pinout"
+      ],
+      "verified_facts": {
+        "separate_carrier_required": false,
+        "max_input_V": 6,
+        "built_in_pwm_header": true
+      },
+      "unresolved": [
+        "Current revision exact mounting geometry/isolation material",
+        "No substitution of existing Pixhawk6X Pro CAD"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "power",
+      "role": "power_module",
+      "quantity": 1,
+      "manufacturer": "Holybro",
+      "model": "PM02 V3 12S voltage-only supply branch",
+      "mass_g": 20,
+      "dimensions_mm": [
+        25,
+        25,
+        10
+      ],
+      "source_ids": [
+        "power_pm02"
+      ],
+      "verified_facts": {
+        "proposal": "Low-current branch only; do not carry propulsion current through stock harness",
+        "output_V": 5.2,
+        "output_A": 3
+      },
+      "unresolved": [
+        "Current sensing intentionally excludes propulsion and must not be represented as battery consumption"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "bec",
+      "role": "servo_power_supply",
+      "quantity": 1,
+      "manufacturer": "Hobbywing",
+      "model": "UBEC10A 2-6S part30603000",
+      "mass_g": 36,
+      "dimensions_mm": [
+        43.1,
+        32.3,
+        12.5
+      ],
+      "source_ids": [
+        "bec"
+      ],
+      "verified_facts": {
+        "input_cells": [
+          2,
+          6
+        ],
+        "selected_output_V": 6,
+        "continuous_A": 10,
+        "peak_A": 20
+      },
+      "unresolved": [
+        "Wiring/thermal verification; keep receiver at least50mm away per manual"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "gps",
+      "role": "gnss_compass",
+      "quantity": 1,
+      "manufacturer": "Holybro",
+      "model": "M10 Standard GPS SKU12040 JST-GH10",
+      "mass_g": 32,
+      "dimensions_mm": [
+        50,
+        50,
+        14.4
+      ],
+      "source_ids": [
+        "gnss"
+      ],
+      "verified_facts": {
+        "input_V": [
+          4.7,
+          5.2
+        ],
+        "current_A_max": 0.2,
+        "interfaces": [
+          "UART",
+          "I2C"
+        ],
+        "compass_variants": [
+          "IST8310",
+          "IST8308"
+        ]
+      },
+      "unresolved": [
+        "Delivered compass variant must be identified, not silently frozen",
+        "Mount hole pattern and connector orientation pending"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "rx",
+      "role": "receiver",
+      "quantity": 1,
+      "manufacturer": "RadioMaster",
+      "model": "RP3 V2 2.4GHz ExpressLRS",
+      "mass_g": 4.6,
+      "dimensions_mm": [
+        22,
+        13,
+        4
+      ],
+      "source_ids": [
+        "receiver"
+      ],
+      "verified_facts": {
+        "supply_V": 5,
+        "interface": "CRSF UART"
+      },
+      "unresolved": [
+        "Antenna keepouts and exact pad orientation pending"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "radio",
+      "role": "telemetry_air_ground_pair",
+      "quantity": 1,
+      "manufacturer": "Holybro",
+      "model": "SiK V3 100mW 915MHz pair",
+      "mass_g": 23.5,
+      "dimensions_mm": [
+        28,
+        53,
+        10.7
+      ],
+      "source_ids": [
+        "telemetry"
+      ],
+      "verified_facts": {
+        "airframe_quantity": 1,
+        "ground_quantity": 1,
+        "mass_scope": "one radio with antenna",
+        "supply_V": 5,
+        "TX_current_A": 0.1
+      },
+      "unresolved": [
+        "Connector orientation and installed antenna envelope pending"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "airspeed",
+      "role": "airspeed_sensor",
+      "quantity": 1,
+      "manufacturer": "Matek",
+      "model": "ASPD-4525 with supplied pitot/tubing",
+      "mass_g": 3.5,
+      "dimensions_mm": null,
+      "source_ids": [
+        "airspeed"
+      ],
+      "verified_facts": {
+        "supply_V": [
+          4,
+          5.5
+        ],
+        "interface": "I2C",
+        "pins_in_published_sequence": [
+          "5V",
+          "SCL",
+          "SDA",
+          "GND"
+        ],
+        "tube_length_mm": 400
+      },
+      "unresolved": [
+        "Board/pitot envelope and mounting dimensions unpublished",
+        "3.5g excludes pitot and tube; allow additional mass"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "servo",
+      "role": "control_servos",
+      "quantity": 4,
+      "manufacturer": "Hitec",
+      "model": "HS-5065MG (35065S)",
+      "mass_g": 11.9,
+      "dimensions_mm": [
+        23.6,
+        11.6,
+        30
+      ],
+      "source_ids": [
+        "servo",
+        "servo_conflict"
+      ],
+      "verified_facts": {
+        "roles": [
+          "aileron_left",
+          "aileron_right",
+          "elevator",
+          "rudder"
+        ],
+        "selected_voltage_V": 6,
+        "stall_torque_kgf_cm": 2.2,
+        "stall_current_A": 1.2,
+        "four_servo_stall_A": 4.8,
+        "default_travel_deg": [
+          -60,
+          60
+        ]
+      },
+      "unresolved": [
+        "Primary sources conflict:24T vsM25T spline and24/26/30mm height; use conservative30mm envelope only",
+        "Horn identity, ear holes and hinge-load sizing unresolved"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "battery",
+      "role": "battery_pack",
+      "quantity": 1,
+      "manufacturer": "CNHL",
+      "model": "Black Series5000mAh4S65C XT90 SKU500654BKZ",
+      "mass_g": 562,
+      "dimensions_mm": [
+        147,
+        51,
+        38
+      ],
+      "source_ids": [
+        "battery_cnhl"
+      ],
+      "verified_facts": {
+        "cells": 4,
+        "capacity_Ah": 5,
+        "nominal_V": 14.8,
+        "full_V": 16.8,
+        "advertised_cell_C": 65,
+        "wire_AWG": 10,
+        "connector": "XT90",
+        "dimension_tolerance_mm": 5,
+        "mass_tolerance_g": 5
+      },
+      "unresolved": [
+        "Cell C rating is not installed harness rating",
+        "Exact XT90 variant/continuous/burst temperature rating not yet proved",
+        "Reserve max152\u00d756\u00d743mm plus separate connector/wire space"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "spar",
+      "role": "wing_spar",
+      "quantity": 1,
+      "manufacturer": "Easy Composites",
+      "model": "16mm OD14mm ID woven finish roll-wrapped carbon tube,2m stock",
+      "mass_g": null,
+      "dimensions_mm": [
+        16,
+        14,
+        2000
+      ],
+      "source_ids": [
+        "spar",
+        "spar_datasheet"
+      ],
+      "verified_facts": {
+        "cut_length_mm_provisional": 1800,
+        "section_I_mm4": 1331.2498869586748
+      },
+      "unresolved": [
+        "Laminate allowables/joints/deflection not qualified; dimensions do not imply strength"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "booms",
+      "role": "lift_booms",
+      "quantity": 2,
+      "manufacturer": "Easy Composites",
+      "model": "16mm OD14mm ID woven finish roll-wrapped carbon tube,1m stock",
+      "mass_g": null,
+      "dimensions_mm": [
+        16,
+        14,
+        1000
+      ],
+      "source_ids": [
+        "spar",
+        "spar_datasheet"
+      ],
+      "verified_facts": {
+        "cut_length_mm_provisional": 900
+      },
+      "unresolved": [
+        "Layout cut lengths and clamp crush checks pending"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "pushrods",
+      "role": "servo_horns_and_pushrods",
+      "quantity": 1,
+      "manufacturer": "DU-BRO",
+      "model": "173-6 2-56 threaded steel rods30inch,6pack",
+      "mass_g": null,
+      "dimensions_mm": [
+        762
+      ],
+      "source_ids": [
+        "pushrod"
+      ],
+      "verified_facts": {
+        "used_rods": 4,
+        "thread_length_mm": 19.05
+      },
+      "unresolved": [
+        "Cut length, compatible clevis SKU, retaining sleeves, horn spline and buckling pending"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "power_distribution",
+      "role": "power_distribution",
+      "quantity": null,
+      "manufacturer": null,
+      "model": null,
+      "mass_g": null,
+      "dimensions_mm": null,
+      "source_ids": [],
+      "verified_facts": {},
+      "unresolved": [
+        "Exact purchasable part, quantity, dimensions and interface not yet resolved; blocks hardware freeze"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "battery_connector",
+      "role": "battery_connector",
+      "quantity": null,
+      "manufacturer": null,
+      "model": null,
+      "mass_g": null,
+      "dimensions_mm": null,
+      "source_ids": [],
+      "verified_facts": {},
+      "unresolved": [
+        "Exact purchasable part, quantity, dimensions and interface not yet resolved; blocks hardware freeze"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "power_harness",
+      "role": "power_harness",
+      "quantity": null,
+      "manufacturer": null,
+      "model": null,
+      "mass_g": null,
+      "dimensions_mm": null,
+      "source_ids": [],
+      "verified_facts": {},
+      "unresolved": [
+        "Exact purchasable part, quantity, dimensions and interface not yet resolved; blocks hardware freeze"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "signal_harness",
+      "role": "signal_harness",
+      "quantity": null,
+      "manufacturer": null,
+      "model": null,
+      "mass_g": null,
+      "dimensions_mm": null,
+      "source_ids": [],
+      "verified_facts": {},
+      "unresolved": [
+        "Exact purchasable part, quantity, dimensions and interface not yet resolved; blocks hardware freeze"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "hinges",
+      "role": "hinges",
+      "quantity": null,
+      "manufacturer": null,
+      "model": null,
+      "mass_g": null,
+      "dimensions_mm": null,
+      "source_ids": [],
+      "verified_facts": {},
+      "unresolved": [
+        "Exact purchasable part, quantity, dimensions and interface not yet resolved; blocks hardware freeze"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "battery_retention",
+      "role": "battery_retention",
+      "quantity": null,
+      "manufacturer": null,
+      "model": null,
+      "mass_g": null,
+      "dimensions_mm": null,
+      "source_ids": [],
+      "verified_facts": {},
+      "unresolved": [
+        "Exact purchasable part, quantity, dimensions and interface not yet resolved; blocks hardware freeze"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "landing_gear",
+      "role": "landing_gear",
+      "quantity": null,
+      "manufacturer": null,
+      "model": null,
+      "mass_g": null,
+      "dimensions_mm": null,
+      "source_ids": [],
+      "verified_facts": {},
+      "unresolved": [
+        "Exact purchasable part, quantity, dimensions and interface not yet resolved; blocks hardware freeze"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "fasteners_and_inserts",
+      "role": "fasteners_and_inserts",
+      "quantity": null,
+      "manufacturer": null,
+      "model": null,
+      "mass_g": null,
+      "dimensions_mm": null,
+      "source_ids": [],
+      "verified_facts": {},
+      "unresolved": [
+        "Exact purchasable part, quantity, dimensions and interface not yet resolved; blocks hardware freeze"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "controller_isolation",
+      "role": "controller_isolation",
+      "quantity": null,
+      "manufacturer": null,
+      "model": null,
+      "mass_g": null,
+      "dimensions_mm": null,
+      "source_ids": [],
+      "verified_facts": {},
+      "unresolved": [
+        "Exact purchasable part, quantity, dimensions and interface not yet resolved; blocks hardware freeze"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "control_horns_and_retainers",
+      "role": "control_horns_and_retainers",
+      "quantity": null,
+      "manufacturer": null,
+      "model": null,
+      "mass_g": null,
+      "dimensions_mm": null,
+      "source_ids": [],
+      "verified_facts": {},
+      "unresolved": [
+        "Exact purchasable part, quantity, dimensions and interface not yet resolved; blocks hardware freeze"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    },
+    {
+      "id": "protection",
+      "role": "protection",
+      "quantity": null,
+      "manufacturer": null,
+      "model": null,
+      "mass_g": null,
+      "dimensions_mm": null,
+      "source_ids": [],
+      "verified_facts": {},
+      "unresolved": [
+        "Exact purchasable part, quantity, dimensions and interface not yet resolved; blocks hardware freeze"
+      ],
+      "status": "selected_candidate_not_released",
+      "compatibility_verified": false,
+      "mechanical_interface_verified": false
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "id": "holybro_pixhawk6x_pro",
+      "reason": "Module-only CAD is not selected6C Mini; would require carrier and digital power module"
+    },
+    {
+      "id": "matek_h743_wing_v3",
+      "reason": "Primary page unavailable; avoid obsolete controller"
+    },
+    {
+      "id": "matek_h7a3_wing",
+      "reason": "Manufacturer explicitly EOL"
+    },
+    {
+      "id": "tattu_TAA52004S35X6",
+      "reason": "Sourced dimensions but XT60 trunk current mismatch; retained only source alternative"
+    }
+  ]
+}

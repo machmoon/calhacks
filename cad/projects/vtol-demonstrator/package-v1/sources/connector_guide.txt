@@ -1,0 +1,33 @@
+> For the complete documentation index, see [llms.txt](https://docs.holybro.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.holybro.com/power-module-and-pdb/power-module/connector-and-wire-rating.md).
+
+# Connector & Wire Rating
+
+{% hint style="danger" %}
+The XT60 plug and 12AWG wire that are pre-soldered on Holybro Power module are rated for 30A continuous current and 60A instantaneous current (<1 minute). If a higher current is being used, we recommend that the plug type and wire size should be changed accordingly.
+{% endhint %}
+
+### Genuine AMASS Connector Rating&#x20;
+
+<table data-header-hidden><thead><tr><th width="157"></th><th width="112"></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Plug Specification</strong></td><td><strong>Wire Size</strong></td><td><strong>Cont. Current (4 hours, temperature rise &#x3C; 60 °C)</strong></td><td><strong>Burst Current (1 minute,      temperature rise &#x3C; 60 °C)</strong></td></tr><tr><td>XT60</td><td>12 AWG</td><td>30A</td><td>60A</td></tr><tr><td>XT90</td><td>10 AWG</td><td>45A</td><td>90A</td></tr><tr><td>XT120</td><td>8 AWG</td><td>60A</td><td>120A</td></tr><tr><td>AS150</td><td>8AWG</td><td>75A</td><td>150A</td></tr><tr><td>AS300</td><td>6AWG</td><td>150A</td><td>300A</td></tr></tbody></table>
+
+
+---
+
+# Agent Instructions
+This documentation is published with GitBook. GitBook is the documentation platform designed so that both humans and AI agents can read, navigate, and reason over technical content effectively. Learn more at gitbook.com.
+
+## Querying This Documentation
+If you need additional information that is not directly available in this page, you can query the documentation by asking a question.
+
+Perform an HTTP GET request on the following URL with the `ask` and `goal` query parameters:
+
+```
+GET https://docs.holybro.com/power-module-and-pdb/power-module/connector-and-wire-rating.md?ask=<question>&goal=<user_goal>
+```
+
+`ask` is the immediate question: it should be specific, self-contained, and written in natural language.
+`goal` is what the user is ultimately trying to achieve, the reason they need the answer. Sharing it helps GitBook give you a better, more relevant answer. A goal is most helpful when it describes the outcome the user wants rather than restating the question. For example, with `ask=how do I create an API token`, a goal like `automate deployments from our CI pipeline` lets GitBook tailor the answer to that use case.
+
+The response will contain a direct answer to the question and relevant excerpts and sources from the documentation.
+
+Use this mechanism when the answer is not explicitly present in the current page, you need clarification or additional context, or you want to retrieve related documentation sections.

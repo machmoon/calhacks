@@ -1,0 +1,12 @@
+[package]
+name = "wright-eda"
+description = "Shared electronics IR for Wright: circuit netlist, footprints, placed/routed board, KiCad s-expressions (docs/electronics-plan.md)"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true

@@ -1,0 +1,162 @@
+{
+ "_about": "Lane E part catalog for the electronics checks (part_ratings, budget) and the BOM. A row matches a board part by kind + value + footprint (passives) or by mpn (devices). Ratings are filled only where the source is named in rating_source; a null rating is not on file and fails part_ratings for that part (no-omission rule). Prices are null: no live price was retrieved in this session (no network lookups); the Creao Build Desk (wright-creao) or a retrieval pass fills price_usd + url + retrieved. Written 2026-10-24 by lane E.",
+ "parts": [
+  {
+   "id": "tps5450ddar",
+   "kind": "ic",
+   "mpn": "TPS5450DDAR",
+   "manufacturer": "Texas Instruments",
+   "footprint": "Package_SO:TI_SO-PowerPAD-8_ThermalVias",
+   "ratings": {"iout_max_a": 5.0, "vin_max_v": 36.0, "vin_min_v": 5.5},
+   "rating_source": "TI SLVS757 title and section 1: '5-A, wide input range (5.5 V to 36 V) step-down converter'",
+   "datasheet": "https://www.ti.com/lit/ds/symlink/tps5450.pdf",
+   "price_usd": null, "url": "", "retrieved": null
+  },
+  {
+   "id": "ams1117-3.3",
+   "kind": "ic",
+   "mpn": "AMS1117-3.3",
+   "manufacturer": "Advanced Monolithic Systems",
+   "footprint": "Package_TO_SOT_SMD:SOT-223-3_TabPin2",
+   "ratings": {"iout_max_a": null, "vin_max_v": null},
+   "rating_source": "not on file (AMS1117 datasheet not read in this session)",
+   "datasheet": "",
+   "price_usd": null, "url": "", "retrieved": null
+  },
+  {
+   "id": "xt30pw-m",
+   "kind": "connector",
+   "mpn": "XT30PW-M",
+   "manufacturer": "AMASS",
+   "footprint": "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal",
+   "ratings": {"current_a": 15.0},
+   "rating_source": "baseline engine/silkscreen/kicadlib/connectors.py:108 'AMASS XT30, 2-pin battery/power 15 A'",
+   "datasheet": "https://www.tme.eu/Document/6eb2005a51a52592b3f19e8a450c54c8/XT30PW-M.pdf",
+   "price_usd": null, "url": "", "retrieved": null
+  },
+  {
+   "id": "header-1x0n-2.54",
+   "kind": "connector",
+   "mpn": null,
+   "manufacturer": null,
+   "footprint_prefix": "Connector_PinHeader_2.54mm:PinHeader_1x0",
+   "ratings": {"current_per_pin_a": null},
+   "rating_source": "not on file: a generic 2.54 mm header has no part number here; pick one and enter its per-contact rating",
+   "datasheet": "",
+   "price_usd": null, "url": "", "retrieved": null
+  },
+  {
+   "id": "ss54",
+   "kind": "diode",
+   "value_prefix": "SS54",
+   "footprint": "Diode_SMD:D_SMC",
+   "mpn": "SS54",
+   "ratings": {"if_a": 5.0, "vrrm_v": 40.0},
+   "rating_source": "SS5x series numbering (SS54 = 5 A, 40 V), the same figures as the value text 'SS54 5A 40V' and baseline footprints.py:824-828",
+   "datasheet": "",
+   "price_usd": null, "url": "", "retrieved": null
+  },
+  {
+   "id": "srp1245a-150m",
+   "kind": "inductor",
+   "value_prefix": "15uH",
+   "footprint": "Inductor_SMD:L_Bourns_SRP1245A",
+   "mpn": "SRP1245A-150M",
+   "manufacturer": "Bourns",
+   "ratings": {"isat_a": null, "irms_a": null},
+   "rating_source": "not on file: Bourns SRP1245A datasheet (http://www.bourns.com/docs/Product-Datasheets/SRP1245A.pdf, named by the KiCad footprint) not read in this session",
+   "datasheet": "http://www.bourns.com/docs/Product-Datasheets/SRP1245A.pdf",
+   "price_usd": null, "url": "", "retrieved": null
+  },
+  {
+   "id": "grm32er71h106ka12",
+   "kind": "capacitor",
+   "value_prefix": "10uF 50V",
+   "footprint": "Capacitor_SMD:C_1210_3225Metric",
+   "mpn": "GRM32ER71H106KA12L",
+   "manufacturer": "Murata",
+   "ratings": {"voltage_v": 50.0},
+   "rating_source": "Murata part-number code: GRM32 = 1210, R7 = X7R, 1H = 50 Vdc, 106 = 10 uF",
+   "datasheet": "",
+   "price_usd": null, "url": "", "retrieved": null
+  },
+  {
+   "id": "grm188r71h103ka01",
+   "kind": "capacitor",
+   "value_prefix": "10nF 50V",
+   "footprint": "Capacitor_SMD:C_0603_1608Metric",
+   "mpn": "GRM188R71H103KA01D",
+   "manufacturer": "Murata",
+   "ratings": {"voltage_v": 50.0},
+   "rating_source": "Murata part-number code: GRM18 = 0603, R7 = X7R, 1H = 50 Vdc, 103 = 10 nF",
+   "datasheet": "",
+   "price_usd": null, "url": "", "retrieved": null
+  },
+  {
+   "id": "grm31cr71c106ka",
+   "kind": "capacitor",
+   "value_prefix": "10uF 16V",
+   "footprint": "Capacitor_SMD:C_1206_3216Metric",
+   "mpn": "GRM31CR71C106KAC7L",
+   "manufacturer": "Murata",
+   "ratings": {"voltage_v": 16.0},
+   "rating_source": "Murata part-number code: GRM31 = 1206, R7 = X7R, 1C = 16 Vdc, 106 = 10 uF",
+   "datasheet": "",
+   "price_usd": null, "url": "", "retrieved": null
+  },
+  {
+   "id": "grm31cr71e106ka",
+   "kind": "capacitor",
+   "value_prefix": "10uF 25V",
+   "footprint": "Capacitor_SMD:C_1206_3216Metric",
+   "mpn": "GRM31CR71E106KA12L",
+   "manufacturer": "Murata",
+   "ratings": {"voltage_v": 25.0},
+   "rating_source": "Murata part-number code: GRM31 = 1206, R7 = X7R, 1E = 25 Vdc, 106 = 10 uF",
+   "datasheet": "",
+   "price_usd": null, "url": "", "retrieved": null
+  },
+  {
+   "id": "cap-22uf-10v-1206",
+   "kind": "capacitor",
+   "value_prefix": "22uF 10V",
+   "footprint": "Capacitor_SMD:C_1206_3216Metric",
+   "mpn": null,
+   "ratings": {"voltage_v": null},
+   "rating_source": "not on file: no part number chosen",
+   "datasheet": "",
+   "price_usd": null, "url": "", "retrieved": null
+  },
+  {
+   "id": "elec-220uf-16v-8x10",
+   "kind": "capacitor",
+   "value_prefix": "220uF 16V",
+   "footprint": "Capacitor_SMD:CP_Elec_8x10",
+   "mpn": null,
+   "ratings": {"voltage_v": null},
+   "rating_source": "not on file: no part number chosen for the 8 x 10 mm electrolytic",
+   "datasheet": "",
+   "price_usd": null, "url": "", "retrieved": null
+  },
+  {
+   "id": "res-0603-1pct",
+   "kind": "resistor",
+   "value_prefix": "",
+   "footprint": "Resistor_SMD:R_0603_1608Metric",
+   "mpn": null,
+   "ratings": {},
+   "rating_source": "resistors are not rated by part_ratings (feedback divider power is microwatts)",
+   "datasheet": "",
+   "price_usd": null, "url": "", "retrieved": null
+  },
+  {
+   "id": "pcb-2layer",
+   "kind": "pcb",
+   "mpn": null,
+   "ratings": {},
+   "rating_source": "the bare board",
+   "datasheet": "",
+   "price_usd": null, "url": "", "retrieved": null
+  }
+ ]
+}

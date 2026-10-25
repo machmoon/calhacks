@@ -1,0 +1,29 @@
+.env
+/target
+*.gcode
+/runs
+
+# Local caches, credentials, and generated CAD artifacts
+.DS_Store
+__pycache__/
+*.py[cod]
+.env.*
+!.env.example
+/out/
+/cad/components/vendor/
+/cad/projects/so-arm101/upstream/
+/out
+/demo-prev
+/haskell/dist-newstyle
+/lean/.lake
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+/bench/results.json
+
+# User-provided CAD input documents (local attachment cache)
+/uploads/
+
+# generated slide-deck build scratch
+design/architecture/.build/

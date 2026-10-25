@@ -1,0 +1,21 @@
+{
+  "version":"so101-camera-mount-v1",
+  "source_model":"out/so-arm101-one-shot/attempt-2/assembly.FCStd",
+  "source_sha256":"7164b2b4b70f08b2a58a00f1df3ff164eb411befdd93761ba788d2af3ea39cc6",
+  "camera_spec":"cad/projects/so101-camera-mount/camera-spec.json",
+  "wrist_measurements":"out/so101-camera-mount/interface/measurements.json",
+  "final_mount":"CameraMount",
+  "parameters":"CameraMountParameters",
+  "length_properties":["PlateThickness","StandoffHeight"],
+  "plate":"CameraPlate",
+  "standoffs":["CameraStandoff0","CameraStandoff1","CameraStandoff2","CameraStandoff3"],
+  "plate_frame":"CameraPlateFrame",
+  "camera_frame":"CameraFrame",
+  "camera_reference":"CameraReferenceEnvelope",
+  "ribbon_reference":"CameraRibbonClearance",
+  "frame_contract":"Plate lower face z0; thicknessT; four drilled bosses zT..T+H; camera PCB rear face zT+H with identical XYaxes. Four camera holes(2,2),(23,2),(2,14.5),(23,14.5).",
+  "construction_scope":"Plate and four boss features are construction dependencies contained in final single-solid mount, not additional physical exports.",
+  "source_scope":"All existing objects/types/geometry/placements, six joint values and original expressions remain preserved. Adding new child objects is allowed; removing original children is not.",
+  "edits":"Fresh native reopen: T+1mm, then H+2mm; recompute final BRep and referenced camera placement. Preserve input file.",
+  "scope":"Local camera-mount CAD and static wrist-interface verification only; no whole-arm motion, manufacturing or load-capacity qualification."
+}

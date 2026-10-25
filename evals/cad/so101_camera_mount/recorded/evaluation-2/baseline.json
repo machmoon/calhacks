@@ -1,0 +1,387 @@
+{
+  "status": "complete",
+  "stage": "baseline",
+  "states": [
+    {
+      "name": "baseline",
+      "T_mm": 3.0,
+      "H_mm": 6.0,
+      "gates": {
+        "source_preserved": true,
+        "native_mount": true,
+        "plate_dimensions_and_containment": true,
+        "camera_frame": true,
+        "standoffs_and_pattern": true,
+        "wrist_fit": true,
+        "wrist_bores_and_nominal_fastener_paths": true,
+        "camera_reference_and_space": true,
+        "ribbon_space": true
+      },
+      "source_preservation": {
+        "passed": true,
+        "original_objects": 144,
+        "failures": []
+      },
+      "mount": {
+        "valid_single_solid": true,
+        "volume_mm3": 2815.737905434853,
+        "type": "Part::MultiFuse",
+        "faces": 28
+      },
+      "plate": {
+        "bounds": [
+          -1.0,
+          -1.0,
+          -5.221836946591941e-16,
+          26.0,
+          24.862,
+          3.0
+        ],
+        "thickness_error_mm": 4.440892098500626e-16,
+        "outside_final_mm3": 0.0
+      },
+      "camera_frame": {
+        "translation": [
+          0.0,
+          5.684341886080802e-14,
+          9.000000000000007
+        ],
+        "angle_rad": 0.0
+      },
+      "standoffs": [
+        {
+          "index": 0,
+          "valid_single_solid": true,
+          "bounds": [
+            -0.5,
+            -0.5,
+            3.0,
+            4.5,
+            4.5,
+            9.0
+          ],
+          "outside_final_mm3": 0.0,
+          "bores": [
+            {
+              "radius_mm": 1.1,
+              "center_xy_mm": [
+                2.0,
+                2.0
+              ],
+              "bounds": [
+                0.8999999999999999,
+                0.8999999999999999,
+                3.0,
+                3.1,
+                3.1,
+                9.0
+              ]
+            }
+          ],
+          "passed": true
+        },
+        {
+          "index": 1,
+          "valid_single_solid": true,
+          "bounds": [
+            20.5,
+            -0.5,
+            2.9999999999999996,
+            25.5,
+            4.5,
+            9.0
+          ],
+          "outside_final_mm3": 0.0,
+          "bores": [
+            {
+              "radius_mm": 1.1,
+              "center_xy_mm": [
+                23.0,
+                2.0
+              ],
+              "bounds": [
+                21.9,
+                0.8999999999999999,
+                2.9999999999999996,
+                24.1,
+                3.1,
+                9.0
+              ]
+            }
+          ],
+          "passed": true
+        },
+        {
+          "index": 2,
+          "valid_single_solid": true,
+          "bounds": [
+            -0.5,
+            12.0,
+            3.0,
+            4.5,
+            17.0,
+            9.0
+          ],
+          "outside_final_mm3": 0.0,
+          "bores": [
+            {
+              "radius_mm": 1.1,
+              "center_xy_mm": [
+                2.0,
+                14.5
+              ],
+              "bounds": [
+                0.8999999999999999,
+                13.4,
+                3.0,
+                3.1,
+                15.6,
+                9.0
+              ]
+            }
+          ],
+          "passed": true
+        },
+        {
+          "index": 3,
+          "valid_single_solid": true,
+          "bounds": [
+            20.5,
+            12.0,
+            2.9999999999999996,
+            25.5,
+            17.0,
+            9.0
+          ],
+          "outside_final_mm3": 0.0,
+          "bores": [
+            {
+              "radius_mm": 1.1,
+              "center_xy_mm": [
+                23.0,
+                14.5
+              ],
+              "bounds": [
+                21.9,
+                13.4,
+                2.9999999999999996,
+                24.1,
+                15.6,
+                9.0
+              ]
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "camera_holes": [
+        {
+          "center_xy_mm": [
+            2,
+            2
+          ],
+          "cylindrical_faces": [
+            {
+              "radius_mm": 1.1,
+              "center_xy_mm": [
+                2.0,
+                2.0
+              ],
+              "bounds": [
+                0.8999999,
+                0.8999999,
+                -1.0000000005702292e-07,
+                3.1000001,
+                3.1000001,
+                9.0000001
+              ]
+            }
+          ],
+          "shaft_overlap_mm3": 0.0,
+          "passed": true
+        },
+        {
+          "center_xy_mm": [
+            23,
+            2
+          ],
+          "cylindrical_faces": [
+            {
+              "radius_mm": 1.1,
+              "center_xy_mm": [
+                23.0,
+                2.0
+              ],
+              "bounds": [
+                21.899999899999997,
+                0.8999999,
+                -1.00000000275314e-07,
+                24.100000100000003,
+                3.1000001,
+                9.0000001
+              ]
+            }
+          ],
+          "shaft_overlap_mm3": 0.0,
+          "passed": true
+        },
+        {
+          "center_xy_mm": [
+            2,
+            14.5
+          ],
+          "cylindrical_faces": [
+            {
+              "radius_mm": 1.1,
+              "center_xy_mm": [
+                2.0,
+                14.5
+              ],
+              "bounds": [
+                0.8999999,
+                13.399999900000001,
+                -1.0000000018368133e-07,
+                3.1000001,
+                15.600000099999999,
+                9.0000001
+              ]
+            }
+          ],
+          "shaft_overlap_mm3": 0.0,
+          "passed": true
+        },
+        {
+          "center_xy_mm": [
+            23,
+            14.5
+          ],
+          "cylindrical_faces": [
+            {
+              "radius_mm": 1.1,
+              "center_xy_mm": [
+                23.0,
+                14.5
+              ],
+              "bounds": [
+                21.899999899999997,
+                13.399999900000001,
+                -1.0000000040197242e-07,
+                24.100000100000003,
+                15.600000099999999,
+                9.0000001
+              ]
+            }
+          ],
+          "shaft_overlap_mm3": 0.0,
+          "passed": true
+        }
+      ],
+      "wrist": {
+        "overlap_mm3": 0.0,
+        "gap_mm": 3.552713678800501e-15
+      },
+      "wrist_fastener_paths": [
+        {
+          "x_mm": -4.05,
+          "faces": [
+            {
+              "radius_mm": 1.7,
+              "center_xy_mm": [
+                -4.050000000000027,
+                5.861977570020827e-14
+              ],
+              "bounds": [
+                -5.7500000000000275,
+                -1.6999999999999413,
+                -8.86230253638666e-15,
+                -2.350000000000027,
+                1.7000000000000586,
+                2.999999999999992
+              ]
+            }
+          ],
+          "shaft_mount_overlap_mm3": 0.0,
+          "shaft_wrist_overlap_mm3": 0.0,
+          "head_mount_overlap_mm3": 0.0,
+          "driver_mount_overlap_mm3": 0.0,
+          "head_seat_z_mm": 2.999999999999992,
+          "passed": true
+        },
+        {
+          "x_mm": 4.05,
+          "faces": [
+            {
+              "radius_mm": 1.7,
+              "center_xy_mm": [
+                4.049999999999972,
+                5.861977570020827e-14
+              ],
+              "bounds": [
+                2.349999999999972,
+                -1.6999999999999413,
+                -8.519022496164451e-15,
+                5.7499999999999725,
+                1.7000000000000586,
+                2.999999999999992
+              ]
+            }
+          ],
+          "shaft_mount_overlap_mm3": 0.0,
+          "shaft_wrist_overlap_mm3": 0.0,
+          "head_mount_overlap_mm3": 0.0,
+          "driver_mount_overlap_mm3": 0.0,
+          "head_seat_z_mm": 2.999999999999992,
+          "passed": true
+        }
+      ],
+      "camera_clearance": {
+        "reference_local_bounds": [
+          0.0,
+          -8.2338720786487e-17,
+          -5.0,
+          25.0,
+          23.862,
+          11.3
+        ],
+        "declared_reference_overlap_mm3": 0.0,
+        "board_overlap_mm3": 0.0,
+        "lens_axis_envelope_overlap_mm3": 0.0,
+        "reference_label": "CameraReferenceEnvelope",
+        "reference_visible": true,
+        "reference_contains_board_mm3": 17.029945456579554
+      },
+      "ribbon_clearance": {
+        "bounds_in_camera_frame": [
+          3.5,
+          23.86199999999991,
+          -3.0000000000000075,
+          21.5,
+          38.86199999999991,
+          -1.000000000000007
+        ],
+        "mount_overlap_mm3": 0.0,
+        "label": "CameraRibbonClearance",
+        "exit_edges_and_widths_mm": [
+          [
+            "top",
+            18.0
+          ]
+        ],
+        "width_mm": 18.0,
+        "thickness_mm": 2.0000000000000004,
+        "scope": "Candidate-declared prototype routing reservation, not manufacturer bend-radius certification"
+      },
+      "passed": true
+    }
+  ],
+  "scope": "Local native camera mount, preserved input assembly and static registered wrist STEP only; no whole-arm motion/load/manufacturing certification",
+  "saved_copy": "/Users/patliu/Desktop/Coding/wright/out/so101-camera-mount/evaluation-2/checkpoint.FCStd",
+  "passed": true,
+  "elapsed_seconds": 5.910783767700195,
+  "limitations": [
+    "Static local interface only; other arm parts and whole-arm sweeps are not collision-certified",
+    "Nominal M3 path envelopes do not validate thread engagement, nut installation with motor6 present, screw length or torque",
+    "Source STEP registration proves measured bore/plane correspondence, not whole-part equivalence to mesh",
+    "Reference camera/ribbon geometry is simplified; no exact manufacturer CAD or guaranteed cable bend radius"
+  ]
+}

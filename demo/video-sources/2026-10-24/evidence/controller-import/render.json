@@ -1,0 +1,490 @@
+{
+  "width": 640,
+  "height": 480,
+  "objects": [
+    "Pixhawk_Solid001",
+    "Pixhawk_Solid002",
+    "Pixhawk_Solid003",
+    "Pixhawk_Solid004",
+    "Pixhawk_Solid005",
+    "Pixhawk_Solid006",
+    "Pixhawk_Solid007",
+    "Pixhawk_Solid008",
+    "Pixhawk_Solid009",
+    "Pixhawk_Solid010",
+    "Pixhawk_Solid011",
+    "Pixhawk_Solid012",
+    "Pixhawk_Solid013",
+    "Pixhawk_Solid014",
+    "Pixhawk_Solid015",
+    "Pixhawk_Solid016",
+    "Pixhawk_Solid017",
+    "Pixhawk_Solid018",
+    "Pixhawk_Reference001",
+    "Pixhawk_Reference002",
+    "Pixhawk_Reference003",
+    "Pixhawk_Reference004",
+    "Pixhawk_Reference005",
+    "Pixhawk_Reference006",
+    "Pixhawk_Reference007",
+    "Pixhawk_Reference008",
+    "Pixhawk_Reference009",
+    "Pixhawk_Reference010",
+    "Pixhawk_Reference011",
+    "Pixhawk_Reference012",
+    "Pixhawk_Reference013"
+  ],
+  "parts": [
+    {
+      "name": "Pixhawk_Reference001",
+      "label": "_TF-15X15",
+      "color_rgb": [
+        145,
+        116,
+        170
+      ],
+      "triangles": 2,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Reference002",
+      "label": "_TF-15X001",
+      "color_rgb": [
+        76,
+        139,
+        153
+      ],
+      "triangles": 304,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Reference003",
+      "label": "_TF-15X002",
+      "color_rgb": [
+        76,
+        139,
+        153
+      ],
+      "triangles": 514,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Reference004",
+      "label": "_TF-15X003",
+      "color_rgb": [
+        76,
+        139,
+        153
+      ],
+      "triangles": 304,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Reference005",
+      "label": "_TF-15X004",
+      "color_rgb": [
+        122,
+        145,
+        145
+      ],
+      "triangles": 304,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Reference006",
+      "label": "_TF-15X005",
+      "color_rgb": [
+        145,
+        116,
+        170
+      ],
+      "triangles": 304,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Reference007",
+      "label": "_TF-15X006",
+      "color_rgb": [
+        214,
+        158,
+        71
+      ],
+      "triangles": 304,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Reference008",
+      "label": "_TF-15X007",
+      "color_rgb": [
+        214,
+        158,
+        71
+      ],
+      "triangles": 304,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Reference009",
+      "label": "_TF-15X008",
+      "color_rgb": [
+        188,
+        113,
+        100
+      ],
+      "triangles": 304,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Reference010",
+      "label": "_TF-15X009",
+      "color_rgb": [
+        76,
+        139,
+        153
+      ],
+      "triangles": 304,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Reference011",
+      "label": "_TF-15X010",
+      "color_rgb": [
+        122,
+        145,
+        145
+      ],
+      "triangles": 2317,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Reference012",
+      "label": "_TF-15X011",
+      "color_rgb": [
+        122,
+        145,
+        145
+      ],
+      "triangles": 1415,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Reference013",
+      "label": "_TF-15X012",
+      "color_rgb": [
+        168,
+        155,
+        101
+      ],
+      "triangles": 1317,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Solid001",
+      "label": "V6X-DIKE-V002-1111",
+      "color_rgb": [
+        76,
+        139,
+        153
+      ],
+      "triangles": 3000,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Solid002",
+      "label": "PCB-FMUV5X-F1",
+      "color_rgb": [
+        188,
+        113,
+        100
+      ],
+      "triangles": 1364,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Solid003",
+      "label": "BM20B_0_8_-34DS-0_4V",
+      "color_rgb": [
+        214,
+        158,
+        71
+      ],
+      "triangles": 17472,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Solid004",
+      "label": "DF40C-100DP-0_4V-442680",
+      "color_rgb": [
+        122,
+        145,
+        145
+      ],
+      "triangles": 7892,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Solid005",
+      "label": "DF40C-50DP",
+      "color_rgb": [
+        188,
+        113,
+        100
+      ],
+      "triangles": 4892,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Solid006",
+      "label": "MSBR-7",
+      "color_rgb": [
+        122,
+        145,
+        145
+      ],
+      "triangles": 172,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Solid007",
+      "label": "MSBR-6",
+      "color_rgb": [
+        168,
+        155,
+        101
+      ],
+      "triangles": 36,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Solid008",
+      "label": "MSBR-5",
+      "color_rgb": [
+        76,
+        139,
+        153
+      ],
+      "triangles": 36,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Solid009",
+      "label": "MSBR-4",
+      "color_rgb": [
+        76,
+        139,
+        153
+      ],
+      "triangles": 176,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Solid010",
+      "label": "MSBR-3",
+      "color_rgb": [
+        214,
+        158,
+        71
+      ],
+      "triangles": 212,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Solid011",
+      "label": "MSBR-2",
+      "color_rgb": [
+        98,
+        157,
+        126
+      ],
+      "triangles": 5256,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Solid012",
+      "label": "MSBR-1",
+      "color_rgb": [
+        188,
+        113,
+        100
+      ],
+      "triangles": 296,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Solid013",
+      "label": "V6X-KUANG-V003-2024",
+      "color_rgb": [
+        98,
+        157,
+        126
+      ],
+      "triangles": 2652,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Solid014",
+      "label": "V6X-16470-MIANKE-V0041",
+      "color_rgb": [
+        76,
+        139,
+        153
+      ],
+      "triangles": 2364,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Solid015",
+      "label": "MEIHUA-PINGYUAN-M2-27",
+      "color_rgb": [
+        98,
+        157,
+        126
+      ],
+      "triangles": 2424,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Solid016",
+      "label": "MEIHUA-PINGYUAN-M2-001",
+      "color_rgb": [
+        168,
+        155,
+        101
+      ],
+      "triangles": 2424,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Solid017",
+      "label": "MEIHUA-PINGYUAN-M2-002",
+      "color_rgb": [
+        108,
+        132,
+        179
+      ],
+      "triangles": 2424,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    },
+    {
+      "name": "Pixhawk_Solid018",
+      "label": "MEIHUA-PINGYUAN-M2-003",
+      "color_rgb": [
+        168,
+        155,
+        101
+      ],
+      "triangles": 2424,
+      "effective_deflection_mm": 1.0,
+      "angular_deflection_radians": 0.7
+    }
+  ],
+  "camera": {
+    "projection": "orthographic",
+    "azimuth_degrees": -52.0,
+    "elevation_degrees": 24.0
+  },
+  "triangles": 63513,
+  "geometry_fingerprint": "62c459f46e845e9a6b2bb11f78893e35617feec39b09536b0427d435de7d49a2",
+  "source_geometry_unchanged": true,
+  "scope": "Depth-buffered display triangulation of selected native shapes; not a geometry-fit or manufacturing approval",
+  "bounds_mm": [
+    [
+      -19.399999618530273,
+      -25.850000381469727,
+      -15.899999618530273
+    ],
+    [
+      19.399999618530273,
+      4.199999809265137,
+      15.899999618530273
+    ]
+  ],
+  "visible_pixels": 172198,
+  "projected_pixel_work": 9933284,
+  "physical_objects": [
+    "Pixhawk_Solid001",
+    "Pixhawk_Solid002",
+    "Pixhawk_Solid003",
+    "Pixhawk_Solid004",
+    "Pixhawk_Solid005",
+    "Pixhawk_Solid006",
+    "Pixhawk_Solid007",
+    "Pixhawk_Solid008",
+    "Pixhawk_Solid009",
+    "Pixhawk_Solid010",
+    "Pixhawk_Solid011",
+    "Pixhawk_Solid012",
+    "Pixhawk_Solid013",
+    "Pixhawk_Solid014",
+    "Pixhawk_Solid015",
+    "Pixhawk_Solid016",
+    "Pixhawk_Solid017",
+    "Pixhawk_Solid018"
+  ],
+  "reference_objects": [
+    "Pixhawk_Reference001",
+    "Pixhawk_Reference002",
+    "Pixhawk_Reference003",
+    "Pixhawk_Reference004",
+    "Pixhawk_Reference005",
+    "Pixhawk_Reference006",
+    "Pixhawk_Reference007",
+    "Pixhawk_Reference008",
+    "Pixhawk_Reference009",
+    "Pixhawk_Reference010",
+    "Pixhawk_Reference011",
+    "Pixhawk_Reference012",
+    "Pixhawk_Reference013"
+  ],
+  "geometry_coverage": {
+    "complete_source_geometry_checked": false,
+    "unselected_source_solid_objects": [],
+    "omitted_reference_objects": [
+      "Pixhawk_Reference001",
+      "Pixhawk_Reference002",
+      "Pixhawk_Reference003",
+      "Pixhawk_Reference004",
+      "Pixhawk_Reference005",
+      "Pixhawk_Reference006",
+      "Pixhawk_Reference007",
+      "Pixhawk_Reference008",
+      "Pixhawk_Reference009",
+      "Pixhawk_Reference010",
+      "Pixhawk_Reference011",
+      "Pixhawk_Reference012",
+      "Pixhawk_Reference013"
+    ],
+    "reference_surfaces_checked": false,
+    "scope": "Collision and volume checks cover selected solids only; retained reference surfaces are excluded"
+  }
+}

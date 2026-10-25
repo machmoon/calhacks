@@ -1,0 +1,345 @@
+{
+  "revision": "layout-r5-retained-loadpaths-astra-seat-repair",
+  "native_sha256": "1e4578b64b32867379b456e047f37af52e6396c9a6df5f3feca0d3e66c2175bd",
+  "source_unchanged": true,
+  "result_path": "out/vtol-ai-repair-r5-envelope/candidate/independent-audit/result.json",
+  "result_sha256": "e5c7aafa57acc9bebe055e6275d1e6a14468f0230511e5734c65a18448cec339",
+  "gates": {
+    "frozen_hardware_package": "pending",
+    "bom_geometry_coverage": "pending",
+    "electrical_and_wiring": "pending",
+    "native_geometry": "passed",
+    "all_pair_collisions": "pending",
+    "attachment_contacts": "pending",
+    "propeller_sweeps": "inconclusive",
+    "control_and_linkage_motion": "pending",
+    "service_access": "failed",
+    "connector_thermal_routing": "pending",
+    "load_paths": "pending",
+    "span_chord_boom_servo_battery_edits": "failed",
+    "native_reopen": "pending",
+    "exports": "pending",
+    "current_wing_analysis": "passed",
+    "mass_propulsion_performance": "pending",
+    "views_and_assembly_evidence": "pending"
+  },
+  "physical_count": 99,
+  "collision_instances": 107,
+  "pairs": 5671,
+  "overlapping_pairs": 0,
+  "declared_contacts": 71,
+  "unmet_contacts": 0,
+  "parameter_probe_failure": {
+    "status": "failed",
+    "passed": false,
+    "error": "Command '['/Users/patliu/Desktop/Coding/wright/cad/freecad/run.sh', '/Users/patliu/Desktop/Coding/wright/evals/cad/vtol_demonstrator/native_probe.py', 'edits', '/Users/patliu/Desktop/Coding/wright/out/vtol-ai-repair-r5-envelope/candidate/assembly.FCStd', '/Users/patliu/Desktop/Coding/wright/out/vtol-ai-repair-r5-envelope/candidate/independent-audit/contract.json', '/Users/patliu/Desktop/Coding/wright/out/vtol-ai-repair-r5-envelope/candidate/independent-audit']' timed out after 299.9998940000005 seconds"
+  },
+  "partial_parameter_cases": [
+    {
+      "case": "span",
+      "passed": true
+    },
+    {
+      "case": "chord",
+      "passed": true
+    },
+    {
+      "case": "boom_spacing",
+      "passed": true
+    },
+    {
+      "case": "battery",
+      "passed": true
+    },
+    {
+      "case": "servo_reservation",
+      "passed": true
+    }
+  ],
+  "parameter_scope": "Five dimension/regeneration cases passed before the 300-second stage deadline. Edited checkpoint and fresh reopen not verified; do not convert partial evidence into a completed edit pass.",
+  "blocked_driver_paths": [
+    {
+      "fastener": "TrayBoltFrontLeft",
+      "head": "TrayBoltHeadFrontLeft",
+      "shank": "TrayBoltShankFrontLeft",
+      "origin_mm": [
+        230.0,
+        -32.0,
+        14.0
+      ],
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "diameter_mm": 6,
+      "length_mm": 200,
+      "clashes": [
+        {
+          "object": "Hatch",
+          "overlap_mm3": 59.39688861440237
+        },
+        {
+          "object": "AIRepair4_Pod",
+          "overlap_mm3": 0.3741053712046663
+        }
+      ]
+    },
+    {
+      "fastener": "TrayBoltFrontRight",
+      "head": "TrayBoltHeadFrontRight",
+      "shank": "TrayBoltShankFrontRight",
+      "origin_mm": [
+        230.0,
+        32.0,
+        14.0
+      ],
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "diameter_mm": 6,
+      "length_mm": 200,
+      "clashes": [
+        {
+          "object": "Hatch",
+          "overlap_mm3": 59.39690144223032
+        },
+        {
+          "object": "AIRepair4_Pod",
+          "overlap_mm3": 0.374104299835377
+        }
+      ]
+    },
+    {
+      "fastener": "TrayBoltRearLeft",
+      "head": "TrayBoltHeadRearLeft",
+      "shank": "TrayBoltShankRearLeft",
+      "origin_mm": [
+        391.5,
+        -32.0,
+        14.0
+      ],
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "diameter_mm": 6,
+      "length_mm": 200,
+      "clashes": [
+        {
+          "object": "LeftWingSkin",
+          "overlap_mm3": 226.980539958881
+        },
+        {
+          "object": "Hatch",
+          "overlap_mm3": 57.75640048843283
+        }
+      ]
+    },
+    {
+      "fastener": "TrayBoltRearRight",
+      "head": "TrayBoltHeadRearRight",
+      "shank": "TrayBoltShankRearRight",
+      "origin_mm": [
+        391.5,
+        32.0,
+        14.0
+      ],
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "diameter_mm": 6,
+      "length_mm": 200,
+      "clashes": [
+        {
+          "object": "RightWingSkin",
+          "overlap_mm3": 226.980536462266
+        },
+        {
+          "object": "Hatch",
+          "overlap_mm3": 57.75638085131729
+        }
+      ]
+    },
+    {
+      "fastener": "TailClampBoltRight0",
+      "head": "TailClampHeadRight0",
+      "shank": "TailClampShankRight0",
+      "origin_mm": [
+        950.0,
+        295.0,
+        56.0
+      ],
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "diameter_mm": 6,
+      "length_mm": 200,
+      "clashes": [
+        {
+          "object": "Stabilizer",
+          "overlap_mm3": 169.64600329384942
+        }
+      ]
+    },
+    {
+      "fastener": "TailClampBoltLeft1",
+      "head": "TailClampHeadLeft1",
+      "shank": "TailClampShankLeft1",
+      "origin_mm": [
+        950.0,
+        -295.0,
+        56.0
+      ],
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "diameter_mm": 6,
+      "length_mm": 200,
+      "clashes": [
+        {
+          "object": "Stabilizer",
+          "overlap_mm3": 169.64600329384942
+        }
+      ]
+    }
+  ],
+  "driver_paths_checked": 26,
+  "unassessed_fasteners": [
+    {
+      "name": "TrayNutFrontLeft",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "TrayNutFrontRight",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "TrayNutRearLeft",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "TrayNutRearRight",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "SparNutCenter0",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "SparNutCenter1",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "SparNutRight0",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "SparNutRight1",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "BridgeNutRight0",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "BridgeNutRight1",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "SparNutLeft0",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "SparNutLeft1",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "BridgeNutLeft0",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "BridgeNutLeft1",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "TailClampNutRight0",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "TailClampNutRight1",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "TailClampNutLeft0",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "TailClampNutLeft1",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "ClampNutRightFront0",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "ClampNutRightFront1",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "ClampNutRightRear0",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "ClampNutRightRear1",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "ClampNutLeftFront0",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "ClampNutLeftFront1",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "ClampNutLeftRear0",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    },
+    {
+      "name": "ClampNutLeftRear1",
+      "reason": "No unique linked native cylindrical head/shank; nut tool/removal routes require separate definition"
+    }
+  ],
+  "exports": "Not supplied by candidate manifest, not independently checked.",
+  "scope": "Independent assessment of Astra repair to supplied authored geometry. Not complete VTOL or one-shot generalization. No candidate geometry changed by evaluator.",
+  "auditor_sources": {
+    "evals/cad/vtol_demonstrator/run.py": "319161c32edce5e861da973b9b5d57fb48edd973f45256ecb7028d54f078c830",
+    "evals/cad/vtol_demonstrator/native_sweep_controls.py": "7c5081782239afccada745493ef78d184c6d17c5d0dba1026341c8c71697ca33",
+    "evals/cad/vtol_demonstrator/export_probe.py": "2d0db112a74d20c72d528015cf7a4beed278d301b351371bf117d652536dd7c9",
+    "evals/cad/vtol_demonstrator/test_report.py": "48b8c6897355eac481af5b3a758dbcd89ba74a94aa9bd5bff27aad44e5f8e667",
+    "evals/cad/vtol_demonstrator/lift_sweep.py": "ad8dc35cb860b7ca955e984af188a726548115ad112138dd4010fefa6b99a70e",
+    "evals/cad/vtol_demonstrator/native_probe.py": "204a62db04a50af405cb42074de6b9ce73a9b800b5d12a99df69d7e525f50035",
+    "evals/cad/vtol_demonstrator/native_topology_controls.py": "2afc947067819b7a7ac8a7c41e70ed92a9f12d6af1af7346bc0561a64e82289c",
+    "evals/cad/vtol_demonstrator/service_access.py": "1922268014c78ec56afc9fbac9f9406727350f83dbb8674d08803434c713ab32",
+    "evals/cad/vtol_demonstrator/native_export_controls.py": "814dd15bcb8ae511196a3d81ccdcc133fb0887ba837e5fa48d0c92251caebc57",
+    "evals/cad/vtol_demonstrator/native_access_controls.py": "1648e6fdab9706a934bd4e2542174802a763910e3729c7ae1d09c2856677c187",
+    "evals/cad/vtol_demonstrator/report.py": "ddb6650520b9dcf0ffc7aeeb597098d29531d76249a2ffbd9d328e32000fa9b2",
+    "cad/freecad/assembly_frames.py": "5923fe773fcb957ec8944c1c620090ecb42699aa5fcb09d02b60f8c9a07764b0",
+    "cad/freecad/native.py": "21d3a4387dab04baf12ac50450ac6e2af08f5092427d98a838274550f57ca5b2",
+    "cad/freecad/worker.py": "6601d6ca4feb442807d0d0961a0470c704670eff357239ba9b1a319141ef24e5"
+  },
+  "loaded_dependency": {
+    "path": "/Users/patliu/Desktop/Coding/wright/out/vtol-demonstrator-r5/vtol_features_r5.py",
+    "sha256": "bbaf5da12bfac32207b033457fa4229311e8ddf4dbc2efce7b9b6991f919a7de"
+  }
+}

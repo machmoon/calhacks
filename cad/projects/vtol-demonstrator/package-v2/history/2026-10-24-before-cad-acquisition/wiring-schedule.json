@@ -1,0 +1,82 @@
+{
+  "revision": "package-v2",
+  "source_ids": [
+    "pinout",
+    "receiver",
+    "gnss",
+    "telemetry",
+    "airspeed",
+    "dshot"
+  ],
+  "rows": [
+    {
+      "from": "FC POWER1",
+      "to": "PM02 supplied cable",
+      "pin_mapping": "1,2 +5.2V;3 cruiseCURRENT;4 cruiseVOLTAGE;5,6GND",
+      "cable": "factory6pin",
+      "cut_length_mm": "supplied"
+    },
+    {
+      "from": "FC GPS1",
+      "to": "M10 SKU12040",
+      "pin_mapping": "1+5V;2TX\u2192RX;3RX\u2190TX;4SCL;5SDA;6safety;7LED;8IO3.3;9buzzer;10GND",
+      "cable": "factoryGH10",
+      "cut_length_mm": "supplied"
+    },
+    {
+      "from": "FC TELEM1",
+      "to": "SiKV3",
+      "pin_mapping": "1+5V;2TX\u2192radioRX;3RX\u2190radioTX;4CTS;5RTS;6GND",
+      "cable": "factoryGH6;verify radiocable orientation",
+      "cut_length_mm": "supplied"
+    },
+    {
+      "from": "FC TELEM2",
+      "to": "RP3V2",
+      "pin_mapping": "1+5V\u21925V;2TX\u2192RX;3RX\u2190TX;6GND\u2192GND;4/5unused insulated",
+      "cable": "GH6 to solder pads",
+      "cut_length_mm": "route_pending"
+    },
+    {
+      "from": "FC I2C",
+      "to": "ASPD4525",
+      "pin_mapping": "1+5V;2SCL;3SDA;4GND",
+      "cable": "GH4 to module pads",
+      "cut_length_mm": "route_pending"
+    },
+    {
+      "from": "FC AUX1..4 FMU",
+      "to": "TekkoESC1..4",
+      "pin_mapping": "S\u2192DShot signal;\u2212\u2192ground;+notconnected",
+      "cable": "24AWG signal/ground;manufacturer pad diagram controls colors",
+      "cut_length_mm": "route_pending"
+    },
+    {
+      "from": "FC MAIN1 IO",
+      "to": "Skywalker cruiseESC",
+      "pin_mapping": "S\u2192PWM;\u2212\u2192ground;BECred isolated",
+      "cable": "suppliedservolead",
+      "cut_length_mm": "route_pending"
+    },
+    {
+      "from": "FC MAIN2..5 IO",
+      "to": "HS65MG1..4",
+      "pin_mapping": "S\u2192PWM;+\u21926V;\u2212\u2192ground",
+      "cable": "servo3pin",
+      "cut_length_mm": "route_pending"
+    },
+    {
+      "from": "UBEC6Voutput",
+      "to": "MAINservo rail",
+      "pin_mapping": "+\u2192+;\u2212\u2192\u2212;neverFC5Vperipheralport",
+      "cable": "suppliedoutputs",
+      "cut_length_mm": "route_pending"
+    }
+  ],
+  "release_status": "pin mapping candidate; routed lengths, stock and continuity not released",
+  "current_notes": [
+    "4servos\u00d71.2Astall=4.8A at6V against10AUBEC nameplate; validate connector and distribution rail",
+    "FC output signal3.3V; AUX DShot per ArduPilot hardware documentation",
+    "No ESCBEC positives paralleled with UBEC"
+  ]
+}

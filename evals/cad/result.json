@@ -1,0 +1,1018 @@
+{
+  "scope": "individual source-dimensioned tubes, rings and square-section fins; no assembly/flight claim",
+  "designs": [
+    {
+      "source": {
+        "file": "A simple model rocket.ork",
+        "url": "https://raw.githubusercontent.com/openrocket/openrocket/591c5e5f7b7377e48f2bd5e501cef25cdfbd61d8/core/src/main/resources/datafiles/examples/A%20simple%20model%20rocket.ork",
+        "commit": "591c5e5f7b7377e48f2bd5e501cef25cdfbd61d8",
+        "sha256": "53369c1707ca2f7959c0a2df2ef5af5d508806c7d0d3010026843905de18f4ae",
+        "license": "GPL-3.0-or-later"
+      },
+      "counts": {
+        "pass": 1,
+        "fail": 0,
+        "unsupported": 10
+      },
+      "full_geometry_pass": false,
+      "components": [
+        {
+          "id": "f742413d-bf05-4ac6-ab04-0c410feebc08",
+          "type": "nosecone",
+          "name": "Nose cone",
+          "status": "unsupported",
+          "reason": "unsupported component nosecone"
+        },
+        {
+          "id": "23676342-cab1-4180-bdc3-645af8cec2ca",
+          "type": "bodytube",
+          "name": "Body tube",
+          "status": "unsupported",
+          "reason": "radius: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "99a9ba6b-15ea-4c14-8ddc-a2b95453ff5c",
+          "type": "parachute",
+          "name": "Parachute",
+          "status": "unsupported",
+          "reason": "length: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "b3f082f4-52e0-4804-841d-d502f9b134e7",
+          "type": "shockcord",
+          "name": "Shock cord",
+          "status": "unsupported",
+          "reason": "length: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "9e56185b-6429-41e9-ab4d-7f869ee1a86b",
+          "type": "masscomponent",
+          "name": "Wadding",
+          "status": "unsupported",
+          "reason": "length: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "1acfd7b9-e645-45da-8704-2e523297c942",
+          "type": "launchlug",
+          "name": "Launch lug",
+          "status": "unsupported",
+          "reason": "outerradius: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "9acd3480-76fb-4d48-b203-ce394d8c3d8e",
+          "type": "trapezoidfinset",
+          "name": "Trapezoidal fin set",
+          "status": "unsupported",
+          "reason": "non-square fin cross-section is not implemented"
+        },
+        {
+          "id": "1ad78625-8389-4894-8ba4-9d98209d57d7",
+          "type": "centeringring",
+          "name": "Centering ring",
+          "status": "unsupported",
+          "reason": "outerradius: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "a47c0331-7554-4bc9-80cc-490ef68aa4f5",
+          "type": "centeringring",
+          "name": "Centering ring",
+          "status": "unsupported",
+          "reason": "outerradius: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "9c92077c-f74f-4c95-b6ab-0dc765a377e7",
+          "type": "innertube",
+          "name": "Inner Tube",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 19.0,
+            "wall": 0.5000000000000004,
+            "length": 75.0
+          },
+          "expected_volume_mm3": 2179.479903427919,
+          "volume_relative_error": 2.295144291940264e-15,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 1.8569803816607586e-14
+        },
+        {
+          "id": "e2613fe3-cb14-4d73-ba98-a62f4ea723ec",
+          "type": "engineblock",
+          "name": "Engine block",
+          "status": "unsupported",
+          "reason": "outerradius: missing or automatic dimension requires assembly resolution"
+        }
+      ]
+    },
+    {
+      "source": {
+        "file": "Dual parachute deployment.ork",
+        "url": "https://raw.githubusercontent.com/openrocket/openrocket/591c5e5f7b7377e48f2bd5e501cef25cdfbd61d8/core/src/main/resources/datafiles/examples/Dual%20parachute%20deployment.ork",
+        "commit": "591c5e5f7b7377e48f2bd5e501cef25cdfbd61d8",
+        "sha256": "3b484264187f7867cfad875dcb16ba6b9e0aa4830f926414fb622c04c72f45dc",
+        "license": "GPL-3.0-or-later"
+      },
+      "counts": {
+        "pass": 4,
+        "fail": 0,
+        "unsupported": 14
+      },
+      "full_geometry_pass": false,
+      "components": [
+        {
+          "id": "dd2419e3-15dd-40a2-91e6-67461aa6a7ca",
+          "type": "nosecone",
+          "name": "Nose cone",
+          "status": "unsupported",
+          "reason": "unsupported component nosecone"
+        },
+        {
+          "id": "0543a98f-093c-4bc0-9289-e4eceacad85b",
+          "type": "bodytube",
+          "name": "Body tube",
+          "status": "unsupported",
+          "reason": "radius: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "3afdb622-2dd4-449e-a779-96839bf365b3",
+          "type": "bodytube",
+          "name": "Body tube",
+          "status": "unsupported",
+          "reason": "radius: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "e886c29e-4c0c-40a8-897e-ac15465486e2",
+          "type": "bodytube",
+          "name": "Body tube",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 56.641999999999996,
+            "wall": 0.9905999999999977,
+            "length": 304.79999999999995
+          },
+          "expected_volume_mm3": 52788.49168740521,
+          "volume_relative_error": 2.343148581959384e-15,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.715295709682345e-14
+        },
+        {
+          "id": "5ffcc206-0b5b-4acc-98ab-26ab4347f7eb",
+          "type": "bodytube",
+          "name": "Body tube",
+          "status": "unsupported",
+          "reason": "radius: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "1185d77d-e323-4db2-8da6-d99f1391d4fc",
+          "type": "tubecoupler",
+          "name": "Tube coupler",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 54.61,
+            "wall": 1.9050000000000005,
+            "length": 76.19999999999999
+          },
+          "expected_volume_mm3": 24035.41591725027,
+          "volume_relative_error": 1.0595136667206617e-15,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.2552505191625515e-14
+        },
+        {
+          "id": "2ee8185c-126b-4105-9190-bb2d3319bb7b",
+          "type": "bulkhead",
+          "name": "Bulkhead",
+          "status": "unsupported",
+          "reason": "outerradius: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "f8ac6967-22c4-433c-9548-c1ee9d28c0eb",
+          "type": "parachute",
+          "name": "Elliptical 12-Gore 42\" Parachute",
+          "status": "unsupported",
+          "reason": "length: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "7c47954e-4fb2-4a33-8923-62ccae522760",
+          "type": "tubecoupler",
+          "name": "Tube coupler",
+          "status": "unsupported",
+          "reason": "outerradius: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "0fde7df3-e1ba-4d69-959e-c031b4b63957",
+          "type": "parachute",
+          "name": "Apex 12\" Drouge Parachute",
+          "status": "unsupported",
+          "reason": "length: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "ac0dc0f5-be04-42bf-bbcc-80557e67d6ff",
+          "type": "innertube",
+          "name": "Inner Tube",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 40.64,
+            "wall": 1.0160000000000031,
+            "length": 406.4
+          },
+          "expected_volume_mm3": 51399.10950850378,
+          "volume_relative_error": 1.1324643845013924e-15,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.3781752074529244e-14
+        },
+        {
+          "id": "d7af33eb-b3e2-4e2b-8a99-0b14fa615e75",
+          "type": "trapezoidfinset",
+          "name": "Trapezoidal fin set",
+          "status": "pass",
+          "part": "airframe.trapezoid_fin",
+          "params": {
+            "root": 152.39999999999998,
+            "tip": 88.89999999999999,
+            "span": 76.19999999999999,
+            "sweep": 43.99409051224947,
+            "thickness": 2.3622,
+            "tab_height": 8.000999999999998,
+            "tab_length": 152.39999999999998,
+            "tab_offset": 0
+          },
+          "expected_volume_mm3": 24597.310805279994,
+          "volume_relative_error": 2.958029709744363e-16,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 9.229052694402411e-14
+        },
+        {
+          "id": "6402576b-0705-4067-a7fc-179ca1d56c58",
+          "type": "tubecoupler",
+          "name": "Tube coupler",
+          "status": "unsupported",
+          "reason": "outerradius: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "013f7d84-d07f-4c91-94a3-2620d04abe32",
+          "type": "railbutton",
+          "name": "Rail Button",
+          "status": "unsupported",
+          "reason": "length: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "c44b0df5-4f40-4774-9bc3-6acb71b40481",
+          "type": "centeringring",
+          "name": "Centering Ring",
+          "status": "unsupported",
+          "reason": "outerradius: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "66ee4e45-21ce-495a-95de-c2c268e84c22",
+          "type": "centeringring",
+          "name": "Centering Ring",
+          "status": "unsupported",
+          "reason": "outerradius: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "891e30f4-bf52-498b-9345-af8407a8da4d",
+          "type": "centeringring",
+          "name": "Centering Ring",
+          "status": "unsupported",
+          "reason": "outerradius: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "53247293-63d7-433a-9d75-d1ae1f2b6bca",
+          "type": "bulkhead",
+          "name": "Bulkhead",
+          "status": "unsupported",
+          "reason": "outerradius: missing or automatic dimension requires assembly resolution"
+        }
+      ]
+    },
+    {
+      "source": {
+        "file": "Two stage high power rocket.ork",
+        "url": "https://raw.githubusercontent.com/openrocket/openrocket/591c5e5f7b7377e48f2bd5e501cef25cdfbd61d8/core/src/main/resources/datafiles/examples/Two%20stage%20high%20power%20rocket.ork",
+        "commit": "591c5e5f7b7377e48f2bd5e501cef25cdfbd61d8",
+        "sha256": "ccb52e5002b0106c005e29b891487f851754d2891d910231eea68023fb171ebd",
+        "license": "GPL-3.0-or-later"
+      },
+      "counts": {
+        "pass": 41,
+        "fail": 0,
+        "unsupported": 6
+      },
+      "full_geometry_pass": false,
+      "components": [
+        {
+          "id": "07ed6b65-d365-4d7a-b7b3-ed41bdb805cd",
+          "type": "nosecone",
+          "name": "Nose Cone",
+          "status": "unsupported",
+          "reason": "unsupported component nosecone"
+        },
+        {
+          "id": "56a70909-5408-4783-8cf8-3adbf6cf8e1e",
+          "type": "bodytube",
+          "name": "Payload Bay",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 101.6,
+            "wall": 1.2700000000000002,
+            "length": 76.19999999999999
+          },
+          "expected_volume_mm3": 30502.776826711288,
+          "volume_relative_error": 3.2202126498024344e-15,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 1.9440543033992474e-14
+        },
+        {
+          "id": "92424dbc-97f5-42b3-be18-0a744363a3a4",
+          "type": "bodytube",
+          "name": "Sustainer Forward Airframe",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 101.6,
+            "wall": 1.2700000000000002,
+            "length": 431.79999999999995
+          },
+          "expected_volume_mm3": 172849.0686846973,
+          "volume_relative_error": 1.178639924110695e-15,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 1.936337018181856e-14
+        },
+        {
+          "id": "75df65c7-7577-4f9e-8fdf-203330caba8e",
+          "type": "bodytube",
+          "name": "Sustainer Switch Band",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 101.6,
+            "wall": 1.2700000000000002,
+            "length": 25.4
+          },
+          "expected_volume_mm3": 10167.59227557043,
+          "volume_relative_error": 3.935815460869642e-15,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 1.7532268871146586e-14
+        },
+        {
+          "id": "a26f8769-5263-48fc-b66a-4cff8470dc58",
+          "type": "bodytube",
+          "name": "Sustainer Aft Airframe",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 101.6,
+            "wall": 1.2700000000000002,
+            "length": 381.0
+          },
+          "expected_volume_mm3": 152513.88413355648,
+          "volume_relative_error": 4.007375741976362e-15,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.0800188375020165e-14
+        },
+        {
+          "id": "797a787d-3cfc-4631-9779-0726db8270a8",
+          "type": "bodytube",
+          "name": "Sustainer Fin Section",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 101.6,
+            "wall": 1.2700000000000002,
+            "length": 177.79999999999998
+          },
+          "expected_volume_mm3": 71173.145928993,
+          "volume_relative_error": 4.9069907044608526e-15,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.0036878709881814e-14
+        },
+        {
+          "id": "1b6ccd8c-3617-4ef0-a8b9-8d7c2254b5df",
+          "type": "tubecoupler",
+          "name": "Tube Coupler",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 98.6536,
+            "wall": 0.8890000000000009,
+            "length": 127.0
+          },
+          "expected_volume_mm3": 34676.63780768265,
+          "volume_relative_error": 8.392921660440135e-16,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 1.2589382490660203e-14
+        },
+        {
+          "id": "ea8ebe8b-955b-4d0e-bc42-bad00893b21e",
+          "type": "bulkhead",
+          "name": "Bulkhead",
+          "status": "pass",
+          "part": "common.disc",
+          "params": {
+            "od": 99.06,
+            "bore": 0,
+            "thickness": 4.762499999999999
+          },
+          "expected_volume_mm3": 36704.68635555988,
+          "volume_relative_error": 0.0,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 0.0
+        },
+        {
+          "id": "65ecc4da-55e7-4a50-995b-8cae6ad9fe7f",
+          "type": "parachute",
+          "name": "Sustainer Main",
+          "status": "unsupported",
+          "reason": "length: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "12474132-2b01-4503-87c9-27e6cd58a50f",
+          "type": "tubecoupler",
+          "name": "Tube Coupler",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 98.6536,
+            "wall": 0.8890000000000009,
+            "length": 203.2
+          },
+          "expected_volume_mm3": 55482.62049229224,
+          "volume_relative_error": 1.311394009443771e-16,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 1.272052189160458e-14
+        },
+        {
+          "id": "f738e5e9-fc24-4343-bb6e-8908d05711d3",
+          "type": "railbutton",
+          "name": "Rail Button",
+          "status": "unsupported",
+          "reason": "length: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "7883e2a1-af01-473a-8829-2ee7f449020f",
+          "type": "bulkhead",
+          "name": "Bulkhead",
+          "status": "pass",
+          "part": "common.disc",
+          "params": {
+            "od": 99.06,
+            "bore": 0,
+            "thickness": 4.762499999999999
+          },
+          "expected_volume_mm3": 36704.68635555988,
+          "volume_relative_error": 0.0,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 0.0
+        },
+        {
+          "id": "9836b369-28be-4825-81d5-b9c5d17d3bdf",
+          "type": "bulkhead",
+          "name": "Bulkhead",
+          "status": "pass",
+          "part": "common.disc",
+          "params": {
+            "od": 97.282,
+            "bore": 0,
+            "thickness": 4.762499999999999
+          },
+          "expected_volume_mm3": 35398.906882384756,
+          "volume_relative_error": 2.0554187275777422e-16,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.0554187275777422e-16
+        },
+        {
+          "id": "e67b1b59-102a-4e6b-a8f3-820410b0b8a8",
+          "type": "tubecoupler",
+          "name": "Tube Coupler",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 96.139,
+            "wall": 2.921,
+            "length": 193.7004
+          },
+          "expected_volume_mm3": 165695.88694476758,
+          "volume_relative_error": 3.5129212913335696e-16,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.0023651360601347e-14
+        },
+        {
+          "id": "46b32aa1-dc29-4f0d-8de9-5b07a9836915",
+          "type": "bulkhead",
+          "name": "Bulkhead",
+          "status": "pass",
+          "part": "common.disc",
+          "params": {
+            "od": 97.282,
+            "bore": 0,
+            "thickness": 4.762499999999999
+          },
+          "expected_volume_mm3": 35398.906882384756,
+          "volume_relative_error": 2.0554187275777422e-16,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.0554187275777422e-16
+        },
+        {
+          "id": "8cf0397d-b6ab-40cc-b32f-84c4b3f80116",
+          "type": "bulkhead",
+          "name": "Bulkhead",
+          "status": "pass",
+          "part": "common.disc",
+          "params": {
+            "od": 99.06,
+            "bore": 0,
+            "thickness": 4.762499999999999
+          },
+          "expected_volume_mm3": 36704.68635555988,
+          "volume_relative_error": 0.0,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 0.0
+        },
+        {
+          "id": "54f964b5-1dad-47ca-a43d-7cf245759018",
+          "type": "parachute",
+          "name": "Sustainer Drogue",
+          "status": "unsupported",
+          "reason": "length: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "5ec3bffd-83dd-4684-ab84-bdc6c6cc0c4a",
+          "type": "tubecoupler",
+          "name": "Tube Coupler",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 98.6536,
+            "wall": 0.8890000000000009,
+            "length": 120.64999999999999
+          },
+          "expected_volume_mm3": 32942.805917298516,
+          "volume_relative_error": 3.312995392279001e-15,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 1.5681511523453938e-14
+        },
+        {
+          "id": "003002a0-43a9-44d9-8436-53aea3a6afdb",
+          "type": "centeringring",
+          "name": "Centering Ring",
+          "status": "pass",
+          "part": "common.disc",
+          "params": {
+            "od": 98.9838,
+            "bore": 78.81620000000001,
+            "thickness": 6.35
+          },
+          "expected_volume_mm3": 17883.379072031712,
+          "volume_relative_error": 0.0,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.258050036073541e-14
+        },
+        {
+          "id": "83e5d38e-073a-40be-ae0c-ee037d74217e",
+          "type": "trapezoidfinset",
+          "name": "Trapezoidal Fin Set",
+          "status": "pass",
+          "part": "airframe.trapezoid_fin",
+          "params": {
+            "root": 146.04999999999998,
+            "tip": 76.19999999999999,
+            "span": 152.39999999999998,
+            "sweep": 38.099999999999966,
+            "thickness": 3.175,
+            "tab_height": 11.429999999999996,
+            "tab_length": 146.0499999999999,
+            "tab_offset": 9.814371537686384e-14
+          },
+          "expected_volume_mm3": 59070.24476249998,
+          "volume_relative_error": 1.2317466506931554e-16,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 8.018670696012442e-14
+        },
+        {
+          "id": "140e10eb-d065-46dc-996d-6552df9c2ff6",
+          "type": "innertube",
+          "name": "Inner Tube",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 78.74000000000001,
+            "wall": 1.2700000000000071,
+            "length": 158.75
+          },
+          "expected_volume_mm3": 49068.28550710426,
+          "volume_relative_error": 8.896937244481456e-16,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 1.03797601185617e-14
+        },
+        {
+          "id": "41aa377d-9a77-4611-8d50-b4570e74a2ef",
+          "type": "centeringring",
+          "name": "Centering Ring",
+          "status": "pass",
+          "part": "common.disc",
+          "params": {
+            "od": 98.9838,
+            "bore": 78.81620000000001,
+            "thickness": 6.35
+          },
+          "expected_volume_mm3": 17883.379072031712,
+          "volume_relative_error": 0.0,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.258050036073541e-14
+        },
+        {
+          "id": "15da66e1-4072-4775-87f6-c0df55da51d4",
+          "type": "bulkhead",
+          "name": "Bulkhead",
+          "status": "pass",
+          "part": "common.disc",
+          "params": {
+            "od": 97.282,
+            "bore": 0,
+            "thickness": 4.775199999999999
+          },
+          "expected_volume_mm3": 35493.30396740445,
+          "volume_relative_error": 2.0499521884086526e-16,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.0499521884086526e-16
+        },
+        {
+          "id": "49ad4403-2047-4192-bf0b-ff2cee380a8a",
+          "type": "centeringring",
+          "name": "Centering Ring",
+          "status": "pass",
+          "part": "common.disc",
+          "params": {
+            "od": 76.12379999999999,
+            "bore": 41.605199999999996,
+            "thickness": 6.35
+          },
+          "expected_volume_mm3": 20267.502493065887,
+          "volume_relative_error": 1.794981304843245e-16,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.261676444102489e-14
+        },
+        {
+          "id": "7dc1a5f0-196e-4f6b-b012-8309dea7b9e2",
+          "type": "centeringring",
+          "name": "Centering Ring",
+          "status": "pass",
+          "part": "common.disc",
+          "params": {
+            "od": 76.12379999999999,
+            "bore": 41.605199999999996,
+            "thickness": 6.35
+          },
+          "expected_volume_mm3": 20267.502493065887,
+          "volume_relative_error": 1.794981304843245e-16,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.261676444102489e-14
+        },
+        {
+          "id": "0f27a531-7a07-464b-bf8f-f930cb0639b4",
+          "type": "innertube",
+          "name": "Sustainer Motor Mount",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 41.275,
+            "wall": 1.3335000000000012,
+            "length": 158.75
+          },
+          "expected_volume_mm3": 26563.237018989203,
+          "volume_relative_error": 2.191286433647248e-15,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.0817221119648858e-14
+        },
+        {
+          "id": "8ced003c-008f-43cd-a1a4-56bd1e8f5ff1",
+          "type": "bodytube",
+          "name": "Interstage",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 101.6,
+            "wall": 1.2700000000000002,
+            "length": 76.19999999999999
+          },
+          "expected_volume_mm3": 30502.776826711288,
+          "volume_relative_error": 3.2202126498024344e-15,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 1.9440543033992474e-14
+        },
+        {
+          "id": "d0569658-3672-4e7c-87ef-7bfb6ae29ea0",
+          "type": "bodytube",
+          "name": "Booster airframe",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 101.6,
+            "wall": 1.2700000000000002,
+            "length": 381.0
+          },
+          "expected_volume_mm3": 152513.88413355648,
+          "volume_relative_error": 4.007375741976362e-15,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.0800188375020165e-14
+        },
+        {
+          "id": "118f4bc1-2b14-4a77-a27c-562231c70919",
+          "type": "bodytube",
+          "name": "Booster fin section",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 101.6,
+            "wall": 1.2700000000000002,
+            "length": 177.79999999999998
+          },
+          "expected_volume_mm3": 71173.145928993,
+          "volume_relative_error": 4.9069907044608526e-15,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.0036878709881814e-14
+        },
+        {
+          "id": "9dc76063-ed91-42e7-86b7-12e3198c2a13",
+          "type": "centeringring",
+          "name": "Centering Ring",
+          "status": "pass",
+          "part": "common.disc",
+          "params": {
+            "od": 98.9838,
+            "bore": 78.81620000000001,
+            "thickness": 6.35
+          },
+          "expected_volume_mm3": 17883.379072031712,
+          "volume_relative_error": 0.0,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.258050036073541e-14
+        },
+        {
+          "id": "71a11a4b-a55e-4ea2-8740-3f57ce86ee34",
+          "type": "innertube",
+          "name": "Inner Tube",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 78.74000000000001,
+            "wall": 1.2700000000000071,
+            "length": 50.8
+          },
+          "expected_volume_mm3": 15701.851362273363,
+          "volume_relative_error": 6.950732222251138e-16,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 1.1352862629676858e-14
+        },
+        {
+          "id": "8b5638c6-7813-4baa-a296-8ec8072b6827",
+          "type": "centeringring",
+          "name": "Centering Ring",
+          "status": "pass",
+          "part": "common.disc",
+          "params": {
+            "od": 98.9838,
+            "bore": 78.81620000000001,
+            "thickness": 6.35
+          },
+          "expected_volume_mm3": 17883.379072031712,
+          "volume_relative_error": 0.0,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.258050036073541e-14
+        },
+        {
+          "id": "95e2d3f8-2ac1-466d-9185-2e49a65a15b2",
+          "type": "tubecoupler",
+          "name": "Tube Coupler",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 98.6536,
+            "wall": 0.8890000000000009,
+            "length": 127.0
+          },
+          "expected_volume_mm3": 34676.63780768265,
+          "volume_relative_error": 8.392921660440135e-16,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 1.2589382490660203e-14
+        },
+        {
+          "id": "e68fb7f8-e6be-42d6-8083-9fb86594dcc1",
+          "type": "railbutton",
+          "name": "Rail Button",
+          "status": "unsupported",
+          "reason": "length: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "99cf3560-c544-4da5-ba3c-753396dbfd00",
+          "type": "tubecoupler",
+          "name": "Tube Coupler",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 75.946,
+            "wall": 1.3970000000000025,
+            "length": 139.7
+          },
+          "expected_volume_mm3": 45707.18838967981,
+          "volume_relative_error": 3.1837257422844494e-16,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 1.878398187947825e-14
+        },
+        {
+          "id": "e9ca4976-f2d1-41ac-ac1a-bb9dd3a32df0",
+          "type": "tubecoupler",
+          "name": "Tube Coupler",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 73.1012,
+            "wall": 3.2131000000000034,
+            "length": 139.7
+          },
+          "expected_volume_mm3": 98553.88632527027,
+          "volume_relative_error": 1.4765440279381032e-15,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.273877803024679e-14
+        },
+        {
+          "id": "209978b9-283e-446d-b8f5-207fca53dba0",
+          "type": "bulkhead",
+          "name": "Bulkhead",
+          "status": "pass",
+          "part": "common.disc",
+          "params": {
+            "od": 99.06,
+            "bore": 0,
+            "thickness": 4.762499999999999
+          },
+          "expected_volume_mm3": 36704.68635555988,
+          "volume_relative_error": 0.0,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 0.0
+        },
+        {
+          "id": "96f4154e-1f4e-4dca-bd7c-3105dad111f1",
+          "type": "tubecoupler",
+          "name": "Tube Coupler",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 97.282,
+            "wall": 2.921,
+            "length": 112.75059999999999
+          },
+          "expected_volume_mm3": 97632.14389104677,
+          "volume_relative_error": 8.942904241418374e-16,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.2208212199522295e-14
+        },
+        {
+          "id": "272ecc19-3819-42c6-9efc-1103650d8ddf",
+          "type": "bulkhead",
+          "name": "Bulkhead",
+          "status": "pass",
+          "part": "common.disc",
+          "params": {
+            "od": 99.06,
+            "bore": 0,
+            "thickness": 4.762499999999999
+          },
+          "expected_volume_mm3": 36704.68635555988,
+          "volume_relative_error": 0.0,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 0.0
+        },
+        {
+          "id": "003eb614-a1e7-4993-9313-755aeb59f777",
+          "type": "bulkhead",
+          "name": "Bulkhead",
+          "status": "pass",
+          "part": "common.disc",
+          "params": {
+            "od": 97.282,
+            "bore": 0,
+            "thickness": 4.762499999999999
+          },
+          "expected_volume_mm3": 35398.906882384756,
+          "volume_relative_error": 2.0554187275777422e-16,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.0554187275777422e-16
+        },
+        {
+          "id": "9f3bc4ff-14a3-44e1-b191-5e35f1c683bd",
+          "type": "parachute",
+          "name": "Booster Chute",
+          "status": "unsupported",
+          "reason": "length: missing or automatic dimension requires assembly resolution"
+        },
+        {
+          "id": "ebb70147-d092-4f81-8cf1-8522f7038249",
+          "type": "tubecoupler",
+          "name": "Tube Coupler",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 98.6536,
+            "wall": 0.8890000000000009,
+            "length": 120.64999999999999
+          },
+          "expected_volume_mm3": 32942.805917298516,
+          "volume_relative_error": 3.312995392279001e-15,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 1.5681511523453938e-14
+        },
+        {
+          "id": "ce7b342f-8b22-485f-966f-06620ceff462",
+          "type": "centeringring",
+          "name": "Centering Ring",
+          "status": "pass",
+          "part": "common.disc",
+          "params": {
+            "od": 98.9838,
+            "bore": 41.605199999999996,
+            "thickness": 6.35
+          },
+          "expected_volume_mm3": 40231.37687059882,
+          "volume_relative_error": 3.6170562283194997e-16,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.2244895804164924e-14
+        },
+        {
+          "id": "c4a488c0-295b-4360-ac86-4afcd8c6133a",
+          "type": "innertube",
+          "name": "Booster motor mount",
+          "status": "pass",
+          "part": "common.tube",
+          "params": {
+            "od": 41.275,
+            "wall": 1.3335000000000012,
+            "length": 158.75
+          },
+          "expected_volume_mm3": 26563.237018989203,
+          "volume_relative_error": 2.191286433647248e-15,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.0817221119648858e-14
+        },
+        {
+          "id": "00f83b32-a764-4352-9493-b1e077c89ab8",
+          "type": "centeringring",
+          "name": "Centering Ring",
+          "status": "pass",
+          "part": "common.disc",
+          "params": {
+            "od": 98.9838,
+            "bore": 41.605199999999996,
+            "thickness": 6.35
+          },
+          "expected_volume_mm3": 40231.37687059882,
+          "volume_relative_error": 3.6170562283194997e-16,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 2.2244895804164924e-14
+        },
+        {
+          "id": "d12bdd9c-5c03-4402-b0a3-707263c791e1",
+          "type": "trapezoidfinset",
+          "name": "Trapezoidal Fin Set",
+          "status": "pass",
+          "part": "airframe.trapezoid_fin",
+          "params": {
+            "root": 146.04999999999998,
+            "tip": 76.19999999999999,
+            "span": 165.0999999999999,
+            "sweep": 38.099999999999966,
+            "thickness": 3.0,
+            "tab_height": 30.162499999999998,
+            "tab_length": 146.04999999999998,
+            "tab_offset": 1.3877787807814457e-14
+          },
+          "expected_volume_mm3": 68255.91187499996,
+          "volume_relative_error": 0.0,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 1.4881109270067997e-13
+        },
+        {
+          "id": "37007aba-2fad-4292-8e93-72d5e280f559",
+          "type": "bulkhead",
+          "name": "Bulkhead",
+          "status": "pass",
+          "part": "common.disc",
+          "params": {
+            "od": 99.06,
+            "bore": 0,
+            "thickness": 4.762499999999999
+          },
+          "expected_volume_mm3": 36704.68635555988,
+          "volume_relative_error": 0.0,
+          "bbox_max_error_mm": 0.0,
+          "step_volume_relative_error": 0.0
+        }
+      ]
+    }
+  ],
+  "passed": false
+}

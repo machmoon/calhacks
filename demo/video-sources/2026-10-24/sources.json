@@ -1,0 +1,422 @@
+{
+  "created": "2026-10-24",
+  "purpose": "Reusable Wright demo source pack, not a finished demo video",
+  "local_assets": [
+    {
+      "id": "current-vtol-orbit",
+      "title": "Earlier VTOL orbit before smooth-wing revision",
+      "kind": "native_geometry_rendered_video",
+      "source": "/Users/patliu/Desktop/Coding/wright/out/tsung-vtol-top-retention/assembly.FCStd",
+      "source_sha256": "6ccbceefd7e22e784f14c54c6bf7f2f4d3a58ada07ccf078db1148c7e6eb4c50",
+      "file": "assets/current-vtol-orbit.mp4",
+      "poster": "assets/current-vtol-orbit.png",
+      "sha256": "6e8427b7a78796d74006b7bd507f56c7917da62c49a3f22c376764cdf0b104f1",
+      "duration_seconds": 8,
+      "width": 640,
+      "height": 480,
+      "fps": 12,
+      "physical_objects": [
+        "WingRight",
+        "BoomRight",
+        "LiftMotorFR",
+        "LiftMotorRR",
+        "WingLeft",
+        "BoomLeft",
+        "LiftMotorFL",
+        "LiftMotorRL",
+        "TopStabilizerRetained",
+        "Pod",
+        "PusherMotor",
+        "FinTopRetentionRight",
+        "LowerDrillV2_1",
+        "Screw0",
+        "Screw1",
+        "Nut0",
+        "Nut1",
+        "FinTopRetentionLeft",
+        "LowerSaddleLeft",
+        "ScrewLeft0",
+        "ScrewLeft1",
+        "NutLeft0",
+        "NutLeft1",
+        "TopScrewRight0",
+        "TopScrewLeft0",
+        "TopScrewRight1",
+        "TopScrewLeft1",
+        "TopNutRight0",
+        "TopNutLeft0",
+        "TopNutRight1",
+        "TopNutLeft1"
+      ],
+      "triangles": 38514,
+      "caption": "Native CAD render; proposed reconstruction",
+      "qualification": "Rendered from saved B-reps, not a live UI recording. Full aircraft attachments and structural sizing remain unfinished.",
+      "source_unchanged": true
+    },
+    {
+      "id": "aircraft-turntable",
+      "title": "Older aircraft overview",
+      "kind": "existing_rendered_video",
+      "source": "/Users/patliu/Desktop/Coding/wright/demo/aircraft/fab/video/turntable.mp4",
+      "file": "assets/aircraft-turntable.mp4",
+      "poster": "assets/aircraft-turntable.jpg",
+      "sha256": "fbb0a2005e0c3b3c6784687a00559cd8308f57fb51dff11d9b136b21da0f3b59",
+      "duration_seconds": 8.0,
+      "streams": [
+        {
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "30/1"
+        }
+      ],
+      "provenance": "Earlier rendered vehicle model",
+      "suggested_use": "Existing product workflow B-roll",
+      "caption": "Rendered simulation; earlier model",
+      "qualification": "Not the latest Tsung VTOL reconstruction; not filmed fabrication or flight."
+    },
+    {
+      "id": "aircraft-assembly",
+      "title": "Older aircraft assembly animation",
+      "kind": "existing_rendered_video",
+      "source": "/Users/patliu/Desktop/Coding/wright/demo/aircraft/fab/video/assembly.mp4",
+      "file": "assets/aircraft-assembly.mp4",
+      "poster": "assets/aircraft-assembly.jpg",
+      "sha256": "9ff48d86c5e6d29627650329e665326893ed223e78db9f16618f20ec9a056fa5",
+      "duration_seconds": 15.7,
+      "streams": [
+        {
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "30/1"
+        }
+      ],
+      "provenance": "54 parts fly in in the build guide's order (assembly.stl split into 54 connected pieces)",
+      "suggested_use": "Existing product workflow B-roll",
+      "caption": "Rendered simulation; earlier model",
+      "qualification": "Not the latest Tsung VTOL reconstruction; not filmed fabrication or flight."
+    },
+    {
+      "id": "aircraft-print_wing_L_0",
+      "title": "Wing G-code visualization",
+      "kind": "existing_rendered_video",
+      "source": "/Users/patliu/Desktop/Coding/wright/demo/aircraft/fab/video/print_wing_L_0.mp4",
+      "file": "assets/aircraft-print_wing_L_0.mp4",
+      "poster": "assets/aircraft-print_wing_L_0.jpg",
+      "sha256": "1227e45dcc430378729c74faea381ff5cecb935490cf3ada7b0a12513cfb039c",
+      "duration_seconds": 11.033333,
+      "streams": [
+        {
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "30/1"
+        }
+      ],
+      "provenance": "print timelapse from the sliced G-code, 999 layers",
+      "suggested_use": "Existing product workflow B-roll",
+      "caption": "Rendered simulation; earlier model",
+      "qualification": "Not the latest Tsung VTOL reconstruction; not filmed fabrication or flight."
+    },
+    {
+      "id": "rocket-turntable",
+      "title": "Rocket overview",
+      "kind": "existing_rendered_video",
+      "source": "/Users/patliu/Desktop/Coding/wright/demo/rocket/fab/video/turntable.mp4",
+      "file": "assets/rocket-turntable.mp4",
+      "poster": "assets/rocket-turntable.jpg",
+      "sha256": "a174e35bbcc03726d528805ef87d3373a255c8326b2b2ebbe9d8989f4b88a507",
+      "duration_seconds": 8.0,
+      "streams": [
+        {
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "30/1"
+        }
+      ],
+      "provenance": "Earlier rendered vehicle model",
+      "suggested_use": "Existing product workflow B-roll",
+      "caption": "Rendered rocket model / fabrication visualization",
+      "qualification": "Not footage of a built or flown rocket; geometry and process visualization only."
+    },
+    {
+      "id": "rocket-assembly",
+      "title": "Rocket assembly animation",
+      "kind": "existing_rendered_video",
+      "source": "/Users/patliu/Desktop/Coding/wright/demo/rocket/fab/video/assembly.mp4",
+      "file": "assets/rocket-assembly.mp4",
+      "poster": "assets/rocket-assembly.jpg",
+      "sha256": "2ad02a73b0e3d76a6ff673155f2bb228096884e733fcc8f3951146618d3ca9f9",
+      "duration_seconds": 9.2,
+      "streams": [
+        {
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "30/1"
+        }
+      ],
+      "provenance": "16 parts fly in in the build guide's order (16 part STLs in the vehicle frame)",
+      "suggested_use": "Existing product workflow B-roll",
+      "caption": "Rendered rocket model / fabrication visualization",
+      "qualification": "Not footage of a built or flown rocket; geometry and process visualization only."
+    },
+    {
+      "id": "rocket-print_fin_alignment_jig",
+      "title": "Fin-jig G-code visualization",
+      "kind": "existing_rendered_video",
+      "source": "/Users/patliu/Desktop/Coding/wright/demo/rocket/fab/video/print_fin_alignment_jig.mp4",
+      "file": "assets/rocket-print_fin_alignment_jig.mp4",
+      "poster": "assets/rocket-print_fin_alignment_jig.jpg",
+      "sha256": "a89b040df38296150a0c804bd09628cce7f79ffe10a263da5f191be85576a64b",
+      "duration_seconds": 11.033008,
+      "streams": [
+        {
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "30/1"
+        }
+      ],
+      "provenance": "print timelapse from the sliced G-code, 124 layers",
+      "suggested_use": "Existing product workflow B-roll",
+      "caption": "Rendered rocket model / fabrication visualization",
+      "qualification": "Not footage of a built or flown rocket; geometry and process visualization only."
+    },
+    {
+      "id": "vtol-reference",
+      "title": "Reference reconstruction",
+      "kind": "native_cad_still",
+      "source": "/Users/patliu/Desktop/Coding/wright/out/tsung-vtol-reference/reference-preview.png",
+      "file": "assets/vtol-reference.png",
+      "sha256": "6c29e27e0b44e9c020552f87becce0ea8c8dcd84959b2534459523ff9491c959",
+      "caption": "Approximate reference reconstruction",
+      "suggested_use": "Current CAD progress; capture an orbit or parameter edit from the associated FCStd for motion"
+    },
+    {
+      "id": "vtol-assembly",
+      "title": "Current bilateral tail assembly",
+      "kind": "native_cad_still",
+      "source": "/Users/patliu/Desktop/Coding/wright/out/tsung-vtol-tail-assembly/aircraft.png",
+      "file": "assets/vtol-assembly.png",
+      "sha256": "058c2ea38cbcad7f99fe2269fc4e7052abf77d3ece4e32dac7a24a965c91915d",
+      "caption": "Native CAD; attachment work in progress",
+      "suggested_use": "Current CAD progress; capture an orbit or parameter edit from the associated FCStd for motion"
+    },
+    {
+      "id": "tail-cutaway",
+      "title": "Tail clamp cutaway",
+      "kind": "native_cad_still",
+      "source": "/Users/patliu/Desktop/Coding/wright/out/tsung-vtol-tail-joint-v2/root-cutaway.png",
+      "file": "assets/tail-cutaway.png",
+      "sha256": "c13f305a3fd8f8c9d3ce88569e2fbd0b5af1b46aee389704b696dd68a54aa09d",
+      "caption": "Proposed split clamp, not original author internals",
+      "suggested_use": "Current CAD progress; capture an orbit or parameter edit from the associated FCStd for motion"
+    },
+    {
+      "id": "spar-hardpoint",
+      "title": "Spar-to-boom hardpoint",
+      "kind": "native_cad_still",
+      "source": "/Users/patliu/Desktop/Coding/wright/out/tsung-vtol-wing-hardpoint/hardpoint.png",
+      "file": "assets/spar-hardpoint.png",
+      "sha256": "7721f5e983cdad8806f6ee8b5a3e991db5563bcb92f7835bcf11d937cc0bd7b7",
+      "caption": "Local attachment geometry; structural sizing unresolved",
+      "suggested_use": "Current CAD progress; capture an orbit or parameter edit from the associated FCStd for motion"
+    },
+    {
+      "id": "top-retention",
+      "title": "Top stabilizer retention closeup",
+      "kind": "native_cad_still",
+      "source": "/Users/patliu/Desktop/Coding/wright/out/tsung-vtol-top-retention/top-joint.png",
+      "file": "assets/top-retention.png",
+      "sha256": "e4f5a6eee3b27f9e6f280224aa78e5cb773d65b292fa8f22db188f660c2b569b",
+      "caption": "Proposed screw-and-nut retention; full aircraft attachments unfinished",
+      "suggested_use": "Show actual modeled hardware and access pockets; this view shows one side",
+      "evidence": "/Users/patliu/Desktop/Coding/wright/out/tsung-vtol-top-retention/result.json"
+    },
+    {
+      "id": "lift-mount",
+      "title": "Lift Mount",
+      "kind": "native_cad_still",
+      "source": "/Users/patliu/Desktop/Coding/wright/out/tsung-vtol-lift-mount/lift-mount.png",
+      "file": "assets/lift-mount.png",
+      "sha256": "b48e1b2b9e0bda27b75e0d8c83f5afe88a02d606335403722d5d0130c2fe50c6",
+      "caption": "Proposed lift motor clamp and screw access",
+      "qualification": "Local geometry; rear rotor sweep conflicts remain unresolved."
+    },
+    {
+      "id": "lift-mount-underside",
+      "title": "Lift Mount Underside",
+      "kind": "native_cad_still",
+      "source": "/Users/patliu/Desktop/Coding/wright/out/tsung-vtol-lift-mount/lift-mount-underside.png",
+      "file": "assets/lift-mount-underside.png",
+      "sha256": "74aeb1f996edb62f1a33d5f3b831268798cca2abb615fe1cc2b0f7f78d796b9c",
+      "caption": "Proposed lift motor clamp and screw access",
+      "qualification": "Local geometry; rear rotor sweep conflicts remain unresolved."
+    },
+    {
+      "id": "smooth-wing-proposed",
+      "title": "Smooth native wing candidate",
+      "kind": "native_cad_still",
+      "source": "/Users/patliu/Desktop/Coding/wright/out/tsung-vtol-smooth-aircraft/wing-proposed.png",
+      "file": "assets/smooth-wing-proposed.png",
+      "sha256": "7aa78f3cbe2208d250d0ba7a5a0139ba7ef79de5a563c4241462606b68ca734e",
+      "caption": "Proposed smooth exterior, one wing half. First candidate failed its internal cavity wall check; corrected cavity revision is in progress."
+    },
+    {
+      "id": "motor-imported",
+      "title": "Manufacturer motor CAD",
+      "kind": "native_cad_still",
+      "source": "/Users/patliu/Desktop/Coding/wright/out/vendor-components/mn2806evo.png",
+      "file": "assets/motor-imported.png",
+      "sha256": "756fae5431f21496b2056eaac0666ace0d6710e031c1f173ae4f96d83baf6630",
+      "caption": "Actual T-MOTOR MN2806 EVO STEP; component-library demonstration, not the reference AOS2807."
+    },
+    {
+      "id": "prop-imported",
+      "title": "Manufacturer propeller CAD",
+      "kind": "native_cad_still",
+      "source": "/Users/patliu/Desktop/Coding/wright/out/vendor-components/p12x4.png",
+      "file": "assets/prop-imported.png",
+      "sha256": "d90821acd592aac5563d14face22e5057a34e9306dfe809306b611897acec8f5",
+      "caption": "Actual T-MOTOR P12x4 STEP; component-library demonstration, not the reference Gemfan7042."
+    },
+    {
+      "id": "smooth-aircraft-checked",
+      "title": "Smooth wing and corrected rear rotor layout",
+      "kind": "native_geometry_rendered_still",
+      "source": "/Users/patliu/Desktop/Coding/wright/out/tsung-vtol-smooth-aircraft-final/assembly.FCStd",
+      "source_sha256": "e644c1cba9b538088d34f815a0ce4029b13d308bda54084311daf666f104ce6b",
+      "file": "assets/smooth-aircraft-checked.png",
+      "sha256": "3070707ce15b39d9fd6e2f21166424b7314906e3b1cd38eebc77acd64fe739d9",
+      "caption": "Current geometry revision: smooth wing with internal ribs/spar and corrected rear rotor clearance",
+      "qualification": "85 physical parts,3570 pair checks,0 overlaps and0 unmet required contacts. Three assembly groups remain disconnected; structural sizing and flight readiness unverified. Motor bodies remain envelopes; supplier motor/prop demos are separate. Integrated STEP not exported or checked.",
+      "evidence": "evidence/smooth-assembly/result.json"
+    },
+    {
+      "id": "aircraft-internals",
+      "title": "Assembly with wing skins hidden",
+      "kind": "native_geometry_rendered_still",
+      "source": "/Users/patliu/Desktop/Coding/wright/out/tsung-vtol-smooth-aircraft-final/assembly.FCStd",
+      "source_sha256": "e644c1cba9b538088d34f815a0ce4029b13d308bda54084311daf666f104ce6b",
+      "file": "assets/aircraft-internals.png",
+      "sha256": "ad9074820ec84cc20d6cd7d7ca048a952deb312b43d9362b93a101bdc893604f",
+      "caption": "Wing skins hidden for display only. Blue box is a nonphysical MG90S static envelope.",
+      "qualification": "Native geometry unchanged; structural sizing and three missing assembly interfaces remain unresolved.",
+      "evidence": "evidence/smooth-assembly/internals-preview.json"
+    },
+    {
+      "id": "wing-internals",
+      "title": "Wing ribs, spars and servo envelope",
+      "kind": "native_geometry_rendered_still",
+      "source": "/Users/patliu/Desktop/Coding/wright/out/tsung-vtol-smooth-aircraft-final/assembly.FCStd",
+      "source_sha256": "e644c1cba9b538088d34f815a0ce4029b13d308bda54084311daf666f104ce6b",
+      "file": "assets/wing-internals.png",
+      "sha256": "b6516812a5639bbba6cead5ea61f3199bfd8004f7ec1fd04a2105998b765aa4d",
+      "caption": "Wing skins hidden for display only. Blue box is a nonphysical MG90S static envelope.",
+      "qualification": "Native geometry unchanged; structural sizing and three missing assembly interfaces remain unresolved.",
+      "evidence": "evidence/smooth-assembly/internals-preview.json"
+    },
+    {
+      "id": "controller-imported",
+      "title": "Manufacturer flight-controller module CAD",
+      "kind": "native_geometry_rendered_still",
+      "source": "/Users/patliu/Desktop/Coding/wright/out/native-mixed-step-import/component.FCStd",
+      "source_sha256": "a071333b84cf05f1b64dbc7e8b2ae4c9bb8fd2feab1b1fc46870053be1aaabe5",
+      "file": "assets/controller-imported.png",
+      "sha256": "cbdbe46956b999b68aa0a5042f979ace62cbd8c6f7a5566ffa8423569854694a",
+      "caption": "Actual Holybro Pixhawk 6X Pro simplified housed-module CAD. All18solids and13reference surfaces retained.",
+      "qualification": "Not a bare PCB or reference-VTOL Speedybee substitution. Reference surfaces are excluded from mass/collision checks. Native preservation and reopen passed; checked STEP export is unavailable for this mixed model.",
+      "evidence": "evidence/controller-import/preservation.json"
+    }
+  ],
+  "external_sources": [
+    {
+      "title": "Tsung Xu original VTOL build video",
+      "url": "https://www.youtube.com/watch?v=e7AIKGDrlgs",
+      "creator": "Tsung Xu",
+      "usage_status": "Reference link; no clip download or reuse permission recorded",
+      "verification": "Timestamp observations retained from cad/projects/tsung_vtol/reference-audit.json; direct YouTube web fetch throttled on this pass",
+      "moments": [
+        {
+          "seconds": 30,
+          "url": "https://www.youtube.com/watch?v=e7AIKGDrlgs&t=30s",
+          "shows": "Overall wireframe layout",
+          "use": "Introduce the target complexity"
+        },
+        {
+          "seconds": 32,
+          "url": "https://www.youtube.com/watch?v=e7AIKGDrlgs&t=32s",
+          "shows": "Fusion CAD and curved wing planform",
+          "use": "Reference-to-reconstruction comparison"
+        },
+        {
+          "seconds": 42,
+          "url": "https://www.youtube.com/watch?v=e7AIKGDrlgs&t=42s",
+          "shows": "Open pod, internal ridge and bench electronics",
+          "use": "Explain why internal packaging matters"
+        }
+      ]
+    },
+    {
+      "title": "Author build article",
+      "url": "https://www.tsungxu.com/p/i-made-a-3d-printed-vtol-that-can",
+      "creator": "Tsung Xu",
+      "usage_status": "Source attribution and reference"
+    },
+    {
+      "title": "Author Reddit post and performance caveat",
+      "url": "https://www.reddit.com/r/diydrones/comments/1l89dcr/i_made_a_3d_printed_vtol_that_can_fly_130_miles/",
+      "creator": "Tsung Xu",
+      "usage_status": "Source attribution; advertised130mi capability is not a completed full-range flight test"
+    }
+  ],
+  "capture_queue": [
+    {
+      "shot": "Actual Astra repair replay",
+      "source": "/Users/patliu/Desktop/Coding/wright/out/astra-vtol-clamp-repair/run-88837",
+      "action": "Capture tool edits and the native result together; label as replay of the recorded run",
+      "status": "screen recording not captured"
+    },
+    {
+      "shot": "Coupled bilateral parameter edit",
+      "source": "/Users/patliu/Desktop/Coding/wright/out/tsung-vtol-tail-assembly/assembly.FCStd",
+      "action": "Capture boom spacing220\u2192230\u2192220 with both clamps following",
+      "status": "screen recording not captured"
+    },
+    {
+      "shot": "Latest assembly orbit and hardpoint closeup",
+      "source": "/Users/patliu/Desktop/Coding/wright/out/tsung-vtol-wing-hardpoint/assembly.FCStd",
+      "action": "Orbit native geometry; show top spar collar and lower split clamp",
+      "status": "Full-aircraft native geometry orbit completed. Hardpoint orbit failed renderer work budget; retained still. Live UI capture not obtained."
+    }
+  ],
+  "editorial_notes": [
+    "Existing MP4s are earlier rendered demos, not recordings of the latest CAD work.",
+    "Do not use old demo-script performance or build-ready wording as current proof without revalidation.",
+    "Current images are snapshots with content hashes, so later CAD changes cannot silently alter this pack."
+  ],
+  "evidence": {
+    "astra_clamp_repair": "evidence/astra-clamp-repair/action-summary.json",
+    "independent_oracle": "evidence/astra-clamp-repair/independent-repair-oracle.json",
+    "edit_notes": "edit-notes.txt",
+    "lift_sweep_collision": "evidence/lift-mount/collision-highlight.json"
+  },
+  "native_wing_analysis": {
+    "image": "assets/native-wing-analysis.png",
+    "report": "evidence/native-wing-analysis/analysis.json",
+    "regression": "evidence/native-wing-analysis/regression.json",
+    "source": "out/native-wing-analysis/input.json",
+    "scope": "Actual CAD-derived reduced wing analysis; no flight/structural approval",
+    "sha256": "741e780c21c7a23fba074e9f0905a06c459e3442b2a4db03703a07c12f5beb6a"
+  },
+  "jetson_hole_map": {
+    "file": "assets/jetson-hole-map.png",
+    "evidence": "evidence/jetson-holes/candidates.json",
+    "kind": "CAD-derived engineering diagram",
+    "scope": "Measured hole candidates, not accepted mounting design",
+    "sha256": "fb461aef9f8bed020db2609c442dbb4d0911c0208eebe39ca4639ad7be233b2c"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "units": "mm",
+  "cases": [
+    {"id":"four_bolt_stack_train","split":"train","family":"four_bolt","shell_radius":30,"plate_width":32,"bolt_count":4,"levels":3,"target_thickness":3},
+    {"id":"four_bolt_stack_validation","split":"validation","family":"four_bolt","shell_radius":34,"plate_width":36,"bolt_count":4,"levels":4,"target_thickness":4},
+    {"id":"six_bolt_stack_test","split":"test","family":"six_bolt","shell_radius":42,"plate_width":48,"bolt_count":6,"levels":3,"target_thickness":3.5}
+  ]
+}

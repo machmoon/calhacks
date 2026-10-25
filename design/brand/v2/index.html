@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wright marks v2</title>
+<style>
+  :root { --paper:#F4F3EF; --ink:#141414; --night:#121212; --chalk:#EDEBE6; --rule:#d9d7d0; --mute:#6b6a66; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#fff; color:var(--ink); font:14px/1.45 -apple-system, "Helvetica Neue", Arial, sans-serif; }
+  header { padding:32px 40px 8px; }
+  h1 { font-size:20px; margin:0 0 4px; font-weight:600; }
+  header p { margin:0; color:var(--mute); max-width:820px; }
+  .dir { display:grid; grid-template-columns:1fr 1fr; border-top:1px solid var(--rule); margin-top:24px; }
+  .label { grid-column:1 / -1; padding:16px 40px 0; display:flex; gap:16px; align-items:baseline; }
+  .label b { font-size:16px; }
+  .label span { color:var(--mute); }
+  .panel { padding:20px 40px 28px; display:flex; flex-wrap:wrap; align-items:flex-end; gap:28px; }
+  .light { background:var(--paper); }
+  .dark { background:var(--night); color:var(--chalk); }
+  .dark .cap { color:#8d8b86; }
+  figure img[src*="tile"] { border-radius:30px; box-shadow:0 0 0 1px #8883; }
+  figure { margin:0; display:flex; flex-direction:column; align-items:center; gap:6px; }
+  .cap { font:11px/1 ui-monospace, "SF Mono", Menlo, monospace; color:var(--mute); }
+  canvas.px { image-rendering:pixelated; width:96px; height:96px; }
+  .lock { flex-basis:100%; }
+  .lock img { height:56px; width:auto; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Wright: logo directions v2</h1>
+  <p>Five hand-built marks. Master drawings on a 48-unit grid; separate 16-pixel drawings for favicons (one unit = one pixel). One ink plus an optional copper accent; no gradients, filters or shadows. Wordmark: IBM Plex Sans SemiBold, outlined. Sizes left to right: 256 tile, 64, 32 (48-grid master), 16 (16-grid drawing), and the 16 px raster magnified 6x.</p>
+</header>
+<main id="sheet"></main>
+<script>
+const dirs = [
+  ["a-trace", "A. Trace", "W routed as a PCB track: vertical runs, 45° mitres, top ends on SMD pads", true],
+  ["b-resistor", "B. Resistor", "the US resistor zigzag is a W; KiCad R_US proportions", false],
+  ["c-planform", "C. Planform", "flying wing from above; the sawtooth trailing edge is the W", false],
+  ["d-bay", "D. Bay", "one braced bay of the Wright biplane: 1-in-20 camber, uprights, cross wires", false],
+  ["e-ballgrid", "E. Ball grid", "W read off a BGA footprint, 9 balls, 5×4 grid", true],
+];
+const sheet = document.getElementById("sheet");
+for (const [slug, name, note, accent] of dirs) {
+  const sec = document.createElement("section");
+  sec.className = "dir";
+  sec.innerHTML = `<div class="label"><b>${name}</b><span>${note}</span></div>`;
+  for (const mode of ["light", "dark"]) {
+    const s = mode === "dark" ? "-dark" : "";
+    const p = document.createElement("div");
+    p.className = "panel " + mode;
+    p.innerHTML = `
+      <figure><img src="${slug}/tile${s}.svg" width="128" height="128" alt=""><figcaption class="cap">tile</figcaption></figure>
+      <figure><img src="${slug}/mark${s}.svg" width="64" height="64" alt=""><figcaption class="cap">64</figcaption></figure>
+      <figure><img src="${slug}/mark${s}.svg" width="32" height="32" alt=""><figcaption class="cap">32</figcaption></figure>
+      <figure><img src="${slug}/mark-16${s}.svg" width="16" height="16" alt=""><figcaption class="cap">16</figcaption></figure>
+      <figure><canvas class="px" width="16" height="16" data-src="${slug}/mark-16${s}.svg"></canvas><figcaption class="cap">16 @ 6x</figcaption></figure>
+      ${accent ? `<figure><img src="${slug}/mark-accent${s}.svg" width="64" height="64" alt=""><figcaption class="cap">accent</figcaption></figure>` : ""}
+      <figure class="lock"><img src="${slug}/lockup${s}.svg" alt="Wright"></figure>`;
+    sec.appendChild(p);
+  }
+  sheet.appendChild(sec);
+}
+for (const c of document.querySelectorAll("canvas.px")) {
+  const img = new Image();
+  img.onload = () => c.getContext("2d").drawImage(img, 0, 0, 16, 16);
+  img.src = c.dataset.src;
+}
+</script>
+</body>
+</html>

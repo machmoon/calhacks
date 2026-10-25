@@ -1,0 +1,6 @@
+{
+  "request": "servo power board for the VTOL: 6 V 5 A from 4S",
+  "template": {"kind": "servo_power", "vin_min_v": 14.0, "vin_max_v": 16.8, "vout_v": 6.0, "iout_a": 5.0, "servos": 5},
+  "max_board_mm": [60.0, 40.0],
+  "budget_usd": 25.0
+}

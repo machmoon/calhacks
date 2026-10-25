@@ -1,0 +1,289 @@
+[
+ {
+  "id": "cam-gopro13",
+  "slot": "camera",
+  "name": "GoPro HERO13 Black on its own battery (off at burst)",
+  "items": [
+   {
+    "part": "gopro-hero13",
+    "qty": 1,
+    "bus": null,
+    "rail": null,
+    "on_after_landing": false,
+    "until_burst": true
+   }
+  ]
+ },
+ {
+  "id": "cam-runcam5",
+  "slot": "camera",
+  "name": "RunCam 5 Orange on a 4x L91 + 5 V buck-boost bus (off at burst)",
+  "items": [
+   {
+    "part": "runcam5-orange",
+    "qty": 1,
+    "bus": 0,
+    "rail": 0,
+    "on_after_landing": false,
+    "until_burst": true
+   }
+  ],
+  "buses": [
+   {
+    "name": "camera L91 4S2P",
+    "battery": "l91-aa",
+    "series": 4,
+    "parallel": 2,
+    "rails": [
+     "pololu-s9v11f5"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "cam-jetson-brio",
+  "slot": "camera",
+  "name": "Jetson Orin Nano + BRIO on a 4S LiPo",
+  "items": [
+   {
+    "part": "jetson-orin-nano-devkit",
+    "qty": 1,
+    "bus": 0,
+    "rail": null,
+    "on_after_landing": false
+   },
+   {
+    "part": "logitech-brio",
+    "qty": 1,
+    "bus": 0,
+    "rail": 0,
+    "on_after_landing": false
+   }
+  ],
+  "buses": [
+   {
+    "name": "4S LiPo",
+    "battery": "lipo-4s-6000",
+    "series": 1,
+    "parallel": 1,
+    "rails": [
+     "reg-5v-1a8"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "aprs-lightaprs2",
+  "slot": "primary",
+  "name": "LightAPRS 2.0 on 3x L91",
+  "needs_licence": true,
+  "items": [
+   {
+    "part": "lightaprs-2",
+    "qty": 1,
+    "bus": 0,
+    "rail": null,
+    "on_after_landing": true
+   }
+  ],
+  "buses": [
+   {
+    "name": "APRS L91 3S1P",
+    "battery": "l91-aa",
+    "series": 3,
+    "parallel": 1,
+    "rails": []
+   }
+  ],
+  "trackers": [
+   {
+    "name": "APRS (LightAPRS 2.0)",
+    "class": "primary",
+    "radio": "lightaprs-2",
+    "gps": "lightaprs-2",
+    "gps_airborne": true,
+    "ground": "aprs-ham-ht"
+   }
+  ]
+ },
+ {
+  "id": "lora-heltec",
+  "slot": "secondary",
+  "name": "Heltec LoRa beacon + Matek M10 on 4x L91 + buck-boost (Part 97, 33 cm band: licensed operator, callsign in each packet)",
+  "items": [
+   {
+    "part": "heltec-lora32-v3",
+    "qty": 1,
+    "bus": 0,
+    "rail": 0,
+    "on_after_landing": true
+   },
+   {
+    "part": "matek-m10q",
+    "qty": 1,
+    "bus": 0,
+    "rail": 0,
+    "on_after_landing": true
+   }
+  ],
+  "buses": [
+   {
+    "name": "LoRa L91 4S1P",
+    "battery": "l91-aa",
+    "series": 4,
+    "parallel": 1,
+    "rails": [
+     "pololu-s9v11f5"
+    ]
+   }
+  ],
+  "ground_needed": [
+   "heltec-ground"
+  ],
+  "trackers": [
+   {
+    "name": "LoRa 915 (Heltec + M10)",
+    "class": "secondary",
+    "radio": "heltec-lora32-v3",
+    "gps": "matek-m10q",
+    "gps_airborne": true,
+    "ground": "heltec-ground"
+   }
+  ],
+  "needs_licence": true
+ },
+ {
+  "id": "elrs-cr8",
+  "slot": "secondary",
+  "name": "CR8 ELRS + ESP32 + M10 on 4x L91 + buck-boost, Bandit Micro on the ground",
+  "items": [
+   {
+    "part": "stardrone-cr8-elrs",
+    "qty": 1,
+    "bus": 0,
+    "rail": 0,
+    "on_after_landing": true
+   },
+   {
+    "part": "esp32-devkit",
+    "qty": 1,
+    "bus": 0,
+    "rail": 0,
+    "on_after_landing": true
+   },
+   {
+    "part": "matek-m10q",
+    "qty": 1,
+    "bus": 0,
+    "rail": 0,
+    "on_after_landing": true
+   }
+  ],
+  "buses": [
+   {
+    "name": "ELRS L91 4S1P",
+    "battery": "l91-aa",
+    "series": 4,
+    "parallel": 1,
+    "rails": [
+     "pololu-s9v11f5"
+    ]
+   }
+  ],
+  "ground_needed": [
+   "elrs-bandit-micro"
+  ],
+  "trackers": [
+   {
+    "name": "ELRS telemetry (CR8 + M10)",
+    "class": "secondary",
+    "radio": "stardrone-cr8-elrs",
+    "gps": "matek-m10q",
+    "gps_airborne": true,
+    "ground": "elrs-bandit-micro"
+   }
+  ]
+ },
+ {
+  "id": "phone-heater",
+  "slot": "backup",
+  "name": "phone + 5 W heater pad on 4x L91 x2 + buck-boost",
+  "items": [
+   {
+    "part": "phone-backup",
+    "qty": 1,
+    "bus": null,
+    "rail": null,
+    "on_after_landing": true
+   },
+   {
+    "part": "heater-pad",
+    "qty": 1,
+    "bus": 0,
+    "rail": 0,
+    "on_after_landing": false
+   },
+   {
+    "part": "mosfet-board",
+    "qty": 1,
+    "bus": null,
+    "rail": null,
+    "on_after_landing": false
+   }
+  ],
+  "buses": [
+   {
+    "name": "heater L91 4S2P",
+    "battery": "l91-aa",
+    "series": 4,
+    "parallel": 2,
+    "rails": [
+     "pololu-s9v11f5"
+    ]
+   }
+  ],
+  "trackers": [
+   {
+    "name": "phone in the box",
+    "class": "backup",
+    "radio": "phone-backup",
+    "gps": "phone-backup",
+    "gps_airborne": false,
+    "ground": null
+   }
+  ]
+ },
+ {
+  "id": "heater-only",
+  "slot": "backup",
+  "name": "5 W heater pad on 4x L91 x2 + buck-boost (no phone)",
+  "items": [
+   {
+    "part": "heater-pad",
+    "qty": 1,
+    "bus": 0,
+    "rail": 0,
+    "on_after_landing": false
+   },
+   {
+    "part": "mosfet-board",
+    "qty": 1,
+    "bus": null,
+    "rail": null,
+    "on_after_landing": false
+   }
+  ],
+  "buses": [
+   {
+    "name": "heater L91 4S2P",
+    "battery": "l91-aa",
+    "series": 4,
+    "parallel": 2,
+    "rails": [
+     "pololu-s9v11f5"
+    ]
+   }
+  ],
+  "trackers": []
+ }
+]

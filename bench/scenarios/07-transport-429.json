@@ -1,0 +1,23 @@
+{
+  "id": "transport-429",
+  "description": "The transport answers the lead's second call with a 429 that outlived its retries. The run must stop with an error (never a pass, never a budget overrun), after at most two calls.",
+  "domain": "toy",
+  "request": "a span for a 100 mm gap under $50",
+  "spec": {"target_mm": 100.0, "budget_usd": 50.0},
+  "model": {
+    "orchestrator": [
+      {"tool": "design", "input": {}},
+      {"http": 429}
+    ],
+    "reviewer": [
+      {"tool": "verdict", "input": {"summary": "should never be asked"}}
+    ]
+  },
+  "expect": {
+    "passed": false,
+    "stop": "error",
+    "max_calls": 2,
+    "max_cost_usd": 0.05,
+    "forbid": [{"agent": "reviewer", "tool": "verdict"}]
+  }
+}

@@ -1,0 +1,6 @@
+import FreeCAD as A,json,sys,importlib.util,hashlib
+from pathlib import Path
+out=Path(sys.argv[1]).resolve();m=json.loads((out/'artifact-manifest.json').read_text());p=Path(m['proxy_module']);s=importlib.util.spec_from_file_location(p.stem,p);mod=importlib.util.module_from_spec(s);sys.modules[p.stem]=mod;s.loader.exec_module(mod);d=A.openDocument(str(out/'assembly.FCStd'));rows=[]
+for key,value,names in [('WingletHeight',80,['WingletRight','WingletLeft']),('WingletCantAngle',25,['WingletRight','WingletLeft']),('WingletSweepOffset',40,['WingletRight','WingletLeft']),('TailDihedralAngle',35,['TailSurfaceRight','TailSurfaceLeft','RuddervatorRight','RuddervatorLeft'])]:
+ old=getattr(d.DesignParameters,key).Value;before={n:d.getObject(n).Shape.exportBrepToString() for n in names};setattr(d.DesignParameters,key,value);d.recompute();row={'parameter':key,'value':value,'type':d.DesignParameters.getTypeIdOfProperty(key),'objects':{n:{'changed':d.getObject(n).Shape.exportBrepToString()!=before[n],'valid':d.getObject(n).Shape.isValid(),'solids':len(d.getObject(n).Shape.Solids)} for n in names}};rows.append(row);print(row,flush=True);setattr(d.DesignParameters,key,old);d.recompute()
+(out/'appearance-edit-check.json').write_text(json.dumps({'scope':'fresh native reopen and four actual parameter changes; original file never saved','edits':rows},indent=2))

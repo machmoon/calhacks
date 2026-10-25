@@ -1,0 +1,17 @@
+[package]
+name = "wright-electronics"
+description = "Electronics domain for Wright: circuit templates, the PCB pipeline, no-omission checks, BOM, build (Python-baseline rewrite, lane E)"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+anyhow.workspace = true
+wright-eda = { path = "../wright-eda" }
+wright-core.workspace = true
+wright-kicad = { path = "../wright-kicad" }
+wright-sch = { path = "../wright-sch" }
+wright-place = { path = "../wright-place" }
+wright-route = { path = "../wright-route" }

@@ -1,0 +1,136 @@
+[
+  {
+    "usage": {
+      "cache_read_input_tokens": 0,
+      "input_tokens": 15103,
+      "output_tokens": 54
+    },
+    "actions": [
+      {
+        "id": "toolu_astra_3",
+        "input": {
+          "action": "inspect",
+          "args_json": "{}"
+        },
+        "name": "cad_action",
+        "type": "tool_use"
+      }
+    ]
+  },
+  {
+    "usage": {
+      "cache_read_input_tokens": 0,
+      "input_tokens": 32581,
+      "output_tokens": 185
+    },
+    "actions": [
+      {
+        "id": "toolu_astra_5",
+        "input": {
+          "action": "check",
+          "args_json": "{\"objects\":[\"BoomRight\",\"FinClampDrill1\",\"LowerClampDrill1\",\"TopStabilizer\"],\"contacts\":[[\"BoomRight\",\"FinClampDrill1\"],[\"BoomRight\",\"LowerClampDrill1\"],[\"FinClampDrill1\",\"TopStabilizer\"]],\"require_connected\":true}"
+        },
+        "name": "cad_action",
+        "type": "tool_use"
+      }
+    ]
+  },
+  {
+    "usage": {
+      "cache_read_input_tokens": 0,
+      "input_tokens": 33566,
+      "output_tokens": 346
+    },
+    "actions": [
+      {
+        "id": "toolu_astra_7",
+        "input": {
+          "action": "set_parameter",
+          "args_json": "{\"object_name\":\"JointBoomClearance\",\"parameter\":\"Radius\",\"value\":5.0}"
+        },
+        "name": "cad_action",
+        "type": "tool_use"
+      },
+      {
+        "id": "toolu_astra_8",
+        "input": {
+          "action": "set_parameter",
+          "args_json": "{\"object_name\":\"JointLowerHalfspace\",\"parameter\":\"Height\",\"value\":11.5}"
+        },
+        "name": "cad_action",
+        "type": "tool_use"
+      },
+      {
+        "id": "toolu_astra_9",
+        "input": {
+          "action": "check",
+          "args_json": "{\"objects\":[\"BoomRight\",\"FinClampDrill1\",\"LowerClampDrill1\",\"TopStabilizer\"],\"contacts\":[[\"BoomRight\",\"FinClampDrill1\"],[\"BoomRight\",\"LowerClampDrill1\"],[\"FinClampDrill1\",\"TopStabilizer\"]],\"require_connected\":true}"
+        },
+        "name": "cad_action",
+        "type": "tool_use"
+      }
+    ]
+  },
+  {
+    "usage": {
+      "cache_read_input_tokens": 0,
+      "input_tokens": 69549,
+      "output_tokens": 138
+    },
+    "actions": [
+      {
+        "id": "toolu_astra_11",
+        "input": {
+          "action": "inspect",
+          "args_json": "{}"
+        },
+        "name": "cad_action",
+        "type": "tool_use"
+      },
+      {
+        "id": "toolu_astra_12",
+        "input": {
+          "action": "render",
+          "args_json": "{\"objects\":[\"BoomRight\",\"FinClampDrill1\",\"LowerClampDrill1\",\"TopStabilizer\"]}"
+        },
+        "name": "cad_action",
+        "type": "tool_use"
+      }
+    ]
+  },
+  {
+    "usage": {
+      "cache_read_input_tokens": 0,
+      "input_tokens": 88227,
+      "output_tokens": 114
+    },
+    "actions": [
+      {
+        "id": "toolu_astra_15",
+        "input": {
+          "action": "save",
+          "args_json": "{\"objects\":[\"BoomRight\",\"FinClampDrill1\",\"LowerClampDrill1\",\"TopStabilizer\"]}"
+        },
+        "name": "cad_action",
+        "type": "tool_use"
+      }
+    ]
+  },
+  {
+    "usage": {
+      "cache_read_input_tokens": 0,
+      "input_tokens": 88538,
+      "output_tokens": 252
+    },
+    "actions": [
+      {
+        "id": "toolu_astra_17",
+        "input": {
+          "summary": "Repaired native dependencies by changing JointBoomClearance radius from 5.2 to 5.0 mm and JointLowerHalfspace height from 12.0 to 11.5 mm. Final upper-fin/clamp: FinClampDrill1; lower clamp: LowerClampDrill1. BoomRight and TopStabilizer remain unchanged. Fin contour and top seat are preserved outside the allowed root region. Boom/seat clearance decreased from approximately 0.2 mm to numerical zero; nominal split gap increased from zero to 0.5 mm (check lower bound 0.499944 mm). Latest native check passes both required boom contacts and top-seat contact, with zero overlaps and connected geometry. Inspected native solids and rendered assembly. Saved assembly.FCStd, assembly.step and assembly.glb in the managed run directory; roundtrip_valid is true. Original input was not overwritten. No selected geometric checks remain failing. Fasteners are missing; preload, compliance/friction, load capacity, structural strength and flight readiness remain unverified. CAD changes do not constitute resolved aircraft-design or BOM validation."
+        },
+        "name": "report",
+        "type": "tool_use"
+      }
+    ]
+  }
+]

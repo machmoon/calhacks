@@ -1,0 +1,74 @@
+diff --git a/Rocket/Importer/OpenRocket/SubElement.py b/Rocket/Importer/OpenRocket/SubElement.py
+index c427718..af998b9 100644
+--- a/Rocket/Importer/OpenRocket/SubElement.py
++++ b/Rocket/Importer/OpenRocket/SubElement.py
+@@ -36,6 +36,7 @@ from Rocket.Importer.OpenRocket.StageElement import StageElement
+ from Rocket.Importer.OpenRocket.BodyTubeElement import BodyTubeElement, TubeCouplerElement, EngineBlockElement
+ from Rocket.Importer.OpenRocket.InnerTubeElement import InnerTubeElement
+ from Rocket.Importer.OpenRocket.LaunchLugElement import LaunchLugElement
++from Rocket.Importer.OpenRocket.RailButtonElement import RailButtonElement
+ from Rocket.Importer.OpenRocket.TrapezoidalFinsetElement import TrapezoidalFinsetElement
+ from Rocket.Importer.OpenRocket.EllipticalFinsetElement import EllipticalFinsetElement
+ from Rocket.Importer.OpenRocket.TubeFinsetElement import TubeFinsetElement
+@@ -56,7 +57,7 @@ class SubElement(ComponentElement):
+                                 'freeformfinset' : FreeformFinsetElement,
+                                 'tubefinset' : TubeFinsetElement,
+                                 'launchlug' : LaunchLugElement,
+-                                'railbutton' : NullElement,
++                                'railbutton' : RailButtonElement,
+                                 'engineblock' : EngineBlockElement,
+                                 'innertube' : InnerTubeElement,
+                                 'tubecoupler' : TubeCouplerElement,
+diff --git a/Rocket/Importer/OpenRocket/RailButtonElement.py b/Rocket/Importer/OpenRocket/RailButtonElement.py
+new file mode 100644
+--- /dev/null
++++ b/Rocket/Importer/OpenRocket/RailButtonElement.py
+@@ -0,0 +1,48 @@
++# SPDX-License-Identifier: LGPL-2.1-or-later
++"""Import source round rail-button envelopes, including their linear pattern.
++
++OpenRocket references the center of the base and does not specify a screw bore.
++Nonzero screw-head height is not supported by this geometry subset.
++"""
++import math
++from Rocket.Importer.OpenRocket.ComponentElement import ExternalComponentElement
++from Ui.Commands.CmdLaunchGuides import makeRailButton
++
++class RailButtonElement(ExternalComponentElement):
++    dimensions={'outerdiameter':'Diameter','innerdiameter':'InnerDiameter',
++                'height':'Height','baseheight':'BaseHeight','flangeheight':'FlangeHeight',
++                'instanceseparation':'InstanceSeparation'}
++    def __init__(self,parent,tag,attributes,parentObj,filename,line):
++        super().__init__(parent,tag,attributes,parentObj,filename,line)
++        self._knownTags.extend(list(self.dimensions)+['instancecount','angleoffset','screwheight'])
++    def makeObject(self):
++        self._feature=makeRailButton()
++        obj=self._feature._obj
++        obj.Fastener=False;obj.FilletedTop=False
++        # The source axial reference is the base center, with zero axial length.
++        obj.Length=0
++        if self._parentObj:self._parentObj.addChild(self._feature)
++    def handleEndTag(self,tag,content):
++        key=tag.lower().strip();obj=self._feature._obj
++        if key in self.dimensions:
++            value=float(content)*1000
++            if not math.isfinite(value):raise ValueError('nonfinite rail button dimension')
++            if key in ['outerdiameter','innerdiameter','height'] and value<=0:raise ValueError('rail button dimension must be positive')
++            if key in ['baseheight','flangeheight'] and value<0:raise ValueError('rail button height cannot be negative')
++            setattr(obj,self.dimensions[key],value)
++        elif key=='instancecount':
++            count=int(content)
++            if count<1:raise ValueError('rail button count must be positive')
++            obj.InstanceCount=count
++        elif key=='angleoffset':
++            angle=float(content)
++            if not math.isfinite(angle):raise ValueError('nonfinite rail button angle')
++            obj.AngleOffset=angle
++        elif key=='screwheight':
++            if float(content)!=0:raise ValueError('nonzero rail-button screw height is unsupported')
++        else:super().handleEndTag(tag,content)
++    def end(self):
++        obj=self._feature._obj
++        if obj.Diameter<=obj.InnerDiameter or obj.Height<=obj.BaseHeight+obj.FlangeHeight:
++            raise ValueError('invalid rail button spool dimensions')
++        return super().end()

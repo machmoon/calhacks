@@ -1,0 +1,862 @@
+{
+  "domain": "aircraft",
+  "programs": [],
+  "rows": [
+    {
+      "files": [
+        "print/pod_1.gcode",
+        "video/print_pod_1.mp4"
+      ],
+      "grams": 30.78,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 295.1666666666667,
+      "notes": "",
+      "part": "pod 1",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/wing_L_0.gcode",
+        "video/print_wing_L_0.mp4"
+      ],
+      "grams": 27.23,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 267.03333333333336,
+      "notes": "",
+      "part": "wing L 0",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/wing_L_1.gcode",
+        "video/print_wing_L_0.mp4"
+      ],
+      "grams": 27.23,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 267.03333333333336,
+      "notes": "same G-code as another plate",
+      "part": "wing L 1",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/wing_L_2.gcode",
+        "video/print_wing_L_2.mp4"
+      ],
+      "grams": 27.23,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 267.03333333333336,
+      "notes": "",
+      "part": "wing L 2",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/wing_R_0.gcode",
+        "video/print_wing_R_0.mp4"
+      ],
+      "grams": 27.23,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 267.03333333333336,
+      "notes": "",
+      "part": "wing R 0",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/wing_R_1.gcode",
+        "video/print_wing_R_1.mp4"
+      ],
+      "grams": 27.23,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 267.03333333333336,
+      "notes": "",
+      "part": "wing R 1",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/wing_R_2.gcode",
+        "video/print_wing_R_1.mp4"
+      ],
+      "grams": 27.23,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 267.03333333333336,
+      "notes": "same G-code as another plate",
+      "part": "wing R 2",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/pod_0.gcode",
+        "video/print_pod_0.mp4"
+      ],
+      "grams": 28.23,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 264.53333333333336,
+      "notes": "",
+      "part": "pod 0",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/leg_FL_0.gcode",
+        "video/print_leg_FL_0.mp4"
+      ],
+      "grams": 51.97,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 196.23333333333332,
+      "notes": "",
+      "part": "leg FL 0",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/leg_FR_0.gcode",
+        "video/print_leg_FR_0.mp4"
+      ],
+      "grams": 51.97,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 196.23333333333332,
+      "notes": "",
+      "part": "leg FR 0",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/leg_RL_0.gcode",
+        "video/print_leg_FL_0.mp4"
+      ],
+      "grams": 51.97,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 196.23333333333332,
+      "notes": "same G-code as another plate",
+      "part": "leg RL 0",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/leg_RR_0.gcode"
+      ],
+      "grams": 51.97,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 196.23333333333332,
+      "notes": "",
+      "part": "leg RR 0",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/h_stab_0.gcode"
+      ],
+      "grams": 8.25,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 83.41666666666667,
+      "notes": "",
+      "part": "h stab 0",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/h_stab_1.gcode"
+      ],
+      "grams": 8.25,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 83.41666666666667,
+      "notes": "",
+      "part": "h stab 1",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/h_stab_2.gcode",
+        "print/h_stab_1.gcode"
+      ],
+      "grams": 8.25,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 83.41666666666667,
+      "notes": "same G-code as another plate",
+      "part": "h stab 2",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/pusher_mount_0.gcode"
+      ],
+      "grams": 15.9,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 60.38333333333333,
+      "notes": "",
+      "part": "pusher mount 0",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/tail_joint_L_0.gcode"
+      ],
+      "grams": 15.41,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 59.95,
+      "notes": "",
+      "part": "tail joint L 0",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/tail_joint_R_0.gcode"
+      ],
+      "grams": 15.41,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 59.95,
+      "notes": "",
+      "part": "tail joint R 0",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/fin_L_0.gcode"
+      ],
+      "grams": 5.07,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 53.7,
+      "notes": "",
+      "part": "fin L 0",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/fin_R_0.gcode"
+      ],
+      "grams": 5.07,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 53.7,
+      "notes": "",
+      "part": "fin R 0",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/lift_mount_FL_0.gcode"
+      ],
+      "grams": 6.55,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 27.9,
+      "notes": "",
+      "part": "lift mount FL 0",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/lift_mount_FR_0.gcode"
+      ],
+      "grams": 6.55,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 27.9,
+      "notes": "",
+      "part": "lift mount FR 0",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/lift_mount_RL_0.gcode"
+      ],
+      "grams": 6.55,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 27.9,
+      "notes": "",
+      "part": "lift mount RL 0",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/lift_mount_RR_0.gcode"
+      ],
+      "grams": 6.55,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 27.9,
+      "notes": "",
+      "part": "lift mount RR 0",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/boom_clamp_L1_0.gcode"
+      ],
+      "grams": 6.6,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 26.483333333333334,
+      "notes": "",
+      "part": "boom clamp L1 0",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/boom_clamp_R1_0.gcode"
+      ],
+      "grams": 6.6,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 26.483333333333334,
+      "notes": "",
+      "part": "boom clamp R1 0",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/boom_clamp_L0_0.gcode"
+      ],
+      "grams": 5.14,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 20.333333333333332,
+      "notes": "",
+      "part": "boom clamp L0 0",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/boom_clamp_R0_0.gcode"
+      ],
+      "grams": 5.14,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 20.333333333333332,
+      "notes": "",
+      "part": "boom clamp R0 0",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "cutlist.csv"
+      ],
+      "grams": null,
+      "machine": "abrasive cut-off wheel / fine-tooth saw, mitre box",
+      "minutes": 4.0,
+      "notes": "974.0 mm",
+      "part": "cst cs525 #1",
+      "process": "cut",
+      "qty": 1,
+      "stock": "CST - The Composites Store CS-525 1M DPP Carbon Fiber Tube 10 mm OD x 8 mm ID x 1 m (bar 1, from 0 mm)",
+      "tools": "kerf 1.5 mm"
+    },
+    {
+      "files": [
+        "cutlist.csv"
+      ],
+      "grams": null,
+      "machine": "abrasive cut-off wheel / fine-tooth saw, mitre box",
+      "minutes": 4.0,
+      "notes": "974.0 mm",
+      "part": "cst cs525 #2",
+      "process": "cut",
+      "qty": 1,
+      "stock": "CST - The Composites Store CS-525 1M DPP Carbon Fiber Tube 10 mm OD x 8 mm ID x 1 m (bar 2, from 0 mm)",
+      "tools": "kerf 1.5 mm"
+    },
+    {
+      "files": [
+        "cutlist.csv"
+      ],
+      "grams": null,
+      "machine": "abrasive cut-off wheel / fine-tooth saw, mitre box",
+      "minutes": 4.0,
+      "notes": "540.0 mm",
+      "part": "cst cs525 #3",
+      "process": "cut",
+      "qty": 1,
+      "stock": "CST - The Composites Store CS-525 1M DPP Carbon Fiber Tube 10 mm OD x 8 mm ID x 1 m (bar 3, from 0 mm)",
+      "tools": "kerf 1.5 mm"
+    },
+    {
+      "files": [
+        "cutlist.csv"
+      ],
+      "grams": null,
+      "machine": "abrasive cut-off wheel / fine-tooth saw, mitre box",
+      "minutes": 4.0,
+      "notes": "540.0 mm",
+      "part": "cst cs525 #4",
+      "process": "cut",
+      "qty": 1,
+      "stock": "CST - The Composites Store CS-525 1M DPP Carbon Fiber Tube 10 mm OD x 8 mm ID x 1 m (bar 4, from 0 mm)",
+      "tools": "kerf 1.5 mm"
+    },
+    {
+      "files": [
+        "cutlist.csv"
+      ],
+      "grams": null,
+      "machine": "abrasive cut-off wheel / fine-tooth saw, mitre box",
+      "minutes": 4.0,
+      "notes": "480.0 mm",
+      "part": "cst cs328 #1",
+      "process": "cut",
+      "qty": 1,
+      "stock": "CST - The Composites Store CS-328 1M DPP Carbon Fiber Rod 3 mm x 1 m (bar 1, from 0 mm)",
+      "tools": "kerf 1.5 mm"
+    },
+    {
+      "files": [
+        "cutlist.csv"
+      ],
+      "grams": null,
+      "machine": "abrasive cut-off wheel / fine-tooth saw, mitre box",
+      "minutes": 4.0,
+      "notes": "480.0 mm",
+      "part": "cst cs328 #2",
+      "process": "cut",
+      "qty": 1,
+      "stock": "CST - The Composites Store CS-328 1M DPP Carbon Fiber Rod 3 mm x 1 m (bar 1, from 482 mm)",
+      "tools": "kerf 1.5 mm"
+    },
+    {
+      "files": [
+        "cutlist.csv"
+      ],
+      "grams": null,
+      "machine": "abrasive cut-off wheel / fine-tooth saw, mitre box",
+      "minutes": 4.0,
+      "notes": "300.0 mm",
+      "part": "goodwinds pct500024 #1",
+      "process": "cut",
+      "qty": 1,
+      "stock": "Goodwinds PCT .500\" x 24\" Pultruded Carbon Tube (SKU PCT500024) (bar 1, from 0 mm)",
+      "tools": "kerf 1.5 mm"
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.rotorama.com/product/aos-supernova-2810-900kv",
+      "part": "AOS RC (made by RCinPower) AOS Supernova 2810 900KV",
+      "process": "bought",
+      "qty": 4,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://store.tmotor.com/product/mf1302-polymer-folding-prop.html",
+      "part": "T-MOTOR MF1302 polymer folding prop (13.4x4.8)",
+      "process": "bought",
+      "qty": 4,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://store.tmotor.com/product/mn3110-motor-navigator-type.html",
+      "part": "T-MOTOR MN3110 KV470 (Navigator)",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.apcprop.com/product/12x8e/",
+      "part": "APC Propellers 12x8E Thin Electric (LP12080E)",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://holybro.com/products/tekko32-f4-4in1-50a-esc",
+      "part": "Holybro Tekko32 F4 4in1 50A ESC (AM32)",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://holybro.com/products/tekko32-f4-45a-esc",
+      "part": "Holybro Tekko32 F4 45A ESC (AM32), single",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.upgradeenergytech.com/products/red-v4-6s2p-10ah-drone-battery",
+      "part": "Upgrade Energy RED V4 6S2P 10Ah",
+      "process": "bought",
+      "qty": 3,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.readymaderc.com/products/details/85786-speedybee-f405-wing-app-fixed-wing-flight-controller",
+      "part": "CoreWing F405 WING V2 (retail name F405 WING APP V2)",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.hglrc.com/products/hglrc-m100_mini-gps",
+      "part": "HGLRC M100 Mini GPS",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.radiomasterrc.com/products/rp1-expresslrs-2-4ghz-nano-receiver",
+      "part": "RadioMaster RP1 V2 ExpressLRS 2.4GHz Nano Receiver",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://holybro.com/products/digital-air-speed-sensor-standard",
+      "part": "Holybro Standard Precision Digital Airspeed Sensor (MS4525DO)",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.racedayquads.com/products/emax-es08ma-ii-12g-analog-metal-gear-servo",
+      "part": "EMAX ES08MA II",
+      "process": "bought",
+      "qty": 5,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "http://www.cstsales.com/Carbon_Fiber_Tubes.html",
+      "part": "CST - The Composites Store CS-525 1M DPP Carbon Fiber Tube 10 mm OD x 8 mm ID x 1 m",
+      "process": "stock",
+      "qty": 4,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "http://www.cstsales.com/carbon_rods.html",
+      "part": "CST - The Composites Store CS-328 1M DPP Carbon Fiber Rod 3 mm x 1 m",
+      "process": "stock",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://goodwinds.com/product/pct-500-x-24-pultruded-carbon-tube/",
+      "part": "Goodwinds PCT .500\" x 24\" Pultruded Carbon Tube (SKU PCT500024)",
+      "process": "stock",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://us.store.bambulab.com/products/pla-aero",
+      "part": "Bambu Lab PLA Aero",
+      "process": "stock",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://us.store.bambulab.com/products/petg-basic",
+      "part": "Bambu Lab PETG Basic",
+      "process": "stock",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://pyrodrone.com/products/1ft-silicone-wire-choose-color-and-gauge",
+      "part": "Pyrodrone Silicone Wire (1M Red, 1M Black) - 10 AWG",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://pyrodrone.com/products/1ft-silicone-wire-choose-color-and-gauge",
+      "part": "Pyrodrone Silicone Wire (1M Red, 1M Black) - 14 AWG",
+      "process": "bought",
+      "qty": 5,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://pyrodrone.com/products/1ft-silicone-wire-choose-color-and-gauge",
+      "part": "Pyrodrone Silicone Wire (1M Red, 1M Black) - 18 AWG",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://pyrodrone.com/products/1ft-silicone-wire-choose-color-and-gauge",
+      "part": "Pyrodrone Silicone Wire (1M Red, 1M Black) - 22 AWG",
+      "process": "bought",
+      "qty": 7,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.upgradeenergytech.com/products/amass-xt90s-female",
+      "part": "Amass XT90S (anti-spark) Female / XT90S-M Male",
+      "process": "bought",
+      "qty": 2,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://west3d.com/products/m3x4x5-threaded-heat-inserts",
+      "part": "West3D M3x5x4 Threaded Heat Inserts Brass",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.readymaderc.com/products/details/86834-rmrc-m3-hardware-pack-12-9-grade-7-screw-sizes-460-pcs-button-head",
+      "part": "RMRC (ReadyMadeRC) RMRC M3 Hardware Pack - 12.9 Grade, 7 Screw Sizes (460 Pcs) - Button Head",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.amainhobbies.com/bob-smith-industries-instacure-super-thin-ca-2oz-bsi103/p37053",
+      "part": "Bob Smith Industries INSTA-CURE Super Thin CA (2oz) BSI103",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://wheelswingshobbies.com/bsi201-bsi-two-part-epoxy-5-minute/",
+      "part": "Bob Smith Industries QUIK-CURE 5 Minute Epoxy BSI201",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.readymaderc.com/collections/airplanes/electronics/servo-extensions",
+      "part": "RMRC (ReadyMadeRC) 30cm (12 inch) JR Style 22AWG Twisted Servo Extension Cable",
+      "process": "bought",
+      "qty": 5,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.dubro.com/products/nylon-control-horns-1-left-1-right",
+      "part": "DU-BRO Nylon Control Horns (1 Left / 1 Right), SKU 105",
+      "process": "bought",
+      "qty": 3,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.readymaderc.com/products/details/rmrc-10pc-pushrod-linkage-set-control-horn",
+      "part": "RMRC (ReadyMadeRC) RMRC 10 Piece Pushrod/Linkage Set with Control Horns",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    }
+  ],
+  "totals": {
+    "all_minutes": 3717.999999999998,
+    "machine_minutes": -0.0,
+    "print_grams": 561.5600000000002,
+    "print_minutes": 3690.0000000000005
+  }
+}

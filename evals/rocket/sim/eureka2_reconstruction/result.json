@@ -1,0 +1,98 @@
+{
+ "rocketpy_version": "1.13.0",
+ "name": "lox/propane 20000 ft",
+ "contract_agl_m": 6096.0,
+ "nominal": {
+  "rocketpy_apogee_agl_m": 8746.251394461846,
+  "wright_apogee_agl_m": 8821.458164731543,
+  "apogee_diff_pct": -0.85254352359087,
+  "rocketpy_max_mach": 1.5440948277099331,
+  "wright_max_mach": 1.5398112554095458,
+  "rocketpy_rail_exit_m_s": 33.579634498621104,
+  "wright_rail_exit_m_s": 33.81544215813365,
+  "rocketpy_stability_at_rail_exit_cal": 1.80436480355268,
+  "wright_stability_at_rail_exit_cal": 1.804300177411026,
+  "rocketpy_min_stability_cal": 1.80006861854693,
+  "apogee_time_s": 43.6015944455907,
+  "landing_time_s": 354.1987235054294,
+  "drift_at_landing_m": 1173.2945679705067
+ },
+ "dispersion": [
+  {
+   "wind_10m_m_s": 0.0,
+   "thrust_scale": 1.0,
+   "drag_scale": 1.0,
+   "rocketpy_apogee_agl_m": 9337.177266885257,
+   "wright_apogee_agl_m": 9334.289478549455,
+   "rocketpy_max_mach": 1.5383676187637503
+  },
+  {
+   "wind_10m_m_s": 0.0,
+   "thrust_scale": 0.95,
+   "drag_scale": 1.1,
+   "rocketpy_apogee_agl_m": 8153.034355506748,
+   "wright_apogee_agl_m": 8211.502917661659,
+   "rocketpy_max_mach": 1.4074243114199523
+  },
+  {
+   "wind_10m_m_s": 0.0,
+   "thrust_scale": 1.05,
+   "drag_scale": 0.9,
+   "rocketpy_apogee_agl_m": 10802.230908180736,
+   "wright_apogee_agl_m": 10717.777956604516,
+   "rocketpy_max_mach": 1.6808853798782182
+  },
+  {
+   "wind_10m_m_s": 4.4704,
+   "thrust_scale": 1.0,
+   "drag_scale": 1.0,
+   "rocketpy_apogee_agl_m": 8746.251394461846,
+   "wright_apogee_agl_m": 8821.458164731543,
+   "rocketpy_max_mach": 1.5440948277099331
+  },
+  {
+   "wind_10m_m_s": 4.4704,
+   "thrust_scale": 0.95,
+   "drag_scale": 1.1,
+   "rocketpy_apogee_agl_m": 7604.17286393539,
+   "wright_apogee_agl_m": 7738.14972990245,
+   "rocketpy_max_mach": 1.4135686515033592
+  },
+  {
+   "wind_10m_m_s": 4.4704,
+   "thrust_scale": 1.05,
+   "drag_scale": 0.9,
+   "rocketpy_apogee_agl_m": 10151.7022216524,
+   "wright_apogee_agl_m": 10150.373051095188,
+   "rocketpy_max_mach": 1.6863185036711548
+  },
+  {
+   "wind_10m_m_s": 8.9408,
+   "thrust_scale": 1.0,
+   "drag_scale": 1.0,
+   "rocketpy_apogee_agl_m": 7879.731779324689,
+   "wright_apogee_agl_m": 8070.550568478605,
+   "rocketpy_max_mach": 1.5535580720682245
+  },
+  {
+   "wind_10m_m_s": 8.9408,
+   "thrust_scale": 0.95,
+   "drag_scale": 1.1,
+   "rocketpy_apogee_agl_m": 6802.968048365411,
+   "wright_apogee_agl_m": 7046.42863848748,
+   "rocketpy_max_mach": 1.4236022954929435
+  },
+  {
+   "wind_10m_m_s": 8.9408,
+   "thrust_scale": 1.05,
+   "drag_scale": 0.9,
+   "rocketpy_apogee_agl_m": 9195.185192062572,
+   "wright_apogee_agl_m": 9318.882944334107,
+   "rocketpy_max_mach": 1.6953537959672562
+  }
+ ],
+ "far_score_mean": {
+  "rocketpy": 238.183200583476,
+  "wright": 212.59514365479225
+ }
+}

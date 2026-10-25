@@ -1,0 +1,1052 @@
+{
+ "balloons": [
+  {
+   "id": "totex-600",
+   "name": "Kaymont/Totex HAB-600",
+   "mass_g": 600,
+   "burst_diameter_m": 6.02,
+   "cd": 0.3,
+   "burst_source": "https://www.kaymont.com/_files/ugd/a13aac_3f106d61fbec4a05bc2c09b373eb6cf9.pdf: Diameter at Burst 602 cm",
+   "url": "https://www.kaymont.com/shop",
+   "retrieved": "2026-10-24",
+   "price_usd": 65.0,
+   "note": "Cd from CUSF calc.js find_cd (Kaymont Totex data)"
+  },
+  {
+   "id": "totex-800",
+   "name": "Kaymont/Totex HAB-800",
+   "mass_g": 800,
+   "burst_diameter_m": 7.0,
+   "cd": 0.3,
+   "burst_source": "https://www.kaymont.com/_files/ugd/a13aac_9c5b05a37bf34300aeeabb925cd5e923.pdf: 700 cm",
+   "url": "https://www.kaymont.com/shop",
+   "retrieved": "2026-10-24",
+   "price_usd": 80.0,
+   "note": "Cd from CUSF calc.js find_cd (Kaymont Totex data)"
+  },
+  {
+   "id": "totex-1000",
+   "name": "Kaymont/Totex HAB-1000",
+   "mass_g": 1000,
+   "burst_diameter_m": 7.86,
+   "cd": 0.3,
+   "burst_source": "https://www.kaymont.com/_files/ugd/a13aac_37021646a3914b66aaeb8e3363924090.pdf: 786 cm",
+   "url": "https://www.kaymont.com/shop",
+   "retrieved": "2026-10-24",
+   "price_usd": 90.0,
+   "note": "Cd from CUSF calc.js find_cd (Kaymont Totex data)"
+  },
+  {
+   "id": "totex-1200",
+   "name": "Kaymont/Totex HAB-1200",
+   "mass_g": 1200,
+   "burst_diameter_m": 8.63,
+   "cd": 0.25,
+   "burst_source": "https://www.kaymont.com/_files/ugd/a13aac_0f5b5dce01a24a0985107e7275264198.pdf: 863 cm (price: regular $110; on sale $100 on 2026-10-24)",
+   "url": "https://www.kaymont.com/shop",
+   "retrieved": "2026-10-24",
+   "price_usd": 110.0,
+   "note": "Cd from CUSF calc.js find_cd (Kaymont Totex data)"
+  },
+  {
+   "id": "totex-1500",
+   "name": "Kaymont/Totex HAB-1500",
+   "mass_g": 1500,
+   "burst_diameter_m": 9.44,
+   "cd": 0.25,
+   "burst_source": "https://www.kaymont.com/_files/ugd/a13aac_0ac3808bd04943b7ab3708435ec3f02e.pdf: 944 cm",
+   "url": "https://www.kaymont.com/shop",
+   "retrieved": "2026-10-24",
+   "price_usd": 115.0,
+   "note": "Cd from CUSF calc.js find_cd (Kaymont Totex data)"
+  },
+  {
+   "id": "totex-1600",
+   "name": "Kaymont/Totex HAB-1600",
+   "mass_g": 1600,
+   "burst_diameter_m": 9.71,
+   "cd": 0.25,
+   "burst_source": "https://www.kaymont.com/_files/ugd/a13aac_ef1ff141a5734c5fae9ce84bbd6c791a.pdf: 971 cm",
+   "url": "https://www.kaymont.com/shop",
+   "retrieved": "2026-10-24",
+   "price_usd": 140.0,
+   "note": "Cd from CUSF calc.js find_cd (Kaymont Totex data)"
+  },
+  {
+   "id": "totex-2000",
+   "name": "Kaymont/Totex HAB-2000",
+   "mass_g": 2000,
+   "burst_diameter_m": 10.54,
+   "cd": 0.25,
+   "burst_source": "https://www.kaymont.com/_files/ugd/a13aac_50587a55b50643b3927ecdaca8bddfd5.pdf: 1054 cm",
+   "url": "https://www.kaymont.com/shop",
+   "retrieved": "2026-10-24",
+   "price_usd": 315.0,
+   "note": "Cd from CUSF calc.js find_cd (Kaymont Totex data)"
+  },
+  {
+   "id": "totex-3000",
+   "name": "Kaymont/Totex HAB-3000",
+   "mass_g": 3000,
+   "burst_diameter_m": 13.0,
+   "cd": 0.25,
+   "burst_source": "https://www.kaymont.com/product-page/hab-3000: 'Burst Diameter: 42.7ft' (13.01 m); CUSF calc.js bds[\"k3000\"] = 13.00",
+   "url": "https://www.kaymont.com/product-page/hab-3000",
+   "retrieved": "2026-10-24",
+   "price_usd": 450.0,
+   "note": "Cd from CUSF calc.js cds[\"k3000\"] = 0.25 (Kaymont Totex data)"
+  },
+  {
+   "id": "hwoyee-1600",
+   "name": "Hwoyee 1600 g (Scientific Sales)",
+   "mass_g": 1600,
+   "burst_diameter_m": 10.0,
+   "cd": 0.25,
+   "burst_source": "Hwoyee table: burst diameter >=10000 mm (hwoyee.com weather-balloon product page)",
+   "url": "https://www.scientificsales.com/products/1600g-weather-balloon-5cm-neck-8245-h",
+   "retrieved": "2026-10-24",
+   "price_usd": 170.0,
+   "note": "Cd from CUSF calc.js find_cd (Kaymont Totex data)"
+  }
+ ],
+ "parachutes": [
+  {
+   "id": "spherachute-24",
+   "name": "Spherachutes 24\" Classic",
+   "diameter_m": 0.6096,
+   "cd": 0.75,
+   "mass_g": 31.2,
+   "url": "https://spherachutes.com/products/24-inch-spherachute",
+   "retrieved": "2026-10-24",
+   "price_usd": 22.0,
+   "note": "Cd 0.75 on the nominal size: Spherachutes descent-rate chart 'Cd Rate: 0.75'; the conservative end of 16-22 ft/s chart"
+  },
+  {
+   "id": "spherachute-30",
+   "name": "Spherachutes 30\" Classic",
+   "diameter_m": 0.762,
+   "cd": 0.75,
+   "mass_g": 34.0,
+   "url": "https://spherachutes.com/products/30-inch-spherachute",
+   "retrieved": "2026-10-24",
+   "price_usd": 31.0,
+   "note": "Cd 0.75 on the nominal size: Spherachutes descent-rate chart 'Cd Rate: 0.75'; the conservative end of 16-22 ft/s chart"
+  },
+  {
+   "id": "spherachute-36",
+   "name": "Spherachutes 36\" Classic",
+   "diameter_m": 0.9144,
+   "cd": 0.75,
+   "mass_g": 51.0,
+   "url": "https://spherachutes.com/products/36-inch-spherachute",
+   "retrieved": "2026-10-24",
+   "price_usd": 38.0,
+   "note": "Cd 0.75 on the nominal size: Spherachutes descent-rate chart 'Cd Rate: 0.75'; the conservative end of 16-22 ft/s chart"
+  },
+  {
+   "id": "spherachute-48",
+   "name": "Spherachutes 48\" Classic",
+   "diameter_m": 1.2192,
+   "cd": 0.75,
+   "mass_g": 87.9,
+   "url": "https://spherachutes.com/products/48-inch-spherachute",
+   "retrieved": "2026-10-24",
+   "price_usd": 57.5,
+   "note": "Cd 0.75 on the nominal size: Spherachutes descent-rate chart 'Cd Rate: 0.75'; the conservative end of 16-22 ft/s chart"
+  },
+  {
+   "id": "spherachute-60",
+   "name": "Spherachutes 60\" Classic",
+   "diameter_m": 1.524,
+   "cd": 0.75,
+   "mass_g": 141.7,
+   "url": "https://spherachutes.com/products/60-inch-spherachute",
+   "retrieved": "2026-10-24",
+   "price_usd": 77.0,
+   "note": "Cd 0.75 on the nominal size: Spherachutes descent-rate chart 'Cd Rate: 0.75'; the conservative end of 16-22 ft/s chart"
+  },
+  {
+   "id": "spherachute-72",
+   "name": "Spherachutes 72\" Classic",
+   "diameter_m": 1.8288,
+   "cd": 0.75,
+   "mass_g": 142.0,
+   "url": "https://spherachutes.com/products/72-inch-spherachute",
+   "retrieved": "2026-10-24",
+   "price_usd": 101.25,
+   "note": "Cd 0.75 on the nominal size like the 60\" row (Spherachutes descent-rate chart); product JSON: Classic $101.25, 142 g, '72\" (45.84\" Diameter) Hemispherical'"
+  },
+  {
+   "id": "spherachute-96",
+   "name": "Spherachutes 96\" Classic",
+   "diameter_m": 2.4384,
+   "cd": 0.75,
+   "mass_g": 369.0,
+   "url": "https://spherachutes.com/products/96-inch-spherachute",
+   "retrieved": "2026-10-24",
+   "price_usd": 156.5,
+   "note": "Cd 0.75 on the nominal size like the 60\" row (Spherachutes descent-rate chart); product JSON: Classic $156.5, 369 g, '96\" (61.12\" Diameter) Hemispherical'"
+  }
+ ],
+ "gases": [
+  {
+   "id": "he-uhp-300",
+   "name": "Helium UHP 5.0, size 300 cylinder (292 ft^3)",
+   "gas": "helium",
+   "purity": 0.99999,
+   "cylinder_m3": 8.269,
+   "url": "https://bps.westchestercountyny.gov/images/HELIUM_GAS_FOR_LAB_USE_IN_CYLINDERS_.pdf",
+   "retrieved": "2026-10-24",
+   "price_usd": 295.0,
+   "note": "Westchester County 2026 contract 'Helium, Ultra High Purity, 5.0 Grade, 300 ... Refill p/ea $295.00'; 292 ft^3 per Airgas HE UHP300 page"
+  },
+  {
+   "id": "h2-300",
+   "name": "Hydrogen 99.998 %, size 300 cylinder",
+   "gas": "hydrogen",
+   "purity": 0.99998,
+   "cylinder_m3": 8.269,
+   "url": "https://www3.erie.gov/purchasing/sites/www3.erie.gov.purchasing/files/2026-01/memo-welding-lab-gases-2026.pdf",
+   "retrieved": "2026-10-24",
+   "price_usd": 81.76,
+   "note": "Erie County 2026: 'Hydrogen 99.998% Purity, Size 300 $.28' per ft^3; 292 ft^3 ASSUMED same as helium size 300"
+  }
+ ],
+ "insulation": [
+  {
+   "id": "xps-foamular-150",
+   "name": "Owens Corning FOAMULAR 150 XPS, 1 in (R-5)",
+   "k_w_mk": 0.02885,
+   "density_kg_m3": 24.0,
+   "price_usd_per_m2": 10.65,
+   "sheet_thickness_mm": 25.4,
+   "url": "https://superarbor.io/collections/building-materials/products/owens-corning-r-5-15-psi-foamular-ngx-150-1-in-x-4-ft-x-8-ft-extruded-polystyrene-foam-board-insulation-square-edge",
+   "retrieved": "2026-10-24",
+   "note": "k from R-5 per inch (product name); price $31.65 per 4x8 ft sheet; density ASSUMPTION 24 kg/m^3 (typical XPS 1.3-1.6 lb/ft^3)"
+  }
+ ],
+ "lines": [
+  {
+   "id": "kite-line-50lb",
+   "name": "In the Breeze 3449 braided line, 50 lb x 500 ft",
+   "breaking_n": 222.4,
+   "g_per_m": 0.6,
+   "price_usd_per_m": 0.1047,
+   "url": "https://www.walmart.com/ip/2975660941",
+   "retrieved": "2026-10-24",
+   "note": "50 lb rating and $15.95 from the listing as found by search (page behind a bot check); g/m ASSUMPTION; not used: the rating was never read from the page, and a 50 lb test line can break above 50 lbf (rules::LINE_OVERSTRENGTH)"
+  },
+  {
+   "id": "ashaway-dacron-30lb",
+   "name": "Ashaway braided Dacron kite line, 30 lb x 500 ft (Into The Wind #1319)",
+   "breaking_n": 133.4,
+   "g_per_m": 0.5,
+   "price_usd_per_m": 0.1115,
+   "url": "https://intothewind.com/500-ft-30-lb-dacron-kite-line.html",
+   "retrieved": "2026-10-24",
+   "note": "$17.00 per 500 ft (152.4 m), 'Ashaway's braided Dacron Kite Line', 30 lb test (= 133.4 N, the rated minimum; actual break not published); g/m ASSUMPTION"
+  }
+ ],
+ "parts": [
+  {
+   "id": "jetson-orin-nano-devkit",
+   "name": "NVIDIA Jetson Orin Nano Developer Kit",
+   "role": "computer",
+   "mass_g": 175,
+   "dims_mm": [
+    103,
+    91,
+    35
+   ],
+   "temp_min_c": 0,
+   "temp_max_c": 35,
+   "power_w": 7.0,
+   "temp_published": true,
+   "supply": {
+    "vin_min": 9,
+    "vin_max": 20
+   },
+   "battery": null,
+   "regulator": null,
+   "radio": null,
+   "gps": null,
+   "camera": null,
+   "url": "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/nano-super-developer-kit/",
+   "retrieved": "2026-10-24",
+   "price_usd": 249.0,
+   "note": "7 W mode (lowest of 'Power 7W-25W'); DC jack 9-20 V, 0-35 C, 0.175 kg from the carrier board spec SP; price $249 and dims ASSUMPTION (not on the pages read)",
+   "microsd": true
+  },
+  {
+   "id": "logitech-brio",
+   "name": "Logitech BRIO 4K webcam",
+   "role": "camera",
+   "mass_g": 65,
+   "dims_mm": [
+    102,
+    27,
+    27
+   ],
+   "temp_min_c": 0,
+   "temp_max_c": 40,
+   "power_w": 2.5,
+   "temp_published": true,
+   "supply": {
+    "vin_min": 4.75,
+    "vin_max": 5.25
+   },
+   "battery": null,
+   "regulator": null,
+   "radio": null,
+   "gps": null,
+   "camera": {
+    "video": true,
+    "photo": true,
+    "record_h": null
+   },
+   "url": "https://www.logitech.com/content/dam/logitech/en_us/video-collaboration/pdf/brio-datasheet.pdf",
+   "retrieved": "2026-10-24",
+   "price_usd": 199.0,
+   "note": "0-40 C and 65 g from the data sheet; power ASSUMPTION 2.5 W (USB 5 V, not published); price ASSUMPTION; records through the Jetson"
+  },
+  {
+   "id": "geprc-vtx-1g2-2w",
+   "name": "GEPRC MATEN 1.2G 2W VTX",
+   "role": "radio",
+   "mass_g": 14.5,
+   "dims_mm": [
+    36.4,
+    36.4,
+    7.4
+   ],
+   "temp_min_c": -10,
+   "temp_max_c": 60,
+   "power_w": 6.0,
+   "temp_published": true,
+   "supply": {
+    "vin_min": 7,
+    "vin_max": 36
+   },
+   "battery": null,
+   "regulator": null,
+   "radio": {
+    "link": "video",
+    "freq_mhz": 1280.0,
+    "tx_dbm": 33.0,
+    "sens_dbm": null,
+    "antenna_gain_dbi": 2.15,
+    "needs_amateur_licence": true,
+    "tx_published": true
+   },
+   "gps": null,
+   "camera": null,
+   "url": "https://geprc.com/product/geprc-maten-1-2g-2w-vtx/",
+   "retrieved": "2026-10-24",
+   "price_usd": 54.99,
+   "note": "DC 7-36 V, 1080-1360 MHz, 2000 mW, -10..60 C, 14.5 g; DC draw ASSUMPTION 6 W (2 W RF at ~33 % PA efficiency, not published); channel ASSUMED 1280 MHz"
+  },
+  {
+   "id": "esp32-devkit",
+   "name": "ESP32 DevKit (WROOM-32)",
+   "role": "mcu",
+   "mass_g": 10,
+   "dims_mm": [
+    55,
+    28,
+    13
+   ],
+   "temp_min_c": -40,
+   "temp_max_c": 85,
+   "power_w": 0.35,
+   "temp_published": true,
+   "supply": {
+    "vin_min": 4.5,
+    "vin_max": 12
+   },
+   "battery": null,
+   "regulator": null,
+   "radio": null,
+   "gps": null,
+   "camera": null,
+   "url": "https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf",
+   "retrieved": "2026-10-24",
+   "price_usd": 9.0,
+   "note": "modem-sleep 240 MHz up to 68 mA (data sheet) at 5 V; WROOM-32 -40..85 C; price and 4.5-12 V VIN range ASSUMPTION (AMS1117 board)"
+  },
+  {
+   "id": "matek-m10q",
+   "name": "Matek M10Q-5883 GPS",
+   "role": "gps",
+   "mass_g": 8,
+   "dims_mm": [
+    20,
+    20,
+    10
+   ],
+   "temp_min_c": -20,
+   "temp_max_c": 80,
+   "power_w": 0.065,
+   "temp_published": true,
+   "supply": {
+    "vin_min": 4.5,
+    "vin_max": 5.5
+   },
+   "battery": null,
+   "regulator": null,
+   "radio": null,
+   "gps": {
+    "chip": "u-blox M10",
+    "alt_limit_airborne_m": 80000.0,
+    "alt_limit_default_m": 12000.0
+   },
+   "camera": null,
+   "url": "https://www.mateksys.com/?portfolio=m10q-5883",
+   "retrieved": "2026-10-24",
+   "price_usd": 25.0,
+   "note": "13 mA, u-blox M10, -20..80 C, 8 g (Matek page); 4.5-5.5 V and price ASSUMPTION (EOL)"
+  },
+  {
+   "id": "stardrone-cr8-elrs",
+   "name": "STARDRONE CR8 ELRS 915 MHz receiver",
+   "role": "radio",
+   "mass_g": 7,
+   "dims_mm": [
+    25,
+    15,
+    5
+   ],
+   "temp_min_c": -20,
+   "temp_max_c": 70,
+   "power_w": 0.15,
+   "temp_published": false,
+   "supply": {
+    "vin_min": 4.5,
+    "vin_max": 5.5
+   },
+   "battery": null,
+   "regulator": null,
+   "radio": {
+    "link": "elrs",
+    "freq_mhz": 915.0,
+    "tx_dbm": 20.0,
+    "sens_dbm": -123.0,
+    "antenna_gain_dbi": 2.15,
+    "needs_amateur_licence": false,
+    "tx_published": true
+   },
+   "gps": null,
+   "camera": null,
+   "url": "https://www.amazon.com/dp/B0GVK67JG6",
+   "retrieved": "2026-10-24",
+   "price_usd": 22.31,
+   "note": "'Telemetry Power: 20dbm', SX1276, 30 mA, $22.31 (listing); 7 g with antenna from the team plan; ELRS 900 25 Hz sensitivity -123 dBm (ExpressLRS src/src/common.cpp @36c1bf2 RFperf row 4); temperature range ASSUMED"
+  },
+  {
+   "id": "dra818v",
+   "name": "Dorji DRA818V 1 W VHF module (APRS)",
+   "role": "radio",
+   "mass_g": 8,
+   "dims_mm": [
+    33,
+    21,
+    5
+   ],
+   "temp_min_c": -20,
+   "temp_max_c": 70,
+   "power_w": 0.36,
+   "temp_published": true,
+   "supply": {
+    "vin_min": 3.3,
+    "vin_max": 4.5
+   },
+   "battery": null,
+   "regulator": null,
+   "radio": {
+    "link": "aprs",
+    "freq_mhz": 144.39,
+    "tx_dbm": 30.0,
+    "sens_dbm": -122.0,
+    "antenna_gain_dbi": 2.15,
+    "needs_amateur_licence": true,
+    "tx_published": true
+   },
+   "gps": null,
+   "camera": null,
+   "url": "https://www.dorji.com/docs/data/DRA818V.pdf",
+   "retrieved": "2026-10-24",
+   "price_usd": 15.0,
+   "note": "VCC 3.3-4.5 V, 1 W (29-31 dBm), -122 dBm @12 dB SINAD, TX 750 mA max, RX 60 mA, -20..70 C (data sheet); average = 1.5 s TX per 60 s beacon at 4 V + 55 mA RX; price ASSUMPTION"
+  },
+  {
+   "id": "mpu6050",
+   "name": "MPU-6050 IMU board",
+   "role": "sensor",
+   "mass_g": 5,
+   "dims_mm": [
+    21,
+    16,
+    3
+   ],
+   "temp_min_c": -40,
+   "temp_max_c": 85,
+   "power_w": 0.02,
+   "temp_published": true,
+   "supply": {
+    "vin_min": 3.0,
+    "vin_max": 5.5
+   },
+   "battery": null,
+   "regulator": null,
+   "radio": null,
+   "gps": null,
+   "camera": null,
+   "url": "https://alliance.seas.upenn.edu/~medesign/wiki/uploads/Guides/MPU6050_datasheet.pdf",
+   "retrieved": "2026-10-24",
+   "price_usd": 5.0,
+   "note": "3.8 mA, -40..85 C (TDK PS-MPU-6000A); price and board 3-5 V range ASSUMPTION"
+  },
+  {
+   "id": "sg90-servo",
+   "name": "TowerPro SG90 servo (cutdown)",
+   "role": "servo",
+   "mass_g": 9,
+   "dims_mm": [
+    23,
+    12,
+    29
+   ],
+   "temp_min_c": 0,
+   "temp_max_c": 55,
+   "power_w": 0.05,
+   "temp_published": true,
+   "supply": {
+    "vin_min": 4.8,
+    "vin_max": 6.0
+   },
+   "battery": null,
+   "regulator": null,
+   "radio": null,
+   "gps": null,
+   "camera": null,
+   "url": "https://towerpro.com.tw/product/sg90-7/",
+   "retrieved": "2026-10-24",
+   "price_usd": 3.0,
+   "note": "9 g, 0..55 C (TowerPro); idle draw and price ASSUMPTION; 4.8-6 V"
+  },
+  {
+   "id": "mosfet-board",
+   "name": "MOSFET switch board",
+   "role": "switch",
+   "mass_g": 4.5,
+   "dims_mm": [
+    34,
+    17,
+    10
+   ],
+   "temp_min_c": -40,
+   "temp_max_c": 85,
+   "power_w": 0.0,
+   "temp_published": false,
+   "supply": null,
+   "battery": null,
+   "regulator": null,
+   "radio": null,
+   "gps": null,
+   "camera": null,
+   "url": "https://www.amazon.com/s?k=mosfet+switch+module",
+   "retrieved": "2026-10-24",
+   "price_usd": 3.0,
+   "note": "passive; mass from the team plan; temperature and price ASSUMPTION"
+  },
+  {
+   "id": "phone-backup",
+   "name": "Spare smartphone (recovery backup)",
+   "role": "phone",
+   "mass_g": 170,
+   "dims_mm": [
+    150,
+    72,
+    9
+   ],
+   "temp_min_c": 0,
+   "temp_max_c": 35,
+   "power_w": 0.4,
+   "temp_published": true,
+   "supply": null,
+   "battery": {
+    "chemistry": "li_ion",
+    "v_nom": 3.85,
+    "v_min": 3.3,
+    "v_max": 4.35,
+    "capacity_ah": 3.3,
+    "max_current_a": 3.0
+   },
+   "regulator": null,
+   "radio": {
+    "link": "cellular",
+    "freq_mhz": 1880.0,
+    "tx_dbm": 23.0,
+    "sens_dbm": null,
+    "antenna_gain_dbi": 0.0,
+    "needs_amateur_licence": false,
+    "tx_published": true
+   },
+   "gps": {
+    "chip": "phone GNSS (unspecified)",
+    "alt_limit_airborne_m": 18000.0,
+    "alt_limit_default_m": 18000.0
+   },
+   "camera": null,
+   "url": "https://support.apple.com/en-us/111829",
+   "retrieved": "2026-10-24",
+   "price_usd": 100.0,
+   "note": "ASSUMPTION: phones are rated 0-35 C ambient (Apple iPhone spec page); 3.3 Ah Li-ion, 0.4 W idle with GPS and cellular, $100 used phone; LTE UE power class 3 = 23 dBm (3GPP TS 36.101 6.2.2) at 1880 MHz; GPS altitude ASSUMPTION: consumer GNSS chips stop at the CoCom export limit of 18 km (60,000 ft) / 515 m/s (US Export Administration Regulations, 15 CFR 774 Supp. 1, ECCN 7A994/7A005 GNSS receivers designed for use above 18 km or 515 m/s are controlled); used only on the ground",
+   "self_powered": true
+  },
+  {
+   "id": "lipo-4s-6000",
+   "name": "4S 6000 mAh LiPo",
+   "role": "battery",
+   "mass_g": 575,
+   "dims_mm": [
+    155,
+    48,
+    40
+   ],
+   "temp_min_c": -20,
+   "temp_max_c": 60,
+   "power_w": 0.0,
+   "temp_published": true,
+   "supply": null,
+   "battery": {
+    "chemistry": "lipo",
+    "v_nom": 14.8,
+    "v_min": 12.0,
+    "v_max": 16.8,
+    "capacity_ah": 6.0,
+    "max_current_a": 60.0
+   },
+   "regulator": null,
+   "radio": null,
+   "gps": null,
+   "camera": null,
+   "url": "https://sites.units.it/carrato/didatt/ESD_web/doc/power/batteries/lp503759is3.pdf",
+   "retrieved": "2026-10-24",
+   "price_usd": 60.0,
+   "note": "mass from the team plan; -20..60 C discharge range of a generic LiPo data sheet; 3.0-4.2 V/cell; current rating and price ASSUMPTION"
+  },
+  {
+   "id": "reg-5v-1a8",
+   "name": "5 V 1.8 A regulator (on hand)",
+   "role": "regulator",
+   "mass_g": 4,
+   "dims_mm": [
+    22,
+    17,
+    4
+   ],
+   "temp_min_c": -40,
+   "temp_max_c": 85,
+   "power_w": 0.0,
+   "temp_published": false,
+   "supply": null,
+   "battery": null,
+   "regulator": {
+    "vin_min": 6.0,
+    "vin_max": 24.0,
+    "vout": 5.0,
+    "imax_a": 1.8,
+    "efficiency": 0.85
+   },
+   "radio": null,
+   "gps": null,
+   "camera": null,
+   "url": "https://www.amazon.com/s?k=5v+1.8a+step+down+regulator",
+   "retrieved": "2026-10-24",
+   "price_usd": 3.0,
+   "note": "1.8 A from the team plan; input 6-24 V, efficiency 0.85, temperature and price ASSUMPTION"
+  },
+  {
+   "id": "lm2596-buck-4v0",
+   "name": "LM2596 adjustable buck module set to 4.0 V (the plan's 'buck converter' on hand)",
+   "role": "regulator",
+   "mass_g": 12.0,
+   "dims_mm": [
+    43.0,
+    21.0,
+    14.0
+   ],
+   "temp_min_c": -40.0,
+   "temp_max_c": 85.0,
+   "power_w": 0.0,
+   "temp_published": false,
+   "supply": null,
+   "battery": null,
+   "regulator": {
+    "vin_min": 4.5,
+    "vin_max": 40.0,
+    "vout": 4.0,
+    "imax_a": 2.0,
+    "efficiency": 0.8
+   },
+   "radio": null,
+   "gps": null,
+   "camera": null,
+   "url": "https://www.neweggbusiness.com/p/9B-2VH-02RY-000S4",
+   "retrieved": "2026-10-24",
+   "price_usd": 3.29,
+   "note": "Newegg Business 10-pack $32.93 ($3.29 each), input 3-40 V, output 1.5-35 V adjustable, 3 A max (2 A used); Vin min 4.5 V for 4.0 V out (0.5 V dropout ASSUMPTION), efficiency 0.80 and mass/size/temperature ASSUMPTION (TI LM2596 data sheet efficiency curves run ~75-90 %)"
+  },
+  {
+   "id": "l91-aa",
+   "name": "Energizer Ultimate Lithium AA (L91)",
+   "role": "battery",
+   "mass_g": 15,
+   "dims_mm": [
+    50.5,
+    14.5,
+    14.5
+   ],
+   "temp_min_c": -40,
+   "temp_max_c": 60,
+   "power_w": 0.0,
+   "temp_published": true,
+   "supply": null,
+   "battery": {
+    "chemistry": "lithium_primary",
+    "v_nom": 1.5,
+    "v_min": 0.9,
+    "v_max": 1.8,
+    "capacity_ah": 3.0,
+    "max_current_a": 2.5
+   },
+   "regulator": null,
+   "radio": null,
+   "gps": null,
+   "camera": null,
+   "url": "https://data.energizer.com/pdfs/l91.pdf",
+   "retrieved": "2026-10-24",
+   "price_usd": 3.44,
+   "note": "-40..60 C, 15 g, 2.5 A continuous (data sheet); 3000 mAh and $13.77 per 4 from batteryjunction.com/energizer-aa-l91-4pk"
+  },
+  {
+   "id": "pololu-s9v11f5",
+   "name": "Pololu S9V11F5 5 V step-up/step-down",
+   "role": "regulator",
+   "mass_g": 1,
+   "dims_mm": [
+    11.4,
+    7.6,
+    4.3
+   ],
+   "temp_min_c": -40,
+   "temp_max_c": 85,
+   "power_w": 0.0,
+   "temp_published": false,
+   "supply": null,
+   "battery": null,
+   "regulator": {
+    "vin_min": 2.0,
+    "vin_max": 16.0,
+    "vout": 5.0,
+    "imax_a": 1.0,
+    "efficiency": 0.85
+   },
+   "radio": null,
+   "gps": null,
+   "camera": null,
+   "url": "https://www.pololu.com/product/2836",
+   "retrieved": "2026-10-24",
+   "price_usd": 6.95,
+   "note": "2-16 V in, 5 V out, 1.5 A when Vin >= 5 V (1.0 A used, boosting), 85-95 % efficient (0.85 used); mass and temperature ASSUMPTION"
+  },
+  {
+   "id": "lightaprs-2",
+   "name": "QRP Labs LightAPRS 2.0 (DRA818V + u-blox MAX-M8Q)",
+   "role": "radio",
+   "mass_g": 8.1,
+   "dims_mm": [
+    55,
+    33,
+    8
+   ],
+   "temp_min_c": -20,
+   "temp_max_c": 70,
+   "power_w": 0.2,
+   "temp_published": true,
+   "supply": {
+    "vin_min": 2.7,
+    "vin_max": 6.0
+   },
+   "battery": null,
+   "regulator": null,
+   "radio": {
+    "link": "aprs",
+    "freq_mhz": 144.39,
+    "tx_dbm": 30.0,
+    "sens_dbm": null,
+    "antenna_gain_dbi": 2.15,
+    "needs_amateur_licence": true,
+    "tx_published": true
+   },
+   "gps": {
+    "chip": "u-blox MAX-M8Q",
+    "alt_limit_airborne_m": 50000.0,
+    "alt_limit_default_m": 12000.0
+   },
+   "camera": null,
+   "url": "http://www.qrp-labs.com/lightaprs2.html",
+   "retrieved": "2026-10-24",
+   "price_usd": 125.0,
+   "note": "$125, 8.1 g, 33x55 mm, input 2.7-6 V, 1 W, TX ~750 mA, sleep ~7 mA, u-blox MAX-M8Q (page); average 0.2 W = 1.5 s TX per 60 s + sleep + GPS; range -20..70 C from its DRA818V"
+  },
+  {
+   "id": "heltec-lora32-v3",
+   "name": "Heltec WiFi LoRa 32 V3 (SX1262) beacon",
+   "role": "radio",
+   "mass_g": 20,
+   "dims_mm": [
+    51,
+    25,
+    10
+   ],
+   "temp_min_c": -20,
+   "temp_max_c": 70,
+   "power_w": 0.35,
+   "temp_published": false,
+   "supply": {
+    "vin_min": 4.75,
+    "vin_max": 5.5
+   },
+   "battery": null,
+   "regulator": null,
+   "radio": {
+    "link": "lora",
+    "freq_mhz": 915.0,
+    "tx_dbm": 21.0,
+    "sens_dbm": -134.0,
+    "antenna_gain_dbi": 2.15,
+    "needs_amateur_licence": true,
+    "tx_published": true
+   },
+   "gps": null,
+   "camera": null,
+   "url": "https://heltec.org/project/wifi-lora-32-v3/",
+   "retrieved": "2026-10-24",
+   "price_usd": 19.9,
+   "note": "$17.90-19.90, 21 dBm (page); mass, average draw (ESP32-S3 + 1 s TX per 30 s) and -20..70 C ASSUMPTION; LICENCE: a single-channel SF12 / 125 kHz beacon is not 47 CFR 15.247-legal: a 20-byte packet is ~1.3 s on air (Semtech SX127x time-on-air formula: 12.25 preamble + 28 payload symbols x 32.8 ms), over the 0.4 s per-channel dwell of 15.247(a)(1)(i) (which also needs >= 50 hop channels), and 125 kHz is under the 500 kHz minimum 6 dB bandwidth of a digital-modulation system (15.247(a)(2)). So it is flown under Part 97 in the 33 cm amateur band (902-928 MHz, 97.301(a), Technician and up) by the licensed operator, with the callsign in every packet (97.119) and no encryption (97.113(a)(4))"
+  },
+  {
+   "id": "gopro-hero13",
+   "name": "GoPro HERO13 Black",
+   "role": "camera",
+   "mass_g": 159,
+   "dims_mm": [
+    71.8,
+    50.8,
+    33.6
+   ],
+   "temp_min_c": -10,
+   "temp_max_c": 35,
+   "power_w": 2.9,
+   "temp_published": true,
+   "supply": null,
+   "battery": {
+    "chemistry": "li_ion",
+    "v_nom": 3.85,
+    "v_min": 3.3,
+    "v_max": 4.4,
+    "capacity_ah": 1.9,
+    "max_current_a": 3.0
+   },
+   "regulator": null,
+   "radio": null,
+   "gps": null,
+   "camera": {
+    "video": true,
+    "photo": true,
+    "record_h": 2.5
+   },
+   "url": "https://gopro.com/en/us/shop/cameras/learn/hero13black/CHDHX-131-master.html",
+   "retrieved": "2026-10-24",
+   "price_usd": 429.99,
+   "note": "$429.99, 159 g, -10..35 C, 'more than 2.5 hours ... at 1080p30' (page); 1900 mAh 3.85 V battery ASSUMPTION, so 7.3 Wh / 2.5 h = 2.9 W",
+   "self_powered": true,
+   "microsd": true
+  },
+  {
+   "id": "runcam5-orange",
+   "name": "RunCam 5 Orange",
+   "role": "camera",
+   "mass_g": 56,
+   "dims_mm": [
+    56,
+    40,
+    30
+   ],
+   "temp_min_c": -10,
+   "temp_max_c": 40,
+   "power_w": 3.1,
+   "temp_published": false,
+   "supply": {
+    "vin_min": 4.75,
+    "vin_max": 5.25
+   },
+   "battery": null,
+   "regulator": null,
+   "radio": null,
+   "gps": null,
+   "camera": {
+    "video": true,
+    "photo": true,
+    "record_h": null
+   },
+   "url": "https://shop.runcam.com/runcam-5-orange/",
+   "retrieved": "2026-10-24",
+   "price_usd": 129.99,
+   "note": "US$129.99, 56 g with battery, 'Max 620mA @5V' (page) fed over USB from the bus; temperature range ASSUMPTION (not published)",
+   "microsd": true
+  },
+  {
+   "id": "heater-pad",
+   "name": "Adafruit 1481 heating pad 10x5 cm",
+   "role": "hardware",
+   "mass_g": 2.53,
+   "dims_mm": [
+    110.65,
+    70.45,
+    1.54
+   ],
+   "temp_min_c": -40,
+   "temp_max_c": 85,
+   "power_w": 5.0,
+   "temp_published": false,
+   "supply": {
+    "vin_min": 4.75,
+    "vin_max": 12.0
+   },
+   "battery": null,
+   "regulator": null,
+   "radio": null,
+   "gps": null,
+   "camera": null,
+   "url": "https://www.adafruit.com/product/1481",
+   "retrieved": "2026-10-24",
+   "price_usd": 7.95,
+   "note": "'5V DC up to 1A' (5 W at 5 V), 2.53 g, $7.95; switched by firmware below 5 C (thermostat); temperature range ASSUMPTION",
+   "thermostat_c": 5.0
+  },
+  {
+   "id": "hothands-hw",
+   "name": "HotHands hand warmer (air-activated, single)",
+   "role": "hardware",
+   "mass_g": 29.7,
+   "dims_mm": [
+    102.0,
+    51.0,
+    6.0
+   ],
+   "temp_min_c": -40.0,
+   "temp_max_c": 85.0,
+   "power_w": 0.0,
+   "temp_published": false,
+   "supply": null,
+   "battery": null,
+   "regulator": null,
+   "radio": null,
+   "gps": null,
+   "camera": null,
+   "warmer": {
+    "rated_h": 10.0,
+    "activation_min": 30.0
+   },
+   "url": "https://www.uline.com/Product/Detail/S-14297B/Hand-and-Foot-Warmers/HotHands-Hand-Warmers-Bulk-Pack",
+   "retrieved": "2026-10-24",
+   "price_usd": 0.475,
+   "note": "Uline S-14297B: $38 per carton of 40 2-packs (80 warmers, $0.475 each), 'Heats up to 10 hours', 'Takes 15 to 30 minutes' to activate, 2 x 4 in (thickness 6 mm ASSUMPTION); 29.7 g each (Red Rocks CC 2023 HAB paper p. 6); no electrical load; heat derived in rules.rs (1.37 W at sea level, falls with pressure); the pouch has no temperature rating (range ASSUMPTION)"
+  }
+ ],
+ "ground": [
+  {
+   "id": "aprs-ham-ht",
+   "name": "2 m APRS receive (Kenwood TM-D710GE class) + APRS-IS iGates",
+   "link": "aprs",
+   "rx_sens_dbm": -123.0,
+   "tx_dbm": null,
+   "antenna_gain_dbi": 2.15,
+   "antenna_height_m": 2.0,
+   "url": "https://kenwood.eu/comm/amateur/vhf_uhf/TM-D710GE/?view=details",
+   "retrieved": "2026-10-24",
+   "price_usd": null,
+   "note": "'Less than 0.16 uV at 12 dB SINAD' = -123 dBm; owned by the licensed teammate (not bought)"
+  },
+  {
+   "id": "elrs-bandit-micro",
+   "name": "RadioMaster Bandit Micro 900 MHz ELRS TX (1 W)",
+   "link": "elrs",
+   "rx_sens_dbm": -123.0,
+   "tx_dbm": 30.0,
+   "antenna_gain_dbi": 2.15,
+   "antenna_height_m": 2.0,
+   "url": "https://radiomasterrc.com/products/bandit-micro-expresslrs-rf-module",
+   "retrieved": "2026-10-24",
+   "price_usd": 49.99,
+   "note": "1 W, $49.99; sensitivity is the ELRS 25 Hz figure"
+  },
+  {
+   "id": "heltec-ground",
+   "name": "Heltec WiFi LoRa 32 V3 ground receiver",
+   "link": "lora",
+   "rx_sens_dbm": -134.0,
+   "tx_dbm": null,
+   "antenna_gain_dbi": 2.15,
+   "antenna_height_m": 2.0,
+   "url": "https://heltec.org/project/wifi-lora-32-v3/",
+   "retrieved": "2026-10-24",
+   "price_usd": 19.9,
+   "note": "'-134dBm@SF12 BW=125KHz'"
+  }
+ ],
+ "extras": [
+  {
+   "id": "rocketman-inflator",
+   "name": "Rocketman Weather Balloon Inflator 3.0cm (CGA-580 regulator 3000->80 psi, gauge, hose, fill nozzle)",
+   "per": "flight",
+   "mass_g": 0.0,
+   "url": "https://www.the-rocketman.com/products/weather-balloon-inflator",
+   "retrieved": "2026-10-24",
+   "price_usd": 95.0,
+   "note": "$95.00; regulator 3,000 to 80 psi, tank gauge, 3/8 in hose, fill nozzle (200 g), CGA-580; ground equipment, does not fly"
+  },
+  {
+   "id": "cylinder-rental",
+   "name": "Helium size-300 cylinder rental, one month",
+   "per": "cylinder",
+   "mass_g": 0.0,
+   "url": "https://bps.westchestercountyny.gov/images/HELIUM_GAS_FOR_LAB_USE_IN_CYLINDERS_.pdf",
+   "retrieved": "2026-10-24",
+   "price_usd": 5.4,
+   "note": "Westchester County NY award to Haun Welding Supply, contract 2026-01-01..2026-12-31: 'Monthly Rental Charge $5.40', 'Cylinder Replacement Charge $300.00' (owed only if the cylinder is not returned); suppliers without a rental plan take a refundable deposit instead"
+  },
+  {
+   "id": "rocketman-harness-swivel",
+   "name": "Rocketman 3-to-1 shock cord harness with swivel, 6 ft (chute to payload)",
+   "per": "flight",
+   "mass_g": 50.0,
+   "url": "https://www.the-rocketman.com/products/swivel-harness-systems",
+   "retrieved": "2026-10-24",
+   "price_usd": 50.0,
+   "note": "$50.00, 3-to-1 or 4-to-1, 6 ft; mass not published: 50 g ASSUMPTION (1.8 m of tubular nylon + swivel); strength not published, far above the 50 lb line (the line is the weak link)"
+  },
+  {
+   "id": "microsd-64gb",
+   "name": "Raspberry Pi A2-class microSD card, 64 GB",
+   "per": "microsd",
+   "mass_g": 0.0,
+   "url": "https://www.adafruit.com/product/6011",
+   "retrieved": "2026-10-24",
+   "price_usd": 12.79,
+   "note": "$12.79 at Adafruit (out of stock when read); one per part that records or boots from a card; mass inside the host part"
+  }
+ ]
+}

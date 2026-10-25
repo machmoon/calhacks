@@ -1,0 +1,119 @@
+{
+  "label": "cam-runcam5+aprs-lightaprs2+lora-heltec",
+  "balloon": "totex-3000",
+  "gas": "he-uhp-300",
+  "cylinders": 1,
+  "neck_lift_g": 2484.7367054181886,
+  "fill_target_mps": 5.5,
+  "parachute": "spherachute-72",
+  "line": "ashaway-dacron-30lb",
+  "line_m": 8.0,
+  "enclosure": {
+    "insulation": "xps-foamular-150",
+    "wall_mm": 25.4,
+    "inner_mm": [
+      140.0,
+      90.0,
+      113.0
+    ],
+    "printed_tray": true
+  },
+  "items": [
+    {
+      "part": "runcam5-orange",
+      "qty": 1,
+      "bus": 0,
+      "rail": 0,
+      "on_after_landing": false,
+      "until_burst": true
+    },
+    {
+      "part": "lightaprs-2",
+      "qty": 1,
+      "bus": 1,
+      "rail": null,
+      "on_after_landing": true,
+      "until_burst": false
+    },
+    {
+      "part": "heltec-lora32-v3",
+      "qty": 1,
+      "bus": 2,
+      "rail": 0,
+      "on_after_landing": true,
+      "until_burst": false
+    },
+    {
+      "part": "matek-m10q",
+      "qty": 1,
+      "bus": 2,
+      "rail": 0,
+      "on_after_landing": true,
+      "until_burst": false
+    }
+  ],
+  "buses": [
+    {
+      "name": "camera L91 4S2P",
+      "battery": "l91-aa",
+      "series": 4,
+      "parallel": 2,
+      "rails": [
+        "pololu-s9v11f5"
+      ]
+    },
+    {
+      "name": "APRS L91 3S1P",
+      "battery": "l91-aa",
+      "series": 3,
+      "parallel": 1,
+      "rails": []
+    },
+    {
+      "name": "LoRa L91 4S1P",
+      "battery": "l91-aa",
+      "series": 4,
+      "parallel": 1,
+      "rails": [
+        "pololu-s9v11f5"
+      ]
+    }
+  ],
+  "trackers": [
+    {
+      "name": "APRS (LightAPRS 2.0)",
+      "class": "primary",
+      "radio": "lightaprs-2",
+      "gps": "lightaprs-2",
+      "gps_airborne": true,
+      "ground": "aprs-ham-ht"
+    },
+    {
+      "name": "LoRa 915 (Heltec + M10)",
+      "class": "secondary",
+      "radio": "heltec-lora32-v3",
+      "gps": "matek-m10q",
+      "gps_airborne": true,
+      "ground": "heltec-ground"
+    }
+  ],
+  "buy_ground": [
+    "heltec-ground"
+  ],
+  "printed": {
+    "grams": 149.35999999999996,
+    "seconds": 55760.0,
+    "printer": "Bambu Lab P1S"
+  },
+  "printed_allowance_g": 222.91547999999975,
+  "warmers_below_c": null,
+  "launch_window_c": [
+    -12.0,
+    35.0
+  ],
+  "notes": [
+    "Camera: RunCam 5 Orange on a 4x L91 + 5 V buck-boost bus (off at burst)",
+    "Primary: LightAPRS 2.0 on 3x L91",
+    "Secondary: Heltec LoRa beacon + Matek M10 on 4x L91 + buck-boost (Part 97, 33 cm band: licensed operator, callsign in each packet)"
+  ]
+}

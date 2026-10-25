@@ -1,0 +1,19 @@
+{
+  "id": "budget-stop",
+  "description": "A one-cent run budget. The first call's worst case does not fit, so it must never be sent: zero calls, stop on budget.",
+  "domain": "toy",
+  "request": "a span for a 100 mm gap under $50",
+  "spec": {"target_mm": 100.0, "budget_usd": 50.0},
+  "limits": {"max_rounds": 2, "orchestrator_turns": 8, "specialist_turns": 4, "reviewer_turns": 4, "budget_usd": 0.01},
+  "model": {
+    "orchestrator": [
+      {"tool": "design", "input": {}}
+    ]
+  },
+  "expect": {
+    "passed": false,
+    "stop": "budget",
+    "max_calls": 0,
+    "max_cost_usd": 0.0
+  }
+}

@@ -1,0 +1,552 @@
+{
+  "schema_version": 1,
+  "revision": "package-v2",
+  "evidence_frozen": true,
+  "hardware_ready": false,
+  "compatibility_verified": false,
+  "date": "2026-10-24",
+  "scope": "Original 1.8m lift-plus-cruise demonstrator candidate, not Tsung Xu replica; evidence freeze is not hardware release",
+  "interfaces": [
+    {
+      "id": "lift_motor",
+      "mechanical_dimensions_mm": null,
+      "facts": {
+        "rated_cells": 4,
+        "peak_current_A_180s": 16,
+        "P12_max_test_thrust_g": 1275.96,
+        "test_voltage_V": 15.78,
+        "test_current_A": 13.95
+      },
+      "source_ids": [
+        "motor"
+      ],
+      "unresolved": [
+        "Mounting datum inspection needs drawing reconciliation",
+        "Permissible screw engagement not inferred from bore depth"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "lift_prop",
+      "mechanical_dimensions_mm": [
+        304.8,
+        101.6
+      ],
+      "facts": {
+        "quantity_L": 2,
+        "quantity_R": 2,
+        "manufacturer_rotation_note": "L=CW, R=COW aerial view; COW interpreted as counterclockwise, preserve source typo"
+      },
+      "source_ids": [
+        "lift_prop"
+      ],
+      "unresolved": [
+        "Existing single STEP handedness unidentified",
+        "Correct two physical hands and bolts/retainers must be mapped"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "cruise_motor",
+      "mechanical_dimensions_mm": [
+        35.2,
+        54.5
+      ],
+      "facts": {
+        "rated_cells": [
+          3,
+          4
+        ],
+        "shaft_mm": 5,
+        "peak_current_A_180s": 45,
+        "APC11x5.5_test_at_14_72V": {
+          "thrust_g": 2216,
+          "current_A": 34.23
+        }
+      },
+      "source_ids": [
+        "cruise_motor"
+      ],
+      "unresolved": [
+        "Exact adapter choice/retention, dimensions and pusher orientation not verified in CAD"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "cruise_prop",
+      "mechanical_dimensions_mm": [
+        279.4,
+        139.7
+      ],
+      "facts": {
+        "hub_diameter_mm": 20.32,
+        "hub_thickness_mm": 10.414,
+        "bore_mm": 6.35,
+        "adapter_set": "LPAR06E"
+      },
+      "source_ids": [
+        "cruise_prop",
+        "prop_faq"
+      ],
+      "unresolved": [
+        "Normal-hand electric prop can be rear-mounted with correct physical forward face and motor direction; actual thrust sign/adapter/retention still unverified",
+        "Do not silently substitute reverse-hand EP; motor bench table used E"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "esc",
+      "mechanical_dimensions_mm": [
+        60,
+        25,
+        8
+      ],
+      "facts": {
+        "cells": [
+          3,
+          4
+        ],
+        "continuous_A": 40,
+        "peak_A": 60,
+        "BEC_V": 5,
+        "BEC_A": 5,
+        "signal": "conventional throttle PWM"
+      },
+      "source_ids": [
+        "esc"
+      ],
+      "unresolved": [
+        "Lift control update/response adequacy not established by fixed-wing datasheet",
+        "Insulate each BEC positive; no parallel regulator outputs"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "cruise_esc",
+      "mechanical_dimensions_mm": [
+        60,
+        25,
+        8
+      ],
+      "facts": {
+        "cells": [
+          3,
+          4
+        ],
+        "continuous_A": 50,
+        "peak_A": 70
+      },
+      "source_ids": [
+        "esc"
+      ],
+      "unresolved": [
+        "Motor cooling and actual prop load pending",
+        "BEC positive disconnected from servo rail"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "fc",
+      "mechanical_dimensions_mm": [
+        54.3,
+        39,
+        17.5
+      ],
+      "facts": {
+        "separate_carrier_required": false,
+        "max_input_V": 6,
+        "built_in_pwm_header": true
+      },
+      "source_ids": [
+        "controller",
+        "controller_pinout"
+      ],
+      "unresolved": [
+        "Current revision exact mounting geometry/isolation material",
+        "No substitution of existing Pixhawk6X Pro CAD"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "power",
+      "mechanical_dimensions_mm": [
+        25,
+        25,
+        10
+      ],
+      "facts": {
+        "proposal": "Low-current branch only; do not carry propulsion current through stock harness",
+        "output_V": 5.2,
+        "output_A": 3
+      },
+      "source_ids": [
+        "power_pm02"
+      ],
+      "unresolved": [
+        "Current sensing intentionally excludes propulsion and must not be represented as battery consumption"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "bec",
+      "mechanical_dimensions_mm": [
+        43.1,
+        32.3,
+        12.5
+      ],
+      "facts": {
+        "input_cells": [
+          2,
+          6
+        ],
+        "selected_output_V": 6,
+        "continuous_A": 10,
+        "peak_A": 20
+      },
+      "source_ids": [
+        "bec"
+      ],
+      "unresolved": [
+        "Wiring/thermal verification; keep receiver at least50mm away per manual"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "gps",
+      "mechanical_dimensions_mm": [
+        50,
+        50,
+        14.4
+      ],
+      "facts": {
+        "input_V": [
+          4.7,
+          5.2
+        ],
+        "current_A_max": 0.2,
+        "interfaces": [
+          "UART",
+          "I2C"
+        ],
+        "compass_variants": [
+          "IST8310",
+          "IST8308"
+        ]
+      },
+      "source_ids": [
+        "gnss"
+      ],
+      "unresolved": [
+        "Delivered compass variant must be identified, not silently frozen",
+        "Mount hole pattern and connector orientation pending"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "rx",
+      "mechanical_dimensions_mm": [
+        22,
+        13,
+        4
+      ],
+      "facts": {
+        "supply_V": 5,
+        "interface": "CRSF UART"
+      },
+      "source_ids": [
+        "receiver"
+      ],
+      "unresolved": [
+        "Antenna keepouts and exact pad orientation pending"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "radio",
+      "mechanical_dimensions_mm": [
+        28,
+        53,
+        10.7
+      ],
+      "facts": {
+        "airframe_quantity": 1,
+        "ground_quantity": 1,
+        "mass_scope": "one radio with antenna",
+        "supply_V": 5,
+        "TX_current_A": 0.1
+      },
+      "source_ids": [
+        "telemetry"
+      ],
+      "unresolved": [
+        "Connector orientation and installed antenna envelope pending"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "airspeed",
+      "mechanical_dimensions_mm": null,
+      "facts": {
+        "supply_V": [
+          4,
+          5.5
+        ],
+        "interface": "I2C",
+        "pins_in_published_sequence": [
+          "5V",
+          "SCL",
+          "SDA",
+          "GND"
+        ],
+        "tube_length_mm": 400
+      },
+      "source_ids": [
+        "airspeed"
+      ],
+      "unresolved": [
+        "Board/pitot envelope and mounting dimensions unpublished",
+        "3.5g excludes pitot and tube; allow additional mass"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "servo",
+      "mechanical_dimensions_mm": [
+        23.6,
+        11.6,
+        30
+      ],
+      "facts": {
+        "roles": [
+          "aileron_left",
+          "aileron_right",
+          "elevator",
+          "rudder"
+        ],
+        "selected_voltage_V": 6,
+        "stall_torque_kgf_cm": 2.2,
+        "stall_current_A": 1.2,
+        "four_servo_stall_A": 4.8,
+        "default_travel_deg": [
+          -60,
+          60
+        ]
+      },
+      "source_ids": [
+        "servo",
+        "servo_conflict"
+      ],
+      "unresolved": [
+        "Primary sources conflict:24T vsM25T spline and24/26/30mm height; use conservative30mm envelope only",
+        "Horn identity, ear holes and hinge-load sizing unresolved"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "battery",
+      "mechanical_dimensions_mm": [
+        147,
+        51,
+        38
+      ],
+      "facts": {
+        "cells": 4,
+        "capacity_Ah": 5,
+        "nominal_V": 14.8,
+        "full_V": 16.8,
+        "advertised_cell_C": 65,
+        "wire_AWG": 10,
+        "connector": "XT90",
+        "dimension_tolerance_mm": 5,
+        "mass_tolerance_g": 5
+      },
+      "source_ids": [
+        "battery_cnhl"
+      ],
+      "unresolved": [
+        "Cell C rating is not installed harness rating",
+        "Exact XT90 variant/continuous/burst temperature rating not yet proved",
+        "Reserve max152\u00d756\u00d743mm plus separate connector/wire space"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "spar",
+      "mechanical_dimensions_mm": [
+        16,
+        14,
+        2000
+      ],
+      "facts": {
+        "cut_length_mm_provisional": 1800,
+        "section_I_mm4": 1331.2498869586748
+      },
+      "source_ids": [
+        "spar",
+        "spar_datasheet"
+      ],
+      "unresolved": [
+        "Laminate allowables/joints/deflection not qualified; dimensions do not imply strength"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "booms",
+      "mechanical_dimensions_mm": [
+        16,
+        14,
+        1000
+      ],
+      "facts": {
+        "cut_length_mm_provisional": 900
+      },
+      "source_ids": [
+        "spar",
+        "spar_datasheet"
+      ],
+      "unresolved": [
+        "Layout cut lengths and clamp crush checks pending"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "pushrods",
+      "mechanical_dimensions_mm": [
+        762
+      ],
+      "facts": {
+        "used_rods": 4,
+        "thread_length_mm": 19.05
+      },
+      "source_ids": [
+        "pushrod"
+      ],
+      "unresolved": [
+        "Cut length, compatible clevis SKU, retaining sleeves, horn spline and buckling pending"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "power_distribution",
+      "mechanical_dimensions_mm": null,
+      "facts": {},
+      "source_ids": [],
+      "unresolved": [
+        "Exact purchasable part, quantity, dimensions and interface not yet resolved; blocks hardware freeze"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "battery_connector",
+      "mechanical_dimensions_mm": null,
+      "facts": {},
+      "source_ids": [],
+      "unresolved": [
+        "Exact purchasable part, quantity, dimensions and interface not yet resolved; blocks hardware freeze"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "power_harness",
+      "mechanical_dimensions_mm": null,
+      "facts": {},
+      "source_ids": [],
+      "unresolved": [
+        "Exact purchasable part, quantity, dimensions and interface not yet resolved; blocks hardware freeze"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "signal_harness",
+      "mechanical_dimensions_mm": null,
+      "facts": {},
+      "source_ids": [],
+      "unresolved": [
+        "Exact purchasable part, quantity, dimensions and interface not yet resolved; blocks hardware freeze"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "hinges",
+      "mechanical_dimensions_mm": null,
+      "facts": {},
+      "source_ids": [],
+      "unresolved": [
+        "Exact purchasable part, quantity, dimensions and interface not yet resolved; blocks hardware freeze"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "battery_retention",
+      "mechanical_dimensions_mm": null,
+      "facts": {},
+      "source_ids": [],
+      "unresolved": [
+        "Exact purchasable part, quantity, dimensions and interface not yet resolved; blocks hardware freeze"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "landing_gear",
+      "mechanical_dimensions_mm": null,
+      "facts": {},
+      "source_ids": [],
+      "unresolved": [
+        "Exact purchasable part, quantity, dimensions and interface not yet resolved; blocks hardware freeze"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "fasteners_and_inserts",
+      "mechanical_dimensions_mm": null,
+      "facts": {},
+      "source_ids": [],
+      "unresolved": [
+        "Exact purchasable part, quantity, dimensions and interface not yet resolved; blocks hardware freeze"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "controller_isolation",
+      "mechanical_dimensions_mm": null,
+      "facts": {},
+      "source_ids": [],
+      "unresolved": [
+        "Exact purchasable part, quantity, dimensions and interface not yet resolved; blocks hardware freeze"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "control_horns_and_retainers",
+      "mechanical_dimensions_mm": null,
+      "facts": {},
+      "source_ids": [],
+      "unresolved": [
+        "Exact purchasable part, quantity, dimensions and interface not yet resolved; blocks hardware freeze"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "protection",
+      "mechanical_dimensions_mm": null,
+      "facts": {},
+      "source_ids": [],
+      "unresolved": [
+        "Exact purchasable part, quantity, dimensions and interface not yet resolved; blocks hardware freeze"
+      ],
+      "status": "pending"
+    }
+  ],
+  "geometry_measurement_reference": "out/vtol-demonstrator/hardware-geometry-inspection.json",
+  "coordinates": {
+    "aircraft": "Xforward,Yright,Zdown proposed; builder must record actual transform",
+    "motor_STEP": "axisX; baseX13.7; four thread-core\u00d82.5 cylinders on25/19mm diametral patterns rotated45deg; not screw-depth authorization",
+    "prop_STEP": "axisZ; center\u00d86; two\u00d83 atX\u00b16; matingZ\u22124.51305/\u22121.72761; handunidentified"
+  },
+  "additional_interfaces": {
+    "liftmotor_base": "drawing2xM3on19+2xM3on25;safeengagementunknown",
+    "PDB": "topentry18138 drawing80x80x20,70x70M3pattern",
+    "wiring": "wiring-schedule.json authoritative v2 supplement",
+    "servo": "selectedHS65MG officialSTEP+v2.1sheet; see servo-interface.json"
+  }
+}

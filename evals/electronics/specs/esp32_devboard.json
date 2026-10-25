@@ -1,0 +1,233 @@
+{
+ "request": "eval fixture esp32_devboard",
+ "circuit": {
+  "devices": {
+   "AMS1117-3.3": {
+    "pins": {
+     "GND": "1",
+     "VIN": "3",
+     "VOUT": "2"
+    }
+   },
+   "CH340C": {
+    "no_connect": [
+     "CTS",
+     "DSR",
+     "RI",
+     "DCD",
+     "DTR",
+     "RTS",
+     "R232"
+    ],
+    "pins": {
+     "CTS": "9",
+     "DCD": "12",
+     "DSR": "10",
+     "DTR": "13",
+     "GND": "1",
+     "R232": "15",
+     "RI": "11",
+     "RTS": "14",
+     "RXD": "3",
+     "TXD": "2",
+     "UD_M": "6",
+     "UD_P": "5",
+     "V3": "4",
+     "VCC": "16"
+    }
+   },
+   "ESP32-WROOM-32E": {
+    "no_connect": [
+     "IO2"
+    ],
+    "pins": {
+     "EN": "3",
+     "GND": "1",
+     "IO0": "25",
+     "IO2": "24",
+     "RXD0": "34",
+     "TXD0": "35",
+     "VDD": "2"
+    }
+   },
+   "SW_BOOT": {
+    "kind": "switch",
+    "package": "SW_SPST_TL3305A",
+    "pins": {
+     "A": "1",
+     "B": "2"
+    }
+   },
+   "SW_EN": {
+    "kind": "switch",
+    "package": "SW_SPST_TL3305A",
+    "pins": {
+     "A": "1",
+     "B": "2"
+    }
+   },
+   "j_usb": {
+    "kind": "connector",
+    "no_connect": [
+     "SBU1",
+     "SBU2"
+    ],
+    "package": "USB_C_Receptacle_USB2.0_16P",
+    "pins": {
+     "CC1": "A5",
+     "CC2": "B5",
+     "DN_A": "A7",
+     "DN_B": "B7",
+     "DP_A": "A6",
+     "DP_B": "B6",
+     "GND_A1": "A1",
+     "GND_A12": "A12",
+     "GND_B1": "B1",
+     "GND_B12": "B12",
+     "SBU1": "A8",
+     "SBU2": "B8",
+     "VBUS_A4": "A4",
+     "VBUS_A9": "A9",
+     "VBUS_B4": "B4",
+     "VBUS_B9": "B9"
+    }
+   }
+  },
+  "nets": {
+   "+3V3": [
+    "AMS1117-3.3.VOUT",
+    "C_3V3.1",
+    "CH340C.VCC",
+    "C_CH.1",
+    "ESP32-WROOM-32E.VDD",
+    "C_ESP.1",
+    "R_EN.1",
+    "R_BOOT.1",
+    "R_LED.1"
+   ],
+   "BOOT": [
+    "ESP32-WROOM-32E.IO0",
+    "R_BOOT.2",
+    "SW_BOOT.A"
+   ],
+   "CC1": [
+    "j_usb.CC1",
+    "R_CC1.1"
+   ],
+   "CC2": [
+    "j_usb.CC2",
+    "R_CC2.1"
+   ],
+   "CH_V3": [
+    "CH340C.V3",
+    "C_V3.1"
+   ],
+   "EN": [
+    "ESP32-WROOM-32E.EN",
+    "R_EN.2",
+    "C_EN.1",
+    "SW_EN.A"
+   ],
+   "ESP_RX": [
+    "ESP32-WROOM-32E.RXD0",
+    "CH340C.TXD"
+   ],
+   "ESP_TX": [
+    "ESP32-WROOM-32E.TXD0",
+    "CH340C.RXD"
+   ],
+   "GND": [
+    "j_usb.GND_A1",
+    "j_usb.GND_B12",
+    "j_usb.GND_B1",
+    "j_usb.GND_A12",
+    "AMS1117-3.3.GND",
+    "CH340C.GND",
+    "ESP32-WROOM-32E.GND",
+    "R_CC1.2",
+    "R_CC2.2",
+    "C_VBUS.2",
+    "C_3V3.2",
+    "C_ESP.2",
+    "C_CH.2",
+    "C_V3.2",
+    "C_EN.2",
+    "SW_EN.B",
+    "SW_BOOT.B",
+    "D_PWR.1"
+   ],
+   "LED": [
+    "R_LED.2",
+    "D_PWR.2"
+   ],
+   "USB_DM": [
+    "j_usb.DN_A",
+    "j_usb.DN_B",
+    "CH340C.UD_M"
+   ],
+   "USB_DP": [
+    "j_usb.DP_A",
+    "j_usb.DP_B",
+    "CH340C.UD_P"
+   ],
+   "VBUS": [
+    "j_usb.VBUS_A4",
+    "j_usb.VBUS_B9",
+    "j_usb.VBUS_B4",
+    "j_usb.VBUS_A9",
+    "AMS1117-3.3.VIN",
+    "C_VBUS.1"
+   ]
+  },
+  "passives": {
+   "C_3V3": {
+    "type": "capacitor",
+    "value": "22uF"
+   },
+   "C_CH": {
+    "type": "capacitor",
+    "value": "100nF"
+   },
+   "C_EN": {
+    "type": "capacitor",
+    "value": "1uF"
+   },
+   "C_ESP": {
+    "type": "capacitor",
+    "value": "100nF"
+   },
+   "C_V3": {
+    "type": "capacitor",
+    "value": "100nF"
+   },
+   "C_VBUS": {
+    "type": "capacitor",
+    "value": "10uF"
+   },
+   "D_PWR": {
+    "type": "diode",
+    "value": "green LED"
+   },
+   "R_BOOT": {
+    "type": "resistor",
+    "value": "10k"
+   },
+   "R_CC1": {
+    "type": "resistor",
+    "value": "5k1"
+   },
+   "R_CC2": {
+    "type": "resistor",
+    "value": "5k1"
+   },
+   "R_EN": {
+    "type": "resistor",
+    "value": "10k"
+   },
+   "R_LED": {
+    "type": "resistor",
+    "value": "1k"
+   }
+  }
+ }
+}

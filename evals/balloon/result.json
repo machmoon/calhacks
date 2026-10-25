@@ -1,0 +1,1214 @@
+{
+  "artifacts": [
+    [
+      "payload assembly (STL)",
+      "/Users/patliu/Desktop/Coding/wright/crates/wright-balloon/../../evals/balloon/build/payload_assembly.stl"
+    ],
+    [
+      "printed rack G-code + slicer summary",
+      "/Users/patliu/Desktop/Coding/wright/crates/wright-balloon/../../evals/balloon/build/print/summary.json"
+    ],
+    [
+      "packed layout",
+      "/Users/patliu/Desktop/Coding/wright/crates/wright-balloon/../../evals/balloon/build/layout.json"
+    ],
+    [
+      "bill of materials",
+      "/Users/patliu/Desktop/Coding/wright/crates/wright-balloon/../../evals/balloon/build/bom.csv"
+    ],
+    [
+      "design",
+      "/Users/patliu/Desktop/Coding/wright/crates/wright-balloon/../../evals/balloon/build/design.json"
+    ],
+    [
+      "pre-release checklist",
+      "/Users/patliu/Desktop/Coding/wright/crates/wright-balloon/../../evals/balloon/build/checklist.md"
+    ]
+  ],
+  "beats": {
+    "all_checks_pass": true,
+    "cost_le": true,
+    "higher_burst": true,
+    "higher_recovery_probability": true
+  },
+  "pat": {
+    "ambient_min_c": -56.5,
+    "balloon": "totex-2000",
+    "box_inner_mm": [
+      180.0,
+      140.0,
+      108.0
+    ],
+    "box_max_c": 68.28714531634249,
+    "box_min_c": 5.84930678493624,
+    "burst_altitude_m": 34111.366424911794,
+    "buses": [
+      {
+        "capacity_fraction": 0.8468206073205207,
+        "cell_min_c": 5.852575915065081,
+        "flight_endurance_h": 3.427814013906061,
+        "have_wh": 60.1581359440498,
+        "name": "4S LiPo (all loads)",
+        "need_wh": 49.37957506754238
+      }
+    ],
+    "checks": [
+      {
+        "detail": "burst at 34111 m (CUSF closed form says 34884 m), target 30000 m",
+        "evidence": {
+          "Margin": {
+            "unit": "m",
+            "value": 4111.366424911794
+          }
+        },
+        "name": "burst_altitude",
+        "source": "Physics"
+      },
+      {
+        "detail": "launch 4.38 m/s, mean 5.01 m/s (band 4-6)",
+        "evidence": {
+          "Margin": {
+            "unit": "m/s",
+            "value": 0.37641792694476806
+          }
+        },
+        "name": "ascent_rate",
+        "source": "Physics"
+      },
+      {
+        "detail": "4.52 m/s at 80 m with 2493 g under the chute",
+        "evidence": {
+          "Margin": {
+            "unit": "m/s",
+            "value": 0.48187707536480584
+          }
+        },
+        "name": "landing_speed",
+        "source": "Physics"
+      },
+      {
+        "detail": "neck lift 3136 g vs flight train 1493 g",
+        "evidence": {
+          "Margin": {
+            "unit": "g",
+            "value": 1643.3334670740219
+          }
+        },
+        "name": "lift_budget",
+        "source": "Physics"
+      },
+      {
+        "detail": "need 4.97 m^3 at 21 C/1 atm, have 7.61 usable in 1 cylinder(s)",
+        "evidence": {
+          "Margin": {
+            "unit": "m^3",
+            "value": 2.639427451905413
+          }
+        },
+        "name": "gas_supply",
+        "source": "Physics"
+      },
+      {
+        "detail": "package 2.86 lb, 0.97 oz/in^2 on its smallest face (47 in^2)",
+        "evidence": {
+          "Margin": {
+            "unit": "lb",
+            "value": 5.947241692872037
+          }
+        },
+        "name": "faa101_package",
+        "source": "Requirement"
+      },
+      {
+        "detail": "package 2.86 lb",
+        "evidence": {
+          "Margin": {
+            "unit": "lb",
+            "value": 3.1415655815198127
+          }
+        },
+        "name": "faa101_package_max",
+        "source": "Requirement"
+      },
+      {
+        "detail": "package + chute + line 3.29 lb (counted as payload, conservative)",
+        "evidence": {
+          "Margin": {
+            "unit": "lb",
+            "value": 8.709459547637453
+          }
+        },
+        "name": "faa101_total_payload",
+        "source": "Requirement"
+      },
+      {
+        "detail": "Ashaway braided Dacron kite line, 30 lb x 500 ft (Into The Wind #1319) rated 30 lbf; up to 45 lbf allowing 1.5x over the rating",
+        "evidence": {
+          "Margin": {
+            "unit": "lbf",
+            "value": 5.015730485747923
+          }
+        },
+        "name": "faa101_suspension",
+        "source": "Rating"
+      },
+      {
+        "detail": "133 N rated vs 122 N (5x descent weight)",
+        "evidence": {
+          "Margin": {
+            "unit": "N",
+            "value": 11.181484169559283
+          }
+        },
+        "name": "suspension_strength",
+        "source": "Rating"
+      },
+      {
+        "detail": "phone-backup: need 2.9 Wh, have 10.8 Wh at 6 C cell (85% capacity)",
+        "evidence": {
+          "Margin": {
+            "unit": "Wh",
+            "value": 7.856966747820913
+          }
+        },
+        "name": "power_margin",
+        "source": "Physics"
+      },
+      {
+        "detail": "4S LiPo (all loads): sg90-servo takes 4.8-6.0 V, gets 5.0-5.0 V",
+        "evidence": {
+          "Margin": {
+            "unit": "V",
+            "value": 0.20000000000000018
+          }
+        },
+        "name": "supply_voltage",
+        "source": "Rating"
+      },
+      {
+        "detail": "4S LiPo (all loads): reg-5v-1a8 rated 1.8 A, load 0.50 A",
+        "evidence": {
+          "Margin": {
+            "unit": "A",
+            "value": 1.3
+          }
+        },
+        "name": "supply_current",
+        "source": "Rating"
+      },
+      {
+        "detail": "phone-backup: box 6..68 C vs rated 0..35 C, ground -10..35 C (cases -10.0 C, 15.0 C, 35.0 C); forecast 15 C included",
+        "evidence": {
+          "Margin": {
+            "unit": "K",
+            "value": -33.28714531634249
+          }
+        },
+        "name": "part_temperature",
+        "source": "Rating"
+      },
+      {
+        "detail": "",
+        "evidence": {
+          "Missing": {
+            "why": "no launch window: the thermal checks fail at 12.5 C, the middle of the -10..35 C range"
+          }
+        },
+        "name": "launch_window",
+        "source": "Physics"
+      },
+      {
+        "detail": "APRS (DRA818V + ESP32 + M10): worst 34.6 dB at 92 km (max range 130 km), last heard 9 m AGL; alive to landing",
+        "evidence": {
+          "Margin": {
+            "unit": "dB",
+            "value": 34.632929758493844
+          }
+        },
+        "name": "link_primary",
+        "source": "Physics"
+      },
+      {
+        "detail": "",
+        "evidence": {
+          "Missing": {
+            "why": "ELRS telemetry (CR8 + ESP32 + M10): no ground station for this link"
+          }
+        },
+        "name": "link_secondary",
+        "source": "Physics"
+      },
+      {
+        "detail": "phone in the box: phone GNSS (unspecified) limit 18000 m vs the ground at 80 m (reports after landing only)",
+        "evidence": {
+          "Margin": {
+            "unit": "m",
+            "value": 17920.0
+          }
+        },
+        "name": "gps_altitude",
+        "source": "Rating"
+      },
+      {
+        "detail": "geprc-vtx-1g2-2w -> matek-m10q at 0.21 m: -16.4 dBm vs -22.0 dBm (fundamental 1280 MHz through patch rejection 30 dB)",
+        "evidence": {
+          "Margin": {
+            "unit": "dB",
+            "value": -5.573724113943822
+          }
+        },
+        "name": "gps_coexistence",
+        "source": "Physics"
+      },
+      {
+        "detail": "phone-backup legal (unlicensed / Part 15 or carrier)",
+        "evidence": {
+          "Margin": {
+            "unit": "count",
+            "value": 0.0
+          }
+        },
+        "name": "licensing",
+        "source": "Requirement"
+      },
+      {
+        "detail": "logitech-brio records 3.4 h at the cold but leaves its temperature range; lens 0 mm behind the port, clear cone +-49 deg (need +-30); burst at 1.9 h",
+        "evidence": {
+          "Margin": {
+            "unit": "h",
+            "value": -1.886111111111111
+          }
+        },
+        "name": "imaging",
+        "source": "Physics"
+      },
+      {
+        "detail": "23 solids, no overlapping pair",
+        "evidence": {
+          "Margin": {
+            "unit": "pairs",
+            "value": 0.0
+          }
+        },
+        "name": "payload_fit",
+        "source": "Geometry"
+      },
+      {
+        "detail": "no printed parts in this design",
+        "evidence": {
+          "Margin": {
+            "unit": "mm",
+            "value": 0.0
+          }
+        },
+        "name": "printed_parts",
+        "source": "Slicer"
+      },
+      {
+        "detail": "no shelf carried by posts (no printed rack, or a single shelf on the floor)",
+        "evidence": {
+          "Margin": {
+            "unit": "MPa",
+            "value": 0.0
+          }
+        },
+        "name": "rack_shelf_landing",
+        "source": "Physics"
+      },
+      {
+        "detail": "P = 0.828: APRS (DRA818V + ESP32 + M10) 0.90, ELRS telemetry (CR8 + ESP32 + M10) 0.00, phone in the box 0.00",
+        "evidence": {
+          "Margin": {
+            "unit": "",
+            "value": -0.07199999999999995
+          }
+        },
+        "name": "recovery_probability",
+        "source": "Physics"
+      },
+      {
+        "detail": "BOM $1644.29; no budget stated (information only)",
+        "evidence": {
+          "Margin": {
+            "unit": "USD",
+            "value": 0.0
+          }
+        },
+        "name": "cost",
+        "source": "Requirement"
+      }
+    ],
+    "coexistence": [
+      {
+        "at_gnss_dbm": -16.426275886056178,
+        "gps": "matek-m10q",
+        "limit_dbm": -22.0,
+        "mechanism": "fundamental 1280 MHz through patch rejection 30 dB",
+        "separation_m": 0.21436053741302294,
+        "tx": "geprc-vtx-1g2-2w"
+      },
+      {
+        "at_gnss_dbm": -35.22247391563819,
+        "gps": "matek-m10q",
+        "limit_dbm": -22.0,
+        "mechanism": "fundamental 915 MHz through patch rejection 39 dB",
+        "separation_m": 0.21436053741302294,
+        "tx": "stardrone-cr8-elrs"
+      },
+      {
+        "at_gnss_dbm": -32.48184781624251,
+        "gps": "matek-m10q",
+        "limit_dbm": -22.0,
+        "mechanism": "fundamental 144 MHz through patch rejection 59 dB",
+        "separation_m": 0.21436053741302294,
+        "tx": "dra818v"
+      },
+      {
+        "at_gnss_dbm": -22.40547545723395,
+        "gps": "matek-m10q",
+        "limit_dbm": -22.0,
+        "mechanism": "fundamental 1880 MHz through patch rejection 29 dB",
+        "separation_m": 0.08441806678667785,
+        "tx": "phone-backup"
+      },
+      {
+        "at_gnss_dbm": -16.426275886056178,
+        "gps": "matek-m10q",
+        "limit_dbm": -22.0,
+        "mechanism": "fundamental 1280 MHz through patch rejection 30 dB",
+        "separation_m": 0.21436053741302294,
+        "tx": "geprc-vtx-1g2-2w"
+      },
+      {
+        "at_gnss_dbm": -35.22247391563819,
+        "gps": "matek-m10q",
+        "limit_dbm": -22.0,
+        "mechanism": "fundamental 915 MHz through patch rejection 39 dB",
+        "separation_m": 0.21436053741302294,
+        "tx": "stardrone-cr8-elrs"
+      },
+      {
+        "at_gnss_dbm": -32.48184781624251,
+        "gps": "matek-m10q",
+        "limit_dbm": -22.0,
+        "mechanism": "fundamental 144 MHz through patch rejection 59 dB",
+        "separation_m": 0.21436053741302294,
+        "tx": "dra818v"
+      },
+      {
+        "at_gnss_dbm": -22.40547545723395,
+        "gps": "matek-m10q",
+        "limit_dbm": -22.0,
+        "mechanism": "fundamental 1880 MHz through patch rejection 29 dB",
+        "separation_m": 0.08441806678667785,
+        "tx": "phone-backup"
+      }
+    ],
+    "cost_usd": 1644.286017136,
+    "cusf_burst_altitude_m": 34883.96109844151,
+    "cylinders": 1,
+    "design": {
+      "balloon": "totex-2000",
+      "buses": [
+        {
+          "battery": "lipo-4s-6000",
+          "name": "4S LiPo (all loads)",
+          "parallel": 1,
+          "rails": [
+            "reg-5v-1a8",
+            "reg-5v-1a8",
+            "lm2596-buck-4v0"
+          ],
+          "series": 1
+        }
+      ],
+      "buy_ground": [],
+      "cylinders": 1,
+      "enclosure": {
+        "inner_mm": [
+          180.0,
+          140.0,
+          108.0
+        ],
+        "insulation": "xps-foamular-150",
+        "printed_tray": false,
+        "wall_mm": 25.4
+      },
+      "fill_target_mps": 5.5,
+      "gas": "he-uhp-300",
+      "items": [
+        {
+          "bus": 0,
+          "on_after_landing": false,
+          "part": "jetson-orin-nano-devkit",
+          "qty": 1,
+          "rail": null,
+          "until_burst": true
+        },
+        {
+          "bus": 0,
+          "on_after_landing": false,
+          "part": "logitech-brio",
+          "qty": 1,
+          "rail": 0,
+          "until_burst": true
+        },
+        {
+          "bus": 0,
+          "on_after_landing": false,
+          "part": "geprc-vtx-1g2-2w",
+          "qty": 1,
+          "rail": null,
+          "until_burst": true
+        },
+        {
+          "bus": 0,
+          "on_after_landing": true,
+          "part": "esp32-devkit",
+          "qty": 2,
+          "rail": 1,
+          "until_burst": false
+        },
+        {
+          "bus": 0,
+          "on_after_landing": true,
+          "part": "matek-m10q",
+          "qty": 1,
+          "rail": 1,
+          "until_burst": false
+        },
+        {
+          "bus": 0,
+          "on_after_landing": true,
+          "part": "stardrone-cr8-elrs",
+          "qty": 1,
+          "rail": 1,
+          "until_burst": false
+        },
+        {
+          "bus": 0,
+          "on_after_landing": true,
+          "part": "dra818v",
+          "qty": 1,
+          "rail": 2,
+          "until_burst": false
+        },
+        {
+          "bus": 0,
+          "on_after_landing": false,
+          "part": "mpu6050",
+          "qty": 1,
+          "rail": 1,
+          "until_burst": false
+        },
+        {
+          "bus": 0,
+          "on_after_landing": false,
+          "part": "sg90-servo",
+          "qty": 1,
+          "rail": 1,
+          "until_burst": false
+        },
+        {
+          "bus": null,
+          "on_after_landing": false,
+          "part": "mosfet-board",
+          "qty": 2,
+          "rail": null,
+          "until_burst": false
+        },
+        {
+          "bus": null,
+          "on_after_landing": true,
+          "part": "phone-backup",
+          "qty": 1,
+          "rail": null,
+          "until_burst": false
+        }
+      ],
+      "label": "Pat's team balloon (as planned, 2026-09-19)",
+      "launch_window_c": null,
+      "line": "ashaway-dacron-30lb",
+      "line_m": 8.0,
+      "neck_lift_g": 3135.8975094420225,
+      "notes": [
+        "chosen in the plan's favour from every catalog option (it names none): totex-2000 balloon, spherachute-72 chute, 25.4 mm XPS wall, CUSF fill for 5.5 m/s",
+        "ASSUMPTION: one 4S 6000 mAh pack feeds everything (no second pack on hand)"
+      ],
+      "parachute": "spherachute-72",
+      "printed": null,
+      "printed_allowance_g": 0.0,
+      "trackers": [
+        {
+          "class": "primary",
+          "gps": "matek-m10q",
+          "gps_airborne": true,
+          "ground": "aprs-ham-ht",
+          "name": "APRS (DRA818V + ESP32 + M10)",
+          "radio": "dra818v"
+        },
+        {
+          "class": "secondary",
+          "gps": "matek-m10q",
+          "gps_airborne": true,
+          "ground": null,
+          "name": "ELRS telemetry (CR8 + ESP32 + M10)",
+          "radio": "stardrone-cr8-elrs"
+        },
+        {
+          "class": "backup",
+          "gps": "phone-backup",
+          "gps_airborne": false,
+          "ground": null,
+          "name": "phone in the box",
+          "radio": "phone-backup"
+        }
+      ],
+      "warmers_below_c": null
+    },
+    "failing": [
+      "part_temperature",
+      "launch_window",
+      "link_secondary",
+      "gps_coexistence",
+      "imaging",
+      "recovery_probability"
+    ],
+    "flight_time_min": 165.28336022790535,
+    "flight_train_g": 1492.564042368,
+    "gas": "he-uhp-300",
+    "label": "Pat's team balloon (as planned, 2026-09-19)",
+    "landing_km_from_launch": 129.50850466666367,
+    "landing_speed_mps": 4.518122924635194,
+    "launch_ascent_mps": 4.376417926944768,
+    "launch_diameter_m": 2.107678992156862,
+    "launch_volume_m3": 4.902437015541465,
+    "masses": {
+      "balloon_g": 2000.0,
+      "chute_g": 142.0,
+      "foam_g": 102.51404236800006,
+      "line_g": 4.0,
+      "parts_g": 1085.5,
+      "rigging_g": 50.0,
+      "tray_g": 0.0,
+      "tray_sliced": true,
+      "wiring_g": 108.55000000000001
+    },
+    "mean_ascent_mps": 5.011983273182886,
+    "neck_lift_g": 3135.8975094420225,
+    "package_g": 1296.564042368,
+    "parachute": "spherachute-72",
+    "passed": false,
+    "printed": null,
+    "recovery_probability": 0.8280000000000001,
+    "self_powered": [
+      {
+        "capacity_fraction": 0.8468206073205207,
+        "cell_min_c": 5.852575915065081,
+        "flight_endurance_h": 26.89713954001878,
+        "have_wh": 10.758855816007214,
+        "name": "phone-backup",
+        "need_wh": 2.901889068186301
+      }
+    ],
+    "time_to_burst_min": 113.16666666666667,
+    "trackers": [
+      {
+        "class": "primary",
+        "last_heard_agl_m": 9.047472410383108,
+        "link": "aprs",
+        "max_range_km": 129.50629825303142,
+        "name": "APRS (DRA818V + ESP32 + M10)",
+        "p_recover": 0.9,
+        "why": "last heard 9 m AGL; alive to landing",
+        "works_through_window": true,
+        "worst_at_range_km": 91.64781947087243,
+        "worst_margin_db": 34.632929758493844
+      },
+      {
+        "class": "secondary",
+        "last_heard_agl_m": null,
+        "link": "elrs",
+        "max_range_km": 0.0,
+        "name": "ELRS telemetry (CR8 + ESP32 + M10)",
+        "p_recover": 0.0,
+        "why": "no ground station for this link",
+        "works_through_window": true,
+        "worst_at_range_km": 0.0,
+        "worst_margin_db": null
+      },
+      {
+        "class": "backup",
+        "last_heard_agl_m": null,
+        "link": "cellular",
+        "max_range_km": 0.0,
+        "name": "phone in the box",
+        "p_recover": 0.0,
+        "why": "phone off after landing or out of its 0..35 C range (box 6..68 C)",
+        "works_through_window": false,
+        "worst_at_range_km": 0.0,
+        "worst_margin_db": null
+      }
+    ]
+  },
+  "pat_failing_with_assumed_choices": 8,
+  "pat_target_burst_m": 30000.0,
+  "spec": {
+    "allow_hydrogen": false,
+    "budget_usd": null,
+    "ground_temperature_c": 15.0,
+    "launch": {
+      "elevation_m": 80.0,
+      "lat_deg": 35.62,
+      "lon_deg": -119.69,
+      "name": "inland Central Valley, CA (assumed)"
+    },
+    "launch_temp_range_c": null,
+    "licensed_ham": true,
+    "min_burst_altitude_m": 30000.0,
+    "min_recovery_probability": 0.9,
+    "mission": "photos and video from near space, reliable recovery",
+    "must_fly": [],
+    "needs_photos": false,
+    "needs_video": true,
+    "owned_ground": [
+      "aprs-ham-ht"
+    ],
+    "recovery_window_h": 4.0,
+    "wind": []
+  },
+  "wright": {
+    "ambient_min_c": -56.5,
+    "balloon": "totex-3000",
+    "box_inner_mm": [
+      140.0,
+      90.0,
+      113.0
+    ],
+    "box_max_c": 39.30881363797359,
+    "box_min_c": -9.850580256003656,
+    "burst_altitude_m": 37818.616129022295,
+    "buses": [
+      {
+        "capacity_fraction": 0.8543766938193602,
+        "cell_min_c": 4.849051496329043,
+        "flight_endurance_h": 8.433524784152084,
+        "have_wh": 30.75756097749697,
+        "name": "camera L91 4S2P",
+        "need_wh": 9.203758169934854
+      },
+      {
+        "capacity_fraction": 0.7218390304786556,
+        "cell_min_c": -9.850580256003656,
+        "flight_endurance_h": 48.72413455731067,
+        "have_wh": 9.744826911461852,
+        "name": "APRS L91 3S1P",
+        "need_wh": 1.4905433398697976
+      },
+      {
+        "capacity_fraction": 0.7218390304786556,
+        "cell_min_c": -9.850580256003656,
+        "flight_endurance_h": 26.61237871403306,
+        "have_wh": 12.9931025486158,
+        "name": "LoRa L91 4S1P",
+        "need_wh": 3.638679329681692
+      }
+    ],
+    "checks": [
+      {
+        "detail": "burst at 37819 m (CUSF closed form says 38963 m), target 30000 m",
+        "evidence": {
+          "Margin": {
+            "unit": "m",
+            "value": 7818.616129022295
+          }
+        },
+        "name": "burst_altitude",
+        "source": "Physics"
+      },
+      {
+        "detail": "launch 4.41 m/s, mean 5.18 m/s (band 4-6)",
+        "evidence": {
+          "Margin": {
+            "unit": "m/s",
+            "value": 0.4064629785736269
+          }
+        },
+        "name": "ascent_rate",
+        "source": "Physics"
+      },
+      {
+        "detail": "4.31 m/s at 80 m with 2268 g under the chute",
+        "evidence": {
+          "Margin": {
+            "unit": "m/s",
+            "value": 0.6903884744374906
+          }
+        },
+        "name": "landing_speed",
+        "source": "Physics"
+      },
+      {
+        "detail": "neck lift 2485 g vs flight train 768 g",
+        "evidence": {
+          "Margin": {
+            "unit": "g",
+            "value": 1716.9276326501883
+          }
+        },
+        "name": "lift_budget",
+        "source": "Physics"
+      },
+      {
+        "detail": "need 5.31 m^3 at 21 C/1 atm, have 7.61 usable in 1 cylinder(s)",
+        "evidence": {
+          "Margin": {
+            "unit": "m^3",
+            "value": 2.301988581044272
+          }
+        },
+        "name": "gas_supply",
+        "source": "Physics"
+      },
+      {
+        "detail": "package 1.26 lb, 0.56 oz/in^2 on its smallest face (36 in^2)",
+        "evidence": {
+          "Margin": {
+            "unit": "lb",
+            "value": 5.442086188216107
+          }
+        },
+        "name": "faa101_package",
+        "source": "Requirement"
+      },
+      {
+        "detail": "package 1.26 lb",
+        "evidence": {
+          "Margin": {
+            "unit": "lb",
+            "value": 4.739376782797295
+          }
+        },
+        "name": "faa101_package_max",
+        "source": "Requirement"
+      },
+      {
+        "detail": "package + chute + line 1.69 lb (counted as payload, conservative)",
+        "evidence": {
+          "Margin": {
+            "unit": "lb",
+            "value": 10.307270748914934
+          }
+        },
+        "name": "faa101_total_payload",
+        "source": "Requirement"
+      },
+      {
+        "detail": "Ashaway braided Dacron kite line, 30 lb x 500 ft (Into The Wind #1319) rated 30 lbf; up to 45 lbf allowing 1.5x over the rating",
+        "evidence": {
+          "Margin": {
+            "unit": "lbf",
+            "value": 5.015730485747923
+          }
+        },
+        "name": "faa101_suspension",
+        "source": "Rating"
+      },
+      {
+        "detail": "133 N rated vs 111 N (5x descent weight)",
+        "evidence": {
+          "Margin": {
+            "unit": "N",
+            "value": 22.201950782698475
+          }
+        },
+        "name": "suspension_strength",
+        "source": "Rating"
+      },
+      {
+        "detail": "APRS L91 3S1P: need 1.5 Wh, have 9.7 Wh at -10 C cell (72% capacity)",
+        "evidence": {
+          "Margin": {
+            "unit": "Wh",
+            "value": 8.254283571592055
+          }
+        },
+        "name": "power_margin",
+        "source": "Physics"
+      },
+      {
+        "detail": "APRS L91 3S1P: lightaprs-2 takes 2.7-6.0 V, gets 2.7-5.4 V",
+        "evidence": {
+          "Margin": {
+            "unit": "V",
+            "value": 0.0
+          }
+        },
+        "name": "supply_voltage",
+        "source": "Rating"
+      },
+      {
+        "detail": "camera L91 4S2P: pololu-s9v11f5 rated 1.0 A, load 0.62 A",
+        "evidence": {
+          "Margin": {
+            "unit": "A",
+            "value": 0.38
+          }
+        },
+        "name": "supply_current",
+        "source": "Rating"
+      },
+      {
+        "detail": "runcam5-orange: box -10..39 C vs rated -10..40 C (rating assumed), ground -10..35 C (cases -10.0 C, 15.0 C, 35.0 C); forecast 15 C included",
+        "evidence": {
+          "Margin": {
+            "unit": "K",
+            "value": 0.1494197439963436
+          }
+        },
+        "name": "part_temperature",
+        "source": "Rating"
+      },
+      {
+        "detail": "declared go -12.0..35.0 C ground; modelled -12.9..35.7 C; required -10..35 C; forecast 15 C included",
+        "evidence": {
+          "Margin": {
+            "unit": "K",
+            "value": 0.0
+          }
+        },
+        "name": "launch_window",
+        "source": "Physics"
+      },
+      {
+        "detail": "APRS (LightAPRS 2.0): worst 33.9 dB at 97 km (max range 137 km), last heard 21 m AGL; alive to landing",
+        "evidence": {
+          "Margin": {
+            "unit": "dB",
+            "value": 33.940174532161166
+          }
+        },
+        "name": "link_primary",
+        "source": "Physics"
+      },
+      {
+        "detail": "LoRa 915 (Heltec + M10): worst 19.9 dB at 97 km (max range 137 km), last heard 21 m AGL; alive to landing",
+        "evidence": {
+          "Margin": {
+            "unit": "dB",
+            "value": 19.90249497877261
+          }
+        },
+        "name": "link_secondary",
+        "source": "Physics"
+      },
+      {
+        "detail": "APRS (LightAPRS 2.0): u-blox MAX-M8Q limit 50000 m (airborne model) vs burst 37819 m",
+        "evidence": {
+          "Margin": {
+            "unit": "m",
+            "value": 12181.383870977705
+          }
+        },
+        "name": "gps_altitude",
+        "source": "Rating"
+      },
+      {
+        "detail": "lightaprs-2 -> matek-m10q at 0.22 m: -32.5 dBm vs -22.0 dBm (fundamental 144 MHz through patch rejection 59 dB)",
+        "evidence": {
+          "Margin": {
+            "unit": "dB",
+            "value": 10.481847816242507
+          }
+        },
+        "name": "gps_coexistence",
+        "source": "Physics"
+      },
+      {
+        "detail": "heltec-lora32-v3 legal (amateur, licensed operator)",
+        "evidence": {
+          "Margin": {
+            "unit": "count",
+            "value": 0.0
+          }
+        },
+        "name": "licensing",
+        "source": "Requirement"
+      },
+      {
+        "detail": "runcam5-orange records 8.4 h at the cold; lens 0 mm behind the port, clear cone +-49 deg (need +-30); burst at 2.0 h",
+        "evidence": {
+          "Margin": {
+            "unit": "h",
+            "value": 6.409913673040973
+          }
+        },
+        "name": "imaging",
+        "source": "Physics"
+      },
+      {
+        "detail": "43 solids, no overlapping pair",
+        "evidence": {
+          "Margin": {
+            "unit": "pairs",
+            "value": 0.0
+          }
+        },
+        "name": "payload_fit",
+        "source": "Geometry"
+      },
+      {
+        "detail": "rack 149 g, 15.5 h on Bambu Lab P1S; largest plate 140 mm vs bed 256 mm",
+        "evidence": {
+          "Margin": {
+            "unit": "mm",
+            "value": 116.0
+          }
+        },
+        "name": "printed_parts",
+        "source": "Slicer"
+      },
+      {
+        "detail": "shelf 2 carries 90 g on four corner posts, span 128 mm x 90 mm wide, 3 mm PETG; touchdown 4.31 m/s. Soft ground: stopped over 25.4 mm (the foam wall) = 38 g -> 6.0 MPa peak vs 20 MPa allowable. Hard ground (not judged): XPS crushes at 103.4 kPa, stop 1.9 mm = 495 g -> 77.7 MPa (over the allowable: land away from roads)",
+        "evidence": {
+          "Margin": {
+            "unit": "MPa",
+            "value": 13.993408087791742
+          }
+        },
+        "name": "rack_shelf_landing",
+        "source": "Physics"
+      },
+      {
+        "detail": "P = 0.906: APRS (LightAPRS 2.0) 0.90, LoRa 915 (Heltec + M10) 0.85",
+        "evidence": {
+          "Margin": {
+            "unit": "",
+            "value": 0.006199999999999983
+          }
+        },
+        "name": "recovery_probability",
+        "source": "Physics"
+      },
+      {
+        "detail": "BOM $1400.34; no budget stated (information only)",
+        "evidence": {
+          "Margin": {
+            "unit": "USD",
+            "value": 0.0
+          }
+        },
+        "name": "cost",
+        "source": "Requirement"
+      }
+    ],
+    "coexistence": [
+      {
+        "at_gnss_dbm": -34.312503679411236,
+        "gps": "lightaprs-2",
+        "limit_dbm": -22.0,
+        "mechanism": "fundamental 915 MHz through patch rejection 39 dB",
+        "separation_m": 0.216593951900786,
+        "tx": "heltec-lora32-v3"
+      },
+      {
+        "at_gnss_dbm": -32.48184781624251,
+        "gps": "matek-m10q",
+        "limit_dbm": -22.0,
+        "mechanism": "fundamental 144 MHz through patch rejection 59 dB",
+        "separation_m": 0.21531474635983483,
+        "tx": "lightaprs-2"
+      },
+      {
+        "at_gnss_dbm": -34.26105266355276,
+        "gps": "matek-m10q",
+        "limit_dbm": -22.0,
+        "mechanism": "fundamental 915 MHz through patch rejection 39 dB",
+        "separation_m": 0.21531474635983483,
+        "tx": "heltec-lora32-v3"
+      }
+    ],
+    "cost_usd": 1400.3368557360004,
+    "cusf_burst_altitude_m": 38963.47395609223,
+    "cylinders": 1,
+    "design": {
+      "balloon": "totex-3000",
+      "buses": [
+        {
+          "battery": "l91-aa",
+          "name": "camera L91 4S2P",
+          "parallel": 2,
+          "rails": [
+            "pololu-s9v11f5"
+          ],
+          "series": 4
+        },
+        {
+          "battery": "l91-aa",
+          "name": "APRS L91 3S1P",
+          "parallel": 1,
+          "rails": [],
+          "series": 3
+        },
+        {
+          "battery": "l91-aa",
+          "name": "LoRa L91 4S1P",
+          "parallel": 1,
+          "rails": [
+            "pololu-s9v11f5"
+          ],
+          "series": 4
+        }
+      ],
+      "buy_ground": [
+        "heltec-ground"
+      ],
+      "cylinders": 1,
+      "enclosure": {
+        "inner_mm": [
+          140.0,
+          90.0,
+          113.0
+        ],
+        "insulation": "xps-foamular-150",
+        "printed_tray": true,
+        "wall_mm": 25.4
+      },
+      "fill_target_mps": 5.5,
+      "gas": "he-uhp-300",
+      "items": [
+        {
+          "bus": 0,
+          "on_after_landing": false,
+          "part": "runcam5-orange",
+          "qty": 1,
+          "rail": 0,
+          "until_burst": true
+        },
+        {
+          "bus": 1,
+          "on_after_landing": true,
+          "part": "lightaprs-2",
+          "qty": 1,
+          "rail": null,
+          "until_burst": false
+        },
+        {
+          "bus": 2,
+          "on_after_landing": true,
+          "part": "heltec-lora32-v3",
+          "qty": 1,
+          "rail": 0,
+          "until_burst": false
+        },
+        {
+          "bus": 2,
+          "on_after_landing": true,
+          "part": "matek-m10q",
+          "qty": 1,
+          "rail": 0,
+          "until_burst": false
+        }
+      ],
+      "label": "cam-runcam5+aprs-lightaprs2+lora-heltec",
+      "launch_window_c": [
+        -12.0,
+        35.0
+      ],
+      "line": "ashaway-dacron-30lb",
+      "line_m": 8.0,
+      "neck_lift_g": 2484.7367054181886,
+      "notes": [
+        "Camera: RunCam 5 Orange on a 4x L91 + 5 V buck-boost bus (off at burst)",
+        "Primary: LightAPRS 2.0 on 3x L91",
+        "Secondary: Heltec LoRa beacon + Matek M10 on 4x L91 + buck-boost (Part 97, 33 cm band: licensed operator, callsign in each packet)"
+      ],
+      "parachute": "spherachute-72",
+      "printed": {
+        "grams": 149.35999999999996,
+        "printer": "Bambu Lab P1S",
+        "seconds": 55760.0
+      },
+      "printed_allowance_g": 222.91547999999975,
+      "trackers": [
+        {
+          "class": "primary",
+          "gps": "lightaprs-2",
+          "gps_airborne": true,
+          "ground": "aprs-ham-ht",
+          "name": "APRS (LightAPRS 2.0)",
+          "radio": "lightaprs-2"
+        },
+        {
+          "class": "secondary",
+          "gps": "matek-m10q",
+          "gps_airborne": true,
+          "ground": "heltec-ground",
+          "name": "LoRa 915 (Heltec + M10)",
+          "radio": "heltec-lora32-v3"
+        }
+      ],
+      "warmers_below_c": null
+    },
+    "failing": [],
+    "flight_time_min": 177.1630019608976,
+    "flight_train_g": 767.809072768,
+    "gas": "he-uhp-300",
+    "label": "cam-runcam5+aprs-lightaprs2+lora-heltec",
+    "landing_km_from_launch": 136.8783174126024,
+    "landing_speed_mps": 4.309611525562509,
+    "launch_ascent_mps": 4.406462978573627,
+    "launch_diameter_m": 2.1543567016465306,
+    "launch_volume_m3": 5.235419163974385,
+    "masses": {
+      "balloon_g": 3000.0,
+      "chute_g": 142.0,
+      "foam_g": 71.43907276800002,
+      "line_g": 4.0,
+      "parts_g": 319.1,
+      "rigging_g": 50.0,
+      "tray_g": 149.35999999999996,
+      "tray_sliced": true,
+      "wiring_g": 31.910000000000004
+    },
+    "mean_ascent_mps": 5.180317931231612,
+    "neck_lift_g": 2484.7367054181886,
+    "package_g": 571.8090727680001,
+    "parachute": "spherachute-72",
+    "passed": true,
+    "printed": {
+      "grams": 149.35999999999996,
+      "printer": "Bambu Lab P1S",
+      "seconds": 55760.0
+    },
+    "recovery_probability": 0.9062,
+    "self_powered": [],
+    "time_to_burst_min": 121.41666666666667,
+    "trackers": [
+      {
+        "class": "primary",
+        "last_heard_agl_m": 20.6208922844838,
+        "link": "aprs",
+        "max_range_km": 136.87570958971315,
+        "name": "APRS (LightAPRS 2.0)",
+        "p_recover": 0.9,
+        "why": "last heard 21 m AGL; alive to landing",
+        "works_through_window": true,
+        "worst_at_range_km": 97.31971752730148,
+        "worst_margin_db": 33.940174532161166
+      },
+      {
+        "class": "secondary",
+        "last_heard_agl_m": 20.6208922844838,
+        "link": "lora",
+        "max_range_km": 136.87570958971315,
+        "name": "LoRa 915 (Heltec + M10)",
+        "p_recover": 0.85,
+        "why": "last heard 21 m AGL; alive to landing",
+        "works_through_window": true,
+        "worst_at_range_km": 97.31971752730148,
+        "worst_margin_db": 19.90249497877261
+      }
+    ]
+  }
+}

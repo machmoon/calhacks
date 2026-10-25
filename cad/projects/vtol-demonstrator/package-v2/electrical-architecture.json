@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "revision": "package-v2",
+  "evidence_frozen": true,
+  "hardware_ready": false,
+  "compatibility_verified": false,
+  "date": "2026-10-24",
+  "scope": "Original 1.8m lift-plus-cruise demonstrator candidate, not Tsung Xu replica; evidence freeze is not hardware release",
+  "topology": [
+    "CNHL4S5000 stockXT90 \u2192 PDB18138 \u2192 fourTekko45A \u2192 fourMN2806EVO",
+    "GensAce4S2200 stockXT60 \u2192 PM02 \u2192 cruiseSkywalker50A \u2192 AT2814",
+    "Cruise branch \u2192 fusedUBEC10A at6V \u2192 MAINservo rail",
+    "PM02 regulated5.2V \u2192 POWER1; FC5V ports \u2192 GPS/RP3/SiK/airspeed",
+    "Positive propulsion rails isolated; shared signal ground; ESCBECred isolated"
+  ],
+  "power_screen": {
+    "source": "../package-v1/source-manifest.json connector_guide",
+    "lift_continuous_limit_A": 45,
+    "lift_short_limit_A": 90,
+    "lift_motor_peak_sum_A": 64,
+    "cruise_continuous_limit_A": 30,
+    "cruise_short_limit_A": 60,
+    "cruise_motor_peak_A": 45,
+    "short_duration_s_less_than": 60,
+    "conditions": [
+      "Includes all respective branch loads",
+      "High-power thermal recovery not established",
+      "ESC current nameplate is not automatic enforced motor limit"
+    ],
+    "energy_Wh": {
+      "lift": 74,
+      "cruise": 32.56
+    },
+    "design_budget_only": {
+      "MTOW_g": 3000,
+      "ideal_lift_bench_TW": 1.7012800000000001,
+      "cruise_minutes": 8,
+      "cruise_power_W": 150,
+      "cruise_energy_Wh": 20,
+      "cruise80percent_Wh": 26.048,
+      "remaining_avionics_transition_Wh": 6.048
+    },
+    "not_verified": [
+      "installed thrust",
+      "low-voltage hover reserve",
+      "final mass/CG",
+      "energy mission"
+    ],
+    "delta_known_mass_g_from_v1": 83.2,
+    "unknown_extra_mass": "PDB, harness, protection, retention"
+  },
+  "signals": [
+    {
+      "output": "AUX1",
+      "function": "liftFL",
+      "protocol": "DShot300",
+      "status": "candidate physical allocation"
+    },
+    {
+      "output": "AUX2",
+      "function": "liftFR",
+      "protocol": "DShot300",
+      "status": "candidate physical allocation"
+    },
+    {
+      "output": "AUX3",
+      "function": "liftRL",
+      "protocol": "DShot300",
+      "status": "candidate physical allocation"
+    },
+    {
+      "output": "AUX4",
+      "function": "liftRR",
+      "protocol": "DShot300",
+      "status": "candidate physical allocation"
+    },
+    {
+      "output": "MAIN1",
+      "function": "cruise",
+      "protocol": "PWM",
+      "status": "candidate physical allocation"
+    },
+    {
+      "output": "MAIN2",
+      "function": "aileronL",
+      "protocol": "PWM",
+      "status": "candidate physical allocation"
+    },
+    {
+      "output": "MAIN3",
+      "function": "aileronR",
+      "protocol": "PWM",
+      "status": "candidate physical allocation"
+    },
+    {
+      "output": "MAIN4",
+      "function": "elevator",
+      "protocol": "PWM",
+      "status": "candidate physical allocation"
+    },
+    {
+      "output": "MAIN5",
+      "function": "rudder",
+      "protocol": "PWM",
+      "status": "candidate physical allocation"
+    }
+  ],
+  "harness_rules": {
+    "all_connections_require": [
+      "from_pin",
+      "to_pin",
+      "voltage",
+      "max_current",
+      "wire_part",
+      "gauge",
+      "length_mm",
+      "connector_variant",
+      "pin_orientation",
+      "bend_radius",
+      "retention",
+      "service_slack"
+    ],
+    "length_allowance": "measure CAD routing then add10% plus local service loops; not yet a fabricated length",
+    "protection": "fuse/DC interrupt/time-current coordination unresolved; no invented fuse pass"
+  },
+  "status": "engineering_candidate_not_released"
+}

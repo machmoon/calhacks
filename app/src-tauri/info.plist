@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- Merged into the bundle's Info.plist by the Tauri bundler (it looks
+       for src-tauri/Info.plist, capitalised). Desk capture is Screen
+       Recording + System Audio; the microphone is push-to-talk. -->
+  <key>NSMicrophoneUsageDescription</key>
+  <string>Wright uses the microphone only while you hold push-to-talk.</string>
+  <key>NSAudioCaptureUsageDescription</key>
+  <string>Wright listens to system audio so it can hear board requests from what is already playing on the desk.</string>
+  <key>NSScreenCaptureUsageDescription</key>
+  <string>Wright needs Screen Recording to see the display it docks to and to capture board context from the screen.</string>
+</dict>
+</plist>

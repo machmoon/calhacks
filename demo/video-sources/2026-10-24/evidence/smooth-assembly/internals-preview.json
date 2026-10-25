@@ -1,0 +1,574 @@
+{
+  "source_preserved": true,
+  "views": [
+    {
+      "path": "/Users/patliu/Desktop/Coding/wright/out/tsung-vtol-smooth-aircraft-final/aircraft-internals.png",
+      "width": 640,
+      "height": 480,
+      "triangles": 56408,
+      "parts": [
+        {
+          "name": "BoomRight",
+          "faces": 4,
+          "triangles": 408
+        },
+        {
+          "name": "BoomLeft",
+          "faces": 4,
+          "triangles": 408
+        },
+        {
+          "name": "TopStabilizerRetained",
+          "faces": 30,
+          "triangles": 1776
+        },
+        {
+          "name": "Pod",
+          "faces": 428,
+          "triangles": 2432
+        },
+        {
+          "name": "PusherMotor",
+          "faces": 3,
+          "triangles": 200
+        },
+        {
+          "name": "FinTopRetentionRight",
+          "faces": 77,
+          "triangles": 2352
+        },
+        {
+          "name": "LowerDrillV2_1",
+          "faces": 12,
+          "triangles": 596
+        },
+        {
+          "name": "Screw0",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "Screw1",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "Nut0",
+          "faces": 9,
+          "triangles": 228
+        },
+        {
+          "name": "Nut1",
+          "faces": 9,
+          "triangles": 228
+        },
+        {
+          "name": "FinTopRetentionLeft",
+          "faces": 77,
+          "triangles": 2352
+        },
+        {
+          "name": "LowerSaddleLeft",
+          "faces": 12,
+          "triangles": 596
+        },
+        {
+          "name": "ScrewLeft0",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "ScrewLeft1",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "NutLeft0",
+          "faces": 9,
+          "triangles": 228
+        },
+        {
+          "name": "NutLeft1",
+          "faces": 9,
+          "triangles": 228
+        },
+        {
+          "name": "TopScrewRight0",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "TopScrewLeft0",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "TopScrewRight1",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "TopScrewLeft1",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "TopNutRight0",
+          "faces": 9,
+          "triangles": 228
+        },
+        {
+          "name": "TopNutLeft0",
+          "faces": 9,
+          "triangles": 228
+        },
+        {
+          "name": "TopNutRight1",
+          "faces": 9,
+          "triangles": 228
+        },
+        {
+          "name": "TopNutLeft1",
+          "faces": 9,
+          "triangles": 228
+        },
+        {
+          "name": "LiftUpperPocket1",
+          "faces": 41,
+          "triangles": 2614
+        },
+        {
+          "name": "LiftLowerBolt1",
+          "faces": 16,
+          "triangles": 1708
+        },
+        {
+          "name": "AOS2807Threaded3",
+          "faces": 13,
+          "triangles": 1220
+        },
+        {
+          "name": "LiftMotorScrew0",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftMotorScrew1",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftMotorScrew2",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftMotorScrew3",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftClampScrew0",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftClampNut0",
+          "faces": 9,
+          "triangles": 228
+        },
+        {
+          "name": "LiftClampScrew1",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftClampNut1",
+          "faces": 9,
+          "triangles": 228
+        },
+        {
+          "name": "LiftRRUpper",
+          "faces": 41,
+          "triangles": 2614
+        },
+        {
+          "name": "LiftRRLower",
+          "faces": 16,
+          "triangles": 1708
+        },
+        {
+          "name": "LiftRRMotor",
+          "faces": 13,
+          "triangles": 1220
+        },
+        {
+          "name": "LiftRRMotorScrew0",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftRRMotorScrew1",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftRRMotorScrew2",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftRRMotorScrew3",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftRRClampScrew0",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftRRClampNut0",
+          "faces": 9,
+          "triangles": 228
+        },
+        {
+          "name": "LiftRRClampScrew1",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftRRClampNut1",
+          "faces": 9,
+          "triangles": 228
+        },
+        {
+          "name": "LiftFLUpper",
+          "faces": 41,
+          "triangles": 2614
+        },
+        {
+          "name": "LiftFLLower",
+          "faces": 16,
+          "triangles": 1708
+        },
+        {
+          "name": "LiftFLMotor",
+          "faces": 13,
+          "triangles": 1220
+        },
+        {
+          "name": "LiftFLMotorScrew0",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftFLMotorScrew1",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftFLMotorScrew2",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftFLMotorScrew3",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftFLClampScrew0",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftFLClampNut0",
+          "faces": 9,
+          "triangles": 228
+        },
+        {
+          "name": "LiftFLClampScrew1",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftFLClampNut1",
+          "faces": 9,
+          "triangles": 228
+        },
+        {
+          "name": "LiftRLUpper",
+          "faces": 41,
+          "triangles": 2614
+        },
+        {
+          "name": "LiftRLLower",
+          "faces": 16,
+          "triangles": 1708
+        },
+        {
+          "name": "LiftRLMotor",
+          "faces": 13,
+          "triangles": 1220
+        },
+        {
+          "name": "LiftRLMotorScrew0",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftRLMotorScrew1",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftRLMotorScrew2",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftRLMotorScrew3",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftRLClampScrew0",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftRLClampNut0",
+          "faces": 9,
+          "triangles": 228
+        },
+        {
+          "name": "LiftRLClampScrew1",
+          "faces": 12,
+          "triangles": 428
+        },
+        {
+          "name": "LiftRLClampNut1",
+          "faces": 9,
+          "triangles": 228
+        },
+        {
+          "name": "RightSpar",
+          "faces": 4,
+          "triangles": 408
+        },
+        {
+          "name": "RightRib0",
+          "faces": 5,
+          "triangles": 384
+        },
+        {
+          "name": "RightRib1",
+          "faces": 7,
+          "triangles": 456
+        },
+        {
+          "name": "RightRib2",
+          "faces": 7,
+          "triangles": 454
+        },
+        {
+          "name": "RightRib3",
+          "faces": 7,
+          "triangles": 434
+        },
+        {
+          "name": "RightRib4",
+          "faces": 7,
+          "triangles": 384
+        },
+        {
+          "name": "RightRib5",
+          "faces": 7,
+          "triangles": 362
+        },
+        {
+          "name": "LeftSpar",
+          "faces": 4,
+          "triangles": 408
+        },
+        {
+          "name": "LeftRib0",
+          "faces": 5,
+          "triangles": 384
+        },
+        {
+          "name": "LeftRib1",
+          "faces": 7,
+          "triangles": 456
+        },
+        {
+          "name": "LeftRib2",
+          "faces": 7,
+          "triangles": 454
+        },
+        {
+          "name": "LeftRib3",
+          "faces": 7,
+          "triangles": 434
+        },
+        {
+          "name": "LeftRib4",
+          "faces": 7,
+          "triangles": 384
+        },
+        {
+          "name": "LeftRib5",
+          "faces": 7,
+          "triangles": 362
+        },
+        {
+          "name": "MG90SStaticEnvelope",
+          "faces": 6,
+          "triangles": 12
+        }
+      ],
+      "bounds_mm": [
+        [
+          0.0,
+          -500.0,
+          -105.0
+        ],
+        [
+          770.0,
+          500.0,
+          137.0
+        ]
+      ],
+      "camera": {
+        "azimuth": -52.0,
+        "elevation": 24.0
+      },
+      "display_method": "0.25mm / 0.25rad native-face display tessellation; area-weighted face-local interpolated normals; 2x edge supersampling; no cross-face normal welding",
+      "source_geometry_modified": false,
+      "scope": "Display-only skins-hidden view of verified native geometry; no material removed from the model",
+      "source_native": "/Users/patliu/Desktop/Coding/wright/out/tsung-vtol-smooth-aircraft-final/assembly.FCStd",
+      "source_sha256": "e644c1cba9b538088d34f815a0ce4029b13d308bda54084311daf666f104ce6b",
+      "hidden_physical_parts": [
+        "RightSkin",
+        "LeftSkin"
+      ],
+      "visible_nonphysical_envelopes": [
+        "MG90SStaticEnvelope"
+      ],
+      "servo_scope": "Blue box is the checked conservative static servo envelope; not detailed servo CAD, horn, bracket, hatch or cable routing"
+    },
+    {
+      "path": "/Users/patliu/Desktop/Coding/wright/out/tsung-vtol-smooth-aircraft-final/wing-internals.png",
+      "width": 800,
+      "height": 600,
+      "triangles": 5776,
+      "parts": [
+        {
+          "name": "RightSpar",
+          "faces": 4,
+          "triangles": 408
+        },
+        {
+          "name": "RightRib0",
+          "faces": 5,
+          "triangles": 384
+        },
+        {
+          "name": "RightRib1",
+          "faces": 7,
+          "triangles": 456
+        },
+        {
+          "name": "RightRib2",
+          "faces": 7,
+          "triangles": 454
+        },
+        {
+          "name": "RightRib3",
+          "faces": 7,
+          "triangles": 434
+        },
+        {
+          "name": "RightRib4",
+          "faces": 7,
+          "triangles": 384
+        },
+        {
+          "name": "RightRib5",
+          "faces": 7,
+          "triangles": 362
+        },
+        {
+          "name": "LeftSpar",
+          "faces": 4,
+          "triangles": 408
+        },
+        {
+          "name": "LeftRib0",
+          "faces": 5,
+          "triangles": 384
+        },
+        {
+          "name": "LeftRib1",
+          "faces": 7,
+          "triangles": 456
+        },
+        {
+          "name": "LeftRib2",
+          "faces": 7,
+          "triangles": 454
+        },
+        {
+          "name": "LeftRib3",
+          "faces": 7,
+          "triangles": 434
+        },
+        {
+          "name": "LeftRib4",
+          "faces": 7,
+          "triangles": 384
+        },
+        {
+          "name": "LeftRib5",
+          "faces": 7,
+          "triangles": 362
+        },
+        {
+          "name": "MG90SStaticEnvelope",
+          "faces": 6,
+          "triangles": 12
+        }
+      ],
+      "bounds_mm": [
+        [
+          242.7811737060547,
+          -500.0,
+          16.595069885253906
+        ],
+        [
+          464.92529296875,
+          500.0,
+          38.683834075927734
+        ]
+      ],
+      "camera": {
+        "azimuth": -15.0,
+        "elevation": 28.0
+      },
+      "display_method": "0.25mm / 0.25rad native-face display tessellation; area-weighted face-local interpolated normals; 2x edge supersampling; no cross-face normal welding",
+      "source_geometry_modified": false,
+      "scope": "Display-only skins-hidden view of verified native geometry; no material removed from the model",
+      "source_native": "/Users/patliu/Desktop/Coding/wright/out/tsung-vtol-smooth-aircraft-final/assembly.FCStd",
+      "source_sha256": "e644c1cba9b538088d34f815a0ce4029b13d308bda54084311daf666f104ce6b",
+      "hidden_physical_parts": [
+        "RightSkin",
+        "LeftSkin"
+      ],
+      "visible_nonphysical_envelopes": [
+        "MG90SStaticEnvelope"
+      ],
+      "servo_scope": "Blue box is the checked conservative static servo envelope; not detailed servo CAD, horn, bracket, hatch or cable routing"
+    }
+  ]
+}

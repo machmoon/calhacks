@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "source_sha256": "b62ba6dc2ecb8c79c1d48bfb3237f4462749151a02d9b70eae288edbba0dc3ba",
+  "preserved_solids": 18,
+  "preserved_reference_surfaces": 13,
+  "source_unchanged": true,
+  "native_reopen": true,
+  "partial_check": {
+    "passed": true,
+    "connected": true,
+    "components": [
+      [
+        "Pixhawk_Solid001"
+      ]
+    ],
+    "require_connected": false,
+    "scope": "Selected solid geometry and explicitly required contacts only; not manufacturing or flight approval",
+    "objects": [
+      "Pixhawk_Solid001"
+    ],
+    "pairs": [],
+    "pairs_total": 0,
+    "tolerance_mm": 0.1,
+    "overlap_count": 0,
+    "unmet_contact_count": 0,
+    "geometry_coverage": {
+      "complete_source_geometry_checked": false,
+      "omitted_reference_objects": [
+        "Pixhawk_Reference001",
+        "Pixhawk_Reference002",
+        "Pixhawk_Reference003",
+        "Pixhawk_Reference004",
+        "Pixhawk_Reference005",
+        "Pixhawk_Reference006",
+        "Pixhawk_Reference007",
+        "Pixhawk_Reference008",
+        "Pixhawk_Reference009",
+        "Pixhawk_Reference010",
+        "Pixhawk_Reference011",
+        "Pixhawk_Reference012",
+        "Pixhawk_Reference013"
+      ],
+      "reference_surfaces_checked": false,
+      "scope": "Collision and volume checks cover selected solids only; retained reference surfaces are excluded"
+    }
+  },
+  "checked_step_export_rejected": true,
+  "unmarked_shell_rejected": true,
+  "reference_render_verified": true,
+  "scope": "Manufacturer simplified controller CAD; reference surfaces retained but excluded from physical mass/collision checks"
+}

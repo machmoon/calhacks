@@ -1,0 +1,15 @@
+{
+  "response_sha256": "8ac8c41e0bd1e966becd5939f91bba5b09b7a528a5c06bb4a670855b3b2f8f2c",
+  "candidate_sha256": "5970b8e6ca6769e2ed7a36304a90370720a103e29147ff3c3fb3c738084065b4",
+  "usage": {
+    "cache_read_input_tokens": 0,
+    "input_tokens": 20289,
+    "output_tokens": 4443
+  },
+  "model_text": [
+    "Proposed native FreeCAD module below. Geometry and clearance results will be recorded only after host execution."
+  ],
+  "model_submission_summary": "Editable wrist-mounted Raspberry Pi Camera Module 3 Standard bracket with expression-driven plate, drilled standoffs, moving camera datums, reference envelopes and measured validation manifest.",
+  "raw_response_omitted_reason": "Python payload duplicated exactly in candidate.py; full original remains in ignored run directory",
+  "candidate_manually_edited": false
+}

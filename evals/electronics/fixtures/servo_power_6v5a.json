@@ -1,0 +1,197 @@
+{
+ "devices": {
+  "J_AILERON_L": {
+   "kind": "connector",
+   "package": "PinHeader_1x03_P2.54mm",
+   "pins": {
+    "1": "1",
+    "2": "2",
+    "3": "3"
+   }
+  },
+  "J_AILERON_R": {
+   "kind": "connector",
+   "package": "PinHeader_1x03_P2.54mm",
+   "pins": {
+    "1": "1",
+    "2": "2",
+    "3": "3"
+   }
+  },
+  "J_BAT": {
+   "kind": "connector",
+   "package": "XT30_2P",
+   "pins": {
+    "1": "1",
+    "2": "2"
+   }
+  },
+  "J_ELEVATOR": {
+   "kind": "connector",
+   "package": "PinHeader_1x03_P2.54mm",
+   "pins": {
+    "1": "1",
+    "2": "2",
+    "3": "3"
+   }
+  },
+  "J_RUDDER_L": {
+   "kind": "connector",
+   "package": "PinHeader_1x03_P2.54mm",
+   "pins": {
+    "1": "1",
+    "2": "2",
+    "3": "3"
+   }
+  },
+  "J_RUDDER_R": {
+   "kind": "connector",
+   "package": "PinHeader_1x03_P2.54mm",
+   "pins": {
+    "1": "1",
+    "2": "2",
+    "3": "3"
+   }
+  },
+  "J_SIG": {
+   "kind": "connector",
+   "package": "PinHeader_1x06_P2.54mm",
+   "pins": {
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6"
+   }
+  },
+  "TPS5450DDA": {
+   "kind": "ic",
+   "no_connect": [
+    "NC1",
+    "NC2",
+    "ENA"
+   ],
+   "pins": {
+    "BOOT": "1",
+    "ENA": "5",
+    "GND": "6",
+    "NC1": "2",
+    "NC2": "3",
+    "PAD": "9",
+    "PH": "8",
+    "VIN": "7",
+    "VSENSE": "4"
+   }
+  }
+ },
+ "nets": {
+  "+6V": [
+   "L_BUCK.2",
+   "C_OUT1.1",
+   "C_OUT2.1",
+   "R_FB1.1",
+   "J_AILERON_L.2",
+   "J_AILERON_R.2",
+   "J_ELEVATOR.2",
+   "J_RUDDER_L.2",
+   "J_RUDDER_R.2"
+  ],
+  "BOOT": [
+   "TPS5450DDA.BOOT",
+   "C_BOOT.1"
+  ],
+  "GND": [
+   "J_BAT.2",
+   "TPS5450DDA.GND",
+   "TPS5450DDA.PAD",
+   "C_IN1.2",
+   "C_IN2.2",
+   "D_CATCH.2",
+   "C_OUT1.2",
+   "C_OUT2.2",
+   "R_FB2.2",
+   "J_SIG.6",
+   "J_AILERON_L.3",
+   "J_AILERON_R.3",
+   "J_ELEVATOR.3",
+   "J_RUDDER_L.3",
+   "J_RUDDER_R.3"
+  ],
+  "SIG_AILERON_L": [
+   "J_SIG.1",
+   "J_AILERON_L.1"
+  ],
+  "SIG_AILERON_R": [
+   "J_SIG.2",
+   "J_AILERON_R.1"
+  ],
+  "SIG_ELEVATOR": [
+   "J_SIG.3",
+   "J_ELEVATOR.1"
+  ],
+  "SIG_RUDDER_L": [
+   "J_SIG.4",
+   "J_RUDDER_L.1"
+  ],
+  "SIG_RUDDER_R": [
+   "J_SIG.5",
+   "J_RUDDER_R.1"
+  ],
+  "SW": [
+   "TPS5450DDA.PH",
+   "C_BOOT.2",
+   "L_BUCK.1",
+   "D_CATCH.1"
+  ],
+  "VBAT": [
+   "J_BAT.1",
+   "TPS5450DDA.VIN",
+   "C_IN1.1",
+   "C_IN2.1"
+  ],
+  "VSENSE": [
+   "TPS5450DDA.VSENSE",
+   "R_FB1.2",
+   "R_FB2.1"
+  ]
+ },
+ "passives": {
+  "C_BOOT": {
+   "type": "capacitor",
+   "value": "10nF"
+  },
+  "C_IN1": {
+   "type": "capacitor",
+   "value": "10uF"
+  },
+  "C_IN2": {
+   "type": "capacitor",
+   "value": "10uF"
+  },
+  "C_OUT1": {
+   "type": "capacitor",
+   "value": "220uF"
+  },
+  "C_OUT2": {
+   "type": "capacitor",
+   "value": "10uF"
+  },
+  "D_CATCH": {
+   "type": "diode",
+   "value": "SS54 5A 40V"
+  },
+  "L_BUCK": {
+   "type": "inductor",
+   "value": "15uH"
+  },
+  "R_FB1": {
+   "type": "resistor",
+   "value": "10k"
+  },
+  "R_FB2": {
+   "type": "resistor",
+   "value": "2.55k"
+  }
+ }
+}

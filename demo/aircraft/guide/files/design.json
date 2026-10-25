@@ -1,0 +1,63 @@
+{
+  "name": "quadplane_130mi",
+  "requirements": {
+    "range_km": 210.0,
+    "endurance_min": null,
+    "payload_g": 0.0,
+    "max_span_mm": 1200.0,
+    "printer": "bambu_a1",
+    "budget_usd": 2000.0,
+    "altitude_m": 0.0,
+    "hot_day_dk": 15.0,
+    "max_stall_ms": 14.0,
+    "cells_s": 6,
+    "airspeed_sensor": true,
+    "max_print_hours": null
+  },
+  "wing": {
+    "span_mm": 1200.0,
+    "root_chord_mm": 210.0,
+    "tip_chord_mm": 210.0,
+    "airfoil": "sd7062",
+    "incidence_deg": 2.0,
+    "washout_deg": 2.0,
+    "dihedral_deg": 0.0,
+    "aileron_chord_frac": 0.25
+  },
+  "tail": {
+    "airfoil": "naca0009",
+    "vh": 0.45,
+    "vv": 0.03,
+    "aspect_ratio_v": 1.6
+  },
+  "propulsion": {
+    "lift_motor": "aos_supernova_2810_900kv",
+    "lift_prop": "tmotor_mf1302_folding",
+    "lift_esc": "holybro_tekko32_f4_4in1_50a_am32",
+    "cruise_motor": "tmotor_mn3110_470kv",
+    "cruise_prop": "apc_12x8e",
+    "cruise_esc": "holybro_tekko32_f4_45a_single_am32",
+    "lift_tilt_deg": 3.0
+  },
+  "battery": {
+    "kind": "pack",
+    "id": "upgrade_energy_red_v4_6s2p_10ah",
+    "count": 3
+  },
+  "avionics": {
+    "fc": "corewing_f405_wing_v2",
+    "gps": "hglrc_m100_mini",
+    "receiver": "radiomaster_rp1_v2",
+    "airspeed": "holybro_ms4525do",
+    "servo": "emax_es08ma_ii"
+  },
+  "structure": {
+    "main_spar": "cst_cs525_1m",
+    "rear_spar": "cst_cs328_1m_rod",
+    "joiner": "goodwinds_pct500024",
+    "boom_tube": "cst_cs525_1m",
+    "leg_thickness_mm": 13.0,
+    "shell_filament": "bambu_pla_aero",
+    "structural_filament": "bambu_petg_basic"
+  }
+}

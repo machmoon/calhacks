@@ -1,0 +1,163 @@
+{
+  "source": "/Users/patliu/Desktop/Coding/wright/cad/components/vendor/nvidia/P3766-P3768SKU4-P3767ENVELOPE.stp",
+  "source_sha256": "02dafef626d5ac6ee029d1ead431d6096c27c7c51fef6b49d5189e1765fb9d2f",
+  "probe_report_sha256": "468f03edbacbc197b858ea45766b680de674257a4bbc907d3d3784c3cd0ceeec",
+  "native_carrier_solid_index": 275,
+  "carrier_bounds_mm": [
+    -4.0,
+    -17.0,
+    0.0,
+    96.0,
+    62.0,
+    1.57
+  ],
+  "through_hole_diameter_mm": 2.75,
+  "holes": [
+    {
+      "center_mm": [
+        75.8,
+        58.5,
+        0.785
+      ],
+      "radius_mm": 1.375,
+      "full_board_depth": true,
+      "center_is_void": true,
+      "eight_surrounding_material_probes": true
+    },
+    {
+      "center_mm": [
+        12.2,
+        58.5,
+        0.785
+      ],
+      "radius_mm": 1.375,
+      "full_board_depth": true,
+      "center_is_void": true,
+      "eight_surrounding_material_probes": true
+    },
+    {
+      "center_mm": [
+        92.0,
+        0.0,
+        0.785
+      ],
+      "radius_mm": 1.375,
+      "full_board_depth": true,
+      "center_is_void": true,
+      "eight_surrounding_material_probes": true
+    },
+    {
+      "center_mm": [
+        0.0,
+        0.0,
+        0.785
+      ],
+      "radius_mm": 1.375,
+      "full_board_depth": true,
+      "center_is_void": true,
+      "eight_surrounding_material_probes": true
+    },
+    {
+      "center_mm": [
+        92.0,
+        58.0,
+        0.785
+      ],
+      "radius_mm": 1.375,
+      "full_board_depth": true,
+      "center_is_void": true,
+      "eight_surrounding_material_probes": true
+    },
+    {
+      "center_mm": [
+        0.0,
+        58.0,
+        0.785
+      ],
+      "radius_mm": 1.375,
+      "full_board_depth": true,
+      "center_is_void": true,
+      "eight_surrounding_material_probes": true
+    },
+    {
+      "center_mm": [
+        86.0,
+        58.0,
+        0.785
+      ],
+      "radius_mm": 1.375,
+      "full_board_depth": true,
+      "center_is_void": true,
+      "eight_surrounding_material_probes": true
+    },
+    {
+      "center_mm": [
+        86.0,
+        0.0,
+        0.785
+      ],
+      "radius_mm": 1.375,
+      "full_board_depth": true,
+      "center_is_void": true,
+      "eight_surrounding_material_probes": true
+    }
+  ],
+  "coordinate_frame": "Original manufacturer STEP frame, millimetres; board undersideZ=0",
+  "rectangular_pattern_candidates": [
+    {
+      "span_mm": [
+        92,
+        58
+      ],
+      "xy_mm": [
+        [
+          0,
+          0
+        ],
+        [
+          92,
+          0
+        ],
+        [
+          92,
+          58
+        ],
+        [
+          0,
+          58
+        ]
+      ]
+    },
+    {
+      "span_mm": [
+        86,
+        58
+      ],
+      "xy_mm": [
+        [
+          0,
+          0
+        ],
+        [
+          86,
+          0
+        ],
+        [
+          86,
+          58
+        ],
+        [
+          0,
+          58
+        ]
+      ]
+    }
+  ],
+  "mounting_purpose_verified": false,
+  "fastener_specification_verified": false,
+  "installed_component_access_verified": false,
+  "actual_user_configuration_verified": false,
+  "scope": "Measured STEP holes, not selected mounting locations. Multiple patterns exist; do not infer mounting intent or install standoffs before checking other source components and connector/tool access.",
+  "provisional_access_gauge_report": "out/vendor-component-inventory/jetson-mount-access.json",
+  "provisional_access_summary": "24 gauges tested against1393physicalsolids and527references:2clear top-tool gauges, all8shaft and8support gauges obstructed. Collision identity may include existing mounting hardware; no automatic new mount accepted."
+}

@@ -1,0 +1,44 @@
+{
+  "camera_model": "Raspberry Pi Camera Module 3 Standard",
+  "manufacturer": "Raspberry Pi Ltd",
+  "drawing_url": "https://datasheets.raspberrypi.com/camera/camera-module-3-standard-mechanical-drawing.pdf",
+  "drawing_sha256": "bde27f5ab38dd46aa05713bbb17c6e8acc4cb1d48ff9109df511256f6fbc66ac",
+  "units": "mm",
+  "coordinate_convention": "Drawing front view: lower-left PCB corner origin, x right, y up, lens faces outward normal",
+  "board_width_mm": 25.0,
+  "board_height_mm": 23.862,
+  "board_thickness_mm": 1.12,
+  "overall_depth_mm": 11.3,
+  "mounting_hole_diameter_mm": 2.2,
+  "mounting_holes_board_xy_mm": [
+    [
+      2,
+      2
+    ],
+    [
+      23,
+      2
+    ],
+    [
+      2,
+      14.5
+    ],
+    [
+      23,
+      14.5
+    ]
+  ],
+  "lens_center_board_xy_mm": [
+    12.5,
+    14.4
+  ],
+  "lens_barrel_diameter_mm": 5.75,
+  "source_scope": "Manufacturer mechanical drawing dimensions; simplified envelope is not exact manufacturer CAD",
+  "design_assumptions": {
+    "camera_fastener": "M2 clearance hardware, final screw length depends on standoff",
+    "minimum_camera_standoff_mm": 5.0,
+    "ribbon_keepout_width_mm": 18.0,
+    "ribbon_keepout_thickness_mm": 2.0,
+    "ribbon_keepout_note": "Prototype design reservation, not manufacturer bend-radius guarantee; keep cable exit unobstructed"
+  }
+}

@@ -1,0 +1,435 @@
+{
+  "schema_version": 1,
+  "revision": "package-v2",
+  "evidence_frozen": true,
+  "hardware_ready": false,
+  "compatibility_verified": false,
+  "date": "2026-10-24",
+  "scope": "Original 1.8m lift-plus-cruise demonstrator candidate, not Tsung Xu replica; evidence freeze is not hardware release",
+  "components": [
+    {
+      "bom_id": "lift_motor",
+      "quantity": 4,
+      "geometry_class": "manufacturer_STEP",
+      "path": "cad/components/vendor/tmotor/mn2806evo.step",
+      "sha256": "d0f72166435be4764036dce5408491251e44028de9920526cc53ee7644762aef",
+      "coordinate_frame": "source axes retained; verified inspection out/vtol-demonstrator/hardware-geometry-inspection.json",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "lift_prop",
+      "quantity": 4,
+      "geometry_class": "manufacturer_STEP",
+      "path": "cad/components/vendor/tmotor/p12x4.step",
+      "sha256": "03c14402249c0d38409733bbf02b5209dde5116f58941d4183027810cf2054fb",
+      "coordinate_frame": "source axes retained; verified inspection out/vtol-demonstrator/hardware-geometry-inspection.json",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "cruise_motor",
+      "quantity": 1,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "cruise_prop",
+      "quantity": 1,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "cruise_esc",
+      "quantity": 1,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "power",
+      "quantity": 1,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "bec",
+      "quantity": 1,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "rx",
+      "quantity": 1,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "radio",
+      "quantity": 1,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "airspeed",
+      "quantity": 1,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "battery",
+      "quantity": 1,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "spar",
+      "quantity": 1,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "booms",
+      "quantity": 2,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "pushrods",
+      "quantity": 1,
+      "geometry_class": "datasheet_envelope_only",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "battery_connector",
+      "quantity": null,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "power_harness",
+      "quantity": null,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "signal_harness",
+      "quantity": null,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "hinges",
+      "quantity": null,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "battery_retention",
+      "quantity": null,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "landing_gear",
+      "quantity": null,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "fasteners_and_inserts",
+      "quantity": null,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "controller_isolation",
+      "quantity": null,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "control_horns_and_retainers",
+      "quantity": null,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "protection",
+      "quantity": null,
+      "geometry_class": "missing",
+      "path": null,
+      "sha256": null,
+      "coordinate_frame": "envelope localXYZ only; mounting datums unresolved",
+      "mounting_verified": false,
+      "keepout_status": "pending connector, tool, motion and service geometry"
+    },
+    {
+      "bom_id": "servo",
+      "quantity": 4,
+      "geometry_class": "manufacturer_STEP_compound_with_reference_shell",
+      "path": "cad/projects/vtol-demonstrator/package-v2/sources/servo-cad/HS-65MG_221121.stp",
+      "sha256": "1a9ea39e82de930becafc749ad61b78fa6d360c4b810980e2504305eaf84453c",
+      "coordinate_frame": "source Xcase length,Youtput-axis,Zcase width;servo-interface.json",
+      "mounting_verified": false,
+      "keepout_status": "horn sweep and leads require actual placement",
+      "source_mounting_geometry_measured": true
+    },
+    {
+      "bom_id": "fc",
+      "quantity": 1,
+      "geometry_class": "manufacturer_native_STEP_solids",
+      "path": "/Users/patliu/Desktop/Coding/wright/cad/projects/vtol-demonstrator/package-v2/sources/holybro-cad/fc_current.stp",
+      "sha256": "b0855e2bd5117b0c8e4fc82755142bee34e5a394b7fc0d7f6300e3b78348c188",
+      "source_id": "cad_fc_current",
+      "native_valid": true,
+      "solids": 2,
+      "faces": 430,
+      "coordinate_frame": "Unchanged vendor coordinates; see holybro-geometry-inspection.json",
+      "bounds_mm": [
+        -25.2,
+        -19.5000001,
+        -1.0,
+        29.1,
+        19.5000001,
+        16.45
+      ],
+      "mounting_verified": false,
+      "source_geometry_inspected": true,
+      "keepout_status": "Native geometry excludes cable routing/service clearance; final installation pending",
+      "scope": "Exact currentModelA casing geometry, not full electronic internals"
+    },
+    {
+      "bom_id": "gps",
+      "quantity": 1,
+      "geometry_class": "manufacturer_native_STEP_solids",
+      "path": "/Users/patliu/Desktop/Coding/wright/cad/projects/vtol-demonstrator/package-v2/sources/holybro-cad/gps_shared_full.stp",
+      "sha256": "42587789183f82d0ab59da80f0149d355ff4df99695bb2ddc071354225197fce",
+      "source_id": "cad_gps_shared_full",
+      "native_valid": true,
+      "solids": 7,
+      "faces": 490,
+      "coordinate_frame": "Unchanged vendor coordinates; see holybro-geometry-inspection.json",
+      "bounds_mm": [
+        -25.000000100000005,
+        -6.0000001000020005,
+        -25.0000001,
+        25.000000100000005,
+        8.300000100008253,
+        41.0
+      ],
+      "mounting_verified": false,
+      "source_geometry_inspected": true,
+      "keepout_status": "Native geometry excludes cable routing/service clearance; final installation pending",
+      "scope": "Manufacturer explicitly publishes sharedM8N/M9N/M10 CAD; legacyfilename does not assert M10 electronic internals"
+    },
+    {
+      "bom_id": "power_distribution",
+      "quantity": 1,
+      "geometry_class": "manufacturer_native_STEP_solids",
+      "path": "/Users/patliu/Desktop/Coding/wright/cad/projects/vtol-demonstrator/package-v2/sources/holybro-cad/pdb_top.stp",
+      "sha256": "e342cd094063dc7eb70f65d90f48e774106b6569a8ddca65de76b83452158e65",
+      "source_id": "cad_pdb_top",
+      "native_valid": true,
+      "solids": 27,
+      "faces": 4268,
+      "coordinate_frame": "Unchanged vendor coordinates; see holybro-geometry-inspection.json",
+      "bounds_mm": [
+        85.00017008034001,
+        85.00017008034001,
+        -1.682397764797,
+        144.9875895352,
+        164.9876301753,
+        21.317602533224
+      ],
+      "mounting_verified": false,
+      "source_geometry_inspected": true,
+      "keepout_status": "Native geometry excludes cable routing/service clearance; final installation pending",
+      "scope": "Selected18138 top-entry STEP; bottom solder protrusions included"
+    }
+  ],
+  "rule": "No envelope may be counted as exact hardware; no copied6XPro geometry for6CMini",
+  "new_envelopes": [
+    {
+      "bom_id": "esc",
+      "dimensions_mm": [
+        17.3,
+        34.3,
+        4.5
+      ],
+      "geometry_class": "manufacturer_dimensions_only",
+      "mounting_verified": false
+    },
+    {
+      "bom_id": "cruise_battery",
+      "dimensions_mm": [
+        91.6,
+        43.14,
+        23.56
+      ],
+      "geometry_class": "manufacturer_dimensions_only",
+      "mounting_verified": false
+    },
+    {
+      "bom_id": "hinges",
+      "dimensions_mm": [
+        15.875,
+        28.575
+      ],
+      "geometry_class": "manufacturer_dimensions_only",
+      "mounting_verified": false
+    },
+    {
+      "bom_id": "controller_isolation",
+      "dimensions_mm": [
+        177.8,
+        279.4,
+        6.35
+      ],
+      "geometry_class": "manufacturer_dimensions_only",
+      "mounting_verified": false
+    },
+    {
+      "bom_id": "servo",
+      "dimensions_mm": [
+        23.6,
+        11.6,
+        24
+      ],
+      "geometry_class": "manufacturer_dimensions_only",
+      "mounting_verified": false
+    }
+  ],
+  "cad_search_results": [
+    {
+      "bom_id": "power",
+      "status": "no exact CAD located",
+      "examined": "Holybro official PM downloads and PM02V3product page",
+      "rejected_substitute": "pm02d-full_asm.stp is digitalPM02D, not analogPM02V3",
+      "available_dimensions_mm": [
+        25,
+        25,
+        10
+      ],
+      "mount_holes": "N/A in manufacturer comparison",
+      "next_geometry": "Dimensional reference with stock leads and capacitor separately; no invented board internals"
+    },
+    {
+      "bom_id": "esc",
+      "status": "official2Ddrawing retrieved; no exact STEP found",
+      "path": "sources/holybro-cad/tekko-drawing.pdf",
+      "scope": "Page2 annotated boardphoto32\u00d717 vs overall spec34.3\u00d717.3\u00d74.5; preserve overallreservation; pad layout graphic is not dimensioned pad-center CAD"
+    },
+    {
+      "bom_id": "radio",
+      "status": "official100mW mechanical drawing retrieved; no exact STEP located",
+      "path": "sources/holybro-cad/sik100mw-drawing.jpg",
+      "rejected_substitute": "sik1W_case.stp belongs larger7\u201328V1W model, not selected5V100mW",
+      "drawing_mm": {
+        "case": [
+          47.3,
+          27.8,
+          10.4
+        ],
+        "length_with_RPSMA": 53.2,
+        "antenna_stud_projection": 5.9
+      },
+      "scope": "No mounting holes shown; retain cradle/strap and antenna keepout; datasheet28\u00d753\u00d710.7 differs slightly so use conservative53.2\u00d728\u00d710.7 reservation"
+    },
+    {
+      "bom_id": "rx",
+      "status": "official dimensioned product image and specs; no exactSTEP located",
+      "examined": "https://radiomasterrc.com/products/rp3-expresslrs-2-4ghz-nano-receiver",
+      "scope": "22\u00d713\u00d74mm body only; two65mmTantennas and pigtail separate"
+    },
+    {
+      "bom_id": "cruise_esc",
+      "status": "existing manufacturer specification envelope; no nativeCAD acquired",
+      "scope": "No fabricated electronic internals"
+    }
+  ],
+  "evidence_history": "history/2026-10-24-before-cad-acquisition"
+}

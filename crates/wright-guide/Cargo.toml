@@ -1,0 +1,11 @@
+[package]
+name = "wright-guide"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+wright-core.workspace = true
+wright-geom.workspace = true
+png = "0.17"

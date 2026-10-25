@@ -1,0 +1,12 @@
+{
+  "source": "https://raw.githubusercontent.com/openrocket/openrocket/591c5e5f7b7377e48f2bd5e501cef25cdfbd61d8/fileformat.txt",
+  "new_high_power_rocket_subtree_tags": [
+    "deploymentconfiguration",
+    "separationaltitude",
+    "separationconfiguration",
+    "separationdelay",
+    "separationevent"
+  ],
+  "scope": "1.11 CAD component import only; simulations, motor data, preferences and recovery deployment semantics are not imported",
+  "sha256": "a2e91284b2fdf10108f465f74b163049b6ff7fd9f76fe4a180556e3c1a4be596"
+}

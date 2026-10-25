@@ -1,0 +1,131 @@
+> For the complete documentation index, see [llms.txt](https://docs.holybro.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.holybro.com/autopilot/pixhawk-6c-mini/pixhawk-6c-mini-ports.md).
+
+# Pixhawk 6C Mini Ports
+
+<figure><img src="https://2367252986-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FLIgtGDAvVGkCKGOJb1bR%2Fuploads%2FNV6VEksaaZb4n6vZqk4r%2FPixhawk%206C%20Mini-A_legacy.jpg?alt=media&amp;token=28d042c9-5c73-43f2-ae31-c83fa78126f6" alt=""><figcaption><p>Pixhawk 6C Mini (Legacy)</p></figcaption></figure>
+
+<figure><img src="https://2367252986-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FLIgtGDAvVGkCKGOJb1bR%2Fuploads%2FgAgHBi9RGPvR2BV15pYs%2FPixhawk%206C%20Mini-A%20(NEW)%EF%BC%88HF-A009%EF%BC%89.jpg?alt=media&amp;token=d8b669e7-75e1-4350-b21a-68656ba89816" alt=""><figcaption><p>Pixhawk 6C Mini Model A (Current)</p></figcaption></figure>
+
+<figure><img src="https://2367252986-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FLIgtGDAvVGkCKGOJb1bR%2Fuploads%2FPr3x5BinfRR8rgD2ylbH%2FPixhawk%206C%20Mini-B%EF%BC%88HF-A010%EF%BC%89.jpg?alt=media&amp;token=4b8a4eb1-b235-4a13-8d2f-91addb3b5d5d" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+Refer to this diagram for location of pin1. All connectors are JST GH 1.25 mm Pitch unless noted otherwise.&#x20;
+
+<img src="https://2367252986-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FLIgtGDAvVGkCKGOJb1bR%2Fuploads%2F5ztMPc8sZRkgBLuofQ25%2FPin%20Number.png?alt=media&amp;token=33990df2-0d2d-4b45-9a4f-ead799af93fe" alt="" data-size="original">
+{% endhint %}
+
+### **Power1**
+
+<table data-header-hidden data-search="false"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Pin</strong></td><td><strong>Signal</strong></td><td><strong>Voltage</strong></td></tr><tr><td>1(red)</td><td>VDD5V_BRICK1 (in)</td><td>+5V</td></tr><tr><td>2(black)</td><td>VDD5V_BRICK1 (in)</td><td>+5V</td></tr><tr><td>3(black)</td><td>CURRENT1</td><td>+3.3V</td></tr><tr><td>4(black)</td><td>VOLTAGE1</td><td>+3.3V</td></tr><tr><td>5(black)</td><td>GND</td><td>GND</td></tr><tr><td>6(black)</td><td>GND</td><td>GND</td></tr></tbody></table>
+
+### **Telem 1 Port**
+
+<table data-header-hidden data-search="false"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Pin</strong></td><td><strong>Signal</strong></td><td><strong>Voltage</strong></td></tr><tr><td>1(red)</td><td>VCC</td><td>+5V</td></tr><tr><td>2(black)</td><td>UART7_TX(out)</td><td>+3.3V</td></tr><tr><td>3(black)</td><td>UART7_RX(in)</td><td>+3.3V</td></tr><tr><td>4(black)</td><td>UART7_CTS(in)</td><td>+3.3V</td></tr><tr><td>5(black)</td><td>UART7_RTS(out)</td><td>+3.3V</td></tr><tr><td>6(black)</td><td>GND</td><td>GND</td></tr></tbody></table>
+
+### **Telem 2 Port**
+
+<table data-header-hidden data-search="false"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Pin</strong></td><td><strong>Signal</strong></td><td><strong>Voltage</strong></td></tr><tr><td>1(red)</td><td>VCC</td><td>+5V</td></tr><tr><td>2(black)</td><td>UART5_TX(out)</td><td>+3.3V</td></tr><tr><td>3(black)</td><td>UART5_RX(in)</td><td>+3.3V</td></tr><tr><td>4(black)</td><td>UART5_CTS(in)</td><td>+3.3V</td></tr><tr><td>5(black)</td><td>UART5_RTS(out)</td><td>+3.3V</td></tr><tr><td>6(black)</td><td>GND</td><td>GND</td></tr></tbody></table>
+
+### **GPS 1 Port**
+
+<table data-header-hidden data-search="false"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Pin</strong></td><td><strong>Signal</strong></td><td><strong>Voltage</strong></td></tr><tr><td>1(red)</td><td>VCC</td><td>+5V</td></tr><tr><td>2 black)</td><td>TX1(out)</td><td>+3.3V</td></tr><tr><td>3(black)</td><td>RX1(in)</td><td>+3.3V</td></tr><tr><td>4(black)</td><td>SCL1</td><td>+3.3V</td></tr><tr><td>5(black)</td><td>SDA1</td><td>+3.3V</td></tr><tr><td>6(black)</td><td>SAFETY_SWITCH</td><td>+3.3V</td></tr><tr><td>7(black)</td><td>SAFETY_SWITCH_LED</td><td>+3.3V</td></tr><tr><td>8(black)</td><td>IO_VDD_3V3</td><td>+3.3V</td></tr><tr><td>9(black)</td><td>BUZZER-</td><td>0~5V</td></tr><tr><td>10(black)</td><td>GND</td><td>GND</td></tr></tbody></table>
+
+### **GPS2 Port**
+
+<table data-header-hidden data-search="false"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Pin</strong></td><td><strong>Signal</strong></td><td><strong>Voltage</strong></td></tr><tr><td>1(red)</td><td>VCC</td><td>+5V</td></tr><tr><td>2 black)</td><td>UART8_TX(out)</td><td>+3.3V</td></tr><tr><td>3(black)</td><td>UART8_RX(in)</td><td>+3.3V</td></tr><tr><td>4(black)</td><td>I2C2_SCL</td><td>+3.3V</td></tr><tr><td>5(black)</td><td>I2C2_SDA</td><td>+3.3V</td></tr><tr><td>6(black)</td><td>GND</td><td>GND</td></tr></tbody></table>
+
+### **I2C Port**
+
+| **Pin**  | **Signal**  | **Voltage** |
+| -------- | ----------- | ----------- |
+| 1(red)   | VCC         | +5V         |
+| 2(black) | I2C2\_SCL\* | +3.3V       |
+| 3(black) | I2C2\_SDA\* | +3.3V       |
+| 4(black) | GND         | GND         |
+
+### **CAN1 & CAN2 Port**
+
+| **Pin**  | **Signal** | **Voltage** |
+| -------- | ---------- | ----------- |
+| 1(red)   | VCC        | +5V         |
+| 2(black) | CAN1\_H    | +3.3V       |
+| 3(black) | CAN1\_L    | +3.3V       |
+| 4(black) | GND        | GND         |
+
+### **DSM RC Port** (JST-ZH 1.5mm)
+
+| **Pin**   | **Signal**         | **Voltage** |
+| --------- | ------------------ | ----------- |
+| 1(yellow) | VDD\_3V3\_SPEKTRUM | +3.3V       |
+| 2(black)  | GND                | GND         |
+| 3(gray)   | DSM/SPEKTRUM IN    | +3.3V       |
+
+### **PPM/SBUS RC Port (Legacy)**
+
+| **Pin**   | **Signal**         | **Voltage** |
+| --------- | ------------------ | ----------- |
+| 1(null)   | VDD\_5V\_PPM\_SBUS | +5V         |
+| 2(yellow) | PPM\&SBUS\_IN      | +3.3V       |
+| 3(null)   | RSSI\_IN           | +3.3V       |
+| 4(red)    | (NOT CONNECTED)    | --          |
+| 5(black)  | GND                | GND         |
+
+### RSSI Port
+
+|     |        |         |
+| --- | ------ | ------- |
+| Pin | Signal | Voltage |
+| 1   | VDD    | +5V     |
+| 2   | RSSI   | +3.3V   |
+| 3   | GND    | GND     |
+
+### RC IN Port
+
+|     |              |       |
+| --- | ------------ | ----- |
+| Pin | Signal       | Volt  |
+| S   | SBUS/PPM in  | +3.3V |
+| +   | VDD\_5V \_RC | +5V   |
+| -   | GND          | GND   |
+
+### **FMU PWM OUT Port (AUX OUT)**
+
+| **Pin** | **Signal**  | **Volt**            |
+| ------- | ----------- | ------------------- |
+| S       | FMU\_CH1\~6 | +3.3V (5V with MOD) |
+| +       | VDD\_SERVO  | 0\~36V              |
+| -       | GND         | GND                 |
+
+### **I/O PWM OUT Port (MAIN OUT)**
+
+| **Pin** | **Signal** | **Volt**            |
+| ------- | ---------- | ------------------- |
+| S       | IO\_CH1\~8 | +3.3V (5V with MOD) |
+| +       | VDD\_SERVO | 0\~36V              |
+| -       | GND        | GND                 |
+
+### **FMU Debug Port** (JST SH 1mm Pitch)
+
+<table><thead><tr><th>Pin</th><th width="207">Signal</th><th>Voltage</th></tr></thead><tbody><tr><td>1(red)</td><td>FMU_VDD_3V3</td><td>+3.3V</td></tr><tr><td>2(black)</td><td>FMU_USART3_TX</td><td>+3.3V</td></tr><tr><td>3(black)</td><td>FMU_USART3_RX</td><td>+3.3V</td></tr><tr><td>4(black)</td><td>FMU_SWD_IO</td><td>+3.3V</td></tr><tr><td>5(black)</td><td>FMU_SWD_CK</td><td>+3.3V</td></tr><tr><td>6(black)</td><td>GND</td><td>GND</td></tr></tbody></table>
+
+
+---
+
+# Agent Instructions
+This documentation is published with GitBook. GitBook is the documentation platform designed so that both humans and AI agents can read, navigate, and reason over technical content effectively. Learn more at gitbook.com.
+
+## Querying This Documentation
+If you need additional information that is not directly available in this page, you can query the documentation by asking a question.
+
+Perform an HTTP GET request on the following URL with the `ask` and `goal` query parameters:
+
+```
+GET https://docs.holybro.com/autopilot/pixhawk-6c-mini/pixhawk-6c-mini-ports.md?ask=<question>&goal=<user_goal>
+```
+
+`ask` is the immediate question: it should be specific, self-contained, and written in natural language.
+`goal` is what the user is ultimately trying to achieve, the reason they need the answer. Sharing it helps GitBook give you a better, more relevant answer. A goal is most helpful when it describes the outcome the user wants rather than restating the question. For example, with `ask=how do I create an API token`, a goal like `automate deployments from our CI pipeline` lets GitBook tailor the answer to that use case.
+
+The response will contain a direct answer to the question and relevant excerpts and sources from the documentation.
+
+Use this mechanism when the answer is not explicitly present in the current page, you need clarification or additional context, or you want to retrieve related documentation sections.

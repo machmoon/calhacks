@@ -1,0 +1,86 @@
+{
+  "kind": "sim",
+  "title": "6-DOF flight, RocketPy 1.13.0: n2o/rp1 20000 ft",
+  "items": [
+    {
+      "label": "Flight animation (RocketPy 6-DOF)",
+      "path": "flight.mp4",
+      "media": "mp4",
+      "summary": "nominal flight at mid wind, 2x speed: boost, coast to 19,349 ft AGL, drogue",
+      "metrics": {
+        "apogee_ft": 19348.761883272753,
+        "max_mach": 1.1380795629504172
+      }
+    },
+    {
+      "label": "Trajectory: RocketPy vs Wright",
+      "path": "trajectory.png",
+      "media": "png",
+      "summary": "apogee RocketPy 19,349 ft vs Wright 19,369 ft (-0.1 %)",
+      "metrics": {
+        "rocketpy_apogee_ft": 19348.761883272753,
+        "wright_apogee_ft": 19369.23026038889
+      }
+    },
+    {
+      "label": "Attitude, angle of attack, stability",
+      "path": "attitude_stability.png",
+      "media": "png",
+      "summary": "stability at rail exit RocketPy 2.48 cal vs Wright 2.48 cal; min 2.30 cal",
+      "metrics": {
+        "rocketpy_rail_exit_cal": 2.4838316482184117,
+        "wright_rail_exit_cal": 2.4836676935060193
+      }
+    },
+    {
+      "label": "Dispersion apogees",
+      "path": "dispersion.png",
+      "media": "png",
+      "summary": "mean FAR-OUT score RocketPy 828 vs Wright 838 over the same 9 cases",
+      "metrics": {
+        "rocketpy_far_score": 828.1873117621357,
+        "wright_far_score": 838.1651208137874
+      }
+    },
+    {
+      "label": "Nominal flight time series",
+      "path": "flight.csv",
+      "media": "csv",
+      "summary": "t, position, Mach, attitude, angle of attack, stability margin (RocketPy)",
+      "metrics": {}
+    },
+    {
+      "label": "RocketPy vs Wright numbers",
+      "path": "result.json",
+      "media": "json",
+      "summary": "nominal apogee -0.1 % vs Wright; FAR score 828 vs 838",
+      "metrics": {
+        "apogee_diff_pct": -0.10567470591743068
+      }
+    },
+    {
+      "label": "RocketPy input (from Wright's design)",
+      "path": "input.json",
+      "media": "json",
+      "summary": "masses, tanks, thrust curve, CD(M), fins, recovery, site",
+      "metrics": {}
+    }
+  ],
+  "checks": [
+    {
+      "name": "6-DOF apogee within 5 % of trajectory.rs",
+      "passed": true,
+      "detail": "RocketPy 19349 ft vs Wright 19369 ft (-0.1 %), nominal mid wind"
+    },
+    {
+      "name": "6-DOF stability at rail exit",
+      "passed": true,
+      "detail": "RocketPy 2.48 cal vs 1.5 cal minimum (Wright 2.48 cal)"
+    },
+    {
+      "name": "6-DOF rail exit speed",
+      "passed": true,
+      "detail": "RocketPy 108 ft/s vs 85 ft/s minimum"
+    }
+  ]
+}

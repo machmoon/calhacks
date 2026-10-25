@@ -1,0 +1,215 @@
+{
+  "scope": "Nominal rigid geometry and editable dependencies only; not functional clamp, preload, strength or flight approval",
+  "checks": {
+    "source_unchanged": {
+      "passed": true,
+      "sha256": "064727e3e754bbf8be39d64c7fe1f68f60405005df8f059cee51e6add2e0c09a"
+    },
+    "model_saved_four_outputs": {
+      "passed": true,
+      "selection": [
+        "BoomRight",
+        "FinClampDrill1",
+        "LowerClampDrill1",
+        "TopStabilizer"
+      ]
+    },
+    "boom_unchanged": {
+      "passed": true,
+      "removed_mm3": 0.0,
+      "added_mm3": 0.0,
+      "bounds_difference_mm": 0.0,
+      "tolerance_mm3": 0.00019792033717615722
+    },
+    "stabilizer_unchanged": {
+      "passed": true,
+      "removed_mm3": 0.0,
+      "added_mm3": 0.0,
+      "bounds_difference_mm": 0.0,
+      "tolerance_mm3": 0.00120348375
+    },
+    "fin_outside_root_unchanged": {
+      "passed": true,
+      "removed_mm3": 0.0,
+      "added_mm3": 0.0,
+      "bounds_difference_mm": 0.0,
+      "tolerance_mm3": 0.0005089177679319601,
+      "allowed_root_roi_mm": [
+        [
+          620,
+          185,
+          -22
+        ],
+        [
+          780,
+          255,
+          8
+        ]
+      ]
+    },
+    "nominal_boom_seat:FinClampDrill1": {
+      "passed": true,
+      "gap_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "coaxial_r5_faces": [
+        {
+          "radius_mm": 5.0,
+          "area_mm2": 626.3686270209557,
+          "axis_offset_mm": 0.0,
+          "axis_parallel_error": 0.0
+        }
+      ]
+    },
+    "nominal_boom_seat:LowerClampDrill1": {
+      "passed": true,
+      "gap_mm": 1.7763568394002505e-15,
+      "overlap_mm3": 0.0,
+      "coaxial_r5_faces": [
+        {
+          "radius_mm": 5.0,
+          "area_mm2": 294.12578112666904,
+          "axis_offset_mm": 0.0,
+          "axis_parallel_error": 2.2e-16
+        }
+      ]
+    },
+    "remaining_split_gap": {
+      "passed": true,
+      "measured_mm": 0.4999999999999982,
+      "target_mm": 0.5
+    },
+    "physical_fit": {
+      "passed": true,
+      "report": {
+        "passed": true,
+        "connected": true,
+        "components": [
+          [
+            "BoomRight",
+            "FinClampDrill1",
+            "LowerClampDrill1",
+            "TopStabilizer"
+          ]
+        ],
+        "require_connected": true,
+        "scope": "Selected solid geometry and explicitly required contacts only; not manufacturing or flight approval",
+        "objects": [
+          "BoomRight",
+          "FinClampDrill1",
+          "LowerClampDrill1",
+          "TopStabilizer"
+        ],
+        "pairs": [
+          {
+            "a": "BoomRight",
+            "b": "FinClampDrill1",
+            "overlap_mm3": 0.0,
+            "distance_mm": 0.0,
+            "distance_lower_bound_mm": 0.0,
+            "broad_phase": false,
+            "required_contact": true,
+            "clash": false,
+            "floating": false
+          },
+          {
+            "a": "BoomRight",
+            "b": "LowerClampDrill1",
+            "overlap_mm3": 0.0,
+            "distance_mm": 1.7763568394002505e-15,
+            "distance_lower_bound_mm": 0.0,
+            "broad_phase": false,
+            "required_contact": true,
+            "clash": false,
+            "floating": false
+          },
+          {
+            "a": "BoomRight",
+            "b": "TopStabilizer",
+            "overlap_mm3": 0,
+            "distance_mm": null,
+            "distance_lower_bound_mm": 138.07107746063258,
+            "broad_phase": true,
+            "required_contact": false,
+            "clash": false,
+            "floating": false
+          },
+          {
+            "a": "FinClampDrill1",
+            "b": "LowerClampDrill1",
+            "overlap_mm3": 0,
+            "distance_mm": null,
+            "distance_lower_bound_mm": 0.49994420323702116,
+            "broad_phase": true,
+            "required_contact": false,
+            "clash": false,
+            "floating": false
+          },
+          {
+            "a": "FinClampDrill1",
+            "b": "TopStabilizer",
+            "overlap_mm3": 0.0,
+            "distance_mm": 0.0,
+            "distance_lower_bound_mm": 0.0,
+            "broad_phase": false,
+            "required_contact": true,
+            "clash": false,
+            "floating": false
+          },
+          {
+            "a": "LowerClampDrill1",
+            "b": "TopStabilizer",
+            "overlap_mm3": 0,
+            "distance_mm": null,
+            "distance_lower_bound_mm": 139.90179910254213,
+            "broad_phase": true,
+            "required_contact": false,
+            "clash": false,
+            "floating": false
+          }
+        ],
+        "pairs_total": 6,
+        "tolerance_mm": 1e-05,
+        "overlap_count": 0,
+        "unmet_contact_count": 0
+      }
+    },
+    "live_dependency:FinClampDrill1": {
+      "passed": true,
+      "type": "Part::Cut",
+      "parameter_binding_count": 18,
+      "probe": {
+        "object_name": "JointBoomClearance",
+        "parameter": "Radius",
+        "probe_delta_mm": 0.001,
+        "volume_delta_mm3": -0.6263974953762954,
+        "restored": true
+      }
+    },
+    "live_dependency:LowerClampDrill1": {
+      "passed": true,
+      "type": "Part::Cut",
+      "parameter_binding_count": 14,
+      "probe": {
+        "object_name": "JointBoomClearance",
+        "parameter": "Radius",
+        "probe_delta_mm": 0.001,
+        "volume_delta_mm3": -0.2941572037998412,
+        "restored": true
+      }
+    },
+    "oracle_did_not_save_artifact": {
+      "passed": true,
+      "sha256": "c62bf4ad5bd4a70fe18ac28e55ddbff15b142c2784575c91b486bc6dd3e2cd57"
+    },
+    "source_still_unchanged": {
+      "passed": true
+    }
+  },
+  "source": "/Users/patliu/Desktop/Coding/wright/out/tsung-vtol-tail-joint/assembly.FCStd",
+  "artifact": "/Users/patliu/Desktop/Coding/wright/out/astra-vtol-clamp-repair/run-88837/cad/assembly.FCStd",
+  "identified_outputs": {
+    "fin_and_upper": "FinClampDrill1",
+    "lower": "LowerClampDrill1"
+  },
+  "passed": true
+}

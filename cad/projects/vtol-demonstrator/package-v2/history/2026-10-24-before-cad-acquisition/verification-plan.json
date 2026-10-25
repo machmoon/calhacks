@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "revision": "package-v2",
+  "evidence_frozen": true,
+  "hardware_ready": false,
+  "compatibility_verified": false,
+  "date": "2026-10-24",
+  "scope": "Original 1.8m lift-plus-cruise demonstrator candidate, not Tsung Xu replica; evidence freeze is not hardware release",
+  "gates": [
+    {
+      "id": "exact_BOM_role_coverage",
+      "status": "pending",
+      "required": true,
+      "evidence": null
+    },
+    {
+      "id": "electrical_voltage_current_pinout",
+      "status": "pending",
+      "required": true,
+      "evidence": null
+    },
+    {
+      "id": "source_and_variant_identity",
+      "status": "pending",
+      "required": true,
+      "evidence": null
+    },
+    {
+      "id": "all_part_geometry_coverage",
+      "status": "pending",
+      "required": true,
+      "evidence": null
+    },
+    {
+      "id": "mount_and_fastener_interfaces",
+      "status": "pending",
+      "required": true,
+      "evidence": null
+    },
+    {
+      "id": "mass_CG_budget",
+      "status": "pending",
+      "required": true,
+      "evidence": null
+    },
+    {
+      "id": "propulsion_low_voltage_and_hover_response",
+      "status": "pending",
+      "required": true,
+      "evidence": null
+    },
+    {
+      "id": "wing_aerodynamics_section_induced_total_drag_separate",
+      "status": "pending",
+      "required": true,
+      "evidence": null
+    },
+    {
+      "id": "structural_load_paths_joint_sizing",
+      "status": "pending",
+      "required": true,
+      "evidence": null
+    },
+    {
+      "id": "all_relevant_collision_pairs",
+      "status": "pending",
+      "required": true,
+      "evidence": null
+    },
+    {
+      "id": "prop_swept_volumes",
+      "status": "pending",
+      "required": true,
+      "evidence": null
+    },
+    {
+      "id": "control_surface_servo_linkage_motion",
+      "status": "pending",
+      "required": true,
+      "evidence": null
+    },
+    {
+      "id": "battery_board_hatch_tool_removal",
+      "status": "pending",
+      "required": true,
+      "evidence": null
+    },
+    {
+      "id": "connector_cable_thermal_access",
+      "status": "pending",
+      "required": true,
+      "evidence": null
+    },
+    {
+      "id": "span_chord_boom_servo_battery_parameter_edits",
+      "status": "pending",
+      "required": true,
+      "evidence": null
+    },
+    {
+      "id": "saved_reopened_native_editability",
+      "status": "pending",
+      "required": true,
+      "evidence": null
+    },
+    {
+      "id": "STEP_equivalence_for_supported_solids",
+      "status": "pending",
+      "required": true,
+      "evidence": null
+    }
+  ],
+  "rule": "All results must identifypackage andCADrevision hashes. Missing/failed/inconclusive never passes. CADimport/render/solverexecution alone cannot passbuildcompletion.",
+  "allowed_independent_work": [
+    "smooth outergeometry andairframe studies labeledprovisional",
+    "manufacturer source datum inspection",
+    "datasheet envelope layout"
+  ],
+  "blocked_work": [
+    "detailedmounts againstunresolvedinterfaces",
+    "fabrication-ready freeze",
+    "flight/endurance claim"
+  ]
+}

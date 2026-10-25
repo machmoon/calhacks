@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "model": "gpt-6-astra",
+  "reasoning_effort": "low",
+  "transport": "Wright CodexTransport; existing ChatGPT subscription; no API billing fallback",
+  "track": "SO101 assembly and persistent articulation from provided official URDF and independent STL meshes",
+  "source_commit": "a758567c3978dfeefe282ede0500085a48fe8f78",
+  "attempts": [
+    {
+      "attempt": 1,
+      "prompt_development_iteration": 1,
+      "request_sha256": "7f2508b2772509d3730c4e560d553ffccc3e8df21382945e9f3782af34193575",
+      "prompt_sha256": "f229fda54f749f94bd8bd02961deac75adaaf671ae07782a7018d6fc0b6fad96",
+      "candidate_script_sha256": "973ca055426abe79b27c5d4fe5e2bef515605677e7a6d9c0c5e286c6a6964b4a",
+      "model_calls": 1,
+      "candidate_executions": 1,
+      "candidate_manually_repaired": false,
+      "usage": {
+        "cache_read_input_tokens": 0,
+        "input_tokens": 23158,
+        "output_tokens": 4732
+      },
+      "execution_exit_code": 1,
+      "execution_seconds": 0.3512412080017384,
+      "source_unchanged": true,
+      "passed": false,
+      "independent_result": "out/so-arm101-evaluation/actual-attempt-1/result.json",
+      "failure": "Unsupported FreeCAD object type App::Feature; no native artifact"
+    },
+    {
+      "attempt": 2,
+      "prompt_development_iteration": 2,
+      "request_sha256": "7245798e46a9fbd903ff71b61c8e30433f8c67748b0bbfa3df941e84f25b5eec",
+      "prompt_sha256": "62094b4b6fd4c52aca5005f0a2922d5b13f7c796c80ad14d5ce48256a3fda16b",
+      "candidate_script_sha256": "4d31749b8d9d2b2364ec17c085eeb2bc6f3ddb5b2f40f0b60dd1a39ddc99bdd8",
+      "model_calls": 1,
+      "candidate_executions": 1,
+      "candidate_manually_repaired": false,
+      "usage": {
+        "cache_read_input_tokens": 0,
+        "input_tokens": 23229,
+        "output_tokens": 3859
+      },
+      "execution_exit_code": 0,
+      "execution_seconds": 2.7454748329982976,
+      "source_unchanged": true,
+      "passed": true,
+      "independent_result": "out/so-arm101-evaluation/actual-attempt-2/result.json",
+      "artifact": "out/so-arm101-one-shot/attempt-2/assembly.FCStd",
+      "artifact_sha256": "7164b2b4b70f08b2a58a00f1df3ff164eb411befdd93761ba788d2af3ea39cc6",
+      "gates": {
+        "coverage": true,
+        "source_mesh_geometry": true,
+        "native_controls_and_limits": true,
+        "independent_sampled_articulation": true,
+        "joint_axes": true,
+        "fresh_reopen_and_edit": true,
+        "native_dependencies_without_custom_proxies": true
+      },
+      "evaluator_hashes": {
+        "run.py": "59b02648d56eefbcb2c38ba8e0566639e153b6406a4e9047bb05456e69a63d72",
+        "test_mesh_geometry.py": "5614a691e905511fe3d2b59a2b97025301cdb795ef4f9083ff181f7f3c74dbc7",
+        "test_evaluator.py": "3aeada6bb5900b2131ae86c1be0a48b0dadd5f96e1a54f388ab6349d5b83d325",
+        "reference_manifest.json": "7fb83f618503c8650f3c06bd2806ec5ea09555a8d59b5e581d72f53d1af96709",
+        "public_contract.json": "f24e82e7a201eec9ac0d7ee254628a960e87550f4fbc8a48cc01a48db1c134f3",
+        "probe.py": "686da664c5de4257824440494fd2682b4c71ba379e331236644797713b8e7616",
+        "cases.json": "b5d11210038ce6a4bd4a0c5875132235ce3656c24f67e943091e29baf9a6560a",
+        "geometry.py": "32794c1af58d0ca464f58e4f841872d56541b018e1275cfd0e7f89234ab054fe",
+        "reference.py": "7580d6cc15415cfeb22ed304c5f628efab03873ab0ab94c2df5df1dad51fe81a"
+      },
+      "candidate_unchanged_during_evaluation": true,
+      "mesh_watertightness_passed": false,
+      "mesh_not_solid_instances": [
+        "Visual_shoulder_link_1"
+      ],
+      "model_preview_produced": false
+    }
+  ],
+  "prompt_change": "After attempt1 failure, independently verified FreeCAD1.1.4 App::DocumentObjectGroup customAngle support and App::Feature invalidity; added only that runtime API fact before a fresh model submission.",
+  "not_claimed": [
+    "first-ever-attempt success",
+    "generalization or success rate",
+    "weight fine-tuning",
+    "original parametric BRep part generation",
+    "watertight mesh assembly",
+    "collision-clearance certification",
+    "native enforcement of out-of-range angles",
+    "robot control or physical readiness"
+  ],
+  "preview_scope": "Model reported headless preview unavailable; separate read-only host preview is not model-generated evidence."
+}

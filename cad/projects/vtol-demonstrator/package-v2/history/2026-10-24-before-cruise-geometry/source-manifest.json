@@ -1,0 +1,226 @@
+{
+  "inherited_manifest": "../package-v1/source-manifest.json",
+  "sources": [
+    {
+      "id": "lift_esc",
+      "url": "https://holybro.com/products/tekko32-f4-45a-esc",
+      "retrieved": "2026-10-24",
+      "path": null,
+      "sha256": null,
+      "status": "browser_evidence_only",
+      "error": "curl: (56) The requested URL returned error: 429\n"
+    },
+    {
+      "id": "cruise_battery",
+      "url": "https://www.genstattu.com/gens-ace-2200mah-4s-60c-14-8v-g-tech-adventure-lipo-battery-pack-with-xt60-plug/",
+      "retrieved": "2026-10-24",
+      "path": "cad/projects/vtol-demonstrator/package-v2/sources/cruise_battery.txt",
+      "sha256": "a1f97ecdc25fce0c6200f13d3fcc8513c0eddae022596b62a197123a20c9304a",
+      "status": "retrieved",
+      "error": null
+    },
+    {
+      "id": "pdb",
+      "url": "https://holybro.com/collections/power-distribution-board-pdb/products/power-distribution-board-pdb-300a-side-entry",
+      "retrieved": "2026-10-24",
+      "path": null,
+      "sha256": null,
+      "status": "browser_evidence_only",
+      "error": "curl: (56) The requested URL returned error: 429\n"
+    },
+    {
+      "id": "hinges",
+      "url": "https://www.dubro.com/products/nylon-hinges",
+      "retrieved": "2026-10-24",
+      "path": null,
+      "sha256": null,
+      "status": "browser_evidence_only",
+      "error": "curl: (56) The requested URL returned error: 429\n"
+    },
+    {
+      "id": "horns",
+      "url": "https://www.dubro.com/products/nylon-control-horns-1-left-1-right",
+      "retrieved": "2026-10-24",
+      "path": null,
+      "sha256": null,
+      "status": "browser_evidence_only",
+      "error": "curl: (56) The requested URL returned error: 429\n"
+    },
+    {
+      "id": "clevis",
+      "url": "https://www.dubro.com/products/spring-steel-and-solder-kwik-links",
+      "retrieved": "2026-10-24",
+      "path": null,
+      "sha256": null,
+      "status": "browser_evidence_only",
+      "error": "curl: (56) The requested URL returned error: 429\n"
+    },
+    {
+      "id": "foam",
+      "url": "https://www.dubro.com/products/r-c-protective-foam-rubber",
+      "retrieved": "2026-10-24",
+      "path": "cad/projects/vtol-demonstrator/package-v2/sources/foam.txt",
+      "sha256": "b3fd926f25ce8b52620d33cb6339a8a6bcce025373083ed5288b4b5b6c1ee52e",
+      "status": "retrieved",
+      "error": null
+    },
+    {
+      "id": "strap",
+      "url": "https://www.velcro.com/wp-content/sc_media/Files/TargetPDFs/us/one-wrap-fasteners.pdf",
+      "retrieved": "2026-10-24",
+      "path": "cad/projects/vtol-demonstrator/package-v2/sources/strap.pdf",
+      "sha256": "af3328d37dc38586ee5e3713b1ba5cb27772b7a3d866f6d653ade764652bc6d0",
+      "status": "retrieved",
+      "error": null
+    },
+    {
+      "id": "pinout",
+      "url": "https://docs.holybro.com/autopilot/pixhawk-6c-mini/pixhawk-6c-mini-ports.md",
+      "retrieved": "2026-10-24",
+      "path": "cad/projects/vtol-demonstrator/package-v2/sources/pinout.txt",
+      "sha256": "8ce6b6eb65919f389184a0d206a08269df059f80d147bb69fb6578b2df9989f6",
+      "status": "retrieved",
+      "error": null
+    },
+    {
+      "id": "pdb_top",
+      "url": "https://holybro.com/products/power-distribution-board-pdb-300a-top-entry",
+      "retrieved": "2026-10-24",
+      "status": "browser_evidence",
+      "local_payload": null
+    },
+    {
+      "id": "pdb_drawing",
+      "url": "https://cdn.shopify.com/s/files/1/0604/5905/7341/files/PDB_XT90PW-F_600x600.jpg?v=1735277505",
+      "retrieved": "2026-10-24",
+      "status": "browser_evidence",
+      "local_payload": "sources/pdb-dimensions.jpg"
+    },
+    {
+      "id": "motor_drawing",
+      "url": "https://cn.tmotor.com/uploadfile/downloads/tmotor-mn2806evo-motor-2d-drawings.pdf",
+      "retrieved": "2026-10-24",
+      "status": "browser_evidence",
+      "local_payload": "sources/motor-drawing.pdf"
+    },
+    {
+      "id": "fastener_standard",
+      "url": "https://www.accu.co.uk/metric-cap-head-screws/3818-SSCF-M3-8-A2",
+      "retrieved": "2026-10-24",
+      "status": "browser_evidence",
+      "local_payload": null
+    },
+    {
+      "id": "fuse",
+      "url": "https://www.littelfuse.com/assetdocs/ato-155-datasheet?assetguid=16012234-6af0-41ba-9636-f542a05c5222",
+      "retrieved": "2026-10-24",
+      "status": "browser_evidence",
+      "local_payload": null
+    },
+    {
+      "id": "dshot",
+      "url": "https://en.ardupilot.org/copter/docs/common-holybro-pixhawk6C.html",
+      "retrieved": "2026-10-24",
+      "status": "browser_evidence",
+      "local_payload": null
+    },
+    {
+      "id": "motor_supplied_hardware",
+      "url": "https://store.tmotor.com/product/antigravity-mn2806-evo-motor.html",
+      "retrieved": "2026-10-24",
+      "status": "browser_evidence",
+      "local_payload": null
+    },
+    {
+      "id": "servo_alternative",
+      "url": "https://www.hitecrcd.co.kr/products/hs-65mg/",
+      "retrieved": "2026-10-24",
+      "status": "browser_evidence",
+      "local_payload": null
+    },
+    {
+      "id": "servo_selected",
+      "url": "https://www.hitecrcd.co.kr/products/hs-65mg/",
+      "retrieved": "2026-10-24",
+      "local_payload": null,
+      "sha256": null,
+      "status": "browser_evidence"
+    },
+    {
+      "id": "servo_selected_cad",
+      "url": "https://www.hitecrcd.co.kr/wp-content/uploads/hitec-products/2019/c/HS-65MG_3dmodel.zip",
+      "retrieved": "2026-10-24",
+      "local_payload": "sources/HS-65MG_3dmodel.zip",
+      "sha256": "e95536010f8839aee6c5e6eea098547c22358ed0a4657c0d89b6d0e01ad2b19b",
+      "status": "retrieved"
+    },
+    {
+      "id": "servo_selected_spec",
+      "url": "https://www.hitecrcd.co.kr/wp-content/uploads/hitec-products/2019/c/HS-65MG_Specsheet(v2.1)_22L.pdf",
+      "retrieved": "2026-10-24",
+      "local_payload": "sources/HS-65MG-spec.pdf",
+      "sha256": "2cd3a590e4847132e7822bce82d7becdb704d28cf8c35c3ec0e9ebdae732bc57",
+      "status": "retrieved"
+    },
+    {
+      "id": "cad_fc_current",
+      "url": "https://2367252986-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FLIgtGDAvVGkCKGOJb1bR%2Fuploads%2FjAffg0tDqvJ38wxalJ8D%2F6C-MINI-A_rev.stp?alt=media",
+      "path": "cad/projects/vtol-demonstrator/package-v2/sources/holybro-cad/fc_current.stp",
+      "status": "downloaded",
+      "bytes": 626997,
+      "sha256": "b0855e2bd5117b0c8e4fc82755142bee34e5a394b7fc0d7f6300e3b78348c188",
+      "error": "",
+      "primary": true,
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "cad_gps_shared_full",
+      "url": "https://2367252986-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FLIgtGDAvVGkCKGOJb1bR%2Fuploads%2FzBDwjNLOqmgP2e9HcsIC%2FGPS-M8N-M9N-full_asm.stp?alt=media",
+      "path": "cad/projects/vtol-demonstrator/package-v2/sources/holybro-cad/gps_shared_full.stp",
+      "status": "downloaded",
+      "bytes": 1210026,
+      "sha256": "42587789183f82d0ab59da80f0149d355ff4df99695bb2ddc071354225197fce",
+      "error": "",
+      "primary": true,
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "cad_pdb_top",
+      "url": "https://cdn.shopify.com/s/files/1/0604/5905/7341/files/pdb-xt90pb-f.stp?v=1741143462",
+      "path": "cad/projects/vtol-demonstrator/package-v2/sources/holybro-cad/pdb_top.stp",
+      "status": "downloaded",
+      "bytes": 2970605,
+      "sha256": "e342cd094063dc7eb70f65d90f48e774106b6569a8ddca65de76b83452158e65",
+      "error": "",
+      "primary": true,
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "drawing_tekko-drawing.pdf",
+      "url": "https://cdn.shopifycdn.net/s/files/1/0604/5905/7341/files/Holybro_Tekko32_F4_45A_ESC_SPEC_V1.1.pdf?v=1721112993",
+      "path": "cad/projects/vtol-demonstrator/package-v2/sources/holybro-cad/tekko-drawing.pdf",
+      "status": "downloaded",
+      "sha256": "deaaa7699730ccb9637be55c84cb885336161c377e9d932c56cf19de0e97a0d1",
+      "primary": true,
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "drawing_sik100mw-drawing.jpg",
+      "url": "https://2367252986-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FLIgtGDAvVGkCKGOJb1bR%2Fuploads%2F3pzDs7hiFKDdokvuyN9h%2FSik%20Telemetry%20Radio%20V3-1.jpg?alt=media",
+      "path": "cad/projects/vtol-demonstrator/package-v2/sources/holybro-cad/sik100mw-drawing.jpg",
+      "status": "downloaded",
+      "sha256": "b37f8920eea75d343b789a4f4b793d4665bd59daa1282c63a20e83a6d97e042f",
+      "primary": true,
+      "retrieved": "2026-10-24"
+    },
+    {
+      "id": "drawing_pdb-top-drawing.jpg",
+      "url": "https://cdn.shopify.com/s/files/1/0604/5905/7341/files/pdb-xt90pb-f_600x600.jpg?v=1735277546",
+      "path": "cad/projects/vtol-demonstrator/package-v2/sources/holybro-cad/pdb-top-drawing.jpg",
+      "status": "downloaded",
+      "sha256": "ea708c42d270f770f0eb325eb42a40eb3172c997ccab06ff5d49053646025b45",
+      "primary": true,
+      "retrieved": "2026-10-24"
+    }
+  ]
+}

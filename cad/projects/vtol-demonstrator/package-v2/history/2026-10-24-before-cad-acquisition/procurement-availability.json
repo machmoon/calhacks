@@ -1,0 +1,186 @@
+{
+  "date": "2026-10-24",
+  "purchased": false,
+  "rows": [
+    {
+      "bom_id": "lift_motor",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "lift_prop",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "cruise_motor",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "cruise_prop",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "esc",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "cruise_esc",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "fc",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "power",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "bec",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "gps",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "rx",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "radio",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "airspeed",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "servo",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "battery",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "spar",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "booms",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "pushrods",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "power_distribution",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "battery_connector",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "power_harness",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": false,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "signal_harness",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": false,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "hinges",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "battery_retention",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "landing_gear",
+      "availability": "custom fabrication; no purchased SKU",
+      "ready_to_order_exact_quantity": false,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "fasteners_and_inserts",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": false,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "controller_isolation",
+      "availability": "manufacturer in-stock observed; volatile",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "control_horns_and_retainers",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "protection",
+      "availability": "catalog exists; stock not independently frozen",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    },
+    {
+      "bom_id": "cruise_battery",
+      "availability": "manufacturer in-stock indicator fewer than20 observed; volatile",
+      "ready_to_order_exact_quantity": true,
+      "installed_compatible": false
+    }
+  ]
+}

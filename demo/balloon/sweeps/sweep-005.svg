@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" font-family="sans-serif" font-size="11">
+<rect width="480" height="320" fill="white"/>
+<line x1="44" y1="276" x2="436" y2="276" stroke="#444"/>
+<line x1="44" y1="44" x2="44" y2="276" stroke="#444"/>
+<text x="240" y="310" text-anchor="middle">burst altitude m (CUSF closed-form estimate)</text>
+<text x="12" y="160" text-anchor="middle" transform="rotate(-90 12 160)">Burst altitude</text>
+<text x="44" y="288" font-size="9">34832</text><text x="436" y="288" font-size="9" text-anchor="end">36797</text>
+<text x="41" y="276" font-size="9" text-anchor="end">34148</text><text x="41" y="44" font-size="9" text-anchor="end">35911</text>
+<circle cx="236.9" cy="162.7" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#0: totex-1600, 1900</title></circle>
+<circle cx="196.2" cy="187.8" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#1: totex-1600, 2000</title></circle>
+<circle cx="156.6" cy="209.5" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#2: totex-1600, 2100</title></circle>
+<circle cx="118.1" cy="232.0" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#3: totex-1600, 2200</title></circle>
+<circle cx="80.6" cy="252.9" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#4: totex-1600, 2300</title></circle>
+<circle cx="44.0" cy="276.0" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#5: totex-1600, 2400</title></circle>
+<circle cx="364.4" cy="85.5" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#6: hwoyee-1600, 1900</title></circle>
+<circle cx="323.7" cy="112.2" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#7: hwoyee-1600, 2000</title></circle>
+<circle cx="284.1" cy="136.0" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#8: hwoyee-1600, 2100</title></circle>
+<circle cx="245.6" cy="156.5" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#9: hwoyee-1600, 2200</title></circle>
+<circle cx="208.1" cy="180.1" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#10: hwoyee-1600, 2300</title></circle>
+<circle cx="171.5" cy="201.7" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#11: hwoyee-1600, 2400</title></circle>
+<circle cx="436.0" cy="44.0" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#12: totex-2000, 1900</title></circle>
+<circle cx="399.4" cy="67.1" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#13: totex-2000, 2000</title></circle>
+<circle cx="363.8" cy="85.7" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#14: totex-2000, 2100</title></circle>
+<circle cx="329.0" cy="107.4" r="4" fill="white" stroke="#d9480f" stroke-width="1.5"><title>#15: totex-2000, 2200</title></circle>
+<circle cx="295.0" cy="129.7" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#16: totex-2000, 2300</title></circle>
+<circle cx="261.8" cy="147.0" r="4" fill="white" stroke="#868e96" stroke-width="1.5"><title>#17: totex-2000, 2400</title></circle>
+<text x="436" y="36" font-size="9" text-anchor="end" fill="#555">filled = passes every check; orange = Pareto front</text>
+</svg>

@@ -1,0 +1,13 @@
+[package]
+name = "wright-kicad"
+description = "KiCad library reader (.kicad_mod/.kicad_sym), .kicad_pcb/.kicad_pro writer, kicad-cli ERC/DRC/parity/STEP runner (electronics lane A)"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+anyhow.workspace = true
+wright-eda = { path = "../wright-eda" }
+

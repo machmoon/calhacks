@@ -1,0 +1,61 @@
+{
+  "kind": "sim",
+  "title": "totex-3000 flown on the GFS forecast for 2026-10-25T16:00:00Z (dataset 2026-10-24T12:00:00Z)",
+  "items": [
+    {
+      "label": "flight animation",
+      "path": "flight.mp4",
+      "media": "mp4",
+      "summary": "ascent, burst and descent on GFS 2026-10-24T12:00:00Z: Wright's model (red), Tawhiri's model on the same winds (green), the live Tawhiri prediction (blue, when fetched for this design), Wright on its assumed winds (grey)",
+      "metrics": {
+        "flight_min": 177.18017712475492,
+        "landing_km": 59.62310710638093
+      }
+    },
+    {
+      "label": "flight track",
+      "path": "flight.png",
+      "media": "png",
+      "summary": "ascent, burst and descent on GFS 2026-10-24T12:00:00Z: Wright's model (red), Tawhiri's model on the same winds (green), the live Tawhiri prediction (blue, when fetched for this design), Wright on its assumed winds (grey)",
+      "metrics": {
+        "flight_min": 177.18017712475492,
+        "landing_km": 59.62310710638093
+      }
+    },
+    {
+      "label": "flight tracks",
+      "path": "tracks.csv",
+      "media": "csv",
+      "summary": "every track: time, lat, lon, altitude, phase",
+      "metrics": {}
+    },
+    {
+      "label": "Wright vs Tawhiri",
+      "path": "comparison.json",
+      "media": "json",
+      "summary": "lands 60 km at 87 deg after 177 min on GFS winds (assumed profile: 137 km); Tawhiri's model on the same winds lands 4.6 km away",
+      "metrics": {
+        "landing_km": 59.62310710638093,
+        "separation_vs_tawhiri_model_km": 4.578631797018687
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "checks_on_forecast_winds",
+      "passed": true,
+      "detail": "all 26 checks pass with the GFS winds of 2026-10-24T12:00:00Z"
+    },
+    {
+      "name": "landing_inside_recovery_area",
+      "passed": true,
+      "detail": "predicted landing 60 km from launch; link_primary and recovery_probability on these winds pass"
+    },
+    {
+      "name": "agrees_with_tawhiri",
+      "passed": true,
+      "detail": "landings 4.6 km apart (tolerance 6.0 km)"
+    }
+  ],
+  "input_hash": "71c1147737bc7918"
+}

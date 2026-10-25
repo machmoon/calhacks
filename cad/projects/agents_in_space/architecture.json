@@ -1,0 +1,91 @@
+{
+  "source": "User hardware architecture screenshot, 2026-10-24",
+  "scope": "Mechanical routing requirements transcribed from sketch; not a validated wiring schematic",
+  "connections": [
+    {
+      "from": "battery",
+      "to": "regulator",
+      "kind": "power",
+      "instance_assignment": "unspecified"
+    },
+    {
+      "from": "battery",
+      "to": "mosfet",
+      "kind": "power",
+      "instance_assignment": "unspecified"
+    },
+    {
+      "from": "mosfet",
+      "to": "jetson",
+      "kind": "switched power",
+      "label_as_drawn": "JZ-MOS / E Switch"
+    },
+    {
+      "from": "jetson",
+      "to": "esp32",
+      "kind": "USB",
+      "label_as_drawn": "USB-C",
+      "instance_assignment": "unspecified"
+    },
+    {
+      "from": "camera",
+      "to": "jetson",
+      "kind": "camera data",
+      "label_as_drawn": "Logitech BRIO"
+    },
+    {
+      "from": "gps",
+      "to": "esp32",
+      "kind": "data",
+      "label_as_drawn": "I2C nearby; association uncertain",
+      "electrical_interface_verified": false
+    },
+    {
+      "from": "receiver",
+      "to": "esp32",
+      "kind": "data",
+      "label_as_drawn": "I2C?",
+      "electrical_interface_verified": false
+    },
+    {
+      "from": "jetson",
+      "to": "video_converter_unlisted",
+      "kind": "video",
+      "label_as_drawn": "HDMI via USB; transcription uncertain"
+    },
+    {
+      "from": "video_converter_unlisted",
+      "to": "vtx",
+      "kind": "analog video"
+    },
+    {
+      "from": "vtx",
+      "to": "ground_station",
+      "kind": "RF video link",
+      "antenna_geometry_verified": false
+    },
+    {
+      "from": "receiver",
+      "to": "ground_station",
+      "kind": "915 MHz radio link",
+      "antenna_geometry_verified": false
+    }
+  ],
+  "unresolved": [
+    "Diagram labels battery 5S2P; latest table specifies 4S 6000 mAh",
+    "Diagram shows fewer regulator/ESP32 instances than table; instance wiring not assigned",
+    "Video converter is drawn but omitted from hardware table",
+    "Sketch GPS/receiver I2C labels are not validated interface specifications",
+    "RadioMaster 2.4 GHz transmitter/receiver and AirTag are drawn but not in current table",
+    "GPS, radio and video antenna placement/keepouts unspecified",
+    "Suspension, parachute attachment and structural load path not dimensioned"
+  ],
+  "mechanical_requirements": [
+    "Jetson cooler airflow and cable access",
+    "BRIO optical field of view",
+    "RF antenna separation/clearance after actual antenna selection",
+    "Power switch and battery service access",
+    "Cable routes between the connected modules",
+    "Retention and strain relief for every mounted module"
+  ]
+}

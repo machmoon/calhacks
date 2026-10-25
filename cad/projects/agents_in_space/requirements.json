@@ -1,0 +1,114 @@
+{
+  "project": "Palloon Systems / Agents in Space",
+  "source_confirmed_by_user": "Hosted on Functor Systems",
+  "sources": [
+    {
+      "url": "https://code.functor.systems/youwen/hack-2026/src/commit/6366936b69f58bc334cf652ba3a6a5f906a6dbac/docs/edge-mission.md",
+      "role": "Mission brief; balloon edge observations, local evidence storage and intermittent radio"
+    },
+    {
+      "url": "https://code.functor.systems/youwen/lumberloon/src/commit/7ba04d12ae0c14e68bff782e7184609284449483/README.md",
+      "role": "Actual Jetson hardware and ground-test evidence; supersedes the older mission brief's unverified-boot note"
+    },
+    {
+      "url": "https://code.functor.systems/youwen/hack-2026/src/commit/6366936b69f58bc334cf652ba3a6a5f906a6dbac/video-pi/README.md",
+      "role": "Identifies replacement Pi 5 4GB and Logitech C270; distinguishes original Pi validation from replacement hardware"
+    },
+    {
+      "source": "User supplied hardware diagram and BOM, 2026-10-24",
+      "role": "Current payload hardware list; supersedes unspecified webcam/radio/battery families for the current layout",
+      "local_bom": "hardware-bom.json",
+      "diagram": "references/hardware-architecture-user.png"
+    }
+  ],
+  "payload_nodes": [
+    {
+      "id": "jetson",
+      "hardware": "NVIDIA Jetson Orin Nano Super 8 GB developer kit",
+      "storage": "128 GB microSD",
+      "evidence": "Ground GPU inference and USB webcam capture documented in lumberloon README",
+      "interfaces_to_preserve": [
+        "DC power",
+        "USB camera and ESP32",
+        "microSD access",
+        "cooler clearance",
+        "DisplayPort cable route"
+      ],
+      "mechanical_dimensions_verified": false,
+      "cad_status": "not yet modeled",
+      "camera": "Logitech BRIO 4K (current user BOM)",
+      "board_envelope_mm": [
+        100,
+        79,
+        null
+      ],
+      "assembled_envelope_mm": [
+        103.2,
+        90.7,
+        35.86
+      ],
+      "mechanical_reference": "references/jetson-dimensions.json"
+    },
+    {
+      "id": "pi",
+      "hardware": "Raspberry Pi 5 4GB (replacement for failed Pi 5 8GB)",
+      "independent_airborne_node": true,
+      "mechanical_dimensions_verified": false,
+      "cad_status": "Preliminary native mounting-pattern fixture passes geometry checks; full board/component fit remains unverified",
+      "mounting_pattern_reference": "references/pi5-dimensions.json",
+      "current_bom_status": "Not listed in current user BOM; preserve as separate historical configuration"
+    }
+  ],
+  "other_hardware_evidence": [
+    {
+      "item": "Pi USB webcam",
+      "model": "Logitech C270",
+      "status": "Original Pi capture demonstrated; replacement Pi validation required"
+    },
+    {
+      "item": "Insta360 camera",
+      "model": null,
+      "status": "Onboard recording for post-flight recovery; model not established"
+    },
+    {
+      "item": "ESP32 USB board",
+      "model": "NodeMCU ESP32S family",
+      "status": "Multiple USB bridge variants mentioned; exact geometry not yet established"
+    },
+    {
+      "item": "DP-to-HDMI-to-analog video link",
+      "model": null,
+      "status": "Physical output chain unverified in project evidence"
+    }
+  ],
+  "required_cad_evidence": [
+    "Sourced board outlines, mounting holes, cooler and connector keepouts",
+    "Separate Jetson and Pi payload layouts unless newer project evidence changes the architecture",
+    "Accessible storage, power disconnect, camera field of view and cable routing",
+    "Defined suspension load path, closure and service access",
+    "Measured or sourced battery and radio geometry",
+    "All-pairs physical interference and explicit contact checks",
+    "Manufacturable enclosure parts with export/reimport validation"
+  ],
+  "unknowns": [
+    "Jetson mounting-hole locations, plugged-cable and cooling keepouts; confirm physical configuration matches reference kit",
+    "Custom battery finished-pack dimensions and measured mass; table specifies 4S 6000 mAh, diagram differs",
+    "Regulator, MOSFET, buck converter and CR8 receiver exact dimensions",
+    "Mounting-hole patterns and board variants",
+    "Camera bracket and cable geometry",
+    "Whether Pi/C270 or Insta360 remains in current payload",
+    "Flight thermal envelope",
+    "Payload mass limit",
+    "Suspension/attachment details"
+  ],
+  "unavailable_sources": [
+    "https://code.functor.systems/youwen/allspark (404 without sign-in)",
+    "https://code.functor.systems/youwen/handoff (404 without sign-in)"
+  ],
+  "complete": false,
+  "current_hardware_bom": "hardware-bom.json",
+  "configuration_policy": "Current BOM drives new payload layout. Prior Pi/C270 and Insta360 evidence remains historical/optional, not silently added to current BOM.",
+  "architecture_reference": "architecture.json",
+  "envelope_library": "../../../out/palloon-hardware-envelopes/assembly.FCStd",
+  "current_envelope_scope": "Eight full 3D envelopes (Jetson uses sourced assembled maximum bounds), with separate carrier footprint; display catalogue, not resolved payload layout"
+}

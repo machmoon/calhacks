@@ -1,0 +1,34 @@
+{
+  "url": "https://github.com/davesrocketshop/Rocket",
+  "commit": "20f74c12ad0c4b89cfe3a264bea476ff83443af8",
+  "license": "LGPL-2.1",
+  "local_path": "/Users/patliu/Library/Application Support/FreeCAD/v1-1/Mod/Rocket",
+  "patch": "rocket-headless.patch",
+  "patch_sha256": "74526533528c151f34decb0240eb7b92500040d925441ec4ceb58c09c1c099ed",
+  "purpose": "Headless guards, document preferences, nose/coupler hierarchy, documented 1.11 rigid-CAD subset, and source rail-button spool patterns. Full recovery and manufacturing coverage remain incomplete.",
+  "full_imports_passed": false,
+  "patches": [
+    {
+      "file": "rocket-headless.patch",
+      "sha256": "74526533528c151f34decb0240eb7b92500040d925441ec4ceb58c09c1c099ed"
+    },
+    {
+      "file": "rocket-compat.patch",
+      "sha256": "1e3362067408820bc9c63e93f6425679f0a81b45fc54041ee804b472b8836ec4"
+    },
+    {
+      "file": "rocket-railbutton.patch",
+      "sha256": "5a5a6e973416ff36170ace67a8f097cd04d7fb8e49e2d027a5cbc59446113b4f"
+    }
+  ],
+  "import_health_examples_passed": 3,
+  "full_component_coverage_passed": false,
+  "supported_cad_formats_tested": [
+    "1.10",
+    "1.11"
+  ],
+  "unsupported_versions_still_rejected": [
+    "1.12",
+    "2.0"
+  ]
+}

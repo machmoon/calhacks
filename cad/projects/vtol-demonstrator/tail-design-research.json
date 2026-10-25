@@ -1,0 +1,42 @@
+{
+  "status": "research_recommendation_not_validated_geometry",
+  "rejected": "R8 arch tail with vertical fins and raised flat center roof",
+  "preserve": [
+    "rear pusher",
+    "curved main-wing winglets"
+  ],
+  "recommended_candidate": "Two-surface inverted-V directly supported by twin booms; remove separate vertical fins and flat center roof",
+  "alternatives": [
+    {
+      "layout": "tapered H-tail",
+      "judgment": "Smallest architectural departure; separate pitch/yaw surfaces; silhouette can be improved with sweep and taper without bending into an arch"
+    },
+    {
+      "layout": "upright V-tail",
+      "judgment": "Requires a coherent center support arrangement for the existing twin booms; avoid unsupported center junction"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://esdpubs.nasa.gov/aircraft/Mk_44_Aerosonde",
+      "evidence": "NASA explicitly describes rear engine, high wing, twin tailbooms and inverted V tail."
+    },
+    {
+      "url": "https://www.fva.rwth-aachen.de/en/2020/01/29/v-tail/",
+      "evidence": "Designer documents pitch/yaw control mixing, combined deflection limits and longitudinal/lateral sizing with AVL; values are for FVA-30, not this aircraft."
+    },
+    {
+      "url": "https://www.zipline.com/about/zipline-fact-sheet",
+      "image": "https://a-us.storyblok.com/f/1003963/1856x1226/8c8d623b46/p2-flying.png",
+      "evidence": "Visual inspection shows connected inclined aft members between wing ends and aft body. Image does not provide dimensions, structural details or control architecture."
+    }
+  ],
+  "required_checks": [
+    "horizontal and vertical projected area and tail moment arms",
+    "CG range and pitch/yaw trim/control authority",
+    "combined ruddervator travel and servo linkage",
+    "pusher sweep and flow interactions",
+    "structural load path and removable joints"
+  ],
+  "limitations": "No aerodynamic superiority inferred from appearance or another aircraft. R8 tail is rejected and not promoted."
+}

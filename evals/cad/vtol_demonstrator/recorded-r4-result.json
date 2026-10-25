@@ -1,0 +1,65 @@
+{
+  "revision": "layout-r4-airframe-interfaces",
+  "native_sha256": "3ec86dd68b88feff0e703e88b6265485b93a92772242c9c20d09c19879d86708",
+  "source_unchanged": true,
+  "result_path": "out/vtol-demonstrator-r4/independent-audit/result-topology-qualified.json",
+  "result_sha256": "24b60093048655fb972877ba4ccf17d0f3f8b6025d762e17923434b5bbbaaca0",
+  "gates": {
+    "frozen_hardware_package": "pending",
+    "bom_geometry_coverage": "pending",
+    "electrical_and_wiring": "pending",
+    "native_geometry": "failed",
+    "all_pair_collisions": "pending",
+    "attachment_contacts": "pending",
+    "propeller_sweeps": "inconclusive",
+    "control_and_linkage_motion": "pending",
+    "service_access": "pending",
+    "connector_thermal_routing": "pending",
+    "load_paths": "pending",
+    "span_chord_boom_servo_battery_edits": "failed",
+    "native_reopen": "failed",
+    "exports": "pending",
+    "current_wing_analysis": "passed",
+    "mass_propulsion_performance": "pending",
+    "views_and_assembly_evidence": "pending"
+  },
+  "physical_count": 63,
+  "collision_instances": 71,
+  "pairs": 2485,
+  "overlapping_pairs": 0,
+  "unmet_contacts": 0,
+  "disconnected_manufactured_parts": [
+    {
+      "name": "BatteryTrayCut1",
+      "solids": 3
+    }
+  ],
+  "parameter_dimensions": {
+    "span": {
+      "right_tip": true,
+      "left_tip": true
+    },
+    "chord": {
+      "root_section_scale": true
+    },
+    "boom_spacing": {
+      "right_center": true,
+      "left_center": true
+    },
+    "battery": {
+      "XLength": true,
+      "YLength": true,
+      "ZLength": true
+    },
+    "servo_reservation": {
+      "ServoReservationRight": true,
+      "ServoReservationLeft": true
+    },
+    "servo_hardware_fit": null
+  },
+  "parameter_and_reopen_acceptance": "Failed because tray remains disconnected, even though geometric dependencies regenerate",
+  "clamp_driver_paths": "All8proposed\u00d86\u00d7200mm straight upward paths clear; full service scope stillpending",
+  "lift_sweeps": "Conservativeannular envelope intersects ownmotors; exactsweep needed, no falsecollisionclaim",
+  "current_wing_analysis": "passed numerical checks; wing-only",
+  "scope": "Authored r4 repair evaluated independently; not fresh one-shot model success or completeVTOL"
+}

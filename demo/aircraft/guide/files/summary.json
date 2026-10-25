@@ -1,0 +1,258 @@
+{
+  "grams": 561.5600000000001,
+  "hours": 61.5,
+  "pieces": [
+    {
+      "filament": "bambu_pla_aero",
+      "gcode": "demo/aircraft/print/wing_R_0.gcode",
+      "grams": 27.23,
+      "index": 0,
+      "part": "wing_R",
+      "seconds": 16022.0,
+      "stl": "demo/aircraft/print/wing_R_0.stl"
+    },
+    {
+      "filament": "bambu_pla_aero",
+      "gcode": "demo/aircraft/print/wing_R_1.gcode",
+      "grams": 27.23,
+      "index": 1,
+      "part": "wing_R",
+      "seconds": 16022.0,
+      "stl": "demo/aircraft/print/wing_R_1.stl"
+    },
+    {
+      "filament": "bambu_pla_aero",
+      "gcode": "demo/aircraft/print/wing_R_2.gcode",
+      "grams": 27.23,
+      "index": 2,
+      "part": "wing_R",
+      "seconds": 16022.0,
+      "stl": "demo/aircraft/print/wing_R_2.stl"
+    },
+    {
+      "filament": "bambu_petg_basic",
+      "gcode": "demo/aircraft/print/boom_clamp_R0_0.gcode",
+      "grams": 5.14,
+      "index": 0,
+      "part": "boom_clamp_R0",
+      "seconds": 1220.0,
+      "stl": "demo/aircraft/print/boom_clamp_R0_0.stl"
+    },
+    {
+      "filament": "bambu_petg_basic",
+      "gcode": "demo/aircraft/print/boom_clamp_R1_0.gcode",
+      "grams": 6.6,
+      "index": 0,
+      "part": "boom_clamp_R1",
+      "seconds": 1589.0,
+      "stl": "demo/aircraft/print/boom_clamp_R1_0.stl"
+    },
+    {
+      "filament": "bambu_petg_basic",
+      "gcode": "demo/aircraft/print/lift_mount_FR_0.gcode",
+      "grams": 6.55,
+      "index": 0,
+      "part": "lift_mount_FR",
+      "seconds": 1674.0,
+      "stl": "demo/aircraft/print/lift_mount_FR_0.stl"
+    },
+    {
+      "filament": "bambu_petg_basic",
+      "gcode": "demo/aircraft/print/leg_FR_0.gcode",
+      "grams": 51.97,
+      "index": 0,
+      "part": "leg_FR",
+      "seconds": 11774.0,
+      "stl": "demo/aircraft/print/leg_FR_0.stl"
+    },
+    {
+      "filament": "bambu_petg_basic",
+      "gcode": "demo/aircraft/print/lift_mount_RR_0.gcode",
+      "grams": 6.55,
+      "index": 0,
+      "part": "lift_mount_RR",
+      "seconds": 1674.0,
+      "stl": "demo/aircraft/print/lift_mount_RR_0.stl"
+    },
+    {
+      "filament": "bambu_petg_basic",
+      "gcode": "demo/aircraft/print/leg_RR_0.gcode",
+      "grams": 51.97,
+      "index": 0,
+      "part": "leg_RR",
+      "seconds": 11774.0,
+      "stl": "demo/aircraft/print/leg_RR_0.stl"
+    },
+    {
+      "filament": "bambu_petg_basic",
+      "gcode": "demo/aircraft/print/tail_joint_R_0.gcode",
+      "grams": 15.41,
+      "index": 0,
+      "part": "tail_joint_R",
+      "seconds": 3597.0,
+      "stl": "demo/aircraft/print/tail_joint_R_0.stl"
+    },
+    {
+      "filament": "bambu_pla_aero",
+      "gcode": "demo/aircraft/print/fin_R_0.gcode",
+      "grams": 5.07,
+      "index": 0,
+      "part": "fin_R",
+      "seconds": 3222.0,
+      "stl": "demo/aircraft/print/fin_R_0.stl"
+    },
+    {
+      "filament": "bambu_pla_aero",
+      "gcode": "demo/aircraft/print/wing_L_0.gcode",
+      "grams": 27.23,
+      "index": 0,
+      "part": "wing_L",
+      "seconds": 16022.0,
+      "stl": "demo/aircraft/print/wing_L_0.stl"
+    },
+    {
+      "filament": "bambu_pla_aero",
+      "gcode": "demo/aircraft/print/wing_L_1.gcode",
+      "grams": 27.23,
+      "index": 1,
+      "part": "wing_L",
+      "seconds": 16022.0,
+      "stl": "demo/aircraft/print/wing_L_1.stl"
+    },
+    {
+      "filament": "bambu_pla_aero",
+      "gcode": "demo/aircraft/print/wing_L_2.gcode",
+      "grams": 27.23,
+      "index": 2,
+      "part": "wing_L",
+      "seconds": 16022.0,
+      "stl": "demo/aircraft/print/wing_L_2.stl"
+    },
+    {
+      "filament": "bambu_petg_basic",
+      "gcode": "demo/aircraft/print/boom_clamp_L0_0.gcode",
+      "grams": 5.14,
+      "index": 0,
+      "part": "boom_clamp_L0",
+      "seconds": 1220.0,
+      "stl": "demo/aircraft/print/boom_clamp_L0_0.stl"
+    },
+    {
+      "filament": "bambu_petg_basic",
+      "gcode": "demo/aircraft/print/boom_clamp_L1_0.gcode",
+      "grams": 6.6,
+      "index": 0,
+      "part": "boom_clamp_L1",
+      "seconds": 1589.0,
+      "stl": "demo/aircraft/print/boom_clamp_L1_0.stl"
+    },
+    {
+      "filament": "bambu_petg_basic",
+      "gcode": "demo/aircraft/print/lift_mount_FL_0.gcode",
+      "grams": 6.55,
+      "index": 0,
+      "part": "lift_mount_FL",
+      "seconds": 1674.0,
+      "stl": "demo/aircraft/print/lift_mount_FL_0.stl"
+    },
+    {
+      "filament": "bambu_petg_basic",
+      "gcode": "demo/aircraft/print/leg_FL_0.gcode",
+      "grams": 51.97,
+      "index": 0,
+      "part": "leg_FL",
+      "seconds": 11774.0,
+      "stl": "demo/aircraft/print/leg_FL_0.stl"
+    },
+    {
+      "filament": "bambu_petg_basic",
+      "gcode": "demo/aircraft/print/lift_mount_RL_0.gcode",
+      "grams": 6.55,
+      "index": 0,
+      "part": "lift_mount_RL",
+      "seconds": 1674.0,
+      "stl": "demo/aircraft/print/lift_mount_RL_0.stl"
+    },
+    {
+      "filament": "bambu_petg_basic",
+      "gcode": "demo/aircraft/print/leg_RL_0.gcode",
+      "grams": 51.97,
+      "index": 0,
+      "part": "leg_RL",
+      "seconds": 11774.0,
+      "stl": "demo/aircraft/print/leg_RL_0.stl"
+    },
+    {
+      "filament": "bambu_petg_basic",
+      "gcode": "demo/aircraft/print/tail_joint_L_0.gcode",
+      "grams": 15.41,
+      "index": 0,
+      "part": "tail_joint_L",
+      "seconds": 3597.0,
+      "stl": "demo/aircraft/print/tail_joint_L_0.stl"
+    },
+    {
+      "filament": "bambu_pla_aero",
+      "gcode": "demo/aircraft/print/fin_L_0.gcode",
+      "grams": 5.07,
+      "index": 0,
+      "part": "fin_L",
+      "seconds": 3222.0,
+      "stl": "demo/aircraft/print/fin_L_0.stl"
+    },
+    {
+      "filament": "bambu_pla_aero",
+      "gcode": "demo/aircraft/print/h_stab_0.gcode",
+      "grams": 8.25,
+      "index": 0,
+      "part": "h_stab",
+      "seconds": 5005.0,
+      "stl": "demo/aircraft/print/h_stab_0.stl"
+    },
+    {
+      "filament": "bambu_pla_aero",
+      "gcode": "demo/aircraft/print/h_stab_1.gcode",
+      "grams": 8.25,
+      "index": 1,
+      "part": "h_stab",
+      "seconds": 5005.0,
+      "stl": "demo/aircraft/print/h_stab_1.stl"
+    },
+    {
+      "filament": "bambu_pla_aero",
+      "gcode": "demo/aircraft/print/h_stab_2.gcode",
+      "grams": 8.25,
+      "index": 2,
+      "part": "h_stab",
+      "seconds": 5005.0,
+      "stl": "demo/aircraft/print/h_stab_2.stl"
+    },
+    {
+      "filament": "bambu_pla_aero",
+      "gcode": "demo/aircraft/print/pod_0.gcode",
+      "grams": 28.23,
+      "index": 0,
+      "part": "pod",
+      "seconds": 15872.0,
+      "stl": "demo/aircraft/print/pod_0.stl"
+    },
+    {
+      "filament": "bambu_pla_aero",
+      "gcode": "demo/aircraft/print/pod_1.gcode",
+      "grams": 30.78,
+      "index": 1,
+      "part": "pod",
+      "seconds": 17710.0,
+      "stl": "demo/aircraft/print/pod_1.stl"
+    },
+    {
+      "filament": "bambu_petg_basic",
+      "gcode": "demo/aircraft/print/pusher_mount_0.gcode",
+      "grams": 15.9,
+      "index": 0,
+      "part": "pusher_mount",
+      "seconds": 3623.0,
+      "stl": "demo/aircraft/print/pusher_mount_0.stl"
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "exception": "Original object preservation check failed: ['Link_base_link', 'Link_shoulder_link', 'Link_upper_arm_link', 'Link_lower_arm_link', 'Link_wrist_link', 'Link_gripper_link', 'JointOrigin_wrist_roll', 'JointOrigin_wrist_flex', 'JointOrigin_elbow_flex', 'JointOrigin_shoulder_lift', 'JointOrigin_shoulder_pan']",
+  "deltas": {
+    "Link_base_link": {
+      "brep": {
+        "before": null,
+        "after": "57e887dfc4ccf455aeb9d5bae70826a890c1c0a17bf853359680816724e18921"
+      }
+    },
+    "Link_shoulder_link": {
+      "brep": {
+        "before": null,
+        "after": "703ce3ef705cb95e61398fd29b0b53eea109f1f24965fa0bfa0e35e3381b3ff3"
+      }
+    },
+    "Link_upper_arm_link": {
+      "brep": {
+        "before": null,
+        "after": "0a0a2bb673ba6b35b4cd65ae48086c11e9600424d176f8dab86cb3fc47bf9c48"
+      }
+    },
+    "Link_lower_arm_link": {
+      "brep": {
+        "before": null,
+        "after": "4f93cad223af8ab7e9b985da9e49849b4cabbec96cf3c26306343bcb41cf8aff"
+      }
+    },
+    "Link_wrist_link": {
+      "brep": {
+        "before": null,
+        "after": "5501a48f4f3d676fca1503a766237909e898016ecd916b8f837f7b095ff50489"
+      }
+    },
+    "Link_gripper_link": {
+      "children": {
+        "before": [
+          "Link_gripper_frame_link",
+          "JointOrigin_gripper",
+          "Visual_gripper_link_0",
+          "Visual_gripper_link_1"
+        ],
+        "after": [
+          "Link_gripper_frame_link",
+          "JointOrigin_gripper",
+          "Visual_gripper_link_0",
+          "Visual_gripper_link_1",
+          "CameraMountAssembly"
+        ]
+      },
+      "brep": {
+        "before": null,
+        "after": "d705ba2502ad0962e9975a33200b2c86d95b8178937b9eef2ca1de88889b9437"
+      }
+    },
+    "JointOrigin_wrist_roll": {
+      "brep": {
+        "before": null,
+        "after": "25f84788cac0069dd9cb408f899a28f4d05367824c8907fe3881882ecc33b163"
+      },
+      "joint": {
+        "before": {
+          "Color": "(1.0, 1.0, 1.0, 0.0)",
+          "ExpressionEngine": "[]",
+          "Id": "",
+          "Label": "wrist_roll \u2014 fixed URDF origin",
+          "Label2": "",
+          "License": "",
+          "LicenseURL": "",
+          "Material": "None",
+          "Meta": "{}",
+          "Origin": "<GeoFeature object>",
+          "Placement": "Placement [Pos=(5.55e-14,-61.1,18.1), Yaw-Pitch-Roll=(180,2.78913,90.0002)]",
+          "Type": "",
+          "Uid": "d3caf437-fade-485f-919f-0786b7bc4e8f",
+          "Visibility": "True",
+          "_ElementMapVersion": "",
+          "_GroupTouched": "False"
+        },
+        "after": {
+          "Color": "(1.0, 1.0, 1.0, 0.0)",
+          "ExpressionEngine": "[]",
+          "Id": "",
+          "Label": "wrist_roll \u2014 fixed URDF origin",
+          "Label2": "",
+          "License": "",
+          "LicenseURL": "",
+          "Material": "None",
+          "Meta": "{}",
+          "Origin": "<GeoFeature object>",
+          "Placement": "Placement [Pos=(5.55e-14,-61.1,18.1), Yaw-Pitch-Roll=(180,2.78913,90.0002)]",
+          "Type": "",
+          "Uid": "d3caf437-fade-485f-919f-0786b7bc4e8f",
+          "Visibility": "True",
+          "_ElementMapVersion": "",
+          "_GroupTouched": "False",
+          "_Part_ShapeCache": "[('', <Compound object at 0x133c50870>)]"
+        }
+      }
+    },
+    "JointOrigin_wrist_flex": {
+      "brep": {
+        "before": null,
+        "after": "6b36c9289f5d010fabbee468961f85b6350a28b819568049187c726190ecaa0d"
+      },
+      "joint": {
+        "before": {
+          "Color": "(1.0, 1.0, 1.0, 0.0)",
+          "ExpressionEngine": "[]",
+          "Id": "",
+          "Label": "wrist_flex \u2014 fixed URDF origin",
+          "Label2": "",
+          "License": "",
+          "LicenseURL": "",
+          "Material": "None",
+          "Meta": "{}",
+          "Origin": "<GeoFeature object>",
+          "Placement": "Placement [Pos=(-134.9,5.2,3.62e-14), Yaw-Pitch-Roll=(-90.0002,4.58371e-14,2.29183e-13)]",
+          "Type": "",
+          "Uid": "64a49cd5-3543-42dc-bc1f-cabddb5c232d",
+          "Visibility": "True",
+          "_ElementMapVersion": "",
+          "_GroupTouched": "False"
+        },
+        "after": {
+          "Color": "(1.0, 1.0, 1.0, 0.0)",
+          "ExpressionEngine": "[]",
+          "Id": "",
+          "Label": "wrist_flex \u2014 fixed URDF origin",
+          "Label2": "",
+          "License": "",
+          "LicenseURL": "",
+          "Material": "None",
+          "Meta": "{}",
+          "Origin": "<GeoFeature object>",
+          "Placement": "Placement [Pos=(-134.9,5.2,3.62e-14), Yaw-Pitch-Roll=(-90.0002,4.58371e-14,2.29183e-13)]",
+          "Type": "",
+          "Uid": "64a49cd5-3543-42dc-bc1f-cabddb5c232d",
+          "Visibility": "True",
+          "_ElementMapVersion": "",
+          "_GroupTouched": "False",
+          "_Part_ShapeCache": "[('', <Compound object at 0x133c50870>)]"
+        }
+      }
+    },
+    "JointOrigin_elbow_flex": {
+      "brep": {
+        "before": null,
+        "after": "35d35737ead9a2c7b0b57535e9fa317c8161b7b9511383fd235ec5ca7b8c8696"
+      },
+      "joint": {
+        "before": {
+          "Color": "(1.0, 1.0, 1.0, 0.0)",
+          "ExpressionEngine": "[]",
+          "Id": "",
+          "Label": "elbow_flex \u2014 fixed URDF origin",
+          "Label2": "",
+          "License": "",
+          "LicenseURL": "",
+          "Material": "None",
+          "Meta": "{}",
+          "Origin": "<GeoFeature object>",
+          "Placement": "Placement [Pos=(-112.57,-28,1.738e-13), Yaw-Pitch-Roll=(90.0002,5.15663e-14,-1.71887e-14)]",
+          "Type": "",
+          "Uid": "12e97332-17b4-4b50-922e-71f160962513",
+          "Visibility": "True",
+          "_ElementMapVersion": "",
+          "_GroupTouched": "False"
+        },
+        "after": {
+          "Color": "(1.0, 1.0, 1.0, 0.0)",
+          "ExpressionEngine": "[]",
+          "Id": "",
+          "Label": "elbow_flex \u2014 fixed URDF origin",
+          "Label2": "",
+          "License": "",
+          "LicenseURL": "",
+          "Material": "None",
+          "Meta": "{}",
+          "Origin": "<GeoFeature object>",
+          "Placement": "Placement [Pos=(-112.57,-28,1.738e-13), Yaw-Pitch-Roll=(90.0002,5.15663e-14,-1.71887e-14)]",
+          "Type": "",
+          "Uid": "12e97332-17b4-4b50-922e-71f160962513",
+          "Visibility": "True",
+          "_ElementMapVersion": "",
+          "_GroupTouched": "False",
+          "_Part_ShapeCache": "[('', <Compound object at 0x133c50870>)]"
+        }
+      }
+    },
+    "JointOrigin_shoulder_lift": {
+      "brep": {
+        "before": null,
+        "after": "ff7cf3fefba91e2455dc2740e9b44fa66aebdfea517d575e0f1f480c20b118f8"
+      },
+      "joint": {
+        "before": {
+          "Color": "(1.0, 1.0, 1.0, 0.0)",
+          "ExpressionEngine": "[]",
+          "Id": "",
+          "Label": "shoulder_lift \u2014 fixed URDF origin",
+          "Label2": "",
+          "License": "",
+          "LicenseURL": "",
+          "Material": "None",
+          "Meta": "{}",
+          "Origin": "<GeoFeature object>",
+          "Placement": "Placement [Pos=(-30.3992,-18.2778,-54.2), Yaw-Pitch-Roll=(180,-89.9998,89.9998)]",
+          "Type": "",
+          "Uid": "cc7e8622-6af7-4341-b0d9-7f6ef0af1dd0",
+          "Visibility": "True",
+          "_ElementMapVersion": "",
+          "_GroupTouched": "False"
+        },
+        "after": {
+          "Color": "(1.0, 1.0, 1.0, 0.0)",
+          "ExpressionEngine": "[]",
+          "Id": "",
+          "Label": "shoulder_lift \u2014 fixed URDF origin",
+          "Label2": "",
+          "License": "",
+          "LicenseURL": "",
+          "Material": "None",
+          "Meta": "{}",
+          "Origin": "<GeoFeature object>",
+          "Placement": "Placement [Pos=(-30.3992,-18.2778,-54.2), Yaw-Pitch-Roll=(180,-89.9998,89.9998)]",
+          "Type": "",
+          "Uid": "cc7e8622-6af7-4341-b0d9-7f6ef0af1dd0",
+          "Visibility": "True",
+          "_ElementMapVersion": "",
+          "_GroupTouched": "False",
+          "_Part_ShapeCache": "[('', <Compound object at 0x133c50870>)]"
+        }
+      }
+    },
+    "JointOrigin_shoulder_pan": {
+      "brep": {
+        "before": null,
+        "after": "f399113467fe272130ff27b105e076f966b4066e6003c41ca15c900ea6a6c34c"
+      },
+      "joint": {
+        "before": {
+          "Color": "(1.0, 1.0, 1.0, 0.0)",
+          "ExpressionEngine": "[]",
+          "Id": "",
+          "Label": "shoulder_pan \u2014 fixed URDF origin",
+          "Label2": "",
+          "License": "",
+          "LicenseURL": "",
+          "Material": "None",
+          "Meta": "{}",
+          "Origin": "<GeoFeature object>",
+          "Placement": "Placement [Pos=(38.8353,-8.97657e-06,62.4), Yaw-Pitch-Roll=(-180,8.7436e-15,180)]",
+          "Type": "",
+          "Uid": "62725388-0001-4bbf-aa63-5555b9959477",
+          "Visibility": "True",
+          "_ElementMapVersion": "",
+          "_GroupTouched": "False"
+        },
+        "after": {
+          "Color": "(1.0, 1.0, 1.0, 0.0)",
+          "ExpressionEngine": "[]",
+          "Id": "",
+          "Label": "shoulder_pan \u2014 fixed URDF origin",
+          "Label2": "",
+          "License": "",
+          "LicenseURL": "",
+          "Material": "None",
+          "Meta": "{}",
+          "Origin": "<GeoFeature object>",
+          "Placement": "Placement [Pos=(38.8353,-8.97657e-06,62.4), Yaw-Pitch-Roll=(-180,8.7436e-15,180)]",
+          "Type": "",
+          "Uid": "62725388-0001-4bbf-aa63-5555b9959477",
+          "Visibility": "True",
+          "_ElementMapVersion": "",
+          "_GroupTouched": "False",
+          "_Part_ShapeCache": "[('', <Compound object at 0x133c50870>)]"
+        }
+      }
+    }
+  },
+  "error": "Original object preservation check failed: ['Link_base_link', 'Link_shoulder_link', 'Link_upper_arm_link', 'Link_lower_arm_link', 'Link_wrist_link', 'Link_gripper_link', 'JointOrigin_wrist_roll', 'JointOrigin_wrist_flex', 'JointOrigin_elbow_flex', 'JointOrigin_shoulder_lift', 'JointOrigin_shoulder_pan']",
+  "candidate_sha256": "5970b8e6ca6769e2ed7a36304a90370720a103e29147ff3c3fb3c738084065b4",
+  "candidate_unchanged": true
+}

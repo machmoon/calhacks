@@ -1,0 +1,26 @@
+[package]
+name = "wright-fab"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "wright-fab"
+path = "src/main.rs"
+
+[dependencies]
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+wright-core.workspace = true
+wright-geom.workspace = true
+wright-guide = { path = "../wright-guide" }
+# headless offscreen rendering (gfx-rs/wgpu examples/features/src/render_to_texture)
+wgpu = { version = "30", default-features = false, features = ["std", "parking_lot", "metal", "vulkan", "wgsl"] }
+pollster = "0.4"
+bytemuck = { version = "1.25", features = ["derive"] }
+# 2D offsets for pocket/profile toolpaths (jbuckmccready/cavalier_contours)
+cavalier_contours = "0.4"
+# text on frames; the font bytes egui already ships (Ubuntu-Light, Hack)
+ab_glyph = "0.2"
+epaint_default_fonts = "0.37"

@@ -1,0 +1,42 @@
+[package]
+name = "wright-cli"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "wright"
+path = "src/main.rs"
+
+[dependencies]
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+wright-core.workspace = true
+wright-geom.workspace = true
+wright-air = { workspace = true, optional = true }
+wright-rocket.workspace = true
+wright-balloon.workspace = true
+# electronics domain (docs/electronics-plan.md lane E): `wright electronics ...`, `wright run electronics ...`
+wright-electronics = { path = "../wright-electronics" }
+wright-place = { path = "../wright-place" }
+wright-kicad = { path = "../wright-kicad" }
+wright-fea = { path = "../wright-fea", default-features = false }
+wright-agents.workspace = true
+wright-desktop = { path = "../wright-desktop" }
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "sync", "fs", "io-util"] }
+wright-creao = { path = "../wright-creao" }
+
+wright-guide = { path = "../wright-guide" }
+# `wright train export`: recorded runs as post-training trajectories
+wright-train = { path = "../wright-train" }
+# fab stage: process plans, CAM, timelapse films (wright-fab)
+wright-fab = { path = "../wright-fab" }
+# CFD stage (AVL + SU2); needs wright-air, so it rides on the air feature
+wright-cfd = { path = "../wright-cfd", optional = true }
+
+[features]
+air = ["dep:wright-air", "wright-fea/air", "dep:wright-cfd"]
+default = ["air", "azure"]
+# Azure Cosmos DB runs-database backend (docs/azure-db.md)
+azure = ["wright-agents/azure"]

@@ -1,0 +1,20 @@
+{
+  "version": "so101-cad-v1",
+  "scope": "Native FreeCAD mesh assembly and persistent CAD articulation; no BRep creation, robot control or physical-operation claims",
+  "reference_commit": "a758567c3978dfeefe282ede0500085a48fe8f78",
+  "reference_urdf": "so101_new_calib.urdf",
+  "artifact": "assembly.FCStd",
+  "initial_pose": "all six joint controls zero degrees",
+  "world_frame": "official URDF base_link, without additional registration; translations converted metres to millimetres",
+  "controls_object": "JointParameters",
+  "control_property_type": "App::PropertyAngle",
+  "control_unit": "degrees",
+  "joint_names": ["shoulder_pan", "shoulder_lift", "elbow_flex", "wrist_flex", "wrist_roll", "gripper"],
+  "limit_metadata": "For each joint, JointParameters.<joint>_lower and <joint>_upper are App::PropertyAngle values in degrees from URDF limits",
+  "limit_scope": "Evaluator checks metadata and makes only in-range edits. Native enforcement of out-of-range user edits is not assessed. No custom setter is required.",
+  "link_frames": "One native App::Part named Link_<exact_URDF_link_name> for every URDF link, including fixed gripper_frame_link; getGlobalPlacement() gives world transform",
+  "visual_instances": "One Mesh::Feature named Visual_<exact_URDF_link_name>_<zero_based_visual_index> for each URDF visual element, in file order. Preserve source mesh geometry scaled to millimetres and the visual origin transform relative to its link. Repeated assets remain distinct instances.",
+  "articulation": "Editing an angle and recomputing updates the full appropriate descendant subtree and every visual instance. Fixed origins and visual offsets persist. Use native editable relationships that survive a fresh process reopening the FCStd without importing candidate Python code.",
+  "geometry_kind": "Mesh geometry must remain explicitly identified as mesh. Do not replace detailed source geometry with proxy shapes or claim a faceted mesh is an exact BRep.",
+  "evaluation": "Independent official-URDF transforms, component geometry/coverage, individual and combined joint edits, native limits metadata, fresh-process reopen and another edit. Collision-clearance certification is reported separately from articulation validity."
+}

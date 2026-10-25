@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Concept C: three angular chevrons (the Devin-style geometry) drawn as copper layers with a via stack -->
+  <rect width="256" height="256" rx="56" fill="#0B1F33"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M52 96 L128 176 L204 96" stroke="#7A4A26" stroke-width="22"/>
+    <path d="M52 68 L128 148 L204 68" stroke="#B8702F" stroke-width="22"/>
+    <path d="M52 40 L128 120 L204 40" stroke="#E7A062" stroke-width="22"/>
+  </g>
+  <g fill="#0B1F33" stroke="#F4D6B8" stroke-width="7">
+    <circle cx="128" cy="120" r="12"/><circle cx="128" cy="176" r="12"/>
+  </g>
+  <rect x="86" y="208" width="84" height="12" rx="6" fill="#D08A4A"/>
+</svg>

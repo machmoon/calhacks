@@ -1,0 +1,488 @@
+{
+  "domain": "balloon",
+  "programs": [],
+  "rows": [
+    {
+      "files": [
+        "print/shelf1.gcode",
+        "video/print_shelf1.mp4"
+      ],
+      "grams": 29.14,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 150.48333333333332,
+      "notes": "",
+      "part": "shelf1",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/shelf2.gcode",
+        "video/print_shelf1.mp4"
+      ],
+      "grams": 29.14,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 150.48333333333332,
+      "notes": "same G-code as another plate",
+      "part": "shelf2",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/shelf3.gcode",
+        "video/print_shelf1.mp4"
+      ],
+      "grams": 29.14,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 150.48333333333332,
+      "notes": "same G-code as another plate",
+      "part": "shelf3",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/shelf4.gcode",
+        "video/print_shelf4.mp4"
+      ],
+      "grams": 29.14,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 150.48333333333332,
+      "notes": "",
+      "part": "shelf4",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/post1-1.gcode",
+        "video/print_post1-1.mp4"
+      ],
+      "grams": 3.74,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 37.45,
+      "notes": "",
+      "part": "post1-1",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/post2-1.gcode",
+        "video/print_post2-1.mp4"
+      ],
+      "grams": 3.74,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 37.45,
+      "notes": "",
+      "part": "post2-1",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/post3-1.gcode",
+        "video/print_post3-1.mp4"
+      ],
+      "grams": 3.74,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 37.45,
+      "notes": "",
+      "part": "post3-1",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/post4-1.gcode",
+        "video/print_post4-1.mp4"
+      ],
+      "grams": 3.74,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 37.45,
+      "notes": "",
+      "part": "post4-1",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/post1-2.gcode",
+        "video/print_post1-2.mp4"
+      ],
+      "grams": 2.23,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 22.2,
+      "notes": "",
+      "part": "post1-2",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/post1-3.gcode",
+        "video/print_post1-3.mp4"
+      ],
+      "grams": 2.23,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 22.2,
+      "notes": "",
+      "part": "post1-3",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/post2-2.gcode"
+      ],
+      "grams": 2.23,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 22.2,
+      "notes": "",
+      "part": "post2-2",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/post2-3.gcode",
+        "print/post2-2.gcode"
+      ],
+      "grams": 2.23,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 22.2,
+      "notes": "same G-code as another plate",
+      "part": "post2-3",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/post3-2.gcode"
+      ],
+      "grams": 2.23,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 22.2,
+      "notes": "",
+      "part": "post3-2",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/post3-3.gcode"
+      ],
+      "grams": 2.23,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 22.2,
+      "notes": "",
+      "part": "post3-3",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/post4-2.gcode"
+      ],
+      "grams": 2.23,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 22.2,
+      "notes": "",
+      "part": "post4-2",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [
+        "print/post4-3.gcode",
+        "print/post4-2.gcode"
+      ],
+      "grams": 2.23,
+      "machine": "FDM printer (PrusaSlicer G-code)",
+      "minutes": 22.2,
+      "notes": "same G-code as another plate",
+      "part": "post4-3",
+      "process": "printed",
+      "qty": 1,
+      "stock": "filament",
+      "tools": "0.4 mm nozzle"
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.kaymont.com/product-page/hab-3000",
+      "part": "Kaymont/Totex HAB-3000",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://bps.westchestercountyny.gov/images/HELIUM_GAS_FOR_LAB_USE_IN_CYLINDERS_.pdf",
+      "part": "Helium UHP 5.0, size 300 cylinder (292 ft^3)",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://spherachutes.com/products/72-inch-spherachute",
+      "part": "Spherachutes 72\" Classic",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://intothewind.com/500-ft-30-lb-dacron-kite-line.html",
+      "part": "Ashaway braided Dacron kite line, 30 lb x 500 ft (Into The Wind #1319)",
+      "process": "bought",
+      "qty": 8,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://superarbor.io/collections/building-materials/products/owens-corning-r-5-15-psi-foamular-ngx-150-1-in-x-4-ft-x-8-ft-extruded-polystyrene-foam-board-insulation-square-edge",
+      "part": "Owens Corning FOAMULAR 150 XPS, 1 in (R-5)",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://us.store.bambulab.com/products/petg-basic",
+      "part": "printed PETG rack (shelves + posts)",
+      "process": "stock",
+      "qty": 150,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://shop.runcam.com/runcam-5-orange/",
+      "part": "RunCam 5 Orange",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "http://www.qrp-labs.com/lightaprs2.html",
+      "part": "QRP Labs LightAPRS 2.0 (DRA818V + u-blox MAX-M8Q)",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://heltec.org/project/wifi-lora-32-v3/",
+      "part": "Heltec WiFi LoRa 32 V3 (SX1262) beacon",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.mateksys.com/?portfolio=m10q-5883",
+      "part": "Matek M10Q-5883 GPS",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://data.energizer.com/pdfs/l91.pdf",
+      "part": "Energizer Ultimate Lithium AA (L91)",
+      "process": "bought",
+      "qty": 8,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.pololu.com/product/2836",
+      "part": "Pololu S9V11F5 5 V step-up/step-down",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://data.energizer.com/pdfs/l91.pdf",
+      "part": "Energizer Ultimate Lithium AA (L91)",
+      "process": "bought",
+      "qty": 3,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://data.energizer.com/pdfs/l91.pdf",
+      "part": "Energizer Ultimate Lithium AA (L91)",
+      "process": "bought",
+      "qty": 4,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.pololu.com/product/2836",
+      "part": "Pololu S9V11F5 5 V step-up/step-down",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.the-rocketman.com/products/weather-balloon-inflator",
+      "part": "Rocketman Weather Balloon Inflator 3.0cm (CGA-580 regulator 3000->80 psi, gauge, hose, fill nozzle)",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://bps.westchestercountyny.gov/images/HELIUM_GAS_FOR_LAB_USE_IN_CYLINDERS_.pdf",
+      "part": "Helium size-300 cylinder rental, one month",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.the-rocketman.com/products/swivel-harness-systems",
+      "part": "Rocketman 3-to-1 shock cord harness with swivel, 6 ft (chute to payload)",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://www.adafruit.com/product/6011",
+      "part": "Raspberry Pi A2-class microSD card, 64 GB",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    },
+    {
+      "files": [],
+      "grams": null,
+      "machine": "",
+      "minutes": 0.0,
+      "notes": "https://heltec.org/project/wifi-lora-32-v3/",
+      "part": "Heltec WiFi LoRa 32 V3 ground receiver",
+      "process": "bought",
+      "qty": 1,
+      "stock": "",
+      "tools": ""
+    }
+  ],
+  "totals": {
+    "all_minutes": 929.3333333333338,
+    "machine_minutes": -0.0,
+    "print_grams": 149.36,
+    "print_minutes": 929.3333333333333
+  }
+}

@@ -1,0 +1,19 @@
+[package]
+name = "wright-cfd"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+anyhow.workspace = true
+wright-core.workspace = true
+wright-air.workspace = true
+wright-rocket.workspace = true
+png = "0.17"
+ab_glyph = "0.2.32"
+
+[[bin]]
+name = "wright-cfd"
+path = "src/bin/wright-cfd.rs"

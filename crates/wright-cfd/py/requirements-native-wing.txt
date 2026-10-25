@@ -1,0 +1,6 @@
+# Tested direct dependencies, 2026-10-24; not a full transitive lockfile.
+aerosandbox==4.2.10
+neuralfoil==0.3.3
+optvl==2.5.0
+numpy==2.5.4
+matplotlib==3.11.2
